@@ -8,7 +8,8 @@ class Conference {
     Date endDate
     Venue venue
     String description
-    hasMany = [ speakers : Speaker, sessions : Session ]
+
+    static hasMany = [ speakers : Speaker, sessions : Session ]
 
     static constraints = {
 	    startDate nullable:true
