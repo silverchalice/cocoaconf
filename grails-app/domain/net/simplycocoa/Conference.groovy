@@ -8,6 +8,7 @@ class Conference {
     Date endDate
     Venue venue
     String description
+    String tinyName
 
     static hasMany = [ speakers : Speaker, sessions : Session ]
 
