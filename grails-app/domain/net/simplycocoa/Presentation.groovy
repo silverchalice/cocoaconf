@@ -4,9 +4,9 @@ class Presentation {
 
     Speaker speaker
     String title
-    String abstract
+    String pAbstract
 
     static constraints = {
-	    abstract maxSize:10000, nullable:true
+	    pAbstract maxSize:10000, nullable:true
     }
 }
