@@ -1,9 +1,10 @@
-package net.cocoaconf
+package com.cocoaconf
+
 
 
 import grails.test.*
 
-class SessionTests extends GrailsUnitTestCase {
+class SpeakerTests extends GrailsUnitTestCase {
     protected void setUp() {
         super.setUp()
     }

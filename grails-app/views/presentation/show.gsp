@@ -1,5 +1,5 @@
 
-<%@ page import="net.cocoaconf.Presentation" %>
+<%@ page import="com.cocoaconf.Presentation" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

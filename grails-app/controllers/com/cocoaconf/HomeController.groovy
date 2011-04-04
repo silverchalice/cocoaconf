@@ -1,4 +1,5 @@
-package cocoaconf
+package com.cocoaconf
+
 
 class HomeController {
 

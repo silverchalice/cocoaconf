@@ -1,6 +1,6 @@
 
 
-<%@ page import="net.cocoaconf.Conference" %>
+<%@ page import="com.cocoaconf.Conference" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -51,7 +51,8 @@
                                     <label for="venue"><g:message code="conference.venue.label" default="Venue" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: conferenceInstance, field: 'venue', 'errors')}">
-                                    <g:select name="venue.id" from="${net.cocoaconf.Venue.list()}" optionKey="id" value="${conferenceInstance?.venue?.id}" noSelection="['null': '']" />
+                                    <g:select name="venue.id" from="${com.cocoaconf
+.Venue.list()}" optionKey="id" value="${conferenceInstance?.venue?.id}" noSelection="['null': '']" />
                                 </td>
                             </tr>
                         

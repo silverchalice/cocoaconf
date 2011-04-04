@@ -1,6 +1,9 @@
-import net.cocoaconf.User
-import net.cocoaconf.Role
-import net.cocoaconf.UserRole
+import com.cocoaconf
+.User
+import com.cocoaconf
+.Role
+import com.cocoaconf
+.UserRole
 
 class BootStrap {
 

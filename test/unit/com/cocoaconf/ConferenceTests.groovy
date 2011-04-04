@@ -1,9 +1,10 @@
-package net.cocoaconf
+package com.cocoaconf
+
 
 
 import grails.test.*
 
-class PresentationControllerTests extends ControllerUnitTestCase {
+class ConferenceTests extends GrailsUnitTestCase {
     protected void setUp() {
         super.setUp()
     }

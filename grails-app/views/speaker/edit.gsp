@@ -1,6 +1,6 @@
 
 
-<%@ page import="net.cocoaconf.Speaker" %>
+<%@ page import="com.cocoaconf.Speaker" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

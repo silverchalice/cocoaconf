@@ -100,6 +100,9 @@ grails.plugins.springsecurity.interceptUrlMap = [
 ]
 
 // Added by the Spring Security Core plugin:
-grails.plugins.springsecurity.userLookup.userDomainClassName = 'net.cocoaconf.User'
-grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'net.cocoaconf.UserRole'
-grails.plugins.springsecurity.authority.className = 'net.cocoaconf.Role'
+grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.cocoaconf
+.User'
+grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.cocoaconf
+.UserRole'
+grails.plugins.springsecurity.authority.className = 'com.cocoaconf
+.Role'

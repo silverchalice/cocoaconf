@@ -1,4 +1,5 @@
-package net.cocoaconf
+package com.cocoaconf
+
 
 class Venue {
 
