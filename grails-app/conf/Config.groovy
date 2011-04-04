@@ -1,3 +1,5 @@
+import grails.plugins.springsecurity.SecurityConfigType
+
 // locations to search for config files that get merged into the main config
 // config files can either be Java properties files or ConfigSlurper scripts
 
@@ -86,7 +88,18 @@ log4j = {
     warn   'org.mortbay.log'
 }
 
+grails.plugins.springsecurity.securityConfigType = SecurityConfigType.InterceptUrlMap
+
+grails.plugins.springsecurity.interceptUrlMap = [
+    '/speaker/*':            ['ROLE_SPEAKER', 'ROLE_ADMIN'],
+    '/conference/*':         ['ROLE_ADMIN'],
+    '/venue/*':              ['ROLE_ADMIN'],
+    '/presentation/*':       ['ROLE_SPEAKER', 'ROLE_ADMIN'],
+    '/session/*':            ['ROLE_ADMIN'],
+    '/**':                   ['IS_AUTHENTICATED_ANONYMOUSLY']
+]
+
 // Added by the Spring Security Core plugin:
-grails.plugins.springsecurity.userLookup.userDomainClassName = 'net.simplycocoa.User'
-grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'net.simplycocoa.UserRole'
-grails.plugins.springsecurity.authority.className = 'net.simplycocoa.Role'
+grails.plugins.springsecurity.userLookup.userDomainClassName = 'net.cocoaconf.User'
+grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'net.cocoaconf.UserRole'
+grails.plugins.springsecurity.authority.className = 'net.cocoaconf.Role'

@@ -1,6 +1,6 @@
 
 
-<%@ page import="net.simplycocoa.Session" %>
+<%@ page import="net.cocoaconf.Session" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

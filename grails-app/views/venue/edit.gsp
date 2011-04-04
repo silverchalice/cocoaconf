@@ -1,6 +1,7 @@
 
 
-<%@ page import="net.simplycocoa.Venue" %>
+<%@ page import="net.cocoaconf
+.Venue" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
