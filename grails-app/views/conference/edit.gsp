@@ -106,6 +106,15 @@
                                 </td>
                             </tr>
                         
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="tinyName"><g:message code="conference.tinyName.label" default="Short Name" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: conferenceInstance, field: 'tinyName', 'errors')}">
+                                    <g:textField name="tinyName" value="${conferenceInstance?.tinyName}" />
+                                </td>
+                            </tr>
+
                         </tbody>
                     </table>
                 </div>
