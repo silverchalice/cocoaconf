@@ -21,4 +21,7 @@ class Venue {
 	    imagePath nullable:true
 	    
     }
+
+    String toString(){ name }
+
 }
