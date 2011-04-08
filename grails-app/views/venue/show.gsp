@@ -51,10 +51,7 @@
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="venue.imagePath.label" default="Image Path" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: venueInstance, field: "imagePath")}</td>
-                            
+                            <td valign="top" class="value"><img src="${request.contextPath}/${venueInstance?.imagePath}" /></td>
                         </tr>
                     
                         <tr class="prop">
