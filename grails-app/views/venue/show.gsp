@@ -51,7 +51,7 @@
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="value"><img src="${request.contextPath}/${venueInstance?.imagePath}" /></td>
+                            <td valign="top" class="value"><img src="${request.contextPath}/${venueInstance?.imagePath}" height="100" width="150" /></td>
                         </tr>
                     
                         <tr class="prop">
