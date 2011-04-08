@@ -22,6 +22,14 @@ class VenueController {
 
     def save = {
         def venueInstance = new Venue(params)
+        def image = request.getFile('image')
+        if(!image.empty){
+            def webRootDir = servletContext.getRealPath("/")
+            def venueDir = new File(webRootDir, "images/venue/${venueInstance.name.toLowerCase().replaceAll(" ", "-")}")
+            venueDir.mkdirs()
+            image.transferTo( new File(venueDir, image.originalFilename))
+            venueInstance.imagePath = "images/venue/" + venueInstance.name.toLowerCase().replaceAll(" ", "-") + "/" + image.originalFilename // don't look too closely
+		}
         if (venueInstance.save(flush: true)) {
             flash.message = "${message(code: 'default.created.message', args: [message(code: 'venue.label', default: 'Venue'), venueInstance.id])}"
             redirect(action: "show", id: venueInstance.id)
