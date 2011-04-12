@@ -12,7 +12,7 @@
            <div id="spinner" class="spinner" style="display:none;">
                 <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
             </div>
-            <div id="logo"><a href="http://grails.org"><img src="${resource(dir:'images',file:'sc-logo.png')}" alt="Simply Cocoa" border="0" /></a></div>
+            <div id="logo"><a href="http://grails.org"><img src="${resource(dir:'images',file:'cc-logo.png')}" alt="Simply Cocoa" border="0" /></a></div>
 
             <div id="content">
                 <g:layoutBody />
