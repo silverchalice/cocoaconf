@@ -1,33 +1,35 @@
 html {
     background: url(../images/background.png) repeat;
-    font-family:sans-serif;
+    font-family:"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+    font-size:14px;
     font-color: #232323;
 }
 
-
-
 #page {
-    width:900px;
+    width:800px;
     margin:0 auto;
     background:white;
 
 }
 
 #logo {
-    width:900px;
+    width:800px;
     background:white;
     border: 1px solid #A0A0A0;
     border-right-width: 2px;
     border-bottom-width: 0;
+    margin-bottom:0;
+    padding-bottom:0;
+    height:119px;
 }
 
 #content {
     background: url(../images/page-bg.png) repeat-x;
     min-height:800px;
-    width:860px;
-    padding-top:50px;
-    padding-left:20px;
-    padding-right:20px;
+    width:700px;
+    padding-top:30px;
+    padding-left:50px;
+    padding-right:50px;
     border: 2px solid #A0A0A0;
     border-top-width: 1px;
     border-top-color: #c0c0c0;

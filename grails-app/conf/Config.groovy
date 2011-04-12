@@ -103,3 +103,5 @@ grails.plugins.springsecurity.interceptUrlMap = [
 grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.cocoaconf.User'
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.cocoaconf.UserRole'
 grails.plugins.springsecurity.authority.className = 'com.cocoaconf.Role'
+
+grails.views.javascript.library="jquery"
