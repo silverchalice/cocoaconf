@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7d267dc-4b70-49a8-8f44-005f90c7f2eb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocoaconf.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/sc-logo.png" afterPath="$PROJECT_DIR$/web-app/images/sc-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.ui.datepicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/HomeController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/HomeController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/home/announcement.gsp" afterPath="$PROJECT_DIR$/grails-app/views/home/announcement.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/public.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/public.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/public.css" afterPath="$PROJECT_DIR$/web-app/css/public.css" />
     </list>
     <ignored path="cocoaconf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,7 +69,7 @@
       <file leaf-file-name="announcement.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/home/announcement.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="29" selection-start="1585" selection-end="1585" vertical-scroll-proportion="0.8314088">
+            <state line="56" column="25" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.79676676">
               <folding>
                 <marker date="1302558022000" expanded="true" signature="4305:4329" placeholder="{...}" />
               </folding>
@@ -142,18 +138,6 @@
         <entry file="file://$PROJECT_DIR$/grails-app/views/interest/create.gsp">
           <provider selected="true" editor-type-id="text-editor">
             <state line="63" column="31" selection-start="1162" selection-end="3463" vertical-scroll-proportion="-8.276596">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Conference.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/com/cocoaconf/Conference.groovy">
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="6" selection-start="30" selection-end="30" vertical-scroll-proportion="-1.0">
               <folding />
             </state>
           </provider>
@@ -437,7 +421,7 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21504559" sideWeight="0.6320422" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21504559" sideWeight="0.6320422" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -560,9 +544,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.grails/1.3.7/projects/cocoaconf/plugins/jquery-1.5.2/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/home/announcement.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="29" selection-start="1585" selection-end="1585" vertical-scroll-proportion="0.8314088">
+        <state line="56" column="25" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.79676676">
           <folding>
             <marker date="1302558022000" expanded="true" signature="4305:4329" placeholder="{...}" />
           </folding>
