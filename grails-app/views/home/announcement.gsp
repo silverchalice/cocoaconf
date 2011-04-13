@@ -17,6 +17,7 @@
       <script src="${resource(dir:'js', file:'jquery-1.5.1.min.js')}" type="text/javascript"></script>
 
       <script src="${resource(dir:'js', file:'jquery-ui-1.8.11.custom.min.js')}" type="text/javascript"></script>
+      <script src="${resource(dir:'js', file:'jquery.validate.min.js')}" type="text/javascript"></script>
 
 
 
@@ -43,7 +44,7 @@
 
             $('#register').button();
 
-
+            $("#interestForm").validate();
 
          });
 
@@ -109,7 +110,7 @@
   <p style="clear:both"></p>
 
         <div id="dialog">
-            <g:form controller="interest" action="register" >
+            <form id="interestForm" method="post" action="/cocoaconf/interest/register">
                 <table>
                     <tbody>
 
@@ -118,7 +119,7 @@
                                 <label for="email"><g:message code="interest.email.label" default="Email" /></label>
                             </td>
                             <td valign="top" class="value ${hasErrors(bean: interestInstance, field: 'email', 'errors')}">
-                                <g:textField name="email" value="${interestInstance?.email}" />
+                                <g:textField name="email" value="${interestInstance?.email}" class="required email" />
                             </td>
                         </tr>
 
@@ -137,8 +138,9 @@
             <div class="buttons">
                 <span class="button" ><g:submitButton id="register" name="create" class="save" value="Sign Up!" /></span>
             </div>
-        </g:form>
+        </form>
     </div>
+
 
 
   </body>
