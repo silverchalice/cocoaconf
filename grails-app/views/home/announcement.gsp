@@ -27,15 +27,19 @@
 
 
               <g:if test="${flash.message}">
-                $("#flashMessage").dialog({ autoOpen: true, width:300, modal: true, resizable:false, buttons: { "Ok": function() { $(this).dialog("close"); } } });
+                $("#flashMessage").dialog({ autoOpen: true, title: 'Thank you!', width:300, modal: true, resizable:false });
+                $("#closeFlash").click(function(){
+                    $(this).dialog("close");
+                });
               </g:if>
 
 
             $("#openDialog").click(function() {
-                $("#dialog").dialog('open')
-            })
+                $("#dialog").dialog('open');
+            });
 
             $('#openDialog').button();
+            $('#closeFlash').button();
 
             $('#register').button();
 
@@ -67,6 +71,13 @@
               margin-top:5px;
           }
 
+          #closeFlash {
+              font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+              font-size:15px;
+              margin-left:25px;
+              margin-top:5px;
+          }
+
         html {
             font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
             font-size: 14px;
@@ -77,14 +88,16 @@
   <body>
 
   <g:if test="${flash.message}">
-      <div id="flashMessage"><strong>Thank you!</strong><p>You will be notified as soon as registration opens. See you there!</p></div>
+      <div id="flashMessage"><p>You will be notified as soon as registration opens. See you there!</p>
+       <span class="button" id="closeFlash" >Ok!</span>
+      </div>
   </g:if>
   <p>
-     <img src="${resource(dir:'images', file:'mac-app-store.png')}" style="float:left; width:500px; margin-right:25px; margin:0"/><strong style="font-size:16px;">With the current explosive growth of interest in iOS and OS X software</strong>, there's never been a better time to develop for these exciting platforms.  And there's never been a more affordable, easily accessible conference to help you sharpen your skills and learn about the latest tools and libraries for iOS and Mac programming.
+     <img src="${resource(dir:'images', file:'mac-app-store.png')}" style="float:left; width:auto; margin-right:25px; margin:0"/><strong style="font-size:16px;">With the current explosive growth of interest in iOS and OS X software</strong>, there's never been a better time to develop for these exciting platforms.  And there's never been a more affordable, easily accessible conference to help you sharpen your skills and learn about the latest tools and libraries for iOS and Mac programming.
   </p>
-  <div style="clear:both; padding:10px; margin:10px">&nbsp;</div>
+  <div style="clear:both; padding:0px; margin:0px">&nbsp;</div>
   <img src="${resource(dir:'images', file:'xcode.png')}"  style="float:right; height:400px; padding:10px; padding-right:0"/>
-  <div style="padding:15px; padding-right:10px; color:white; font-size:15px; margin-top:58px; clear:left; background-image:url(${resource(dir:'images', file:'box-bg.png')}); background-repeat:no-repeat; width:300px; height:200px;"><strong>Simply Cocoa is a technical conference, pure and simple.</strong> You won't find any vendor booths or vendor keynotes.  You will find in-depth technical sessions delivered by experts on the topics that matter most.
+  <div style="padding:15px; padding-right:10px; color:white; font-size:15px; margin-top:40px; clear:left; background-image:url(${resource(dir:'images', file:'box-bg.png')}); background-repeat:no-repeat; width:300px; height:200px;"><strong>CocoaConf is a technical conference, pure and simple.</strong> You won't find any vendor booths or vendor keynotes.  You will find in-depth technical sessions delivered by experts on the topics that matter most.
     Be the first to find out when registration opens. You won't want to miss it. <span id="openDialog">Register</span></div>
 
 
