@@ -32,7 +32,9 @@ class ConferenceController {
     }
 
     def show = {
-        def conferenceInstance = Conference.get(params.id)
+	    def conferenceInstance
+	    if(params.tinyName){ conferenceInstance = Conference.findByTinyName(params.tinyName) }
+	    else { conferenceInstance = Conference.get(params.id) }
         if (!conferenceInstance) {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'conference.label', default: 'Conference'), params.id])}"
             redirect(action: "list")
