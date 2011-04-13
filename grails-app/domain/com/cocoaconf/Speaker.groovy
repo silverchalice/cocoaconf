@@ -8,6 +8,8 @@ class Speaker {
 	String email
 	String bio
 	String imagePath
+	String blog
+	String twitter
 
     static constraints = {
 	    firstName nullable:false
