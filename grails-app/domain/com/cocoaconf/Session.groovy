@@ -8,6 +8,7 @@ class Session {
     Date endTime
     String room
     Speaker speaker
+    Integer track
 
     static constraints = {
 	    startTime nullable:true
