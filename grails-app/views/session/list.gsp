@@ -24,6 +24,16 @@
                         
                             <g:sortableColumn property="id" title="${message(code: 'session.id.label', default: 'Id')}" />
                         
+                            <g:sortableColumn property="startTime" title="${message(code: 'session.startTime.label', default: 'Start Time')}" />
+                        
+                            <g:sortableColumn property="endTime" title="${message(code: 'session.endTime.label', default: 'End Time')}" />
+                        
+                            <g:sortableColumn property="room" title="${message(code: 'session.room.label', default: 'Room')}" />
+                        
+                            <th><g:message code="session.presentation.label" default="Presentation" /></th>
+                        
+                            <th><g:message code="session.speaker.label" default="Speaker" /></th>
+                        
                         </tr>
                     </thead>
                     <tbody>
@@ -31,6 +41,16 @@
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
                         
                             <td><g:link action="show" id="${sessionInstance.id}">${fieldValue(bean: sessionInstance, field: "id")}</g:link></td>
+                        
+                            <td><g:formatDate date="${sessionInstance.startTime}" /></td>
+                        
+                            <td><g:formatDate date="${sessionInstance.endTime}" /></td>
+                        
+                            <td>${fieldValue(bean: sessionInstance, field: "room")}</td>
+                        
+                            <td>${fieldValue(bean: sessionInstance, field: "presentation")}</td>
+                        
+                            <td>${fieldValue(bean: sessionInstance, field: "speaker")}</td>
                         
                         </tr>
                     </g:each>

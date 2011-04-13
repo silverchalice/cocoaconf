@@ -31,6 +31,51 @@
                     <table>
                         <tbody>
                         
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="pAbstract"><g:message code="presentation.pAbstract.label" default="PA bstract" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: presentationInstance, field: 'pAbstract', 'errors')}">
+                                    <g:textArea name="pAbstract" cols="40" rows="5" value="${presentationInstance?.pAbstract}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="codePath"><g:message code="presentation.codePath.label" default="Code Path" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: presentationInstance, field: 'codePath', 'errors')}">
+                                    <g:textField name="codePath" value="${presentationInstance?.codePath}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="slidesPath"><g:message code="presentation.slidesPath.label" default="Slides Path" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: presentationInstance, field: 'slidesPath', 'errors')}">
+                                    <g:textField name="slidesPath" value="${presentationInstance?.slidesPath}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="speaker"><g:message code="presentation.speaker.label" default="Speaker" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: presentationInstance, field: 'speaker', 'errors')}">
+                                    <g:select name="speaker.id" from="${com.cocoaconf.Speaker.list()}" optionKey="id" value="${presentationInstance?.speaker?.id}"  />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="title"><g:message code="presentation.title.label" default="Title" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: presentationInstance, field: 'title', 'errors')}">
+                                    <g:textField name="title" value="${presentationInstance?.title}" />
+                                </td>
+                            </tr>
+                        
                         </tbody>
                     </table>
                 </div>

@@ -29,6 +29,41 @@
                             
                         </tr>
                     
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="presentation.pAbstract.label" default="PA bstract" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: presentationInstance, field: "pAbstract")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="presentation.codePath.label" default="Code Path" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: presentationInstance, field: "codePath")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="presentation.slidesPath.label" default="Slides Path" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: presentationInstance, field: "slidesPath")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="presentation.speaker.label" default="Speaker" /></td>
+                            
+                            <td valign="top" class="value"><g:link controller="speaker" action="show" id="${presentationInstance?.speaker?.id}">${presentationInstance?.speaker?.encodeAsHTML()}</g:link></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="presentation.title.label" default="Title" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: presentationInstance, field: "title")}</td>
+                            
+                        </tr>
+                    
                     </tbody>
                 </table>
             </div>

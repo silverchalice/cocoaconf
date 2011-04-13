@@ -31,6 +31,60 @@
                     <table>
                         <tbody>
                         
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="startTime"><g:message code="session.startTime.label" default="Start Time" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: sessionInstance, field: 'startTime', 'errors')}">
+                                    <g:datePicker name="startTime" precision="day" value="${sessionInstance?.startTime}" default="none" noSelection="['': '']" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="endTime"><g:message code="session.endTime.label" default="End Time" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: sessionInstance, field: 'endTime', 'errors')}">
+                                    <g:datePicker name="endTime" precision="day" value="${sessionInstance?.endTime}" default="none" noSelection="['': '']" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="room"><g:message code="session.room.label" default="Room" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: sessionInstance, field: 'room', 'errors')}">
+                                    <g:textField name="room" value="${sessionInstance?.room}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="presentation"><g:message code="session.presentation.label" default="Presentation" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: sessionInstance, field: 'presentation', 'errors')}">
+                                    <g:select name="presentation.id" from="${com.cocoaconf.Presentation.list()}" optionKey="id" value="${sessionInstance?.presentation?.id}"  />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="speaker"><g:message code="session.speaker.label" default="Speaker" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: sessionInstance, field: 'speaker', 'errors')}">
+                                    <g:select name="speaker.id" from="${com.cocoaconf.Speaker.list()}" optionKey="id" value="${sessionInstance?.speaker?.id}"  />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="track"><g:message code="session.track.label" default="Track" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: sessionInstance, field: 'track', 'errors')}">
+                                    <g:textField name="track" value="${fieldValue(bean: sessionInstance, field: 'track')}" />
+                                </td>
+                            </tr>
+                        
                         </tbody>
                     </table>
                 </div>
