@@ -40,7 +40,7 @@
                     <g:each in="${conferenceInstanceList}" status="i" var="conferenceInstance">
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
                         
-                            <td><g:link action="show" id="${conferenceInstance.id}">${fieldValue(bean: conferenceInstance, field: "id")}</g:link></td>
+                            <td><link:conf tinyName="${conferenceInstance.tinyName}">${conferenceInstance.id}</link:conf></td>
                         
                             <td><g:formatDate date="${conferenceInstance.startDate}" /></td>
                         
