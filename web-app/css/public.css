@@ -8,11 +8,7 @@ html {
 #page {
     width:800px;
     margin:0 auto;
-    background-color:white;
-    background-image: url(../images/page-bg.png);
-    background-repeat:repeat-y;
-    background-position:right;
-
+    background: white url(../images/page-bg.png) repeat-y right;
 }
 
 
@@ -20,9 +16,7 @@ html {
     margin: 0 auto;
     width:800px;
     height:35px;
-    background-image: url(../images/tl-corner.png);
-    background-repeat:no-repeat;
-    background-color:white;
+    background: white url(../images/tl-corner.png) no-repeat;
 }
 
 #page-header-right {
@@ -31,11 +25,7 @@ html {
 
 
 #logo {
-
-
-    background-color:white;
-    background: url(../images/page-bg.png) repeat-y;
-    background-position:right;
+    background: white url(../images/page-bg.png) repeat-y right;
     width:800px;
     border: 0;
     margin-bottom:0;
@@ -54,9 +44,8 @@ html {
 }
 
 #content {
-    background: url(../images/page-bg.png) repeat-y;
-    background-position:right;
-    min-height:800px;
+    background: url(../images/page-bg.png) repeat-y right;
+    min-height:950px;
     width:700px;
     border:0;
     padding-top:0;
@@ -65,9 +54,66 @@ html {
 
 }
 
+#footer {
+    height:35px;
+    background-image:url(../images/footer-bg.png)
+}
+
+#footer p {
+    text-align:center;
+    height:20px;
+    color:white;
+    font-weight:bold;
+    font-variant:small-caps;
+    font-size:13px;
+    position:relative;
+    bottom:190px
+}
+
 label.error {
     display:block;
     font-size:11px;
     text-align:center;
     color:orange;
+}
+
+#tagcloud {
+    float:left;
+    width:800px;
+    color:#bbbbbb;
+    padding-bottom:100px;
+    margin-top:20px;
+}
+
+/*Image styles*/
+#xcode {
+    float:right;
+    height:400px;
+    padding: 10px 0 10px 10px;
+}
+
+#appstore {
+    float:left;
+    width:auto;
+    margin:0
+}
+
+#cloud-bg {
+    position:relative;
+    bottom: 130px;
+    left: 55px
+}
+
+
+.clear {
+    clear:both;
+}
+
+#glossy-box {
+    padding: 15px 10px 15px 15px;
+    color:white; font-size:15px;
+    margin-top:40px; clear:left;
+    background: url(../images/box-bg.png) no-repeat;
+    width:300px;
+    height:200px;
 }

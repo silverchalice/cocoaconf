@@ -23,7 +23,9 @@
             <div id="content">
                 <g:layoutBody />
             </div>
-
+            <div id="footer">
+                <p>Copyright &copy; 2011 Simply Cocoa, LLC. </p>
+            </div>
         </div>
     </body>
 </html>

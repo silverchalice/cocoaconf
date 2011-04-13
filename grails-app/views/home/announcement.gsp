@@ -94,20 +94,32 @@
       </div>
   </g:if>
   <p>
-     <img src="${resource(dir:'images', file:'mac-app-store.png')}" style="float:left; width:auto; margin-right:25px; margin:0"/><strong style="font-size:16px;">With the current explosive growth of interest in iOS and OS X software</strong>, there's never been a better time to develop for these exciting platforms.  And there's never been a more affordable, easily accessible conference to help you sharpen your skills and learn about the latest tools and libraries for iOS and Mac programming.
+     <img src="${resource(dir:'images', file:'mac-app-store.png')}" id="appstore"/><strong style="font-size:16px;">With the current explosive growth of interest in iOS and OS X software</strong>, there's never been a better time to develop for these exciting platforms.  And there's never been a more affordable, easily accessible conference to help you sharpen your skills and learn about the latest tools and libraries for iOS and Mac programming.
   </p>
-  <div style="clear:both; padding:0px; margin:0px">&nbsp;</div>
-  <img src="${resource(dir:'images', file:'xcode.png')}"  style="float:right; height:400px; padding:10px; padding-right:0"/>
-  <div style="padding:15px; padding-right:10px; color:white; font-size:15px; margin-top:40px; clear:left; background-image:url(${resource(dir:'images', file:'box-bg.png')}); background-repeat:no-repeat; width:300px; height:200px;"><strong>CocoaConf is a technical conference, pure and simple.</strong> You won't find any vendor booths or vendor keynotes.  You will find in-depth technical sessions delivered by experts on the topics that matter most.
+  <div class="clear">&nbsp;</div>
+  <img src="${resource(dir:'images', file:'xcode.png')}"  id="xcode"/>
+  <div id="glossy-box"><strong>CocoaConf is a technical conference, pure and simple.</strong> You won't find any vendor booths or vendor keynotes.  You will find in-depth technical sessions delivered by experts on the topics that matter most.
     Be the first to find out when registration opens. You won't want to miss it. <span id="openDialog">Register</span></div>
 
 
-  <p style="clear:both; width:800px;">
-      <img style="float:left;" src="${resource(dir:'images', file:'cloud.png')}" />
+  <p id="tagcloud">
+      <span style="font-size:16px; margin-right:75px;">Cocoa Touch</span>
+      <span style="font-size:18px; margin-right:40px;">iTunes</span>
+      <span style="font-size:18px; margin-right:60px;">XCode</span>
+      <span style="font-size:16px;">coreaudio</span>
+       <br/>
+      <span style="font-size:32px; margin-left:180px;">iOS</span>
+      <span style="font-size:32px; margin-left:145px;">OSX</span>
+
+
+      <br/>
+      <span style="font-size:18px; margin-left:20px;">Objective C</span>
+      <span style="font-size:18px; margin-left:70px;">App Store</span>
+      <span style="font-size:14px; margin-left:120px;">coredata</span>
+
+      <img id="cloud-bg" src="${resource(dir:'images', file:'cloud.png')}"/>
 
   </p>
-
-  <p style="clear:both"></p>
 
         <div id="dialog">
             <form id="interestForm" method="post" action="/cocoaconf/interest/register">
