@@ -17,5 +17,10 @@ class Speaker {
 	    email nullable:false, email:true
 	    bio nullable:true, maxSize: 2000
 	    imagePath nullable:true
+	    blog nullable:true
+	    twitter nullable:true
     }
+
+    String toString(){ "${firstName} ${lastName}" }
+
 }

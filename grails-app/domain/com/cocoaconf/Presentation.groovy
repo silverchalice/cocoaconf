@@ -13,4 +13,6 @@ class Presentation {
 	    pAbstract maxSize:10000, nullable:true
     }
 
+    String toString(){ "${title} by ${speaker.firstName} ${speaker.lastName}" }
+
 }
