@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
   <head>
-      <title>Cocoaconf - Coming Soon!</title>
+      <title>CocoaConf: Coming Soon!</title>
       <meta name="layout" content="public" />
 
       <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
@@ -27,7 +27,7 @@
 
 
               <g:if test="${flash.message}">
-                $("#flashMessage").dialog({ autoOpen: true, width:300, modal: true, resizable:false, buttons: { "Ok": function() { $(this).dialog("close"); } } });
+                $("#flashMessage").dialog({ autoOpen: true, width:300, modal: true, resizable:false, buttons: { "OK": function() { $(this).dialog("close"); } } });
               </g:if>
 
 
