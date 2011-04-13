@@ -24,13 +24,13 @@
 
       <script type="text/javascript">
          $(document).ready(function() {
-            $("#dialog").dialog({ autoOpen: false, width:300, modal: true, title: 'Sign up!', resizable:false });
+            $("#dialog").dialog({ autoOpen: false, width:300, modal: true, title: 'Sign up!', hide: "fade", resizable:false, show: "fade" });
 
 
               <g:if test="${flash.message}">
-                $("#flashMessage").dialog({ autoOpen: true, title: 'Thank you!', width:300, modal: true, resizable:false });
+                $("#flashMessage").dialog({ autoOpen: true, title: 'Thank you!', width:300, modal: true, resizable:false, show: "fade", hide: "fade"});
                 $("#closeFlash").click(function(){
-                    $(this).dialog("close");
+                    $("#flashMessage").dialog("close");
                 });
               </g:if>
 

@@ -64,3 +64,10 @@ html {
     padding-right:50px;
 
 }
+
+label.error {
+    display:block;
+    font-size:11px;
+    text-align:center;
+    color:orange;
+}
