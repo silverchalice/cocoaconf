@@ -11,7 +11,7 @@
         <div id="spinner" class="spinner" style="display:none;">
             <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
         </div>
-        <div id="grailsLogo"><a href="${request.contextPath}/"><img src="${resource(dir:'images',file:'cc-logo.png')}" height="90" width="480" alt="Grails" border="0" /></a></div>
+        <div id="grailsLogo"><a href="${request.contextPath}/"><img src="${resource(dir:'images',file:'cc-logo.png')}" alt="CocoaConf" border="0" /></a></div>
         <g:layoutBody />
     </body>
 </html>

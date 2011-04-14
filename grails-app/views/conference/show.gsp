@@ -99,6 +99,16 @@
                     
                     </tbody>
                 </table>
+	            <h1>Sessions</h1>
+                <table>
+	                <g:each in="${sessions}" var="slot">
+	                    <tr>
+		                    <g:each in="${slot.value}" var="session">
+		                        <td>${session.presentation.title}</td>
+		                    </g:each>
+		                </tr>
+		            </g:each>
+	            </table>
             </div>
             <div class="buttons">
                 <g:form>

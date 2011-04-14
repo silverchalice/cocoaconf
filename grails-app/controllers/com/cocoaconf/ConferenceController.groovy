@@ -36,11 +36,13 @@ class ConferenceController {
 	    if(params.tinyName){ conferenceInstance = Conference.findByTinyName(params.tinyName) }
 	    else { conferenceInstance = Conference.get(params.id) }
         if (!conferenceInstance) {
-            flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'conference.label', default: 'Conference'), params.id])}"
+            flash.message = "Couldn't find that conference."
             redirect(action: "list")
         }
         else {
-            [conferenceInstance: conferenceInstance]
+	        def sessions = conferenceInstance.sessions.groupBy{it.startTime}
+	        println "the sessions for ${conferenceInstance.tinyName} were: " + sessions
+            [conferenceInstance: conferenceInstance, sessions: sessions]
         }
     }
 

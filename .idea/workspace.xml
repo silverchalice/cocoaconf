@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7d267dc-4b70-49a8-8f44-005f90c7f2eb" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web-app/images/sc-logo.png" afterPath="$PROJECT_DIR$/web-app/images/cc-logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/ConferenceController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/ConferenceController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/com/cocoaconf/Presentation.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/com/cocoaconf/Presentation.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/com/cocoaconf/Session.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/com/cocoaconf/Session.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/com/cocoaconf/Speaker.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/com/cocoaconf/Speaker.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/conference/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/conference/list.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/index.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/conference/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/conference/show.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/public.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/public.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/presentation/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/presentation/create.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/presentation/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/presentation/edit.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/presentation/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/presentation/list.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/presentation/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/presentation/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/session/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/session/create.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/session/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/session/edit.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/session/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/session/list.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/session/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/session/show.gsp" />
     </list>
     <ignored path="cocoaconf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,21 +77,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="announcement.gsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="announcement.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/home/announcement.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="0" selection-start="5569" selection-end="5569" vertical-scroll-proportion="1.1954887">
+            <state line="119" column="13" selection-start="4386" selection-end="4386" vertical-scroll-proportion="-1.2328767">
               <folding>
-                <marker date="1302720727000" expanded="true" signature="5217:5241" placeholder="{...}" />
+                <marker date="1302734401000" expanded="true" signature="5528:5552" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="public.gsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="public.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/public.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="-0.625">
+            <state line="23" column="18" selection-start="1050" selection-end="1050" vertical-scroll-proportion="1.0058309">
               <folding />
             </state>
           </provider>
@@ -95,7 +100,7 @@
       <file leaf-file-name="public.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-app/css/public.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="17" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.0">
+            <state line="78" column="4" selection-start="1311" selection-end="1311" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -126,8 +131,8 @@
         <option value="$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/InterestController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/com/cocoaconf/Interest.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/public.gsp" />
-        <option value="$PROJECT_DIR$/web-app/css/public.css" />
         <option value="$PROJECT_DIR$/grails-app/views/home/announcement.gsp" />
+        <option value="$PROJECT_DIR$/web-app/css/public.css" />
       </list>
     </option>
   </component>
@@ -365,7 +370,7 @@
     </servers>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1368" height="721" extended-state="6" />
+    <frame x="-1" y="1" width="1368" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26584506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -377,7 +382,7 @@
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21504559" sideWeight="0.6320422" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32922536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -408,7 +413,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added validation to interest form." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up CSS, added footer/copyright" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -424,6 +429,8 @@
     <MESSAGE value="Added thank you prompt." />
     <MESSAGE value="Revamped parts of the layout." />
     <MESSAGE value="Added validation to interest form." />
+    <MESSAGE value="Added fade effects to dialogs." />
+    <MESSAGE value="Cleaned up CSS, added footer/copyright" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -497,24 +504,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web-app/css/public.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="17" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/public.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="-0.625">
+        <state line="78" column="4" selection-start="1311" selection-end="1311" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/home/announcement.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="0" selection-start="5569" selection-end="5569" vertical-scroll-proportion="1.1954887">
+        <state line="119" column="13" selection-start="4386" selection-end="4386" vertical-scroll-proportion="-1.2328767">
           <folding>
-            <marker date="1302720727000" expanded="true" signature="5217:5241" placeholder="{...}" />
+            <marker date="1302734401000" expanded="true" signature="5528:5552" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/public.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="18" selection-start="1050" selection-end="1050" vertical-scroll-proportion="1.0058309">
+          <folding />
         </state>
       </provider>
     </entry>

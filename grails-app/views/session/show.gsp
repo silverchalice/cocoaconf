@@ -29,6 +29,48 @@
                             
                         </tr>
                     
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="session.startTime.label" default="Start Time" /></td>
+                            
+                            <td valign="top" class="value"><g:formatDate date="${sessionInstance?.startTime}" /></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="session.endTime.label" default="End Time" /></td>
+                            
+                            <td valign="top" class="value"><g:formatDate date="${sessionInstance?.endTime}" /></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="session.room.label" default="Room" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: sessionInstance, field: "room")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="session.presentation.label" default="Presentation" /></td>
+                            
+                            <td valign="top" class="value"><g:link controller="presentation" action="show" id="${sessionInstance?.presentation?.id}">${sessionInstance?.presentation?.encodeAsHTML()}</g:link></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="session.speaker.label" default="Speaker" /></td>
+                            
+                            <td valign="top" class="value"><g:link controller="speaker" action="show" id="${sessionInstance?.speaker?.id}">${sessionInstance?.speaker?.encodeAsHTML()}</g:link></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="session.track.label" default="Track" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: sessionInstance, field: "track")}</td>
+                            
+                        </tr>
+                    
                     </tbody>
                 </table>
             </div>
