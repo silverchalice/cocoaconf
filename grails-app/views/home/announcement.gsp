@@ -24,7 +24,7 @@
 
       <script type="text/javascript">
          $(document).ready(function() {
-            $("#dialog").dialog({ autoOpen: false, width:300, modal: true, title: 'Sign up!', hide: "fade", resizable:false, show: "fade" });
+            $("#dialog").dialog({ autoOpen: false, width:300, modal: true, title: 'Enter your email', hide: "fade", resizable:false, show: "fade" });
 
 
               <g:if test="${flash.message}">
@@ -99,7 +99,7 @@
   <div class="clear">&nbsp;</div>
   <img src="${resource(dir:'images', file:'xcode.png')}"  id="xcode"/>
   <div id="glossy-box"><strong>CocoaConf is a technical conference, pure and simple.</strong> You won't find any vendor booths or vendor keynotes.  You will find in-depth technical sessions delivered by experts on the topics that matter most.
-    Be the first to find out when registration opens. You won't want to miss it. <span id="openDialog">Register</span></div>
+    Be the first to find out when registration opens. You won't want to miss it. <span id="openDialog">Keep me posted!</span></div>
 
 
   <p id="tagcloud">
@@ -148,7 +148,7 @@
                 </table>
 
             <div class="buttons">
-                <span class="button" ><g:submitButton id="register" name="create" class="save" value="Sign Up!" /></span>
+                <span class="button" ><g:submitButton id="register" name="create" class="save" value="Submit" /></span>
             </div>
         </form>
     </div>
