@@ -30,9 +30,9 @@
                         
                             <g:sortableColumn property="room" title="${message(code: 'session.room.label', default: 'Room')}" />
                         
-                            <th><g:message code="session.presentation.label" default="Presentation" /></th>
+                            <th><g:message code="session.conference.label" default="Conference" /></th>
                         
-                            <th><g:message code="session.speaker.label" default="Speaker" /></th>
+                            <th><g:message code="session.presentation.label" default="Presentation" /></th>
                         
                         </tr>
                     </thead>
@@ -48,9 +48,9 @@
                         
                             <td>${fieldValue(bean: sessionInstance, field: "room")}</td>
                         
-                            <td>${fieldValue(bean: sessionInstance, field: "presentation")}</td>
+                            <td>${fieldValue(bean: sessionInstance, field: "conference")}</td>
                         
-                            <td>${fieldValue(bean: sessionInstance, field: "speaker")}</td>
+                            <td>${fieldValue(bean: sessionInstance, field: "presentation")}</td>
                         
                         </tr>
                     </g:each>

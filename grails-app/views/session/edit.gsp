@@ -60,6 +60,15 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                  <label for="conference"><g:message code="session.conference.label" default="Conference" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: sessionInstance, field: 'conference', 'errors')}">
+                                    <g:select name="conference.id" from="${com.cocoaconf.Conference.list()}" optionKey="id" value="${sessionInstance?.conference?.id}"  />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                   <label for="presentation"><g:message code="session.presentation.label" default="Presentation" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: sessionInstance, field: 'presentation', 'errors')}">
