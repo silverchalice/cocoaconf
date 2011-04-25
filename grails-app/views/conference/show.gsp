@@ -103,8 +103,8 @@
                 <table>
 	                <g:each in="${sessions}" var="slot">
 	                    <tr>
-		                    <g:each in="${slot.value}" var="session">
-		                        <td>${session.presentation.title}</td>
+		                    <g:each in="${slot.value.sort{ it.id }}" var="session">
+		                        <td>[${session.id}] ${session.presentation.title}</td>
 		                    </g:each>
 		                </tr>
 		            </g:each>
