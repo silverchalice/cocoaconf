@@ -16,6 +16,11 @@ class SessionController {
     def create = {
         def sessionInstance = new Session()
         sessionInstance.properties = params
+        if(params.conferenceId){
+	        def conference = Conference.get(params.conferenceId)
+	        conference.addToSessions(sessionInstance)
+	        conference.save()
+	    }
         return [sessionInstance: sessionInstance]
     }
 
