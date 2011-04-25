@@ -1,7 +1,5 @@
 package com.cocoaconf
 
-
-
 import grails.test.*
 
 class SessionControllerTests extends ControllerUnitTestCase {

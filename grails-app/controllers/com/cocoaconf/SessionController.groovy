@@ -1,6 +1,5 @@
 package com.cocoaconf
 
-
 class SessionController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
