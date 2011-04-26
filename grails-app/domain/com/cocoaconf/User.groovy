@@ -5,6 +5,13 @@ class User {
 
 	String username
 	String password
+	String email
+	String firstName
+	String lastName
+	String street
+	String city
+	String state
+	String zip
 	boolean enabled
 	boolean accountExpired
 	boolean accountLocked
