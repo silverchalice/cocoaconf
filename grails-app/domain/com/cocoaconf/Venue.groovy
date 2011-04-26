@@ -19,6 +19,7 @@ class Venue {
 	    phone nullable:true
 	    website nullable:true
 	    imagePath nullable:true
+	    address2 nullable:true
 	    
     }
 
