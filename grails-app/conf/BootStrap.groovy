@@ -21,6 +21,8 @@ class BootStrap {
 		
 		    def conference = new Conference(startDate:formatter.parse(sd), endDate:formatter.parse(ed), venue: Venue.get(1), description:"This will be the great conference that you should go to.", city:"Madison", state:"WI", tinyName:"madison2012").save(failOnError:true)
 		
+		    def speaker = new Speaker(firstName:"Hal", lastName:"Kipggey", email:"h@kipggey.com", bio:"I am a speaker.", imagePath:"images/speaker/hk.JPG", blog:"http://blog.kipggey.com/", twitter:"hal_k").save(failOnError:true)
+		
 		}
     }
     def destroy = {
