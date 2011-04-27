@@ -2,7 +2,7 @@ package com.cocoaconf
 
 import grails.test.*
 
-class SessionControllerTests extends ControllerUnitTestCase {
+class RegistrationTests extends GrailsUnitTestCase {
     protected void setUp() {
         super.setUp()
     }

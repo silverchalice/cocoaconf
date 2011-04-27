@@ -51,6 +51,13 @@
                         </tr>
                     
                         <tr class="prop">
+                            <td valign="top" class="name"><g:message code="session.conference.label" default="Conference" /></td>
+                            
+                            <td valign="top" class="value"><g:link controller="conference" action="show" id="${sessionInstance?.conference?.id}">${sessionInstance?.conference?.encodeAsHTML()}</g:link></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
                             <td valign="top" class="name"><g:message code="session.presentation.label" default="Presentation" /></td>
                             
                             <td valign="top" class="value"><g:link controller="presentation" action="show" id="${sessionInstance?.presentation?.id}">${sessionInstance?.presentation?.encodeAsHTML()}</g:link></td>

@@ -56,7 +56,9 @@ environments {
         grails.serverURL = "http://www.changeme.com"
     }
     development {
-        grails.serverURL = "http://localhost:8080/${appName}"
+        grails.paypal.server = "https://www.sandbox.paypal.com/cgi-bin/webscr"
+        grails.paypal.email = "sales@simplycocoa.net"
+        grails.serverURL = "cocoaconf.com"
     }
     test {
         grails.serverURL = "http://localhost:8080/${appName}"
