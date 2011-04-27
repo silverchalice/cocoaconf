@@ -21,7 +21,11 @@ class BootStrap {
 		
 		    def conference = new Conference(startDate:formatter.parse(sd), endDate:formatter.parse(ed), venue: Venue.get(1), description:"This will be the great conference that you should go to.", city:"Madison", state:"WI", tinyName:"madison2012").save(failOnError:true)
 		
-		    def speaker = new Speaker(firstName:"Hal", lastName:"Kipggey", email:"h@kipggey.com", bio:"I am a speaker.", imagePath:"images/speaker/hk.JPG", blog:"http://blog.kipggey.com/", twitter:"hal_k").save(failOnError:true)
+		    def speaker = new Speaker(firstName:"Hal", lastName:"Kipggey", email:"h@kipggey.com", bio:"I be Scottish.", imagePath:"images/speaker/hk.JPG", blog:"http://blog.kipggey.com/", twitter:"hal_k").save(failOnError:true)
+		
+		    def talk1 = new Presentation(speaker:Speaker.get(1), title:"Golden Halls", pAbstract:"This will be the great talk that you should go to.", codePath:"zip/presentation/code/code.zip", slidesPath:"zip/presentation/slide/slides.zip").save()
+		
+   		    def talk2 = new Presentation(speaker:Speaker.get(1), title:"Follow Me Up", pAbstract:"This will be the other great talk that you should go to.", codePath:"zip/presentation/code/code2.zip", slidesPath:"zip/presentation/slide/slides2.zip").save()
 		
 		}
     }
