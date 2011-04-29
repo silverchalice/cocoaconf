@@ -117,7 +117,24 @@
       <span style="font-size:18px; margin-left:70px;">App Store</span>
       <span style="font-size:14px; margin-left:120px;">coredata</span>
 
-      <img id="cloud-bg" src="${resource(dir:'images', file:'cloud.png')}"/>
+      <div id="cloud-bg">
+        <div style="float:left; padding-right:10px; width:200px; font-size:10px">
+            <p><img src="${resource(dir:'images',file:'adamson.png')}"/>
+            Daniel Steinberg - Author of iPad Programming and Cocoa Programming:
+            A Quick-Start Guide for Developers http://dimsumthinking.com/</p>
+        </div>
+        <div style="float:left; padding-right:10px; width:200px; font-size:10px">
+            <img src="${resource(dir:'images',file:'judd.png')}"/>
+            <p>Chris Adamson - Author of Core Audio, and iPhone SDK Development
+            http://www.subfurther.com/blog</p>
+        </div>
+        <div style="float:left; padding-right:10px; width:200px; font-size:10px">
+            <img src="${resource(dir:'images',file:'stein.png')}"/>
+            <p>Christopher Judd - Leader of Columbus iPhone Developer User Group and author of Beginning Groovy and Grails
+            http://www.juddsolutions.com/</p>
+        </div>
+
+      </div>
 
   </p>
 
