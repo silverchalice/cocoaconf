@@ -118,7 +118,7 @@
       <span style="font-size:14px; margin-left:220px;">coredata</span>
 
       <div id="cloud-bg">
-	<div style="clear:both"><h2>Featured Speakers</h2></div>
+	<div style="position:absolute; top:340px;"><h2>Featured Speakers</h2></div>
         <div style="float:left; padding-right:10px; width:200px; font-size:11px">
             <img src="${resource(dir:'images',file:'adamson.png')}"/>
 		 <p><strong>Chris Adamson</strong> - Author of Core Audio, and iPhone SDK Development
