@@ -23,7 +23,7 @@
                 <g:layoutBody />
             </div>
             <div id="footer">
-                <p>Copyright &copy; 2011 Simply Cocoa, LLC. </p>
+                <p>Copyright &copy; 2011 Simply Cocoa, LLC. Site by <a href="http://silver-chalice.com">Silver Chalice</a>, LLC.</p>
             </div>
         </div>
     </body>

@@ -39,7 +39,7 @@
                 $("#dialog").dialog('open');
             });
 
-            $('#openDialog').button();
+
             $('#closeFlash').button();
 
             $('#register').button();
@@ -99,39 +99,42 @@
   <div class="clear">&nbsp;</div>
   <img src="${resource(dir:'images', file:'xcode.png')}"  id="xcode"/>
   <div id="glossy-box"><strong>CocoaConf is a technical conference, pure and simple.</strong> You won't find any vendor booths or vendor keynotes.  You will find in-depth technical sessions delivered by experts on the topics that matter most.
-    Be the first to find out when registration opens. You won't want to miss it. <span id="openDialog">Keep me posted!</span></div>
+    Be the first to find out when registration opens. You won't want to miss it. <a id="openDialog" href="javascript:openDialog();" style="font-weight:bold;">Keep me posted!</a></div>
 
 
   <p id="tagcloud">
-      <span style="font-size:16px; margin-right:75px;">Cocoa Touch</span>
-      <span style="font-size:18px; margin-right:40px;">iTunes</span>
-      <span style="font-size:18px; margin-right:60px;">XCode</span>
+      <span style="font-size:16px; margin-right:100px;">Cocoa Touch</span>
+      <span style="font-size:18px; margin-right:170px;">iTunes</span>
+      <span style="font-size:18px; margin-right:100px;">XCode</span>
       <span style="font-size:16px;">coreaudio</span>
        <br/>
-      <span style="font-size:32px; margin-left:180px;">iOS</span>
-      <span style="font-size:32px; margin-left:145px;">OSX</span>
+      <span style="font-size:32px; margin-left:185px;">iOS</span>
+      <span style="font-size:32px; margin-left:165px;">OSX</span>
 
 
       <br/>
       <span style="font-size:18px; margin-left:20px;">Objective C</span>
-      <span style="font-size:18px; margin-left:70px;">App Store</span>
-      <span style="font-size:14px; margin-left:120px;">coredata</span>
+      <span style="font-size:18px; margin-left:90px;">App Store</span>
+      <span style="font-size:14px; margin-left:220px;">coredata</span>
 
       <div id="cloud-bg">
-        <div style="float:left; padding-right:10px; width:200px; font-size:10px">
-            <p><img src="${resource(dir:'images',file:'adamson.png')}"/>
-            Daniel Steinberg - Author of iPad Programming and Cocoa Programming:
-            A Quick-Start Guide for Developers http://dimsumthinking.com/</p>
+	<div style="clear:both"><h2>Featured Speakers</h2></div>
+        <div style="float:left; padding-right:10px; width:200px; font-size:11px">
+            <img src="${resource(dir:'images',file:'adamson.png')}"/>
+		 <p><strong>Chris Adamson</strong> - Author of Core Audio, and iPhone SDK Development
+            <a href="http://www.subfurther.com/blog">http://www.subfurther.com/blog</a></p>
+            
         </div>
-        <div style="float:left; padding-right:10px; width:200px; font-size:10px">
+        <div style="float:left; padding-right:10px; width:200px; font-size:11px">
             <img src="${resource(dir:'images',file:'judd.png')}"/>
-            <p>Chris Adamson - Author of Core Audio, and iPhone SDK Development
-            http://www.subfurther.com/blog</p>
+		<p><strong>Christopher Judd</strong> - Leader of Columbus iPhone Developer User Group and author of Beginning Groovy and Grails
+            <a href="http://www.juddsolutions.com">http://www.juddsolutions.com</a></p>
+           
         </div>
-        <div style="float:left; padding-right:10px; width:200px; font-size:10px">
+        <div style="float:left; padding-right:10px; width:200px; font-size:11px">
             <img src="${resource(dir:'images',file:'stein.png')}"/>
-            <p>Christopher Judd - Leader of Columbus iPhone Developer User Group and author of Beginning Groovy and Grails
-            http://www.juddsolutions.com/</p>
+            <p><strong>Daniel Steinberg</strong> - Author of iPad Programming and Cocoa Programming:
+            A Quick-Start Guide for Developers <a href="http://dimsumthinking.com">http://dimsumthinking.com</a></p>
         </div>
 
       </div>

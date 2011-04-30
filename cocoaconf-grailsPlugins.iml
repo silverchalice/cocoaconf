@@ -6,6 +6,7 @@
         <webroots>
           <root url="file://$USER_HOME$/.grails/1.3.7/projects/cocoaconf/plugins/jquery-1.5.2/web-app" relative="/" />
           <root url="file://$USER_HOME$/.grails/1.3.7/projects/cocoaconf/plugins/jquery-ui-1.8.10/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/1.3.7/projects/cocoaconf/plugins/paypal-0.6.2/grails-app/views" relative="/" />
         </webroots>
         <sourceRoots />
       </configuration>
@@ -31,6 +32,15 @@
       <excludeFolder url="file://$USER_HOME$/.grails/1.3.7/projects/cocoaconf/plugins/jquery-ui-1.8.10/target/classes" />
       <excludeFolder url="file://$USER_HOME$/.grails/1.3.7/projects/cocoaconf/plugins/jquery-ui-1.8.10/target/test-classes" />
       <excludeFolder url="file://$USER_HOME$/.grails/1.3.7/projects/cocoaconf/plugins/jquery-ui-1.8.10/web-app/plugins" />
+    </content>
+    <content url="file://$USER_HOME$/.grails/1.3.7/projects/cocoaconf/plugins/paypal-0.6.2">
+      <sourceFolder url="file://$USER_HOME$/.grails/1.3.7/projects/cocoaconf/plugins/paypal-0.6.2/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.3.7/projects/cocoaconf/plugins/paypal-0.6.2/grails-app/controllers" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.3.7/projects/cocoaconf/plugins/paypal-0.6.2/grails-app/domain" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/.grails/1.3.7/projects/cocoaconf/plugins/paypal-0.6.2/grails-app/taglib" isTestSource="false" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.3.7/projects/cocoaconf/plugins/paypal-0.6.2/target/classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.3.7/projects/cocoaconf/plugins/paypal-0.6.2/target/test-classes" />
+      <excludeFolder url="file://$USER_HOME$/.grails/1.3.7/projects/cocoaconf/plugins/paypal-0.6.2/web-app/plugins" />
     </content>
     <content url="file://$USER_HOME$/.grails/1.3.7/projects/cocoaconf/plugins/spring-security-core-1.1.2">
       <sourceFolder url="file://$USER_HOME$/.grails/1.3.7/projects/cocoaconf/plugins/spring-security-core-1.1.2/src/java" isTestSource="false" />
