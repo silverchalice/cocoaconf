@@ -10,6 +10,10 @@ class Speaker {
 	String imagePath
 	String blog
 	String twitter
+	
+	static belongsTo = Conference
+
+    static hasMany = [conferences:Conference, presentations:Presentation]
 
     static constraints = {
 	    firstName nullable:false
