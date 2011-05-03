@@ -42,7 +42,7 @@ class ConferenceController {
         else {
 	        def sessions = conferenceInstance.sessions.groupBy{it.startTime}
 	        println "the sessions for ${conferenceInstance.tinyName} were: " + sessions
-            [conferenceInstance: conferenceInstance, sessions: sessions]
+            [conferenceInstance: conferenceInstance, sessions: sessions.sort()]
         }
     }
 
