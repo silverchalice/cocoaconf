@@ -23,7 +23,7 @@
                 <g:renderErrors bean="${speakerInstance}" as="list" />
             </div>
             </g:hasErrors>
-            <g:form action="save" >
+            <g:form action="save" method="post" enctype="multipart/form-data">
                 <div class="dialog">
                     <table>
                         <tbody>
@@ -66,10 +66,10 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="imagePath"><g:message code="speaker.imagePath.label" default="Image Path" /></label>
+                                    <label for="image">Image</label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: speakerInstance, field: 'imagePath', 'errors')}">
-                                    <g:textField name="imagePath" value="${speakerInstance?.imagePath}" />
+                                <td valign="top">
+                                    <input type="file" name="image" />
                                 </td>
                             </tr>
                         
