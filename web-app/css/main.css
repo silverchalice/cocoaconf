@@ -271,3 +271,15 @@ th.desc a {
     background: transparent url(../images/skin/database_save.png) 5px 50% no-repeat;
     padding-left: 28px;
 }
+
+.speakerBox {
+	width:500px;
+	height:130px;
+	padding:10px 10px;
+	background-color:#E8E8E8;
+	margin:15px 0px 0px;
+}
+
+.speakerPic {
+    margin-right:10px;
+}
