@@ -14,6 +14,11 @@ class SpeakerController {
         [speakerInstanceList: Speaker.list(params), speakerInstanceTotal: Speaker.count()]
     }
 
+    def speakers = {
+        params.max = Math.min(params.max ? params.int('max') : 10, 100)
+        [speakerInstanceList: Speaker.list(params), speakerInstanceTotal: Speaker.count()]
+    }
+
     def create = {
         def speakerInstance = new Speaker()
         speakerInstance.properties = params
