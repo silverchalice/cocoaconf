@@ -21,7 +21,7 @@ body {
 }
 
 #page {
-    width:1000px;
+    width:800px;
     margin:0 auto;
     background: white url(../images/page-bg.png) repeat-y right;
 }
@@ -29,7 +29,7 @@ body {
 
 #page-header {
     margin: 0 auto;
-    width:1000px;
+    width:800px;
     height:35px;
     background: white url(../images/tl-corner.png) no-repeat;
 }
@@ -41,14 +41,10 @@ body {
 
 #logo {
     background: white url(../images/page-bg.png) repeat-y right;
-    width:1000px;
+    width:800px;
     border: 0;
     margin-bottom:0;
     padding-bottom:0;
-}
-
-#logo img {
-    margin-left: 100px;
 }
 
 #headline {
@@ -65,7 +61,7 @@ body {
 #content {
     background: url(../images/page-bg.png) repeat-y right;
     min-height:950px;
-    width:900px;
+    width:700px;
     border:0;
     padding-top:0;
     padding-left:50px;
@@ -87,7 +83,7 @@ body {
     position: relative;
     right: 640px;
     top: 8px;
-    width: 1600px;
+    width: 1400px;
 }
 
 #footer a {

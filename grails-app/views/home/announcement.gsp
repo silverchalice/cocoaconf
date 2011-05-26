@@ -10,7 +10,7 @@
 <html>
   <head>
       <title>Cocoaconf | iOS/OS X Developer Conference | Columbus, Ohio | August 12 & 13</title>
-      <meta name="layout" content="public" />
+      <meta name="layout" content="announcement" />
 
       <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
 
