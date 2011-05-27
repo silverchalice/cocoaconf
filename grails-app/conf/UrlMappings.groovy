@@ -12,7 +12,7 @@ class UrlMappings {
 	        controller = "conference"
 	        action = "show"
 	    }
-
+	    "/speakers"(controller:'speaker', action:'speakers')
 		"/"(controller:'home', action:"announcement")
 		"500"(view:'/error')
 	}
