@@ -9,8 +9,13 @@ class SessionController {
     }
 
     def list = {
-        params.max = Math.min(params.max ? params.int('max') : 10, 100)
-        [sessionInstanceList: Session.list(params), sessionInstanceTotal: Session.count()]
+	    def conferenceInstance = Conference.findByTinyName(params.tinyName)
+	    if(!conferenceInstance){
+            redirect(uri:'/')
+		} else {
+            params.max = Math.min(params.max ? params.int('max') : 10, 100)
+            [sessionInstanceList: Session.list(params), sessionInstanceTotal: Session.count()]
+		}
     }
 
     def create = {
