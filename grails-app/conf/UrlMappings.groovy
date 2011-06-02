@@ -12,6 +12,10 @@ class UrlMappings {
 	        controller = "conference"
 	        action = "show"
 	    }
+	    name sessionList: "/conf/$tinyName/sessions"{
+	        controller = "session"
+	        action = "list"
+	    }
 	    "/speakers"(controller:'speaker', action:'speakers')
 		"/"(controller:'home', action:"announcement")
 		"500"(view:'/error')
