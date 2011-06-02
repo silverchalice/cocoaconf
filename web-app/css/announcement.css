@@ -71,8 +71,13 @@ body {
 }
 
 #nav a:hover  {
-     background-image:url(../images/bar-bg-l.png);
+     background-image:url(../images/bar-bg-b.png);
 }
+
+
+#nav a.registerNav {
+    /*background: url(../images/bar-bg-b.png) -200px 0;
+*/}
 
 #content {
     background: url(../images/page-bg.png) repeat-y right;

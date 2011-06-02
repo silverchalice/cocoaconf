@@ -7,6 +7,6 @@ class HomeController {
 
     def announcement = {}
 
-    def test = {}
+    def register = {}
 
 }

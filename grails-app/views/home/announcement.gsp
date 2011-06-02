@@ -52,7 +52,7 @@
             });
 
 
-            $('#closeFlash').button();
+            $('.button').button();
 
             $('#dialogButton').button();
 
@@ -72,19 +72,13 @@
               border:0;
           }
 
-          #register {
+          .button {
               font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
               font-size:17px;
-              margin-left:75px;
+              margin-left:150px;
               margin-top:15px;
           }
 
-          #openDialog {
-              font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-              font-size:15px;
-              margin-left:25px;
-              margin-top:5px;
-          }
 
           #closeFlash {
               font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
@@ -113,12 +107,12 @@
   <p>
     <h3 style="font-size:13px;">Columbus, OH | August 12-13</h3>
   </p>
-  <span class="openDialog" style="font-weight:bold; font-size:17px;" id="dialogButton">Don't miss out!</span>
+  <g:link controller="home" action="register" class="button" style="font-weight:bold;">Super Early Bird Registration open now!</g:link>
 
   <div class="clear">&nbsp;</div>
   <img src="${resource(dir:'images', file:'xcode.png')}"  id="xcode"/>
-  <div id="glossy-box"><strong>Cocoaconf is a technical conference, pure and simple.</strong> You won't find any vendor booths or vendor keynotes.  You will find in-depth technical sessions delivered by experts on the topics that matter most.
-    Be the first to find out when registration opens. You won't want to miss it. <a class="openDialog" id="openDialog" href="javascript:openDialog();" style="font-weight:bold;">Keep me posted!</a></div>
+  <div id="glossy-box"><strong>Cocoaconf is a technical conference, pure and simple.</strong> <p>You won't find any vendor booths or vendor keynotes.  You will find in-depth technical sessions delivered by experts on the topics that matter most.
+    Be the first to find out when registration opens. <strong>You won't want to miss it</strong>.</p></div>
 
 
   <p id="tagcloud">
