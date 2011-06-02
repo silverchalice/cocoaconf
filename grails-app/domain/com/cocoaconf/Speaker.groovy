@@ -25,6 +25,11 @@ class Speaker {
 	    twitter nullable:true
     }
 
+    static mapping = {
+        sort 'presentations'
+        order 'asc'
+    }
+
     String toString(){ "${firstName} ${lastName}" }
 
 }

@@ -77,11 +77,14 @@ body {
 
 #nav a.registerNav {
     background: url(../images/bar-bg-b.png) -330px 0;
+    font-weight: bold;
 }
 
 #nav a.home {
     width:130px;
 }
+
+
 
 #content {
     background: url(../images/page-bg.png) repeat-y right;

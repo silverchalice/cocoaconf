@@ -8,6 +8,11 @@ class SessionController {
         redirect(action: "list", params: params)
     }
 
+    def sessions = {
+       params.max = Math.min(params.max ? params.int('max') : 10, 100)
+       [presentationInstanceList: Presentation.list(params), presentationInstanceTotal: Presentation.count()]
+    }
+
     def list = {
 	    def conferenceInstance = Conference.findByTinyName(params.tinyName)
 	    if(!conferenceInstance){

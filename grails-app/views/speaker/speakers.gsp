@@ -18,11 +18,11 @@
                 float:right;
             }
 
-            div.even div {
+            div.even div.bio {
                 float:left;
             }
 
-            div.odd div {
+            div.odd div.bio {
                 float:right;
             }
 
@@ -34,21 +34,21 @@
         </div>
         <div class="body">
 
-            <h1><g:message code="default.list.label" args="[entityName]" /></h1>
-            <g:if test="${flash.message}">
-            <div class="message">${flash.message}</div>
-            </g:if>
+            <h1>Our Speakers</h1>
+            <p>We've worked hard to bring you a...</p>
+
             <div class="list">
                 <g:each in="${speakerInstanceList}" status="i" var="speaker">
-                    <div class="${(i % 2) == 0 ? 'odd' : 'even'}" style="height:160px;">
+                    <div class="${(i % 2) == 0 ? 'odd' : 'even'}" style="min-height:160px; margin-bottom:10px">
 
-                        <img class="speakerPic" src="${request.contextPath}/${speaker?.imagePath}"/>
+                        <img class="speakerPic" style=" margin-top:40px; " src="${request.contextPath}/${speaker?.imagePath}"/>
 
-                         <div style="height:160px;  width:700px">
+                         <div class="bio" style="min-height:160px; width:530px">
                              <h3>${speaker}</h3>
                              ${speaker.bio}<br/>
-                             <ul>
-                            <li>Sessions:</li>
+
+                             <ul style="display: block; background-image: url(${resource(dir:'images', file:'session-bg.png')}); height:140px; background-repeat: no-repeat; padding: 10px 0 0 40px">
+                           <h3>Presentations:</h3>
                          <g:each in="${speaker.presentations}" var="presentation">
                             <li>${presentation.title}</li>
 
@@ -56,8 +56,9 @@
                          </g:each>
                         </ul>
                     </div>
+                        <div style="clear:both">&nbsp;</div>
 	                </div>
-                     <div style="clear:both"></div>
+
                 </g:each>
             </div>
         </div>
