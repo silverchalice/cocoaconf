@@ -26,6 +26,7 @@
             <div id="logo"><a href="${request.contextPath}/"><img src="${resource(dir:'images',file:'cc-logo.png')}" style="margin-bottom:20px" alt="Simply Cocoa" border="0" /></a>
             </div>
             <div id="nav" style="background-image: url(${resource(dir:'images', file:'bar-bg.png')}); height:40px; width:798px">
+                <g:link class="home" controller="home" action="about">About Cocoaconf</g:link>
                 <g:link controller="speaker" action="speakers">Speakers</g:link>
                 <g:link controller="session" action="list" style="background-position: -101px 0;">Sessions</g:link>
                 <g:link controller="home" action="register" class="registerNav">Register</g:link>

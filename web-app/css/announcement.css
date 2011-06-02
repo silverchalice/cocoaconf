@@ -76,8 +76,12 @@ body {
 
 
 #nav a.registerNav {
-    /*background: url(../images/bar-bg-b.png) -200px 0;
-*/}
+    background: url(../images/bar-bg-b.png) -330px 0;
+}
+
+#nav a.home {
+    width:130px;
+}
 
 #content {
     background: url(../images/page-bg.png) repeat-y right;
