@@ -110,7 +110,7 @@ class ConferenceController {
 	    if(!conferenceInstance){
 		    flash.message = "Sorry. We couldn't find that conference."
 	    } else {
-		    def sessions = conferenceInstance.sessions.sort{ it.presentation.title }
+		    return [sessions:conferenceInstance.sessions.sort{ it.presentation.title }]
 	    }
     }
 
