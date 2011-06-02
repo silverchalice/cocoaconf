@@ -27,7 +27,8 @@
             </div>
             <div id="nav" style="background-image: url(${resource(dir:'images', file:'bar-bg.png')}); height:40px; width:798px">
                 <g:link controller="speaker" action="speakers">Speakers</g:link>
-                <g:link controller="session" action="list" style="background-position: -100px 0;">Sessions</g:link>
+                <g:link controller="session" action="list" style="background-position: -101px 0;">Sessions</g:link>
+                <g:link controller="home" action="register" class="registerNav">Register</g:link>
 
             </div>
             <div id="content">
