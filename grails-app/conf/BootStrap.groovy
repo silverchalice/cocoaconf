@@ -44,6 +44,8 @@ class BootStrap {
 
                 def session4 = new Session(conference:Conference.get(1), presentation:Presentation.get(4), startTime: formatter.parse(ed), endTime:formatter.parse(ed), room:"Inspiration", speaker:Speaker.get(1), track:"2").save(failOnError:true)
 
+//Come in and know me better. Man!
+
             }
 
 		}
