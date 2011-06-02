@@ -58,9 +58,25 @@ body {
 
 }
 
+#nav a {
+    color:white;
+    float:left;
+    text-decoration: none;
+    border-right: 1px solid gray;
+    line-height:40px;
+    height:40px;
+    width:100px;
+    padding-left:20px;
+    display: block;
+}
+
+#nav a:hover  {
+     background-image:url(../images/bar-bg-l.png);
+}
+
 #content {
     background: url(../images/page-bg.png) repeat-y right;
-    min-height:950px;
+    min-height:1000px;
     width:700px;
     border:0;
     padding-top:0;
@@ -81,7 +97,7 @@ body {
     font-weight: bold;
     height: 20px;
     position: relative;
-    right: 640px;
+    right: 500px;
     top: 8px;
     width: 1400px;
 }
