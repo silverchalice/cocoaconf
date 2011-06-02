@@ -102,4 +102,17 @@ class ConferenceController {
             redirect(action: "list")
         }
     }
+
+    def sessions = {
+	    def conferenceInstance
+		if(params.tinyName){ conferenceInstance = Conference.findByTinyName(params.tinyName) }
+	    else { conferenceInstance = Conference.get(params.id) }
+	    if(!conferenceInstance){
+		    flash.message = "Sorry. We couldn't find that conference."
+	    } else {
+		    return [sessions:conferenceInstance.sessions.sort{ it.presentation.title }]
+	    }
+    }
+
+
 }
