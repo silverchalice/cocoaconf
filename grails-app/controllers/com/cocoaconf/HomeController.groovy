@@ -3,7 +3,9 @@ package com.cocoaconf
 
 class HomeController {
 
-    def index = { }
+    def index = {
+	    redirect(action:'announcement')
+	}
 
     def announcement = {}
 
