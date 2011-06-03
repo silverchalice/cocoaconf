@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="public" />
         <g:set var="entityName" value="${message(code: 'speaker.label', default: 'Speaker')}" />
-        <title><g:message code="default.list.label" args="[entityName]" /></title>
+        <title>Cocoaconf | Sessions</title>
 
 
         <style type="text/css">

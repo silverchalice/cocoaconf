@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="public" />
         <g:set var="entityName" value="${message(code: 'speaker.label', default: 'Speaker')}" />
-        <title><g:message code="default.list.label" args="[entityName]" /></title>
+        <title>Cocoaconf | Our Speakers</title>
 
 
         <style type="text/css">
@@ -47,7 +47,7 @@
                              <h3>${speaker}</h3>
                              ${speaker.bio}<br/>
 
-                             <ul style="display: block; background-image: url(${resource(dir:'images', file:'session-bg.png')}); height:140px; background-repeat: no-repeat; padding: 10px 0 0 40px">
+                             <ul style="display: block; background-image: url(${resource(dir:'images', file:'session-bg.png')}); height:140px; width:420px; background-repeat: no-repeat; padding: 1px 80px 0 40px">
                            <h3>Presentations:</h3>
                          <g:each in="${speaker.presentations}" var="presentation">
                             <li>${presentation.title}</li>
