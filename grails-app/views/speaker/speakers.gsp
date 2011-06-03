@@ -35,7 +35,7 @@
         <div class="body">
 
             <h1>Our Speakers</h1>
-            <p>We've worked hard to bring you a...</p>
+            <p>Cocoaconf speakers include well known trainers, authors, and professional iOS and OS X developers.</p>
 
             <div class="list">
                 <g:each in="${speakerInstanceList}" status="i" var="speaker">
