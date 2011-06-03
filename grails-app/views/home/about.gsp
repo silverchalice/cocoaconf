@@ -48,7 +48,7 @@
   <body>
    <h1>Coming to Columbus, Ohio!</h1>
 
-   <p>We are excited to introduce the first Cocoaconf iPhone, iPad and Mac developer's conference, beginning August 3-4 in Columbus Ohio. We're working hard to bring you a first class line up of speakers, authors and professional iOS/OS X developers, delivering quality content without the noise of vendors halls and salespeople. This is a technical conference, pure and simple.   </p>
+   <p>We are excited to introduce the first Cocoaconf iPhone, iPad and Mac developer's conference, beginning August 3-4 in Columbus Ohio. We're working hard to bring you a first class line up of speakers, authors and professional iOS/OS X developers, delivering quality content without the noise of a vendor hall and salespeople. This is a technical conference, pure and simple.   </p>
 
    <h3>Super Early Bird registration is now open!</h3>
   <p>You can save 50% by <g:link controller="home" action="register">registering</g:link> before June 22!</p>

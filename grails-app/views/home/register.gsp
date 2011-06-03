@@ -103,7 +103,7 @@
   <body>
     <h1>Register today for Super Early Bird savings!</h1>
   <p>
-      We're still getting the details worked out, but don't let that stop you from taking advantage of this great deal!  Starting today till June 22, you can save 50% off the standard registration fee. Don't miss it!
+      We're still getting the details worked out, but don't let that stop you from taking advantage of this great deal!  Until June 22, you can save 50% off the standard registration fee. Don't miss it!
   </p>
   <p>
       Can't wait to see you there!
