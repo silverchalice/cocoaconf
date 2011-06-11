@@ -10,7 +10,7 @@
 <html>
   <head>
       <title>Cocoaconf | iOS/OS X Developer Conference | Columbus, Ohio | August 12 & 13</title>
-      <meta name="layout" content="announcement" />
+      <meta name="layout" content="public" />
 
       <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
 
@@ -105,6 +105,8 @@
   <p>
       We're still getting the details worked out, but don't let that stop you from taking advantage of this great deal!  Until June 22, you can save 50% off the standard registration fee. Don't miss it!
   </p>
+  <h2>What you get</h2>
+  <p>Registration includes two days packed with technical sessions and interesting keynotes (no sales pitches), all meals and snacks, and some cool swag so you can show all your friends and co-workers that you were there!</p>
   <p>
       Can't wait to see you there!
   </p>

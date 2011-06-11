@@ -41,20 +41,15 @@
                 <g:each in="${speakerInstanceList}" status="i" var="speaker">
                     <div class="${(i % 2) == 0 ? 'odd' : 'even'}" style="min-height:160px; margin-bottom:10px">
 
-                        <img class="speakerPic" style=" margin-top:40px; " src="${request.contextPath}/${speaker?.imagePath}"/>
+                        <g:if test="${speaker?.imagePath}">
+                             <img class="speakerPic" style=" margin-top:40px; " src="${request.contextPath}/${speaker?.imagePath}"/>
+                        </g:if>
+
 
                          <div class="bio" style="min-height:160px; width:530px">
                              <h3>${speaker}</h3>
                              ${speaker.bio}<br/>
 
-                             <ul style="display: block; background-image: url(${resource(dir:'images', file:'session-bg.png')}); height:140px; width:420px; background-repeat: no-repeat; padding: 1px 80px 0 40px">
-                           <h3>Presentations:</h3>
-                         <g:each in="${speaker.presentations}" var="presentation">
-                            <li>${presentation.title}</li>
-
-
-                         </g:each>
-                        </ul>
                     </div>
                         <div style="clear:both">&nbsp;</div>
 	                </div>
