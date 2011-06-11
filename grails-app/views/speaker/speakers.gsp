@@ -9,6 +9,11 @@
 
 
         <style type="text/css">
+            
+            div.odd {
+                background-image: url("${resource(dir:'images', file:'background.png')}")
+            }
+            
             div.odd img {
                 float: left;
             }
