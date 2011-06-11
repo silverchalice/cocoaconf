@@ -48,12 +48,12 @@
                     <div class="${(i % 2) == 0 ? 'odd' : 'even'}" style="min-height:160px; margin-bottom:10px">
 
                         <g:if test="${speaker?.imagePath}">
-                             <img class="speakerPic" style=" margin-top:40px; " src="${request.contextPath}/${speaker?.imagePath}"/>
+                             <g:link controller="speaker" action="viewDetails" id="${speaker?.id}"><img class="speakerPic" style=" margin-top:40px; " src="${request.contextPath}/${speaker?.imagePath}"/></g:link>
                         </g:if>
 
 
                          <div class="bio" style="min-height:160px; width:530px">
-                             <h3>${speaker}</h3>
+                             <h3>${speaker} <span style font-s><g:link controller="speaker" action="viewDetails" id="${speaker?.id}">View Details</g:link></span></h3>
                              ${speaker.bio}<br/>
 
                     </div>
