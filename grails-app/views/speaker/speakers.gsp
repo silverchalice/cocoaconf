@@ -11,7 +11,8 @@
         <style type="text/css">
             
             div.odd {
-                background-image: url("${resource(dir:'images', file:'background.png')}")
+                background-image: url("${resource(dir:'images', file:'background.png')}") ;
+                border:  1px solid black;
             }
             
             div.odd img {
