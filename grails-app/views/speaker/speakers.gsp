@@ -12,7 +12,7 @@
             
             div.odd {
                 background-image: url("${resource(dir:'images', file:'background.png')}") ;
-                border:  1px solid black;
+                border:  1px solid gray;
             }
             
             div.odd img {
