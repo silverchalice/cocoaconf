@@ -86,11 +86,6 @@
               margin-left:25px;
               margin-top:5px;
           }
-
-        html {
-            font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-            font-size: 14px;
-        }
       </style>
   </head>
 

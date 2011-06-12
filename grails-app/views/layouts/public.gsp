@@ -26,10 +26,11 @@
             <div id="logo"><a href="${request.contextPath}/"><img src="${resource(dir:'images',file:'cc-logo.png')}" style="margin-bottom:20px" alt="Simply Cocoa" border="0" /></a>
             </div>
             <div id="nav" style="background-image: url(${resource(dir:'images', file:'bar-bg.png')}); height:40px; width:798px">
-                <g:link class="home" controller="home" action="about">About Cocoaconf</g:link>
-                <g:link controller="speaker" action="speakers" style="background-position: -130px 0;">Speakers</g:link>
-                <g:link controller="session" action="sessions" style="background-position: -230px 0;">Sessions</g:link>
-                <g:link controller="home" action="register" style="background-position: -330px 0;">Register</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'about' ? 'current' : ''}" style="width:130px;" controller="home" action="about">About Cocoaconf</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}" controller="speaker" action="speakers" style="background-position: -130px 0;">Speakers</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'sessions' ? 'current' : ''}" controller="session" action="sessions" style="background-position: -230px 0;">Sessions</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'register' ? 'current' : ''}" controller="home" action="register" style="background-position: -330px 0;">Register</g:link>
+
 
             </div>
             <div id="content">

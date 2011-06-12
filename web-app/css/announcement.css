@@ -1,7 +1,8 @@
 html {
     background: url(../images/background.png) repeat;
-    font-family:"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+    font-family:'Helvetica', Arial,clean,sans-serif;
     font-size:14px;
+    line-height: 18px;
     font-color: #232323;
 }
 
@@ -9,6 +10,7 @@ h2 {
     color:#232323;
     margin:0;
 }
+
 
 a {
     color:black;
@@ -18,6 +20,10 @@ a {
 body {
     margin:0;
     padding:0;
+}
+
+.address {
+    border-bottom: 1px dotted gray;
 }
 
 #page {
@@ -74,10 +80,8 @@ body {
      background-image:url(../images/bar-bg-b.png);
 }
 
-
-#nav a.registerNav {
-    background: url(../images/bar-bg-b.png) -330px 0;
-    font-weight: bold;
+#nav a.current  {
+     background-image:url(../images/bar-bg-b.png);
 }
 
 #nav a.home {

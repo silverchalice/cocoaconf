@@ -11,7 +11,7 @@
   <head>
       <title>Cocoaconf | iOS/OS X Developer Conference | Columbus, Ohio | August 12 & 13</title>
       <meta name="layout" content="public" />
-
+        <meta name="tab" content="register" />
       <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
 
       <script src="${resource(dir:'js', file:'jquery-1.5.1.min.js')}" type="text/javascript"></script>
@@ -92,11 +92,6 @@
               margin-left:25px;
               margin-top:5px;
           }
-
-        html {
-            font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-            font-size: 14px;
-        }
       </style>
   </head>
 

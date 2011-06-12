@@ -62,7 +62,7 @@ class SpeakerController {
             redirect(action: "speakers")
         }
         else {
-            [speakerInstance: speakerInstance]
+            [speaker: speakerInstance]
         }
     }
 
