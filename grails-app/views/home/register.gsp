@@ -19,20 +19,20 @@
       <script src="${resource(dir:'js', file:'jquery-ui-1.8.11.custom.min.js')}" type="text/javascript"></script>
       <script src="${resource(dir:'js', file:'jquery.validate.min.js')}" type="text/javascript"></script>
 
-	<script type="text/javascript">
+<script type="text/javascript">
 
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-23159724-1']);
-	  _gaq.push(['_trackPageview']);
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23131242-2']);
+  _gaq.push(['_setDomainName', '.cocoaconf.com']);
+  _gaq.push(['_trackPageview']);
 
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
-	</script>
-
+</script>
 
       <script type="text/javascript">
          $(document).ready(function() {
@@ -96,12 +96,13 @@
   </head>
 
   <body>
-    <h1>Register today for Super Early Bird savings!</h1>
+    <h1>Register today for Early Bird savings!</h1>
   <p>
-      We're still getting the details worked out, but don't let that stop you from taking advantage of this great deal!  Until June 22, you can save 50% off the standard registration fee. Don't miss it!
+      We're still getting the details worked out, but don't let that stop you from taking advantage of this great deal!  Before <strong>July 22, you can save 30% off the standard registration fee</strong>. Don't miss it!
   </p>
   <h2>What you get</h2>
   <p>Registration includes two days packed with technical sessions and interesting keynotes (no sales pitches), all meals and snacks, and some cool swag so you can show all your friends and co-workers that you were there!</p>
+  <p>Also included is a <strong>full-day hands on iOS tutorial and workshop!</strong></p>
   <p>
       Can't wait to see you there!
   </p>

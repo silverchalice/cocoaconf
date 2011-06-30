@@ -15,8 +15,7 @@ class SpeakerController {
     }
 
     def speakers = {
-        params.max = Math.min(params.max ? params.int('max') : 10, 100)
-        [speakerInstanceList: Speaker.list(params), speakerInstanceTotal: Speaker.count()]
+        [speakerInstanceList: Speaker.list(), speakerInstanceTotal: Speaker.count()]
     }
 
     def create = {
@@ -90,6 +89,16 @@ class SpeakerController {
                 }
             }
             speakerInstance.properties = params
+            def image = request.getFile('image')
+            if(!image.empty){
+                def webRootDir = servletContext.getRealPath("/")
+                def speakerDir = new File(webRootDir, "images/speaker/${speakerInstance.firstName.toLowerCase().replaceAll(" ", "-")}-${speakerInstance.lastName.toLowerCase().replaceAll(" ", "-")}")
+                speakerDir.mkdirs()
+                image.transferTo( new File(speakerDir, image.originalFilename))
+                speakerInstance.imagePath = "images/speaker/" + speakerInstance.firstName.toLowerCase().replaceAll(" ", "-") + "-" + speakerInstance.lastName.toLowerCase().replaceAll(" ", "-") + "/" + image.originalFilename // don't look too closely
+            }
+
+
             if (!speakerInstance.hasErrors() && speakerInstance.save(flush: true)) {
                 flash.message = "${message(code: 'default.updated.message', args: [message(code: 'speaker.label', default: 'Speaker'), speakerInstance.id])}"
                 redirect(action: "show", id: speakerInstance.id)

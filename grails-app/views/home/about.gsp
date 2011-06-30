@@ -49,8 +49,8 @@
 
    <p>We are excited to introduce the first Cocoaconf iPhone, iPad and Mac developer's conference, beginning August 12-13 in Columbus Ohio. We're working hard to bring you a first class line up of speakers, authors and professional iOS/OS X developers, delivering quality content without the noise of a vendor hall and salespeople. This is a technical conference, pure and simple.   </p>
 
-   <h3>Super Early Bird registration is now open!</h3>
-  <p>You can save 50% by <g:link controller="home" action="register" style="color:#2ab0e2;">registering</g:link> before June 22!</p>
+   <h3>Early Bird registration is now open!</h3>
+  <p>You can save 30% by <g:link controller="home" action="register" style="color:#2ab0e2;">registering</g:link> before July 15!</p>
   <h2>Location & Venue</h2>
   <p><img src="${resource(dir:'images', file:'crown-1.png')}" style="float:left; margin:0 10px 10px 0" />Cocoaconf will be held at the beautiful <a href="http://crownplaza.com">Crown Place</a> in Dublin Ohio. They're offering a special rate of <strong>$99 per night for CocoaConf attendees</strong>. Just call <span class="address">(614) 764-2200</span> and tell them that you are attending CocoaConf.</p>
 

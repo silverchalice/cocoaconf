@@ -19,19 +19,20 @@
       <script src="${resource(dir:'js', file:'jquery-ui-1.8.11.custom.min.js')}" type="text/javascript"></script>
       <script src="${resource(dir:'js', file:'jquery.validate.min.js')}" type="text/javascript"></script>
 
-	<script type="text/javascript">
+<script type="text/javascript">
 
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-23159724-1']);
-	  _gaq.push(['_trackPageview']);
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23131242-2']);
+  _gaq.push(['_setDomainName', '.cocoaconf.com']);
+  _gaq.push(['_trackPageview']);
 
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
-	</script>
+</script>
 
 
       <script type="text/javascript">
@@ -102,25 +103,29 @@
   <p>
     <h3 style="font-size:13px;">Columbus, OH | August 12-13</h3>
   </p>
-  <g:link controller="home" action="register" class="button" style="font-weight:bold;">Super Early Bird Registration open now!</g:link>
+  <g:link controller="home" action="register" class="button" style="font-weight:bold;">Early Bird Registration open now!</g:link>
 
   <div class="clear">&nbsp;</div>
   <img src="${resource(dir:'images', file:'xcode.png')}"  id="xcode"/>
-  <div id="glossy-box"><strong>Cocoaconf is a technical conference, pure and simple.</strong> <p>You won't find any vendor booths or vendor keynotes.  You will find in-depth technical sessions delivered by experts on the topics that matter most.
-    Be the first to find out when registration opens. <strong>You won't want to miss it</strong>.</p></div>
+  <div id="glossy-box"><h3>Cocoaconf is a technical conference, pure and simple.</h3> <p>Instead of vendor booths or vendor keynotes, you'll find:</p>
 
+       <p style="border-bottom: 1px dotted gray">In-depth technical sessions.</p>
+       <p style="border-bottom: 1px dotted gray">Multiple concurrent tracks.</p>
+       <p style="border-bottom: 1px dotted gray"><strong style="color:#2ab0e2; font-size: 14.5px;">Full-day, hands-on iOS workshop.</strong></p>
+       <p style="border-bottom: 1px dotted gray">Fun and informative speaker panel!</p>
+       <p style="border-bottom: 1px dotted gray">And much more!</p>
+   </div>
 
-  <p id="tagcloud">
-      <span style="font-size:16px; margin-right:85px;">Cocoa Touch</span>
+    <!--  <span style="font-size:16px; margin-right:45px;">Cocoa Touch</span>
       <span style="font-size:18px; margin-right:15px;">iTunes</span>
-      <span style="font-size:18px; margin-right:130px;">Lion</span>
+      <span style="font-size:18px; margin-right:70px;">Lion</span>
       <span style="font-size:14px; margin-right:62px;">Core Animation</span>
       <span style="font-size:18px;">XCode 4</span>
 
        <br/>
-      <span style="font-size:32px; margin-left:185px;">iOS</span>
-      <span style="font-size:32px; margin-left:165px;">OS X</span>
-      <span style="font-size:16px; margin-left:95px;">Quicktime</span>
+      <span style="font-size:32px; margin-left:145px;">iOS</span>
+      <span style="font-size:32px; margin-left:90px;">OS X</span>
+      <span style="font-size:16px; margin-left:125px;">Quicktime</span>
 
 
       <br/>
@@ -129,63 +134,35 @@
       <span style="font-size:14px; margin-left:30px;">Core Audio</span>
       <span style="font-size:18px; margin-left:100px;">App Store</span>
 
-      <span style="font-size:14px; margin-left:70px;">Core Data</span>
+      <span style="font-size:14px; margin-left:70px;">Core Data</span>-->
 
-      <div id="cloud-bg">
-	<div style="position:absolute; top:340px;"><h2>Featured Speakers</h2></div>
-        <div style="float:left; padding-right:10px; width:200px; font-size:11px">
+	<div id="featuredSpeakers"><h2>Featured Speakers</h2>
+        <div class="featured">
             <img src="${resource(dir:'images',file:'adamson.png')}"/>
-		 <p><strong>Chris Adamson</strong> - Author of Core Audio, and iPhone SDK Development
+		     <p><strong>Chris Adamson</strong> - Author of <a href="http://www.amazon.com/Core-Audio-Kevin-Avila/dp/0321636848">Core Audio</a>, and <a href="http://pragprog.com/titles/amiphd/iphone-sdk-development">iPhone SDK Development</a>
             <a href="http://www.subfurther.com/blog">http://www.subfurther.com/blog</a></p>
             
         </div>
-        <div style="float:left; padding-right:10px; width:200px; font-size:11px">
-            <img src="${resource(dir:'images',file:'judd.png')}"/>
-		<p><strong>Christopher Judd</strong> - Leader of Columbus iPhone Developer User Group and author of Beginning Groovy and Grails
-            <a href="http://www.juddsolutions.com">http://www.juddsolutions.com</a></p>
-           
+         <div class="featured">
+            <img src="${resource(dir:'images',file:'dudney.png')}"/>
+	    	<p><strong>Bill Dudney</strong> - Author of Pragmatic Programmer’s books <a href="http://pragprog.com/titles/amiphd/iphone-sdk-development">iPhone SDK Development</a> and <a href="http://pragprog.com/titles/bdcora/core-animation-for-mac-os-x-and-the-iphone">Core Animation</a>.
+            <a href="http://www.juddsolutions.com">http://www.bill.dudney.net</a></p>
+
         </div>
-        <div style="float:left; padding-right:10px; width:200px; font-size:11px">
+        <div class="featured">
+            <img src="${resource(dir:'images',file:'judd.png')}"/>
+		    <p><strong>Christopher Judd</strong> - Leader of <a href="http://groups.google.com/group/cidug?pli=1">Columbus iPhone Developer User Group</a> and author of <a href="http://www.beginninggroovyandgrails.com/site/content/index">Beginning Groovy and Grails</a>
+            <a href="http://www.juddsolutions.com">http://www.juddsolutions.com</a></p>
+
+        </div>
+        <div class="featured">
             <img src="${resource(dir:'images',file:'stein.png')}"/>
-            <p><strong>Daniel Steinberg</strong> - Author of iPad Programming and Cocoa Programming:
+            <p><strong>Daniel Steinberg</strong> - Author of <a href="http://pragprog.com/titles/sfipad/ipad-programming">iPad Programming</a> and <a href="http://pragprog.com/titles/dscpq/cocoa-programming">Cocoa Programming</a>:
             A Quick-Start Guide for Developers <a href="http://dimsumthinking.com">http://dimsumthinking.com</a></p>
         </div>
 
-      </div>
-
-  </p>
-
-        <div id="dialog">
-            <form id="interestForm" method="post" action="/cocoaconf/interest/register">
-                <table>
-                    <tbody>
-
-                        <tr class="prop">
-                            <td valign="top" class="name">
-                                <label for="email"><g:message code="interest.email.label" default="Email" /></label>
-                            </td>
-                            <td valign="top" class="value ${hasErrors(bean: interestInstance, field: 'email', 'errors')}">
-                                <g:textField name="email" value="${interestInstance?.email}" class="required email" />
-                            </td>
-                        </tr>
-
-
-                        <tr class="prop">
-                            <td valign="top" class="name" colspan="2">
-                                <label for="needHotel" style="font-size:12px;">Please check if you are coming from out of town.</label>
-
-                                <g:checkBox name="needHotel" value="${interestInstance?.needHotel}" style="background-color:#3B93E8" />
-                            </td>
-                        </tr>
-
-                    </tbody>
-                </table>
-
-            <div class="buttons">
-                <span class="button" ><g:submitButton id="register" name="create" class="save" value="Submit" /></span>
-            </div>
-        </form>
     </div>
+
 
 
 

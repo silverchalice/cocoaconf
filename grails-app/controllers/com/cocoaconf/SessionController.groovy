@@ -9,8 +9,7 @@ class SessionController {
     }
 
     def sessions = {
-       params.max = Math.min(params.max ? params.int('max') : 10, 100)
-       [presentationInstanceList: Presentation.list(params), presentationInstanceTotal: Presentation.count()]
+       [presentationInstanceList: Presentation.list(), presentationInstanceTotal: Presentation.count()]
     }
 
     def list = {

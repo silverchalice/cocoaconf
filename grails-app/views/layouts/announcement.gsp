@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
     <head>
         <title><g:layoutTitle default="Grails" /></title>
@@ -24,6 +25,8 @@
                  <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}" controller="speaker" action="speakers" style="background-position: -130px 0;">Speakers</g:link>
                  <g:link class="${pageProperty(name:'meta.tab') == 'sessions' ? 'current' : ''}" controller="session" action="sessions" style="background-position: -230px 0;">Sessions</g:link>
                  <g:link class="${pageProperty(name:'meta.tab') == 'register' ? 'current' : ''}" controller="home" action="register" style="background-position: -330px 0;">Register</g:link>
+
+                 <g:link class="${pageProperty(name:'meta.tab') == 'nearYou' ? 'current' : ''}" controller="home" action="nearYou" style="margin-left:70px; width:192px; border-left:1px solid gray; border-right: 0; background-position: -535px 0;"> [cocoaConf next] </g:link>
 
             </div>
             <div id="content">
