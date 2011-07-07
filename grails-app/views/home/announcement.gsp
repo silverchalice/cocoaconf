@@ -102,6 +102,7 @@
   </p>
   <p>
     <h3 style="font-size:13px;">Columbus, OH | August 12-13</h3>
+<a href="http://www.twitter.com/cocoaconf"><img src="http://twitter-badges.s3.amazonaws.com/follow_us-c.png" alt="Follow CocoaConf on Twitter"/></a>
   </p>
   <g:link controller="home" action="register" class="button" style="font-weight:bold;">Early Bird Registration open now!</g:link>
 
@@ -146,7 +147,7 @@
          <div class="featured">
             <img src="${resource(dir:'images',file:'dudney.png')}"/>
 	    	<p><strong>Bill Dudney</strong> - Author of Pragmatic Programmer’s books <a href="http://pragprog.com/titles/amiphd/iphone-sdk-development">iPhone SDK Development</a> and <a href="http://pragprog.com/titles/bdcora/core-animation-for-mac-os-x-and-the-iphone">Core Animation</a>.
-            <a href="http://www.juddsolutions.com">http://www.bill.dudney.net</a></p>
+            <a href="http://www.bill.dudney.net">http://www.bill.dudney.net</a></p>
 
         </div>
         <div class="featured">
