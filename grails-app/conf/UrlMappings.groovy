@@ -17,6 +17,7 @@ class UrlMappings {
 	        action = "sessions"
 	    }
 	    "/speakers"(controller:'speaker', action:'speakers')
+	    "/speaker/details/$id"(controller:'speaker', action:'viewDetails')
         "/sessions"(controller:'session', action:'sessions')
 	    "/about"(controller:'home', action:'about')
 	    "/register"(controller:'home', action:'register')
