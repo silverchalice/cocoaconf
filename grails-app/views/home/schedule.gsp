@@ -5,8 +5,7 @@
       <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
 </head>
   <body>
-   <h1>Coming to Columbus, Ohio!</h1>
-   <p>We are excited to introduce the first Cocoaconf iPhone, iPad and Mac developer's conference, beginning August 3-4 in Columbus Ohio. We're working hard to bring you a first class line up of speakers, authors and professional iOS/OS X developers, delivering quality content without the noise of a vendor hall and salespeople. This is a technical conference, pure and simple.   </p>
+   <h1>Schedule</h1>
   <table border="1" width="700">
 	<tr>
 		<td align="center" colspan="4">Friday, August 12</td>
@@ -129,6 +128,5 @@
 		<th align="center" colspan="3">Closing Remarks</th>
 	</tr>
   </table>
-  <p>Cocoaconf will be tenatively held at the beautiful Crown Place in Dublin Ohio. <strong>Please do not make reservations just yet!</strong> We're still ironing out the details, and we'll be sure to let you know when the venue is made sure.</p>
   </body>
 </html>
