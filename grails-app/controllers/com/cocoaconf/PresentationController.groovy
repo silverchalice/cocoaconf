@@ -42,6 +42,17 @@ class PresentationController {
         }
     }
 
+    def details = {
+        def presentationInstance = Presentation.get(params.id)
+        if (!presentationInstance) {
+            flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'presentation.label', default: 'Presentation'), params.id])}"
+            redirect(action: "list")
+        }
+        else {
+            [presentationInstance: presentationInstance]
+        }
+    }
+
     def edit = {
         def presentationInstance = Presentation.get(params.id)
         if (!presentationInstance) {
