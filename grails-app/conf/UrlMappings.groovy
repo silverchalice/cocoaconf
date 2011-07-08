@@ -17,6 +17,9 @@ class UrlMappings {
 	        action = "sessions"
 	    }
 	    "/speakers"(controller:'speaker', action:'speakers')
+	    "/about"(controller:'home', action:'about')
+	    "/register"(controller:'home', action:'register')
+	    "/schedule"(controller:'home', action:'schedule')
 		"/"(controller:'home', action:"announcement")
 		"500"(view:'/error')
 	}
