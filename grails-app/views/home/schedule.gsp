@@ -77,6 +77,57 @@
 		<td align="center">7:30-8:30</td>
 		<th align="center" colspan="3">Keynote: Your Code &mdash; The Director's Cut (Daniel Steinberg)</th>
 	</tr>
+	<tr>
+		<td align="center" colspan="4">Saturday, August 13</td>
+	</tr>
+	<tr>
+		<td align="center">8:00-9:00</td>
+		<th align="center" colspan="3">Breakfast</th>
+	</tr>
+	<tr>
+		<td align="center">9:00-10:00</td>
+		<td align="center"><span class="sessionTitle">Keeping Secrets For iOS Developers</span> <span class="sessionSpeaker">Randy Beiter</span></td>
+		<td align="center"><span class="sessionTitle">Intro To Mapkit</span> <span class="sessionSpeaker">Chris Judd</span></td>
+		<td align="center"><span class="sessionTitle">Blocks</span> <span class="sessionSpeaker">Daniel Steinberg</span></td>
+	</tr>
+	<tr>
+		<td align="center">10:00-10:15</td>
+		<th align="center" colspan="3">Break</th>
+	</tr>
+	<tr>
+		<td align="center">10:15-11:15</td>
+		<td align="center"><span class="sessionTitle">Mac OS X For iOS Developers</span> <span class="sessionSpeaker">Daniel Steinberg</span></td>
+		<td align="center"><span class="sessionTitle">MacRuby</span> <span class="sessionSpeaker">Jonathan Penn</span></td>
+		<td align="center"><span class="sessionTitle">Unit And Functional Testing For The iOS Platform</span> <span class="sessionSpeaker">Chris Judd</span></td>
+	</tr>
+	<tr>
+		<td align="center">11:15-11:45</td>
+		<th align="center" colspan="3">Break</th>
+	</tr>
+	<tr>
+		<td align="center">11:45-12:45</td>
+		<td align="center"><span class="sessionTitle">XCode 4.x</span> <span class="sessionSpeaker">Dave Koziol</span></td>
+		<td align="center"><span class="sessionTitle">Using Game Center In iOS Apps</span> <span class="sessionSpeaker">Mac Liaw</span></td>
+		<td align="center"><span class="sessionTitle">Drawing With Core Graphics On iOS</span> <span class="sessionSpeaker">Bill Dudney</span></td>
+	</tr>
+	<tr>
+		<td align="center">12:45-2:00</td>
+		<th align="center" colspan="3">Lunch</th>
+	</tr>
+	<tr>
+		<td align="center">2:00-3:00</td>
+		<th align="center" colspan="3">Panel</th>
+	</tr>
+	<tr>
+		<td align="center">3:15-4:15</td>
+		<td align="center"><span class="sessionTitle">iOS Development Using Lua And Wax Framework</span> <span class="sessionSpeaker">Mac Liaw</span></td>
+		<td align="center"><span class="sessionTitle">TBD</span> <span class="sessionSpeaker">Matt Drance?</span></td>
+		<td align="center"><span class="sessionTitle">Thoughts On Debugging</span> <span class="sessionSpeaker">Mark Dalrymple</span></td>
+	</tr>
+	<tr>
+		<td align="center">4:30-5:00</td>
+		<th align="center" colspan="3">Closing Remarks</th>
+	</tr>
   </table>
   <p>Cocoaconf will be tenatively held at the beautiful Crown Place in Dublin Ohio. <strong>Please do not make reservations just yet!</strong> We're still ironing out the details, and we'll be sure to let you know when the venue is made sure.</p>
   </body>
