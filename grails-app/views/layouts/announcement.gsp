@@ -9,7 +9,7 @@
 
     </head>
     <body  id="announcement">
-        <div id="announcementHeader" style="width:100%; background-image:url(${resource(dir:'images', file:'bar-bg.png')}); text-align:center; height:25px; padding-top:8px; margin-bottom:10px; font-weight:bold; color:white">Coming to Columbus, Ohio August 12 & 13, 2011!</div>
+        <div id="announcementHeader" style="width:100%; background-image:url(${resource(dir:'images', file:'bar-bg.png')}); text-align:center; height:25px; padding-top:8px; margin-bottom:10px; font-weight:bold; color:white">Coming to Columbus, Ohio August 12 & 13, 2011 - Early Bird Discount available through July 22</div>
         <div id="page-header">
             <span id="page-header-right"><img src="${resource(dir:'images', file:'tr-corner.png')}" /></span>
         </div>

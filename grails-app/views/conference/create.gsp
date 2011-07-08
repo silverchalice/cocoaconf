@@ -1,5 +1,3 @@
-
-
 <%@ page import="com.cocoaconf.Conference" %>
 <html>
     <head>

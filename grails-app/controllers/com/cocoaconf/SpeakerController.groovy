@@ -15,7 +15,7 @@ class SpeakerController {
     }
 
     def speakers = {
-        [speakerInstanceList: Speaker.list(), speakerInstanceTotal: Speaker.count()]
+        [speakerInstanceList: Speaker.list(sort:'lastName'), speakerInstanceTotal: Speaker.count()]
     }
 
     def create = {
