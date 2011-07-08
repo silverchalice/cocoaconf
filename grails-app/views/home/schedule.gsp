@@ -26,7 +26,7 @@
               margin: 0
           }
 
-          a {
+          .schedule a {
               text-decoration: none;
               border-bottom: 1px dotted #35b6ff;
               font-size: 12px;
@@ -34,7 +34,7 @@
               font-weight: bold;
           }
 
-          a:hover {
+          .schedule a:hover {
 
               border-bottom: 1px solid #35b6ff
           }
@@ -76,10 +76,8 @@
 </head>
   <body>
    <h1>Schedule</h1>
-  <table border="1" width="700">
-	<tr>
-		<td align="center" colspan="4">Friday, August 12</td>
-	</tr>
+   <h3>Friday, August 12</h3>
+  <table border="1" width="700" class="schedule">
 	<tr class="break">
 		<td align="center" class="time">7:30-8:45</td>
 		<th align="center" colspan="3">Registration and Breakfast</th>
@@ -148,10 +146,8 @@
 	</tr>
     </table>
     <br/>
-  <table>
-	<tr>
-		<td align="center" colspan="4">Saturday, August 13</td>
-	</tr>
+   <h3>Saturday, August 13</h3>
+  <table class="schedule">
 	<tr class="break">
 		<td align="center" class="time" width="100">8:00-9:00</td>
 		<th align="center" colspan="3">Breakfast</th>
