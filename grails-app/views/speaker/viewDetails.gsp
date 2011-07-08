@@ -6,7 +6,7 @@
         <meta name="layout" content="public" />
           <meta name="tab" content="speakers" />
         <g:set var="entityName" value="${message(code: 'speaker.label', default: 'Speaker')}" />
-        <title><g:message code="default.show.label" args="[entityName]" /></title>
+        <title>CocoaConf: ${speaker}</title>
 
 	<script type="text/javascript">
 
