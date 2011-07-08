@@ -88,9 +88,9 @@
 	</tr>
 	<tr class="slot">
 		<td align="center" width="100" class="time">9:00-10:00</td>
-		<td align="center" width="200" class="track1"><span class="sessionTitle">iOS Tutorial, Part One</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
-		<td align="center" width="200" class="track2"><span class="sessionTitle">ObjectiveC Runtime: Fun under the covers</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="2">Craig Castelaz</g:link></span></td>
-		<td align="center" width="200" class="track3"><span class="sessionTitle">UI Automation: Testing from the top down</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="12">Jonathan Penn</g:link></span></td>
+		<td align="center" width="200" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="4">iOS Tutorial, Part One</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
+		<td align="center" width="200" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="9">ObjectiveC Runtime: Fun under the covers</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="2">Craig Castelaz</g:link></span></td>
+		<td align="center" width="200" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="22">UI Automation: Testing from the top down</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="12">Jonathan Penn</g:link></span></td>
 	</tr>
 	<tr class="break">
 		<td align="center">10:00-10:15</td>
@@ -98,9 +98,9 @@
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time">10:15-11:15</td>
-		<td align="center" class="track1"><span class="sessionTitle">iOS Tutorial, Part Two</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
-		<td align="center" class="track2"><span class="sessionTitle">NSURLConnection And Beyond: Networking with Cocoa</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="7">Steve Madsen</g:link></span></td>
-		<td align="center" class="track3"><span class="sessionTitle">Performance Tuning</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="15">Mark Dalrymple</g:link></span></td>
+		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="4">iOS Tutorial, Part Two</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
+		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="12">NSURLConnection And Beyond: Networking with Cocoa</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="7">Steve Madsen</g:link></span></td>
+		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="24">Performance Tuning</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="15">Mark Dalrymple</g:link></span></td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">11:15-11:45</td>
@@ -108,9 +108,9 @@
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time">11:45-12:45</td>
-		<td align="center" class="track1"><span class="sessionTitle">iOS Tutorial, Part Three</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
-		<td align="center" class="track2"><span class="sessionTitle">Dtrace: Not Your Father's Debugger...</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="2">Craig Castelaz</g:link></span></td>
-		<td align="center" class="track2"><span class="sessionTitle">Understanding View Controllers</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
+		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="4">iOS Tutorial, Part Three</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
+		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="10">Dtrace: Not Your Father's Debugger...</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="2">Craig Castelaz</g:link></span></td>
+		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="26">Understanding View Controllers</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">12:45-2:00</td>
@@ -122,9 +122,9 @@
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time">3:15-4:45</td>
-		<td align="center" class="track1"><span class="sessionTitle">iOS Tutorial, Part Four</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
-		<td align="center" class="track2"><span class="sessionTitle">iOS Game Development With Cocoa2D</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="14">Josh Smith</g:link></span></td>
-		<td align="center" class="track3"><span class="sessionTitle">Intro To AV Foundation</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="3">Chris Adamson</g:link></span></td>
+		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="4">iOS Tutorial, Part Four</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
+		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="20">iOS Game Development With cocos2d</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="14">Josh Smith</g:link></span></td>
+		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="7">Intro To AV Foundation (Intermediate)</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="3">Chris Adamson</g:link></span></td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">4:45-5:00</td>
@@ -132,9 +132,9 @@
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time">5:00-6:30</td>
-		<td align="center" class="track1"><span class="sessionTitle">iOS Tutorial, Part Five</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
+		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="4">iOS Tutorial, Part Five</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
 		<td align="center" class="track2"><span class="sessionTitle">TBD</span></td>
-		<td align="center" class="track3"><span class="sessionTitle">Advanced AV Foundation</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="3">Chris Adamson</g:link></span></td>
+		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="8">Advanced AV Foundation (Advanced)</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="3">Chris Adamson</g:link></span></td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">6:30-7:30</td>
@@ -142,7 +142,7 @@
 	</tr>
 	<tr class="break2">
 		<td align="center" class="time">7:30-8:30</td>
-		<th align="center" colspan="3" class="keynote">Keynote: Your Code &mdash; The Director's Cut (<g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link>)</th>
+		<th align="center" colspan="3" class="keynote"><g:link controller="session" action="details" id="1">Keynote: Your Code &mdash; The Director's Cut</g:link> (<g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link>)</th>
 	</tr>
     </table>
     <br/>
@@ -154,9 +154,9 @@
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time">9:00-10:00</td>
-		<td align="center" class="track1"><span class="sessionTitle">Keeping Secrets For iOS Developers</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="8">Randy Beiter</g:link></span></td>
+		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="16">Keeping Secrets For iOS Developers</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="8">Randy Beiter</g:link></span></td>
 		<td align="center" class="track2"><span class="sessionTitle">Intro To Mapkit</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
-		<td align="center" class="track3"><span class="sessionTitle">Blocks</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
+		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="2">Blocks</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">10:00-10:15</td>
@@ -164,9 +164,9 @@
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time">10:15-11:15</td>
-		<td align="center" class="track1"><span class="sessionTitle">Mac OS X For iOS Developers</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
-		<td align="center" class="track2"><span class="sessionTitle">MacRuby</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="12">Jonathan Penn</g:link></span></td>
-		<td align="center" class="track3"><span class="sessionTitle">Unit And Functional Testing For The iOS Platform</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
+		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="3">Mac OS X For iOS Developers</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
+		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="21">MacRuby</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="12">Jonathan Penn</g:link></span></td>
+		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="6">Unit And Functional Testing For The iOS Platform</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">11:15-11:45</td>
@@ -174,9 +174,9 @@
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time">11:45-12:45</td>
-		<td align="center" class="track1"><span class="sessionTitle">XCode 4.x</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="9">Dave Koziol</g:link></span></td>
-		<td align="center" class="track2"><span class="sessionTitle">Using Game Center In iOS Apps</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="11">Mac Liaw</g:link></span></td>
-		<td align="center" class="track3"><span class="sessionTitle">Drawing With Core Graphics On iOS</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
+		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="17">XCode 4.x</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="9">Dave Koziol</g:link></span></td>
+		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="18">Using Game Center In iOS Apps</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="11">Mac Liaw</g:link></span></td>
+		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="25">Drawing With Core Graphics On iOS</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">12:45-2:00</td>
@@ -188,9 +188,9 @@
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time">3:15-4:15</td>
-		<td align="center" class="track1"><span class="sessionTitle">iOS Development Using Lua And Wax Framework</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="11">Mac Liaw</g:link></span></td>
+		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="19">iOS Development Using Lua And Wax Framework</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="11">Mac Liaw</g:link></span></td>
 		<td align="center" class="track2"><span class="sessionTitle">TBD</span></td>
-		<td align="center" class="track3"><span class="sessionTitle">Thoughts On Debugging</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="15">Mark Dalrymple</g:link></span></td>
+		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="23">Thoughts On Debugging</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="15">Mark Dalrymple</g:link></span></td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">4:30-5:00</td>
