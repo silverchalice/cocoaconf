@@ -2,6 +2,7 @@
   <head>
       <title>Cocoaconf | iOS/OS X Developer Conference | Columbus, Ohio | August 12 & 13</title>
       <meta name="layout" content="announcement" />
+       <meta name="tab" content="schedule" />
       <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
 
       <style type="text/css">
@@ -27,13 +28,15 @@
 
           a {
               text-decoration: none;
+              border-bottom: 1px dotted #35b6ff;
               font-size: 12px;
               color: #2AB0E2;
               font-weight: bold;
           }
 
           a:hover {
-              border-bottom: 1px dotted #35b6ff;
+
+              border-bottom: 1px solid #35b6ff
           }
 
           tr.break td {
@@ -109,7 +112,7 @@
 		<td align="center" class="time">11:45-12:45</td>
 		<td align="center" class="track1"><span class="sessionTitle">iOS Tutorial, Part Three</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
 		<td align="center" class="track2"><span class="sessionTitle">Dtrace: Not Your Father's Debugger...</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="2">Craig Castelaz</g:link></span></td>
-		<td align="center"><span class="sessionTitle">Understanding View Controllers</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
+		<td align="center" class="track2"><span class="sessionTitle">Understanding View Controllers</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">12:45-2:00</td>
