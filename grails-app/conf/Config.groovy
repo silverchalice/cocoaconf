@@ -102,10 +102,10 @@ grails.plugins.springsecurity.interceptUrlMap = [
     '/interest/register':                   ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/home/announcement':                   ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/home':                                ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/home/about':                          ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/about':                               ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/home/nearYou/**':                     ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/home/nearYou':                        ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/home/register':                       ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/register':                            ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/session/list':                        ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/conf/**':                             ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/speakers':                            ['IS_AUTHENTICATED_ANONYMOUSLY'],
@@ -120,7 +120,7 @@ grails.plugins.springsecurity.interceptUrlMap = [
     '/locationRequest/*':                   ['ROLE_ADMIN'],
     '/locationRequest/saveRequest':         ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/locationRequest/saveRequest/**':      ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/session/sessions':                    ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/sessions':                            ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/interest/*':                          ['ROLE_ADMIN'],
     '/**':                                  ['ROLE_ADMIN']
 
