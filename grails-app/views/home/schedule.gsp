@@ -30,7 +30,7 @@
               text-decoration: none;
               border-bottom: 1px dotted #35b6ff;
               font-size: 12px;
-              color: #2AB0E2;
+              color: #35b6ff;
               font-weight: bold;
           }
 
@@ -59,6 +59,16 @@
 
           .sessionSpeaker {
               display: block;
+          }
+
+          .sessionTitle {
+              font-size: 13px;
+
+          }
+
+          .sessionTitle a {
+              font-size: 13px;
+              color:black;
           }
 
           th.keynote {
@@ -118,7 +128,7 @@
 	</tr>
 	<tr class="break2">
 		<td align="center" class="time">2:00-3:00</td>
-		<th align="center" colspan="3" class="keynote">&ldquo;We Made An App For That&rdquo;</th>
+		<th align="center" colspan="3" class="keynote">&ldquo;We Made An App For That&rdquo;<span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="17">Mark Gilicinski</g:link> </span> </th>
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time">3:15-4:45</td>

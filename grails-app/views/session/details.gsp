@@ -8,19 +8,15 @@
     </head>
     <body>
         <div class="body">
-            <g:if test="${flash.message}">
-            <div class="message">${flash.message}</div>
-            </g:if>
-            <div class="dialog">
-				<div>
-					<h1>${presentationInstance?.title}</h1>
+                    <h1>Session Details</h1>
+					<h2 style="color:#35b6ff">${presentationInstance?.title}</h2>
 					<p>${presentationInstance?.pAbstract}</p>
-	            <div>
+            <br/>
+	            <div style="background-color: #eeeeee; padding:10px;">
 	                <img src="${request.contextPath}/${presentationInstance.speaker?.imagePath}" style="float:left" />
-	                <h1>${presentationInstance?.speaker}</h1>
+	                <h2>${presentationInstance?.speaker}</h2>
 	                <p>${presentationInstance?.speaker?.bio}</p>
 	            </div>
             </div>
-        </div>
     </body>
 </html>
