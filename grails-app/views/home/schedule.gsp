@@ -118,7 +118,7 @@
 	</tr>
 	<tr class="break2">
 		<td align="center" class="time">2:00-3:00</td>
-		<th align="center" colspan="3" class="keynote">&ldquo;We Made An App For That&rdquo;</th>
+		<th align="center" colspan="3" class="keynote"><g:link controller="session" action="details" id="28">&ldquo;We Made An App For That&rdquo;</g:link></th>
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time">3:15-4:45</td>
