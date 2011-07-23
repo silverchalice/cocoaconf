@@ -71,7 +71,9 @@
               background:none;
               border:0;
           }
-
+          #content {
+              min-height:360px;
+          }
           #register {
               font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
               font-size:17px;
@@ -97,12 +99,9 @@
 
   <body>
     <h1>Register today for Early Bird savings!</h1>
-  <p>
-      We're still getting the details worked out, but don't let that stop you from taking advantage of this great deal!  Before <strong>July 22, you can save 30% off the standard registration fee</strong>. Don't miss it!
-  </p>
   <h2>What you get</h2>
   <p>Registration includes two days packed with technical sessions and interesting keynotes (no sales pitches), all meals and snacks, and some cool swag so you can show all your friends and co-workers that you were there!</p>
-  <p>Also included is a <strong>full-day hands on iOS tutorial and workshop!</strong></p>
+  <p>Also included is a <a href="http://www.cocoaconf.com/session/details/4" style="color:#2ab0e2; font-size: 14.5px; text-decoration: none; font-weight: bold">full-day hands on iOS tutorial and workshop!</a></p>
   <p>
       Can't wait to see you there!
   </p>

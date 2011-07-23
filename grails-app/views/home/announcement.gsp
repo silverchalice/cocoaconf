@@ -75,11 +75,19 @@
 
           .button {
               font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-              font-size:17px;
-              margin-left:150px;
+              font-size:18px;
+              margin-left:200px;
               margin-top:15px;
           }
 
+          a {
+              text-decoration: none;
+              color:#2ab0e2;
+          }
+
+          a:hover {
+              text-decoration: underline
+          }
 
           #closeFlash {
               font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
@@ -97,22 +105,26 @@
        <span class="button" id="closeFlash" >Ok!</span>
       </div>
   </g:if>
-  <p>
-     <img src="${resource(dir:'images', file:'mac-app-store.png')}" id="appstore"/><strong style="font-size:16px;">With the current explosive growth of interest in iOS and OS X software</strong>, there's never been a better time to develop for these exciting platforms.  And there's never been a more affordable, easily accessible conference to help you sharpen your skills and learn about the latest tools and libraries for iOS and Mac programming.
-  </p>
-  <p>
-    <h3 style="font-size:13px;">Columbus, OH | August 12-13</h3>
-<a href="http://www.twitter.com/cocoaconf"><img src="http://twitter-badges.s3.amazonaws.com/follow_us-c.png" alt="Follow CocoaConf on Twitter"/></a>
-  </p>
-  <g:link controller="home" action="register" class="button" style="font-weight:bold;">Early Bird Registration open now!</g:link>
+
+     <div style="width:200px; padding-top:20px; text-align:center; float:left" ><iframe  src="http://www.eventbrite.com/countdown-widget?eid=1649713337" frameborder="0" height="271" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe></div>
+     <div style="float:right; width:480px; padding-top:20px"><span style="font-size:16px; font-weight: bold">Columbus, Ohio. August 12-13</span><p>With the current explosive growth of interest in iOS and OS X software, there's never been a better time to develop for these exciting platforms.  And there's never been a more affordable, easily accessible conference to help you sharpen your skills and learn about the latest tools and libraries for iOS and Mac programming.</p>
+
+     <a href="http://www.twitter.com/cocoaconf" style="margin-left: 20px"><img src="http://twitter-badges.s3.amazonaws.com/follow_us-c.png" alt="Follow CocoaConf on Twitter"/></a>
+
+     <div style="background-image: url(${resource(dir:'images',file:'threesateam.png')}); background-position: 360px 0; background-repeat: no-repeat; margin-top: 20px; min-height: 75px">
+         <h2>Two's Company, Three's a <span style="color:#2ab0e2">Team</span></h2>
+         <h4><g:link controller="home" action="team">Special discount for teams - click for more details!</g:link></h4>
+     </div>
+  </div>
+  <div class="clear" style="clear: both"></div>
+  <g:link controller="home" action="register" class="button" style="font-weight:bold;">Registration open now!</g:link>
 
   <div class="clear">&nbsp;</div>
   <img src="${resource(dir:'images', file:'xcode.png')}"  id="xcode"/>
-  <div id="glossy-box"><h3>Cocoaconf is a technical conference, pure and simple.</h3> <p>Instead of vendor booths or vendor keynotes, you'll find:</p>
-
+  <div id="glossy-box"><h3>Cocoaconf is a technical conference, pure and simple.</h3> <p>Instead of vendor booths or vendor keynotes, you'll find:</p
        <p style="border-bottom: 1px dotted gray">In-depth technical sessions.</p>
        <p style="border-bottom: 1px dotted gray">Multiple concurrent tracks.</p>
-       <p style="border-bottom: 1px dotted gray"><strong style="color:#2ab0e2; font-size: 14.5px;">Full-day, hands-on iOS workshop.</strong></p>
+       <p style="border-bottom: 1px dotted gray"><a href="http://www.cocoaconf.com/session/details/4" style="color:#2ab0e2; font-size: 14.5px; text-decoration: none; font-weight: bold">Full-day, hands-on iOS workshop.</a></p>
        <p style="border-bottom: 1px dotted gray">Fun and informative speaker panel!</p>
        <p style="border-bottom: 1px dotted gray">And much more!</p>
    </div>

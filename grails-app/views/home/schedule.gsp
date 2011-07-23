@@ -128,7 +128,7 @@
 	</tr>
 	<tr class="break2">
 		<td align="center" class="time">2:00-3:00</td>
-		<th align="center" colspan="3" class="keynote">&ldquo;We Made An App For That&rdquo;<span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="17">Mark Gilicinski</g:link> </span> </th>
+		<th align="center" colspan="3" class="keynote"><g:link controller="session" action="details" id="28">&ldquo;We Made An App For That&rdquo;</g:link><span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="17">Mark Gilicinski</g:link> </span> </th>
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time">3:15-4:45</td>
@@ -143,7 +143,7 @@
 	<tr class="slot">
 		<td align="center" class="time">5:00-6:30</td>
 		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="4">iOS Tutorial, Part Five</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
-		<td align="center" class="track2"><span class="sessionTitle">TBD</span></td>
+		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="29">Test Driven Development in the iOS World, Part One</g:link></span><span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="18">Doug Sjoquist</g:link></span></td>
 		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="8">Advanced AV Foundation (Advanced)</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="3">Chris Adamson</g:link></span></td>
 	</tr>
 	<tr class="break">
@@ -165,7 +165,7 @@
 	<tr class="slot">
 		<td align="center" class="time">9:00-10:00</td>
 		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="16">Keeping Secrets For iOS Developers</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="8">Randy Beiter</g:link></span></td>
-		<td align="center" class="track2"><span class="sessionTitle">Intro To Mapkit</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
+		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="27">Intro To Mapkit</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
 		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="2">Blocks</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
 	</tr>
 	<tr class="break">
@@ -199,7 +199,7 @@
 	<tr class="slot">
 		<td align="center" class="time">3:15-4:15</td>
 		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="19">iOS Development Using Lua And Wax Framework</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="11">Mac Liaw</g:link></span></td>
-		<td align="center" class="track2"><span class="sessionTitle">TBD</span></td>
+		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="30">Test Driven Development in the iOS World, Part Two</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="18">Doug Sjoquist</g:link></span></td>
 		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="23">Thoughts On Debugging</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="15">Mark Dalrymple</g:link></span></td>
 	</tr>
 	<tr class="break">

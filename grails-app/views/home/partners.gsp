@@ -1,27 +1,32 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
     <head>
-        <title>Cocoaconf | iOS/OS X Developer Conference | Columbus, Ohio | August 12 - 13</title>
+        <title>CocoaConf | iOS/OS X Developer Conference | Columbus, Ohio | August 12 - 13</title>
         <meta name="layout" content="public" />
         <meta name="tab" content="partners" />
 	</head>
 	<body>
 		<div id="sponsors">
-			<h1>The following organizations are helping to make CocoaConf awesome! </h1> 
-			<div id="pragstudio" class="sponsor">
-				<a href=""><img src="${resource(dir:'images',file:'pragstudio.png')}" /></a>
+            <h1>Partners</h1>
+			<h2 style="font-size:20px;">The following organizations are helping to make CocoaConf awesome! </h2>  <br/>
+			<div id="pragstudio">
+				<a href="http://pragmaticstudio.com/"><img src="${resource(dir:'images',file:'pragstudio.png')}" style="width:380px; float:left;" /></a>
+			</div>
+			<div id="pragprog">
+				<a href="http://pragprog.com/"><img src="${resource(dir:'images',file:'pragprog.png')}" style="width:auto; float:right;" /></a>
 			</div>
 			<div id="manning" class="sponsor">
-				<a href=""><img src="${resource(dir:'images',file:'manning.png')}" /></a>
+				<a href="http://www.manning.com/"><img src="${resource(dir:'images',file:'manning.png')}" style="width:240px; float:right;"/></a>
 			</div>
+
 			<div id="crockett" class="sponsor">
-				<a href=""><img src="${resource(dir:'images',file:'crockett.png')}" /></a>
+				<a href="http://crockettphotography.smugmug.com/"><img src="${resource(dir:'images',file:'crockett.png')}" style="width:380px; float:left;"/></a>
 			</div>
 			<br/>
-			<p>For more information about becoming a CocoaConf sponsor, drop us a line at <a href="mailto:info@cocoaconf.com">info@cocoaconf</a></p>
+			<div style="clear: both"><p>For more information about becoming a CocoaConf sponsor, drop us a line at <a href="mailto:info@cocoaconf.com">info@cocoaconf</a></p></div>
 		</div>
 		<div id="user-groups">
-			<h1>CocoaHeads Partners</h1>
+			<h2>CocoaHeads Partners</h2>
 			<p>CocoaHeads, NSCoderNight and other groups are playing a huge role in bringing CocoaConf to Columbus.  Several of our speakers are group organizers and almost all of them are active participants. The following groups are partnering with us to help make CocoaConf the best conference of its kind.  So, check out this list and find the group nearest you and get involved.  There is much we can learn from each other and many good times to be had.</p>
 			<div id="columbus" class="usergroup">
 				<h3>Columbus iPhone Developers User Group</h3>

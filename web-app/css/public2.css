@@ -67,6 +67,7 @@ body {
 #nav a {
     color:white;
     float:left;
+    font-weight: normal;
     text-decoration: none;
     border-right: 1px solid gray;
     line-height:40px;
@@ -92,13 +93,18 @@ body {
 
 #content {
     background: url(../images/page-bg.png) repeat-y right;
-    min-height:1100px;
+    min-height:1150px;
     width:700px;
     border:0;
     padding-top:0;
     padding-left:50px;
     padding-right:50px;
 
+}
+
+
+.sponsor img {
+    max-width:600px;
 }
 
 #footer {
@@ -119,6 +125,7 @@ body {
     position: relative;
     top: 8px;
 }
+
 
 #footer a {
     color:#f0f0f0;
@@ -142,7 +149,7 @@ label.error {
 #xcode {
     float:right;
     height:380px;
-    padding: 10px 0 10px 10px;
+    padding: 0 0 10px 10px;
 }
 
 #appstore {

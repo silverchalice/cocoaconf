@@ -25,8 +25,9 @@
         <style type="text/css">
 
             div.odd {
-                background-image: url("${resource(dir:'images', file:'background.png')}") ;
-                border:  1px solid gray;
+                background:#eeeeee;
+                border:0;
+                padding: 15px;
             }
 
             div.odd h3 {
@@ -74,7 +75,7 @@
                         </g:if>
 
 
-                         <div class="bio" style="min-height:160px; width:530px">
+                         <div class="bio" style="min-height:160px; width:500px">
                              <h3>${speaker} <span style="font-size: 14px;"><g:link controller="speaker" action="viewDetails" id="${speaker?.id}">View Details</g:link></span></h3>
                              ${speaker.bio}<br/>
 
