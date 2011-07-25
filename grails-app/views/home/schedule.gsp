@@ -85,8 +85,9 @@
 
 </head>
   <body>
-   <h1>Schedule</h1>
-   <h3>Friday, August 12</h3>
+   <h1 style="float:left">Schedule</h1>
+  <span style="float:right; background-image: url(${resource(dir:'images', file:'download.png')}); background-position: 270px 0px; background-repeat: no-repeat; margin-top:10px; padding-top:9px; display:block; width:400px; height:50px; font-weight:bold; color:#; font-size: 18px">Download Slides/Sample Code</span>
+   <h3 style="clear:both">Friday, August 12</h3>
   <table border="1" width="700" class="schedule">
 	<tr class="break">
 		<td align="center" class="time">7:30-8:45</td>
@@ -207,5 +208,6 @@
 		<th align="center" colspan="3" style="background: #9adeff; padding: 8px 0 4px 0">Closing Remarks</th>
 	</tr>
   </table>
+
   </body>
 </html>

@@ -51,7 +51,6 @@
                 $("#dialog").dialog('open');
             });
 
-
             $('#closeFlash').button();
 
             $('#dialogButton').button();
