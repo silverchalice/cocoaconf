@@ -97,7 +97,10 @@
   </head>
 
   <body>
-    <h1>Register today for Early Bird savings!</h1>
+  <h1 style="margin-left:150px;">Registration ends August 8!</h1>
+  <div style="width:200px; padding-top:20px; text-align:center; float:left" ></div>
+      <div style="float:right; width:480px; padding-top:20px"><span style="font-size:16px; font-weight: bold">Columbus, Ohio. August 12-13</span><p>Don't risk missing out!</p></div>
+
   <h2>What you get</h2>
   <p>Registration includes two days packed with technical sessions and interesting keynotes (no sales pitches), all meals and snacks, and some cool swag so you can show all your friends and co-workers that you were there!</p>
   <p>Also included is a <a href="http://www.cocoaconf.com/session/details/4" style="color:#2ab0e2; font-size: 14.5px; text-decoration: none; font-weight: bold">full-day hands on iOS tutorial and workshop!</a></p>

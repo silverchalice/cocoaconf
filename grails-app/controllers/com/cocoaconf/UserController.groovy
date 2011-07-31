@@ -4,6 +4,8 @@ class UserController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
+    def springSecurityService
+
     def index = {
         redirect(action: "list", params: params)
     }
@@ -20,7 +22,7 @@ class UserController {
     }
 
 	def pickSessions = {
-		def user = User.get(params.id)
+		def user = User.findByUsername(springSecurityService.principal.username)
 		params.each{key, val ->
 			if (key.contains('cb_')){
 				def sessionId = key[3..-1].toInteger()
