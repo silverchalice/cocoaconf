@@ -6,6 +6,10 @@ html {
     font-color: #232323;
 }
 
+announcementHeader a {
+    color:white
+}
+
 h2 {
     color:#232323;
     margin:0;

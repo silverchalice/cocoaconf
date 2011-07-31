@@ -17,11 +17,19 @@ class HomeController {
 
     def schedule = {
 
+        def model
+
         if(springSecurityService.principal) {
-            println springSecurityService.principal
+            def user = User.get(springSecurityService.principal.id)
+            def choice = user.choice
+
+            model = [choice: choice]
+
         } else{
            println "no user"
        }
+
+       return model
     }
 
     def partners = {}
