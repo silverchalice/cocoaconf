@@ -20,7 +20,7 @@ class UserController {
     }
 
 	def pickSessions = {
-		def user = User.get(params.id)
+		def user = User.findByUsername(springSecurityService.principal.username)
 		params.each{key, val ->
 			if (key.contains('cb_')){
 				def sessionId = key[3..-1].toInteger()
@@ -33,6 +33,29 @@ class UserController {
 		flash.message = "Thank you for your help!"
 		redirect(controller:'home', action:'schedule')
 	}
+	
+	def changePassword = {	
+	}
+	
+	def savePassword = {
+		def user = User.findByUsername(springSecurityService.principal.username)
+		if (springSecurityService.encodePassword(params.oldpassword) == user.password){
+			if (params.password == params.password2){
+				user.password = springSecurityService.encodePassword(params.password)
+				user.save()
+				redirect(controller:'home', action:'announcement')
+			}
+			else{
+				flash.message = "New passwords do not match"
+				render(view:'changePassword')
+			}
+		}
+		else{
+			flash.message = "Current password is incorrect."
+			render(view:'changePassword')
+		}
+	}
+	
     def save = {
         def userInstance = new User(params)
         if (userInstance.save(flush: true)) {
