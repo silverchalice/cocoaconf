@@ -21,14 +21,14 @@ class UserController {
 
 	def pickSessions = {
 		def user = User.findByUsername(springSecurityService.principal.username)
-		params.each{key, val ->
-			if (key.contains('cb_')){
-				def sessionId = key[3..-1].toInteger()
-				user.addToSessions(sessionId:sessionId)
-				if (!user.save()){
-					user.errors.allErrors.each{println it}
-				}
-			}
+		if (!user.choice){
+		    user.choice = new SessionChoice(params)
+		}
+		else{
+			user.choice.properties = params
+		}
+		if (!user.save()){
+			user.errors.allErrors.each{println it}
 		}
 		flash.message = "Thank you for your help!"
 		redirect(controller:'home', action:'schedule')

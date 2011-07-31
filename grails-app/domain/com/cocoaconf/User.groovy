@@ -16,7 +16,7 @@ class User {
 	boolean accountExpired
 	boolean accountLocked
 	boolean passwordExpired
-	static hasMany = [sessions:SessionChoice]
+	SessionChoice choice
 	
 	static constraints = {
 		username blank: false, unique: true
