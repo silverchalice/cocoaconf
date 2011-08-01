@@ -1,9 +1,24 @@
 <html>
   <head>
       <title>Cocoaconf | iOS/OS X Developer Conference | Columbus, Ohio | August 12 & 13</title>
-      <meta name="layout" content="announcement" />
+      <meta name="layout" content="public" />
        <meta name="tab" content="schedule" />
-      <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
+      <script src="${resource(dir:'js', file:'jquery-1.6.2.min.js')}" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+
+        $(":checkbox").click(function() {
+            $(this).siblings().removeAttr('checked');
+        });
+
+
+    });
+
+</script>
 
       <style type="text/css">
 
@@ -21,8 +36,12 @@
 
           td {
               border: 0;
-              margin: 0
+              margin: 0;
 
+          }
+
+          td.choice span {
+              padding-right: 90px;
           }
 
           th {
@@ -94,9 +113,11 @@
       </div>
   </g:if>
    <h1 style="float:left">Schedule</h1>
-  <span style="float:right; background-image: url(${resource(dir:'images', file:'download.png')}); background-position: 270px 0px; background-repeat: no-repeat; margin-top:10px; padding-top:9px; display:block; width:400px; height:50px; font-weight:bold; color:#; font-size: 18px">Download Slides/Sample Code</span>
+  <g:link controller="home" action="index" style="text-decoration:none; float:right; background-image: url(${resource(dir:'images', file:'download.png')}); background-position: 270px -3px; background-repeat: no-repeat; margin-top:10px; padding-top:9px; display:block; width:400px; height:50px; font-weight:bold; color:#; font-size: 18px">Download Slides/Sample Code</g:link>
 
-  <sec:ifLoggedIn><g:render template="scheduleLoggedIn" /></sec:ifLoggedIn>
+  <sec:ifLoggedIn>  <p style="clear:both">
+      Please check the sessions you are most likely to attend.  This is not binding but will help us with room sizing.  Thanks!
+  </p><g:render template="scheduleLoggedIn" /></sec:ifLoggedIn>
   <sec:ifNotLoggedIn><g:render template="schedule" /></sec:ifNotLoggedIn>
   </body>
 </html>
