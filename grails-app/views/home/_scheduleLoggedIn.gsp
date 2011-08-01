@@ -1,3 +1,8 @@
+
+
+
+
+
   <g:form controller='user' action='pickSessions'>
    <h3 style="clear:both">Friday, August 12</h3>
 
@@ -16,10 +21,12 @@
 		<td align="center" width="200" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="9">ObjectiveC Runtime: Fun under the covers</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="2">Craig Castelaz</g:link></span></td>
 		<td align="center" width="200" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="22">UI Automation: Testing from the top down</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="12">Jonathan Penn</g:link></span></td>
 	</tr>
-	<tr class="slot">
-		<td align="center" width="200" class="track1"><span class="sessionTitle"><g:checkBox name="session01" value="${choice?.session01}" />Attending</span></td>
-        <td align="center" width="200" class="track2"><span class="sessionTitle"><g:checkBox name="session02" value="${choice?.session02}" />Attending</span></td>
-        <td align="center" width="200" class="track3"><span class="sessionTitle"><g:checkBox name="session03" value="${choice?.session03}" />Attending</span></td>
+	<tr class="choice">
+		<td colspan="3" width="200" class="choice" style="padding-left:80px; padding-right:0">
+            <g:checkBox id="session01" name="session01" value="${choice?.session01}" /><span>Attending</span>
+            <g:checkBox id="session02" name="session02" value="${choice?.session02}" /><span>Attending</span>
+            <g:checkBox id="session03" name="session03" value="${choice?.session03}" /><span>Attending</span>
+        </td>
 	</tr>
 	<tr class="break">
 		<td align="center">10:00-10:15</td>
@@ -31,10 +38,12 @@
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="12">NSURLConnection And Beyond: Networking with Cocoa</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="7">Steve Madsen</g:link></span></td>
 		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="24">Performance Tuning</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="15">Mark Dalrymple</g:link></span></td>
 	</tr>
-	<tr class="slot">
-		<td align="center" width="200" class="track1"><span class="sessionTitle"><g:checkBox name="session04" value="${choice?.session04}" />Attending</span></td>
-        <td align="center" width="200" class="track2"><span class="sessionTitle"><g:checkBox name="session05" value="${choice?.session05}" />Attending</span></td>
-        <td align="center" width="200" class="track3"><span class="sessionTitle"><g:checkBox name="session06" value="${choice?.session06}" />Attending</span></td>
+	<tr class="choice">
+		<td colspan="3" width="200" class="choice" style="padding-left:80px">
+            <g:checkBox id="session04" name="session04" value="${choice?.session04}" /><span>Attending</span>
+            <g:checkBox id="session05" name="session05" value="${choice?.session05}" /><span>Attending</span>
+            <g:checkBox id="session06" name="session06" value="${choice?.session06}" /><span>Attending</span>
+        </td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">11:15-11:45</td>
@@ -44,12 +53,14 @@
 		<td align="center" class="time" rowspan="2">11:45-12:45</td>
 		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="4">iOS Tutorial, Part Three</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="10">Dtrace: Not Your Father's Debugger...</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="2">Craig Castelaz</g:link></span></td>
-		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="26">Understanding View Controllers</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
+		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="26">Understanding View Controllers</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
 	</tr>
-	<tr class="slot">
-		<td align="center" width="200" class="track1"><span class="sessionTitle"><g:checkBox name="session07" value="${choice?.session07}" />Attending</span></td>
-        <td align="center" width="200" class="track2"><span class="sessionTitle"><g:checkBox name="session08" value="${choice?.session08}" />Attending</span></td>
-        <td align="center" width="200" class="track3"><span class="sessionTitle"><g:checkBox name="session09" value="${choice?.session09}" />Attending</span></td>
+	<tr class="choice">
+		<td colspan="3" width="200" class="choice" style="padding-left:80px">
+            <g:checkBox id="session07" name="session07" value="${choice?.session07}" /><span>Attending</span>
+            <g:checkBox id="session08" name="session08" value="${choice?.session08}" /><span>Attending</span>
+            <g:checkBox id="session09" name="session09" value="${choice?.session09}" /><span>Attending</span>
+        </td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">12:45-2:00</td>
@@ -65,10 +76,12 @@
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="20">iOS Game Development With cocos2d</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="14">Josh Smith</g:link></span></td>
 		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="7">Intro To AV Foundation (Intermediate)</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="3">Chris Adamson</g:link></span></td>
 	</tr>
-	<tr class="slot">
-		<td align="center" width="200" class="track1"><span class="sessionTitle"><g:checkBox name="session10" value="${choice?.session10}" />Attend</span></td>
-        <td align="center" width="200" class="track2"><span class="sessionTitle"><g:checkBox name="session11" value="${choice?.session11}" />Attend</span></td>
-        <td align="center" width="200" class="track3"><span class="sessionTitle"><g:checkBox name="session12" value="${choice?.session12}" />Attend</span></td>
+	<tr class="choice">
+		<td colspan="3" width="200" class="choice" style="padding-left:80px">
+            <g:checkBox id="session10" name="session10" value="${choice?.session10}" /><span>Attending</span>
+            <g:checkBox id="session11" name="session11" value="${choice?.session11}" /><span>Attending</span>
+            <g:checkBox id="session12" name="session12" value="${choice?.session12}" /><span>Attending</span>
+        </td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">4:45-5:00</td>
@@ -80,10 +93,12 @@
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="29">Test Driven Development in the iOS World, Part One</g:link></span><span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="18">Doug Sjoquist</g:link></span></td>
 		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="8">Advanced AV Foundation (Advanced)</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="3">Chris Adamson</g:link></span></td>
 	</tr>
-	<tr class="slot">
-		<td align="center" width="200" class="track1"><span class="sessionTitle"><g:checkBox name="session13" value="${choice?.session13}" />Attend</span></td>
-        <td align="center" width="200" class="track2"><span class="sessionTitle"><g:checkBox name="session14" value="${choice?.session14}" />Attend</span></td>
-        <td align="center" width="200" class="track3"><span class="sessionTitle"><g:checkBox name="session15" value="${choice?.session15}" />Attend</span></td>
+	<tr class="choice">
+		<td colspan="3" width="200" class="choice" style="padding-left:80px">
+            <g:checkBox id="session13" name="session13" value="${choice?.session13}" /><span>Attending</span>
+            <g:checkBox id="session14" name="session14" value="${choice?.session14}" /><span>Attending</span>
+            <g:checkBox id="session15" name="session15" value="${choice?.session15}" /><span>Attending</span>
+        </td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">6:30-7:30</td>
@@ -107,10 +122,12 @@
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="27">Intro To Mapkit</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
 		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="2">Blocks</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
 	</tr>
-	<tr class="slot">
-		<td align="center" width="200" class="track1"><span class="sessionTitle"><g:checkBox name="session16" value="${choice?.session16}" />Attend</span></td>
-        <td align="center" width="200" class="track2"><span class="sessionTitle"><g:checkBox name="session17" value="${choice?.session17}" />Attend</span></td>
-        <td align="center" width="200" class="track3"><span class="sessionTitle"><g:checkBox name="session18" value="${choice?.session18}" />Attend</span></td>
+	<tr class="choice">
+		<td colspan="3" width="200" class="choice" style="padding-left:80px">
+            <g:checkBox id="session16" name="session16" value="${choice?.session16}" /><span>Attending</span>
+            <g:checkBox id="session17" name="session17" value="${choice?.session17}" /><span>Attending</span>
+            <g:checkBox id="session18" name="session18" value="${choice?.session18}" /><span>Attending</span>
+        </td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">10:00-10:15</td>
@@ -122,10 +139,12 @@
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="21">MacRuby</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="12">Jonathan Penn</g:link></span></td>
 		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="6">Unit And Functional Testing For The iOS Platform</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
 	</tr>
-	<tr class="slot">
-		<td align="center" width="200" class="track1"><span class="sessionTitle"><g:checkBox name="session19" value="${choice?.session19}" />Attend</span></td>
-        <td align="center" width="200" class="track2"><span class="sessionTitle"><g:checkBox name="session20" value="${choice?.session20}" />Attend</span></td>
-        <td align="center" width="200" class="track3"><span class="sessionTitle"><g:checkBox name="session21" value="${choice?.session21}" />Attend</span></td>
+	<tr class="choice">
+		<td colspan="3" width="200" class="choice" style="padding-left:80px">
+            <g:checkBox id="session19" name="session19" value="${choice?.session19}" /><span>Attending</span>
+            <g:checkBox id="session20" name="session20" value="${choice?.session20}" /><span>Attending</span>
+            <g:checkBox id="session21" name="session21" value="${choice?.session21}" /><span>Attending</span>
+        </td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">11:15-11:45</td>
@@ -137,10 +156,12 @@
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="18">Using Game Center In iOS Apps</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="11">Mac Liaw</g:link></span></td>
 		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="25">Drawing With Core Graphics On iOS</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
 	</tr>
-	<tr class="slot">
-		<td align="center" width="200" class="track1"><span class="sessionTitle"><g:checkBox name="session22" value="${choice?.session22}" />Attend</span></td>
-        <td align="center" width="200" class="track2"><span class="sessionTitle"><g:checkBox name="session23" value="${choice?.session23}" />Attend</span></td>
-        <td align="center" width="200" class="track3"><span class="sessionTitle"><g:checkBox name="session24" value="${choice?.session24}" />Attend</span></td>
+	<tr class="choice">
+		<td colspan="3" width="200" class="choice" style="padding-left:80px">
+            <g:checkBox id="session22" name="session22" value="${choice?.session22}" /><span>Attending</span>
+            <g:checkBox id="session23" name="session23" value="${choice?.session23}" /><span>Attending</span>
+            <g:checkBox id="session24" name="session24" value="${choice?.session24}" /><span>Attending</span>
+        </td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">12:45-2:00</td>
@@ -156,15 +177,21 @@
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="30">Test Driven Development in the iOS World, Part Two</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="18">Doug Sjoquist</g:link></span></td>
 		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="23">Thoughts On Debugging</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="15">Mark Dalrymple</g:link></span></td>
 	</tr>
-	<tr class="slot">
-		<td align="center" width="200" class="track1"><span class="sessionTitle"><g:checkBox name="session25" value="${choice?.session25}" />Attend</span></td>
-        <td align="center" width="200" class="track2"><span class="sessionTitle"><g:checkBox name="session26" value="${choice?.session26}" />Attend</span></td>
-        <td align="center" width="200" class="track3"><span class="sessionTitle"><g:checkBox name="session27" value="${choice?.session27}" />Attend</span></td>
+	<tr class="choice">
+		<td colspan="3" width="200" class="choice" style="padding-left:80px">
+            <g:checkBox id="session25" name="session25" value="${choice?.session25}" /><span>Attending</span>
+            <g:checkBox id="session26" name="session26" value="${choice?.session26}" /><span>Attending</span>
+            <g:checkBox id="session27" name="session27" value="${choice?.session27}" /><span>Attending</span>
+        </td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">4:30-5:00</td>
 		<th align="center" colspan="3" style="background: #9adeff; padding: 8px 0 4px 0">Closing Remarks</th>
 	</tr>
   </table>
-       <g:submitButton name="submit" value="Save Session Selection"/>
+      <br/>
+  <span style="margin: 20px 280px">
+        <g:submitButton name="submit" style="font-size: 20px" value="Save Session Selection" id="sessionChoiceSubmit"/>
+  </span>
+
 </g:form>

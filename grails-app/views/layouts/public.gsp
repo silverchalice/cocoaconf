@@ -6,33 +6,29 @@
         <link rel="stylesheet" href="${resource(dir:'css',file:'public2.css')}" />
         <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
         <g:layoutHead />
-              <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
+        <script src="${resource(dir:'js', file:'jquery-1.6.2.min.js')}" type="text/javascript"></script>
+        <script type="text/javascript">
 
-      <script src="${resource(dir:'js', file:'jquery-1.5.1.min.js')}" type="text/javascript"></script>
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-23131242-2']);
+          _gaq.push(['_setDomainName', '.cocoaconf.com']);
+          _gaq.push(['_trackPageview']);
 
-      <script src="${resource(dir:'js', file:'jquery-ui-1.8.11.custom.min.js')}" type="text/javascript"></script>
-<script type="text/javascript">
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-23131242-2']);
-  _gaq.push(['_setDomainName', '.cocoaconf.com']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+        </script>
     </head>
     <body>
-    <sec:ifNotLoggedIn>
-        <div id="announcementHeader" style="width:100%; background-image:url(${resource(dir:'images', file:'bar-bg.png')}); text-align:center; height:25px; padding-top:8px; margin-bottom:10px; font-weight:bold; color:white">Coming to Columbus, Ohio August 12 & 13, 2011 - <span style="color:#ff9627">Registration closes August 8! </span> <g:link style="color:white; padding-left: 10px; text-decoration: none" controller="login" > Login</g:link> </div>
-    </sec:ifNotLoggedIn>
-    <sec:ifLoggedIn>
-        <div id="announcementHeader" style="width:100%; background-image:url(${resource(dir:'images', file:'bar-bg.png')}); text-align:center; height:25px; padding-top:8px; margin-bottom:10px; font-weight:bold; color:white">Coming to Columbus, Ohio August 12 & 13, 2011 - <span style="color:#2ab0e2">Welcome, <sec:username/></span><g:link style="color:white; padding-left: 10px; text-decoration: none" controller="logout" >Logout</g:link> </div>
-    </sec:ifLoggedIn>
+        <sec:ifNotLoggedIn>
+            <div id="announcementHeader" style="width:100%; background-image:url(${resource(dir:'images', file:'bar-bg.png')}); text-align:center; height:25px; padding-top:8px; margin-bottom:10px; font-weight:bold; color:white">Coming to Columbus, Ohio August 12 & 13, 2011 - <span style="color:#ff9627">Registration closes August 8! </span> <g:link style="color:white; padding-left: 10px; text-decoration: none" controller="login" > Login</g:link> </div>
+        </sec:ifNotLoggedIn>
+        <sec:ifLoggedIn>
+            <div id="announcementHeader" style="width:100%; background-image:url(${resource(dir:'images', file:'bar-bg.png')}); text-align:center; height:25px; padding-top:8px; margin-bottom:10px; font-weight:bold; color:white">Coming to Columbus, Ohio August 12 & 13, 2011 - <span style="color:#2ab0e2">Welcome, <sec:username/></span><g:link style="color:white; padding-left: 10px; text-decoration: none" controller="logout" >Logout</g:link> </div>
+        </sec:ifLoggedIn>
 
          <div id="page-header">
             <span id="page-header-right"><img src="${resource(dir:'images', file:'tr-corner.png')}" /></span>

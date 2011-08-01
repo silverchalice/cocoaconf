@@ -19,7 +19,7 @@ class HomeController {
 
         def model
 
-        if(springSecurityService.principal) {
+        if(springSecurityService.isLoggedIn()) {
             def user = User.get(springSecurityService.principal.id)
             def choice = user.choice
 

@@ -7,18 +7,17 @@ class BootStrap {
     def springSecurityService
 
     def init = { servletContext ->
-	    def userRole = Role.findByAuthority('ROLE_USER') ?: new Role(authority: 'ROLE_USER').save(failOnError: true)
-		def adminRole = Role.findByAuthority('ROLE_ADMIN') ?: new Role(authority: 'ROLE_ADMIN').save(failOnError: true)
-		def attendeeRole = Role.findByAuthority('ROLE_ATTENDEE') ?: new Role(authority: 'ROLE_ATTENDEE').save(failOnError: true)
 
-        if(!User.findByUsername("admin")){
+	    def attendeeRole = Role.findByAuthority('ROLE_ATTENDEE') ?: new Role(authority: 'ROLE_ATTENDEE').save(failOnError: true)
+	    def speakerRole = Role.findByAuthority('ROLE_SPEAKER') ?: new Role(authority:'ROLE_SPEAKER').save(failOnError:true)
+		def adminRole = Role.findByAuthority('ROLE_ADMIN') ?: new Role(authority: 'ROLE_ADMIN').save(failOnError: true)
+	    if(!User.findByUsername("admin")){
 
 		    def admin = new User(username:"admin", password:springSecurityService.encodePassword("admin"), email: "admin@cocoaconf.com", firstName: "Admin", lastName: "Cocoaconf", street: "123 Main Street", city: "City", state: "ST", zip:"53901", enabled:true, accountExpired:false, accountLocked:false, passwordExpired:false).save(failOnError:true)
 		    UserRole.create admin, adminRole
-
-            def user = new User(username:"user", password:springSecurityService.encodePassword("user"), email: "admin@cocoaconf.com", firstName: "Admin", lastName: "Cocoaconf", street: "123 Main Street", city: "City", state: "ST", zip:"53901", enabled:true, accountExpired:false, accountLocked:false, passwordExpired:false).save(failOnError:true)
-            UserRole.create user, attendeeRole
-
+		
+		    def attendee = new User(username:"attendee", password:springSecurityService.encodePassword("attendee"), email: "attendee@cocoaconf.com", firstName: "Attendee", lastName: "Cocoaconf", street: "123 Main Street", city: "City", state: "ST", zip:"53901", enabled:true, accountExpired:false, accountLocked:false, passwordExpired:false).save(failOnError:true)
+            UserRole.create attendee, attendeeRole
 
             String sd = "2011/08/12"
             String ed = "2011/08/13"
@@ -26,7 +25,7 @@ class BootStrap {
 		
             if(GrailsUtil.environment == "development") {
                 println "in dev mode"
-                def venue =  new Venue(description:"This is the great venue that you should hold a conference at.", phone:"(123) 456-7890", website:"http://venue.com/", image:new File("/Users/zak/builds/cocoaconf/web-app/images/venue/the-great-venue/DSCN9493.JPG").readBytes(), address:"123 Main Street", city:"Madison", name:"The Great Venue", state:"WI", zip:"53901").save(failOnError:true)
+                def venue =  new Venue(description:"This is the great venue that you should hold a conference at.", phone:"(123) 456-7890", website:"http://venue.com/", image:new File("/Users/zak/builds/cocoaconf/web-app/images/cc-logo.png").readBytes(), address:"123 Main Street", city:"Madison", name:"The Great Venue", state:"WI", zip:"53901").save(failOnError:true)
 
                  //def venue =  new Venue(description:"This is the great venue that you should hold a conference at.", phone:"(123) 456-7890", website:"http://venue.com/", imagePath:"images/venue/the-great-venue/DSCN9493.JPG", address:"123 Main Street", city:"Madison", name:"The Great Venue", state:"WI", zip:"53901").save(failOnError:true)
 
