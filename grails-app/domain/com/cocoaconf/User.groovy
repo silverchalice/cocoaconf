@@ -16,10 +16,12 @@ class User {
 	boolean accountExpired
 	boolean accountLocked
 	boolean passwordExpired
-
+	SessionChoice choice
+	
 	static constraints = {
 		username blank: false, unique: true
 		password blank: false
+        choice nullable: true
 	}
 
 	static mapping = {

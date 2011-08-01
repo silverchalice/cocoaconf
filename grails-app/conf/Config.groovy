@@ -98,7 +98,8 @@ grails.plugins.springsecurity.interceptUrlMap = [
     '/css/**':                              ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/js/**':                               ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/js/jquery**':                         ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/login/auth':                          ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/login/*':                          ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/logout/*':                          ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/interest/register':                   ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/home/announcement':                   ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/home':                                ['IS_AUTHENTICATED_ANONYMOUSLY'],
@@ -114,6 +115,8 @@ grails.plugins.springsecurity.interceptUrlMap = [
     '/session/details/*':                   ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/speaker/details/*':                   ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/speaker/**':                          ['ROLE_SPEAKER', 'ROLE_ADMIN'],
+    '/user/**':                          ['ROLE_SPEAKER', 'ROLE_ADMIN', 'ROLE_ATTENDEE'],
+
     '/conference/**':                       ['ROLE_ADMIN'],
     '/venue/**':                            ['ROLE_ADMIN'],
     '/presentation/*':                      ['ROLE_SPEAKER', 'ROLE_ADMIN'],

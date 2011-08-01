@@ -7,6 +7,7 @@ class BootStrap {
     def springSecurityService
 
     def init = { servletContext ->
+<<<<<<< HEAD
 	    def attendeeRole = Role.findByAuthority('ATTENDEE') ?: new Role(authority: 'ATTENDEE').save(failOnError: true)
 	    def speakerRole = Role.findByAuthority('SPEAKER') ?: new Role(authority:'SPEAKER').save(failOnError:true)
 		def adminRole = Role.findByAuthority('ADMIN') ?: new Role(authority: 'ADMIN').save(failOnError: true)
@@ -17,7 +18,7 @@ class BootStrap {
 		
 		    def attendee = new User(username:"attendee", password:springSecurityService.encodePassword("attendee"), email: "attendee@cocoaconf.com", firstName: "Attendee", lastName: "Cocoaconf", street: "123 Main Street", city: "City", state: "ST", zip:"53901", enabled:true, accountExpired:false, accountLocked:false, passwordExpired:false).save(failOnError:true)
             UserRole.create attendee, attendeeRole
-		
+
             String sd = "2011/08/12"
             String ed = "2011/08/13"
             SimpleDateFormat formatter = new SimpleDateFormat("yyyy/MM/dd")
@@ -32,9 +33,9 @@ class BootStrap {
 
                 def speaker1 = new Speaker(firstName:"Daniel", lastName:"Steinberg", email:"change@this.com", bio:"Daniel Steinberg has spent the last three decades programming the iPad, iPhone, and Mac OS X. OK, he hasn't. But he's been programming the iPhone and the iPad since the SDK's first appeared in beta and Mac OS X for many years before. Daniel is co-author of the book \"iPad Programming\" from the Pragmatic Programmers and author of their book \"Cocoa Programming.\" Daniel presents iPhone and Cocoa training for the Pragmatic Studio and consults through his company Dim Sum Thinking. When he's not coding or talking about coding for the Mac, the iPhone, and the iPad he's probably cooking or hanging out with his wife and daughter.", imagePath:"images/speaker/daniel-steinberg/ds.png", blog:"http://dimsumthinking.com/", twitter:"dimsumthinking").save(failOnError:true)
 
-                def speaker2 = new Speaker(firstName:"Chris", lastName:"Adamson", email:"change@this.com", bio:"Chris Adamson is an independent writer, editor, and developer, living in Grand Rapids, Michigan. Now focusing on iPhone and Mac development, he is the co-author of iPhone SDK Development. He is also the author of ÒQuickTime for Java: A DeveloperÕs NotebookÓ (OÕReilly) and co-author of ÒSwing HacksÓ (OÕReilly) and has served as Editor for the developer websites ONJava and java.net. He maintains a corporate identity as Subsequently & Furthermore, Inc. (http://www.subfurther.com/) and writes the [Time code]; blog at http://www.subfurther.com/blog .  In a previous career, he was a Writer / Associate Producer at CNN Headline News, and over the years, he has managed to own eleven and a half Macs.", imagePath:"images/speaker/chris-adamson/ca.jpg", blog:"http://www.subfurther.com/", twitter:"invalidname").save(failOnError:true)
+                def speaker2 = new Speaker(firstName:"Chris", lastName:"Adamson", email:"change@this.com", bio:"Chris Adamson is an independent writer, editor, and developer, living in Grand Rapids, Michigan. Now focusing on iPhone and Mac development, he is the co-author of iPhone SDK Development. He is also the author of ï¿½QuickTime for Java: A Developerï¿½s Notebookï¿½ (Oï¿½Reilly) and co-author of ï¿½Swing Hacksï¿½ (Oï¿½Reilly) and has served as Editor for the developer websites ONJava and java.net. He maintains a corporate identity as Subsequently & Furthermore, Inc. (http://www.subfurther.com/) and writes the [Time code]; blog at http://www.subfurther.com/blog .  In a previous career, he was a Writer / Associate Producer at CNN Headline News, and over the years, he has managed to own eleven and a half Macs.", imagePath:"images/speaker/chris-adamson/ca.jpg", blog:"http://www.subfurther.com/", twitter:"invalidname").save(failOnError:true)
 
-                def speaker3 = new Speaker(firstName:"Chris", lastName:"Judd", email:"change@this.com", bio:"Christopher M. Judd is the president and primary consultant for Judd Solutions (http://www.juddsolutions.com), an international speaker, an open source evangelist, the Central Ohio Java Users Group (http://www.cojug.org) and Columbus iPhone Developer User Group leader, and the co-author of Beginning Groovy and Grails (Apress, 2008), Enterprise Java Development on a Budget (Apress, 2003) and Pro Eclipse JST (Apress, 2005) as well as the author of the childrenÕs book ÒBearable MomentsÓ. He has spent 13 years architecting and developing software for Fortune 500 companies in various industries, including insurance, retail, government, manufacturing, service, and transportation. His current focus is on consulting, mentoring, and training with Java, Java EE, Groovy, Grails, Cloud Computing and mobile platforms like iPhone, Android and Java ME.", imagePath:"images/speaker/chris-judd/cj.jpg", blog:"http://www.juddsolutions.com/", twitter:"javajudd").save(failOnError:true)
+                def speaker3 = new Speaker(firstName:"Chris", lastName:"Judd", email:"change@this.com", bio:"Christopher M. Judd is the president and primary consultant for Judd Solutions (http://www.juddsolutions.com), an international speaker, an open source evangelist, the Central Ohio Java Users Group (http://www.cojug.org) and Columbus iPhone Developer User Group leader, and the co-author of Beginning Groovy and Grails (Apress, 2008), Enterprise Java Development on a Budget (Apress, 2003) and Pro Eclipse JST (Apress, 2005) as well as the author of the childrenï¿½s book ï¿½Bearable Momentsï¿½. He has spent 13 years architecting and developing software for Fortune 500 companies in various industries, including insurance, retail, government, manufacturing, service, and transportation. His current focus is on consulting, mentoring, and training with Java, Java EE, Groovy, Grails, Cloud Computing and mobile platforms like iPhone, Android and Java ME.", imagePath:"images/speaker/chris-judd/cj.jpg", blog:"http://www.juddsolutions.com/", twitter:"javajudd").save(failOnError:true)
 
                 def talk1 = new Presentation(speaker:Speaker.findByLastName("Steinberg"), title:"Your Code - the Director's Cut (Keynote)", pAbstract:"When you build your application it's like a director on a movie set yelling \"Action\". There are all sorts of objects appearing on screen, there is dialog, and there is plenty of action. Your source code is like the shooting script for an action packed movie. From simple method calls to delegation, you are trying to get the most out of your objects. We'll take a brief look at everything from object creation to MVC from the vantage point of the director.", codePath:"zip/presentation/code/code.zip", slidesPath:"zip/presentation/slide/slides.zip").save()
 
@@ -68,7 +69,7 @@ class BootStrap {
 
             }
 
-		}
+        }
     }
     def destroy = {
     }

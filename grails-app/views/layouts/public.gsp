@@ -27,7 +27,12 @@
 </script>
     </head>
     <body>
-         <div id="announcementHeader" style="width:100%; background-image:url(${resource(dir:'images', file:'bar-bg.png')}); text-align:center; height:25px; padding-top:8px; margin-bottom:10px; font-weight:bold; color:white">Coming to Columbus, Ohio August 12 & 13, 2011 - Early Bird Discount available through July 22</div>
+    <sec:ifNotLoggedIn>
+        <div id="announcementHeader" style="width:100%; background-image:url(${resource(dir:'images', file:'bar-bg.png')}); text-align:center; height:25px; padding-top:8px; margin-bottom:10px; font-weight:bold; color:white">Coming to Columbus, Ohio August 12 & 13, 2011 - <span style="color:#ff9627">Registration closes August 8! </span> <g:link style="color:white; padding-left: 10px; text-decoration: none" controller="login" > Login</g:link> </div>
+    </sec:ifNotLoggedIn>
+    <sec:ifLoggedIn>
+        <div id="announcementHeader" style="width:100%; background-image:url(${resource(dir:'images', file:'bar-bg.png')}); text-align:center; height:25px; padding-top:8px; margin-bottom:10px; font-weight:bold; color:white">Coming to Columbus, Ohio August 12 & 13, 2011 - <span style="color:#2ab0e2">Welcome, <sec:username/></span><g:link style="color:white; padding-left: 10px; text-decoration: none" controller="logout" >Logout</g:link> </div>
+    </sec:ifLoggedIn>
 
          <div id="page-header">
             <span id="page-header-right"><img src="${resource(dir:'images', file:'tr-corner.png')}" /></span>

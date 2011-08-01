@@ -3,6 +3,8 @@ package com.cocoaconf
 
 class HomeController {
 
+    def springSecurityService
+
     def index = {
 	    redirect(action:'announcement')
 	}
@@ -13,7 +15,22 @@ class HomeController {
 
     def about = {}
 
-    def schedule = {}
+    def schedule = {
+
+        def model
+
+        if(springSecurityService.principal) {
+            def user = User.get(springSecurityService.principal.id)
+            def choice = user.choice
+
+            model = [choice: choice]
+
+        } else{
+           println "no user"
+       }
+
+       return model
+    }
 
     def partners = {}
 
