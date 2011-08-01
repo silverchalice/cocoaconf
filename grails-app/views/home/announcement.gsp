@@ -106,6 +106,9 @@
       </div>
   </g:if>
      <h1 style="margin-left:150px;">Registration ends August 8!</h1>
+     <g:if test="${flash.message}">
+         <div class="message">${flash.message}</div>
+     </g:if>
      <div style="width:200px; padding-top:20px; text-align:center; float:left" ><iframe  src="http://www.eventbrite.com/countdown-widget?eid=1649713337" frameborder="0" height="271" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe></div>
      <div style="float:right; width:480px; padding-top:20px"><span style="font-size:16px; font-weight: bold">Columbus, Ohio. August 12-13</span><p>With the current explosive growth of interest in iOS and OS X software, there's never been a better time to develop for these exciting platforms.  And there's never been a more affordable, easily accessible conference to help you sharpen your skills and learn about the latest tools and libraries for iOS and Mac programming.</p>
 
