@@ -14,7 +14,7 @@
 
       <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
 
-      <script src="${resource(dir:'js', file:'jquery-1.5.1.min.js')}" type="text/javascript"></script>
+      <script src="${resource(dir:'js', file:'jquery-1.6.2.min.js')}" type="text/javascript"></script>
 
       <script src="${resource(dir:'js', file:'jquery-ui-1.8.11.custom.min.js')}" type="text/javascript"></script>
       <script src="${resource(dir:'js', file:'jquery.validate.min.js')}" type="text/javascript"></script>
@@ -101,7 +101,7 @@
   <body>
 
   <g:if test="${flash.message}">
-      <div id="flashMessage"><p>You will be notified as soon as registration opens. See you there!</p>
+      <div id="flashMessage"><p>${flash.message}</p>
        <span class="button" id="closeFlash" >Ok!</span>
       </div>
   </g:if>

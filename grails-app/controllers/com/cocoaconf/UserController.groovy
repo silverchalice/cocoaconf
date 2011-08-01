@@ -44,7 +44,6 @@ class UserController {
 		if (springSecurityService.encodePassword(params.oldpassword) == user.password){
 			if (params.password == params.password2){
 				user.password = springSecurityService.encodePassword(params.password)
-				user.save()
 				redirect(controller:'home', action:'announcement')
 			}
 			else{
