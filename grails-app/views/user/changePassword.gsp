@@ -7,7 +7,7 @@
 	text-align:center;
 }
 #login .inner {
-	width:260px;
+	width:320px;
 	margin:0px auto;
 	text-align:left;
 	padding:10px;
@@ -30,6 +30,10 @@
 #login .inner .cssform input[type='text'] {
 	width: 120px;
 }
+
+#login table {
+    border: none
+}
 #login .inner .cssform label {
 	font-weight: bold;
 	float: left;
@@ -50,22 +54,28 @@
 			</g:if>
 			<div class='fheader'>Please Change Password..</div>
 			<g:form name="changePasswordForm" action="savePassword">
-				<p>
-					<label for='oldpassword'>Current Password</label>
-					<input type='password' class='text_' name='oldpassword' id='oldpassword' />
-				</p>
-				<p>
-					<label for='password'>Password</label>
-					<input type='password' class='text_' name='j_password' id='password' />
-				</p>
-				<p>
-					<label for='password2'>Retype Password</label>
-					<input type='password' class='text_' name='password2' id='password2' />
-				</p>
-				<p>
-					<input type='submit' value='Save New Password' />
-				</p>
-			</form>
+                <table>
+                    <tr>
+                        <td><label for='oldpassword'>Current Password</label></td>
+					    <td><input type='password' class='text_' name='oldpassword' id='oldpassword' /></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for='password'>Password</label></td>
+                        <td><input type='password' class='text_' name='j_password' id='password' /></td>
+                    </tr>
+                    <tr>
+                        <td><label for='password2'>Retype Password</label></td>
+					    <td><input type='password' class='text_' name='password2' id='password2' /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type='submit' value='Save New Password' />
+                        </td>
+                    </tr>
+                </table>
+
+			</g:form>
 		</div>
 	</div>
 <script type='text/javascript'>

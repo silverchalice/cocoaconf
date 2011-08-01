@@ -7,10 +7,10 @@ class BootStrap {
     def springSecurityService
 
     def init = { servletContext ->
-<<<<<<< HEAD
-	    def attendeeRole = Role.findByAuthority('ATTENDEE') ?: new Role(authority: 'ATTENDEE').save(failOnError: true)
-	    def speakerRole = Role.findByAuthority('SPEAKER') ?: new Role(authority:'SPEAKER').save(failOnError:true)
-		def adminRole = Role.findByAuthority('ADMIN') ?: new Role(authority: 'ADMIN').save(failOnError: true)
+
+	    def attendeeRole = Role.findByAuthority('ROLE_ATTENDEE') ?: new Role(authority: 'ROLE_ATTENDEE').save(failOnError: true)
+	    def speakerRole = Role.findByAuthority('ROLE_SPEAKER') ?: new Role(authority:'ROLE_SPEAKER').save(failOnError:true)
+		def adminRole = Role.findByAuthority('ROLE_ADMIN') ?: new Role(authority: 'ROLE_ADMIN').save(failOnError: true)
 	    if(!User.findByUsername("admin")){
 
 		    def admin = new User(username:"admin", password:springSecurityService.encodePassword("admin"), email: "admin@cocoaconf.com", firstName: "Admin", lastName: "Cocoaconf", street: "123 Main Street", city: "City", state: "ST", zip:"53901", enabled:true, accountExpired:false, accountLocked:false, passwordExpired:false).save(failOnError:true)
@@ -25,7 +25,7 @@ class BootStrap {
 		
             if(GrailsUtil.environment == "development") {
                 println "in dev mode"
-                def venue =  new Venue(description:"This is the great venue that you should hold a conference at.", phone:"(123) 456-7890", website:"http://venue.com/", image:new File("/Users/ebenezer/builds/cocoaconf/web-app/images/venue/the-great-venue/DSCN9493.JPG").readBytes(), address:"123 Main Street", city:"Madison", name:"The Great Venue", state:"WI", zip:"53901").save(failOnError:true)
+                def venue =  new Venue(description:"This is the great venue that you should hold a conference at.", phone:"(123) 456-7890", website:"http://venue.com/", image:new File("/Users/zak/builds/cocoaconf/web-app/images/cc-logo.png").readBytes(), address:"123 Main Street", city:"Madison", name:"The Great Venue", state:"WI", zip:"53901").save(failOnError:true)
 
                  //def venue =  new Venue(description:"This is the great venue that you should hold a conference at.", phone:"(123) 456-7890", website:"http://venue.com/", imagePath:"images/venue/the-great-venue/DSCN9493.JPG", address:"123 Main Street", city:"Madison", name:"The Great Venue", state:"WI", zip:"53901").save(failOnError:true)
 
