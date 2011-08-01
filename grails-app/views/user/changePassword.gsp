@@ -62,7 +62,7 @@
 
                     <tr>
                         <td><label for='password'>Password</label></td>
-                        <td><input type='password' class='text_' name='j_password' id='password' /></td>
+                        <td><input type='password' class='text_' name='password' id='password' /></td>
                     </tr>
                     <tr>
                         <td><label for='password2'>Retype Password</label></td>

@@ -1,5 +1,7 @@
 package com.cocoaconf
 
+import org.springframework.security.core.context.SecurityContextHolder as SCH
+
 class UserController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
@@ -99,7 +101,7 @@ class UserController {
 		"57171659    Jul 29, 2011    Aguinaga        Salvador    saguinag@nd.edu                         1.0 CocoaConf Registration  Aug 12, 2011    44700571    PayPal Completed    350.0           9.74            Attending       704 WILSON BLVD                                                 MISHAWAKA           IN          46545-6037  US",
 		"57204993    Jul 29, 2011    Krac            jason       jasonkrac@gmail.com                     1.0 CocoaConf Registration  Aug 12, 2011    44725863    PayPal Completed    300.0           8.49            Attending       1104 Northwood Circle                                           New Albany          OH          43054       US",
 		"57215051    Jul 29, 2011    Zatezalo        Shane       Shane@Lottadot.com                      1.0 CocoaConf Registration  Aug 12, 2011    44733541    PayPal Completed    300.0           8.49            Attending       5762 walterway dr                                               Hilliard            OH          3026        US"]
-		
+		def attendeeRole = Role.findByAuthority('ROLE_ATTENDEE')
 		def records = []
 		file.each{line ->
 		    def data = [:]
@@ -118,6 +120,8 @@ class UserController {
 			user.password = springSecurityService.encodePassword("cocoaconf")
 			if (!user.save())
 			    user.errors.allErrors.each{println it}
+			else
+			    UserRole.create user, attendeeRole
 		}
 		render "There are now ${User.count()} users!"
 	}
@@ -130,8 +134,16 @@ class UserController {
 		if (springSecurityService.encodePassword(params.oldpassword) == user.password){
 			if (params.password == params.password2){
 				user.password = springSecurityService.encodePassword(params.password)
-				user.save()
-				redirect(controller:'home', action:'announcement')
+				if (user.save()){
+					SCH.clearContext()
+					flash.message = 'Your password has been changed.  Please login with new password.'
+					redirect(controller:'login', action:'auth')
+				}
+				else{
+					println "ERROR saving password change for ${user?.username}!!!"
+					user.errors.allErrors.each{println it}
+				    redirect(controller:'home', action:'announcement')
+				}
 			}
 			else{
 				flash.message = "New passwords do not match"
