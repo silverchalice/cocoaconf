@@ -1,8 +1,11 @@
 package com.cocoaconf
 
+import org.codehaus.groovy.grails.commons.ConfigurationHolder
+
 class SessionController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
+    def config = ConfigurationHolder.config
 
     def index = {
         redirect(action: "list", params: params)
@@ -118,7 +121,17 @@ class SessionController {
             redirect(action: "sessions")
         }
         else {
-            [presentationInstance: presentationInstance]
+
+            def slides = null
+            def name = presentationInstance.title.toLowerCase().replace(" ", "_") + ".zip"
+            println name
+
+            File slideDownload = new File(config.slideDirectory + name)
+            if(slideDownload.exists()) {
+                slides = name
+            }
+
+            [presentationInstance: presentationInstance, slides: slides]
         }
     }
 

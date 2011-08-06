@@ -93,40 +93,44 @@ log4j = {
 grails.plugins.springsecurity.securityConfigType = SecurityConfigType.InterceptUrlMap
 
 grails.plugins.springsecurity.interceptUrlMap = [
-    '/':                                    ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/images/**':                           ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/css/**':                              ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/js/**':                               ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/js/jquery**':                         ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/login/*':                             ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/logout/*':                            ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/interest/register':                   ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/home/announcement':                   ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/home':                                ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/home/*':                                ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/about':                               ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/home/nearYou/**':                     ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/home/nearYou':                        ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/register':                            ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/session/list':                        ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/conf/**':                             ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/speakers':                            ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/schedule':                            ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/session/details/*':                   ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/speaker/details/*':                   ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/speaker/**':                          ['ROLE_SPEAKER', 'ROLE_ADMIN'],
-    '/user/**':                             ['ROLE_SPEAKER', 'ROLE_ADMIN', 'ROLE_ATTENDEE'],
-
-    '/conference/**':                       ['ROLE_ADMIN'],
-    '/venue/**':                            ['ROLE_ADMIN'],
-    '/presentation/*':                      ['ROLE_SPEAKER', 'ROLE_ADMIN'],
-    '/session/**':                          ['ROLE_ADMIN'],
-    '/locationRequest/*':                   ['ROLE_ADMIN'],
-    '/locationRequest/saveRequest':         ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/locationRequest/saveRequest/**':      ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/sessions':                            ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/interest/*':                          ['ROLE_ADMIN'],
-    '/**':                                  ['ROLE_ADMIN']
+    '/':                                                     ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/images/**':                                            ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/css/**':                                               ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/js/**':                                                ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/js/jquery**':                                          ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/login/*':                                              ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/logout/*':                                             ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/interest/register':                                    ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/home/announcement':                                    ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/home':                                                 ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/home/*':                                               ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/home/**':                                               ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/about':                                                ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/home/nearYou/**':                                      ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/home/nearYou':                                         ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/register':                                             ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/session/list':                                         ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/conf/**':                                              ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/speakers':                                             ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/schedule':                                             ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/session/details/*':                                    ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/speaker/details/*':                                    ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/speaker/**':                                           ['ROLE_SPEAKER', 'ROLE_ADMIN'],
+    '/user/**':                                              ['ROLE_SPEAKER', 'ROLE_ADMIN'],
+    '/user/pickSessions':                                    ['ROLE_SPEAKER', 'ROLE_ADMIN', 'ROLE_ATTENDEE'],
+    '/user/changePassword':                                  ['ROLE_SPEAKER', 'ROLE_ADMIN', 'ROLE_ATTENDEE'],
+    '/user/savePassword':                                    ['ROLE_SPEAKER', 'ROLE_ADMIN', 'ROLE_ATTENDEE'],
+    '/session/download_slides/**':                           ['ROLE_SPEAKER', 'ROLE_ADMIN', 'ROLE_ATTENDEE'],
+    '/conference/**':                                                          ['ROLE_ADMIN'],
+    '/venue/**':                                                               ['ROLE_ADMIN'],
+    '/presentation/*':                                         ['ROLE_SPEAKER', 'ROLE_ADMIN'],
+    '/session/**':                                                             ['ROLE_ADMIN'],
+    '/locationRequest/*':                                                      ['ROLE_ADMIN'],
+    '/locationRequest/saveRequest':                          ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/locationRequest/saveRequest/**':                       ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/sessions':                                             ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/interest/*':                                                             ['ROLE_ADMIN'],
+    '/**':                                                                     ['ROLE_ADMIN']
 
 ]
 
@@ -136,3 +140,18 @@ grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.cocoaconf
 grails.plugins.springsecurity.authority.className = 'com.cocoaconf.Role'
 
 grails.views.javascript.library="jquery"
+
+environments {
+    development {
+        slideDirectory = '/Users/zak/builds/cocoaconf/web-app/files/slides/'
+    }
+
+    test {
+
+    }
+
+    production {
+        slideDirectory = '/srv/www/cocoaconf.com/slides/'
+    }
+
+}
