@@ -123,15 +123,6 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="sessions"><g:message code="user.sessions.label" default="Sessions" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: userInstance, field: 'sessions', 'errors')}">
-                                    <g:select name="sessions" from="${com.cocoaconf.SessionChoice.list()}" multiple="yes" optionKey="id" size="5" value="${userInstance?.sessions*.id}" />
-                                </td>
-                            </tr>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
                                   <label for="state"><g:message code="user.state.label" default="State" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: userInstance, field: 'state', 'errors')}">

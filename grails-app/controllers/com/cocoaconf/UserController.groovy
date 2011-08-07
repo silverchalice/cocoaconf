@@ -157,9 +157,12 @@ class UserController {
 	}
 	
     def save = {
+	    params.password = springSecurityService.encodePassword("cocoaconf")
         def userInstance = new User(params)
+        def attendeeRole = Role.findByAuthority('ROLE_ATTENDEE')
         if (userInstance.save(flush: true)) {
             flash.message = "${message(code: 'default.created.message', args: [message(code: 'user.label', default: 'User'), userInstance.id])}"
+            UserRole.create userInstance, attendeeRole
             redirect(action: "show", id: userInstance.id)
         }
         else {

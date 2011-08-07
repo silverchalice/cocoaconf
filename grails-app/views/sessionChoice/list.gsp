@@ -24,7 +24,15 @@
                         
                             <g:sortableColumn property="id" title="${message(code: 'sessionChoice.id.label', default: 'Id')}" />
                         
-                            <g:sortableColumn property="sessionId" title="${message(code: 'sessionChoice.sessionId.label', default: 'Session Id')}" />
+                            <g:sortableColumn property="session01" title="${message(code: 'sessionChoice.session01.label', default: 'Session01')}" />
+                        
+                            <g:sortableColumn property="session02" title="${message(code: 'sessionChoice.session02.label', default: 'Session02')}" />
+                        
+                            <g:sortableColumn property="session03" title="${message(code: 'sessionChoice.session03.label', default: 'Session03')}" />
+                        
+                            <g:sortableColumn property="session04" title="${message(code: 'sessionChoice.session04.label', default: 'Session04')}" />
+                        
+                            <g:sortableColumn property="session05" title="${message(code: 'sessionChoice.session05.label', default: 'Session05')}" />
                         
                         </tr>
                     </thead>
@@ -34,7 +42,15 @@
                         
                             <td><g:link action="show" id="${sessionChoiceInstance.id}">${fieldValue(bean: sessionChoiceInstance, field: "id")}</g:link></td>
                         
-                            <td>${fieldValue(bean: sessionChoiceInstance, field: "sessionId")}</td>
+                            <td><g:formatBoolean boolean="${sessionChoiceInstance.session01}" /></td>
+                        
+                            <td><g:formatBoolean boolean="${sessionChoiceInstance.session02}" /></td>
+                        
+                            <td><g:formatBoolean boolean="${sessionChoiceInstance.session03}" /></td>
+                        
+                            <td><g:formatBoolean boolean="${sessionChoiceInstance.session04}" /></td>
+                        
+                            <td><g:formatBoolean boolean="${sessionChoiceInstance.session05}" /></td>
                         
                         </tr>
                     </g:each>
