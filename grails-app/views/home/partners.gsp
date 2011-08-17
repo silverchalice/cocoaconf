@@ -22,6 +22,9 @@
 			<div id="crockett" class="sponsor">
 				<a href="http://crockettphotography.smugmug.com/"><img src="${resource(dir:'images',file:'crockett.png')}" style="width:380px; float:left;"/></a>
 			</div>
+            <div id="cylatech" class="sponsor">
+				<a href="http://cylatech.com/"><img src="${resource(dir:'images',file:'cylatech.gif')}" style="margin-top: 20px"/></a>
+			</div>
 			<br/>
 			<div style="clear: both"><p>For more information about becoming a CocoaConf sponsor, drop us a line at <a href="mailto:info@cocoaconf.com">info@cocoaconf</a></p></div>
 		</div>

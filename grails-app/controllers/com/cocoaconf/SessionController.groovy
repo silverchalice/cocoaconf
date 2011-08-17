@@ -123,7 +123,7 @@ class SessionController {
         else {
 
             def slides = null
-            def name = presentationInstance.title.toLowerCase().replace(" ", "_") + ".zip"
+            def name = presentationInstance.slidesPath
             println name
 
             File slideDownload = new File(config.slideDirectory + name)

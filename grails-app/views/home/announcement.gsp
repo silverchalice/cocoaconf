@@ -114,18 +114,14 @@
 
      <a href="http://www.twitter.com/cocoaconf" style="margin-left: 20px"><img src="http://twitter-badges.s3.amazonaws.com/follow_us-c.png" alt="Follow CocoaConf on Twitter"/></a>
 
-     <div style="background-image: url(${resource(dir:'images',file:'threesateam.png')}); background-position: 360px 0; background-repeat: no-repeat; margin-top: 20px; min-height: 75px">
-         <h2>Two's Company, Three's a <span style="color:#2ab0e2">Team</span></h2>
-         <h4><g:link controller="home" action="team">Special discount for teams - click for more details!</g:link></h4>
-     </div>
+
   </div>
   <div class="clear" style="clear: both"></div>
-  <g:link controller="home" action="register" class="button" style="font-weight:bold;">Registration open now!</g:link>
 
   <div class="clear">&nbsp;</div>
   <img src="${resource(dir:'images', file:'xcode.png')}"  id="xcode"/>
   <div id="glossy-box"><h3>Cocoaconf is a technical conference, pure and simple.</h3> <p>Instead of vendor booths or vendor keynotes, you'll find:</p
-       <p style="border-bottom: 1px dotted gray">In-depth technical sessions.</p>
+       <p style="border-bottom: 1px dotted gray">In-depth technical sessions.</p>           
        <p style="border-bottom: 1px dotted gray">Multiple concurrent tracks.</p>
        <p style="border-bottom: 1px dotted gray"><a href="http://www.cocoaconf.com/session/details/4" style="color:#2ab0e2; font-size: 14.5px; text-decoration: none; font-weight: bold">Full-day, hands-on iOS workshop.</a></p>
        <p style="border-bottom: 1px dotted gray">Fun and informative speaker panel!</p>
