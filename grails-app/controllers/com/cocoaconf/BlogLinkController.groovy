@@ -97,4 +97,9 @@ class BlogLinkController {
             redirect(action: "list")
         }
     }
+	
+	def roundup = {
+		def blogLinks = BlogLink.list(sort:'id')
+		[blogLinks:blogLinks]
+	}
 }

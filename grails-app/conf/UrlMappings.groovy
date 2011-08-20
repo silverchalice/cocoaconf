@@ -23,6 +23,7 @@ class UrlMappings {
 	    "/register"(controller:'home', action:'register')
 	    "/schedule"(controller:'home', action:'schedule')
 		"/partners"(controller:'home', view:'partners')
+		"/blog/roundup"(controller:'blogLink', action:'roundup')
 		"/"(controller:'home', action:"announcement")
 		"500"(view:'/error')
 	}

@@ -13,8 +13,12 @@ hibernate {
 environments {
     development {
         dataSource {
-            dbCreate = "create-drop" // one of 'create', 'create-drop','update'
-            url = "jdbc:hsqldb:mem:devDB"
+   		    driverClassName = "com.mysql.jdbc.Driver"
+			username = "cocoaconf"
+			password = "cc5551212"
+			dbCreate = "update"
+            url = "jdbc:mysql://cocoaconf.com:3306/cocoaDb"
+			dialect=org.hibernate.dialect.MySQLInnoDBDialect
         }
     }
     test {

@@ -104,7 +104,7 @@ grails.plugins.springsecurity.interceptUrlMap = [
     '/home/announcement':                                    ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/home':                                                 ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/home/*':                                               ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/home/**':                                               ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/home/**':                                              ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/about':                                                ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/home/nearYou/**':                                      ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/home/nearYou':                                         ['IS_AUTHENTICATED_ANONYMOUSLY'],
@@ -121,16 +121,17 @@ grails.plugins.springsecurity.interceptUrlMap = [
     '/user/changePassword':                                  ['ROLE_SPEAKER', 'ROLE_ADMIN', 'ROLE_ATTENDEE'],
     '/user/savePassword':                                    ['ROLE_SPEAKER', 'ROLE_ADMIN', 'ROLE_ATTENDEE'],
     '/session/download_slides/**':                           ['ROLE_SPEAKER', 'ROLE_ADMIN', 'ROLE_ATTENDEE'],
-    '/conference/**':                                                          ['ROLE_ADMIN'],
-    '/venue/**':                                                               ['ROLE_ADMIN'],
-    '/presentation/*':                                         ['ROLE_SPEAKER', 'ROLE_ADMIN'],
-    '/session/**':                                                             ['ROLE_ADMIN'],
-    '/locationRequest/*':                                                      ['ROLE_ADMIN'],
+    '/conference/**':                                        ['ROLE_ADMIN'],
+    '/venue/**':                                             ['ROLE_ADMIN'],
+    '/blogLink/**':                                          ['ROLE_ADMIN'],
+    '/presentation/*':                                       ['ROLE_SPEAKER', 'ROLE_ADMIN'],
+    '/session/**':                                           ['ROLE_ADMIN'],
+    '/locationRequest/*':                                    ['ROLE_ADMIN'],
     '/locationRequest/saveRequest':                          ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/locationRequest/saveRequest/**':                       ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/sessions':                                             ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/interest/*':                                                             ['ROLE_ADMIN'],
-    '/**':                                                                     ['ROLE_ADMIN']
+    '/interest/*':                                           ['ROLE_ADMIN'],
+    '/**':                                                   ['ROLE_ADMIN']
 
 ]
 
