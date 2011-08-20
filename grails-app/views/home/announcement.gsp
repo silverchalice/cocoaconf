@@ -18,6 +18,7 @@
 
       <script src="${resource(dir:'js', file:'jquery-ui-1.8.11.custom.min.js')}" type="text/javascript"></script>
       <script src="${resource(dir:'js', file:'jquery.validate.min.js')}" type="text/javascript"></script>
+      <script src="${resource(dir:'js', file:'script.js')}" type="text/javascript"></script>
 
 <script type="text/javascript">
 
@@ -95,6 +96,106 @@
               margin-left:25px;
               margin-top:5px;
           }
+
+
+      /* Gallery styles */
+
+      #gallery{
+          /* CSS3 Box Shadow */
+          -moz-box-shadow:0 0 3px #AAAAAA;
+          -webkit-box-shadow:0 0 3px #AAAAAA;
+          box-shadow:0 0 3px #AAAAAA;
+
+          /* CSS3 Rounded Corners */
+
+          -moz-border-radius-bottomleft:4px;
+          -webkit-border-bottom-left-radius:4px;
+          border-bottom-left-radius:4px;
+
+          -moz-border-radius-bottomright:4px;
+          -webkit-border-bottom-right-radius:4px;
+          border-bottom-right-radius:4px;
+
+          border:1px solid white;
+
+          background:url(../images/slideshow/panel.jpg) repeat-x bottom center #ffffff;
+
+          /* The width of the gallery */
+          width:420px;
+          overflow:hidden;
+          margin-top: 20px;
+          float:left;
+      }
+
+      #slides{
+          /* This is the slide area */
+          height:272px;
+
+          /* jQuery changes the width later on to the sum of the widths of all the slides. */
+          width:420px;
+          overflow:hidden;
+      }
+
+      .slide{
+          float:left;
+      }
+
+      #menu{
+          /* This is the container for the thumbnails */
+          height:45px;
+          text-align: center;
+          display: none;
+      }
+
+      ul{
+          margin:0px;
+          padding:0px;
+      }
+
+      #menu li{
+          /* Every thumbnail is a li element */
+          width:60px;
+          display:inline-block;
+          list-style:none;
+          height:45px;
+          overflow:hidden;
+      }
+
+      #menu li.inact:hover{
+          /* The inactive state, highlighted on mouse over */
+          background:url(../images/slideshow/pic_bg.png) repeat;
+      }
+
+      #menu li.act,li.act:hover{
+          /* The active state of the thumb */
+          background:url(../images/slideshow/active_bg.png) no-repeat;
+      }
+
+      #menu li.act a{
+          cursor:default;
+      }
+
+      .fbar{
+          /* The left-most vertical bar, next to the first thumbnail */
+          width:2px;
+          background:url(../images/slideshow/divider.png) no-repeat right;
+      }
+
+      #menu li a{
+          display:block;
+          background:url(../images/slideshow/divider.png) no-repeat right;
+          height:35px;
+          padding-top:10px;
+      }
+
+      a img{
+          border:none;
+      }
+
+
+
+
+
       </style>
   </head>
 
@@ -105,30 +206,64 @@
        <span class="button" id="closeFlash" >Ok!</span>
       </div>
   </g:if>
-     <h1 style="margin-left:150px;">Registration ends August 8!</h1>
-     <g:if test="${flash.message}">
-         <div class="message">${flash.message}</div>
-     </g:if>
-     <div style="width:200px; padding-top:20px; text-align:center; float:left" ><iframe  src="http://www.eventbrite.com/countdown-widget?eid=1649713337" frameborder="0" height="271" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe></div>
-     <div style="float:right; width:480px; padding-top:20px"><span style="font-size:16px; font-weight: bold">Columbus, Ohio. August 12-13</span><p>With the current explosive growth of interest in iOS and OS X software, there's never been a better time to develop for these exciting platforms.  And there's never been a more affordable, easily accessible conference to help you sharpen your skills and learn about the latest tools and libraries for iOS and Mac programming.</p>
+     <div id="gallery">
 
-     <a href="http://www.twitter.com/cocoaconf" style="margin-left: 20px"><img src="http://twitter-badges.s3.amazonaws.com/follow_us-c.png" alt="Follow CocoaConf on Twitter"/></a>
+         <div id="slides">
 
+             <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide1.png')}" width="420" height="272" alt="side" /></div>
+             <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide2.png')}" width="420" height="272" alt="side" /></div>
+             <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide3.png')}" width="420" height="272" alt="side" /></div>
+             <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide4.png')}" width="420" height="272" alt="side" /></div>
+             <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide5.png')}" width="420" height="272" alt="side" /></div>
+             <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide6.png')}" width="420" height="272" alt="side" /></div>
+             <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide7.png')}" width="420" height="272" alt="side" /></div>
+             <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide8.png')}" width="420" height="272" alt="side" /></div>
+             <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide9.png')}" width="420" height="272" alt="side" /></div>
+             <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide10.png')}" width="420" height="272" alt="side" /></div>
+             <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide11.png')}" width="500" height="272" alt="side" /></div>
+         </div>
 
-  </div>
-  <div class="clear" style="clear: both"></div>
+         <div id="menu">
+             <ul>
+                 <li class="fbar">&nbsp;</li>
+                 <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_macbook.png')}" alt="thumbnail" /></a></li>
+                 <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_iphone.png')}" alt="thumbnail" /></a></li>
+                 <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_imac.png')}" alt="thumbnail" /></a></li>
+                 <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                 <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                 <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                 <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                 <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                 <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                 <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                 <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+             </ul>
+         </div>
 
-  <div class="clear">&nbsp;</div>
-  <img src="${resource(dir:'images', file:'xcode.png')}"  id="xcode"/>
-  <div id="glossy-box"><h3>Cocoaconf is a technical conference, pure and simple.</h3> <p>Instead of vendor booths or vendor keynotes, you'll find:</p
-       <p style="border-bottom: 1px dotted gray">In-depth technical sessions.</p>           
-       <p style="border-bottom: 1px dotted gray">Multiple concurrent tracks.</p>
-       <p style="border-bottom: 1px dotted gray"><a href="http://www.cocoaconf.com/session/details/4" style="color:#2ab0e2; font-size: 14.5px; text-decoration: none; font-weight: bold">Full-day, hands-on iOS workshop.</a></p>
-       <p style="border-bottom: 1px dotted gray">Fun and informative speaker panel!</p>
-       <p style="border-bottom: 1px dotted gray">And much more!</p>
-   </div>
+     </div>
+     <div style="float:right; width:260px; margin-top: 20px;">
+         <h2 style="color:#1da0d1;">Colombus 2011 Wrap Up!</h2>
+         <p>The first CocoaConf was held in Dublin, Ohio on August 12th and 13th. Ninety iPhone, iPad, and Mac developers gathered for two exciting days of training, networking, and good times. With three tracks and sessions ranging from beginner to advanced, there was something for everyone to enjoy and learn from...</p>
+         <g:link style="color:#ff9627; font-size:18px; font-weight: bold">Read more!</g:link>
+     </div>
+     <div class="clear" style="clear: both"></div>
 
-    <!--  <span style="font-size:16px; margin-right:45px;">Cocoa Touch</span>
+     <div class="clear">&nbsp;</div>
+     <img src="${resource(dir:'images', file:'xcode.png')}"  id="xcode"/>
+     <div id="glossy-box">
+        <h3>Cocoaconf is a technical conference, <span style="color:#2ab0e2">pure and simple.</span></h3>
+         <p>Instead of vendor booths or vendor keynotes, you'll find:</p>
+         <ul style="list-style: none">
+             <li style="border-bottom: 1px dotted gray"><strong>In-depth</strong> technical sessions.</li>           
+             <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Multiple <strong>concurrent tracks</strong>.</li>
+             <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Full-day, hands-on <strong>iOS workshop</strong>.</li>
+             <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Fun and informative <strong>speaker panel</strong>.</li>
+             <li style="border-bottom: 1px dotted gray; margin-bottom:15px; font-weight: bold">And much more!</li>
+         </ul>
+
+     </div>
+
+     <!--  <span style="font-size:16px; margin-right:45px;">Cocoa Touch</span>
       <span style="font-size:18px; margin-right:15px;">iTunes</span>
       <span style="font-size:18px; margin-right:70px;">Lion</span>
       <span style="font-size:14px; margin-right:62px;">Core Animation</span>
