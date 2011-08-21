@@ -38,6 +38,12 @@
         strong, h3 {
             color:#2ab0e2;
         }
+
+        a {
+            color:#2ab0e2;
+            text-decoration: none;
+            font-weight: bold
+        }
       </style>
 
 
@@ -45,11 +51,18 @@
   </head>
 
   <body>
-   <h1>Coming to Columbus, Ohio!</h1>
+   <h1>Coming to Raleigh, North Carolina this December!</h1>
+  <p>CocoaConf Colombus 2011 was a blast! We have a <g:link controller="blogLink" action="roundup">full write up here</g:link>  (and be sure to check out the listed blog entries on the same page - all from our awesome attendees!).</p>
+  <p>We'll be back in Colombus next year, but in the meantime we're not just sitting around. We're already planning the next CocoaConf of 2011 in Raleigh, South Carolina, and it's looking to be another great time! More details will be forthcoming (<a href="http://twitter.com/cocoaconf">follow us on Twitter</a> to get the scoop). </p>
+  <p>And remember to cast your vote for the <g:link controller="home" action="nearYou">location of the next CocoaConf</g:link> - we want to know where you want us! </p>
+  <br/>
+   <hr/>
+   <h2>Past Entries</h2> <br/>
+   <h2>Coming to Columbus, Ohio!</h2>
 
-   <p>We are excited to introduce the first Cocoaconf iPhone, iPad and Mac developer's conference, beginning August 12-13 in Columbus Ohio. We're working hard to bring you a first class line up of speakers, authors and professional iOS/OS X developers, delivering quality content without the noise of a vendor hall and salespeople. This is a technical conference, pure and simple.   </p>
+   <p>We are excited to introduce the first CocoaConf iPhone, iPad and Mac developer's conference, beginning August 12-13 in Columbus Ohio. We're working hard to bring you a first class line up of speakers, authors and professional iOS/OS X developers, delivering quality content without the noise of a vendor hall and salespeople. This is a technical conference, pure and simple.   </p>
    <p>If you have any questions, you can contact us at <a href="mailto:info@cocoaconf.com">info@cocoaconf.com</a></p>
-   <h3><g:link controller="home" action="register" style="color:#2ab0e2;">Registration is now open!</g:link></h3>
+
   <h2>Location & Venue</h2>
   <p><img src="${resource(dir:'images', file:'crown-1.png')}" style="float:left; margin:0 10px 10px 0" />Cocoaconf will be held at the beautiful <a href="http://crownplaza.com">Crown Plaza</a> in Dublin Ohio. They're offering a special rate of <strong>$99 per night for CocoaConf attendees</strong>. Just call <span class="address">(614) 764-2200</span> and tell them that you are attending CocoaConf.</p>
 

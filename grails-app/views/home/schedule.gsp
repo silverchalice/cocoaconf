@@ -116,7 +116,7 @@
                 <p>${flash.message}</p>
             </div>
         </g:if>
-        <h1 style="float:left">Schedule</h1>
+        <h1 style="float:left">Columbus 2011, Schedule</h1>
         <sec:ifLoggedIn>
             <g:if test="${slides}">
                 <a class="slideDownload" href="${createLink(controller:'home', action:'downloadSlides', params:[file:slides])}">Download Slides/Sample Code</a>

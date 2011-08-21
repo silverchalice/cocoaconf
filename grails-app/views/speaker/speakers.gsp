@@ -63,7 +63,7 @@
         </div>
         <div class="body">
 
-            <h1>Our Speakers</h1>
+            <h1>Columbus 2011, Speakers</h1>
             <p>Cocoaconf speakers include well known trainers, authors, and professional iOS and OS X developers.</p>
 
             <div class="list">

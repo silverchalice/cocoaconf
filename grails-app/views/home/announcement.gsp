@@ -242,9 +242,9 @@
 
      </div>
      <div style="float:right; width:260px; margin-top: 20px;">
-         <h2 style="color:#1da0d1;">Colombus 2011 Wrap Up!</h2>
+         <h2 style="color:#1da0d1;">Columbus 2011 Wrap Up!</h2>
          <p>The first CocoaConf was held in Dublin, Ohio on August 12th and 13th. Ninety iPhone, iPad, and Mac developers gathered for two exciting days of training, networking, and good times. With three tracks and sessions ranging from beginner to advanced, there was something for everyone to enjoy and learn from...</p>
-         <g:link style="color:#ff9627; font-size:18px; font-weight: bold">Read more!</g:link>
+         <g:link controller="blogLink" action="roundup" style="color:#ff9627; font-size:18px; font-weight: bold">Read more!</g:link>
      </div>
      <div class="clear" style="clear: both"></div>
 
