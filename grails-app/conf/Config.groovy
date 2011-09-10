@@ -1,5 +1,3 @@
-import grails.plugins.springsecurity.SecurityConfigType
-
 // locations to search for config files that get merged into the main config
 // config files can either be Java properties files or ConfigSlurper scripts
 
@@ -50,15 +48,16 @@ grails.logging.jul.usebridge = true
 // packages to include in Spring bean scanning
 grails.spring.bean.packages = []
 
+// request parameters to mask when logging exceptions
+grails.exceptionresolver.params.exclude = ['password']
+
 // set per-environment serverURL stem for creating absolute links
 environments {
     production {
         grails.serverURL = "http://www.changeme.com"
     }
     development {
-        grails.paypal.server = "https://www.sandbox.paypal.com/cgi-bin/webscr"
-        grails.paypal.email = "sales@simplycocoa.net"
-        grails.serverURL = "cocoaconf.com"
+        grails.serverURL = "http://localhost:8080/${appName}"
     }
     test {
         grails.serverURL = "http://localhost:8080/${appName}"
@@ -88,72 +87,4 @@ log4j = {
            'net.sf.ehcache.hibernate'
 
     warn   'org.mortbay.log'
-}
-
-grails.plugins.springsecurity.securityConfigType = SecurityConfigType.InterceptUrlMap
-
-grails.plugins.springsecurity.interceptUrlMap = [
-    '/':                                                     ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/images/**':                                            ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/css/**':                                               ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/js/**':                                                ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/js/jquery**':                                          ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/login/*':                                              ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/logout/*':                                             ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/interest/register':                                    ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/home/announcement':                                    ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/home':                                                 ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/home/*':                                               ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/home/**':                                              ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/about':                                                ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/home/nearYou/**':                                      ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/home/nearYou':                                         ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/register':                                             ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/session/list':                                         ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/conf/**':                                              ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/speakers':                                             ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/schedule':                                             ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/session/details/*':                                    ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/speaker/details/*':                                    ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/speaker/**':                                           ['ROLE_SPEAKER', 'ROLE_ADMIN'],
-    '/user/**':                                              ['ROLE_SPEAKER', 'ROLE_ADMIN'],
-    '/user/pickSessions':                                    ['ROLE_SPEAKER', 'ROLE_ADMIN', 'ROLE_ATTENDEE'],
-    '/user/changePassword':                                  ['ROLE_SPEAKER', 'ROLE_ADMIN', 'ROLE_ATTENDEE'],
-    '/user/savePassword':                                    ['ROLE_SPEAKER', 'ROLE_ADMIN', 'ROLE_ATTENDEE'],
-    '/session/download_slides/**':                           ['ROLE_SPEAKER', 'ROLE_ADMIN', 'ROLE_ATTENDEE'],
-    '/conference/**':                                        ['ROLE_ADMIN'],
-    '/venue/**':                                             ['ROLE_ADMIN'],
-    '/roundup':                                              ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/blogLink/**':                                          ['ROLE_ADMIN'],
-    '/presentation/*':                                       ['ROLE_SPEAKER', 'ROLE_ADMIN'],
-    '/session/**':                                           ['ROLE_ADMIN'],
-    '/locationRequest/*':                                    ['ROLE_ADMIN'],
-    '/locationRequest/saveRequest':                          ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/locationRequest/saveRequest/**':                       ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/sessions':                                             ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/interest/*':                                           ['ROLE_ADMIN'],
-    '/**':                                                   ['ROLE_ADMIN']
-
-]
-
-// Added by the Spring Security Core plugin:
-grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.cocoaconf.User'
-grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.cocoaconf.UserRole'
-grails.plugins.springsecurity.authority.className = 'com.cocoaconf.Role'
-
-grails.views.javascript.library="jquery"
-
-environments {
-    development {
-        slideDirectory = '/Users/zak/builds/cocoaconf/web-app/files/slides/'
-    }
-
-    test {
-
-    }
-
-    production {
-        slideDirectory = '/srv/www/cocoaconf.com/slides/'
-    }
-
 }

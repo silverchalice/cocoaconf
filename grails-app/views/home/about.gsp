@@ -53,7 +53,7 @@
   <body>
    <h1>Coming to Raleigh, North Carolina this December!</h1>
   <p>CocoaConf Colombus 2011 was a blast! We have a <g:link controller="blogLink" action="roundup">full write up here</g:link>  (and be sure to check out the listed blog entries on the same page - all from our awesome attendees!).</p>
-  <p>We'll be back in Colombus next year, but in the meantime we're not just sitting around. We're already planning the next CocoaConf of 2011 in Raleigh, South Carolina, and it's looking to be another great time! More details will be forthcoming (<a href="http://twitter.com/cocoaconf">follow us on Twitter</a> to get the scoop). </p>
+  <p>We'll be back in Colombus next year, but in the meantime we're not just sitting around. We're already planning the next CocoaConf of 2011 in Raleigh, North Carolina, and it's looking to be another great time! More details will be forthcoming (<a href="http://twitter.com/cocoaconf">follow us on Twitter</a> to get the scoop). </p>
   <p>And remember to cast your vote for the <g:link controller="home" action="nearYou">location of the next CocoaConf</g:link> - we want to know where you want us! </p>
   <br/>
    <hr/>

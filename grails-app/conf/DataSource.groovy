@@ -13,12 +13,8 @@ hibernate {
 environments {
     development {
         dataSource {
-   		    driverClassName = "com.mysql.jdbc.Driver"
-			username = "cocoaconf"
-			password = "cc5551212"
-			dbCreate = "update"
-            url = "jdbc:mysql://cocoaconf.com:3306/cocoaDb"
-			dialect=org.hibernate.dialect.MySQLInnoDBDialect
+            dbCreate = "create-drop" // one of 'create', 'create-drop','update'
+            url = "jdbc:hsqldb:mem:devDB"
         }
     }
     test {
@@ -29,19 +25,8 @@ environments {
     }
     production {
         dataSource {
-            pooled = true
-   		    driverClassName = "com.mysql.jdbc.Driver"
-			username = "cocoaconf"
-			password = "cc5551212"
-			dbCreate = "update"
-            url = "jdbc:mysql://127.0.0.1:3306/cocoaDb"
-			dialect=org.hibernate.dialect.MySQLInnoDBDialect
-            properties {
-				validationQuery="select 1"
-				testWhileIdle=true
-				timeBetweenEvictionRunsMillis=60000
-			}
-
+            dbCreate = "update"
+            url = "jdbc:hsqldb:file:prodDb;shutdown=true"
         }
     }
 }

@@ -251,7 +251,7 @@
      <div class="clear">&nbsp;</div>
      <img src="${resource(dir:'images', file:'xcode.png')}"  id="xcode"/>
      <div id="glossy-box">
-        <h3>Cocoaconf is a technical conference, <span style="color:#2ab0e2">pure and simple.</span></h3>
+        <h3>CocoaConf is a technical conference, <span style="color:#2ab0e2">pure and simple.</span></h3>
          <p>Instead of vendor booths or vendor keynotes, you'll find:</p>
          <ul style="list-style: none">
              <li style="border-bottom: 1px dotted gray"><strong>In-depth</strong> technical sessions.</li>           

@@ -23,10 +23,10 @@
     </head>
     <body  id="announcement">
     <sec:ifNotLoggedIn>
-        <div id="announcementHeader" style="width:100%; background-image:url(${resource(dir:'images', file:'bar-bg.png')}); text-align:center; height:25px; padding-top:8px; margin-bottom:10px; font-weight:bold; color:white">Coming December, 2011 to South Carolina! - <span style="color:#ff9627">Registration not yet open.</span> <span style="color:white; margin-left: 10px; padding-left: 10px; border-left: 1px solid gray "><g:link style="text-decoration: none" controller="login" > Login</g:link></span>  </div>
+        <div id="announcementHeader" style="width:100%; background-image:url(${resource(dir:'images', file:'bar-bg.png')}); text-align:center; height:25px; padding-top:8px; margin-bottom:10px; font-weight:bold; color:white">Coming December, 2011 to North Carolina! - <span style="color:#ff9627">Registration opening soon.</span> <span style="color:white; margin-left: 10px; padding-left: 10px; border-left: 1px solid gray "><g:link style="text-decoration: none" controller="login" > Login</g:link></span>  </div>
     </sec:ifNotLoggedIn>
     <sec:ifLoggedIn>
-        <div id="announcementHeader" style="width:100%; background-image:url(${resource(dir:'images', file:'bar-bg.png')}); text-align:center; height:25px; padding-top:8px; margin-bottom:10px; font-weight:bold; color:white">Coming December, 2011 to South Carolina! - <span style="color:#2ab0e2">Welcome, <sec:username/></span> <span style="margin-left: 10px; padding-left: 10px;border-left: 1px solid gray "><g:link style="color:white; font-weight: normal;  font-size:13px;  text-decoration: none" controller="user" action="changePassword">Change Password</g:link> <g:link style="margin-left: 10px; padding-left: 10px;border-left: 1px solid gray; color:white; font-weight:normal; font-size:13px;  text-decoration: none" controller="logout" >Logout</g:link></span> </div>
+        <div id="announcementHeader" style="width:100%; background-image:url(${resource(dir:'images', file:'bar-bg.png')}); text-align:center; height:25px; padding-top:8px; margin-bottom:10px; font-weight:bold; color:white">Coming December, 2011 to North Carolina! - <span style="color:#2ab0e2">Welcome, <sec:username/></span> <span style="margin-left: 10px; padding-left: 10px;border-left: 1px solid gray "><g:link style="color:white; font-weight: normal;  font-size:13px;  text-decoration: none" controller="user" action="changePassword">Change Password</g:link> <g:link style="margin-left: 10px; padding-left: 10px;border-left: 1px solid gray; color:white; font-weight:normal; font-size:13px;  text-decoration: none" controller="logout" >Logout</g:link></span> </div>
     </sec:ifLoggedIn> <div id="page-header">
             <span id="page-header-right"><img src="${resource(dir:'images', file:'tr-corner.png')}" /></span>
         </div>
@@ -38,7 +38,7 @@
             <div id="logo"><a href="${request.contextPath}/"><img src="${resource(dir:'images',file:'cc-logo.png')}" style="margin-bottom:20px" alt="Simply Cocoa" border="0" /></a>
             </div>
             <div id="nav" style="background-image: url(${resource(dir:'images', file:'bar-bg.png')}); height:40px; width:798px">
-                <g:link class="${pageProperty(name:'meta.tab') == 'about' ? 'current' : ''}" style="width:130px;" controller="home" action="about">About Cocoaconf</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'about' ? 'current' : ''}" style="width:130px;" controller="home" action="about">About CocoaConf</g:link>
                 <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}" controller="speaker" action="speakers" style="background-position: -130px 0;">Speakers</g:link>
                 <g:link class="${pageProperty(name:'meta.tab') == 'schedule' ? 'current' : ''}" controller="home" action="schedule" style="background-position: -250px 0;">Schedule</g:link>
                 <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}" controller="home" action="partners" style="background-position: -360px 0;">Partners</g:link>

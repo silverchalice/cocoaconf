@@ -1,5 +1,3 @@
-<%@ page import="com.cocoaconf.Conference" %>
-
 <html>
     <head>
         <title>Welcome to Grails</title>
@@ -57,11 +55,18 @@
             <div class="homePagePanel">
                 <div class="panelTop"></div>
                 <div class="panelBody">
-                    <h1>Upcoming Events</h1>
-	                <g:each in="${Conference.list(sort:'startDate', order:'asc')}" var="conf">
-                        <p><a href="${createLink(controller:'conference', action:'show', id:conf.id)}"><strong>${conf?.city}, ${conf?.state}</strong></a> : <strong><g:formatDate format="MMM dd" date="${conf?.startDate}" />  - <g:formatDate format="MMM dd" date="${conf?.endDate}" /></strong></p><br />
-                    </g:each><br />
-                    <h1>Plugins We're Using</h1>
+                    <h1>Application Status</h1>
+                    <ul>
+                        <li>App version: <g:meta name="app.version"></g:meta></li>
+                        <li>Grails version: <g:meta name="app.grails.version"></g:meta></li>
+                        <li>Groovy version: ${org.codehaus.groovy.runtime.InvokerHelper.getVersion()}</li>
+                        <li>JVM version: ${System.getProperty('java.version')}</li>
+                        <li>Controllers: ${grailsApplication.controllerClasses.size()}</li>
+                        <li>Domains: ${grailsApplication.domainClasses.size()}</li>
+                        <li>Services: ${grailsApplication.serviceClasses.size()}</li>
+                        <li>Tag Libraries: ${grailsApplication.tagLibClasses.size()}</li>
+                    </ul>
+                    <h1>Installed Plugins</h1>
                     <ul>
                         <g:set var="pluginManager"
                                value="${applicationContext.getBean('pluginManager')}"></g:set>
@@ -76,11 +81,11 @@
             </div>
         </div>
         <div id="pageBody">
-            <h1>Welcome to CocoaConf</h1>
-            <p>Congratulations, you have successfully visited your first CocoaConf website! At the moment
-            this is the only page, feel free to look at it and either go to a controller or imagine whatever
+            <h1>Welcome to Grails</h1>
+            <p>Congratulations, you have successfully started your first Grails application! At the moment
+            this is the default page, feel free to modify it to either redirect to a controller or display whatever
             content you may choose. Below is a list of controllers that are currently deployed in this application,
-            click on one of them to see its scaffolded list page:</p>
+            click on each to execute its default action:</p>
 
             <div id="controllerList" class="dialog">
                 <h2>Available Controllers:</h2>
