@@ -10,7 +10,11 @@ class Speaker {
 	String imagePath
 	String blog
 	String twitter
-	
+
+    //TODO: remove this
+    Boolean current
+
+
 	static belongsTo = Conference
 
     static hasMany = [conferences:Conference, presentations:Presentation]
@@ -29,6 +33,9 @@ class Speaker {
         sort 'presentations'
         order 'asc'
     }
+
+
+
 
     String toString(){ "${firstName} ${lastName}" }
 

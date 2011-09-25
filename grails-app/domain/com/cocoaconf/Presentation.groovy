@@ -9,6 +9,9 @@ class Presentation {
     String codePath
     String slidesPath
 
+    //TODO: Remove this
+    Boolean current
+
     static constraints = {
 	    pAbstract maxSize:10000, nullable:true
     }

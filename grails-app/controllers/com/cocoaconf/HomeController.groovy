@@ -39,6 +39,27 @@ class HomeController {
        [choice: choice, slides:slides]
     }
 
+    def schedule_oh = {
+
+        def choice = null
+        def slides = null
+
+        if(springSecurityService.isLoggedIn()) {
+            def user = User.get(springSecurityService.principal.id)
+            choice = user.choice
+
+            File scheduleSlideDownload = new File(config.slideDirectory + "cocoaconf_columbus_2011_all_slides.zip")
+            if(scheduleSlideDownload.exists()) {
+                println "slides exist!"
+                slides = "cocoaconf_columbus_2011_all_slides.zip"
+            }
+        } else{
+           println "no user"
+       }
+
+       [choice: choice, slides:slides]
+    }
+
     def partners = {}
 
     def team = {}

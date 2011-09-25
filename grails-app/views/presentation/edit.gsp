@@ -74,8 +74,15 @@
                                 <td valign="top" class="value ${hasErrors(bean: presentationInstance, field: 'title', 'errors')}">
                                     <g:textField name="title" value="${presentationInstance?.title}" />
                                 </td>
+                            </tr>                                                                                                                                   =
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="current"><g:message code="presnetation.current.label" default="Current" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: presentationInstance, field: 'current', 'errors')}">
+                                    <g:checkBox name="current" value="${presentationInstance?.current}" />
+                                </td>
                             </tr>
-                        
                         </tbody>
                     </table>
                 </div>

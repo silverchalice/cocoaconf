@@ -75,7 +75,14 @@
                                     <g:textField name="imagePath" value="${speakerInstance?.imagePath}" />
                                 </td>
                             </tr>
-
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="current"><g:message code="speaker.current.label" default="Current" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: speakerInstance, field: 'current', 'errors')}">
+                                    <g:checkBox name="current" value="${speakerInstance?.current}" />
+                                </td>
+                            </tr>
                         <tr class="prop">
                             <td valign="top" class="name">
                                 <label for="image">Image</label>
