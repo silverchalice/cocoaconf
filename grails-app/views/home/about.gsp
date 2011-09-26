@@ -51,6 +51,7 @@
   </head>
 
   <body>
+  <br/>
    <h2>Coming to Raleigh, North Carolina!</h2>
 
    <p>We are excited to announce the second CocoaConf iPhone, iPad and Mac developer's conference, Coming to Raleigh, North Carolina. We're working hard to bring you a first class line up of speakers, authors and professional iOS/OS X developers, delivering quality content without the distraction of a vendor hall or marketecture sessions. This is a technical conference, pure and simple.  </p>
@@ -63,8 +64,7 @@
   <p><img src="${resource(dir:'images', file:'crown-1.png')}" style="float:left; margin:0 10px 10px 0" />Cocoaconf will be held at the beautiful <a href="http://www.brownstonehotel.com">Holiday Inn Brownstone</a> in Downtown Raleigh. They're offering a special rate of <strong>$92 per night for CocoaConf attendees</strong>. Just call <span class="address">(919) 828-0811</span> and tell them that you are attending CocoaConf.</p>
 
   <div style="border: 1px solid black; clear:both">
-      <iframe width="700" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=crown+plaza+dublin+OH&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=76.152164,187.119141&amp;ie=UTF8&amp;hq=crown+plaza&amp;hnear=Dublin,+Franklin,+Ohio&amp;cid=6419903013813604625&amp;ll=40.107225,-83.128052&amp;spn=0.131294,0.240669&amp;z=12&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=crown+plaza+dublin+OH&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=76.152164,187.119141&amp;ie=UTF8&amp;hq=crown+plaza&amp;hnear=Dublin,+Franklin,+Ohio&amp;cid=6419903013813604625&amp;ll=40.107225,-83.128052&amp;spn=0.131294,0.240669&amp;z=12&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
-
+      <iframe width="700" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?client=safari&amp;oe=UTF-8&amp;ie=UTF8&amp;q=Holiday+Inn+Brownstone+Hotel+%26+Conference+Center+1707+Hillsborough+Street+-+Raleigh,+NC+27605&amp;fb=1&amp;gl=us&amp;hq=Holiday+Inn+Brownstone+Hotel+%26+Conference+Center&amp;hnear=0x89acf589791461b3:0x9ca31f49b57c8195,1707+Hillsborough+St,+Raleigh,+NC+27605&amp;cid=0,0,4496351436938884812&amp;ll=35.785008,-78.659985&amp;spn=0.006295,0.006295&amp;t=m&amp;vpsrc=0&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?client=safari&amp;oe=UTF-8&amp;ie=UTF8&amp;q=Holiday+Inn+Brownstone+Hotel+%26+Conference+Center+1707+Hillsborough+Street+-+Raleigh,+NC+27605&amp;fb=1&amp;gl=us&amp;hq=Holiday+Inn+Brownstone+Hotel+%26+Conference+Center&amp;hnear=0x89acf589791461b3:0x9ca31f49b57c8195,1707+Hillsborough+St,+Raleigh,+NC+27605&amp;cid=0,0,4496351436938884812&amp;ll=35.785008,-78.659985&amp;spn=0.006295,0.006295&amp;t=m&amp;vpsrc=0&amp;iwloc=A&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
   </div>
   </body>
 </html>
