@@ -124,14 +124,16 @@ class SessionController {
 
             def slides = null
             def name = presentationInstance.slidesPath
-            println name
+            [presentationInstance: presentationInstance]
 
-            File slideDownload = new File(config.slideDirectory + name)
+/*            File slideDownload = new File(config.slideDirectory + name)
             if(slideDownload.exists()) {
                 slides = name
             }
 
             [presentationInstance: presentationInstance, slides: slides]
+
+*/
         }
     }
 
