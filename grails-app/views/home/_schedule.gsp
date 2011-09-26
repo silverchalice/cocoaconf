@@ -1,5 +1,5 @@
   <g:form controller='user' action='pickSessions'>
-   <h3 style="clear:both">Friday, August 12</h3>
+   <h3 style="clear:both">Friday, December 2</h3>
 
   <table border="1" width="700" class="schedule">
 	<tr class="break">
@@ -64,7 +64,7 @@
      	</tr>
     </table>
     <br/>
-   <h3>Saturday, August 13</h3>
+   <h3>Saturday, December 3</h3>
   <table class="schedule">
 	<tr class="break">
 		<td align="center" class="time" width="100">7:30-8:30</td>
