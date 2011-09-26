@@ -48,7 +48,7 @@
 
 
             </div>
-            <div id="content">
+            <div id="content" style="min-height: 1360px">
                 <g:layoutBody />
             </div>
             <div id="footer">
