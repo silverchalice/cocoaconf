@@ -22,7 +22,7 @@
 		<td align="center" class="time" >11:00-12:00</td>
 		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="4">iOS Tutorial, Part Three</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="37">Mastering the Address Book</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="23">Collin Donnell</g:link></span></td>
-		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="25">Core Graphics</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
+		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="25">Core Graphics</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">12:00-1:15</td>
@@ -92,7 +92,7 @@
      	</tr>
 	<tr class="break1">
 		<td align="center" class="time">1:30-2:30</td>
-		<th align="center" colspan="3" style="background: #9adeff; padding: 4px 0 0 0">Panel</th>
+		<th align="center" colspan="3" style="border:1px solid lightgray;  padding: 4px 0 0 0">Panel</th>
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time" >2:45-3:45</td>

@@ -35,9 +35,10 @@
         }
 
         td {
-            border: 0;
+            border: 0 none;
+            border-bottom: 1px solid lightgray;
             margin: 0;
-
+            padding: 10px 5px;
         }
 
         td.choice span {
@@ -45,8 +46,13 @@
         }
 
         th {
-            border: 0;
+            border:1px solid lightgray;
             margin: 0
+        }
+
+        .schedule {
+            font-size: 12px;
+            font-weight: bold;
         }
 
         .schedule a {
@@ -63,12 +69,14 @@
         }
 
         tr.break td {
-            background: #d3d3d3;
+            background: #edecec;
+            border:1px solid lightgray;
             padding: 4px 0 0 0;
         }
 
         tr.break th {
-            background: #d3d3d3;
+            background: white;
+            border:1px solid lightgray;
             padding: 4px 0 0 0;
         }
 
@@ -76,7 +84,13 @@
             background-color: #edecec;
         }
 
+        td.track3 {
+            background-color: white;
+            border-right: 1px solid lightgray;
+        }
+
         td.time {
+            border:1px solid lightgray;
             background-color: #d3d3d3;
         }
 
@@ -97,11 +111,8 @@
         th.keynote {
             background: #9adeff;
             padding: 8px 0 4px 0;
-        }
-
-        th.keynote a {
             color: black;
-            text-decoration: underline
+
         }
 
 
