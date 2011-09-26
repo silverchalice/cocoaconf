@@ -9,7 +9,7 @@
 	<tr class="slot">
 		<td align="center" width="100" class="time" >8:30-9:30</td>
 		<td align="center" width="200" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="4">iOS Tutorial, Part One</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
-		<td align="center" width="200" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="9">NSPredicates for Fun and Profit</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="14">Josh Smith</g:link></span></td>
+		<td align="center" width="200" class="track2"><span class="sessionTitle">NSPredicates for Fun and Profit</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="14">Josh Smith</g:link></span></td>
 		<td align="center" width="200" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="22">UI Automation: Testing from the top down</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="12">Jonathan Penn</g:link></span></td>
 	</tr>
 	<tr class="slot">
