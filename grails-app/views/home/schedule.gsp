@@ -115,6 +115,10 @@
 
         }
 
+        .keynote a {
+            color:black;
+        }
+
 
 
         </style>

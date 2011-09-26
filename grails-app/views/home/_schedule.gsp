@@ -56,7 +56,7 @@
 	</tr>
 	<tr class="break2">
 		<td align="center" class="time">7:00-8:00</td>
-		<th align="center" colspan="3" class="keynote">TBD (<g:link controller="speaker" action="viewDetails" id="21">Andy Hunt</g:link>)</th>
+		<th align="center" colspan="3" class="keynote">Keynote (<g:link controller="speaker" action="viewDetails" id="21">Andy Hunt</g:link>)</th>
 	</tr>
       <tr class="break">
      		<td align="center" class="time">8:00-11:00</td>

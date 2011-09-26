@@ -97,15 +97,12 @@
   </head>
 
   <body>
-  <h1 style="margin-left:150px;">Registration ends August 8!</h1>
-  <div style="width:200px; padding-top:20px; text-align:center; float:left" ></div>
-      <div style="float:right; width:480px; padding-top:20px"><span style="font-size:16px; font-weight: bold">Columbus, Ohio. August 12-13</span><p>Don't risk missing out!</p></div>
-
+  <h1>Registration ends August 8!</h1>
   <h2>What you get</h2>
-  <p>Registration includes two days packed with technical sessions and interesting keynotes (no sales pitches), all meals and snacks, and some cool swag so you can show all your friends and co-workers that you were there!</p>
-  <p>Also included is a <a href="http://www.cocoaconf.com/session/details/4" style="color:#2ab0e2; font-size: 14.5px; text-decoration: none; font-weight: bold">full-day hands on iOS tutorial and workshop!</a></p>
+  <p>CocoaConf is a two day developer conference covering all things Cocoa and CocoaTouch.  The two day conference includes an <a href="http://www.cocoaconf.com/session/details/4" style="color:#2ab0e2; font-size: 14.5px; text-decoration: none; font-weight: bold">all day hands-on iOS tutorial</a> along with sessions on a variety of iOS and OS X development topics.  The iOS tutorial is also being prepeated on Thursday, 12/1 for those who only want the tutorial.  For those that want it all, we have a special combo price.
+ </p>
   <p>
-      Can't wait to see you there!
+      These early bird prices will end on October 31st, so register now for big savings!
   </p>
 
 <div style="width:100%; text-align:left;" ><iframe  src="http://www.eventbrite.com/tickets-external?eid=1649713337&ref=etckt" frameborder="0" height="338" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/features?ref=etckt" >Event registration</a><span style="color:#ddd;" > for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://cocoaconf.eventbrite.com?ref=etckt" >Cocoaconf  | Columbus, Ohio</a><span style="color:#ddd;" > powered by </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt" >Eventbrite</a></div></div>
