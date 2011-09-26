@@ -36,7 +36,7 @@
 		<td align="center" class="time" >2:30-3:30</td>
 		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="4">iOS Tutorial, Part Four</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="35">Background Saving with Core Data</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="22">Josh Johnson</g:link></span></td>
-		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="7">Accelerate</g:link></span> <span class="sessionSpeaker">Jeff Biggus</span></td>
+		<td align="center" class="track3"><span class="sessionTitle">Accelerate</span> <span class="sessionSpeaker">Jeff Biggus</span></td>
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time" >3:45-4:45</td>
@@ -48,7 +48,7 @@
      		<td align="center" class="time" >5:00-6:00</td>
      		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="4">iOS Tutorial, Part Six</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
      		<td align="center" class="track2"><span class="sessionTitle">TBD</span><span class="sessionSpeaker">Jared Richardson</span></td>
-     		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="8">Partly Cloudy Mobile Apps: Amazon iOS SDK</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="14">Josh Smith</g:link></span></td>
+     		<td align="center" class="track3"><span class="sessionTitle">Partly Cloudy Mobile Apps: Amazon iOS SDK</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="14">Josh Smith</g:link></span></td>
      	</tr>
 	<tr class="break">
 		<td align="center" class="time">6:00-7:00</td>
@@ -74,13 +74,13 @@
 		<td align="center" class="time" >8:30-10:00</td>
 		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="16">Blocks</g:link></span> <span class="sessionSpeaker">Jeff Biggus</span></td>
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="32">iOS Gestures and Event Handling</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="20">Nathan Eror</g:link></span></td>
-		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="2">Capturing Stills, Sounds, and Scenes with AVFoundation</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="3">Chris Adamson</g:link></span></td>
+		<td align="center" class="track3"><span class="sessionTitle">Capturing Stills, Sounds, and Scenes with AVFoundation</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="3">Chris Adamson</g:link></span></td>
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time" >10:15-11:45</td>
 		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="20">Apple platform Game Development with Cocos2d</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="14">Josh Smith</g:link></span></td>
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="33">Concurrent and Asynchronous Programming with GCD</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="20">Nathan Eror</g:link></span></td>
-		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="6">Core Audio Cranks It Up</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="3">Chris Adamson</g:link></span></td>
+		<td align="center" class="track3"><span class="sessionTitle">Core Audio Cranks It Up</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="3">Chris Adamson</g:link></span></td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">11:45-12:30</td>
@@ -104,7 +104,7 @@
      		<td align="center" class="time" >4:00-5:00</td>
      		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="34">Intro to Core Location</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="22">Josh Johnson</g:link></span></td>
      		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="18">TBD</g:link></span> <span class="sessionSpeaker">Saul Mora</span></td>
-     		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="25">Unit Testing that Doesn't Suck</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
+     		<td align="center" class="track3"><span class="sessionTitle">Unit Testing that Doesn't Suck</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
      	</tr>
 	<tr class="break">
 		<td align="center" class="time">5:15-5:30</td>
