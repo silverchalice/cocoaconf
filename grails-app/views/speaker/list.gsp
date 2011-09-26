@@ -30,7 +30,7 @@
                         
                             <g:sortableColumn property="email" title="${message(code: 'speaker.email.label', default: 'Email')}" />
                         
-                            <g:sortableColumn property="bio" title="${message(code: 'speaker.bio.label', default: 'Bio')}" />
+                            <g:sortableColumn property="current" title="${message(code: 'speaker.bio.label', default: 'Current')}" />
                         
                             <g:sortableColumn property="imagePath" title="${message(code: 'speaker.imagePath.label', default: 'Image Path')}" />
                         
@@ -42,13 +42,13 @@
                         
                             <td><g:link action="show" id="${speakerInstance.id}">${fieldValue(bean: speakerInstance, field: "id")}</g:link></td>
                         
-                            <td>${fieldValue(bean: speakerInstance, field: "firstName")}</td>
+                            <td><g:link action="show" id="${speakerInstance.id}">${fieldValue(bean: speakerInstance, field: "firstName")}</g:link></td>
                         
                             <td>${fieldValue(bean: speakerInstance, field: "lastName")}</td>
                         
                             <td>${fieldValue(bean: speakerInstance, field: "email")}</td>
                         
-                            <td>${fieldValue(bean: speakerInstance, field: "bio")}</td>
+                            <td>${fieldValue(bean: speakerInstance, field: "current")}</td>
                         
                             <td>${fieldValue(bean: speakerInstance, field: "imagePath")}</td>
                         
