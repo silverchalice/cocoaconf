@@ -207,20 +207,21 @@
           </div>
       </g:if>
      <br/>
-      <img src="${resource(dir:'images', file:'andy.png')}" />
-      <div style="float:right; width:540px; margin-top: 5px;">
-         <h2 style="color:#1da0d1;">Heading to announcement NC CocoaConf!</h2>
-         <p>
-             Text text text text text text text text text text text text text text text text text text text
-             text text text text text text text text text text text text text text text text text text...
-         </p>
-          <p>
-              Text text text text text text text text text text text text text text text text text text text
-              text text text text text text text text text text text text text text text text text text...
-          </p>
-      </div>
-      <br/><hr style="color:#e3e3e3"/>
 
+      <div style="margin-top: 5px;">
+         <h2 style="color:#1da0d1;">Coming to Raleigh December 2 - 3, 2011</h2>
+
+          <img src="${resource(dir:'images', file:'andy.png')}" style="float:left; margin:14px;"/>
+          <p>The developers of North Carolina have spoken and we've listened.  By popular demand CocoaConf will be coming to Downtown Raleigh, NC in early December. We will have the same format, with two intense days of technical sessions, relevant keynotes, great food, and cool swag.  Included in the two day conference is an optional, all-day, hands-on iOS tutorial.   In this workshop we will create an iPhone app from design to deployment.  A great way to get started in this exciting field!
+          </p>
+          <p>
+          The workshop was so popular in Columbus that we decided to hold it twice in Raleigh.  All CocoaConf attendees can go to the iOS tutorial on Friday, 12/2, but we will also be offering the iOS tutorial as a stand-alone class on Thursday 12/1.  This is a separate registration for those who only want the tutorial but there is a special combined rate for those who just can't get enough.
+          </p>
+          <p><strong>We are also thrilled to announce that CocoaConf - Raleigh will feature a keynote by Andy Hunt!  </strong>
+          </p>
+          <p>You don't want to miss this conference, so <g:link controller="home" action="register">register today</g:link> and save $150 with the early bird rate. </p>
+      </div>
+      <br/>
 
       <div id="gallery" style="float:right">
 
