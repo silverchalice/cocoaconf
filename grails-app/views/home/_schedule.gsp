@@ -60,7 +60,7 @@
 	</tr>
       <tr class="break">
      		<td align="center" class="time">8:00-11:00</td>
-     		<th align="center" colspan="3">Coder Night</th>
+     		<th align="center" colspan="3">NSCoder Night</th>
      	</tr>
     </table>
     <br/>
