@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Cocoaconf | iOS/OS X Developer Conference | Columbus, Ohio | August 12 & 13</title>
+        <title>Cocoaconf | iOS/OS X Developer Conference | Raleigh, North Carolina | December 2 & 3</title>
         <meta name="layout" content="public"/>
         <meta name="tab" content="schedule"/>
         <script src="${resource(dir: 'js', file: 'jquery-1.6.2.min.js')}" type="text/javascript"></script>
@@ -132,6 +132,7 @@
             </div>
         </g:if>
         <h1 style="float:left">Columbus 2011, Schedule</h1>
+<!--
         <sec:ifLoggedIn>
             <g:if test="${slides}">
                 <a class="slideDownload" href="${createLink(controller:'home', action:'downloadSlides', params:[file:slides])}">Download Slides/Sample Code</a>
@@ -145,7 +146,8 @@
         </sec:ifLoggedIn>
 
         <sec:ifNotLoggedIn>
+-->
             <g:render template="schedule"/>
-        </sec:ifNotLoggedIn>
+<!--        </sec:ifNotLoggedIn>  -->
     </body>
 </html>

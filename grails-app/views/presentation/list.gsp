@@ -26,7 +26,7 @@
                         
                             <g:sortableColumn property="pAbstract" title="${message(code: 'presentation.pAbstract.label', default: 'PA bstract')}" />
                         
-                            <g:sortableColumn property="codePath" title="${message(code: 'presentation.codePath.label', default: 'Code Path')}" />
+                            <g:sortableColumn property="current" title="${message(code: 'presentation.current', default: 'Current')}" />
                         
                             <g:sortableColumn property="slidesPath" title="${message(code: 'presentation.slidesPath.label', default: 'Slides Path')}" />
                         
@@ -44,7 +44,7 @@
                         
                             <td>${fieldValue(bean: presentationInstance, field: "pAbstract")}</td>
                         
-                            <td>${fieldValue(bean: presentationInstance, field: "codePath")}</td>
+                            <td>${fieldValue(bean: presentationInstance, field: "current")}</td>
                         
                             <td>${fieldValue(bean: presentationInstance, field: "slidesPath")}</td>
                         
