@@ -97,9 +97,9 @@
   </head>
 
   <body>
-  <h1>Register for Raleigh CocoaConf</h1>
+  <h1>Register for the Raleigh CocoaConf</h1>
   <h2>What you get</h2>
-  <p>CocoaConf is a two day developer conference covering all things Cocoa and CocoaTouch.  The two day conference includes an <a href="http://www.cocoaconf.com/session/details/4" style="color:#2ab0e2; font-size: 14.5px; text-decoration: none; font-weight: bold">all day hands-on iOS tutorial</a> along with sessions on a variety of iOS and OS X development topics.  The iOS tutorial is also being prepeated on Thursday, 12/1 for those who only want the tutorial.  For those that want it all, we have a special combo price.
+  <p>CocoaConf is a two-day developer conference covering all things Cocoa and CocoaTouch.  The conference includes an <a href="http://www.cocoaconf.com/session/details/4" style="color:#2ab0e2; font-size: 14.5px; text-decoration: none; font-weight: bold">all-day hands-on iOS tutorial</a>, along with sessions on a variety of iOS and OS X development topics.  The iOS tutorial is also being given on Thursday, December 1, for those who only want the tutorial.  For those that want it all &#8212; the tutorial on Thursday and the two days of the conference &#8212; we have a special combo price.
  </p>
   <p>
       These early bird prices will end on October 31st, so register now for big savings!
