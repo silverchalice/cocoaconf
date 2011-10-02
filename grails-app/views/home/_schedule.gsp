@@ -36,7 +36,7 @@
 		<td align="center" class="time" >2:30-3:30</td>
 		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="45">iOS Tutorial, Part Four</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="35">Background Saving with Core Data</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="22">Josh Johnson</g:link></span></td>
-		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="10">Reverse Engineering your application’s UI</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="24">Saul Mora</g:link></span></td>
+		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="10">Reverse Engineering your application’s UI</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="24">Saul Mora</g:link></span></td>
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time" >3:45-4:45</td>
