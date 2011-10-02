@@ -131,7 +131,7 @@
                 <p>${flash.message}</p>
             </div>
         </g:if>
-        <h1 style="float:left">Columbus 2011, Schedule</h1>
+        <h1 style="float:left">Raleigh 2011, Schedule</h1>
 <!--
         <sec:ifLoggedIn>
             <g:if test="${slides}">

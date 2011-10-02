@@ -11,6 +11,10 @@ class UrlMappings {
 			controller = "home"
 			action = "announcement"
 		}
+		"/home/nearYou"{
+			controller = "home"
+			action = "near_you"
+		}
 		"500"(view:'/error')
 	}
 }
