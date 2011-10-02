@@ -122,8 +122,6 @@ body {
     padding: 25px 15px 15px;
     float:left;
     border-right:1px dotted black;
-    border-bottom:1px dotted black;
-    border-left:1px dotted black;
 }
 
 
@@ -137,7 +135,7 @@ body {
     width:180px;
     padding: 25px 10px 0;
     border-left: 1px dotted black;
-    border-bottom: 1px dotted black;
+
 }
 
 
