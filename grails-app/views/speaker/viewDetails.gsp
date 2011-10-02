@@ -37,7 +37,7 @@
             </div>
                 <ul style="display: block; background-image: url(${resource(dir:'images', file:'background.png')}); width:520px; border: 1px solid gray; padding: 1px 40px 0 20px">
                    <h3>Presentations by ${speaker}:</h3>
-                 <g:each in="${speaker.presentations.findAll{it.current}}" var="presentation">
+                 <g:each in="${speaker.presentations.findAll{it.current == true}}" var="presentation">
                     <li style="background: white; padding: 6px; border: 1px solid gray; list-style: none; margin-bottom:20px;"><strong style="color:#2ab0e2">${presentation.title}</strong><br/>
                     <p>${presentation.pAbstract}</p></li>
 
