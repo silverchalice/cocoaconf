@@ -59,32 +59,28 @@
 
     </head>
     <body>
-        <div class="nav">
-        </div>
-        <div class="body">
 
-            <h1>Raleigh NC, 2011, Speakers</h1>
-            <p>CocoaConf speakers include well known trainers, authors, and professional iOS and OS X developers.</p>
+        <h1>Raleigh NC, 2011, Speakers</h1>
+        <p>CocoaConf speakers include well known trainers, authors, and professional iOS and OS X developers.</p>
 
-            <div class="list">
-                <g:each in="${speakerInstanceList}" status="i" var="speaker">
-                    <div class="${(i % 2) == 0 ? 'odd' : 'even'}" style="min-height:160px; margin-bottom:10px">
+        <div class="list">
+            <g:each in="${speakerInstanceList}" status="i" var="speaker">
+                <div class="${(i % 2) == 0 ? 'odd' : 'even'}" style="min-height:160px; margin-bottom:10px">
 
-                        <g:if test="${speaker?.imagePath}">
-                             <g:link controller="speaker" action="viewDetails" id="${speaker?.id}"><img class="speakerPic" style=" margin-top:40px; " src="${request.contextPath}/${speaker?.imagePath}"/></g:link>
-                        </g:if>
+                    <g:if test="${speaker?.imagePath}">
+                         <g:link controller="speaker" action="viewDetails" id="${speaker?.id}"><img class="speakerPic" style=" margin-top:40px; " src="${request.contextPath}/${speaker?.imagePath}"/></g:link>
+                    </g:if>
 
 
-                         <div class="bio" style="min-height:160px; width:500px">
-                             <h3>${speaker} <span style="font-size: 14px;"><g:link controller="speaker" action="viewDetails" id="${speaker?.id}">View Details</g:link></span></h3>
-                             ${speaker.bio}<br/>
+                     <div class="bio" style="min-height:160px; width:500px">
+                         <h3>${speaker} <span style="font-size: 14px;"><g:link controller="speaker" action="viewDetails" id="${speaker?.id}">View Details</g:link></span></h3>
+                         ${speaker.bio}<br/>
 
-                    </div>
-                        <div style="clear:both">&nbsp;</div>
-	                </div>
+                </div>
+                    <div style="clear:both">&nbsp;</div>
+                </div>
 
-                </g:each>
-            </div>
+            </g:each>
         </div>
     </body>
 </html>

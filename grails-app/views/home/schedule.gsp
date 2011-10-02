@@ -119,7 +119,10 @@
             color:black;
         }
 
+        .body {
 
+            width: 665px;
+        }
 
         </style>
 

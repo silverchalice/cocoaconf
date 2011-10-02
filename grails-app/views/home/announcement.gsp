@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
   <head>
-      <title>Cocoaconf | iOS/OS X Developer Conference | Columbus, Ohio | August 12 & 13</title>
+      <title>CocoaConf | iOS/OS X Developer Conference | Columbus, Ohio | August 12 & 13</title>
       <meta name="layout" content="announcement" />
 
       <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
@@ -98,99 +98,7 @@
           }
 
 
-      /* Gallery styles */
 
-      #gallery{
-          /* CSS3 Box Shadow */
-          -moz-box-shadow:0 0 3px #AAAAAA;
-          -webkit-box-shadow:0 0 3px #AAAAAA;
-          box-shadow:0 0 3px #AAAAAA;
-
-          /* CSS3 Rounded Corners */
-
-          -moz-border-radius-bottomleft:4px;
-          -webkit-border-bottom-left-radius:4px;
-          border-bottom-left-radius:4px;
-
-          -moz-border-radius-bottomright:4px;
-          -webkit-border-bottom-right-radius:4px;
-          border-bottom-right-radius:4px;
-
-          border:1px solid white;
-
-          background:url(../images/slideshow/panel.jpg) repeat-x bottom center #ffffff;
-
-          /* The width of the gallery */
-          width:420px;
-          overflow:hidden;
-          margin-top: 20px;
-          float:left;
-      }
-
-      #slides{
-          /* This is the slide area */
-          height:272px;
-
-          /* jQuery changes the width later on to the sum of the widths of all the slides. */
-          width:420px;
-          overflow:hidden;
-      }
-
-      .slide{
-          float:left;
-      }
-
-      #menu{
-          /* This is the container for the thumbnails */
-          height:45px;
-          text-align: center;
-          display: none;
-      }
-
-      ul{
-          margin:0px;
-          padding:0px;
-      }
-
-      #menu li{
-          /* Every thumbnail is a li element */
-          width:60px;
-          display:inline-block;
-          list-style:none;
-          height:45px;
-          overflow:hidden;
-      }
-
-      #menu li.inact:hover{
-          /* The inactive state, highlighted on mouse over */
-          background:url(../images/slideshow/pic_bg.png) repeat;
-      }
-
-      #menu li.act,li.act:hover{
-          /* The active state of the thumb */
-          background:url(../images/slideshow/active_bg.png) no-repeat;
-      }
-
-      #menu li.act a{
-          cursor:default;
-      }
-
-      .fbar{
-          /* The left-most vertical bar, next to the first thumbnail */
-          width:2px;
-          background:url(../images/slideshow/divider.png) no-repeat right;
-      }
-
-      #menu li a{
-          display:block;
-          background:url(../images/slideshow/divider.png) no-repeat right;
-          height:35px;
-          padding-top:10px;
-      }
-
-      a img{
-          border:none;
-      }
 
 
 
@@ -201,133 +109,61 @@
 
   <body>
 
-      <g:if test="${flash.message}">
-          <div id="flashMessage"><p>${flash.message}</p>
-           <span class="button" id="closeFlash" >Ok!</span>
+
+    <div style="width:480px; float:left; padding-left:20px">
+          <g:if test="${flash.message}">
+              <div id="flashMessage"><p>${flash.message}</p>
+               <span class="button" id="closeFlash" >Ok!</span>
+              </div>
+          </g:if>
+         <br/>
+
+          <div style="margin-top: 5px; padding-bottom: 25px; border-bottom: 1px dotted #000000">
+             <h2 style="color:#1da0d1;">Coming to Raleigh December 2 - 3, 2011</h2>
+
+              <img src="${resource(dir:'images', file:'andy.png')}" style="float:left; margin:14px;"/>
+              <p><img src="${resource(dir:'images', file:'cc-small.png')}" class="paralogo">The developers of North Carolina have spoken and we've listened.  By popular demand CocoaConf will be coming to Downtown Raleigh, NC in early December. We will have the same format, with two intense days of technical sessions, relevant keynotes, great food, and cool swag.  Included in the two day conference is an optional, all-day, hands-on iOS tutorial.   In this workshop we will create an iPhone app from design to deployment.  A great way to get started in this exciting field!
+              </p>
+              <p>
+              The workshop was so popular in Columbus that we decided to hold it twice in Raleigh.  All CocoaConf attendees can go to the iOS tutorial on Friday, 12/2, but we will also be offering the iOS tutorial as a stand-alone class on Thursday 12/1.  This is a separate registration for those who only want the tutorial but there is a special combined rate for those who just can't get enough.
+              </p>
+              <p><strong>We are also thrilled to announce that CocoaConf - Raleigh will feature a keynote by Andy Hunt!  </strong>
+              </p>
+              <p>You don't want to miss this conference, so <g:link controller="home" action="register">register today</g:link> and save $150 with the early bird rate. </p>
           </div>
-      </g:if>
-     <br/>
-
-      <div style="margin-top: 5px;">
-         <h2 style="color:#1da0d1;">Coming to Raleigh December 2 - 3, 2011</h2>
-
-          <img src="${resource(dir:'images', file:'andy.png')}" style="float:left; margin:14px;"/>
-          <p>The developers of North Carolina have spoken and we've listened.  By popular demand CocoaConf will be coming to Downtown Raleigh, NC in early December. We will have the same format, with two intense days of technical sessions, relevant keynotes, great food, and cool swag.  Included in the two day conference is an optional, all-day, hands-on iOS tutorial.   In this workshop we will create an iPhone app from design to deployment.  A great way to get started in this exciting field!
-          </p>
-          <p>
-          The workshop was so popular in Columbus that we decided to hold it twice in Raleigh.  All CocoaConf attendees can go to the iOS tutorial on Friday, 12/2, but we will also be offering the iOS tutorial as a stand-alone class on Thursday 12/1.  This is a separate registration for those who only want the tutorial but there is a special combined rate for those who just can't get enough.
-          </p>
-          <p><strong>We are also thrilled to announce that CocoaConf - Raleigh will feature a keynote by Andy Hunt!  </strong>
-          </p>
-          <p>You don't want to miss this conference, so <g:link controller="home" action="register">register today</g:link> and save $150 with the early bird rate. </p>
-      </div>
-      <br/>
-
-      <div id="gallery" style="float:right">
-
-          <div id="slides">
-
-              <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide1.png')}" width="420" height="272" alt="side" /></div>
-              <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide2.png')}" width="420" height="272" alt="side" /></div>
-              <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide3.png')}" width="420" height="272" alt="side" /></div>
-              <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide4.png')}" width="420" height="272" alt="side" /></div>
-              <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide5.png')}" width="420" height="272" alt="side" /></div>
-              <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide6.png')}" width="420" height="272" alt="side" /></div>
-              <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide7.png')}" width="420" height="272" alt="side" /></div>
-              <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide8.png')}" width="420" height="272" alt="side" /></div>
-              <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide9.png')}" width="420" height="272" alt="side" /></div>
-              <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide10.png')}" width="420" height="272" alt="side" /></div>
-              <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide11.png')}" width="500" height="272" alt="side" /></div>
-          </div>
-
-          <div id="menu">
-              <ul>
-                  <li class="fbar">&nbsp;</li>
-                  <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_macbook.png')}" alt="thumbnail" /></a></li>
-                  <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_iphone.png')}" alt="thumbnail" /></a></li>
-                  <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_imac.png')}" alt="thumbnail" /></a></li>
-                  <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                  <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                  <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                  <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                  <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                  <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                  <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                  <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-              </ul>
-          </div>
-
-      </div>
-
-      <div style="float:left; width:260px; margin-top: 20px;">
+          <br/>
           <h2 style="color:#1da0d1;">Columbus 2011 Wrap Up!</h2>
-          <p>The first CocoaConf was held in Dublin, Ohio on August 12th and 13th. Ninety iPhone, iPad, and Mac developers gathered for two exciting days of training, networking, and good times. With three tracks and sessions ranging from beginner to advanced, there was something for everyone to enjoy and learn from...</p>
+          <p><img src="${resource(dir:'images', file:'cc-small.png')}" class="paralogo">The first CocoaConf was held in Dublin, Ohio on August 12th and 13th. Ninety iPhone, iPad, and Mac developers gathered for two exciting days of training, networking, and good times. With three tracks and sessions ranging from beginner to advanced, there was something for everyone to enjoy and learn from...</p>
           <g:link controller="blogLink" action="roundup" style="color:#ff9627; font-size:18px; font-weight: bold">Read more!</g:link>
-      </div>
-      <div class="clear" style="clear: both"></div>
-
-     <div class="clear">&nbsp;</div>
-     <img src="${resource(dir:'images', file:'xcode.png')}"  id="xcode"/>
-     <div id="glossy-box">
-        <h3>CocoaConf is a technical conference, <span style="color:#2ab0e2">pure and simple.</span></h3>
-         <p>Instead of vendor booths or vendor keynotes, you'll find:</p>
-         <ul style="list-style: none">
-             <li style="border-bottom: 1px dotted gray"><strong>In-depth</strong> technical sessions.</li>           
-             <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Multiple <strong>concurrent tracks</strong>.</li>
-             <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Full-day, hands-on <strong>iOS workshop</strong>.</li>
-             <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Fun and informative <strong>speaker panel</strong>.</li>
-             <li style="border-bottom: 1px dotted gray; margin-bottom:15px; font-weight: bold">And much more!</li>
-         </ul>
-
-     </div>
-
-     <!--  <span style="font-size:16px; margin-right:45px;">Cocoa Touch</span>
-      <span style="font-size:18px; margin-right:15px;">iTunes</span>
-      <span style="font-size:18px; margin-right:70px;">Lion</span>
-      <span style="font-size:14px; margin-right:62px;">Core Animation</span>
-      <span style="font-size:18px;">XCode 4</span>
-
-       <br/>
-      <span style="font-size:32px; margin-left:145px;">iOS</span>
-      <span style="font-size:32px; margin-left:90px;">OS X</span>
-      <span style="font-size:16px; margin-left:125px;">Quicktime</span>
+    </div>
 
 
-      <br/>
-      <span style="font-size:18px; margin-left:20px;">Objective C</span>
-      <span style="font-size:14px; margin-left:30px;">Quartz</span>
-      <span style="font-size:14px; margin-left:30px;">Core Audio</span>
-      <span style="font-size:18px; margin-left:100px;">App Store</span>
+    <div id="featuredSpeakers">
+        <h2 style="color:#1da0d1;">Featured Speakers</h2>
+        <div class="featured">
+           <img src="${resource(dir:'images',file:'stein.png')}"/>
+           <p><strong>Daniel Steinberg</strong> - Author of <a href="http://pragprog.com/titles/sfipad/ipad-programming">iPad Programming</a> and <a href="http://pragprog.com/titles/dscpq/cocoa-programming">Cocoa Programming:
+           A Quick-Start Guide for Developers</a> - <a href="http://dimsumthinking.com">http://dimsumthinking.com</a></p>
+       </div>
+        <div class="featured">
+           <img src="${resource(dir:'images',file:'dudney.png')}"/>
+           <p><strong>Bill Dudney</strong> - Author of Pragmatic Programmer’s books <a href="http://pragprog.com/titles/amiphd/iphone-sdk-development">iPhone SDK Development</a> and <a href="http://pragprog.com/titles/bdcora/core-animation-for-mac-os-x-and-the-iphone">Core Animation</a>.
+            - <a href="http://www.bill.dudney.net">http://www.bill.dudney.net</a></p>
 
-      <span style="font-size:14px; margin-left:70px;">Core Data</span>-->
-
-	<div id="featuredSpeakers"><h2>Featured Speakers</h2>
+       </div>
         <div class="featured">
             <img src="${resource(dir:'images',file:'adamson.png')}"/>
-		     <p><strong>Chris Adamson</strong> - Author of <a href="http://www.amazon.com/Core-Audio-Kevin-Avila/dp/0321636848">Core Audio</a>, and <a href="http://pragprog.com/titles/amiphd/iphone-sdk-development">iPhone SDK Development</a>
-            <a href="http://www.subfurther.com/blog">http://www.subfurther.com/blog</a></p>
-            
-        </div>
-         <div class="featured">
-            <img src="${resource(dir:'images',file:'dudney.png')}"/>
-	    	<p><strong>Bill Dudney</strong> - Author of Pragmatic Programmer’s books <a href="http://pragprog.com/titles/amiphd/iphone-sdk-development">iPhone SDK Development</a> and <a href="http://pragprog.com/titles/bdcora/core-animation-for-mac-os-x-and-the-iphone">Core Animation</a>.
-            <a href="http://www.bill.dudney.net">http://www.bill.dudney.net</a></p>
+             <p><strong>Chris Adamson</strong> - Author of <a href="http://www.amazon.com/Core-Audio-Kevin-Avila/dp/0321636848">Core Audio</a>, and <a href="http://pragprog.com/titles/amiphd/iphone-sdk-development">iPhone SDK Development</a>
+            - <a href="http://www.subfurther.com/blog">http://www.subfurther.com/blog</a></p>
 
         </div>
         <div class="featured">
             <img src="${resource(dir:'images',file:'judd.png')}"/>
-		    <p><strong>Christopher Judd</strong> - Leader of <a href="http://groups.google.com/group/cidug?pli=1">Columbus iPhone Developer User Group</a> and author of <a href="http://www.beginninggroovyandgrails.com/site/content/index">Beginning Groovy and Grails</a>
-            <a href="http://www.juddsolutions.com">http://www.juddsolutions.com</a></p>
+            <p><strong>Christopher Judd</strong> - Leader of <a href="http://groups.google.com/group/cidug?pli=1">Columbus iPhone Developer User Group</a> and author of <a href="http://www.beginninggroovyandgrails.com/site/content/index">Beginning Groovy and Grails</a>
+            - <a href="http://www.juddsolutions.com">http://www.juddsolutions.com</a></p>
 
         </div>
-        <div class="featured">
-            <img src="${resource(dir:'images',file:'stein.png')}"/>
-            <p><strong>Daniel Steinberg</strong> - Author of <a href="http://pragprog.com/titles/sfipad/ipad-programming">iPad Programming</a> and <a href="http://pragprog.com/titles/dscpq/cocoa-programming">Cocoa Programming</a>:
-            A Quick-Start Guide for Developers <a href="http://dimsumthinking.com">http://dimsumthinking.com</a></p>
-        </div>
-
-    </div>
-
+     </div>
 
 
 

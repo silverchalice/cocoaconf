@@ -6,7 +6,18 @@ html {
     font-color: #232323;
 }
 
-announcementHeader a {
+#announcementHeader a {
+    color:white
+}
+
+#announcementHeader {
+    width:100%;
+    background-image:url(../images/bar-bg.png);
+    text-align:center;
+    height:25px;
+    padding-top:8px;
+    margin-bottom:0px;
+    font-weight:bold;
     color:white
 }
 
@@ -26,20 +37,27 @@ body {
     padding:0;
 }
 
+
+.paralogo {
+    float:left;
+    padding:3px 5px 0 0
+}
+
 .address {
     border-bottom: 1px dotted gray;
 }
 
 #page {
-    width:800px;
+    width:1000px;
     margin:0 auto;
+    padding-top: 36px;
     background: white url(../images/page-bg.png) repeat-y right;
 }
 
 
 #page-header {
     margin: 0 auto;
-    width:800px;
+    width:1000px;
     height:35px;
     background: white url(../images/tl-corner.png) no-repeat;
 }
@@ -51,7 +69,7 @@ body {
 
 #logo {
     background: white url(../images/page-bg.png) repeat-y right;
-    width:800px;
+    width:1000px;
     border: 0;
     margin-bottom:0;
     padding-bottom:0;
@@ -66,6 +84,12 @@ body {
     font-variant:small-caps;
 
 
+}
+
+#nav {
+    background-image: url(../images/bar-bg.png);
+    height:40px;
+    width:998px
 }
 
 #nav a {
@@ -93,19 +117,46 @@ body {
     width:130px;
 }
 
+#sidebar {
+    width:240px;
+    padding: 25px 15px 15px;
+    float:left;
+    border-right:1px dotted black;
+    border-bottom:1px dotted black;
+    border-left:1px dotted black;
+}
+
+
+#sidebar ul {
+    padding-left: 5px;
+}
+
+
+#featuredSpeakers {
+    float:right;
+    width:180px;
+    padding: 25px 10px 0;
+    border-left: 1px dotted black;
+    border-bottom: 1px dotted black;
+}
 
 
 #content {
-    background: url(../images/page-bg.png) repeat-y right;
-    min-height:1250px;
-    width:700px;
+
+    width:980px;
     border:0;
     padding-top:0;
-    padding-left:50px;
-    padding-right:50px;
+    padding-left:20px;
+    padding-right:0px;
 
 }
 
+
+.body {
+    float:right;
+    width:640px;
+    padding-right:50px;
+}
 
 .sponsor img {
     max-width:600px;
@@ -113,18 +164,16 @@ body {
 
 #footer {
     display: block;
-    width:800px;
+    width:998px;
     text-decoration: none;
-    height:35px;
     text-align: center;
-    background-image:url(../images/footer-bg.png)
+    padding: 0 0 20px 0;
 }
 
 #footer p {
-    color: white;
+    color: #333333;
     font-size: 13px;
     font-variant: small-caps;
-    font-weight: bold;
     height: 20px;
     position: relative;
     top: 8px;
@@ -132,7 +181,7 @@ body {
 
 
 #footer a {
-    color:#f0f0f0;
+    color: #898c8c;
 }
 label.error {
     display:block;
@@ -166,23 +215,22 @@ label.error {
 
 }
 
-#featuredSpeakers {
-    clear:both;
-    background-image: url(../images/tagcloud.png);
-    height:100px;
-}
-
-#featuredSpeakers h2 {
-    margin-left:50px;
-}
-
 div.featured {
-    float:left;
-    padding-right:10px;
-    width:160px;
+    padding-top:10px;
     font-size:11px
 }
 
+div.featured strong {
+    font-size: 12px;
+}
+
+div.featured p {
+    margin:0;
+}
+
+div.featured img {
+    margin-left:25px;
+}
 
 .clear {
     clear:both;

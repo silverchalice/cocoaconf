@@ -46,23 +46,20 @@
 
     </head>
     <body>
-        <div class="nav">
-        </div>
-        <div class="body">
 
-            <h1>Session Listing</h1>
-            <p>As we get the details finalized we will post a full schedule. For now, here's a sneak peek at what's coming!</p>
+        <h1>Session Listing</h1>
+        <p>As we get the details finalized we will post a full schedule. For now, here's a sneak peek at what's coming!</p>
 
-            <div class="list">
-                <g:each in="${presentationInstanceList}" status="i" var="presentation">
-                   <div>
-                       <h3 style="color:#2ab0e2">${presentation.title}</h3>
-                       <h4><g:link  style="color:#2ab0e2" controller="speaker" action="viewDetails" id="${presentation?.speaker?.id}">${presentation.speaker}</g:link> </h4>
-                       <p>${presentation.pAbstract}</p>
-                   </div>
-                   <hr/>
-                </g:each>
-            </div>
+        <div class="list">
+            <g:each in="${presentationInstanceList}" status="i" var="presentation">
+               <div>
+                   <h3 style="color:#2ab0e2">${presentation.title}</h3>
+                   <h4><g:link  style="color:#2ab0e2" controller="speaker" action="viewDetails" id="${presentation?.speaker?.id}">${presentation.speaker}</g:link> </h4>
+                   <p>${presentation.pAbstract}</p>
+               </div>
+               <hr/>
+            </g:each>
         </div>
+
     </body>
 </html>
