@@ -72,7 +72,7 @@
                     </g:if>
 
 
-                     <div class="bio" style="min-height:160px; width:500px">
+                     <div class="bio" style="min-height:160px; width:480px">
                          <h3>${speaker} <span style="font-size: 14px;"><g:link controller="speaker" action="viewDetails" id="${speaker?.id}">View Details</g:link></span></h3>
                          ${speaker.bio}<br/>
 
