@@ -131,95 +131,54 @@
         </style>
     </head>
     <body>
-        <div id="sidebar">
-            <h2 style="color:#1da0d1;">About CocoaConf</h2>
-            <h3>CocoaConf is a technical conference, pure and simple.</h3>
-            <p>Instead of vendor booths or vendor keynotes, you'll find:</p>
-            <ul style="list-style: none">
-                <li style="border-bottom: 1px dotted gray"><strong>In-depth</strong> technical sessions.</li>           
-                <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Multiple <strong>concurrent tracks</strong>.</li>
-                <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Full-day, hands-on <strong>iOS workshop</strong>.</li>
-                <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Fun and informative <strong>speaker panel</strong>.</li>
-                <li style="border-bottom: 1px dotted gray; margin-bottom:15px; font-weight: bold">And much more!</li>
-            </ul>
-            <br/>
 
-            <h2 style="color:#1da0d1;">Featured Speakers</h2>
-            <div class="featured">
-               <img src="${resource(dir:'images',file:'adamson.png')}"/>
-                <p><strong>Chris Adamson</strong> - Author of <a href="http://www.amazon.com/Core-Audio-Kevin-Avila/dp/0321636848">Core Audio</a>, and <a href="http://pragprog.com/titles/amiphd/iphone-sdk-development">iPhone SDK Development</a>
-               <a href="http://www.subfurther.com/blog">http://www.subfurther.com/blog</a></p>
+        <h1 style="color:#1da0d1;">Columbus 2011 Wrap Up!</h1>
+        <div id="gallery">
 
-           </div>
-            <div class="featured">
-               <img src="${resource(dir:'images',file:'dudney.png')}"/>
-               <p><strong>Bill Dudney</strong> - Author of Pragmatic Programmer’s books <a href="http://pragprog.com/titles/amiphd/iphone-sdk-development">iPhone SDK Development</a> and <a href="http://pragprog.com/titles/bdcora/core-animation-for-mac-os-x-and-the-iphone">Core Animation</a>.
-               <a href="http://www.bill.dudney.net">http://www.bill.dudney.net</a></p>
+            <div id="slides">
 
-           </div>
-           <div class="featured">
-               <img src="${resource(dir:'images',file:'judd.png')}"/>
-               <p><strong>Christopher Judd</strong> - Leader of <a href="http://groups.google.com/group/cidug?pli=1">Columbus iPhone Developer User Group</a> and author of <a href="http://www.beginninggroovyandgrails.com/site/content/index">Beginning Groovy and Grails</a>
-               <a href="http://www.juddsolutions.com">http://www.juddsolutions.com</a></p>
-
-           </div>
-           <div class="featured">
-               <img src="${resource(dir:'images',file:'stein.png')}"/>
-               <p><strong>Daniel Steinberg</strong> - Author of <a href="http://pragprog.com/titles/sfipad/ipad-programming">iPad Programming</a> and <a href="http://pragprog.com/titles/dscpq/cocoa-programming">Cocoa Programming</a>:
-               A Quick-Start Guide for Developers <a href="http://dimsumthinking.com">http://dimsumthinking.com</a></p>
-           </div>
-
-        </div>
-		<div id="content">
-            <h1 style="color:#1da0d1;">Columbus 2011 Wrap Up!</h1>
-            <div id="gallery">
-
-                <div id="slides">
-
-                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide1.png')}" width="420" height="272" alt="side" /></div>
-                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide2.png')}" width="420" height="272" alt="side" /></div>
-                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide3.png')}" width="420" height="272" alt="side" /></div>
-                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide4.png')}" width="420" height="272" alt="side" /></div>
-                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide5.png')}" width="420" height="272" alt="side" /></div>
-                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide6.png')}" width="420" height="272" alt="side" /></div>
-                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide7.png')}" width="420" height="272" alt="side" /></div>
-                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide8.png')}" width="420" height="272" alt="side" /></div>
-                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide9.png')}" width="420" height="272" alt="side" /></div>
-                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide10.png')}" width="420" height="272" alt="side" /></div>
-                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide11.png')}" width="500" height="272" alt="side" /></div>
-                </div>
-
-                <div id="menu">
-                    <ul>
-                        <li class="fbar">&nbsp;</li>
-                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_macbook.png')}" alt="thumbnail" /></a></li>
-                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_iphone.png')}" alt="thumbnail" /></a></li>
-                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_imac.png')}" alt="thumbnail" /></a></li>
-                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    </ul>
-                </div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide1.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide2.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide3.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide4.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide5.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide6.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide7.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide8.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide9.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide10.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide11.png')}" width="500" height="272" alt="side" /></div>
             </div>
-            <p>The first CocoaConf was held in Dublin, Ohio on August 12th and 13th. Ninety iPhone, iPad, and Mac developers gathered for two exciting days of training, networking, and good times. With three tracks and sessions ranging from beginner to advanced, there was something for everyone to enjoy and learn from.  During the meals and extended breaks, it was great to see old friends catching up and new friends getting acquainted.  Then when the sessions began, the hallways were empty and silent, save for the occasional outburst of laughter or applause coming from the session rooms.</p>
 
-            <p>According to attendee feedback, the meal times, the speaker panel, Daniel Steinberg's keynote address, and the exclusive &#8220;We Made an App For That&#8221; session were all big hits.  But the honor of Best Session At CocoaConf went to Bill Dudney's talk on Drawing With Core Graphics.  Way to go, Bill!</p>
-			<p>Before, during, and since the conference, speakers and attendees have been blogging about CocoaConf.  So rather than go on and on about how great it was, we'll just let them tell you.</p>
+            <div id="menu">
+                <ul>
+                    <li class="fbar">&nbsp;</li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_macbook.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_iphone.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_imac.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <p>The first CocoaConf was held in Dublin, Ohio on August 12th and 13th. Ninety iPhone, iPad, and Mac developers gathered for two exciting days of training, networking, and good times. With three tracks and sessions ranging from beginner to advanced, there was something for everyone to enjoy and learn from.  During the meals and extended breaks, it was great to see old friends catching up and new friends getting acquainted.  Then when the sessions began, the hallways were empty and silent, save for the occasional outburst of laughter or applause coming from the session rooms.</p>
 
-			<hr /><br />
-			<h2>What people are saying about CocoaConf</h2><br />
-			<g:each in="${blogLinks}" var="link">
-				<div class="blogLink">
-					<h4>${link.title}</h4>
-					<p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
-				</div>
-			</g:each>
-		</div>
-        <div class="clear"></div>
+        <p>According to attendee feedback, the meal times, the speaker panel, Daniel Steinberg's keynote address, and the exclusive &#8220;We Made an App For That&#8221; session were all big hits.  But the honor of Best Session At CocoaConf went to Bill Dudney's talk on Drawing With Core Graphics.  Way to go, Bill!</p>
+        <p>Before, during, and since the conference, speakers and attendees have been blogging about CocoaConf.  So rather than go on and on about how great it was, we'll just let them tell you.</p>
+
+        <hr /><br />
+        <h2>What people are saying about CocoaConf</h2><br />
+        <g:each in="${blogLinks}" var="link">
+            <div class="blogLink">
+                <h4>${link.title}</h4>
+                <p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
+            </div>
+        </g:each>
     </body>
 </html>

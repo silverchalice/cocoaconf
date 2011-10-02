@@ -135,22 +135,8 @@
             </div>
         </g:if>
         <h1 style="float:left">Raleigh 2011, Schedule</h1>
-<!--
-        <sec:ifLoggedIn>
-            <g:if test="${slides}">
-                <a class="slideDownload" href="${createLink(controller:'home', action:'downloadSlides', params:[file:slides])}">Download Slides/Sample Code</a>
-            </g:if>
 
-        </sec:ifLoggedIn>
-
-        <sec:ifLoggedIn>
-            <p style="clear:both">Please check the sessions you are most likely to attend.  This is not binding but will help us with room sizing. Thanks!</p>
-            <g:render template="scheduleLoggedIn"/>
-        </sec:ifLoggedIn>
-
-        <sec:ifNotLoggedIn>
--->
             <g:render template="schedule"/>
-<!--        </sec:ifNotLoggedIn>  -->
+
     </body>
 </html>

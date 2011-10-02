@@ -7,12 +7,7 @@
         <title>CocoaConf Presentation: ${presentationInstance?.title}</title>
     </head>
     <body>
-        <div class="body">
-            <h1><g:message code="default.show.label" args="[entityName]" /></h1>
-            <g:if test="${flash.message}">
-            <div class="message">${flash.message}</div>
-            </g:if>
-            <div class="dialog">
+            <h1><g:message code=".show.label" args="[entityName]" /></h1>
 				<div>
 					<h1>${presentationInstance?.title}</h1>
 					<p>${presentationInstance?.pAbstract}</p>
@@ -22,6 +17,5 @@
 	                <p>${presentationInstance?.speaker?.bio}</p>
 	            </div>
             </div>
-        </div>
     </body>
 </html>

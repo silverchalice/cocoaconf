@@ -24,28 +24,22 @@
 	</script>
     </head>
     <body>
-        <div class="body">
 
-            <g:if test="${flash.message}">
-            <div class="message">${flash.message}</div>
-            </g:if>
-            <div>
-                <img src="${request.contextPath}/${speaker?.imagePath}" style="float:left" />
-                <h1>${speaker}</h1>
-                <p>${speaker.bio}</p>
-
-            </div>
-                <ul style="display: block; background-image: url(${resource(dir:'images', file:'background.png')}); width:520px; border: 1px solid gray; padding: 1px 40px 0 20px">
-                   <h3>Presentations by ${speaker}:</h3>
-                 <g:each in="${speaker.presentations.findAll{it.current == true}}" var="presentation">
-                    <li style="background: white; padding: 6px; border: 1px solid gray; list-style: none; margin-bottom:20px;"><strong style="color:#2ab0e2">${presentation.title}</strong><br/>
-                    <p>${presentation.pAbstract}</p></li>
-
-
-                 </g:each>
-                </ul>
+        <div>
+            <img src="${request.contextPath}/${speaker?.imagePath}" style="float:left" />
+            <h1>${speaker}</h1>
+            <p>${speaker.bio}</p>
 
         </div>
+        <ul style="display: block; background-image: url(${resource(dir:'images', file:'background.png')}); width:520px; border: 1px solid gray; padding: 1px 40px 0 20px">
+           <h3>Presentations by ${speaker}:</h3>
+         <g:each in="${speaker.presentations.findAll{it.current == true}}" var="presentation">
+            <li style="background: white; padding: 6px; border: 1px solid gray; list-style: none; margin-bottom:20px;"><strong style="color:#2ab0e2">${presentation.title}</strong><br/>
+            <p>${presentation.pAbstract}</p></li>
+
+
+         </g:each>
+        </ul>
 
 
 
