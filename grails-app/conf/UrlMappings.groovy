@@ -49,6 +49,10 @@ class UrlMappings {
 			controller = "speaker"
 			action = "speakers"
 		}
+		"/roundup"{
+			controller = "blogLink"
+			action = "roundup"
+		}
 
 		"500"(view:'/error')
 	}
