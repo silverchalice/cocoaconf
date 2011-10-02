@@ -1,3 +1,5 @@
+import grails.plugins.springsecurity.SecurityConfigType
+
 // locations to search for config files that get merged into the main config
 // config files can either be Java properties files or ConfigSlurper scripts
 
@@ -66,9 +68,6 @@ environments {
 }
 
 grails.plugins.springsecurity.securityConfigType = SecurityConfigType.InterceptUrlMap
-
-
-
 grails.plugins.springsecurity.interceptUrlMap = [
 
     '/':                                                     ['IS_AUTHENTICATED_ANONYMOUSLY'],
