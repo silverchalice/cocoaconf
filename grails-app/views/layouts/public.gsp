@@ -42,7 +42,7 @@
              <!--  <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}" controller="home" action="partners" style="background-position: -360px 0;">Partners</g:link> -->
               <g:link class="${pageProperty(name:'meta.tab') == 'register' ? 'current' : ''}" controller="home" action="register" style="background-position: -500px 0;">Register</g:link>
 
-               <g:link class="${pageProperty(name:'meta.tab') == 'nearYou' ? 'current' : ''}" controller="home" action="near_you" style="margin-left:21px; width:120px; border-left:1px solid gray; border-right: 0; background-position: -535px 0;"> [cocoaConf next]</g:link>
+               <g:link class="${pageProperty(name:'meta.tab') == 'nearYou' ? 'current' : ''}" controller="home" action="nearYou" style="margin-left:21px; width:120px; border-left:1px solid gray; border-right: 0; background-position: -535px 0;"> [cocoaConf next]</g:link>
 
 
            </div>
