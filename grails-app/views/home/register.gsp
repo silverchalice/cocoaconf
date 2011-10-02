@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
   <head>
-      <title>Cocoaconf | iOS/OS X Developer Conference | Columbus, Ohio | August 12 & 13</title>
+      <title>CocoaConf | iOS/OS X Developer Conference | Raleigh, North Carolina | December 2 & 3</title>
       <meta name="layout" content="public" />
         <meta name="tab" content="register" />
       <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
@@ -97,7 +97,7 @@
   </head>
 
   <body>
-  <h1>Registration ends August 8!</h1>
+  <h1>Register for Raleigh CocoaConf</h1>
   <h2>What you get</h2>
   <p>CocoaConf is a two day developer conference covering all things Cocoa and CocoaTouch.  The two day conference includes an <a href="http://www.cocoaconf.com/session/details/4" style="color:#2ab0e2; font-size: 14.5px; text-decoration: none; font-weight: bold">all day hands-on iOS tutorial</a> along with sessions on a variety of iOS and OS X development topics.  The iOS tutorial is also being prepeated on Thursday, 12/1 for those who only want the tutorial.  For those that want it all, we have a special combo price.
  </p>
@@ -105,7 +105,6 @@
       These early bird prices will end on October 31st, so register now for big savings!
   </p>
 
-<div style="width:100%; text-align:left;" ><iframe  src="http://www.eventbrite.com/tickets-external?eid=1649713337&ref=etckt" frameborder="0" height="338" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/features?ref=etckt" >Event registration</a><span style="color:#ddd;" > for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://cocoaconf.eventbrite.com?ref=etckt" >Cocoaconf  | Columbus, Ohio</a><span style="color:#ddd;" > powered by </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt" >Eventbrite</a></div></div>
-
+<div style="width:100%; text-align:left;" ><iframe  src="http://www.eventbrite.com/tickets-external?eid=2242499376&ref=etckt" frameborder="0" height="338" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt" >Online Ticketing</a><span style="color:#ddd;" > for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://cocoaconf-rtp.eventbrite.com?ref=etckt" >CocoaConf - Raleigh</a><span style="color:#ddd;" > powered by </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt" >Eventbrite</a></div></div>
   </body>
 </html>

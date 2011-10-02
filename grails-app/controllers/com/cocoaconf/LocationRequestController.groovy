@@ -34,7 +34,7 @@ class LocationRequestController {
         def locationRequestInstance = new LocationRequest(params)
         if (locationRequestInstance.save(flush: true)) {
             println "saved"
-            flash.message = "Thanks for the recommendation for a Cocoaconf near ${locationRequestInstance.city}, ${locationRequestInstance.state}. We'll let you know when we're in town!"
+            flash.message = "Thanks for the recommendation for a CocoaConf near ${locationRequestInstance.city}, ${locationRequestInstance.state}. We'll let you know when we're in town!"
             redirect(controller: 'home', action: "nearYou", locationRequestInstance: locationRequestInstance)
         }
         else {

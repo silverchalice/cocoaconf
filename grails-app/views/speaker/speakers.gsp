@@ -6,7 +6,7 @@
         <meta name="layout" content="public" />
          <meta name="tab" content="speakers" />
         <g:set var="entityName" value="${message(code: 'speaker.label', default: 'Speaker')}" />
-        <title>Cocoaconf | Our Speakers</title>
+        <title>CocoaConf | Our Speakers</title>
 
 <script type="text/javascript">
 
@@ -63,8 +63,8 @@
         </div>
         <div class="body">
 
-            <h1>Columbus 2011, Speakers</h1>
-            <p>Cocoaconf speakers include well known trainers, authors, and professional iOS and OS X developers.</p>
+            <h1>Raleigh NC, 2011, Speakers</h1>
+            <p>CocoaConf speakers include well known trainers, authors, and professional iOS and OS X developers.</p>
 
             <div class="list">
                 <g:each in="${speakerInstanceList}" status="i" var="speaker">

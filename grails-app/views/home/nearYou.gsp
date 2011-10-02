@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
   <head>
-      <title>Cocoaconf | iOS/OS X Developer Conference | Columbus, Ohio | August 12 & 13</title>
+      <title>CocoaConf | iOS/OS X Developer Conference | Columbus, Ohio | August 12 & 13</title>
       <meta name="layout" content="public" />
       <meta name="tab" content="nearYou" />
 

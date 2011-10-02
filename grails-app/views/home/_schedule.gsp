@@ -16,13 +16,13 @@
 		<td align="center" class="time">9:45-10:45</td>
 		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="4">iOS Tutorial, Part Two</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="36">AutoCAD for Mac Plugins</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="22">Josh Johnson</g:link></span></td>
-		<td align="center" class="track3"><span class="sessionTitle">TBD</span> <span class="sessionSpeaker">Saul Mora</span></td>
+		<td align="center" class="track3"><span class="sessionTitle">Core Data: The Real World </span> <span class="sessionSpeaker">Saul Mora</span></td>
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time" >11:00-12:00</td>
 		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="4">iOS Tutorial, Part Three</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="37">Mastering the Address Book</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="23">Collin Donnell</g:link></span></td>
-		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="25">Core Graphics</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
+		<td align="center" class="track3"><span class="sessionTitle">Accelerate</span> <span class="sessionSpeaker">Jeff Biggus</span></td>
 	</tr>
 	<tr class="break">
 		<td align="center" class="time">12:00-1:15</td>
@@ -36,7 +36,7 @@
 		<td align="center" class="time" >2:30-3:30</td>
 		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="4">iOS Tutorial, Part Four</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="35">Background Saving with Core Data</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="22">Josh Johnson</g:link></span></td>
-		<td align="center" class="track3"><span class="sessionTitle">Accelerate</span> <span class="sessionSpeaker">Jeff Biggus</span></td>
+		<td align="center" class="track3"><span class="sessionTitle">Reverse Engineering your application’s UI</span> <span class="sessionSpeaker">Saul Mora</span></td>
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time" >3:45-4:45</td>
@@ -103,7 +103,7 @@
       <tr class="slot">
      		<td align="center" class="time" >4:00-5:00</td>
      		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="34">Intro to Core Location</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="22">Josh Johnson</g:link></span></td>
-     		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="18">TBD</g:link></span> <span class="sessionSpeaker">Saul Mora</span></td>
+     		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="25">Core Graphics</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
      		<td align="center" class="track3"><span class="sessionTitle">Unit Testing that Doesn't Suck</span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
      	</tr>
 	<tr class="break">
