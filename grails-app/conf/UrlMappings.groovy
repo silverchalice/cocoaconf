@@ -44,7 +44,6 @@ class UrlMappings {
 			controller = "blogLink"
 			action = "roundup"
 		}
-		}
 		"/nearYou"{
 			controller = "home"
 			action = "nearYou"
