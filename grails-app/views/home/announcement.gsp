@@ -203,23 +203,23 @@
 
       <g:if test="${flash.message}">
           <div id="flashMessage"><p>${flash.message}</p>
-           <span class="button" id="closeFlash" >Ok!</span>
+           <span class="button" id="closeFlash" >OK!</span>
           </div>
       </g:if>
      <br/>
 
       <div style="margin-top: 5px;">
-         <h2 style="color:#1da0d1;">Coming to Raleigh December 2 - 3, 2011</h2>
+         <h2 style="color:#1da0d1;">Coming to Raleigh &#8212; December 2-3, 2011</h2>
 
           <img src="${resource(dir:'images', file:'andy.png')}" style="float:left; margin:14px;"/>
-          <p>The developers of North Carolina have spoken and we've listened.  By popular demand CocoaConf will be coming to Downtown Raleigh, NC in early December. We will have the same format, with two intense days of technical sessions, relevant keynotes, great food, and cool swag.  Included in the two day conference is an optional, all-day, hands-on iOS tutorial.   In this workshop we will create an iPhone app from design to deployment.  A great way to get started in this exciting field!
+          <p>The developers of North Carolina have spoken, and we&#8217;ve listened.  By popular demand, CocoaConf will be coming to downtown Raleigh, NC, in early December. We will have the same format, with two intense days of technical sessions, relevant keynotes, great food, and cool swag.  Included in the two-day conference is an optional all-day hands-on iOS tutorial, in which we will create an iPhone app from design to deployment &#8212; a great way to get started in this exciting field!
           </p>
           <p>
-          The workshop was so popular in Columbus that we decided to hold it twice in Raleigh.  All CocoaConf attendees can go to the iOS tutorial on Friday, 12/2, but we will also be offering the iOS tutorial as a stand-alone class on Thursday 12/1.  This is a separate registration for those who only want the tutorial but there is a special combined rate for those who just can't get enough.
+          This workshop was so popular in Columbus that we decided to hold it twice in Raleigh.  All CocoaConf attendees can go to the iOS tutorial on Friday, December 2, but we&#8217;ll also be offering the tutorial as a stand-alone class on Thursday, December 1.  This is a separate registration for those who want only the tutorial, but there is a special combined rate for those that just can&#8217;t get enough.
           </p>
-          <p><strong>We are also thrilled to announce that CocoaConf - Raleigh will feature a keynote by Andy Hunt!  </strong>
+          <p><strong>We are also thrilled to announce that CocoaConf Raleigh will feature a keynote by Andy Hunt!  </strong>
           </p>
-          <p>You don't want to miss this conference, so <g:link controller="home" action="register">register today</g:link> and save $150 with the early bird rate. </p>
+          <p>You don&#8217;t want to miss this conference, so <g:link controller="home" action="register">register today</g:link> and save $150 with the early bird rate. </p>
       </div>
       <br/>
 
@@ -261,7 +261,7 @@
 
       <div style="float:left; width:260px; margin-top: 20px;">
           <h2 style="color:#1da0d1;">Columbus 2011 Wrap Up!</h2>
-          <p>The first CocoaConf was held in Dublin, Ohio on August 12th and 13th. Ninety iPhone, iPad, and Mac developers gathered for two exciting days of training, networking, and good times. With three tracks and sessions ranging from beginner to advanced, there was something for everyone to enjoy and learn from...</p>
+          <p>The first CocoaConf was held in Dublin, Ohio, on August 12th and 13th. 90 iPhone, iPad, and Mac developers gathered for two exciting days of training, networking, and good times. With three tracks and sessions ranging from beginner to advanced, there was something for everyone to enjoy and learn from...</p>
           <g:link controller="blogLink" action="roundup" style="color:#ff9627; font-size:18px; font-weight: bold">Read more!</g:link>
       </div>
       <div class="clear" style="clear: both"></div>

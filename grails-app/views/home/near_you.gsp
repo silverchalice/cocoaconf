@@ -9,9 +9,9 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
   <head>
-      <title>CocoaConf | iOS/OS X Developer Conference | Columbus, Ohio | August 12 & 13</title>
+      <title>CocoaConf | iOS/OS X Developer Conference | Raleigh, North Carolina | December 2 & 3</title>
       <meta name="layout" content="public" />
-      <meta name="tab" content="nearYou" />
+      <meta name="tab" content="near_you" />
 
       <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAUBuwYLt8MoHV8G-JyWegDxTedV6jzRPejGhJGvcW1KcUcMdW1RS2Dxifye3ZKPwd2B2Sx7KUnQeZrw" type="text/javascript"></script>
 	<script type="text/javascript">
