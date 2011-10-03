@@ -49,6 +49,10 @@ class UrlMappings {
 			controller = "speaker"
 			action = "speakers"
 		}
+        "/sessions"{
+      			controller = "session"
+      			action = "sessions"
+      		}
 		"/roundup"{
 			controller = "blogLink"
 			action = "roundup"
