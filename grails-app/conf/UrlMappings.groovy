@@ -11,11 +11,6 @@ class UrlMappings {
 			controller = "home"
 			action = "announcement"
 		}
-
-		"/home/nearYou"{
-			controller = "home"
-			action = "near_you"
-		}
 		
 		"/register"{
 			controller = "home"
@@ -37,10 +32,6 @@ class UrlMappings {
 			controller = "home"
 			action = "team"
 		}
-		"/near_you"{
-			controller = "home"
-			action = "near_you"
-		}
 		"/schedule_oh"{
 			controller = "home"
 			action = "schedule_oh"
@@ -56,6 +47,10 @@ class UrlMappings {
 		"/roundup"{
 			controller = "blogLink"
 			action = "roundup"
+		}
+		"/nearYou"{
+			controller = "home"
+			action = "nearYou"
 		}
 
 		"500"(view:'/error')

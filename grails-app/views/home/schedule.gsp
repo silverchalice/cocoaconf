@@ -134,7 +134,7 @@
                 <p>${flash.message}</p>
             </div>
         </g:if>
-        <h1 style="float:left">Raleigh 2011, Schedule</h1>
+        <h1 style="float:left">Raleigh, NC, 2011: Schedule</h1>
 
             <g:render template="schedule"/>
 

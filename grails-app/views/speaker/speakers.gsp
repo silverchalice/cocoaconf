@@ -60,7 +60,7 @@
     </head>
     <body>
 
-        <h1>Raleigh NC, 2011, Speakers</h1>
+        <h1>Raleigh, NC, 2011: Speakers</h1>
         <p>CocoaConf speakers include well known trainers, authors, and professional iOS and OS X developers.</p>
 
         <div class="list">
