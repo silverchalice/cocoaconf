@@ -35,9 +35,6 @@
 	</script>
 
       <style type="text/css">
-        strong, h3 {
-            color:#2ab0e2;
-        }
 
         a {
             color:#2ab0e2;
