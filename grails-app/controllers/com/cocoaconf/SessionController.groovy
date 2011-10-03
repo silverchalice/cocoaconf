@@ -12,7 +12,7 @@ class SessionController {
     }
 
     def sessions = {
-       [presentationInstanceList: Presentation.list(), presentationInstanceTotal: Presentation.count()]
+       [presentationInstanceList: Presentation.findAllByCurrent(true), presentationInstanceTotal: Presentation.findAllByCurrent(true).size()]
     }
 
     def list = {

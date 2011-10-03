@@ -48,7 +48,6 @@
     <body>
 
         <h1>Session Listing</h1>
-        <p>As we get the details finalized we will post a full schedule. For now, here's a sneak peek at what's coming!</p>
 
         <div class="list">
             <g:each in="${presentationInstanceList}" status="i" var="presentation">
