@@ -40,7 +40,7 @@
 	</tr>
 	<tr class="break2">
 		<td align="center" class="time">1:15-2:15</td>
-		<th align="center" colspan="3" class="keynote"><!--<g:link controller="session" action="details" id="28"> -->&ldquo;We Made An App For That&rdquo;<!--</g:link> --><span class="sessionSpeaker"></span> </th>
+		<th align="center" colspan="3" class="keynote"><g:link controller="session" action="details" id="28">&ldquo;We Made An App For That&rdquo;</g:link><span class="sessionSpeaker"></span> </th>
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time" >2:30-3:30</td>
