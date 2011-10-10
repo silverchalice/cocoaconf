@@ -57,11 +57,23 @@
                    <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Fun and informative <strong>speaker panel</strong>.</li>
                    <li style="border-bottom: 1px dotted gray; margin-bottom:15px; font-weight: bold">And much more!</li>
                </ul>
+               <a href="http://www.twitter.com/cocoaconf" style="margin-left: 20px"><img src="http://twitter-badges.s3.amazonaws.com/follow_us-c.png" alt="Follow CocoaConf on Twitter"/></a>
+
+               <br/>
                <br/>
 
                <h2 style="color:#1da0d1;">Our Platinum Sponsor</h2>
                <br/>
                <a href="http://rolemodelsoft.com"><img src="${resource(dir:'images', file: 'rolemodel.png')}" /></a>
+
+               <br/>
+
+               <br/>
+
+              <h2 style="color:#1da0d1;">Our Gold Sponsors</h2>
+              <br/>
+              <a href="http://appsolutegenius.com"><img src="${resource(dir:'images', file: 'appsolute.png')}" /></a>
+
 
            </div>
 

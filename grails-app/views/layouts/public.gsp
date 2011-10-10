@@ -46,24 +46,36 @@
 
 
            </div>
-           <div id="sidebar" style="min-height: 927px;">
-               <h2 style="color:#1da0d1;">About CocoaConf</h2>
-               <h3>CocoaConf is a technical conference, pure and simple.</h3>
-               <p>Instead of vendor booths or vendor keynotes, you'll find:</p>
-               <ul style="list-style: none">
-                   <li style="border-bottom: 1px dotted gray"><strong>In-depth</strong> technical sessions.</li>           
-                   <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Multiple <strong>concurrent tracks</strong>.</li>
-                   <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Full-day, hands-on <strong>iOS workshop</strong>.</li>
-                   <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Fun and informative <strong>speaker panel</strong>.</li>
-                   <li style="border-bottom: 1px dotted gray; margin-bottom:15px; font-weight: bold">And much more!</li>
-               </ul>
-               <br/>
+            <div id="sidebar" style="min-height: 927px;">
+                <h2 style="color:#1da0d1;">About CocoaConf</h2>
+                <h3>CocoaConf is a technical conference, pure and simple.</h3>
+                <p>Instead of vendor booths or vendor keynotes, you'll find:</p>
+                <ul style="list-style: none">
+                    <li style="border-bottom: 1px dotted gray"><strong>In-depth</strong> technical sessions.</li>           
+                    <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Multiple <strong>concurrent tracks</strong>.</li>
+                    <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Full-day, hands-on <strong>iOS workshop</strong>.</li>
+                    <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Fun and informative <strong>speaker panel</strong>.</li>
+                    <li style="border-bottom: 1px dotted gray; margin-bottom:15px; font-weight: bold">And much more!</li>
+                </ul>
+                <a href="http://www.twitter.com/cocoaconf" style="margin-left: 20px"><img src="http://twitter-badges.s3.amazonaws.com/follow_us-c.png" alt="Follow CocoaConf on Twitter"/></a>
 
-               <h2 style="color:#1da0d1;">Our Platinum Sponsor</h2>
-               <br/>
-               <a href="http://rolemodelsoft.com"><img src="${resource(dir:'images', file: 'rolemodel.png')}" /></a>
+                <br/>
+                <br/>
 
-           </div>
+                <h2 style="color:#1da0d1;">Our Platinum Sponsor</h2>
+                <br/>
+                <a href="http://rolemodelsoft.com"><img src="${resource(dir:'images', file: 'rolemodel.png')}" /></a>
+
+                <br/>
+
+                <br/>
+
+               <h2 style="color:#1da0d1;">Our Gold Sponsors</h2>
+               <br/>
+               <a href="http://appsolutegenius.com"><img src="${resource(dir:'images', file: 'appsolute.png')}" /></a>
+
+
+            </div>
 
            <div id="content">
               <div class="body"><g:layoutBody /></div>

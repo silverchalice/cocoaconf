@@ -12,7 +12,7 @@ class SessionController {
     }
 
     def sessions = {
-       [presentationInstanceList: Presentation.findAllByCurrent(true), presentationInstanceTotal: Presentation.findAllByCurrent(true).size()]
+       [presentationInstanceList: Presentation.findAllByCurrent(true , [sort:"speaker"]), presentationInstanceTotal: Presentation.findAllByCurrent(true).size()]
     }
 
     def list = {
