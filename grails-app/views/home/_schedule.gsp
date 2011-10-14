@@ -6,7 +6,7 @@
         <th align="center" colspan="3"><g:link controller="session" action="details" id="55">iOS Tutorial</g:link> <br /> (same as Parts 1&#8212;6 on Friday; <g:link controller="home" action="register">separate registration</g:link>) </span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></th>
 	</tr>
     <tr class="break">
-        <td align="center" class="time">8:00-11:00</td>
+        <td align="center" class="time">6:00-10:00</td>
         <th align="center" colspan="3">NSCoder Night <br /> (sponsored by CocoaConf; open to the public)</th>
     </tr>
   </table>
