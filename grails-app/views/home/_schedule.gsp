@@ -46,7 +46,7 @@
 		<td align="center" class="time" >2:30-3:30</td>
 		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="45">iOS Tutorial, Part Four</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="4">Chris Judd</g:link></span></td>
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="35">Background Saving With Core Data</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="22">Josh Johnson</g:link></span></td>
-		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="10">Reverse Engineering Your Application&#8217;s UI</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="24">Saul Mora</g:link></span></td>
+ 		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="25">Core Graphics</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time" >3:45-4:45</td>
@@ -104,12 +104,12 @@
 		<td align="center" class="time" >2:45-3:45</td>
 		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="36">AutoCAD For Mac Plugins</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="22">Josh Johnson</g:link></span></td>
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="3">Mac Programing For iOS Developers</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
-		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="54">TBA</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
+		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="54">Documents on iOS 5</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
 	</tr>
       <tr class="slot">
      		<td align="center" class="time" >4:00-5:00</td>
      		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="34">Intro To Core Location</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="22">Josh Johnson</g:link></span></td>
-     		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="25">Core Graphics</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
+			<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="10">Reverse Engineering Your Application&#8217;s UI</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="24">Saul Mora</g:link></span></td>
      		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="46">Unit Testing That Doesn&#8217;t Suck</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
      	</tr>
 	<tr class="break">
