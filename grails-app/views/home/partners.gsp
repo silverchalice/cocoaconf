@@ -9,6 +9,12 @@
 		<div id="sponsors">
             <h1>Partners</h1>
 			<h2 style="font-size:20px;">The following organizations are helping to make CocoaConf awesome! </h2>  <br/>
+			<div id="rolemodel" class="sponsor">
+				<a href="http://rolemodelsoftware.com/"><img src="${resource(dir:'images',file:'rolemodel.png')}" style="width:380px; float:left;"/></a>
+			</div>
+            <div id="appsolute" class="sponsor">
+				<a href="http://appsolutegenius.com/"><img src="${resource(dir:'images',file:'appsolute.png')}" style="margin-top: 20px"/></a>
+			</div>
 			<div id="pragstudio">
 				<a href="http://pragmaticstudio.com/"><img src="${resource(dir:'images',file:'pragstudio.png')}" style="width:380px; float:left;" /></a>
 			</div>
@@ -18,25 +24,25 @@
 			<div id="manning" class="sponsor">
 				<a href="http://www.manning.com/"><img src="${resource(dir:'images',file:'manning.png')}" style="width:240px; float:right;"/></a>
 			</div>
-
-			<div id="crockett" class="sponsor">
-				<a href="http://crockettphotography.smugmug.com/"><img src="${resource(dir:'images',file:'crockett.png')}" style="width:380px; float:left;"/></a>
-			</div>
-            <div id="cylatech" class="sponsor">
-				<a href="http://cylatech.com/"><img src="${resource(dir:'images',file:'cylatech.gif')}" style="margin-top: 20px"/></a>
-			</div>
 			<br/>
 			<div style="clear: both"><p>For more information about becoming a CocoaConf sponsor, drop us a line at <a href="mailto:info@cocoaconf.com">info@cocoaconf</a></p></div>
 		</div>
 		<div id="user-groups">
 			<h2>CocoaHeads Partners</h2>
 			<p>CocoaHeads, NSCoderNight and other groups are playing a huge role in bringing CocoaConf to Columbus.  Several of our speakers are group organizers and almost all of them are active participants. The following groups are partnering with us to help make CocoaConf the best conference of its kind.  So, check out this list and find the group nearest you and get involved.  There is much we can learn from each other and many good times to be had.</p>
+			<div id="raleigh" class="usergroup">
+				<h3>Triangle CocoaHeads</h3>
+				<p>Meetings are the fourth Thursday of the month</p>
+				<p>Come out for great presentations, networking and a lot of fun. Find out more details at <a href="http://www.trianglecocoa.com">http://www.trianglecocoa.com</a>.</p>
+		        <p>Follow us on Twitter at <a href="http://twitter.com/trianglecocoa">http://twitter.com/trianglecocoa</a>.</p>
+			</div>
 			<div id="columbus" class="usergroup">
 				<h3>Columbus iPhone Developers User Group</h3>
 				<p>Meetings are the fourth Tuesday of the month at 6:30 PM</p>
 				<p>OCLC - 6565 Kilgour Place Dublin, OH </p>
 				<p><a href="http://groups.google.com/group/cidug">http://groups.google.com/group/cidug</a></p>
 			</div>
+<!-->
 			<div id="louisville" class="usergroup">
 				<h3>Louisville, Kentucky CocoaHeads</h3>
 				<p>Thursday, August 11, 2011 18:30 at Mac Authority 128 Breckenridge Lane Louisville, KY 40207</p>
@@ -69,6 +75,7 @@
 				<p>A forum for Mac and iOS app developers and entrepreneurs throughout central Indiana. Indy CocoaHeads exists to create a community of successful Mac and iOS developers in Central Indiana.</p>
 				<p><a href="http://indycocoaheads.com">http://indycocoaheads.com</a> or <a href="http://meetup.com/IndyCocoaHeads">http://meetup.com/IndyCocoaHeads</a></p>
 			</div>
+<-->
 			<br/>
 			<p>If your group would like be a CocoaConf partner write to us at <a href="mailto:info@cocoaconf.com">info@cocoaconf</a></p>
 		</div>
