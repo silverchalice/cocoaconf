@@ -111,6 +111,7 @@
           </g:if>
          <br/>
 
+          <h1>Raleigh, NC: December 2&#8212;3, 2011</h1>
           <img src="${resource(dir:'images', file:'andy.png')}" style="float:left; margin:14px;"/>
           <p>The developers of North Carolina have spoken, and we&#8217;ve listened.  By popular demand, CocoaConf will be coming to downtown Raleigh, NC, in early December. We will have the same format, with two intense days of technical sessions, relevant keynotes, great food, and cool swag.  Included in the two-day conference is an optional all-day hands-on iOS tutorial, in which we will create an iPhone app from design to deployment &#8212; a great way to get started in this exciting field!
           </p>
