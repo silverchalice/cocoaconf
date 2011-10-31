@@ -15,15 +15,17 @@
             <div id="appsolute" class="sponsor">
 				<a href="http://appsolutegenius.com/"><img src="${resource(dir:'images',file:'appsolute.png')}" style="margin-top: 20px"/></a>
 			</div>
-			<div id="pragstudio">
-				<a href="http://pragmaticstudio.com/"><img src="${resource(dir:'images',file:'pragstudio.png')}" style="width:380px; float:left;" /></a>
-			</div>
 			<div id="pragprog">
 				<a href="http://pragprog.com/"><img src="${resource(dir:'images',file:'pragprog.png')}" style="width:auto; float:right;" /></a>
 			</div>
+<!-->
 			<div id="manning" class="sponsor">
 				<a href="http://www.manning.com/"><img src="${resource(dir:'images',file:'manning.png')}" style="width:240px; float:right;"/></a>
 			</div>
+			<div id="pragstudio">
+				<a href="http://pragmaticstudio.com/"><img src="${resource(dir:'images',file:'pragstudio.png')}" style="width:380px; float:left;" /></a>
+			</div>
+<-->
 			<br/>
 			<div style="clear: both"><p>For more information about becoming a CocoaConf sponsor, drop us a line at <a href="mailto:info@cocoaconf.com">info@cocoaconf</a></p></div>
 		</div>
