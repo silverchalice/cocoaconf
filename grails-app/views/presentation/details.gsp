@@ -4,7 +4,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="public" />
-        <title>CocoaConf Presentation: ${presentationInstance?.title}</title>
+        <title>CocoaConf Presentation | ${presentationInstance?.title}</title>
     </head>
     <body>
             <h1><g:message code=".show.label" args="[entityName]" /></h1>
