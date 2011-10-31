@@ -78,7 +78,7 @@
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time" >8:30-10:00</td>
-		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="49">Blocks</g:link></span> <span class="sessionSpeaker">Jeff Biggus</span></td>
+		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="49">Blocks</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="25">Jeff Biggus</g:link></span></td>
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="32">iOS Gestures And Event Handling</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="20">Nathan Eror</g:link></span></td>
 		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="40">Capturing Stills, Sounds, And Scenes With AVFoundation</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="3">Chris Adamson</g:link></span></td>
 	</tr>
