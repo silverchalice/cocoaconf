@@ -47,6 +47,10 @@
 				<p>Come out for great presentations, networking and a lot of fun. Find out more details at <a href="http://www.trianglecocoa.com">http://www.trianglecocoa.com</a>.</p>
 		        <p>Follow us on Twitter at <a href="http://twitter.com/trianglecocoa">http://twitter.com/trianglecocoa</a>.</p>
 			</div>
+			<div id="dc" class="usergroup">
+				<h3>CocoaHeads DC</h3>
+				<p>CocoaHeads DC is the capital region's premiere Apple-oriented monthly meetup group. While we take our name from Apple’s programming framework for Mac OS X, including the iPhone, we also delve into other Apple-related technologies such as MacRuby and mobile Safari. Our meetings are held on the first Thursday of every month where members present projects and tutorials. </p>
+				<p>More information can be found at our site <a href="http://www.cocoaheadsdc.org">http://www.cocoaheadsdc.org</a>.</p>				
 			<div id="columbus" class="usergroup">
 				<h3>Columbus iPhone Developers User Group</h3>
 				<p>Meetings are the fourth Tuesday of the month at 6:30 PM</p>

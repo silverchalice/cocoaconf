@@ -23,10 +23,10 @@
     </head>
     <body  id="announcement">
     <sec:ifNotLoggedIn>
-        <div id="announcementHeader">Registration is now open - <span style="color:#ff9627">Early bird rate ends October 31, 2011</span>   </div>
+        <div id="announcementHeader">Coming to Raleigh on December 2nd and 3rd, 2011</span>   </div>
     </sec:ifNotLoggedIn>
     <sec:ifLoggedIn>
-        <div id="announcementHeader">Registration is now open - <span style="color:#ff9627">Early bird rate ends October 31, 2011</span>   </div>
+        <div id="announcementHeader">Coming to Raleigh on December 2nd and 3rd, 2011</span>   </div>
     </sec:ifLoggedIn>
         <div id="page">
 

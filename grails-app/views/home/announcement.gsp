@@ -120,7 +120,7 @@
           </p>
           <p><strong>We are also thrilled to announce that CocoaConf Raleigh will feature a keynote by Andy Hunt!  </strong>
           </p>
-          <p>You don&#8217;t want to miss this conference, so <g:link controller="home" action="register">register today</g:link> and save $150 with the early bird rate. </p>
+          <p>You don&#8217;t want to miss this conference, so <g:link controller="home" action="register">register today</g:link> and be prepared to learn! </p>
       <br/>
 
           <h2 style="color:#1da0d1;">Columbus 2011 Wrap Up!</h2>
