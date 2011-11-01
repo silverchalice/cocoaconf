@@ -109,7 +109,7 @@
       <tr class="slot">
      		<td align="center" class="time" >4:00-5:00</td>
      		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="34">Intro To Core Location</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="22">Josh Johnson</g:link></span></td>
-			<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="10">Reverse Engineering Your Application&#8217;s UI</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="24">Saul Mora</g:link></span></td>
+			<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="10">Instruments</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="24">Saul Mora</g:link></span></td>
      		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="46">Unit Testing That Doesn&#8217;t Suck</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
      	</tr>
 	<tr class="break">
