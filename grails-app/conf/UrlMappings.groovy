@@ -48,11 +48,11 @@ class UrlMappings {
 			controller = "blogLink"
 			action = "roundup"
 		}
-		"/nearYou"{
+		"/next"{
 			controller = "home"
 			action = "nearYou"
 		}
-
+		
 		"500"(view:'/error')
 	}
 }
