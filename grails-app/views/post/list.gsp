@@ -4,6 +4,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="public" />
+        <meta name="tab" content="blog" />
         <g:set var="entityName" value="${message(code: 'post.label', default: 'Post')}" />
         <title>CocoaConf | iOS/OS X Developer Conference | Raleigh, North Carolina | December 2 & 3</title>
 
