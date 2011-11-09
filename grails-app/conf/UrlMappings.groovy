@@ -52,7 +52,14 @@ class UrlMappings {
 			controller = "home"
 			action = "nearYou"
 		}
-		
+                "/blog"{
+                        controller = "post"
+                        action = "list"
+                }
+                "/blog/$slug"{
+                        controller = "post"
+                        action = "show"
+		}
 		"500"(view:'/error')
 	}
 }
