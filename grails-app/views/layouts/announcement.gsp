@@ -37,8 +37,8 @@
            </div>
            <div id="nav">
                <g:link class="${pageProperty(name:'meta.tab') == 'about' ? 'current' : ''}" style="width:130px;" controller="home" action="about">About CocoaConf</g:link>
-               <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}" controller="speaker" action="speakers" style="background-position: -130px 0;">Speakers</g:link>
-               <g:link class="${pageProperty(name:'meta.tab') == 'sessions' ? 'current' : ''}" controller="session" action="sessions" style="background-position: -250px 0;">Sessions</g:link>
+               <g:link class="${pageProperty(name:'meta.tab') == 'blog' ? 'current' : ''}" controller="post" action="list" style="background-position: -130px 0;">Blog</g:link>
+               <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}" controller="speaker" action="speakers" style="background-position: -250px 0;">Speakers</g:link>
                <g:link class="${pageProperty(name:'meta.tab') == 'schedule' ? 'current' : ''}" controller="home" action="schedule" style="background-position: -380px 0;">Schedule</g:link>
                <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}" controller="home" action="partners" style="background-position: -500px 0;">Partners</g:link>
                <g:link class="${pageProperty(name:'meta.tab') == 'nearYou' ? 'current' : ''}" controller="home" action="nearYou" style="background-position: -640px 0; width: 120px">[cocoaConf next]</g:link>
