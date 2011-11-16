@@ -121,8 +121,13 @@
           <p><strong>We are also thrilled to announce that CocoaConf Raleigh will feature a keynote by Andy Hunt!  </strong>
           </p>
           <p>You don&#8217;t want to miss this conference, so <g:link controller="home" action="register">register today</g:link> and be prepared to learn! </p>
-      <br/>
 
+        <div style="background-image: url(${resource(dir:'images',file:'threesateam.png')}); background-position: 0 0; padding-left: 80px; background-repeat: no-repeat; margin-top: 20px; min-height: 75px">
+
+              <h2>Two's Company, Three's a <span style="color:#2ab0e2">Team</span></h2>
+
+              <h4><g:link controller="home" action="team">Special discount for teams - click for more details!</g:link></h4>
+        </div>
           <h2 style="color:#1da0d1;">Columbus 2011 Wrap Up!</h2>
           <p><img src="${resource(dir:'images', file:'cc-small.png')}" class="paralogo">The first CocoaConf was held in Dublin, Ohio on August 12th and 13th. Ninety iPhone, iPad, and Mac developers gathered for two exciting days of training, networking, and good times. With three tracks and sessions ranging from beginner to advanced, there was something for everyone to enjoy and learn from...</p>
           <g:link controller="blogLink" action="roundup" style="color:#ff9627; font-size:18px; font-weight: bold">Read more!</g:link>
