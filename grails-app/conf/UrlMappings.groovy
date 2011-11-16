@@ -43,7 +43,7 @@ class UrlMappings {
         "/sessions"{
       			controller = "session"
       			action = "sessions"
-      		}
+      	}
 		"/roundup"{
 			controller = "blogLink"
 			action = "roundup"
