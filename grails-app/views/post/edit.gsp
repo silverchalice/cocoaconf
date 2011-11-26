@@ -30,7 +30,6 @@
                 <div class="dialog">
                     <table>
                         <tbody>
-                        
                             <tr class="prop">
                                 <td valign="top" class="name">
                                   <label for="postedBy"><g:message code="post.postedBy.label" default="Posted By" /></label>
@@ -45,7 +44,7 @@
                                   <label for="body"><g:message code="post.body.label" default="Body" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: postInstance, field: 'body', 'errors')}">
-                                    <g:textField name="body" value="${postInstance?.body}" />
+                                    <g:textArea name="body" value="${postInstance?.body}" />
                                 </td>
                             </tr>
                         

@@ -42,7 +42,7 @@
                                     <label for="body"><g:message code="post.body.label" default="Body" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: postInstance, field: 'body', 'errors')}">
-                                    <g:textField name="body" value="${postInstance?.body}" />
+                                    <g:textArea name="body" value="${postInstance?.body}" />
                                 </td>
                             </tr>
                         
