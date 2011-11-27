@@ -85,7 +85,7 @@
 	<tr class="slot">
 		<td align="center" class="time" >10:15-11:45</td>
 		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="39">Core Audio Cranks It Up</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="3">Chris Adamson</g:link></span></td>
-		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="56">Storyboard Development</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
+		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="56">Storyboards</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
 		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="20">Apple Platform Game Development With Cocos2d</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="14">Josh Smith</g:link></span></td>
 	</tr>
 	<tr class="break">
