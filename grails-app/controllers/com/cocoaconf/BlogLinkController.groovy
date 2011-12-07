@@ -99,7 +99,10 @@ class BlogLinkController {
     }
 	
 	def roundup = {
-		def blogLinks = BlogLink.list(sort:'id')
-		[blogLinks:blogLinks]
+		def columbusBlogLinks = BlogLink.findAllByEvent(Conference.get(1), [sort:'id', order:'desc'])
+		println "columbus links is $columbusBlogLinks"
+		def raleighBlogLinks = BlogLink.findAllByEvent(Conference.get(2), [sort:'id', order:'desc'])
+		println "raleigh links is $raleighBlogLinks"
+		[columbusLinks:columbusBlogLinks, raleighLinks:raleighBlogLinks]
 	}
 }

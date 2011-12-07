@@ -132,6 +132,55 @@
     </head>
     <body>
 
+        <h1 style="color:#1da0d1;">Raleigh 2011 Wrap Up!</h1>
+        <div id="gallery">
+
+            <div id="slides">
+
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide1.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide2.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide3.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide4.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide5.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide6.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide7.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide8.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide9.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide10.png')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide11.png')}" width="500" height="272" alt="side" /></div>
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <li class="fbar">&nbsp;</li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_macbook.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_iphone.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_imac.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <p>The second CocoaConf was held in Raleigh, North Carolina on December 2nd and 3rd. Over seventy iPhone, iPad, and Mac developers met up for two days packed with in-depth technical content. With fourteen excellent speakers and three tracks, it was often difficult to decide what to attend, but the tough choices paid off with great ideas, new insights and renewed motivation.</p>
+        <p>Though the turnout was a bit smaller than Columbus in August, what the Raleigh crowd lacked in size, they more than made up in energy!  Attendees were attentive, engaged, and involved. The enthusiasm was contagious!  Though, some say that the lack of wifi helped people to focus more on the presentations, we like to think it was the stunning performances of our speakers.  :-)  </p>
+        <p>We repeated the popular &#8220;We Made an App For That&#8221; session and added a keynote by hometown hero, Andy Hunt.  We had a few repeat sessions from our last event, including the most popular session in Columbus, Bill Dudney's talk on Core Graphics.  We also had several new speakers and presentations.  The most popular talk in Raleigh was a new one by Daniel Steinberg, on developing with Storyboards.  The runner-up was Accelerate by Jeff Biggus.</p>
+        <p>The attendee response at the event was great.  They made us feel so welcome that we are already planning a return trip next year.  Let's see what some of these attendees have to say about CocoaConf-Raleigh:</p>
+
+        <hr /><br />
+        <h2>What people are saying about CocoaConf-Raleigh</h2><br />
+        <g:each in="${raleighLinks}" var="link">
+            <div class="blogLink">
+                <h4>${link.title}</h4>
+                <p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
+            </div>
+        </g:each>
+<br/><br/>
         <h1 style="color:#1da0d1;">Columbus 2011 Wrap Up!</h1>
         <div id="gallery">
 
@@ -173,12 +222,14 @@
         <p>Before, during, and since the conference, speakers and attendees have been blogging about CocoaConf.  So rather than go on and on about how great it was, we'll just let them tell you.</p>
 
         <hr /><br />
-        <h2>What people are saying about CocoaConf</h2><br />
-        <g:each in="${blogLinks}" var="link">
+        <h2>What people said about CocoaConf - Columbus</h2><br />
+        <g:each in="${columbusLinks}" var="link">
             <div class="blogLink">
                 <h4>${link.title}</h4>
                 <p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
             </div>
         </g:each>
+
+
     </body>
 </html>
