@@ -54,6 +54,14 @@
                                     <g:textField name="url" value="${blogLinkInstance?.url}" />
                                 </td>
                             </tr>
+							<tr class="prop">
+							    <td valign="top" class="name">
+							        <label for="event"><g:message code="blogLink.event.label" default="Event" /></label>
+							    </td>
+							    <td valign="top" class="value ${hasErrors(bean: blogLinkInstance, field: 'event', 'errors')}">
+							        <g:select name="event.id" from="${com.cocoaconf.Conference.list()}" optionKey="id" value="${blogLinkInstance?.event?.id}" />
+							    </td>
+							</tr>
                         
                         </tbody>
                     </table>
