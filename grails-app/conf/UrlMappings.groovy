@@ -9,7 +9,7 @@ class UrlMappings {
 
 		"/"{
 			controller = "home"
-			action = "announcement"
+			action = "index"
 		}
 		
 		"/register"{

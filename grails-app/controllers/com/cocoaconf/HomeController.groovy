@@ -9,7 +9,7 @@ class HomeController {
     def config = ConfigurationHolder.config
 
     def index = {
-	    redirect(action:'announcement')
+	    redirect controller: 'blogLink', action: 'roundup'
 	}
 
     def announcement = {}
