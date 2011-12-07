@@ -35,7 +35,7 @@
             }
             /* Gallery styles */
 
-            #gallery{
+            #gallery, #gallery2{
                 /* CSS3 Box Shadow */
                 -moz-box-shadow:0 0 3px #AAAAAA;
                 -webkit-box-shadow:0 0 3px #AAAAAA;
@@ -62,7 +62,7 @@
                 float:right;
             }
 
-            #slides{
+            #slides, #slides2{
                 /* This is the slide area */
                 height:272px;
 
@@ -75,7 +75,7 @@
                 float:left;
             }
 
-            #menu{
+            #menu, #menu2{
                 /* This is the container for the thumbnails */
                 height:45px;
                 text-align: center;
@@ -87,7 +87,7 @@
                 padding:0px;
             }
 
-            #menu li{
+            #menu li {
                 /* Every thumbnail is a li element */
                 width:60px;
                 display:inline-block;
@@ -133,29 +133,37 @@
     <body>
 
         <h1 style="color:#1da0d1;">Raleigh 2011 Wrap Up!</h1>
-        <div id="gallery">
+        <div id="gallery2">
 
-            <div id="slides">
+            <div id="slides2">
 
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide1.png')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide2.png')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide3.png')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide4.png')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide5.png')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide6.png')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide7.png')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide8.png')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide9.png')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide10.png')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'slide11.png')}" width="500" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'raleigh1.JPG')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'raleigh2.JPG')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'raleigh3.JPG')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'raleigh4.JPG')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'raleigh5.JPG')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'raleigh6.JPG')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'raleigh7.JPG')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'raleigh8.JPG')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'raleigh9.JPG')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'raleigh10.JPG')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'raleigh11.JPG')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'raleigh12.JPG')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'raleigh13.JPG')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'raleigh14.JPG')}" width="420" height="272" alt="side" /></div>
+                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'raleigh15.JPG')}" width="420" height="272" alt="side" /></div>
             </div>
 
-            <div id="menu">
+            <div id="menu2">
                 <ul>
                     <li class="fbar">&nbsp;</li>
                     <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_macbook.png')}" alt="thumbnail" /></a></li>
                     <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_iphone.png')}" alt="thumbnail" /></a></li>
                     <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_imac.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
                     <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
                     <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
                     <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>

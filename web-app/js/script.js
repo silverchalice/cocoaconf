@@ -4,7 +4,7 @@ $(document).ready(function(){
 	var totWidth=0;
 	var positions = new Array();
 	
-	$('#slides .slide').each(function(i){
+	$('#slides .slide, #slides2 .slide').each(function(i){
 		
 		/* Traverse through all the slides and store their accumulative widths in totWidth */
 		
@@ -21,11 +21,11 @@ $(document).ready(function(){
 		
 	});
 	
-	$('#slides').width(totWidth);
+	$('#slides, #slides2').width(totWidth);
 
 	/* Change the cotnainer div's width to the exact width of all the slides combined */
 
-	$('#menu ul li a').click(function(e,keepScroll){
+	$('#menu ul li a, #menu2 ul li a').click(function(e,keepScroll){
 
 			/* On a thumbnail click */
 
@@ -34,7 +34,7 @@ $(document).ready(function(){
 			
 			var pos = $(this).parent().prevAll('.menuItem').length;
 			
-			$('#slides').stop().animate({marginLeft:-positions[pos]+'px'},350);
+			$('#slides, #slides2').stop().animate({marginLeft:-positions[pos]+'px'},350);
 			/* Start the sliding animation */
 			
 			e.preventDefault();
@@ -45,7 +45,7 @@ $(document).ready(function(){
 			if(!keepScroll) clearInterval(itvl);
 	});
 	
-	$('#menu ul li.menuItem:first').addClass('act').siblings().addClass('inact');
+	$('#menu ul li.menuItem:first, #menu2 ul li.menuItem:first').addClass('act').siblings().addClass('inact');
 	/* On page load, mark the first thumbnail as active */
 	
 	
@@ -61,7 +61,7 @@ $(document).ready(function(){
 	{
 		if(current==-1) return false;
 		
-		$('#menu ul li a').eq(current%$('#menu ul li a').length).trigger('click',[true]);	// [true] will be passed as the keepScroll parameter of the click function on line 28
+		$('#menu ul li a, #menu2 ul li a').eq(current%$('#menu ul li a, #menu2 ul li a').length).trigger('click',[true]);	// [true] will be passed as the keepScroll parameter of the click function on line 28
 		current++;
 	}
 
