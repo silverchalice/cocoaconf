@@ -109,4 +109,11 @@ class PresentationController {
             redirect(action: "list")
         }
     }
+    def deactivatePresentations = {
+	    Presentation.list().each{
+		    it.current = false
+		    it.save()
+	    }
+	    render "ok"
+    }
 }
