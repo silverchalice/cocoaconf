@@ -104,33 +104,33 @@
 
 
     <div style="width:480px; float:left; padding-left:20px">
-          <g:if test="${flash.message}">
-              <div id="flashMessage"><p>${flash.message}</p>
-               <span class="button" id="closeFlash" >Ok!</span>
-              </div>
-          </g:if>
-         <br/>
+        <g:if test="${flash.message}">
+            <div id="flashMessage"><p>${flash.message}</p>
+             <span class="button" id="closeFlash" >Ok!</span>
+            </div>
+        </g:if>
 
-          <h1>Raleigh, NC: December 2&#8212;3, 2011</h1>
-          <img src="${resource(dir:'images', file:'andy.png')}" style="float:left; margin:14px;"/>
-          <p>The developers of North Carolina have spoken, and we&#8217;ve listened.  By popular demand, CocoaConf will be coming to downtown Raleigh, NC, in early December. We will have the same format, with two intense days of technical sessions, relevant keynotes, great food, and cool swag.  Included in the two-day conference is an optional all-day hands-on iOS tutorial, in which we will create an iPhone app from design to deployment &#8212; a great way to get started in this exciting field!
-          </p>
-          <p>
-          This workshop was so popular in Columbus that we decided to hold it twice in Raleigh.  All CocoaConf attendees can go to the iOS tutorial on Friday, December 2, but we&#8217;ll also be offering the tutorial as a stand-alone class on Thursday, December 1.  This is a separate registration for those who want only the tutorial, but there is a special combined rate for those that just can&#8217;t get enough.
-          </p>
-          <p><strong>We are also thrilled to announce that CocoaConf Raleigh will feature a keynote by Andy Hunt!  </strong>
-          </p>
-          <p>You don&#8217;t want to miss this conference, so <g:link controller="home" action="register">register today</g:link> and be prepared to learn! </p>
+        <h1>Chicago, NC: March 16 & 17, 2012</h1>
+        <img src="${resource(dir:'images', file:'raleigh2.JPG')}" style="float:left; margin:14px;"/>
+        <p>The developers of North Carolina have spoken, and we&#8217;ve listened.  By popular demand, CocoaConf will be coming to downtown Raleigh, NC, in early December. We will have the same format, with two intense days of technical sessions, relevant keynotes, great food, and cool swag.  Included in the two-day conference is an optional all-day hands-on iOS tutorial, in which we will create an iPhone app from design to deployment &#8212; a great way to get started in this exciting field!
+        </p>
+        <p>
+        This workshop was so popular in Columbus that we decided to hold it twice in Raleigh.  All CocoaConf attendees can go to the iOS tutorial on Friday, December 2, but we&#8217;ll also be offering the tutorial as a stand-alone class on Thursday, December 1.  This is a separate registration for those who want only the tutorial, but there is a special combined rate for those that just can&#8217;t get enough.
+        </p>
+        <p><strong>We are also thrilled to announce that CocoaConf Raleigh will feature a keynote by Andy Hunt!  </strong>
+        </p>
+        <p>You don&#8217;t want to miss this conference, so <g:link controller="home" action="register">register today</g:link> and be prepared to learn! </p>
 
-        <div style="background-image: url(${resource(dir:'images',file:'threesateam.png')}); background-position: 0 0; padding-left: 80px; background-repeat: no-repeat; margin-top: 20px; min-height: 75px">
+        <!-- <div style="background-image: url(${resource(dir:'images',file:'threesateam.png')}); background-position: 0 0; padding-left: 80px; background-repeat: no-repeat; margin-top: 20px; min-height: 75px">
 
-              <h2>Two's Company, Three's a <span style="color:#2ab0e2">Team</span></h2>
+            <h2>Two's Company, Three's a <span style="color:#2ab0e2">Team</span></h2>
 		    <p><strong>The team that trains together stays together</strong>, so we are offering a special discount for teams of three or more.  For every two people that register in one transaction, we will give your team one free pass.
-            <br/><a href="/blog/threes-a-team">Get the details here.</a></p> 	 
-        </div>
-          <h2 style="color:#1da0d1;">Columbus 2011 Wrap Up!</h2>
-          <p><img src="${resource(dir:'images', file:'cc-small.png')}" class="paralogo">The first CocoaConf was held in Dublin, Ohio on August 12th and 13th. Ninety iPhone, iPad, and Mac developers gathered for two exciting days of training, networking, and good times. With three tracks and sessions ranging from beginner to advanced, there was something for everyone to enjoy and learn from...</p>
-          <g:link controller="blogLink" action="roundup" style="color:#ff9627; font-size:18px; font-weight: bold">Read more!</g:link>
+            <br/><a href="/blog/threes-a-team">Get the details here.</a></p>
+        </div>  -->
+
+        <h2 style="color:#1da0d1;">Raleigh 2011 Wrap Up!</h2>
+        <p><img src="${resource(dir:'images', file:'cc-small.png')}" class="paralogo">The first CocoaConf was held in Dublin, Ohio on August 12th and 13th. Ninety iPhone, iPad, and Mac developers gathered for two exciting days of training, networking, and good times. With three tracks and sessions ranging from beginner to advanced, there was something for everyone to enjoy and learn from...</p>
+        <g:link controller="blogLink" action="roundup" style="color:#ff9627; font-size:18px; font-weight: bold">Read more!</g:link>
     </div>
 
 
@@ -154,9 +154,8 @@
 
         </div>
         <div class="featured">
-            <img src="${resource(dir:'images',file:'judd.png')}"/>
-            <p><strong>Christopher Judd</strong> - Leader of <a href="http://groups.google.com/group/cidug?pli=1">Columbus iPhone Developer User Group</a> and author of <a href="http://www.beginninggroovyandgrails.com/site/content/index">Beginning Groovy and Grails</a>
-            - <a href="http://www.juddsolutions.com">http://www.juddsolutions.com</a></p>
+            <img src="${resource(dir:'images',file:'darymple.png')}"/>
+            <p><strong>Mark Darymple</strong> - Author of  "Learn Objective-C on the Macintosh" and "Advanced Mac OS X Programming"</p>
 
         </div>
      </div>
