@@ -32,9 +32,13 @@ class UrlMappings {
 			controller = "home"
 			action = "team"
 		}
-		"/schedule_oh"{
+		"/schedule/columbus"{
 			controller = "home"
 			action = "schedule_oh"
+		}
+		"/schedule/raleigh"{
+			controller = "home"
+			action = "schedule_raleigh"
 		}
 		"/speakers"{
 			controller = "speaker"

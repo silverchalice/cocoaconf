@@ -136,7 +136,7 @@
         </g:if>
         <h1 style="float:left">Raleigh, NC, 2011: Schedule</h1>
 
-            <g:render template="schedule"/>
+            <g:render template="schedule_raleigh"/>
 
     </body>
 </html>
