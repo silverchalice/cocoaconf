@@ -154,8 +154,8 @@
 
         </div>
         <div class="featured">
-            <img src="${resource(dir:'images',file:'darymple.png')}"/>
-            <p><strong>Mark Darymple</strong> - Author of  "Learn Objective-C on the Macintosh" and "Advanced Mac OS X Programming"</p>
+            <img src="${resource(dir:'images',file:'dalrymple.png')}"/>
+            <p><strong>Mark Dalrymple</strong> - Author of  "Learn Objective-C on the Macintosh" and "Advanced Mac OS X Programming"</p>
 
         </div>
      </div>
