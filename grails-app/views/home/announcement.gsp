@@ -110,15 +110,12 @@
             </div>
         </g:if>
 
-        <h1>Chicago, NC: March 16 & 17, 2012</h1>
+        <h1>Chicago, IL: March 15 - 17, 2012</h1>
         <img src="${resource(dir:'images', file:'raleigh2.JPG')}" style="float:left; margin:14px;"/>
-        <p>The developers of North Carolina have spoken, and we&#8217;ve listened.  By popular demand, CocoaConf will be coming to downtown Raleigh, NC, in early December. We will have the same format, with two intense days of technical sessions, relevant keynotes, great food, and cool swag.  Included in the two-day conference is an optional all-day hands-on iOS tutorial, in which we will create an iPhone app from design to deployment &#8212; a great way to get started in this exciting field!
+        <p>Join us in Chicago for the first CocoaConf of 2012.  This March we will gather a hundred iOS and OS X developers for two days packed with cutting edge technical content.  Our speakers include developers, trainers, and authors who have been there and done that.  And they're eager to pass on what they've learned to all of us.  
         </p>
-        <p>
-        This workshop was so popular in Columbus that we decided to hold it twice in Raleigh.  All CocoaConf attendees can go to the iOS tutorial on Friday, December 2, but we&#8217;ll also be offering the tutorial as a stand-alone class on Thursday, December 1.  This is a separate registration for those who want only the tutorial, but there is a special combined rate for those that just can&#8217;t get enough.
-        </p>
-        <p><strong>We are also thrilled to announce that CocoaConf Raleigh will feature a keynote by Andy Hunt!  </strong>
-        </p>
+        <p>Opportunities to learn from experts like this, don't come very often so we want to help you make the most of it.  From the classroom arrangement to providing all meals and snacks to keeping the attendee to speaker ratio as low as possible, this event is all about providing you with the best learning experience ever. 
+        <p>With three tracks on Friday and Saturday, we will have sessions for all skill levels, but for those just getting started we also offer an all day hands-on iOS tutorial on Thursday, March 15th. In this intense class, you'll learn by building a real application with the help of our expert instructor.  There's never been a better time to get into this exciting and fast growing field of development.</p>
         <p>You don&#8217;t want to miss this conference, so <g:link controller="home" action="register">register today</g:link> and be prepared to learn! </p>
 
         <!-- <div style="background-image: url(${resource(dir:'images',file:'threesateam.png')}); background-position: 0 0; padding-left: 80px; background-repeat: no-repeat; margin-top: 20px; min-height: 75px">
