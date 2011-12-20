@@ -60,7 +60,7 @@
     </head>
     <body>
         <p><strong>As you can see our current speaker roster is pretty awesome, but it's still growing.  We will be adding more top-notch speakers in the next few weeks.</strong></p>
-<p>If you have a recommendation for a CocoaConf or are interested in speaking at CocoaConf, contact us at <a href="mailto:info@cocoaconf.com">info@cocoaconf.com</a></p>
+<p>If you have a recommendation for a CocoaConf speaker or are interested in speaking at CocoaConf, contact us at <a href="mailto:info@cocoaconf.com">info@cocoaconf.com</a></p>
         <h1>Chicago, Illinois 2012: Speakers</h1>
         <p>CocoaConf speakers include well known trainers, authors, and professional iOS and OS X developers.</p>
 
