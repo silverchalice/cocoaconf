@@ -69,7 +69,6 @@ body {
 
 #logo {
     background: white url(../images/page-bg.png) repeat-y right;
-    width:1000px;
     border: 0;
     margin-bottom:0;
     padding-bottom:0;
@@ -100,7 +99,7 @@ body {
     border-right: 1px solid gray;
     line-height:40px;
     height:40px;
-    width:100px;
+    width:121px;
     padding-left:20px;
     display: block;
 }
@@ -114,7 +113,7 @@ body {
 }
 
 #nav a.home {
-    width:130px;
+    width:121px;
 }
 
 #sidebar {

@@ -111,8 +111,8 @@
         </g:if>
 
         <h1>Chicago, IL: March 15 - 17, 2012</h1>
-        <img src="${resource(dir:'images', file:'raleigh2.JPG')}" style="float:left; margin:14px;"/>
-        <p>Join us in Chicago this March for the first CocoaConf of 2012.  We will gather a hundred iOS and OS X developers for two days packed with cutting-edge technical content.  Our speakers include developers, trainers, and authors.  They have been there and done that, and they&#8217;re eager to pass on what they&#8217;ve learned to all of us.  
+        <img src="${resource(dir:'images', file:'raleigh2.JPG')}" style="float:left; width:250px; margin:14px;"/>
+        <p>Join us in Chicago for the first CocoaConf of 2012.  This March we will gather a hundred iOS and OS X developers for two days packed with cutting edge technical content.  Our speakers include developers, trainers, and authors who have been there and done that.  And they're eager to pass on what they've learned to all of us.  
         </p>
         <p>Opportunities to learn from experts like this don&#8217;t come very often, so we want to help you make the most of it.  From the classroom arrangement to providing all meals and snacks to keeping the attendee to speaker ratio as low as possible, this event is all about providing you with the best learning experience ever. 
         <p>With three tracks on Friday and Saturday, we will have sessions for all skill levels, but for those just getting started, we also offer an all-day hands-on iOS tutorial on Thursday, March 15th. In this intense class, you&#8217;ll learn by building a real application with the help of an expert instructor.  There's never been a better time to get into this exciting and fast-growing field of development.</p>
@@ -126,7 +126,7 @@
         </div>  -->
 
         <h2 style="color:#1da0d1;">Raleigh 2011 Wrap Up!</h2>
-        <p><img src="${resource(dir:'images', file:'cc-small.png')}" class="paralogo">The first CocoaConf was held in Dublin, Ohio on August 12th and 13th. Ninety iPhone, iPad, and Mac developers gathered for two exciting days of training, networking, and good times. With three tracks and sessions ranging from beginner to advanced, there was something for everyone to enjoy and learn from...</p>
+        <p><img src="${resource(dir:'images', file:'cc-small.png')}" class="paralogo">The second CocoaConf was held in Raleigh, North Carolina on December 2nd and 3rd. Over seventy iPhone, iPad, and Mac developers met up for two days packed with in-depth technical content. With fourteen excellent speakers and three tracks, it was often difficult to decide what to attend, but the tough choices paid off with great ideas, new insights and renewed motivation.</p>
         <g:link controller="blogLink" action="roundup" style="color:#ff9627; font-size:18px; font-weight: bold">Read more!</g:link>
     </div>
 
@@ -151,8 +151,8 @@
 
         </div>
         <div class="featured">
-            <img src="${resource(dir:'images',file:'dalrymple.png')}"/>
-            <p><strong>Mark Dalrymple</strong> - Author of  "Learn Objective-C on the Macintosh" and "Advanced Mac OS X Programming"</p>
+            <img src="${resource(dir:'images',file:'biggus.png')}"/>
+            <p><strong>Jeff Biggus</strong> - Founder of HyperJeff, Inc. and curator of the <a href="http://hyperjeff.net">HyperJeff Network</a>.</p>
 
         </div>
      </div>
