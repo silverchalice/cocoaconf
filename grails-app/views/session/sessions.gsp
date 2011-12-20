@@ -6,7 +6,7 @@
         <meta name="layout" content="public" />
           <meta name="tab" content="sessions" />
         <g:set var="entityName" value="${message(code: 'speaker.label', default: 'Speaker')}" />
-        <title>CocoaConf | iOS/OS X Developer Conference | Raleigh, North Carolina | December 2 & 3</title>
+        <title>CocoaConf | iOS/OS X Developer Conference | Chicago, Illinois | March 15 & 17</title>
 
 <script type="text/javascript">
 
