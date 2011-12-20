@@ -1,4 +1,5 @@
-  <g:form controller='user' action='pickSessions'>
+ 
+ <g:form controller='user' action='pickSessions'>
    <h3 style="clear:both">Thursday, March 15</h3>
   <table border="1" width="700" class="schedule">
 	<tr class="break">

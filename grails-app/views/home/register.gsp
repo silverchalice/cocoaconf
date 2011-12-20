@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
   <head>
-      <title>CocoaConf | iOS/OS X Developer Conference | Raleigh, North Carolina | December 2 & 3</title>
+      <title>CocoaConf | iOS/OS X Developer Conference | Chicago, Illinois | March 15 - 17</title>
       <meta name="layout" content="public" />
         <meta name="tab" content="register" />
       <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
@@ -97,10 +97,12 @@
   </head>
 
   <body>
-  <h1>Register for the Raleigh CocoaConf</h1>
+  <h1>Register for the Chicago CocoaConf</h1>
   <h2>What you get</h2>
-  <p>CocoaConf is a two-day developer conference covering all things Cocoa and CocoaTouch.  The conference includes an <a href="http://www.cocoaconf.com/session/details/4" style="color:#2ab0e2; text-decoration: none; font-weight: bold">all-day hands-on iOS tutorial</a>, along with sessions on a variety of iOS and OS X development topics.  The iOS tutorial is also being given on Thursday, December 1, for those who only want the tutorial.  For those that want it all &#8212; the tutorial on Thursday and the two days of the conference &#8212; we have a special combo price.
+  <p>CocoaConf is a two-day developer conference covering all things Cocoa and CocoaTouch.  The conference includes general sessions, a Keynote by Daniel Steinberg, and three breakout tracks covering a variety of iOS and OS X development topics.  Also included in your registration are all meals, snacks and beverages so you can keep your mind on all the new stuff you're learning and not have to go forage for sustenance.  But wait, there's more... you will also receive a collection of some of the best conference swag in the industry. All that, and the opportunity to spend the weekend with a bunch of awesome iPhone, iPad, and Mac developers. </p> 
+	<p>The pre-conference iOS tutorial, held on Thursday, March 15th, includes a full day of expert training by <g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link>, ample workspace, plenty of power outlets,  breakfast, lunch, snacks and a really cool t-shirt.  For those that want it all &#8212; the tutorial on Thursday and the two days of the conference &#8212; we have a special combo price.
  </p>
-<div style="width:100%; text-align:left;" ><iframe  src="http://www.eventbrite.com/tickets-external?eid=2662346149&ref=etckt" frameborder="0" height="338" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt" >Online Ticketing</a><span style="color:#ddd;" > for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://cocoaconf-rtp.eventbrite.com?ref=etckt" >CocoaConf - Raleigh</a><span style="color:#ddd;" > powered by </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt" >Eventbrite</a></div></div>
+<p><strong>These super early bird rates are only available until we get our speaker roster and schedule fleshed out. Our procrastination is your gain.  :-) </string></p>
+<div style="width:100%; text-align:left;" ><iframe  src="http://www.eventbrite.com/tickets-external?eid=2662346149&ref=etckt" frameborder="0" height="338" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt" >Online Ticketing</a><span style="color:#ddd;" > for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://cocoaconf-rtp.eventbrite.com?ref=etckt" >CocoaConf - Chicago</a><span style="color:#ddd;" > powered by </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt" >Eventbrite</a></div></div>
   </body>
 </html>
