@@ -154,8 +154,8 @@
 
         </div>
         <div class="featured">
-            <img src="${resource(dir:'images',file:'dalrymple.png')}"/>
-            <p><strong>Mark Dalrymple</strong> - Author of  "Learn Objective-C on the Macintosh" and "Advanced Mac OS X Programming"</p>
+            <img src="${resource(dir:'images',file:'biggus.png')}"/>
+            <p><strong>Jeff Biggus</strong> - Founder of HyperJeff, Inc. and curator of the <a href="http://hyperjeff.net">HyperJeff Network</a>.</p>
 
         </div>
      </div>
