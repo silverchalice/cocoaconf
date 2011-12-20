@@ -23,10 +23,10 @@
     </head>
     <body  id="announcement">
     <sec:ifNotLoggedIn>
-        <div id="announcementHeader"><span style="color:#ff9627">Coming to Chicago on March 16th and 17th, 2012</span>   </div>
+        <div id="announcementHeader"><span style="color:#ff9627">Registration now open!  -  Super Early Bird rate now available!</span>   </div>
     </sec:ifNotLoggedIn>
     <sec:ifLoggedIn>
-        <div id="announcementHeader"><span style="color:#ff9627">Coming to Chicago on March 16th and 17th, 2012</span>   </div>
+        <div id="announcementHeader"><span style="color:#ff9627">Registration now open!  -  Super Early Bird rate now available!</span>   </div>
     </sec:ifLoggedIn>
         <div id="page">
 
