@@ -6,7 +6,7 @@
         <meta name="layout" content="public" />
         <meta name="tab" content="blog" />
         <g:set var="entityName" value="${message(code: 'post.label', default: 'Post')}" />
-        <title>CocoaConf | iOS/OS X Developer Conference | Chicago, Illinois | March 15 & 17</title>
+        <title>CocoaConf | iOS/OS X Developer Conference | Chicago, Illinois | March 16 & 17</title>
 
 <script type="text/javascript">
 

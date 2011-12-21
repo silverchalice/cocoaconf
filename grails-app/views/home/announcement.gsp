@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
   <head>
-      <title>CocoaConf | iOS/OS X Developer Conference | Chicago, Illinois | March 15 - 17</title>
+      <title>CocoaConf | iOS/OS X Developer Conference | Chicago, Illinois | March 16 & 17</title>
       <meta name="layout" content="announcement" />
 
       <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
@@ -110,7 +110,7 @@
             </div>
         </g:if>
 
-        <h1>Chicago, IL: March 15 - 17, 2012</h1>
+        <h1>Chicago, IL: March 16 & 17, 2012</h1>
         <img src="${resource(dir:'images', file:'raleigh2.JPG')}" style="float:left; width:250px; margin:14px;"/>
         <p>Join us in Chicago for the first CocoaConf of 2012.  This March we will gather a hundred iOS and OS X developers for two days packed with cutting edge technical content.  Our speakers include developers, trainers, and authors who have been there and done that.  And they're eager to pass on what they've learned to all of us.  
         </p>
