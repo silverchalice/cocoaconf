@@ -13,7 +13,7 @@
 					<p>${presentationInstance?.pAbstract}</p>
 	            <div>
 	                <img src="${request.contextPath}/${presentationInstance.speaker?.imagePath}" style="float:left" />
-	                <h1>${presentationInstance?.speaker}</h1>
+	                <g:link controller="speaker" action="viewDetails" id="${presentationInstance?.speaker?.id}"><h1>${presentationInstance?.speaker}</h1></g:link>
 	                <p>${presentationInstance?.speaker?.bio}</p>
 	            </div>
             </div>

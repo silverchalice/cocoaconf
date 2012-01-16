@@ -8,8 +8,11 @@ class Presentation {
     String pAbstract
     String codePath
     String slidesPath
+    String shortName
+    Integer slot
+    Integer track
 
-    //TODO: Remove this
+	//TODO: Remove this
     Boolean current
 
     static constraints = {

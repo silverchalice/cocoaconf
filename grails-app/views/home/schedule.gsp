@@ -134,8 +134,7 @@
                 <p>${flash.message}</p>
             </div>
         </g:if>
-<p><strong>We are in the process of lining up some awesome technical sessions for CocoaConf Chicago.  We will begin filling in this schedule in early January.  While we work on all this, we are offering a <a href="http://cocoaconf.com/register">super early bird discount</a>.</strong></p> 
-<br/>
+
         <h1 style="float:left">Chicago, 2012: Schedule</h1>
 
             <g:render template="schedule"/>

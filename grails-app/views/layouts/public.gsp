@@ -23,10 +23,10 @@
     </head>
     <body  id="announcement">
     <sec:ifNotLoggedIn>
-        <div id="announcementHeader"><span style="color:#ff9627">Registration now open!  -  Super Early Bird rate now available!</span>   </div>
+        <div id="announcementHeader"><span style="color:#ff9627">Registration now open!  -  Early Bird rate ends February 10th!</span>   </div>
     </sec:ifNotLoggedIn>
     <sec:ifLoggedIn>
-        <div id="announcementHeader"><span style="color:#ff9627">Registration now open!  -  Super Early Bird rate now available!</span>   </div>
+        <div id="announcementHeader"><span style="color:#ff9627">Registration now open!  -  Early Bird rate ends February 10th!</span>   </div>
     </sec:ifLoggedIn>
         <div id="page">
 

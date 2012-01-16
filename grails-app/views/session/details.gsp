@@ -23,8 +23,8 @@
 
          </sec:ifLoggedIn><br/>
         <div style="background-color: #eeeeee; padding:10px;">
-            <img src="${request.contextPath}/${presentationInstance.speaker?.imagePath}" style="float:left" />
-            <h2>${presentationInstance?.speaker}</h2>
+            <g:link controller="speaker" action="viewDetails" id="${presentationInstance?.speaker?.id}"><img src="${request.contextPath}/${presentationInstance.speaker?.imagePath}" style="float:left" /></g:link>
+            <h2><g:link controller="speaker" action="viewDetails" id="${presentationInstance?.speaker?.id}">${presentationInstance?.speaker}</g:link></h2>
             <p>${presentationInstance?.speaker?.bio}</p>
         </div>
     </body>
