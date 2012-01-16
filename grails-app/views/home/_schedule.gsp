@@ -57,7 +57,7 @@
 	</tr>
       <tr class="slot">
      		<td align="center" class="time" >5:00-6:00</td>
-     		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="65">Keeping Secrets for iOS Developers</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="28">Chris Judd</g:link></span></td>
+     		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="65">Keeping Secrets for iOS Developers</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="28">Randy Beiter</g:link></span></td>
      		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="61">Understanding OpenGL ES 2.0 shaders</g:link></span><span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="33">Brad Larson</g:link></span></td>
      		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="3">Mac OX X for iOS Developers</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
      	</tr>
