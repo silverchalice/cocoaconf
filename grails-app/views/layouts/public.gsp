@@ -66,13 +66,15 @@
                 <br/>
                 <a href="http://rolemodelsoft.com"><img src="${resource(dir:'images', file: 'rolemodel.png')}" /></a>
 
-                <br/>
-
-                <br/>
+               <br/>
+               <br/>
 
                <h2 style="color:#1da0d1;">Our Gold Sponsors</h2>
                <br/>
                <a href="http://appsolutegenius.com"><img src="${resource(dir:'images', file: 'appsolute.png')}" /></a>
+               <br/><br/>
+				<a href="http://cocoaconf.com/blog/chicago-sponsorship">Sponsorship Opportunities Available</a>
+               <br/><br/>
 
 
             </div>
@@ -83,7 +85,7 @@
            </div>
            <div style="clear: both"></div>
            <div id="footer">
-               <p>Copyright &copy; 2011 Simply Cocoa, LLC. Site by <a href="http://silver-chalice.com">Silver Chalice</a>, LLC.</p>
+               <p>Copyright &copy; 2012 Simply Cocoa, LLC. Site by <a href="http://silver-chalice.com">Silver Chalice</a>, LLC.</p>
            </div>
         </div>
     </body>

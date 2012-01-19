@@ -85,7 +85,7 @@
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time" >10:45-12:15</td>
-		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="69">OCUnit Techniques</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="32">Brian Coyner</g:link></span></td>
+		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="69">Embracing OCUnit</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="32">Brian Coyner</g:link></span></td>
 		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="59">TBD</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="3">Chris Adamson</g:link></span></td>
 		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="49">Blocks</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="25">Jeff Biggus</g:link></span></td>
 	</tr>
