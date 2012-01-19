@@ -17,6 +17,9 @@ class Presentation {
 
     static constraints = {
 	    pAbstract maxSize:10000, nullable:true
+	    shortName nullable:true
+		slot nullable:true
+		track nullable:true
     }
 
 
