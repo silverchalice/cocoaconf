@@ -56,14 +56,18 @@ class UrlMappings {
 			controller = "home"
 			action = "nearYou"
 		}
-                "/blog"{
-                        controller = "post"
-                        action = "list"
-                }
-                "/blog/$slug"{
-                        controller = "post"
-                        action = "show"
-		}
+        "/blog"{
+            controller = "post"
+            action = "list"
+        }
+        "/blog/$slug"{
+            controller = "post"
+            action = "show"
+        }
+        "/feed"{
+            controller = "post"
+            action = "feed"
+        }
 		"500"(view:'/error')
 	}
 }
