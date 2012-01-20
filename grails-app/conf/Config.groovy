@@ -116,7 +116,8 @@ grails.plugins.springsecurity.interceptUrlMap = [
     '/partners':                                             ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/interest/*':                                           ['ROLE_ADMIN'],
     '/blog/**':                                              ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/**':                                                   ['ROLE_ADMIN']
+    '/**':                                                   ['ROLE_ADMIN'],
+    '/feed':                                             ['IS_AUTHENTICATED_ANONYMOUSLY'],
 ]
 
 // Added by the Spring Security Core plugin:
