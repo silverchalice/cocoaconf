@@ -102,4 +102,18 @@ class PostController {
             redirect(action: "list")
         }
     }
+
+    def feed = {
+        render (feedType: "atom", feedVersion:"1.0") {
+            title = "The CocoaConf Blog"
+            link = "http://cocoaconf.com/feed"
+            Post.list(max:10).each{ post ->
+                entry(post.title){
+                    link = "http://cocoaconf.com/blog/${post.slug}"
+                    post.body 
+                }
+            }
+        }
+    }
+
 }
