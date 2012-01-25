@@ -21,7 +21,7 @@
 		<td align="center" width="100" class="time" >9:00-10:00</td>
 		<td align="center" width="200" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="71">Painless Localization</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="29">Whitney Young</g:link></span></td>
 		<td align="center" width="200" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="22">UI Automation</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="12">Jonathan Penn</g:link></span></td>
-		<td align="center" width="200" class="track3"><span class="sessionTitle">TBD</span><span class="sessionSpeaker"></span></td>
+		<td align="center" width="200" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="79">iOS Computer Vision</g:link></span><span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="36">Jonathan Blocksom</g:link></span></td>
 	</tr>
 	<tr class="slot">
 		<td align="center" class="time">10:15-11:15</td>
