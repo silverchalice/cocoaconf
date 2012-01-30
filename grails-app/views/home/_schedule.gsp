@@ -59,7 +59,7 @@
      		<td align="center" class="time" >5:00-6:00</td>
      		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="65">Keeping Secrets for iOS Developers</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="28">Randy Beiter</g:link></span></td>
      		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="61">Understanding OpenGL ES 2.0 shaders</g:link></span><span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="33">Brad Larson</g:link></span></td>
-     		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="3">Mac OX X for iOS Developers</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
+     		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="3">Mac OS X for iOS Developers</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
      	</tr>
 	<tr class="break">
 		<td align="center" class="time">6:00-7:00</td>
@@ -86,7 +86,7 @@
 	<tr class="slot">
 		<td align="center" class="time" >10:45-12:15</td>
 		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="69">Embracing OCUnit</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="32">Brian Coyner</g:link></span></td>
-		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="59">TBD</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="3">Chris Adamson</g:link></span></td>
+		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="59">Core What?</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="3">Chris Adamson</g:link></span></td>
 		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="49">Blocks</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="25">Jeff Biggus</g:link></span></td>
 	</tr>
 	<tr class="break">
