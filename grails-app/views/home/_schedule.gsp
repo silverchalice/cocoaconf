@@ -1,5 +1,5 @@
   <g:form controller='user' action='pickSessions'>
-   <h3 style="clear:both">Thursday, March 15</h3>
+  <h3 style="clear:both">Thursday, March 15</h3>
   <table border="1" width="700" class="schedule">
 	<tr class="break">
 		<td align="center" class="time">8:30-5:00</td>
@@ -102,17 +102,17 @@
 		<td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="64">Styling and Composing your UIViews with CALayers on iOS</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="31">Heath Borders</g:link></span></td>
  		<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="56">Storyboards</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
  		<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="80">iTest my Code: OCDSpec and ocslim for the iPhone</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="37">Eric Meyer</g:link></span></td>
+    </tr>
 	</tr>
       <tr class="slot">
-     		<td align="center" class="time" >4:00-5:00</td>
-			<td align="center" class="track1"><span class="sessionTitle">TBD</span> <span class="sessionSpeaker"></span></td>
-			<td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="25">Drawing with Core Graphics on iOS</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
-			<td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="60">Migrating to Automatic Reference Counting</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="33">Brad Larson</g:link></span></td>
+     	  <td align="center" class="time" >4:00-5:00</td>
+		  <td align="center" class="track1"><span class="sessionTitle">TBD</span> <span class="sessionSpeaker"></span></td>
+		  <td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="25">Drawing with Core Graphics on iOS</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
+		  <td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="60">Migrating to Automatic Reference Counting</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="33">Brad Larson</g:link></span></td>
+      </tr>
 	<tr class="break">
 		<td align="center" class="time">5:15-5:30</td>
 		<th align="center" colspan="3" style="background: #9adeff; padding: 8px 0 4px 0">Closing Remarks</th>
 	</tr>
-
   </table>
-
 </g:form>
