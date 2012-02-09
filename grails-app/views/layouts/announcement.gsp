@@ -72,7 +72,7 @@
 
               <h2 style="color:#1da0d1;">Our Gold Sponsors</h2>
               <br/>
-              <a href="http://appsolutegenius.com"><img src="${resource(dir:'images', file: 'appsolute.png')}" /></a>
+              <a href="http://www.8thlight.com"><img src="${resource(dir:'images', file: '8thLight.png')}" style="width:245px;height:auto;"/></a>
               <br/><br/>
 				<a href="http://cocoaconf.com/blog/chicago-sponsorship">Sponsorship Opportunities Available</a>
               <br/><br/>

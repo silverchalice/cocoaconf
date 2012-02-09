@@ -140,13 +140,13 @@
        </div>
         <div class="featured">
            <img src="${resource(dir:'images',file:'dudney.png')}"/>
-           <p><strong>Bill Dudney</strong> - Author of Pragmatic Programmer’s books <a href="http://pragprog.com/titles/amiphd/iphone-sdk-development">iPhone SDK Development</a> and <a href="http://pragprog.com/titles/bdcora/core-animation-for-mac-os-x-and-the-iphone">Core Animation</a>.
+           <p><strong>Bill Dudney</strong> - Author of Pragmatic Programmer’s books <a href="http://pragprog.com/titles/adios">iPhone SDK Development</a> and <a href="http://pragprog.com/titles/bdcora/core-animation-for-mac-os-x-and-the-iphone">Core Animation</a>.
             - <a href="http://www.bill.dudney.net">http://www.bill.dudney.net</a></p>
 
        </div>
         <div class="featured">
             <img src="${resource(dir:'images',file:'adamson.png')}"/>
-             <p><strong>Chris Adamson</strong> - Author of <a href="http://www.amazon.com/Core-Audio-Kevin-Avila/dp/0321636848">Core Audio</a>, and <a href="http://pragprog.com/titles/amiphd/iphone-sdk-development">iPhone SDK Development</a>
+             <p><strong>Chris Adamson</strong> - Author of <a href="http://www.amazon.com/Core-Audio-Kevin-Avila/dp/0321636848">Core Audio</a>, and <a href="http://pragprog.com/titles/adios">iPhone SDK Development</a>
             - <a href="http://www.subfurther.com/blog">http://www.subfurther.com/blog</a></p>
 
         </div>

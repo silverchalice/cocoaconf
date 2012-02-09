@@ -25,9 +25,8 @@
                     <strong>We turn innovative ideas into reality</strong></p>
                 <p>A high-performance custom software development shop helping businesses turn their ideas into quality solutions. We use tight feedback loops, skilled software craftsmen, and high ethical values to ensure the best value for our clients.</p>
             </div>
-            <div id="appsolute" class="sponsor">
-				<p><a href="http://appsolutegenius.com/"><img src="${resource(dir:'images',file:'appsolute.png')}" style="float: right"/></a>Mobile development is what we do. It’s what we love and the driving force behind our company. We spend every waking hour thinking about the best ways to use mobile applications for your business.</p>
-                <p>Your business goals are our top priority, and we will always work hard to help you reach them. Whether you are looking to sell a custom application, create a mobile marketing campaign, add convenience for your customers, or simply have a cutting-edge product, we can help you make it happen.</p>
+            <div id="8thLight" class="sponsor">
+				<p><a href="http://www.8thlight.com"><img src="${resource(dir:'images',file:'8thLight.png')}" style="float: right"/></a>8th light is an agile software development company with expertise in a variety of programming languages that writes beautiful applications for your web, mobile, and embedded projects. 8th light also offers apprenticeships to push the limits of your knowledge in software development.</p>
 			</div>
 			<div style="margin-top: 20px; clear: both">
                 <a href="http://www.manning.com/"><img src="${resource(dir:'images',file:'manning.png')}" style="float:left;"/></a>
@@ -40,7 +39,10 @@
 
         <div id="user-groups" style="padding-top: 10px">
 			<h2>CocoaHeads Partners</h2>
-			<p>CocoaHeads, NSCoderNight and other groups are playing a huge role in bringing CocoaConf to Columbus.  Several of our speakers are group organizers and almost all of them are active participants. The following groups are partnering with us to help make CocoaConf the best conference of its kind.  So, check out this list and find the group nearest you and get involved.  There is much we can learn from each other and many good times to be had.</p>
+			<p>CocoaHeads, NSCoderNight and other groups are playing a huge role in bringing CocoaConf to the Chicago area.  Several of our speakers are group organizers and almost all of them are active participants. If you haven't been to a CocoaHeads meeting or NSCoder Nigh, find the group near you and get involved.  There is much we can learn from each other and many good times to be had.</p>
+			<p>You can find several active groups at the <a href="http://cocoaheads.org">CocoaHeads website</a> or check <a href="http://cocoa.meetup.com/">meetup.com</a>.  If all else fails, <a href="https://www.google.com/#hl=en&tok=X804PHYtlp0B8MtT7VPxEQ&cp=29&gs_id=qd&xhr=t&q=Cocoa+user+groups+chicago%2C+il&pf=p&sclient=psy-ab&source=hp&pbx=1&oq=Cocoa+user+groups+chicago,+il&aq=f&aqi=&aql=&gs_sm=&gs_upl=&bav=on.2,or.r_gc.r_pw.,cf.osb&fp=31d7cccccf4c56c5&biw=1728&bih=795">Google</a> is your friend. :-)</p>
+			<p><a href=""></a></p>
+			<!--
 			<div id="raleigh" class="usergroup">
 				<h3>Triangle CocoaHeads</h3>
 				<p>Meetings are the fourth Thursday of the month</p>
@@ -51,13 +53,14 @@
 				<h3>CocoaHeads DC</h3>
 				<p>CocoaHeads DC is the capital region's premiere Apple-oriented monthly meetup group. While we take our name from Apple’s programming framework for Mac OS X, including the iPhone, we also delve into other Apple-related technologies such as MacRuby and mobile Safari. Our meetings are held on the first Thursday of every month where members present projects and tutorials. </p>
 				<p>More information can be found at our site <a href="http://www.cocoaheadsdc.org">http://www.cocoaheadsdc.org</a>.</p>				
+			</div>
 			<div id="columbus" class="usergroup">
 				<h3>Columbus iPhone Developers User Group</h3>
 				<p>Meetings are the fourth Tuesday of the month at 6:30 PM</p>
 				<p>OCLC - 6565 Kilgour Place Dublin, OH </p>
 				<p><a href="http://groups.google.com/group/cidug">http://groups.google.com/group/cidug</a></p>
 			</div>
-<!--
+
 			<div id="louisville" class="usergroup">
 				<h3>Louisville, Kentucky CocoaHeads</h3>
 				<p>Thursday, August 11, 2011 18:30 at Mac Authority 128 Breckenridge Lane Louisville, KY 40207</p>
