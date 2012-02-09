@@ -36,17 +36,18 @@
            </div>
            <div id="logo"><a href="${request.contextPath}/"><img src="${resource(dir:'images',file:'cc-logo.png')}" style="margin-bottom:20px" alt="Simply Cocoa" border="0" /></a>
            </div>
-           <div id="nav">
-               <g:link class="${pageProperty(name:'meta.tab') == 'home' ? 'current' : ''}" controller="home" action="index">Home</g:link>
-               <g:link class="${pageProperty(name:'meta.tab') == 'blog' ? 'current' : ''}" controller="post" action="list" style="background-position: -120px 0;">Blog</g:link>
-               <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}" controller="speaker" action="speakers" style="background-position: -240px 0;">Speakers</g:link>
-               <g:link class="${pageProperty(name:'meta.tab') == 'schedule' ? 'current' : ''}" controller="home" action="schedule" style="background-position: -360px 0;">Schedule</g:link>
-               <g:link class="${pageProperty(name:'meta.tab') == 'about' ? 'current' : ''}" controller="home" action="about" style="background-position: -480px 0;">Venue</g:link>
-               <g:link class="${pageProperty(name:'meta.tab') == 'register' ? 'current' : ''}" controller="home" action="register" style="background-position: -600px 0;border-right: 1px solid gray;">Register</g:link>
-               <g:link class="${pageProperty(name:'meta.tab') == 'next' ? 'current' : ''}" controller="home" action="nearYou" style="background-position: -720px 0; border-right: 1px solid gray;">[cocoaConf next]</g:link>
+            <div id="nav">
+                <g:link class="${pageProperty(name:'meta.tab') == 'home' ? 'current' : ''}" controller="home" action="index">Home</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'blog' ? 'current' : ''}" controller="post" action="list" style="background-position: -100px 0;">Blog</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}" controller="speaker" action="speakers" style="background-position: -200px 0;">Speakers</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'schedule' ? 'current' : ''}" controller="home" action="schedule" style="background-position: -300px 0;">Schedule</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'about' ? 'current' : ''}" controller="home" action="about" style="background-position: -400px 0;">Venue</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}" controller="home" action="partners" style="background-position: -500px 0;">Partners</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'register' ? 'current' : ''}" controller="home" action="register" style="background-position: -600px 0;border-right: 1px solid gray;">Register</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'next' ? 'current' : ''}" controller="home" action="nearYou" style="background-position: -700px 0; width:130px; border-right: 1px solid gray;">[cocoaConf next]</g:link>
 
 
-           </div>
+            </div>
             <div id="sidebar" style="min-height: 927px;">
                 <h2 style="color:#1da0d1;">About CocoaConf</h2>
                 <h3>CocoaConf is a technical conference, pure and simple.</h3>
