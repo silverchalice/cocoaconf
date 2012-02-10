@@ -24,10 +24,10 @@
     </head>
     <body  id="announcement">
     <sec:ifNotLoggedIn>
-        <div id="announcementHeader"><span style="color:#ff9627">Registration now open!  -  Early Bird rate ends February 10th!</span>   </div>
+        <div id="announcementHeader"><span style="color:#ff9627">Registration closes March 8th.  -  Sign up now!</span>   </div>
     </sec:ifNotLoggedIn>
     <sec:ifLoggedIn>
-        <div id="announcementHeader"><span style="color:#ff9627">Registration now open!  -  Early Bird rate ends February 10th!</span>   </div>
+        <div id="announcementHeader"><span style="color:#ff9627">Registration closes March 8th.  -  Sign up now!</span>   </div>
     </sec:ifLoggedIn>
         <div id="page">
 
@@ -76,6 +76,8 @@
               <a href="http://www.8thlight.com"><img src="${resource(dir:'images', file: '8thLight.png')}" style="width:245px;height:auto;"/></a>
               <br/><br/>
 				<a href="http://cocoaconf.com/blog/chicago-sponsorship">Sponsorship Opportunities Available</a>
+              <br/><br/>
+              <a href="http://www.5by5.tv"><img src="${resource(dir:'images', file: '5by5.png')}"/></a>
               <br/><br/>
            </div>
 

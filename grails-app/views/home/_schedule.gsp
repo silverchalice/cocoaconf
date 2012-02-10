@@ -106,7 +106,7 @@
 	</tr>
       <tr class="slot">
      	  <td align="center" class="time" >4:00-5:00</td>
-		  <td align="center" class="track1"><span class="sessionTitle">TBD</span> <span class="sessionSpeaker"></span></td>
+		  <td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="81">Core Motion Crazy</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="36">Jonathan Blocksom</g:link></span></td>
 		  <td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="25">Drawing with Core Graphics on iOS</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="16">Bill Dudney</g:link></span></td>
 		  <td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="60">Migrating to Automatic Reference Counting</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="33">Brad Larson</g:link></span></td>
       </tr>

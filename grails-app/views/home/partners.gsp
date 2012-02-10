@@ -28,6 +28,10 @@
             <div id="8thLight" class="sponsor">
 				<p><a href="http://www.8thlight.com"><img src="${resource(dir:'images',file:'8thLight.png')}" style="float: right"/></a>8th light is an agile software development company with expertise in a variety of programming languages that writes beautiful applications for your web, mobile, and embedded projects. 8th light also offers apprenticeships to push the limits of your knowledge in software development.</p>
 			</div>
+			<div id="5by5" class="sponsor">
+				<p><a href="http://www.5by5.tv"><img src="${resource(dir:'images', file: '5by5.png')}" style="float: left"/></a> 
+				<a href="http://5by5.tv">5by5</a> is an Internet broadcasting network, home to <a href="http://5by5.tv/broadcasts">shows</a> like <a href="http://5by5.tv/talkshow">The Talk Show</a>, <a href="http://5by5.tv/b2w">Back to Work</a>, <a href="http://5by5.tv/bigwebshow">The Big Web Show</a>, <a href="http://5by5.tv/pipeline">The Pipeline</a>, <a href="http://5by5.tv/buildanalyze">Build and Analyze</a>, and <a href="http://5by5.tv/broadcasts">more</a>, with hosts including <a href="http://5by5.tv/person/dan-benjamin">Dan Benjamin</a>, <a href="http://5by5.tv/person/john-gruber">John Gruber</a>, <a href="http://5by5.tv/person/merlin-mann">Merlin Mann</a>, <a href="http://5by5.tv/person/jeffrey-zeldman">Jeffrey Zeldman</a>, and <a href="http://5by5.tv/person/marco-arment">Marco Arment</a>.</p>
+			</div>
 			<div style="margin-top: 20px; clear: both">
                 <a href="http://www.manning.com/"><img src="${resource(dir:'images',file:'manning.png')}" style="float:left;"/></a>
 				<a href="http://pragprog.com/"><img src="${resource(dir:'images',file:'pragprog.png')}" style="width:auto; float:left;" /></a>
