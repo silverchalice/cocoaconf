@@ -26,10 +26,10 @@
                 <p>A high-performance custom software development shop helping businesses turn their ideas into quality solutions. We use tight feedback loops, skilled software craftsmen, and high ethical values to ensure the best value for our clients.</p>
             </div>
             <div id="8thLight" class="sponsor">
-				<p><a href="http://www.8thlight.com"><img src="${resource(dir:'images',file:'8thLight.png')}" style="float: right"/></a>8th light is an agile software development company with expertise in a variety of programming languages that writes beautiful applications for your web, mobile, and embedded projects. 8th light also offers apprenticeships to push the limits of your knowledge in software development.</p>
+				<p><a href="http://www.8thlight.com"><img src="${resource(dir:'images',file:'8thLight.png')}" style="float: right; padding-left:5px;"/></a>8th light is an agile software development company with expertise in a variety of programming languages that writes beautiful applications for your web, mobile, and embedded projects. 8th light also offers apprenticeships to push the limits of your knowledge in software development.</p>
 			</div>
 			<div id="5by5" class="sponsor">
-				<p><a href="http://www.5by5.tv"><img src="${resource(dir:'images', file: '5by5.png')}" style="float: left"/></a> 
+				<p><a href="http://www.5by5.tv"><img src="${resource(dir:'images', file: '5by5.png')}" style="float: left; padding-right:8px;"/></a> 
 				<a href="http://5by5.tv">5by5</a> is an Internet broadcasting network, home to <a href="http://5by5.tv/broadcasts">shows</a> like <a href="http://5by5.tv/talkshow">The Talk Show</a>, <a href="http://5by5.tv/b2w">Back to Work</a>, <a href="http://5by5.tv/bigwebshow">The Big Web Show</a>, <a href="http://5by5.tv/pipeline">The Pipeline</a>, <a href="http://5by5.tv/buildanalyze">Build and Analyze</a>, and <a href="http://5by5.tv/broadcasts">more</a>, with hosts including <a href="http://5by5.tv/person/dan-benjamin">Dan Benjamin</a>, <a href="http://5by5.tv/person/john-gruber">John Gruber</a>, <a href="http://5by5.tv/person/merlin-mann">Merlin Mann</a>, <a href="http://5by5.tv/person/jeffrey-zeldman">Jeffrey Zeldman</a>, and <a href="http://5by5.tv/person/marco-arment">Marco Arment</a>.</p>
 			</div>
 			<div style="margin-top: 20px; clear: both">
@@ -44,15 +44,20 @@
         <div id="user-groups" style="padding-top: 10px">
 			<h2>CocoaHeads Partners</h2>
 			<p>CocoaHeads, NSCoderNight and other groups are playing a huge role in bringing CocoaConf to the Chicago area.  Several of our speakers are group organizers and almost all of them are active participants. If you haven't been to a CocoaHeads meeting or NSCoder Nigh, find the group near you and get involved.  There is much we can learn from each other and many good times to be had.</p>
-			<p>You can find several active groups at the <a href="http://cocoaheads.org">CocoaHeads website</a> or check <a href="http://cocoa.meetup.com/">meetup.com</a>.  If all else fails, <a href="https://www.google.com/#hl=en&tok=X804PHYtlp0B8MtT7VPxEQ&cp=29&gs_id=qd&xhr=t&q=Cocoa+user+groups+chicago%2C+il&pf=p&sclient=psy-ab&source=hp&pbx=1&oq=Cocoa+user+groups+chicago,+il&aq=f&aqi=&aql=&gs_sm=&gs_upl=&bav=on.2,or.r_gc.r_pw.,cf.osb&fp=31d7cccccf4c56c5&biw=1728&bih=795">Google</a> is your friend. :-)</p>
+			<p>Check out our partner groups below. You can also find other active groups at the <a href="http://cocoaheads.org">CocoaHeads website</a> or <a href="http://cocoa.meetup.com/">meetup.com</a>.  If all else fails, <a href="https://www.google.com/#hl=en&tok=X804PHYtlp0B8MtT7VPxEQ&cp=29&gs_id=qd&xhr=t&q=Cocoa+user+groups+chicago%2C+il&pf=p&sclient=psy-ab&source=hp&pbx=1&oq=Cocoa+user+groups+chicago,+il&aq=f&aqi=&aql=&gs_sm=&gs_upl=&bav=on.2,or.r_gc.r_pw.,cf.osb&fp=31d7cccccf4c56c5&biw=1728&bih=795">Google</a> is your friend. :-)</p>
 			<p><a href=""></a></p>
-			<!--
-			<div id="raleigh" class="usergroup">
-				<h3>Triangle CocoaHeads</h3>
-				<p>Meetings are the fourth Thursday of the month</p>
-				<p>Come out for great presentations, networking and a lot of fun. Find out more details at <a href="http://www.trianglecocoa.com">http://www.trianglecocoa.com</a>.</p>
-		        <p>Follow us on Twitter at <a href="http://twitter.com/trianglecocoa">http://twitter.com/trianglecocoa</a>.</p>
+
+			<div id="momo-chicago" class="usergroup">
+				<a href="http://www.meetup.com/momo-chicago/"><img src="${resource(dir:'images',file:'momo.jpg')}" style="float: left; padding-right:10px;"/></a><h3>Mobile Monday Chicago</h3>
+				<p>Mobile Monday is the world’s largest mobile industry community with chapters in over 80 cities worldwide. Mobile Monday Chicago relaunched in 2009 and since has grown into one of Chicago's biggest technology networking organizations. We are a volunteer-led, grassroots trade organization and affiliated with other Mobile Monday chapters around the USA through Mobile Monday America.</p>
+		        <p>Find more information on our Meetup page at <a href="http://www.meetup.com/momo-chicago/">http://www.meetup.com/momo-chicago/</a> and follow us on Twitter at <a href="https://twitter.com/#!/MoMoChicago">https://twitter.com/#!/MoMoChicago</a>.</p>
 			</div>
+			<div id="stl-cocoaheads" class="usergroup">
+				<a href="http://briancoyner.github.com/cocoaheads/index.html"><img src="${resource(dir:'images',file:'cocoahead_sm2.png')}" style="float:right; padding-left:10px;" /></a><h3>West St. Louis CocoaHeads</h3>
+				<p>The West St. Louis CocoaHeads is an OS X and iOS developer group. We are officially under the CocoaHeads umbrella (“West St. Louis”).</p>
+				<p>We are a group of software developers dedicated to diving deep into Apple’s iOS platform. Our goal is to take our current software engineering skills (Java, ObjC, C++) and learn how to apply those skills to the iOS platform.</p>
+				<p>Our site: <a href="http://briancoyner.github.com/cocoaheads/index.html">http://briancoyner.github.com/cocoaheads/index.html</a></p>
+			<!--
 			<div id="dc" class="usergroup">
 				<h3>CocoaHeads DC</h3>
 				<p>CocoaHeads DC is the capital region's premiere Apple-oriented monthly meetup group. While we take our name from Apple’s programming framework for Mac OS X, including the iPhone, we also delve into other Apple-related technologies such as MacRuby and mobile Safari. Our meetings are held on the first Thursday of every month where members present projects and tutorials. </p>
