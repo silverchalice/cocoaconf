@@ -30,7 +30,6 @@
         <div id="announcementHeader"><span style="color:#ff9627">Registration closes March 8th.  -  Sign up now!</span>   </div>
     </sec:ifLoggedIn>
         <div id="page">
-
            <div id="spinner" class="spinner" style="display:none;">
                 <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
            </div>
@@ -45,8 +44,6 @@
                <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}" controller="home" action="partners" style="background-position: -500px 0;">Partners</g:link>
                <g:link class="${pageProperty(name:'meta.tab') == 'register' ? 'current' : ''}" controller="home" action="register" style="background-position: -600px 0;border-right: 1px solid gray;">Register</g:link>
                <g:link class="${pageProperty(name:'meta.tab') == 'next' ? 'current' : ''}" controller="home" action="nearYou" style="background-position: -700px 0; width:130px; border-right: 1px solid gray;">[cocoaConf next]</g:link>
-
-
            </div>
            <div id="sidebar" style="min-height: 927px;">
                <h2 style="color:#1da0d1;">About CocoaConf</h2>
@@ -60,17 +57,13 @@
                    <li style="border-bottom: 1px dotted gray; margin-bottom:15px; font-weight: bold">And much more!</li>
                </ul>
                <a href="http://www.twitter.com/cocoaconf" style="margin-left: 20px"><img src="http://twitter-badges.s3.amazonaws.com/follow_us-c.png" alt="Follow CocoaConf on Twitter"/></a>
-
                <br/>
                <br/>
-
                <h2 style="color:#1da0d1;">Our Platinum Sponsor</h2>
                <br/>
                <a href="http://rolemodelsoft.com"><img src="${resource(dir:'images', file: 'rolemodel.png')}" /></a>
-
                <br/>
                <br/>
-
               <h2 style="color:#1da0d1;">Our Gold Sponsors</h2>
               <br/>
               <a href="http://www.8thlight.com"><img src="${resource(dir:'images', file: '8thLight.png')}" style="width:245px;height:auto;"/></a>
@@ -80,7 +73,6 @@
 				<a href="http://cocoaconf.com/blog/chicago-sponsorship">Sponsorship Opportunities Available</a>
               <br/><br/>
            </div>
-
            <div id="content">
               <g:layoutBody />
                <div style="clear: both"></div>

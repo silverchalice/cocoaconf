@@ -141,7 +141,7 @@
         <div class="featured">
            <img src="${resource(dir:'images',file:'dudney.png')}"/>
            <p><strong>Bill Dudney</strong> - Author of Pragmatic Programmer’s books <a href="http://pragprog.com/titles/adios">iPhone SDK Development</a> and <a href="http://pragprog.com/titles/bdcora/core-animation-for-mac-os-x-and-the-iphone">Core Animation</a>.
-            - <a href="http://www.bill.dudney.net">http://www.bill.dudney.net</a></p>
+            - <a href="http://bill.dudney.net">http://bill.dudney.net</a></p>
 
        </div>
         <div class="featured">
