@@ -49,8 +49,9 @@
 
 			<div id="momo-chicago" class="usergroup">
 				<a href="http://www.meetup.com/momo-chicago/"><img src="${resource(dir:'images',file:'momo.jpg')}" style="float: left; padding-right:10px;"/></a><h3>Mobile Monday Chicago</h3>
-				<p>Mobile Monday is the world’s largest mobile industry community with chapters in over 80 cities worldwide. Mobile Monday Chicago relaunched in 2009 and since has grown into one of Chicago's biggest technology networking organizations. We are a volunteer-led, grassroots trade organization and affiliated with other Mobile Monday chapters around the USA through Mobile Monday America.</p>
-		        <p>Find more information on our Meetup page at <a href="http://www.meetup.com/momo-chicago/">http://www.meetup.com/momo-chicago/</a> and follow us on Twitter at <a href="https://twitter.com/#!/MoMoChicago">https://twitter.com/#!/MoMoChicago</a>.</p>
+				<p><a href="http://www.mobilemonday.net/">Mobile Monday</a> is the world’s largest mobile industry community with chapters in over 80 cities worldwide. Mobile Monday Chicago relaunched in 2009 and since has grown into one of Chicago's biggest mobile community with over 400 members. We are a volunteer-led, grassroots organization with a focus on mobile technologies, marketing and strategy. <br/>CocoaConf is a proud sponsor of Mobile Monday Chicago.</p>
+		        <p>You can join MoMo via the group below<br/>
+				    <a href="http://meetup.com/momo-chicago/">http://meetup.com/momo-chicago</a></p>
 			</div>
 			<div id="stl-cocoaheads" class="usergroup">
 				<a href="http://briancoyner.github.com/cocoaheads/index.html"><img src="${resource(dir:'images',file:'cocoahead_sm2.png')}" style="float:right; padding-left:10px;" /></a><h3>West St. Louis CocoaHeads</h3>
