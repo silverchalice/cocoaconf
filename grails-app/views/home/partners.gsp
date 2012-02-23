@@ -20,21 +20,20 @@
 		<div id="sponsors">
             <h1>Partners</h1>
 			<h2 style="font-size:18px;">The following organizations are helping to make CocoaConf awesome! </h2>  <br/>
-			<div id="rolemodel" class="sponsor">
-				<p><a href="http://rolemodelsoftware.com/"><img src="${resource(dir:'images',file:'rolemodel.png')}" style="float:left;"/></a>
-                    <strong>We turn innovative ideas into reality</strong></p>
-                <p>A high-performance custom software development shop helping businesses turn their ideas into quality solutions. We use tight feedback loops, skilled software craftsmen, and high ethical values to ensure the best value for our clients.</p>
-            </div>
             <div id="8thLight" class="sponsor">
 				<p><a href="http://www.8thlight.com"><img src="${resource(dir:'images',file:'8thLight.png')}" style="float: right; padding-left:5px;"/></a>8th light is an agile software development company with expertise in a variety of programming languages that writes beautiful applications for your web, mobile, and embedded projects. 8th light also offers apprenticeships to push the limits of your knowledge in software development.</p>
 			</div>
-			<div id="5by5" class="sponsor">
-				<p><a href="http://www.5by5.tv"><img src="${resource(dir:'images', file: '5by5.png')}" style="float: left; padding-right:8px;"/></a> 
+            <div id="jetbrains" class="sponsor" style="height:110px">
+				<p><a href="http://www.jetbrains.com/objc/"><img src="${resource(dir:'images',file:'AppCodeLogo.png')}" style="width:225px; height:auto; float: left; padding-right:8px;"/></a><br/><strong>AppCode</strong> is an IDE for Objective-C developers building native Cocoa apps for MacOS X or iOS who strive for higher coding productivity and better code quality.</p>
+			</div>
+			<div id="5by5" class="sponsor" style="height:130px">
+				<p><a href="http://www.5by5.tv"><img src="${resource(dir:'images', file: '5by5.png')}" style="float: right; padding-left:8px;"/></a> 
 				<a href="http://5by5.tv">5by5</a> is an Internet broadcasting network, home to <a href="http://5by5.tv/broadcasts">shows</a> like <a href="http://5by5.tv/talkshow">The Talk Show</a>, <a href="http://5by5.tv/b2w">Back to Work</a>, <a href="http://5by5.tv/bigwebshow">The Big Web Show</a>, <a href="http://5by5.tv/pipeline">The Pipeline</a>, <a href="http://5by5.tv/buildanalyze">Build and Analyze</a>, and <a href="http://5by5.tv/broadcasts">more</a>, with hosts including <a href="http://5by5.tv/person/dan-benjamin">Dan Benjamin</a>, <a href="http://5by5.tv/person/john-gruber">John Gruber</a>, <a href="http://5by5.tv/person/merlin-mann">Merlin Mann</a>, <a href="http://5by5.tv/person/jeffrey-zeldman">Jeffrey Zeldman</a>, and <a href="http://5by5.tv/person/marco-arment">Marco Arment</a>.</p>
 			</div>
-			<div style="margin-top: 20px; clear: both">
-                <a href="http://www.manning.com/"><img src="${resource(dir:'images',file:'manning.png')}" style="float:left;"/></a>
+			<div style="clear: both">
+                <a href="http://www.manning.com/"><img src="${resource(dir:'images',file:'manning.png')}" style="margin-left:15px; float:left;"/></a>
 				<a href="http://pragprog.com/"><img src="${resource(dir:'images',file:'pragprog.png')}" style="width:auto; float:left;" /></a>
+				<a href="http://informit.com/learnmac"><img src="${resource(dir:'images',file:'Addison-Wesley.jpg')}" style="margin-top:15px;width:550px; height:auto"/></a>
 			</div>
 
 			<br/>

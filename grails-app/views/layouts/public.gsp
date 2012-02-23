@@ -63,17 +63,11 @@
 
                 <br/>
                 <br/>
-
-                <h2 style="color:#1da0d1;">Our Platinum Sponsor</h2>
-                <br/>
-                <a href="http://rolemodelsoft.com"><img src="${resource(dir:'images', file: 'rolemodel.png')}" /></a>
-
-               <br/>
-               <br/>
-
                <h2 style="color:#1da0d1;">Our Gold Sponsors</h2>
                <br/>
                <a href="http://www.8thlight.com"><img src="${resource(dir:'images', file: '8thLight.png')}" style="width:245px;height:auto;"/></a>
+              <br/><br/>
+               <a href="http://www.jetbrains.com/objc/"><img src="${resource(dir:'images', file: 'AppCodeLogo.png')}" style="width:225px; heigh:auto;display:block; margin-left:auto; margin-right:auto;"/></a>
               <br/><br/>
               <a href="http://www.5by5.tv"><img src="${resource(dir:'images', file: '5by5.png')}"/></a>
               <br/><br/>
