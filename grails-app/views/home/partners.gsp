@@ -10,7 +10,7 @@
 
             .sponsor {
                 width:640px;
-                height:160px;
+                height:150px;
             }
 
         </style>
@@ -23,8 +23,8 @@
             <div id="8thLight" class="sponsor">
 				<p><a href="http://www.8thlight.com"><img src="${resource(dir:'images',file:'8thLight.png')}" style="float: right; padding-left:5px;"/></a>8th light is an agile software development company with expertise in a variety of programming languages that writes beautiful applications for your web, mobile, and embedded projects. 8th light also offers apprenticeships to push the limits of your knowledge in software development.</p>
 			</div>
-            <div id="jetbrains" class="sponsor" style="height:110px">
-				<p><a href="http://www.jetbrains.com/objc/"><img src="${resource(dir:'images',file:'AppCodeLogo.png')}" style="width:225px; height:auto; float: left; padding-right:8px;"/></a><br/><strong>AppCode</strong> is an IDE for Objective-C developers building native Cocoa apps for MacOS X or iOS who strive for higher coding productivity and better code quality.</p>
+            <div id="jetbrains" class="sponsor" style="height:125px">
+				<p><a href="http://www.jetbrains.com/objc/"><img src="${resource(dir:'images',file:'AppCodeLogo.png')}" style="width:215px; height:auto;  margin-bottom:20px; float: left; padding-right:8px;"/></a>JetBrains delivers intelligent software solutions that make developers more productive by simplifying the challenging tasks, automating the routine ones and developing the best development practices. We provide IntelliJ IDEA for Java, ReSharper for .Net and now AppCode — a code-centric intelligent IDE for Objective-C developers (<a href="http://www.jetbrains.com/objc">www.jetbrains.com/objc</a>).</p>
 			</div>
 			<div id="5by5" class="sponsor" style="height:130px">
 				<p><a href="http://www.5by5.tv"><img src="${resource(dir:'images', file: '5by5.png')}" style="float: right; padding-left:8px;"/></a> 
