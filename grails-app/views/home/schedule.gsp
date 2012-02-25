@@ -80,6 +80,10 @@
             padding: 4px 0 0 0;
         }
 
+        tr.choice {
+            color:#ff8c00;
+        }
+
         td.track2 {
             background-color: #edecec;
         }
@@ -137,7 +141,13 @@
 
         <h1 style="float:left">Chicago, 2012: Schedule</h1>
 
+        <sec:ifLoggedIn>
+            <g:render template="scheduleLoggedIn"/>
+        </sec:ifLoggedIn>
+        <sec:ifNotLoggedIn>
             <g:render template="schedule"/>
+        </sec:ifNotLoggedIn>
+
 
     </body>
 </html>

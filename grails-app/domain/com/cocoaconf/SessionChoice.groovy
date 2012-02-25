@@ -28,7 +28,10 @@ class SessionChoice {
 	Boolean session25 = false
 	Boolean session26 = false
 	Boolean session27 = false
-	
+	Boolean session28 = false
+	Boolean session29 = false
+	Boolean session30 = false
+
 	static belongsTo = [user:User]
 	
 }
