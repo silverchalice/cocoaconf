@@ -26,8 +26,12 @@
             <div id="jetbrains" class="sponsor" style="height:125px">
 				<p><a href="http://www.jetbrains.com/objc/"><img src="${resource(dir:'images',file:'AppCodeLogo.png')}" style="width:215px; height:auto;  margin-bottom:20px; float: left; padding-right:8px;"/></a>JetBrains delivers intelligent software solutions that make developers more productive by simplifying the challenging tasks, automating the routine ones and developing the best development practices. We provide IntelliJ IDEA for Java, ReSharper for .Net and now AppCode — a code-centric intelligent IDE for Objective-C developers (<a href="http://www.jetbrains.com/objc">www.jetbrains.com/objc</a>).</p>
 			</div>
+			<div id="mmc" class="sponsor" style="height:120px">
+				<p><a href="http://macminicolo.net"><img src="${resource(dir:'images', file: 'macminicolo.png')}"style="float: right; padding-left:8px;"/></a>
+				Dedicated Server - World Class Data Center - Low Cost Hardware - Incredibly Fast Bandwidth - Easy To Setup and Maintain - No Setup Fee - Up to 16GB of RAM - Friendly Support Staff - Up to One TB of Storage - Run Whatever You Want - High Performance Worldwide - High Quality Worldwide</p>	
+			</div>
 			<div id="5by5" class="sponsor" style="height:130px">
-				<p><a href="http://www.5by5.tv"><img src="${resource(dir:'images', file: '5by5.png')}" style="float: right; padding-left:8px;"/></a> 
+				<p><a href="http://www.5by5.tv"><img src="${resource(dir:'images', file: '5by5.png')}" style="float: left; padding-right:8px;"/></a> 
 				<a href="http://5by5.tv">5by5</a> is an Internet broadcasting network, home to <a href="http://5by5.tv/broadcasts">shows</a> like <a href="http://5by5.tv/talkshow">The Talk Show</a>, <a href="http://5by5.tv/b2w">Back to Work</a>, <a href="http://5by5.tv/bigwebshow">The Big Web Show</a>, <a href="http://5by5.tv/pipeline">The Pipeline</a>, <a href="http://5by5.tv/buildanalyze">Build and Analyze</a>, and <a href="http://5by5.tv/broadcasts">more</a>, with hosts including <a href="http://5by5.tv/person/dan-benjamin">Dan Benjamin</a>, <a href="http://5by5.tv/person/john-gruber">John Gruber</a>, <a href="http://5by5.tv/person/merlin-mann">Merlin Mann</a>, <a href="http://5by5.tv/person/jeffrey-zeldman">Jeffrey Zeldman</a>, and <a href="http://5by5.tv/person/marco-arment">Marco Arment</a>.</p>
 			</div>
 			<div style="clear: both">
