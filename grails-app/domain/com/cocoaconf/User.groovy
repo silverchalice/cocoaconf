@@ -23,6 +23,10 @@ class User {
 		password blank: false
         choice nullable: true
 		street nullable:true
+		city nullable:true
+		state nullable:true
+		zip nullable:true
+		choice nullable:true
 		
 	}
 
