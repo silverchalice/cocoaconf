@@ -3,20 +3,53 @@
         <title>Cocoaconf | iOS/OS X Developer Conference | Chicago, Illinois | March 16 & 17</title>
         <meta name="layout" content="public"/>
         <meta name="tab" content="schedule"/>
-        <script src="${resource(dir: 'js', file: 'jquery-1.6.2.min.js')}" type="text/javascript"></script>
 
+        <link rel="stylesheet" href="${resource(dir:'js/jquery-checkbox', file: 'jquery.checkbox.css')}" />
+        <link rel="stylesheet" href="${resource(dir:'js/jquery-checkbox', file: 'jquery.safari-checkbox.css')}"/>
 
+        <script type="text/javascript" src="${resource(dir:'js/jquery-checkbox', file: 'jquery.js')}"></script>
+        <script type="text/javascript" src="${resource(dir:'js/jquery-checkbox', file: 'jquery.checkbox.min.js')}"></script>
 
         <script type="text/javascript">
             $(document).ready(function() {
-
+                $('input:checkbox:not([safari])').checkbox();
+                $('input[safari]:checkbox').checkbox({cls:'jquery-safari-checkbox'});
+                $('input:radio').checkbox();
 
                 $(":checkbox").click(function() {
                     $(this).siblings().removeAttr('checked');
                 });
 
-
             });
+
+            displayForm = function (elementId)
+            {
+                var content = [];
+                $('#' + elementId + ' input').each(function(){
+                    var el = $(this);
+                    if ( (el.attr('type').toLowerCase() == 'radio'))
+                    {
+                        if ( this.checked )
+                            content.push([
+                                '"', el.attr('name'), '": ',
+                                'value="', ( this.value ), '"',
+                                ( this.disabled ? ', disabled' : '' )
+                            ].join(''));
+                    }
+                    else
+                        content.push([
+                            '"', el.attr('name'), '": ',
+                            ( this.checked ? 'checked' : 'not checked' ),
+                            ( this.disabled ? ', disabled' : '' )
+                        ].join(''));
+                });
+                alert(content.join('\n'));
+            };
+
+            changeStyle = function(skin)
+            {
+                jQuery('#myform :checkbox').checkbox((skin ? {cls: skin} : {}));
+            }
 
         </script>
 
@@ -42,7 +75,7 @@
         }
 
         td.choice span {
-            padding-right: 90px;
+            padding: 0 20px;
         }
 
         th {

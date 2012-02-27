@@ -1,5 +1,7 @@
 <g:form controller='user' action='pickSessions'>
-    <h3 style="clear:both">Thursday, March 15</h3>
+
+    <h3>Thursday, March 15</h3>
+
     <table border="1" width="700" class="schedule">
   	<tr class="break">
   		<td align="center" class="time">8:30-5:00</td>
@@ -24,11 +26,11 @@
         <td align="center" width="200" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="79">iOS Computer Vision</g:link></span><span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="36">Jonathan Blocksom</g:link></span></td>
     </tr>
 	<tr class="choice">
-        <td align="center" width="100" class="time" >&nbsp;</td>
+        <td align="center" width="100" class="time" >Attending:</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:80px; padding-right:0">
-            <input type="checkbox" name="session01" ${choice?.session01 ? "checked='checked'" : ''} /><span>Attending</span>
-            <input type="checkbox" name="session02" ${choice?.session02 ? "checked='checked'" : ''} /><span>Attending</span>
-            <input type="checkbox" name="session03" ${choice?.session03 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session01" ${choice?.session01 ? "checked='checked'" : ''} />
+            <input type="checkbox" name="session02" ${choice?.session02 ? "checked='checked'" : ''} />
+            <input type="checkbox" name="session03" ${choice?.session03 ? "checked='checked'" : ''} />
         </td>
 	</tr>
 	<tr class="slot">
@@ -39,11 +41,11 @@
         <td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="63">Playing in the App Sandbox</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="27">Boisy Pitre</g:link></span></td>
     </tr>
 	<tr class="choice">
-        <td align="center" width="100" class="time" >&nbsp;</td>
+        <td align="center" width="100" class="time" >Attending:</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:80px">
-            <input type="checkbox" name="session04" ${choice?.session04 ? "checked='checked'" : ''} /><span>Attending</span>
-            <input type="checkbox" name="session05" ${choice?.session05 ? "checked='checked'" : ''} /><span>Attending</span>
-            <input type="checkbox" name="session06" ${choice?.session06 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session04" ${choice?.session04 ? "checked='checked'" : ''} />
+            <input type="checkbox" name="session05" ${choice?.session05 ? "checked='checked'" : ''} />
+            <input type="checkbox" name="session06" ${choice?.session06 ? "checked='checked'" : ''} />
         </td>
 	</tr>
     <tr class="slot">
@@ -53,11 +55,11 @@
         <td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="50">Accelerate</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="25">Jeff Biggus</g:link></span></td>
     </tr>
 	<tr class="choice">
-        <td align="center" width="100" class="time" >&nbsp;</td>
+        <td align="center" width="100" class="time" >Attending:</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:80px">
-            <input type="checkbox" name="session07" ${choice?.session07 ? "checked='checked'" : ''} /><span>Attending</span>
-            <input type="checkbox" name="session08" ${choice?.session08 ? "checked='checked'" : ''} /><span>Attending</span>
-            <input type="checkbox" name="session09" ${choice?.session09 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session07" ${choice?.session07 ? "checked='checked'" : ''} />
+            <input type="checkbox" name="session08" ${choice?.session08 ? "checked='checked'" : ''} />
+            <input type="checkbox" name="session09" ${choice?.session09 ? "checked='checked'" : ''} />
         </td>
 	</tr>
     <tr class="break">
@@ -75,11 +77,11 @@
             <td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="21">Mac Ruby</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="12">Jonathan Penn</g:link></span></td>
     </tr>
 	<tr class="choice">
-        <td align="center" width="100" class="time" >&nbsp;</td>
+        <td align="center" width="100" class="time" >Attending:</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:80px">
-            <input type="checkbox" name="session10" ${choice?.session10 ? "checked='checked'" : ''} /><span>Attending</span>
-            <input type="checkbox" name="session11" ${choice?.session11 ? "checked='checked'" : ''} /><span>Attending</span>
-            <input type="checkbox" name="session12" ${choice?.session12 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session10" ${choice?.session10 ? "checked='checked'" : ''} />
+            <input type="checkbox" name="session11" ${choice?.session11 ? "checked='checked'" : ''} />
+            <input type="checkbox" name="session12" ${choice?.session12 ? "checked='checked'" : ''} />
         </td>
 	</tr>
     <tr class="slot">
@@ -89,11 +91,11 @@
         <td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="62">Walking the Tightrope: Managing apps in and out of the Mac App Store </g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="27">Boisy Pitre</g:link></span></td>
     </tr>
 	<tr class="choice">
-        <td align="center" width="100" class="time" >&nbsp;</td>
+        <td align="center" width="100" class="time" >Attending:</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:80px">
-            <input type="checkbox" name="session13" ${choice?.session13 ? "checked='checked'" : ''} /><span>Attending</span>
-            <input type="checkbox" name="session14" ${choice?.session14 ? "checked='checked'" : ''} /><span>Attending</span>
-            <input type="checkbox" name="session15" ${choice?.session15 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session13" ${choice?.session13 ? "checked='checked'" : ''} />
+            <input type="checkbox" name="session14" ${choice?.session14 ? "checked='checked'" : ''} />
+            <input type="checkbox" name="session15" ${choice?.session15 ? "checked='checked'" : ''} />
         </td>
 	</tr>
     <tr class="slot">
@@ -103,11 +105,11 @@
         <td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="3">Mac OS X for iOS Developers</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
     </tr>
     <tr class="choice">
-        <td align="center" width="100" class="time" >&nbsp;</td>
+        <td align="center" width="100" class="time" >Attending:</td>
         <td colspan="3" width="200" class="choice" style="padding-left:80px">
-               <input type="checkbox" name="session16" ${choice?.session16 ? "checked='checked'" : ''} /><span>Attending</span>
-               <input type="checkbox" name="session17" ${choice?.session17 ? "checked='checked'" : ''} /><span>Attending</span>
-               <input type="checkbox" name="session18" ${choice?.session18 ? "checked='checked'" : ''} /><span>Attending</span>
+               <input type="checkbox" name="session16" ${choice?.session16 ? "checked='checked'" : ''} />
+               <input type="checkbox" name="session17" ${choice?.session17 ? "checked='checked'" : ''} />
+               <input type="checkbox" name="session18" ${choice?.session18 ? "checked='checked'" : ''} />
            </td>
     </tr>
   	<tr class="break">
@@ -121,7 +123,7 @@
       </table>
       <br/>
      <h3>Saturday, March 17</h3>
-    <table class="schedule">
+    <table width="700" class="schedule">
   	<tr class="break">
   		<td align="center" class="time" width="100">8:00-9:00</td>
   		<th align="center" colspan="3">Breakfast</th>
@@ -133,11 +135,11 @@
         <td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="42">NSPredicates For Fun and Profit</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="14">Joshua Smith</g:link></span></td>
     </tr>
 	<tr class="choice">
-        <td align="center" width="100" class="time" >&nbsp;</td>
+        <td align="center" width="100" class="time" >Attending:</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:55px">
-            <input type="checkbox" name="session19" ${choice?.session19 ? "checked='checked'" : ''} /><span>Attending</span>
-            <input type="checkbox" name="session20" ${choice?.session20 ? "checked='checked'" : ''} /><span>Attending</span>
-            <input type="checkbox" name="session21" ${choice?.session21 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session19" ${choice?.session19 ? "checked='checked'" : ''} />
+            <input type="checkbox" name="session20" ${choice?.session20 ? "checked='checked'" : ''} />
+            <input type="checkbox" name="session21" ${choice?.session21 ? "checked='checked'" : ''} />
         </td>
 	</tr>
     <tr class="slot">
@@ -147,11 +149,11 @@
         <td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="49">Blocks</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="25">Jeff Biggus</g:link></span></td>
     </tr>
 	<tr class="choice">
-        <td align="center" width="100" class="time" >&nbsp;</td>
+        <td align="center" width="100" class="time" >Attending:</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:55px">
-            <input type="checkbox" name="session22" ${choice?.session22 ? "checked='checked'" : ''} /><span>Attending</span>
-            <input type="checkbox" name="session23" ${choice?.session23 ? "checked='checked'" : ''} /><span>Attending</span>
-            <input type="checkbox" name="session24" ${choice?.session24 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session22" ${choice?.session22 ? "checked='checked'" : ''} />
+            <input type="checkbox" name="session23" ${choice?.session23 ? "checked='checked'" : ''} />
+            <input type="checkbox" name="session24" ${choice?.session24 ? "checked='checked'" : ''} />
         </td>
 	</tr>
     <tr class="break">
@@ -169,11 +171,11 @@
         <td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="80">iTest my Code: OCDSpec and ocslim for the iPhone</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="37">Eric Meyer</g:link></span></td>
     </tr>
 	<tr class="choice">
-        <td align="center" width="100" class="time" >&nbsp;</td>
+        <td align="center" width="100" class="time" >Attending:</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:55px">
-            <input type="checkbox" name="session25" ${choice?.session25 ? "checked='checked'" : ''} /><span>Attending</span>
-            <input type="checkbox" name="session26" ${choice?.session26 ? "checked='checked'" : ''} /><span>Attending</span>
-            <input type="checkbox" name="session27" ${choice?.session27 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session25" ${choice?.session25 ? "checked='checked'" : ''} />
+            <input type="checkbox" name="session26" ${choice?.session26 ? "checked='checked'" : ''} />
+            <input type="checkbox" name="session27" ${choice?.session27 ? "checked='checked'" : ''} />
         </td>
 	</tr>
     <tr class="slot">
@@ -183,11 +185,11 @@
       <td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="60">Migrating to Automatic Reference Counting</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="33">Brad Larson</g:link></span></td>
     </tr>
 	<tr class="choice">
-        <td align="center" width="100" class="time" >&nbsp;</td>
+        <td align="center" width="100" class="time" >Attending:</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:55px">
-            <input type="checkbox"  name="session28" ${choice?.session28 ? "checked='checked'" : ''} /><span>Attending </span>
-            <input type="checkbox"  name="session29" ${choice?.session29 ? "checked='checked'" : ''} /><span>Attending </span>
-            <input type="checkbox"  name="session30" ${choice?.session30 ? "checked='checked'" : ''} /><span>Attending </span>
+            <input type="checkbox"  name="session28" ${choice?.session28 ? "checked='checked'" : ''} />
+            <input type="checkbox"  name="session29" ${choice?.session29 ? "checked='checked'" : ''} />
+            <input type="checkbox"  name="session30" ${choice?.session30 ? "checked='checked'" : ''} />
         </td>
 	</tr>
     <tr class="break">
