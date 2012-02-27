@@ -48,7 +48,7 @@
     <body>
         <div class="list">
             <g:each in="${postInstanceList}" status="i" var="post">
-                   <br /><g:link controller="post" action="show" params="['slug':post.slug]"><h1>${post.title}</g:link></h1>
+                   <g:link controller="post" action="show" params="['slug':post.slug]"><h1>${post.title}</g:link></h1>
                    <p style="font-size:smaller;">Posted by ${post.postedBy} (<g:formatDate format="MMMM d, yyyy" date="${post.dateCreated}"/>, at <g:formatDate format="HH:mm aa" date="${post.dateCreated}"/>)</p>
                    ${post.body}
                    <br />

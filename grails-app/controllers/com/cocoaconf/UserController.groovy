@@ -24,11 +24,17 @@ class UserController {
     }
 
     def pickSessions = {
+        println "Entering UserController:pickSessions..."
+        println params
+        
         def user = User.findByUsername(springSecurityService.principal.username)
         if (!user.choice){
+            
+            println "saving user choice..."
             user.choice = new SessionChoice(params)
         }
-        else{
+        else {
+            println "saving user choice..."
             user.choice.properties = params
         }
         if (!user.save()){
@@ -43,7 +49,8 @@ class UserController {
             render "Import already run."
             return
         }
-        def file = ["79734683   Dec 20, 2011    Sinchok         Chris           csinchok@theonion.com                   1.0 Super Early Bird Conference                                 62669953    PayPal Completed            350.0               0.0             9.74                    Attending       212 W Superior                  Suite 200                   CHICAGO             IL          60654       US              Friend                                                      Large           @chrissinchok       ",
+        def file = [
+        "79734683   Dec 20, 2011    Sinchok         Chris           csinchok@theonion.com                   1.0 Super Early Bird Conference                                 62669953    PayPal Completed            350.0               0.0             9.74                    Attending       212 W Superior                  Suite 200                   CHICAGO             IL          60654       US              Friend                                                      Large           @chrissinchok       ",
         "79734685   Dec 20, 2011    Johnson         Sam             sjohnson@theonion.com                   1.0 Super Early Bird Conference                                 62669953    PayPal Completed            350.0               0.0             9.74                    Attending       212 W Superior                  Suite 200                   CHICAGO             IL          60654       US              Friend                                                      Large           @samdjohnson        ",
         "79940105   Dec 22, 2011    Khan            Taha            taha@thebasement.tv                     1.0 Super Early Bird Conference Plus Tutorial                   62826163    PayPal Completed            450.0               0.0             9.95                    Attending       8902 Otis Ave Suite 107B                                    Indianapolis        IN          46216       US              Twitter                                                     Medium          taha0Khan           ",
         "79940107   Dec 22, 2011    Werner          Kyle            kyle@thebasement.tv                     1.0 Super Early Bird Conference Plus Tutorial                   62826163    PayPal Completed            450.0               0.0             9.95                    Attending       8902 Otis Ave Suite 107B                                    Indianapolis        IN          46216       US              Twitter                                                     Medium          kylejwerner         ",

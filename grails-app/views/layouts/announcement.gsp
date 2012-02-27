@@ -24,10 +24,12 @@
     </head>
     <body  id="announcement">
     <sec:ifNotLoggedIn>
-        <div id="announcementHeader"><span style="color:#ff9627">Registration closes March 8th.  -  Sign up now!</span>   </div>
+        <div id="announcementHeader">
+            <span style="color:#ff9627">Registration closes March 8th.  -  <g:link controller="home" action="register">Sign up now!</g:link></span>   <span style="color:white; margin-left: 10px; padding-left: 10px; border-left: 1px solid gray"><g:link style="text-decoration: none" controller="login" > Login</g:link></span></div>
     </sec:ifNotLoggedIn>
     <sec:ifLoggedIn>
-        <div id="announcementHeader"><span style="color:#ff9627">Registration closes March 8th.  -  Sign up now!</span>   </div>
+        <div id="announcementHeader">
+            <span style="color:#ff9627; margin-left: 10px; padding: 0 10px; border-left: 1px solid gray">Welcome, <sec:username/></span> <g:link style="color:white; font-weight: normal; font-size:13px; text-decoration: none; border-left: 1px solid gray; padding-left: 10px;" controller="user" action="changePassword">Change Password</g:link> <g:link style="margin-left: 10px; padding-left: 10px;border-left: 1px solid gray; color:white; font-weight:normal; font-size:13px;  text-decoration: none" controller="logout" >Logout</g:link> </div>
     </sec:ifLoggedIn>
         <div id="page">
            <div id="spinner" class="spinner" style="display:none;">

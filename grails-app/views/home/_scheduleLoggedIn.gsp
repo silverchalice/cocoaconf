@@ -105,9 +105,9 @@
     <tr class="choice">
         <td align="center" width="100" class="time" >&nbsp;</td>
         <td colspan="3" width="200" class="choice" style="padding-left:80px">
-               <g:checkBox id="session13" name="session13" value="${choice?.session16}" /><span>Attending</span>
-               <g:checkBox id="session14" name="session14" value="${choice?.session17}" /><span>Attending</span>
-               <g:checkBox id="session15" name="session15" value="${choice?.session18}" /><span>Attending</span>
+               <g:checkBox id="session13" name="session16" value="${choice?.session16}" /><span>Attending</span>
+               <g:checkBox id="session14" name="session17" value="${choice?.session17}" /><span>Attending</span>
+               <g:checkBox id="session15" name="session18" value="${choice?.session18}" /><span>Attending</span>
            </td>
     </tr>
   	<tr class="break">
@@ -135,9 +135,9 @@
 	<tr class="choice">
         <td align="center" width="100" class="time" >&nbsp;</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:55px">
-            <g:checkBox id="session16" name="session16" value="${choice?.session19}" /><span>Attending</span>
-            <g:checkBox id="session17" name="session17" value="${choice?.session20}" /><span>Attending</span>
-            <g:checkBox id="session18" name="session18" value="${choice?.session21}" /><span>Attending</span>
+            <g:checkBox id="session16" name="session19" value="${choice?.session19}" /><span>Attending</span>
+            <g:checkBox id="session17" name="session20" value="${choice?.session20}" /><span>Attending</span>
+            <g:checkBox id="session18" name="session21" value="${choice?.session21}" /><span>Attending</span>
         </td>
 	</tr>
     <tr class="slot">
@@ -149,9 +149,9 @@
 	<tr class="choice">
         <td align="center" width="100" class="time" >&nbsp;</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:55px">
-            <g:checkBox id="session19" name="session19" value="${choice?.session22}" /><span>Attending</span>
-            <g:checkBox id="session20" name="session20" value="${choice?.session23}" /><span>Attending</span>
-            <g:checkBox id="session21" name="session21" value="${choice?.session24}" /><span>Attending</span>
+            <g:checkBox id="session19" name="session22" value="${choice?.session22}" /><span>Attending</span>
+            <g:checkBox id="session20" name="session23" value="${choice?.session23}" /><span>Attending</span>
+            <g:checkBox id="session21" name="session24" value="${choice?.session24}" /><span>Attending</span>
         </td>
 	</tr>
     <tr class="break">
@@ -171,9 +171,9 @@
 	<tr class="choice">
         <td align="center" width="100" class="time" >&nbsp;</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:55px">
-            <g:checkBox id="session22" name="session22" value="${choice?.session25}" /><span>Attending</span>
-            <g:checkBox id="session23" name="session23" value="${choice?.session26}" /><span>Attending</span>
-            <g:checkBox id="session24" name="session24" value="${choice?.session27}" /><span>Attending</span>
+            <g:checkBox id="session22" name="session25" value="${choice?.session25}" /><span>Attending</span>
+            <g:checkBox id="session23" name="session26" value="${choice?.session26}" /><span>Attending</span>
+            <g:checkBox id="session24" name="session27" value="${choice?.session27}" /><span>Attending</span>
         </td>
 	</tr>
     <tr class="slot">
@@ -185,9 +185,9 @@
 	<tr class="choice">
         <td align="center" width="100" class="time" >&nbsp;</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:55px">
-            <g:checkBox id="session25" name="session25" value="${choice?.session28}" /><span>Attending</span>
-            <g:checkBox id="session26" name="session26" value="${choice?.session29}" /><span>Attending</span>
-            <g:checkBox id="session27" name="session27" value="${choice?.session30}" /><span>Attending</span>
+            <g:checkBox id="session25" name="session28" value="${choice?.session28}" /><span>Attending</span>
+            <g:checkBox id="session26" name="session29" value="${choice?.session29}" /><span>Attending</span>
+            <g:checkBox id="session27" name="session30" value="${choice?.session30}" /><span>Attending</span>
         </td>
 	</tr>
     <tr class="break">

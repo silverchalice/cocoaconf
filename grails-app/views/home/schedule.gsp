@@ -70,13 +70,13 @@
 
         tr.break td {
             background: #edecec;
-            border:1px solid lightgray;
+            border:1px solid #edecec;
             padding: 4px 0 0 0;
         }
 
         tr.break th {
             background: white;
-            border:1px solid lightgray;
+            border:1px solid #edecec;
             padding: 4px 0 0 0;
         }
 
@@ -94,8 +94,8 @@
         }
 
         td.time {
-            border:1px solid lightgray;
-            background-color: #d3d3d3;
+            border:1px solid #edecec;
+            background-color: #edecec;
         }
 
         .sessionSpeaker {
@@ -142,7 +142,7 @@
         <h1 style="float:left">Chicago, 2012: Schedule</h1>
 
         <sec:ifLoggedIn>
-            <g:render template="scheduleLoggedIn"/>
+            <g:render template="scheduleLoggedIn" model="['choice': choice]"/>
         </sec:ifLoggedIn>
         <sec:ifNotLoggedIn>
             <g:render template="schedule"/>
