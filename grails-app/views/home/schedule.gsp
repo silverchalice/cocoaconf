@@ -75,7 +75,7 @@
         }
 
         td.choice span {
-            padding: 0 20px;
+            padding-right: 59px;
         }
 
         th {
