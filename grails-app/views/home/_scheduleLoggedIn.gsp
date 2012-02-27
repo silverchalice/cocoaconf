@@ -26,9 +26,9 @@
 	<tr class="choice">
         <td align="center" width="100" class="time" >&nbsp;</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:80px; padding-right:0">
-            <g:checkBox id="session01" name="session01" value="${choice?.session01}" /><span>Attending</span>
-            <g:checkBox id="session02" name="session02" value="${choice?.session02}" /><span>Attending</span>
-            <g:checkBox id="session03" name="session03" value="${choice?.session03}" /><span>Attending</span>
+            <input type="checkbox" name="session01" ${choice?.session01 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session02" ${choice?.session02 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session03" ${choice?.session03 ? "checked='checked'" : ''} /><span>Attending</span>
         </td>
 	</tr>
 	<tr class="slot">
@@ -41,9 +41,9 @@
 	<tr class="choice">
         <td align="center" width="100" class="time" >&nbsp;</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:80px">
-            <g:checkBox id="session04" name="session04" value="${choice?.session04}" /><span>Attending</span>
-            <g:checkBox id="session05" name="session05" value="${choice?.session05}" /><span>Attending</span>
-            <g:checkBox id="session06" name="session06" value="${choice?.session06}" /><span>Attending</span>
+            <input type="checkbox" name="session04" ${choice?.session04 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session05" ${choice?.session05 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session06" ${choice?.session06 ? "checked='checked'" : ''} /><span>Attending</span>
         </td>
 	</tr>
     <tr class="slot">
@@ -55,9 +55,9 @@
 	<tr class="choice">
         <td align="center" width="100" class="time" >&nbsp;</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:80px">
-            <g:checkBox id="session07" name="session07" value="${choice?.session07}" /><span>Attending</span>
-            <g:checkBox id="session08" name="session08" value="${choice?.session08}" /><span>Attending</span>
-            <g:checkBox id="session09" name="session09" value="${choice?.session09}" /><span>Attending</span>
+            <input type="checkbox" name="session07" ${choice?.session07 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session08" ${choice?.session08 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session09" ${choice?.session09 ? "checked='checked'" : ''} /><span>Attending</span>
         </td>
 	</tr>
     <tr class="break">
@@ -77,9 +77,9 @@
 	<tr class="choice">
         <td align="center" width="100" class="time" >&nbsp;</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:80px">
-            <g:checkBox id="session10" name="session10" value="${choice?.session10}" /><span>Attending</span>
-            <g:checkBox id="session11" name="session11" value="${choice?.session11}" /><span>Attending</span>
-            <g:checkBox id="session12" name="session12" value="${choice?.session12}" /><span>Attending</span>
+            <input type="checkbox" name="session10" ${choice?.session10 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session11" ${choice?.session11 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session12" ${choice?.session12 ? "checked='checked'" : ''} /><span>Attending</span>
         </td>
 	</tr>
     <tr class="slot">
@@ -91,9 +91,9 @@
 	<tr class="choice">
         <td align="center" width="100" class="time" >&nbsp;</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:80px">
-            <g:checkBox id="session13" name="session13" value="${choice?.session13}" /><span>Attending</span>
-            <g:checkBox id="session14" name="session14" value="${choice?.session14}" /><span>Attending</span>
-            <g:checkBox id="session15" name="session15" value="${choice?.session15}" /><span>Attending</span>
+            <input type="checkbox" name="session13" ${choice?.session13 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session14" ${choice?.session14 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session15" ${choice?.session15 ? "checked='checked'" : ''} /><span>Attending</span>
         </td>
 	</tr>
     <tr class="slot">
@@ -105,9 +105,9 @@
     <tr class="choice">
         <td align="center" width="100" class="time" >&nbsp;</td>
         <td colspan="3" width="200" class="choice" style="padding-left:80px">
-               <g:checkBox id="session13" name="session16" value="${choice?.session16}" /><span>Attending</span>
-               <g:checkBox id="session14" name="session17" value="${choice?.session17}" /><span>Attending</span>
-               <g:checkBox id="session15" name="session18" value="${choice?.session18}" /><span>Attending</span>
+               <input type="checkbox" name="session16" ${choice?.session16 ? "checked='checked'" : ''} /><span>Attending</span>
+               <input type="checkbox" name="session17" ${choice?.session17 ? "checked='checked'" : ''} /><span>Attending</span>
+               <input type="checkbox" name="session18" ${choice?.session18 ? "checked='checked'" : ''} /><span>Attending</span>
            </td>
     </tr>
   	<tr class="break">
@@ -135,9 +135,9 @@
 	<tr class="choice">
         <td align="center" width="100" class="time" >&nbsp;</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:55px">
-            <g:checkBox id="session16" name="session19" value="${choice?.session19}" /><span>Attending</span>
-            <g:checkBox id="session17" name="session20" value="${choice?.session20}" /><span>Attending</span>
-            <g:checkBox id="session18" name="session21" value="${choice?.session21}" /><span>Attending</span>
+            <input type="checkbox" name="session19" ${choice?.session19 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session20" ${choice?.session20 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session21" ${choice?.session21 ? "checked='checked'" : ''} /><span>Attending</span>
         </td>
 	</tr>
     <tr class="slot">
@@ -149,9 +149,9 @@
 	<tr class="choice">
         <td align="center" width="100" class="time" >&nbsp;</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:55px">
-            <g:checkBox id="session19" name="session22" value="${choice?.session22}" /><span>Attending</span>
-            <g:checkBox id="session20" name="session23" value="${choice?.session23}" /><span>Attending</span>
-            <g:checkBox id="session21" name="session24" value="${choice?.session24}" /><span>Attending</span>
+            <input type="checkbox" name="session22" ${choice?.session22 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session23" ${choice?.session23 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session24" ${choice?.session24 ? "checked='checked'" : ''} /><span>Attending</span>
         </td>
 	</tr>
     <tr class="break">
@@ -171,9 +171,9 @@
 	<tr class="choice">
         <td align="center" width="100" class="time" >&nbsp;</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:55px">
-            <g:checkBox id="session22" name="session25" value="${choice?.session25}" /><span>Attending</span>
-            <g:checkBox id="session23" name="session26" value="${choice?.session26}" /><span>Attending</span>
-            <g:checkBox id="session24" name="session27" value="${choice?.session27}" /><span>Attending</span>
+            <input type="checkbox" name="session25" ${choice?.session25 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session26" ${choice?.session26 ? "checked='checked'" : ''} /><span>Attending</span>
+            <input type="checkbox" name="session27" ${choice?.session27 ? "checked='checked'" : ''} /><span>Attending</span>
         </td>
 	</tr>
     <tr class="slot">
@@ -185,9 +185,9 @@
 	<tr class="choice">
         <td align="center" width="100" class="time" >&nbsp;</td>
 		<td colspan="3" width="200" class="choice" style="padding-left:55px">
-            <g:checkBox id="session25" name="session28" value="${choice?.session28}" /><span>Attending</span>
-            <g:checkBox id="session26" name="session29" value="${choice?.session29}" /><span>Attending</span>
-            <g:checkBox id="session27" name="session30" value="${choice?.session30}" /><span>Attending</span>
+            <input type="checkbox"  name="session28" ${choice?.session28 ? "checked='checked'" : ''} /><span>Attending </span>
+            <input type="checkbox"  name="session29" ${choice?.session29 ? "checked='checked'" : ''} /><span>Attending </span>
+            <input type="checkbox"  name="session30" ${choice?.session30 ? "checked='checked'" : ''} /><span>Attending </span>
         </td>
 	</tr>
     <tr class="break">

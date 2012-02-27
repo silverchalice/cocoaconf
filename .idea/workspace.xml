@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b7d267dc-4b70-49a8-8f44-005f90c7f2eb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/HomeController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/HomeController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/UserController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/UserController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/home/_scheduleLoggedIn.gsp" afterPath="$PROJECT_DIR$/grails-app/views/home/_scheduleLoggedIn.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/home/schedule.gsp" afterPath="$PROJECT_DIR$/grails-app/views/home/schedule.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/announcement.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/announcement.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/public.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/public.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/post/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/post/list.gsp" />
     </list>
     <ignored path="cocoaconf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -122,16 +119,16 @@
       <file leaf-file-name="SessionController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/SessionController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="6" selection-start="92" selection-end="92" vertical-scroll-proportion="70.08696">
+            <state line="4" column="6" selection-start="92" selection-end="92" vertical-scroll-proportion="65.521736">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schedule.gsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="schedule.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/home/schedule.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="163" selection-start="1458" selection-end="1458" vertical-scroll-proportion="0.31020942">
+            <state line="65" column="165" selection-start="1401" selection-end="1401" vertical-scroll-proportion="10.027027">
               <folding />
             </state>
           </provider>
@@ -149,16 +146,16 @@
       <file leaf-file-name="HomeController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/HomeController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="8" selection-start="323" selection-end="323" vertical-scroll-proportion="2.826087">
+            <state line="37" column="43" selection-start="892" selection-end="892" vertical-scroll-proportion="-25.695652">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="UserController.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/UserController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="13" selection-start="1001" selection-end="1001" vertical-scroll-proportion="-8.869565">
+            <state line="36" column="50" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.2767365">
               <folding />
             </state>
           </provider>
@@ -167,9 +164,9 @@
       <file leaf-file-name="_scheduleLoggedIn.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/home/_scheduleLoggedIn.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="191" column="168" selection-start="17359" selection-end="17359" vertical-scroll-proportion="-14.875">
+            <state line="30" column="35" selection-start="2481" selection-end="2481" vertical-scroll-proportion="-4.9514565">
               <folding>
-                <marker date="1330304408000" expanded="true" signature="17657:17672" placeholder="{...}" />
+                <marker date="1330317066000" expanded="true" signature="18113:18128" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -197,7 +194,6 @@
         <option value="$PROJECT_DIR$/web-app/js/script.js" />
         <option value="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/blogLink/roundup.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/HomeController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/home/about.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/home/announcement.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/home/register.gsp" />
@@ -208,8 +204,9 @@
         <option value="$PROJECT_DIR$/grails-app/views/layouts/public.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/home/schedule.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/post/list.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/UserController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/home/_scheduleLoggedIn.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/HomeController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/UserController.groovy" />
       </list>
     </option>
   </component>
@@ -225,9 +222,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="204" />
-    <option name="y" value="34" />
+    <option name="y" value="22" />
     <option name="width" value="1670" />
-    <option name="height" value="1006" />
+    <option name="height" value="1111" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -609,7 +606,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="204" y="34" width="1670" height="1006" extended-state="0" />
+    <frame x="204" y="22" width="1670" height="1111" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -621,7 +618,7 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3201804" sideWeight="0.6771605" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2308642" sideWeight="0.67981964" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2308642" sideWeight="0.7106855" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.67496884" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22886133" sideWeight="0.9235294" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32801595" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -632,7 +629,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17479675" sideWeight="0.6719841" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3201804" sideWeight="0.31851852" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2893145" sideWeight="0.31851852" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2881526" sideWeight="0.81497324" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -817,35 +814,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/HomeController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="8" selection-start="323" selection-end="323" vertical-scroll-proportion="2.826087">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/SessionChoiceController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="-1.4782609">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/SessionController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="92" selection-end="92" vertical-scroll-proportion="70.08696">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/cocoaconf/SessionChoice.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="20" selection-start="738" selection-end="738" vertical-scroll-proportion="-10.577778">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/public.gsp">
@@ -866,22 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/UserController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="13" selection-start="1001" selection-end="1001" vertical-scroll-proportion="-8.869565">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/home/_scheduleLoggedIn.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="168" selection-start="17359" selection-end="17359" vertical-scroll-proportion="-14.875">
-          <folding>
-            <marker date="1330304408000" expanded="true" signature="17657:17672" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-app/images/cc-logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -889,7 +846,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/home/schedule.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="163" selection-start="1458" selection-end="1458" vertical-scroll-proportion="0.31020942">
+        <state line="65" column="165" selection-start="1401" selection-end="1401" vertical-scroll-proportion="10.027027">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/cocoaconf/SessionChoice.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="20" selection-start="738" selection-end="738" vertical-scroll-proportion="-10.577778">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/SessionController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="6" selection-start="92" selection-end="92" vertical-scroll-proportion="65.521736">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/home/_scheduleLoggedIn.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="35" selection-start="2481" selection-end="2481" vertical-scroll-proportion="-4.9514565">
+          <folding>
+            <marker date="1330317066000" expanded="true" signature="18113:18128" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/HomeController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="43" selection-start="892" selection-end="892" vertical-scroll-proportion="-25.695652">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/UserController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="50" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.2767365">
           <folding />
         </state>
       </provider>

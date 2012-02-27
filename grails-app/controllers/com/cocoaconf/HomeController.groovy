@@ -23,19 +23,19 @@ class HomeController {
         def choice = null
         def slides = null
 
-/*        if(springSecurityService.isLoggedIn()) {
+        if(springSecurityService.isLoggedIn()) {
             def user = User.get(springSecurityService.principal.id)
             choice = user.choice
 
-            File scheduleSlideDownload = new File(config.slideDirectory + "cocoaconf_columbus_2011_all_slides.zip")
-            if(scheduleSlideDownload.exists()) {
-                slides = "cocoaconf_columbus_2011_all_slides.zip"
-            }
+            //File scheduleSlideDownload = new File(config.slideDirectory + "cocoaconf_columbus_2011_all_slides.zip")
+            //if(scheduleSlideDownload.exists()) {
+            //    slides = "cocoaconf_columbus_2011_all_slides.zip"
+            //}
         } else{
            println "no user"
        }
-*/
-       [choice: choice, slides:slides]
+
+       [choice: choice, /* slides:slides */]
     }
 
     def schedule_raleigh = {

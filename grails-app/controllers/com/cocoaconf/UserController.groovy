@@ -36,6 +36,39 @@ class UserController {
         else {
             println "saving user choice..."
             user.choice.properties = params
+
+            user.choice.session01 = params.session01 ? true : false
+            user.choice.session02 = params.session02 ? true : false
+            user.choice.session03 = params.session03 ? true : false
+            user.choice.session04 = params.session04 ? true : false
+            user.choice.session05 = params.session05 ? true : false
+            user.choice.session06 = params.session06 ? true : false
+            user.choice.session07 = params.session07 ? true : false
+            user.choice.session08 = params.session08 ? true : false
+            user.choice.session09 = params.session09 ? true : false
+            user.choice.session10 = params.session10 ? true : false
+            user.choice.session11 = params.session11 ? true : false
+            user.choice.session12 = params.session12 ? true : false
+            user.choice.session13 = params.session13 ? true : false
+            user.choice.session14 = params.session14 ? true : false
+            user.choice.session15 = params.session15 ? true : false
+            user.choice.session16 = params.session16 ? true : false
+            user.choice.session17 = params.session17 ? true : false
+            user.choice.session18 = params.session18 ? true : false
+            user.choice.session19 = params.session19 ? true : false
+            user.choice.session20 = params.session20 ? true : false
+            user.choice.session21 = params.session21 ? true : false
+            user.choice.session22 = params.session22 ? true : false
+            user.choice.session23 = params.session23 ? true : false
+            user.choice.session24 = params.session24 ? true : false
+            user.choice.session25 = params.session25 ? true : false
+            user.choice.session26 = params.session26 ? true : false
+            user.choice.session27 = params.session27 ? true : false
+            user.choice.session28 = params.session28 ? true : false
+            user.choice.session29 = params.session29 ? true : false
+            user.choice.session30 = params.session30 ? true : false
+
+
         }
         if (!user.save()){
             user.errors.allErrors.each{println it}
