@@ -86,7 +86,7 @@
 	</tr>
     <tr class="slot">
         <td align="center" class="time" >3:45-4:45</td>
-        <td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="67">XCode Grab Bag</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="9">Dave Koziol</g:link></span></td>
+        <td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="80">iTest my Code: OCDSpec and ocslim for the iPhone</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="37">Eric Meyer</g:link></span></td>
         <td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="70">Visualize Your Data with Core Animation</g:link></span><span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="32">Brian Coyner</g:link></span></td>
         <td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="62">Walking the Tightrope: Managing apps in and out of the Mac App Store </g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="27">Boisy Pitre</g:link></span></td>
     </tr>
@@ -165,7 +165,7 @@
         <td align="center" class="time" >2:45-3:45</td>
         <td align="center" class="track1"><span class="sessionTitle"><g:link controller="session" action="details" id="64">Styling and Composing your UIViews with CALayers on iOS</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="31">Heath Borders</g:link></span></td>
         <td align="center" class="track2"><span class="sessionTitle"><g:link controller="session" action="details" id="56">Storyboards</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="1">Daniel Steinberg</g:link></span></td>
-        <td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="80">iTest my Code: OCDSpec and ocslim for the iPhone</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="37">Eric Meyer</g:link></span></td>
+        <td align="center" class="track3"><span class="sessionTitle"><g:link controller="session" action="details" id="67">XCode Grab Bag</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="9">Dave Koziol</g:link></span></td>
     </tr>
 	<tr class="choice">
         <td align="center" width="75" class="time" >Attending:</td>

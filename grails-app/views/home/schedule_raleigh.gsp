@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Cocoaconf | iOS/OS X Developer Conference | Raleigh, North Carolina | December 2 & 3</title>
+        <title>CocoaConf | iOS/OS X Developer Conference | Raleigh, North Carolina | December 2 & 3</title>
         <meta name="layout" content="public"/>
         <meta name="tab" content="schedule"/>
         <script src="${resource(dir: 'js', file: 'jquery-1.6.2.min.js')}" type="text/javascript"></script>
