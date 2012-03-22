@@ -132,6 +132,57 @@
     </head>
     <body>
 
+		        <h1 style="color:#1da0d1;">Chicago 2012 Wrap Up!</h1>
+		        <div id="gallery3">
+
+		            <div id="slides3">
+
+		                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago1.JPG')}" width="420" height="272" alt="side" /></div>
+		                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago2.JPG')}" width="420" height="272" alt="side" /></div>
+		                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago3.JPG')}" width="420" height="272" alt="side" /></div>
+		                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago4.JPG')}" width="420" height="272" alt="side" /></div>
+		                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago5.JPG')}" width="420" height="272" alt="side" /></div>
+		                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago6.JPG')}" width="420" height="272" alt="side" /></div>
+		                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago7.JPG')}" width="420" height="272" alt="side" /></div>
+		                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago9.JPG')}" width="420" height="272" alt="side" /></div>
+		                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago10.JPG')}" width="420" height="272" alt="side" /></div>
+		                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago11.JPG')}" width="420" height="272" alt="side" /></div>
+		                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago12.JPG')}" width="420" height="272" alt="side" /></div>
+		                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago13.JPG')}" width="420" height="272" alt="side" /></div>
+		                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago15.JPG')}" width="420" height="272" alt="side" /></div>
+		            </div>
+
+		            <div id="menu3">
+		                <ul>
+		                    <li class="fbar">&nbsp;</li>
+		                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_macbook.png')}" alt="thumbnail" /></a></li>
+		                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_iphone.png')}" alt="thumbnail" /></a></li>
+		                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_imac.png')}" alt="thumbnail" /></a></li>
+		                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+		                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+		                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+		                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+		                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+		                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+		                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+		                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+		                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+		                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+		                </ul>
+		            </div>
+		        </div>
+		        <p>We recently held our third and, arguably, best CocoaConf event in the Chicago area.  We brought together 100 attendees and 17 speakers all with an intense desire to learn and grow as developers and as a community.  The energy was amazing.</p>
+		        <p>If you were there, thank you!  You helped make this event awesome.  If you weren't there, bummer.  Maybe next time.  :-)  For now, you can at least read what some of our attendees and speakers had to say about it.</p>
+
+		        <hr /><br />
+		        <h2>What people are saying about CocoaConf-Chicago</h2><br />
+		        <g:each in="${chicagoLinks}" var="link">
+		            <div class="blogLink">
+		                <h4>${link.title}</h4>
+		                <p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
+		            </div>
+		        </g:each>
+		<br/><br/>
         <h1 style="color:#1da0d1;">Raleigh 2011 Wrap Up!</h1>
         <div id="gallery2">
 

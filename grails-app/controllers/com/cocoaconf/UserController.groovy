@@ -211,6 +211,13 @@ class UserController {
         render "There are now ${User.count()} users!"
     }
     
+    def resetTaha = {
+	    def user = User.get(192)
+	    user.password = springSecurityService.encodePassword("cocoaconf")
+	    user.save()
+	    render "Done!"
+    }
+
     def changePassword = {  
     }
     

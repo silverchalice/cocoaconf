@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Cocoaconf | iOS/OS X Developer Conference | Chicago, Illinois | March 16 & 17</title>
+        <title>CocoaConf | iOS/OS X Developer Conference | Chicago, Illinois | March 16 & 17</title>
         <meta name="layout" content="public"/>
         <meta name="tab" content="schedule"/>
 
