@@ -50,6 +50,13 @@
                             
                         </tr>
                     
+                        <tr class="prop">
+                            <td valign="top" class="name">Priority</td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: blogLinkInstance, field: "priority")}</td>
+                            
+                        </tr>
+                    
                     </tbody>
                 </table>
             </div>

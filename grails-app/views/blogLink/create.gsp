@@ -54,6 +54,15 @@
                                     <g:textField name="url" value="${blogLinkInstance?.url}" />
                                 </td>
                             </tr>
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="priority">Priority</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: blogLinkInstance, field: 'priority', 'errors')}">
+                                    <g:textField name="priority" value="${blogLinkInstance?.priority}" />
+                                </td>
+                            </tr>
+
 							<tr class="prop">
 							    <td valign="top" class="name">
 							        <label for="event"><g:message code="blogLink.event.label" default="Event" /></label>
