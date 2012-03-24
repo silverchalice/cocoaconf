@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="layout" content="public" />
+        <meta name="layout" content="announcement" />
         <title>CocoaConf Columbus, 2011 Roundup</title>
         <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
 
@@ -59,7 +59,7 @@
                 width:420px;
                 overflow:hidden;
                 margin: 5px 0 10px 20px;
-                float:right;
+                clear:both;
             }
 
             #slides, #slides2{
@@ -130,116 +130,144 @@
         </style>
     </head>
     <body>
+        <div style="width:480px; float:left; padding-left:20px">
+            <h1 style="color:#1da0d1;">Chicago 2012 Wrap Up!</h1>
+            <div id="gallery">
 
-        <h1 style="color:#1da0d1;">Chicago 2012 Wrap Up!</h1>
-        <div id="gallery">
+                <div id="slides">
 
-            <div id="slides">
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago1.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago2.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago3.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago4.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago5.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago6.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago7.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago9.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago10.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago11.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago12.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago13.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago15.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago16.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago17.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago18.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago19.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago20.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago21.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago22.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago23.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago24.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago25.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago26.JPG')}" width="420" height="272" alt="side" /></div>
+                    <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago27.JPG')}" width="420" height="272" alt="side" /></div>
+                </div>
 
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago1.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago2.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago3.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago4.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago5.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago6.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago7.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago9.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago10.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago11.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago12.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago13.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago15.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago16.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago17.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago18.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago19.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago20.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago21.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago22.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago23.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago24.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago25.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago26.JPG')}" width="420" height="272" alt="side" /></div>
-                <div class="slide"><img src="${resource(dir:'images/slideshow/slides', file:'chicago27.JPG')}" width="420" height="272" alt="side" /></div>
+                <div id="menu">
+                    <ul>
+                        <li class="fbar">&nbsp;</li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                        <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
+                    </ul>
+                </div>
             </div>
+            <p>We recently held our third and, arguably, best CocoaConf event in the Chicago area.  We brought together 100 attendees and 17 speakers all with an intense desire to learn and grow as developers and as a community.  The energy was amazing.</p>
+            <p>If you were there, thank you!  You helped make this event awesome.  If you weren't there, bummer.  Maybe next time.  :-)  For now, you can at least read what some of our attendees and speakers had to say about it.</p>
 
-            <div id="menu">
-                <ul>
-                    <li class="fbar">&nbsp;</li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                    <li class="menuItem"><a href=""><img src="${resource(dir:'images/slideshow/sample_slides', file:'thumb_about.png')}" alt="thumbnail" /></a></li>
-                </ul>
-            </div>
+            <hr /><br />
+            <h2>What people are saying about CocoaConf-Chicago</h2><br />
+            <g:each in="${chicagoLinks}" var="link">
+                <div class="blogLink">
+                    <h4>${link.title}</h4>
+                    <p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
+                </div>
+            </g:each>
+            <br/><br/>
+            <h1 style="color:#1da0d1;">Raleigh 2011 Wrap Up!</h1>
+            <img src="${resource(dir:'images/slideshow/slides', file:'raleigh1.JPG')}" width="420" height="272" alt="side" style="clear: both; margin-right:15px" />
+
+            <p>The second CocoaConf was held in Raleigh, North Carolina on December 2nd and 3rd. Over seventy iPhone, iPad, and Mac developers met up for two days packed with in-depth technical content. With fourteen excellent speakers and three tracks, it was often difficult to decide what to attend, but the tough choices paid off with great ideas, new insights and renewed motivation.</p>
+            <p>Though the turnout was a bit smaller than Columbus in August, what the Raleigh crowd lacked in size, they more than made up in energy!  Attendees were attentive, engaged, and involved. The enthusiasm was contagious!  Though, some say that the lack of wifi helped people to focus more on the presentations, we like to think it was the stunning performances of our speakers.  :-)  </p>
+            <p>We repeated the popular &#8220;We Made an App For That&#8221; session and added a keynote by hometown hero, Andy Hunt.  We had a few repeat sessions from our last event, including the most popular session in Columbus, Bill Dudney's talk on Core Graphics.  We also had several new speakers and presentations.  The most popular talk in Raleigh was a new one by Daniel Steinberg, on developing with Storyboards.  The runner-up was Accelerate by Jeff Biggus.</p>
+            <p>The attendee response at the event was great.  They made us feel so welcome that we are already planning a return trip next year.  Let's see what some of these attendees have to say about CocoaConf-Raleigh:</p>
+
+            <hr /><br />
+            <h2>What people are saying about CocoaConf-Raleigh</h2><br />
+            <g:each in="${raleighLinks}" var="link">
+                <div class="blogLink">
+                    <h4>${link.title}</h4>
+                    <p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
+                </div>
+            </g:each>
+    <br/><br/>
+            <h1 style="color:#1da0d1;">Columbus 2011 Wrap Up!</h1>
+            <img src="${resource(dir:'images/slideshow/slides', file:'slide2.png')}" width="420" height="272" alt="side" style="clear: both; margin-right:15px" />
+            <p>The first CocoaConf was held in Dublin, Ohio on August 12th and 13th. Ninety iPhone, iPad, and Mac developers gathered for two exciting days of training, networking, and good times. With three tracks and sessions ranging from beginner to advanced, there was something for everyone to enjoy and learn from.  During the meals and extended breaks, it was great to see old friends catching up and new friends getting acquainted.  Then when the sessions began, the hallways were empty and silent, save for the occasional outburst of laughter or applause coming from the session rooms.</p>
+
+            <p>According to attendee feedback, the meal times, the speaker panel, Daniel Steinberg's keynote address, and the exclusive &#8220;We Made an App For That&#8221; session were all big hits.  But the honor of Best Session At CocoaConf went to Bill Dudney's talk on Drawing With Core Graphics.  Way to go, Bill!</p>
+            <p>Before, during, and since the conference, speakers and attendees have been blogging about CocoaConf.  So rather than go on and on about how great it was, we'll just let them tell you.</p>
+
+            <hr /><br />
+            <h2>What people said about CocoaConf - Columbus</h2><br />
+            <g:each in="${columbusLinks}" var="link">
+                <div class="blogLink">
+                    <h4>${link.title}</h4>
+                    <p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
+                </div>
+            </g:each>
+
         </div>
-        <p>We recently held our third and, arguably, best CocoaConf event in the Chicago area.  We brought together 100 attendees and 17 speakers all with an intense desire to learn and grow as developers and as a community.  The energy was amazing.</p>
-        <p>If you were there, thank you!  You helped make this event awesome.  If you weren't there, bummer.  Maybe next time.  :-)  For now, you can at least read what some of our attendees and speakers had to say about it.</p>
 
-        <hr /><br />
-        <h2>What people are saying about CocoaConf-Chicago</h2><br />
-        <g:each in="${chicagoLinks}" var="link">
-            <div class="blogLink">
-                <h4>${link.title}</h4>
-                <p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
+        <div id="featuredSpeakers">
+            <h2 style="color:#1da0d1;">Featured Speakers</h2>
+            <div class="featured">
+               <img src="${resource(dir:'images',file:'stein.png')}"/>
+               <p><strong>Daniel Steinberg</strong> - Author of <a href="http://pragprog.com/titles/sfipad/ipad-programming">iPad Programming</a> and <a href="http://pragprog.com/titles/dscpq/cocoa-programming">Cocoa Programming:
+               A Quick-Start Guide for Developers</a> - <a href="http://dimsumthinking.com">http://dimsumthinking.com</a></p>
+           </div>
+            <div class="featured">
+               <img src="${resource(dir:'images',file:'dudney.png')}"/>
+               <p><strong>Bill Dudney</strong> - Author of Pragmatic Programmer’s books <a href="http://pragprog.com/titles/adios">iPhone SDK Development</a> and <a href="http://pragprog.com/titles/bdcora/core-animation-for-mac-os-x-and-the-iphone">Core Animation</a>.
+                - <a href="http://bill.dudney.net">http://bill.dudney.net</a></p>
+
+           </div>
+            <div class="featured">
+                <img src="${resource(dir:'images',file:'adamson.png')}"/>
+                 <p><strong>Chris Adamson</strong> - Author of <a href="http://www.amazon.com/Core-Audio-Kevin-Avila/dp/0321636848">Core Audio</a>, and <a href="http://pragprog.com/titles/adios">iPhone SDK Development</a>
+                - <a href="http://www.subfurther.com/blog">http://www.subfurther.com/blog</a></p>
+
             </div>
-        </g:each>
-		<br/><br/>
-        <h1 style="color:#1da0d1;">Raleigh 2011 Wrap Up!</h1>
-        <img src="${resource(dir:'images/slideshow/slides', file:'raleigh1.JPG')}" width="420" height="272" alt="side" style="float: left; margin-right:15px" />
+            <div class="featured">
+                <img src="${resource(dir:'images',file:'biggus.png')}"/>
+                <p><strong>Jeff Biggus</strong> - Founder of HyperJeff, Inc. and curator of the <a href="http://hyperjeff.net">HyperJeff Network</a>.</p>
 
-        <p>The second CocoaConf was held in Raleigh, North Carolina on December 2nd and 3rd. Over seventy iPhone, iPad, and Mac developers met up for two days packed with in-depth technical content. With fourteen excellent speakers and three tracks, it was often difficult to decide what to attend, but the tough choices paid off with great ideas, new insights and renewed motivation.</p>
-        <p>Though the turnout was a bit smaller than Columbus in August, what the Raleigh crowd lacked in size, they more than made up in energy!  Attendees were attentive, engaged, and involved. The enthusiasm was contagious!  Though, some say that the lack of wifi helped people to focus more on the presentations, we like to think it was the stunning performances of our speakers.  :-)  </p>
-        <p>We repeated the popular &#8220;We Made an App For That&#8221; session and added a keynote by hometown hero, Andy Hunt.  We had a few repeat sessions from our last event, including the most popular session in Columbus, Bill Dudney's talk on Core Graphics.  We also had several new speakers and presentations.  The most popular talk in Raleigh was a new one by Daniel Steinberg, on developing with Storyboards.  The runner-up was Accelerate by Jeff Biggus.</p>
-        <p>The attendee response at the event was great.  They made us feel so welcome that we are already planning a return trip next year.  Let's see what some of these attendees have to say about CocoaConf-Raleigh:</p>
-
-        <hr /><br />
-        <h2>What people are saying about CocoaConf-Raleigh</h2><br />
-        <g:each in="${raleighLinks}" var="link">
-            <div class="blogLink">
-                <h4>${link.title}</h4>
-                <p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
             </div>
-        </g:each>
-<br/><br/>
-        <h1 style="color:#1da0d1;">Columbus 2011 Wrap Up!</h1>
-        <img src="${resource(dir:'images/slideshow/slides', file:'slide2.png')}" width="420" height="272" alt="side" style="float: left; margin-right:15px" />
-        <p>The first CocoaConf was held in Dublin, Ohio on August 12th and 13th. Ninety iPhone, iPad, and Mac developers gathered for two exciting days of training, networking, and good times. With three tracks and sessions ranging from beginner to advanced, there was something for everyone to enjoy and learn from.  During the meals and extended breaks, it was great to see old friends catching up and new friends getting acquainted.  Then when the sessions began, the hallways were empty and silent, save for the occasional outburst of laughter or applause coming from the session rooms.</p>
-
-        <p>According to attendee feedback, the meal times, the speaker panel, Daniel Steinberg's keynote address, and the exclusive &#8220;We Made an App For That&#8221; session were all big hits.  But the honor of Best Session At CocoaConf went to Bill Dudney's talk on Drawing With Core Graphics.  Way to go, Bill!</p>
-        <p>Before, during, and since the conference, speakers and attendees have been blogging about CocoaConf.  So rather than go on and on about how great it was, we'll just let them tell you.</p>
-
-        <hr /><br />
-        <h2>What people said about CocoaConf - Columbus</h2><br />
-        <g:each in="${columbusLinks}" var="link">
-            <div class="blogLink">
-                <h4>${link.title}</h4>
-                <p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
-            </div>
-        </g:each>
+         </div>
 
 
     </body>

@@ -23,14 +23,11 @@
         </script>
     </head>
     <body  id="announcement">
-    <sec:ifNotLoggedIn>
+
         <div id="announcementHeader">
-            <span style="color:#ff9627">Registration closes March 8th.  -  <g:link controller="home" action="register">Sign up now!</g:link></span>   <span style="color:white; margin-left: 10px; padding-left: 10px; border-left: 1px solid gray"><g:link style="text-decoration: none" controller="login" > Login</g:link></span></div>
-    </sec:ifNotLoggedIn>
-    <sec:ifLoggedIn>
-        <div id="announcementHeader">
-            <span style="color:#ff9627; margin-left: 10px; padding: 0 10px; border-left: 1px solid gray">Welcome, <sec:username/></span> <g:link style="color:white; font-weight: normal; font-size:13px; text-decoration: none; border-left: 1px solid gray; padding-left: 10px;" controller="user" action="changePassword">Change Password</g:link> <g:link style="margin-left: 10px; padding-left: 10px;border-left: 1px solid gray; color:white; font-weight:normal; font-size:13px;  text-decoration: none" controller="logout" >Logout</g:link> </div>
-    </sec:ifLoggedIn>
+            <span style="color:#ff9627">Coming to the Washington DC area June 28 - 30, 2012</span>
+        </div>
+
         <div id="page">
            <div id="spinner" class="spinner" style="display:none;">
                 <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
@@ -38,7 +35,7 @@
            <div id="logo"><a href="${request.contextPath}/"><img src="${resource(dir:'images',file:'cc-logo.png')}" style="margin-bottom:20px" alt="Simply Cocoa" border="0" /></a>
            </div>
            <div id="nav">
-               <g:link class="${pageProperty(name:'meta.tab') == 'home' ? 'current' : ''}" controller="home" action="index">Home</g:link>
+               <g:link class="${pageProperty(name:'meta.tab') == 'home' ? 'current' : ''}" uri="/">Home</g:link>
                <g:link class="${pageProperty(name:'meta.tab') == 'blog' ? 'current' : ''}" controller="post" action="list" style="background-position: -100px 0;">Blog</g:link>
                <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}" controller="speaker" action="speakers" style="background-position: -200px 0;">Speakers</g:link>
                <g:link class="${pageProperty(name:'meta.tab') == 'schedule' ? 'current' : ''}" controller="home" action="schedule" style="background-position: -300px 0;">Schedule</g:link>
