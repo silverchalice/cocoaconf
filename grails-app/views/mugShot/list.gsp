@@ -1,12 +1,12 @@
 
-<%@ page import="com.cocoaconf.Speaker" %>
+<%@ page import="com.cocoaconf.MugShot" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="public" />
-         <meta name="tab" content="speakers" />
-        <g:set var="entityName" value="${message(code: 'mugShot.label', default: 'Speaker')}" />
-        <title>CocoaConf | Our Speakers</title>
+         <meta name="tab" content="speakers" /> <!-- must changes this... -->
+        <g:set var="entityName" value="${message(code: 'mugShot.label', default: 'MugShot')}" />
+        <title>CocoaConf | Mug Shots</title>
 
 <script type="text/javascript">
 
@@ -59,8 +59,8 @@
 
     </head>
     <body>
-         <h1>Chicago, Illinois 2012: Speakers</h1>
-        <p>CocoaConf speakers include well known trainers, authors, and professional iOS and OS X developers.</p>
+         <h1>Mug Shots</h1>
+        <p>This is some text about how great our mug pictures are.</p>
 
         <div class="list">
             <g:each in="${mugShotInstanceList}" status="i" var="mugShot">
