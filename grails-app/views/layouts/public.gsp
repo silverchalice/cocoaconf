@@ -23,14 +23,10 @@
         </script>
     </head>
     <body id="announcement">
-    <sec:ifNotLoggedIn>
         <div id="announcementHeader">
-            <span style="color:#ff9627">Registration closes March 8th.  -  <g:link controller="home" action="register">Sign up now!</g:link></span>   <span style="color:white; margin-left: 10px; padding-left: 10px; border-left: 1px solid gray"><g:link style="text-decoration: none" controller="login" > Login</g:link></span></div>
-    </sec:ifNotLoggedIn>
-    <sec:ifLoggedIn>
-        <div id="announcementHeader">
-            <span style="color:#ff9627; margin-left: 10px; padding: 0 10px; border-left: 1px solid gray">Welcome, <sec:username/></span> <g:link style="color:white; font-weight: normal; font-size:13px; text-decoration: none; border-left: 1px solid gray; padding-left: 10px;" controller="user" action="changePassword">Change Password</g:link> <g:link style="margin-left: 10px; padding-left: 10px;border-left: 1px solid gray; color:white; font-weight:normal; font-size:13px;  text-decoration: none" controller="logout" >Logout</g:link> </div>
-    </sec:ifLoggedIn>
+            <span style="color:#ff9627">Coming to the Washington DC area June 28 - 30, 2012</span>
+        </div>
+
         <div id="page">
 
            <div id="spinner" class="spinner" style="display:none;">
@@ -42,10 +38,10 @@
                 <g:link class="${pageProperty(name:'meta.tab') == 'home' ? 'current' : ''}" uri="/">Home</g:link>
                 <g:link class="${pageProperty(name:'meta.tab') == 'blog' ? 'current' : ''}" controller="post" action="list" style="background-position: -100px 0;">Blog</g:link>
                 <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}" controller="speaker" action="speakers" style="background-position: -200px 0;">Speakers</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'schedule' ? 'current' : ''}" controller="home" action="schedule" style="background-position: -300px 0;">Schedule</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'sessions' ? 'current' : ''}" controller="session" action="sessions" style="background-position: -300px 0;">Sesssions</g:link>
                 <g:link class="${pageProperty(name:'meta.tab') == 'about' ? 'current' : ''}" controller="home" action="about" style="background-position: -400px 0;">Venue</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}" controller="home" action="partners" style="background-position: -500px 0;">Partners</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'register' ? 'current' : ''}" controller="home" action="register" style="background-position: -600px 0;border-right: 1px solid gray;">Register</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}" controller="home" action="register" style="background-position: -500px 0;">Register</g:link>
+
                 <g:link class="${pageProperty(name:'meta.tab') == 'next' ? 'current' : ''}" controller="home" action="nearYou" style="background-position: -700px 0; width:130px; border-right: 1px solid gray;">[cocoaConf next]</g:link>
 
 

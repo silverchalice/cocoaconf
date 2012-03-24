@@ -178,7 +178,7 @@
             <g:render template="scheduleLoggedIn" model="['choice': choice]"/>
         </sec:ifLoggedIn>
         <sec:ifNotLoggedIn>
-            <g:render template="schedule"/>
+            <g:render template="schedule_chicago"/>
         </sec:ifNotLoggedIn>
 
 
