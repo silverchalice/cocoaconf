@@ -30,6 +30,8 @@
                         
                             <g:sortableColumn property="url" title="${message(code: 'blogLink.url.label', default: 'Url')}" />
                         
+                            <g:sortableColumn property="priority" title="Priority" />
+                        
                         </tr>
                     </thead>
                     <tbody>
@@ -43,6 +45,8 @@
                             <td>${fieldValue(bean: blogLinkInstance, field: "snippet")}</td>
                         
                             <td>${fieldValue(bean: blogLinkInstance, field: "url")}</td>
+                        
+                            <td>${fieldValue(bean: blogLinkInstance, field: "priority")}</td>
                         
                         </tr>
                     </g:each>

@@ -170,7 +170,21 @@ class UserController {
         "90781045   Feb 23, 2012    Scoz            Eduardo         eduardoscoz@gmail.com                   1.0 Conference                                                  71246283    Free Order                  0.0                 0.0             0.0                     Attending       1400 S Michigan Ave             APT 2209                    Chicago             IL          60605       US              Chicago Community!                                          Large           escoz               ",
         "90850007   Feb 23, 2012    Moser           Steve           service@stevemoser.org                  1.0 Conference                                                  71293969    PayPal Completed            500.0               0.0             9.95                    Attending       6425 Cameron Forest LN APT 3C                               Charlotte           NC          28210       US              the twitters                                                Medium          SteveMoser          ",
         "90984987   Feb 23, 2012    Olah-Reiken     Howard          howard@preferredapp.com                 1.0 Conference                                                  71401811    PayPal Completed            300.0               0.0             8.49                    Attending       163 11th Street                                             Hoboken             NJ          07030       US              Email                                                       Large           HowardOR            ",
-        "91296907   Feb 24, 2012    Demyanovich     Craig           cdemyanovich@gmail.com                  1.0 Conference                                                  71654555    Free Order                  0.0                 0.0             0.0                     Attending       773 Cherry Creek Dr                                         Grayslake           IL          60030-3359  US              Colleague is a speaker                                      Large           demmer12            "]
+        "91296907   Feb 24, 2012    Demyanovich     Craig           cdemyanovich@gmail.com                  1.0 Conference                                                  71654555    Free Order                  0.0                 0.0             0.0                     Attending       773 Cherry Creek Dr                                         Grayslake           IL          60030-3359  US              Colleague is a speaker                                      Large           demmer12            ",
+        "                           Fosler          Kevin           k123xyz@gmail.com                        ",
+        "                           Vollmer         Cornelia        luminita.vollmer@gmail.com               ",
+        "                           Vollmer         Charlie         voll0081@umn.edu                         ",
+        "                           Bransfield      Jack            jackb602@gmail.com                       ",
+        "                           Maxwell         Jesse           jesse@swiftotter.com                     ",
+        "                           Maxwell         Joseph          joseph@swiftotter.com                    ",
+        "                           Giralte         Daniel          dan.giralte@gmail.com                    ",
+        "                           Trotz           David           david.trotz@gmail.com                    ",
+        "                           Greiff          Scott           scott@greiff.org                         ",
+        "                           Allen           David           dallen@qmobilesolutions.com              ",
+        "                           Hightower       Ray             rth@wisdomgroup.com                      ",
+        "                           Dadouche        Mike            sxillc@gmail.com                         ",
+        "                           Dadouche        Steve           sdadouche@gmail.com                      "]
+
         
         def attendeeRole = Role.findByAuthority('ROLE_ATTENDEE')
         def records = []
@@ -178,11 +192,11 @@ class UserController {
             def data = [:]
             data.lastName = line[30..45].trim()
             data.firstName = line[46..60].trim()
-            data.email = line[62..100].trim()
-            data.username = line[62..100].trim()
-            data.city = line[361..380].trim()
-            data.state = line[381..382].trim()
-            data.zip = line[395..404].trim()
+            data.email = line[59..98].trim()
+            data.username = line[59..98].trim()
+//            data.city = line[361..380].trim()
+//            data.state = line[381..382].trim()
+//            data.zip = line[395..404].trim()
             data.enabled = true
             data.accountExpired = false
             data.accountLocked = false
@@ -197,6 +211,13 @@ class UserController {
         render "There are now ${User.count()} users!"
     }
     
+    def resetTaha = {
+	    def user = User.get(192)
+	    user.password = springSecurityService.encodePassword("cocoaconf")
+	    user.save()
+	    render "Done!"
+    }
+
     def changePassword = {  
     }
     
