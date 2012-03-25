@@ -62,4 +62,7 @@ class HomeController {
 	    response.contentLength = download.size()
 	    response.outputStream.write(download.readBytes())
     }
+
+    def slides = {}
+
 }
