@@ -14,10 +14,7 @@ class Speaker {
     //TODO: remove this
     Boolean current
 
-
-	static belongsTo = Conference
-
-    static hasMany = [conferences:Conference, presentations:Presentation]
+    static hasMany = [presentations:Presentation]
 
     static constraints = {
 	    firstName nullable:false

@@ -63,7 +63,7 @@
                                   <label for="speaker"><g:message code="presentation.speaker.label" default="Speaker" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: presentationInstance, field: 'speaker', 'errors')}">
-                                    <g:select name="speaker.id" from="${com.cocoaconf.Speaker.list()}" optionKey="id" value="${presentationInstance?.speaker?.id}"  />
+                                    <g:select name="speaker.id" from="${com.cocoaconf.Speaker.list([sort:'lastName'])}" optionKey="id" value="${presentationInstance?.speaker?.id}"  />
                                 </td>
                             </tr>
                         
