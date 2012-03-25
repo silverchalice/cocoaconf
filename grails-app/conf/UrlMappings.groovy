@@ -68,6 +68,7 @@ class UrlMappings {
             controller = "post"
             action = "feed"
         }
+		"/slides"(view:'/slides')
 		"500"(view:'/error')
 	}
 }
