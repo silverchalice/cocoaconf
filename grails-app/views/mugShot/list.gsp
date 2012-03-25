@@ -1,6 +1,6 @@
 
 <%@ page import="com.cocoaconf.MugShot" %>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="public" />
@@ -114,26 +114,33 @@
 
     </head>
     <body>
-         <h1>Mug Shots</h1>
-        <p>This is some text about how great our mug pictures are.</p>
+         <h1>CocoaConf - The Mug</h1>
+        <g:img dir="images" file="mug.png" style="float:left; width:100px; margin: 10px" />
+        <p>CocoaConf is all about relevant content, high-quality speakers and sessions, and a top-notch attendee experience. But that doesn't mean we don't give any thought to the conference swag, and one of our attendees favorite souvenirs has been our exclusive, high-capacity CocoaConf mug.</p>
+        <p>In fact, some of our attendees loved it so much, they started sharing pictures of their CocoaConf mugs in action. We've even learned of some creative uses for the mug that we certainly wouldn't have thought of... <a href="">iPhone amplifier, anyone?</a></p>
+        <p>We decided, instead of keeping all these fun tidbits to ourselves, why not share them with the rest of the OS X/iOS community?</p>
 
-            <g:each in="${mugShotInstanceList}" status="i" var="mugShot">
-                <div style="float:left; width:240px; margin: 40px; height: 240px">
+        <g:img dir="images" file="mug2.png" style="float:right; width:100px; margin: 10px" />
+        <h3>Got any "mugshots" you want to share?</h3>
+        <p>We'd love to post your "mugshots" here as well! Just send us your image over Twitter at <a href="http://twitter.com/cocoaconf">@cocoaconf</a>. We'd love to see your CocoaConf mug in the wild, whether it's upping the volume of your favorite podcast, supplying you with extra doses of caffeine for those late-night crunches, or collecting stray pencils and paper clips... does anyone seriously use those anymore?</p>
 
-                    <g:if test="${mugShot?.imagePath}">
+        <g:each in="${mugShotInstanceList}" status="i" var="mugShot">
+            <div style="float:left; width:240px; margin: 0 40px 60px 40px; height: 240px">
 
-                        <a class="mugshot"  href="${request.contextPath}/${mugShot?.imagePath}"><img alt="example1" style="margin-top:40px; max-width: 240px; max-height: 240px;" src="${request.contextPath}/${mugShot?.imagePath}" /></a>
+                <g:if test="${mugShot?.imagePath}">
+
+                    <a class="mugshot"  href="${request.contextPath}/${mugShot?.imagePath}"><img alt="example1" style="margin-top:40px; max-width: 240px; max-height: 240px;" src="${request.contextPath}/${mugShot?.imagePath}" /></a>
 
 
-                    </g:if>
+                </g:if>
 
 
 
-                         <h3><g:link url="${mugShot.url}">${mugShot.caption}</g:link> </h3>
+                     <h3><g:link url="${mugShot.url}">${mugShot.caption}</g:link> </h3>
 
-                </div>
+            </div>
 
-            </g:each>
+        </g:each>
 
     </body>
 </html>
