@@ -11,9 +11,9 @@ class Presentation {
     String shortName
     Integer slot
     Integer track
-
-	//TODO: Remove this
     Boolean current
+
+    static belongsTo = Speaker
 
     static constraints = {
 	    pAbstract maxSize:10000, nullable:true

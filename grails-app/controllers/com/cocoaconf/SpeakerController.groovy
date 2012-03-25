@@ -11,6 +11,7 @@ class SpeakerController {
 
     def list = {
         params.max = Math.min(params.max ? params.int('max') : 10, 100)
+        params.sort = 'lastName'
         [speakerInstanceList: Speaker.list(params), speakerInstanceTotal: Speaker.count()]
     }
 

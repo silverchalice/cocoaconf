@@ -16,7 +16,7 @@ class UrlMappings {
 			controller = "home"
 			action = "register"
 		}
-		"/about"{
+		"/venue"{
 			controller = "home"
 			action = "about"
 		}
@@ -55,6 +55,10 @@ class UrlMappings {
 		"/next"{
 			controller = "home"
 			action = "nearYou"
+		}
+		"/mugshots"{
+			controller = "mugShot"
+			action = "list"
 		}
         "/blog"{
             controller = "post"
