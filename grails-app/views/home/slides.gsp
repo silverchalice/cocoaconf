@@ -63,19 +63,20 @@
 
         <div class="list">
             <ul>
-                <li><a href="${resource(dir:'slides', file:'day-one.zip')}">Bundle: Day One</a></li>
+                <li>Bundle: Day One</li>
                 <li>Bundle: Day Two</li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="${resource(dir:'slides', file:'automation.pdf')}">Jonathan Penn &#8212; UI Automation</a></li>
+                <li><a href="${resource(dir:'slides', file:'vision.key.pdf')}">Jonathan Blocksom &#8212; iOS Computer Vision</a></li>
+                <li><a href="${resource(dir:'slides', file:'sandbox.pdf')}">Boisy Pitre &#8212; Playing In The App Sandbox</a></li>
+                <li><a href="${resource(dir:'slides', file:'macruby.pdf')}">Jonathan Penn &#8212; MacRuby</a></li>
+                <li><a href="${resource(dir:'slides', file:'tightrope.pdf')}">Boisy Pitre &#8212; Walking The Tightrope</a></li>
+                <li><a href="${resource(dir:'slides', file:'animation.pdf')}">Brian Coyner &#8212; Core Animation</a></li>
+                <li><a href="${resource(dir:'slides', file:'keeping.pdf')}">Randy Beiter &#8212; Keeping Secrets For iOS Developers</a></li>
+                <li><a href="${resource(dir:'slides', file:'shader.key')}">Brad Larson &#8212; OpenGL ES 2.0 Shaders</a></li>
+                <li><a href="${resource(dir:'slides', file:'matrix.pdf')}">Mark Pospesel &#8212; Enter The Matrix</a></li>
+                <li><a href="${resource(dir:'slides', file:'ocunit.pdf')}">Brian Coyner &#8212; Embracing OCUnit</a></li>
+                <li><a href="${resource(dir:'slides', file:'motion.key')}">Jonathan Blocksom &#8212; Core Motion Crazy</a></li>
+                <li><a href="${resource(dir:'slides', file:'arc.key')}">Brad Larson &#8212; Migrating To ARC</a></li>
             </ul>
         </div>
     </body>
