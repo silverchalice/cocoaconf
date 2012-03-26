@@ -60,10 +60,11 @@
                <a href="http://www.twitter.com/cocoaconf" style="margin-left: 20px"><img src="http://twitter-badges.s3.amazonaws.com/follow_us-c.png" alt="Follow CocoaConf on Twitter"/></a>
                <br/>
                <br/>
+               <h2 style="color:#1da0d1;"><g:link controller="mugShot" action="list">CocoaConf - The Mug</g:link></h2>
+               <g:link controller="mugShot" action="list"><g:img dir="images" file="mugThumb.png" style="width:160px; margin:10px 20px" /> </g:link>
+               <br/>
               <h2 style="color:#1da0d1;">Our Sponsors</h2>
               <br/>
-
-              <br/><br/>
 				<a href="http://cocoaconf.com/blog/chicago-sponsorship">Sponsorship Opportunities Available</a>
               <br/><br/>
            </div>
