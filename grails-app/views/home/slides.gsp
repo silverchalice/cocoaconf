@@ -59,12 +59,15 @@
     </head>
     <body>
          <h1>Slides from CocoaConf Chicago</h1>
-        <p>This is some text about how great our slides are.</p>
+        <p>Here are links to the slides we've been able to gather from our speakers.  As we get more we will add them to this list, so check back often.</p>
+        <p>If there is a specific session that you are looking for, let us know and we will try to get it for you. (<a href="mailto:info@cocoaconf.com">info@cocoaconf.com</a>)</p>
 
         <div class="list">
             <ul>
-                <li>Bundle: Day One</li>
-                <li>Bundle: Day Two</li>
+                <li><a href="${resource(dir:'slides', file:'CocoaConf_1.zip')}">Bundle: Day One (33.6 MB)</li>
+                <li><a href="${resource(dir:'slides', file:'CocoaConf_2.zip')}">Bundle: Day Two (50 MB)</li>
+                <li><a href="http://www.slideshare.net/invalidname/core-audio-cranks-it-up">Chris Adamson &#8212; Core Audio Cranks it Up! (Non in bundle)</a></li>
+                <li><a href="http://www.slideshare.net/invalidname/core-what">Chris Adamson &#8212; Core What? (Not in bundle)</a></li>
                 <li><a href="${resource(dir:'slides', file:'automation.pdf')}">Jonathan Penn &#8212; UI Automation</a></li>
                 <li><a href="${resource(dir:'slides', file:'vision.key.pdf')}">Jonathan Blocksom &#8212; iOS Computer Vision</a></li>
                 <li><a href="${resource(dir:'slides', file:'sandbox.pdf')}">Boisy Pitre &#8212; Playing In The App Sandbox</a></li>
@@ -77,6 +80,8 @@
                 <li><a href="${resource(dir:'slides', file:'ocunit.pdf')}">Brian Coyner &#8212; Embracing OCUnit</a></li>
                 <li><a href="${resource(dir:'slides', file:'motion.key')}">Jonathan Blocksom &#8212; Core Motion Crazy</a></li>
                 <li><a href="${resource(dir:'slides', file:'arc.key')}">Brad Larson &#8212; Migrating To ARC</a></li>
+                <li><a href="${resource(dir:'slides', file:'Blockhead.pdf')}">Jeff Biggus &#8212; Blocks</a></li>
+                <li><a href="${resource(dir:'slides', file:'Accelerate.pdf')}">Jeff Biggus &#8212; Accelerate</a></li>
             </ul>
         </div>
     </body>

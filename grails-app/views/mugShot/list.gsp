@@ -4,7 +4,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="public" />
-         <meta name="tab" content="speakers" /> <!-- must changes this... -->
+         <meta name="tab" content="home" /> <!-- must changes this... -->
         <g:set var="entityName" value="${message(code: 'mugShot.label', default: 'MugShot')}" />
         <title>CocoaConf | Mug Shots</title>
 
