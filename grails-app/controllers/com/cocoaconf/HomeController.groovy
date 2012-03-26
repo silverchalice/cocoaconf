@@ -49,6 +49,9 @@ class HomeController {
 
     def partners = {}
 
+	def chicago_slides = {}
+
+
     def team = {}
 
     def nearYou = {
@@ -62,7 +65,5 @@ class HomeController {
 	    response.contentLength = download.size()
 	    response.outputStream.write(download.readBytes())
     }
-
-    def slides = {}
 
 }
