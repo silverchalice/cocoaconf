@@ -125,19 +125,18 @@
         <p>We'd love to post your "mugshots" here as well! Just send us your image over Twitter at <a href="http://twitter.com/cocoaconf">@cocoaconf</a>. We'd love to see your CocoaConf mug in the wild, whether it's upping the volume of your favorite podcast, supplying you with extra doses of caffeine for those late-night crunches, or collecting stray pencils and paper clips... does anyone seriously use those anymore?</p>
 
         <g:each in="${mugShotInstanceList}" status="i" var="mugShot">
-            <div style="float:left; width:240px; margin: 0 40px 60px 40px; height: 240px">
+            <div style="float:left; width:240px; height: 320px; margin: 0 40px 60px 40px; height: 240px">
 
                 <g:if test="${mugShot?.imagePath}">
 
                     <a class="mugshot"  href="${request.contextPath}/${mugShot?.imagePath}"><img alt="example1" style="margin-top:40px; max-width: 240px; max-height: 240px;" src="${request.contextPath}/${mugShot?.imagePath}" /></a>
 
-
                 </g:if>
 
 
+                 <br/>
 
-                     <h3><g:link url="${mugShot.url}">${mugShot.caption}</g:link> </h3>
-
+                <g:link url="${mugShot.url}" style="font-weight:bold; font-size:14px; text-decoration: none;">${mugShot.caption}</g:link>
             </div>
 
         </g:each>
