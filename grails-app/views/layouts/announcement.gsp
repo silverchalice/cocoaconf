@@ -61,7 +61,7 @@
                <br/>
                <br/>
                <h2 style="color:#1da0d1;"><g:link controller="mugShot" action="list">CocoaConf - The Mug</g:link></h2>
-               <g:link controller="mugShot" action="list"><g:img dir="images" file="mugThumb.png" style="width:160px; margin:10px 40px" /> </g:link>
+               <g:link controller="mugShot" action="list"><g:img dir="images" file="mugThumb.png" style="width:160px; margin:10px 20px" /> </g:link>
                <br/>
               <h2 style="color:#1da0d1;">Our Sponsors</h2>
               <br/>
