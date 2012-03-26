@@ -53,8 +53,10 @@
   <h2>Crowne Plaza Dulles</h2>
   <p><img src="${resource(dir:'images', file:'cpdulles.png')}" style="float:left; width: 200px; margin:0 10px 10px 0" />CocoaConf will be held in the conference facilities of the <a href="http://www.cpdulles.com/"> Crowne Plaza Dulles.</a>
      <span class="address">2200 Centreville Rd, Herndon, VA 20170.</span></p>
-
-<p>CocoaConf attendees are eligible for the group rate of $145/night for Wednesday and Thursday nights and $75/night for Friday and Saturday nights.  Call (703) 471-6700 and tell them you're attending CocoaConf.</p>
+<!--
+<p>CocoaConf attendees are eligible for the group rate of $145/night for Wednesday and Thursday nights and $75/night for Friday and Saturday nights.  Call (703) 471-6700 and tell them you're attending CocoaConf.</p> 
+-->
+<p>We are still finalizing the details for a discounted group rate for CocoaConf attendees. We will update this page and notify registered attendees as soon as we have the final rates. </p>
   <img src="${resource(dir:'images', file:'cpdulles3.png')}" style="float:right; width: 200px; clear:both; margin:0 10px 10px 0" /><br/>
   <p>The Crowne Plaza Dulles Airport of Herndon, Virginia is located just 2 miles from Washington’s Dulles International Airport and 25 miles from historic Washington, DC attractions. Just 10 minutes from I-495 and I-66, the Crowne Plaza Dulles Airport is a AAA Three-Diamond Rated, full-service hotel, ideal for both tourist and business travelers alike.</p>
 
