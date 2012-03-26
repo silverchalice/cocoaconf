@@ -24,7 +24,7 @@
     </head>
     <body id="announcement">
         <div id="announcementHeader">
-            <span style="color:#ff9627">Coming to the Washington DC area June 28 - 30, 2012</span>
+            <span style="color:#ff9627">Registration now open – Early-bird rate ends April 27th.</span>
         </div>
 
         <div id="page">
