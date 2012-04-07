@@ -64,10 +64,10 @@
     <orderEntry type="module-library" exported="">
       <library name="Grails User Library (cocoaconf-grailsPlugins)">
         <CLASSES>
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.springframework.security/spring-security-web/jars/spring-security-web-3.0.7.RELEASE.jar!/" />
-          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.springframework.security/spring-security-core/jars/spring-security-core-3.0.7.RELEASE.jar!/" />
           <root url="file://$USER_HOME$/.grails/2.0.1/projects/cocoaconf/plugins/feeds-1.5/lib" />
           <root url="file://$USER_HOME$/.grails/2.0.1/projects/cocoaconf/plugins/svn-1.0.0.M1/lib" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.springframework.security/spring-security-web/jars/spring-security-web-3.0.7.RELEASE.jar!/" />
+          <root url="jar://$USER_HOME$/.grails/ivy-cache/org.springframework.security/spring-security-core/jars/spring-security-core-3.0.7.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
