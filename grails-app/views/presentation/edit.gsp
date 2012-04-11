@@ -69,6 +69,14 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                  <label for="shortName"><g:message code="presentation.shortName.label" default="Short Name" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: presentationInstance, field: 'shortName', 'errors')}">
+                                    <g:textField name="shortName" value="${presentationInstance?.shortName}" />
+                                </td>
+                            </tr>                                                                                                                                   =
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                   <label for="title"><g:message code="presentation.title.label" default="Title" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: presentationInstance, field: 'title', 'errors')}">
