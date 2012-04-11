@@ -1,93 +1,117 @@
 
 <%@ page import="com.cocoaconf.Session" %>
+<!doctype html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="layout" content="main" />
-        <g:set var="entityName" value="${message(code: 'session.label', default: 'Session')}" />
-        <title><g:message code="default.show.label" args="[entityName]" /></title>
-    </head>
-    <body>
-        <div class="nav">
-            <span class="menuButton"><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></span>
-            <span class="menuButton"><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></span>
-            <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
-        </div>
-        <div class="body">
-            <h1><g:message code="default.show.label" args="[entityName]" /></h1>
-            <g:if test="${flash.message}">
-            <div class="message">${flash.message}</div>
-            </g:if>
-            <div class="dialog">
-                <table>
-                    <tbody>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="session.id.label" default="Id" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: sessionInstance, field: "id")}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="session.startTime.label" default="Start Time" /></td>
-                            
-                            <td valign="top" class="value"><g:formatDate date="${sessionInstance?.startTime}" /></td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="session.endTime.label" default="End Time" /></td>
-                            
-                            <td valign="top" class="value"><g:formatDate date="${sessionInstance?.endTime}" /></td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="session.room.label" default="Room" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: sessionInstance, field: "room")}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="session.conference.label" default="Conference" /></td>
-                            
-                            <td valign="top" class="value"><g:link controller="conference" action="show" id="${sessionInstance?.conference?.id}">${sessionInstance?.conference?.encodeAsHTML()}</g:link></td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="session.presentation.label" default="Presentation" /></td>
-                            
-                            <td valign="top" class="value"><g:link controller="presentation" action="show" id="${sessionInstance?.presentation?.id}">${sessionInstance?.presentation?.encodeAsHTML()}</g:link></td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="session.speaker.label" default="Speaker" /></td>
-                            
-                            <td valign="top" class="value"><g:link controller="speaker" action="show" id="${sessionInstance?.speaker?.id}">${sessionInstance?.speaker?.encodeAsHTML()}</g:link></td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="session.track.label" default="Track" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: sessionInstance, field: "track")}</td>
-                            
-                        </tr>
-                    
-                    </tbody>
-                </table>
-            </div>
-            <div class="buttons">
-                <g:form>
-                    <g:hiddenField name="id" value="${sessionInstance?.id}" />
-                    <span class="button"><g:actionSubmit class="edit" action="edit" value="${message(code: 'default.button.edit.label', default: 'Edit')}" /></span>
-                    <span class="button"><g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" /></span>
-                </g:form>
-            </div>
-        </div>
-    </body>
+	<head>
+		<meta name="layout" content="main">
+		<g:set var="entityName" value="${message(code: 'session.label', default: 'Session')}" />
+		<title><g:message code="default.show.label" args="[entityName]" /></title>
+	</head>
+	<body>
+		<a href="#show-session" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
+		<div class="nav" role="navigation">
+			<ul>
+				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
+				<li><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
+				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
+			</ul>
+		</div>
+		<div id="show-session" class="content scaffold-show" role="main">
+			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
+			<g:if test="${flash.message}">
+			<div class="message" role="status">${flash.message}</div>
+			</g:if>
+			<ol class="property-list session">
+			
+				<g:if test="${sessionInstance?.start}">
+				<li class="fieldcontain">
+					<span id="start-label" class="property-label"><g:message code="session.start.label" default="Start" /></span>
+					
+						<span class="property-value" aria-labelledby="start-label"><g:fieldValue bean="${sessionInstance}" field="start"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${sessionInstance?.end}">
+				<li class="fieldcontain">
+					<span id="end-label" class="property-label"><g:message code="session.end.label" default="End" /></span>
+					
+						<span class="property-value" aria-labelledby="end-label"><g:fieldValue bean="${sessionInstance}" field="end"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${sessionInstance?.room}">
+				<li class="fieldcontain">
+					<span id="room-label" class="property-label"><g:message code="session.room.label" default="Room" /></span>
+					
+						<span class="property-value" aria-labelledby="room-label"><g:fieldValue bean="${sessionInstance}" field="room"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${sessionInstance?.track}">
+				<li class="fieldcontain">
+					<span id="track-label" class="property-label"><g:message code="session.track.label" default="Track" /></span>
+					
+						<span class="property-value" aria-labelledby="track-label"><g:fieldValue bean="${sessionInstance}" field="track"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${sessionInstance?.day}">
+				<li class="fieldcontain">
+					<span id="day-label" class="property-label"><g:message code="session.day.label" default="Day" /></span>
+					
+						<span class="property-value" aria-labelledby="day-label"><g:fieldValue bean="${sessionInstance}" field="day"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${sessionInstance?.slot}">
+				<li class="fieldcontain">
+					<span id="slot-label" class="property-label"><g:message code="session.slot.label" default="Slot" /></span>
+					
+						<span class="property-value" aria-labelledby="slot-label"><g:fieldValue bean="${sessionInstance}" field="slot"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${sessionInstance?.type}">
+				<li class="fieldcontain">
+					<span id="type-label" class="property-label"><g:message code="session.type.label" default="Type" /></span>
+					
+						<span class="property-value" aria-labelledby="type-label"><g:fieldValue bean="${sessionInstance}" field="type"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${sessionInstance?.conference}">
+				<li class="fieldcontain">
+					<span id="conference-label" class="property-label"><g:message code="session.conference.label" default="Conference" /></span>
+					
+						<span class="property-value" aria-labelledby="conference-label"><g:link controller="conference" action="show" id="${sessionInstance?.conference?.id}">${sessionInstance?.conference?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${sessionInstance?.presentation}">
+				<li class="fieldcontain">
+					<span id="presentation-label" class="property-label"><g:message code="session.presentation.label" default="Presentation" /></span>
+					
+						<span class="property-value" aria-labelledby="presentation-label"><g:link controller="presentation" action="show" id="${sessionInstance?.presentation?.id}">${sessionInstance?.presentation?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+			</ol>
+			<g:form>
+				<fieldset class="buttons">
+					<g:hiddenField name="id" value="${sessionInstance?.id}" />
+					<g:link class="edit" action="edit" id="${sessionInstance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
+					<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
+				</fieldset>
+			</g:form>
+		</div>
+	</body>
 </html>

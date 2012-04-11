@@ -1,122 +1,121 @@
 
 <%@ page import="com.cocoaconf.Conference" %>
+<!doctype html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="layout" content="main" />
-        <g:set var="entityName" value="${message(code: 'conference.label', default: 'Conference')}" />
-        <title><g:message code="default.show.label" args="[entityName]" /></title>
-    </head>
-    <body>
-        <div class="nav">
-            <span class="menuButton"><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></span>
-            <span class="menuButton"><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></span>
-            <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
-        </div>
-        <div class="body">
-            <h1><g:message code="default.show.label" args="[entityName]" /></h1>
-            <g:if test="${flash.message}">
-            <div class="message">${flash.message}</div>
-            </g:if>
-            <div class="dialog">
-                <table>
-                    <tbody>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="conference.id.label" default="Id" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: conferenceInstance, field: "id")}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="conference.startDate.label" default="Start Date" /></td>
-                            
-                            <td valign="top" class="value"><g:formatDate date="${conferenceInstance?.startDate}" /></td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="conference.endDate.label" default="End Date" /></td>
-                            
-                            <td valign="top" class="value"><g:formatDate date="${conferenceInstance?.endDate}" /></td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="conference.venue.label" default="Venue" /></td>
-                            
-                            <td valign="top" class="value"><g:link controller="venue" action="show" id="${conferenceInstance?.venue?.id}">${conferenceInstance?.venue?.encodeAsHTML()}</g:link></td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="conference.description.label" default="Description" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: conferenceInstance, field: "description")}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="conference.city.label" default="City" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: conferenceInstance, field: "city")}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="conference.sessions.label" default="Sessions" /></td>
-                            
-                            <td valign="top" style="text-align: left;" class="value">
-                                <ul>
-                                <g:each in="${conferenceInstance.sessions}" var="s">
-                                    <li><g:link controller="session" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></li>
-                                </g:each>
-                                </ul>
-                            </td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="conference.speakers.label" default="Speakers" /></td>
-                            
-                            <td valign="top" style="text-align: left;" class="value">
-                                <ul>
-                                <g:each in="${conferenceInstance.speakers}" var="s">
-                                    <li><g:link controller="speaker" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></li>
-                                </g:each>
-                                </ul>
-                            </td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="conference.state.label" default="State" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: conferenceInstance, field: "state")}</td>
-                            
-                        </tr>
-                    
-                    </tbody>
-                </table>
-	            <h1>Sessions</h1>
-                <table>
-	                <g:each in="${sessions}" var="slot">
-	                    <tr>
-		                    <g:each in="${slot.value.sort{ it.id }}" var="session">
-		                        <td>[${session.id}] ${session.presentation.title}</td>
-		                    </g:each>
-		                </tr>
-		            </g:each>
-	            </table>
-            </div>
-            <div class="buttons">
-                <g:form>
-                    <g:hiddenField name="id" value="${conferenceInstance?.id}" />
-                    <span class="button"><g:actionSubmit class="edit" action="edit" value="${message(code: 'default.button.edit.label', default: 'Edit')}" /></span>
-                    <span class="button"><g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" /></span>
-                </g:form>
-            </div>
-        </div>
-    </body>
+	<head>
+		<meta name="layout" content="main">
+		<g:set var="entityName" value="${message(code: 'conference.label', default: 'Conference')}" />
+		<title><g:message code="default.show.label" args="[entityName]" /></title>
+	</head>
+	<body>
+		<a href="#show-conference" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
+		<div class="nav" role="navigation">
+			<ul>
+				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
+				<li><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
+				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
+			</ul>
+		</div>
+		<div id="show-conference" class="content scaffold-show" role="main">
+			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
+			<g:if test="${flash.message}">
+			<div class="message" role="status">${flash.message}</div>
+			</g:if>
+			<ol class="property-list conference">
+			
+				<g:if test="${conferenceInstance?.startDate}">
+				<li class="fieldcontain">
+					<span id="startDate-label" class="property-label"><g:message code="conference.startDate.label" default="Start Date" /></span>
+					
+						<span class="property-value" aria-labelledby="startDate-label"><g:formatDate date="${conferenceInstance?.startDate}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${conferenceInstance?.endDate}">
+				<li class="fieldcontain">
+					<span id="endDate-label" class="property-label"><g:message code="conference.endDate.label" default="End Date" /></span>
+					
+						<span class="property-value" aria-labelledby="endDate-label"><g:formatDate date="${conferenceInstance?.endDate}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${conferenceInstance?.venue}">
+				<li class="fieldcontain">
+					<span id="venue-label" class="property-label"><g:message code="conference.venue.label" default="Venue" /></span>
+					
+						<span class="property-value" aria-labelledby="venue-label"><g:link controller="venue" action="show" id="${conferenceInstance?.venue?.id}">${conferenceInstance?.venue?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${conferenceInstance?.description}">
+				<li class="fieldcontain">
+					<span id="description-label" class="property-label"><g:message code="conference.description.label" default="Description" /></span>
+					
+						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${conferenceInstance}" field="description"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${conferenceInstance?.city}">
+				<li class="fieldcontain">
+					<span id="city-label" class="property-label"><g:message code="conference.city.label" default="City" /></span>
+					
+						<span class="property-value" aria-labelledby="city-label"><g:fieldValue bean="${conferenceInstance}" field="city"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${conferenceInstance?.sessions}">
+				<li class="fieldcontain">
+					<span id="sessions-label" class="property-label"><g:message code="conference.sessions.label" default="Sessions" /></span>
+					
+						<g:each in="${conferenceInstance.sessions}" var="s">
+						<span class="property-value" aria-labelledby="sessions-label"><g:link controller="session" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${conferenceInstance?.speakers}">
+				<li class="fieldcontain">
+					<span id="speakers-label" class="property-label"><g:message code="conference.speakers.label" default="Speakers" /></span>
+					
+						<g:each in="${conferenceInstance.speakers}" var="s">
+						<span class="property-value" aria-labelledby="speakers-label"><g:link controller="speaker" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${conferenceInstance?.state}">
+				<li class="fieldcontain">
+					<span id="state-label" class="property-label"><g:message code="conference.state.label" default="State" /></span>
+					
+						<span class="property-value" aria-labelledby="state-label"><g:fieldValue bean="${conferenceInstance}" field="state"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${conferenceInstance?.tinyName}">
+				<li class="fieldcontain">
+					<span id="tinyName-label" class="property-label"><g:message code="conference.tinyName.label" default="Tiny Name" /></span>
+					
+						<span class="property-value" aria-labelledby="tinyName-label"><g:fieldValue bean="${conferenceInstance}" field="tinyName"/></span>
+					
+				</li>
+				</g:if>
+			
+			</ol>
+			<g:form>
+				<fieldset class="buttons">
+					<g:hiddenField name="id" value="${conferenceInstance?.id}" />
+					<g:link class="edit" action="edit" id="${conferenceInstance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
+					<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
+				</fieldset>
+			</g:form>
+		</div>
+	</body>
 </html>
