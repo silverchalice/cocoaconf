@@ -191,10 +191,15 @@
   		        <td align="center" width="75" align="center" class="time">${sessions[0].start}-${sessions[0].end}</td>
                 <g:each in="${sessions.sort{it.track}}" var="sess">
 	                <g:if test="${sessions.size() == 1}">
-	                    <td align="center" colspan="3"><g:link controller="session" action="details" id="${$sess?.presentation?.id}">${sess?.presentation?.title}</g:link></span> <span class="sessionSpeaker"><g:if test="${sess?.type != 'break'}"><g:link controller="speaker" action="viewDetails" id="${sess?.presentation?.speaker?.id}">${sess?.presentation?.speaker}</g:link></g:if></th>
+	                    <g:if test="${sess?.type != 'break'}">
+	                        <td align="center" colspan="3"><g:link controller="session" action="details" id="${sess?.presentation?.id}">${sess?.presentation?.title}</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="${sess?.presentation?.speaker?.id}">${sess?.presentation?.speaker}</g:link></th>
+		                </g:if>
+		                <g:else>
+		                    <td align="center" colspan="3">${sess?.presentation?.title}</span></th>
+		                </g:else>
 		            </g:if>
 		            <g:else>
-                           <td align="center" width="200" class="track${sess?.track}"><span class="sessionTitle"><g:link controller="session" action="details" id="${$sess?.presentation?.id}">${sess?.presentation?.title}</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="${sess?.presentation?.speaker?.id}">${sess?.presentation?.speaker}</g:link></span></td>
+                           <td align="center" width="200" class="track${sess?.track}"><span class="sessionTitle"><g:link controller="session" action="details" id="${sess?.presentation?.id}">${sess?.presentation?.title}</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="${sess?.presentation?.speaker?.id}">${sess?.presentation?.speaker}</g:link></span></td>
 		            </g:else>
 		        </g:each>
 		  	    </tr>
