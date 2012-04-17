@@ -21,8 +21,9 @@ class UrlMappings {
 			action = "about"
 		}
 		"/schedule"{
-			controller = "home"
+			controller = "conference"
 			action = "schedule"
+			id = 4
 		}
 		"/partners"{
 			controller = "home"
