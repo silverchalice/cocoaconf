@@ -38,7 +38,7 @@
                <g:link class="${pageProperty(name:'meta.tab') == 'home' ? 'current' : ''}" uri="/">Home</g:link>
                <g:link class="${pageProperty(name:'meta.tab') == 'blog' ? 'current' : ''}" controller="post" action="list" style="background-position: -100px 0;">Blog</g:link>
                <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}" controller="speaker" action="speakers" style="background-position: -200px 0;">Speakers</g:link>
-               <g:link class="${pageProperty(name:'meta.tab') == 'sessions' ? 'current' : ''}" controller="session" action="sessions" style="background-position: -300px 0;">Sessions</g:link>
+               <g:link class="${pageProperty(name:'meta.tab') == 'schedule' ? 'current' : ''}" controller="conference" action="schedule" id="4" style="background-position: -300px 0;">Schedule</g:link>
                <g:link class="${pageProperty(name:'meta.tab') == 'about' ? 'current' : ''}" controller="home" action="about" style="background-position: -400px 0;">Venue</g:link>
                <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}" controller="home" action="register" style="background-position: -500px 0;">Register</g:link>
 
