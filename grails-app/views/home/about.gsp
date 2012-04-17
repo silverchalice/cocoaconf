@@ -36,7 +36,7 @@
 
       <style type="text/css">
 
-        a {
+        p a {
             color:#2ab0e2;
             text-decoration: none;
             font-weight: bold

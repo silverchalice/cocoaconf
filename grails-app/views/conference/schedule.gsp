@@ -68,8 +68,7 @@
         }
 
         td {
-            border: 0 none;
-            border-bottom: 1px solid lightgray;
+            border: 1px solid #EDECEC;
             margin: 0;
             padding: 10px 5px;
         }
@@ -79,7 +78,7 @@
         }
 
         th {
-            border:1px solid lightgray;
+            border:1px solid #EDECEC;
             margin: 0
         }
 
@@ -110,13 +109,13 @@
         }
 
         tr.break td {
-            background: #edecec;
+            background: #fff;
             border:1px solid #edecec;
             padding: 4px 0 0 0;
         }
 
         tr.break th {
-            background: white;
+            background: #fff;
             border:1px solid #edecec;
             padding: 4px 0 0 0;
         }
@@ -131,10 +130,15 @@
 
         td.track3 {
             background-color: white;
-            border-right: 1px solid lightgray;
+            border-right: 1px solid #EDECEC;
         }
 
         td.time {
+            border:1px solid #edecec;
+            background-color: #edecec;
+        }
+		
+		tr.break td.time {
             border:1px solid #edecec;
             background-color: #edecec;
         }

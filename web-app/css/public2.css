@@ -70,8 +70,22 @@ body {
 #logo {
     background: white url(../images/page-bg.png) repeat-y right;
     border: 0;
-    margin-bottom:0;
+    margin-bottom:20px;
     padding-bottom:0;
+	text-align:center;
+}
+
+#logo img {
+	margin-bottom:5px;
+}
+
+#logo a {
+	text-decoration:none;
+	font-size:24px;
+}
+
+#logo a span {
+	color: #1DA0D1;
 }
 
 #headline {

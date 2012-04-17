@@ -15,7 +15,14 @@
         <script src="${resource(dir:'js', file:'script.js')}" type="text/javascript"></script>
 
         <style type="text/css">
-            a {
+            
+			.aboutContent {
+				width:480px; 
+				float:left; 
+				padding-left:20px
+			}
+			
+			.aboutContent a {
                 color:#2ab0e2;
                 text-decoration: none;
                 font-weight: bold
@@ -130,7 +137,7 @@
         </style>
     </head>
     <body>
-        <div style="width:480px; float:left; padding-left:20px">
+        <div class="aboutContent">
             <h1 style="color:#1da0d1;">Announcing CocoaConf DC!</h1>
             <p><g:img dir="images" file="cpdulles.png" style="float:left; width:180px; margin-right: 10px" /> 
 CocoaConf is a focused two day, three track conference for iOS and OS X developers, with an optional  <a href="/session/details/55">pre-conference iOS tutorial</a>.  Our speakers are some of the best authors, trainers, and consultants in the field and they all have a passion for passing on their knowledge and experience to others.  That's where you come in.  We are looking for 100 app developers (or aspiring app developers) who are as eager to learn and grow as our speakers are to teach.  If app development is more than just a job for you, then you'll want to be at this conference.</p>
@@ -263,14 +270,16 @@ CocoaConf is a focused two day, three track conference for iOS and OS X develope
                <p><strong>Bill Dudney</strong> - Author of Pragmatic Programmer’s books <a href="http://pragprog.com/titles/adios">iPhone SDK Development</a> and <a href="http://pragprog.com/titles/bdcora/core-animation-for-mac-os-x-and-the-iphone">Core Animation</a>.
                 - <a href="http://bill.dudney.net">http://bill.dudney.net</a></p>
                                                                                                                                                                                                              c
-           </div>
+           </div>-->
             <div class="featured">
                 <img src="${resource(dir:'images',file:'adamson.png')}"/>
                  <p><strong>Chris Adamson</strong> - Author of <a href="http://www.amazon.com/Core-Audio-Kevin-Avila/dp/0321636848">Core Audio</a>, and <a href="http://pragprog.com/titles/adios">iPhone SDK Development</a>
                 - <a href="http://www.subfurther.com/blog">http://www.subfurther.com/blog</a></p>
 
             </div>
-            <div class="featured">
+            <!--
+
+            <div class="featured">                                                                              ˝
                 <img src="${resource(dir:'images',file:'biggus.png')}"/>
                 <p><strong>Jeff Biggus</strong> - Founder of HyperJeff, Inc. and curator of the <a href="http://hyperjeff.net">HyperJeff Network</a>.</p>
 
