@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7d267dc-4b70-49a8-8f44-005f90c7f2eb" name="Default" comment="Mugshot revamp; new google map">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/adamson.png" afterPath="$PROJECT_DIR$/web-app/images/adamson.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocoaconf.war" afterPath="$PROJECT_DIR$/cocoaconf.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/blogLink/roundup.gsp" afterPath="$PROJECT_DIR$/grails-app/views/blogLink/roundup.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/home/announcement.gsp" afterPath="$PROJECT_DIR$/grails-app/views/home/announcement.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/WEB-INF/sitemesh.xml" afterPath="$PROJECT_DIR$/web-app/WEB-INF/sitemesh.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/WEB-INF/tld/grails.tld" afterPath="$PROJECT_DIR$/web-app/WEB-INF/tld/grails.tld" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/WEB-INF/tld/spring.tld" afterPath="$PROJECT_DIR$/web-app/WEB-INF/tld/spring.tld" />
     </list>
     <list id="ba78e5f6-d6cf-4a61-8f65-29d4245d2d23" name="Rejected commit: Default" comment="Mugshot revamp; new google map" />
     <ignored path="cocoaconf.iws" />
@@ -87,9 +81,9 @@
       <file leaf-file-name="roundup.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/blogLink/roundup.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="164" selection-start="1" selection-end="1" vertical-scroll-proportion="0.015044248">
+            <state line="19" column="200" selection-start="933" selection-end="933" vertical-scroll-proportion="0.18053098">
               <folding>
-                <marker date="1333835246000" expanded="true" signature="4329:4372" placeholder="{...}" />
+                <marker date="1334636112000" expanded="true" signature="4402:4445" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -143,9 +137,8 @@
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="226" />
     <option name="y" value="22" />
-    <option name="width" value="1882" />
+    <option name="width" value="2560" />
     <option name="height" value="1339" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -331,6 +324,7 @@
         <option name="localRepository" value="" />
         <option name="mavenHome" value="" />
         <option name="nonRecursive" value="false" />
+        <option name="outputLevel" value="INFO" />
         <option name="pluginUpdatePolicy" value="DO_NOT_UPDATE" />
         <option name="printErrorStackTraces" value="false" />
         <option name="snapshotUpdatePolicy" value="ALWAYS_UPDATE" />
@@ -495,7 +489,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="226" y="22" width="1882" height="1339" extended-state="1" />
+    <frame x="0" y="22" width="2560" height="1339" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -508,7 +502,7 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3201804" sideWeight="0.6771605" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails View" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1577511" sideWeight="0.8325123" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15737052" sideWeight="0.8325123" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901233" sideWeight="0.671371" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32853025" sideWeight="0.0" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -723,9 +717,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/blogLink/roundup.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="164" selection-start="1" selection-end="1" vertical-scroll-proportion="0.015044248">
+        <state line="19" column="200" selection-start="933" selection-end="933" vertical-scroll-proportion="0.18053098">
           <folding>
-            <marker date="1333835246000" expanded="true" signature="4329:4372" placeholder="{...}" />
+            <marker date="1334636112000" expanded="true" signature="4402:4445" placeholder="{...}" />
           </folding>
         </state>
       </provider>
