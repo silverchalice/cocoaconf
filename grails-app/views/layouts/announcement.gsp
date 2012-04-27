@@ -25,7 +25,7 @@
     <body  id="announcement">
 
         <div id="announcementHeader">
-            <span style="color:#ff9627">Registration now open – Early-bird rate ends April 27th.</span>
+            <span style="color:#ff9627">Registration now open – Early-bird rate ends May 4th.</span>
         </div>
 
         <div id="page">

@@ -5,25 +5,17 @@ class Session {
 
     Conference conference
     Presentation presentation
-    String start
-    String end
+    Date startTime
+    Date endTime
     String room
+    Speaker speaker
     Integer track
-    Integer day
-    String type
-    Integer slot
 
     static belongsTo = Conference
 
     static constraints = {
-	    start nullable:true
-	    end nullable:true
+	    startTime nullable:true
+	    endTime nullable:true
 		room nullable:true
-		track nullable:true
-		day nullable:true
-		slot nullable:true
-		type inList: ['session', 'general', 'break']
     }
-
-    String toString(){"${start}-${end}, Track ${track}"}
 }
