@@ -46,22 +46,20 @@
 
         <div id="user-groups" style="padding-top: 10px">
 			<h2>CocoaHeads Partners</h2>
-			<p>CocoaHeads, NSCoderNight and other groups are playing a huge role in bringing CocoaConf to the Chicago area.  Several of our speakers are group organizers and almost all of them are active participants. If you haven't been to a CocoaHeads meeting or NSCoder Nigh, find the group near you and get involved.  There is much we can learn from each other and many good times to be had.</p>
+			<p>CocoaHeads, NSCoderNight and other groups are playing a huge role in bringing CocoaConf to the Chicago area.  Several of our speakers are group organizers and almost all of them are active participants. If you haven't been to a CocoaHeads meeting or NSCoder Night, find the group near you and get involved.  There is much we can learn from each other and many good times to be had.</p>
 			<p>Check out our partner groups below. You can also find other active groups at the <a href="http://cocoaheads.org">CocoaHeads website</a> or <a href="http://cocoa.meetup.com/">meetup.com</a>.  If all else fails, <a href="https://www.google.com/#hl=en&tok=X804PHYtlp0B8MtT7VPxEQ&cp=29&gs_id=qd&xhr=t&q=Cocoa+user+groups+chicago%2C+il&pf=p&sclient=psy-ab&source=hp&pbx=1&oq=Cocoa+user+groups+chicago,+il&aq=f&aqi=&aql=&gs_sm=&gs_upl=&bav=on.2,or.r_gc.r_pw.,cf.osb&fp=31d7cccccf4c56c5&biw=1728&bih=795">Google</a> is your friend. :-)</p>
 			<p><a href=""></a></p>
-
-			<div id="momo-chicago" class="usergroup">
-				<a href="http://www.meetup.com/momo-chicago/"><img src="${resource(dir:'images',file:'momo.jpg')}" style="float: left; padding-right:10px;"/></a><h3>Mobile Monday Chicago</h3>
-				<p><a href="http://www.mobilemonday.net/">Mobile Monday</a> is the world’s largest mobile industry community with chapters in over 80 cities worldwide. Mobile Monday Chicago relaunched in 2009 and since has grown into one of Chicago's biggest mobile community with over 400 members. We are a volunteer-led, grassroots organization with a focus on mobile technologies, marketing and strategy. <br/>CocoaConf is a proud sponsor of Mobile Monday Chicago.</p>
-		        <p>You can join MoMo via the group below<br/>
-				    <a href="http://meetup.com/momo-chicago/">http://meetup.com/momo-chicago</a></p>
+			<div id="nscoder-dc" class="usergroup">
+                <br />
+				<a href="http://nscodernightdc.com"><img src="${resource(dir:'images',file:'nsdc.png')}" style="float: left; padding-right:10px;"/></a><h3>NSCoder Night DC</h3>
+                <p><a href="http://nscodernightdc.com">NSCoder Night DC</a>. As the name might imply, we are the DC Area chapter of <a href="http://nscodernight.com/">NSCoder Night</a>. Basically, we are a weekly get-together of developers interested in Cocoa programming for Mac OS X and iPhone. Every Tuesday night for last 4 years we have met to hang out together, code and help each other. In addition to expected antics of a bunch of geeks getting together, we are also strong believers of eating pastries on a regularly scheduled basis. If you happen to be in DC area, on a tuesday night and feel like a pastry and some geeking out, come on over and join us.</p>
 			</div>
-			<div id="stl-cocoaheads" class="usergroup">
-				<a href="http://briancoyner.github.com/cocoaheads/index.html"><img src="${resource(dir:'images',file:'cocoahead_sm2.png')}" style="float:right; padding-left:10px;" /></a><h3>West St. Louis CocoaHeads</h3>
-				<p>The West St. Louis CocoaHeads is an OS X and iOS developer group. We are officially under the CocoaHeads umbrella (“West St. Louis”).</p>
-				<p>We are a group of software developers dedicated to diving deep into Apple’s iOS platform. Our goal is to take our current software engineering skills (Java, ObjC, C++) and learn how to apply those skills to the iOS platform.</p>
-				<p>Our site: <a href="http://briancoyner.github.com/cocoaheads/index.html">http://briancoyner.github.com/cocoaheads/index.html</a></p>
-			<!--
+            <div id="raleigh" class="usergroup">
+                <h3>Triangle CocoaHeads</h3>
+                <p>Meetings are the fourth Thursday of the month</p>
+                <p>Come out for great presentations, networking and a lot of fun. Find out more details at <a href="http://www.trianglecocoa.com">http://www.trianglecocoa.com</a>.</p>
+                <p>Follow us on Twitter at <a href="http://twitter.com/trianglecocoa">http://twitter.com/trianglecocoa</a>.</p>
+            </div>
 			<div id="dc" class="usergroup">
 				<h3>CocoaHeads DC</h3>
 				<p>CocoaHeads DC is the capital region's premiere Apple-oriented monthly meetup group. While we take our name from Apple’s programming framework for Mac OS X, including the iPhone, we also delve into other Apple-related technologies such as MacRuby and mobile Safari. Our meetings are held on the first Thursday of every month where members present projects and tutorials. </p>
