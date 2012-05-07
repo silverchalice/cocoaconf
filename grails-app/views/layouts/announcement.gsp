@@ -51,17 +51,9 @@
 
            </div>
            <div id="sidebar" style="min-height: 927px;">
-               <h2 style="color:#1da0d1;">About CocoaConf</h2>
-               <h3>CocoaConf is a technical conference, pure and simple.</h3>
-               <p>Instead of vendor booths or vendor keynotes, you'll find:</p>
-               <ul style="list-style: none">
-                   <li style="border-bottom: 1px dotted gray"><strong>In-depth</strong> technical sessions.</li>           
-                   <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Multiple <strong>concurrent tracks</strong>.</li>
-                   <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Full-day, hands-on <strong>iOS workshop</strong>.</li>
-                   <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Fun and informative <strong>speaker panel</strong>.</li>
-                   <li style="border-bottom: 1px dotted gray; margin-bottom:15px; font-weight: bold">And much more!</li>
-               </ul>
-               <a href="http://www.twitter.com/cocoaconf" style="margin-left: 20px"><img src="http://twitter-badges.s3.amazonaws.com/follow_us-c.png" alt="Follow CocoaConf on Twitter"/></a>
+                <div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;"><h3>Washington DC</h3></div>
+                <div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;"><h3>Columbus, Ohio</h3></div>
+                <div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;"><h3>Raleigh, NC</h3></div>
                <br/>
                <br/>
                <h2 style="color:#1da0d1;"><g:link controller="mugShot" action="list">CocoaConf - The Mug</g:link></h2>
