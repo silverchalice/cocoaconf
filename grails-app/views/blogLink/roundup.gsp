@@ -138,12 +138,15 @@
     </head>
     <body>
         <div class="aboutContent">
-            <h1 style="color:#1da0d1;">Announcing CocoaConf DC!</h1>
-            <p><g:img dir="images" file="cpdulles.png" style="float:left; width:180px; margin-right: 10px" /> 
-CocoaConf is a focused two day, three track conference for iOS and OS X developers, with an optional  <a href="/session/details/55">pre-conference iOS tutorial</a>.  Our speakers are some of the best authors, trainers, and consultants in the field and they all have a passion for passing on their knowledge and experience to others.  That's where you come in.  We are looking for 100 app developers (or aspiring app developers) who are as eager to learn and grow as our speakers are to teach.  If app development is more than just a job for you, then you'll want to be at this conference.</p>
-<p>Rather than one big conference per year, CocoaConf has multiple smaller events each year. By capping attendance at 100 we are able to maximize the learning and networking potential of each event.  This also allows us to bring CocoaConf closer to our attendees.  So far we've been to Columbus OH, Raleigh NC, Chicago IL, and now we're coming to the Washington DC area.  <strong>This June 28 - 30, we will be in Herndon, VA</strong> for our fourth CocoaConf!  <g:link controller='home' action='register'>Early-bird registration is now open</g:link> while we finalize our schedule.</p>
-<p>You can check out our preliminary <g:link controller="speaker" action='speakers'>speaker</g:link> and <g:link controller='session' action='sessions'>session</g:link> lists to see who's coming so far.  You can also get a feel for what CocoaConf is like by browsing the photos and blog posts about past events below.  Or you can just skip all that and <g:link controller='home' action='register'>register</g:link>.  Our Chicago event sold out and we expect this one to also.  We'd hate for you to miss out on this exciting training opportunity.</p>
-
+               <h3>CocoaConf is a technical conference, pure and simple.</h3>
+               <p>Instead of vendor booths or vendor keynotes, you'll find:</p>
+               <ul style="list-style: none">
+                   <li style="border-bottom: 1px dotted gray"><strong>In-depth</strong> technical sessions.</li>           
+                   <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Multiple <strong>concurrent tracks</strong>.</li>
+                   <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Full-day, hands-on <strong>iOS workshop</strong>.</li>
+                   <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Fun and informative <strong>speaker panel</strong>.</li>
+                   <li style="border-bottom: 1px dotted gray; margin-bottom:15px; font-weight: bold">And much more!</li>
+               </ul>
             <br/>
             <h1 style="color:#1da0d1;">Chicago 2012 Wrap Up!</h1>
             <div id="gallery">
