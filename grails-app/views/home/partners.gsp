@@ -20,17 +20,16 @@
 		<div id="sponsors">
             <h1>Partners</h1>
 			<h2 style="font-size:18px;">The following organizations are helping to make CocoaConf awesome! </h2>  <br/>
-            <div id="8thLight" class="sponsor">
-				<p><a href="http://www.8thlight.com"><img src="${resource(dir:'images',file:'8thLight.png')}" style="float: right; padding-left:5px;"/></a>8th light is an agile software development company with expertise in a variety of programming languages that writes beautiful applications for your web, mobile, and embedded projects. 8th light also offers apprenticeships to push the limits of your knowledge in software development.</p>
+            <div id="heroku" class="sponsor" style="height:185px">
+				<p><a href="http://www.heroku.com"><img src="${resource(dir:'images',file:'heroku-logo-light-234x60.png')}" style="margin-left:15px; float:left;"/></a>Heroku (pronounced her-OH-koo) is a cloud application platform – a new way of building and deploying web apps. Developers can focus 100% on  code and never think about servers, instances, or VMs again. Heroku lets you run any application from simple to complex, from Ruby, Java, Node.JS, Python or Clojure.</p>
+				<p>Heroku takes full responsibility for your app's health, keeping it up and running through thick and thin, while you manage and command your app with a full set of control surface APIs.</p>
+				<p>Tens of thousands of developers have deployed hundreds of thousands of apps to Heroku already.</p>
 			</div>
-            <div id="jetbrains" class="sponsor" style="height:125px">
-				<p><a href="http://www.jetbrains.com/objc/"><img src="${resource(dir:'images',file:'AppCodeLogo.png')}" style="width:215px; height:auto;  margin-bottom:20px; float: left; padding-right:8px;"/></a>JetBrains delivers intelligent software solutions that make developers more productive by simplifying the challenging tasks, automating the routine ones and developing the best development practices. We provide IntelliJ IDEA for Java, ReSharper for .Net and now AppCode — a code-centric intelligent IDE for Objective-C developers (<a href="http://www.jetbrains.com/objc">www.jetbrains.com/objc</a>).</p>
-			</div>
-			<div id="mmc" class="sponsor" style="height:120px">
+			<div id="mmc" class="sponsor" style="height:100px">
 				<p><a href="http://macminicolo.net"><img src="${resource(dir:'images', file: 'macminicolo.png')}"style="float: right; padding-left:8px;"/></a>
 				Dedicated Server - World Class Data Center - Low Cost Hardware - Incredibly Fast Bandwidth - Easy To Setup and Maintain - No Setup Fee - Up to 16GB of RAM - Friendly Support Staff - Up to One TB of Storage - Run Whatever You Want - High Performance Worldwide - High Quality Worldwide</p>	
 			</div>
-			<div id="5by5" class="sponsor" style="height:130px">
+			<div id="5by5" class="sponsor" style="height:110px">
 				<p><a href="http://www.5by5.tv"><img src="${resource(dir:'images', file: '5by5.png')}" style="float: left; padding-right:8px;"/></a> 
 				<a href="http://5by5.tv">5by5</a> is an Internet broadcasting network, home to <a href="http://5by5.tv/broadcasts">shows</a> like <a href="http://5by5.tv/talkshow">The Talk Show</a>, <a href="http://5by5.tv/b2w">Back to Work</a>, <a href="http://5by5.tv/bigwebshow">The Big Web Show</a>, <a href="http://5by5.tv/pipeline">The Pipeline</a>, <a href="http://5by5.tv/buildanalyze">Build and Analyze</a>, and <a href="http://5by5.tv/broadcasts">more</a>, with hosts including <a href="http://5by5.tv/person/dan-benjamin">Dan Benjamin</a>, <a href="http://5by5.tv/person/john-gruber">John Gruber</a>, <a href="http://5by5.tv/person/merlin-mann">Merlin Mann</a>, <a href="http://5by5.tv/person/jeffrey-zeldman">Jeffrey Zeldman</a>, and <a href="http://5by5.tv/person/marco-arment">Marco Arment</a>.</p>
 			</div>
@@ -39,8 +38,6 @@
 				<a href="http://pragprog.com/"><img src="${resource(dir:'images',file:'pragprog.png')}" style="width:auto; float:left;" /></a>
 				<a href="http://informit.com/learnmac"><img src="${resource(dir:'images',file:'Addison-Wesley.jpg')}" style="margin-top:15px;width:550px; height:auto"/></a>
 			</div>
-
-			<br/>
     	</div>
         <div style="clear: both; padding-top: 20px;"><p>For more information about becoming a CocoaConf sponsor, drop us a line at <a href="mailto:info@cocoaconf.com">info@cocoaconf</a></p></div>
 
@@ -53,7 +50,7 @@
                 <br />
 				<a href="http://nscodernightdc.com"><img src="${resource(dir:'images',file:'nsdc.png')}" style="float: left; padding-right:10px;"/></a><h3>NSCoder Night DC</h3>
                 <p><a href="http://nscodernightdc.com">NSCoder Night DC</a>. As the name might imply, we are the DC Area chapter of <a href="http://nscodernight.com/">NSCoder Night</a>. Basically, we are a weekly get-together of developers interested in Cocoa programming for Mac OS X and iPhone. Every Tuesday night for last 4 years we have met to hang out together, code and help each other. In addition to expected antics of a bunch of geeks getting together, we are also strong believers of eating pastries on a regularly scheduled basis. If you happen to be in DC area, on a tuesday night and feel like a pastry and some geeking out, come on over and join us.</p>
-			</div>
+			</div>			
             <div id="raleigh" class="usergroup">
                 <h3>Triangle CocoaHeads</h3>
                 <p>Meetings are the fourth Thursday of the month</p>
@@ -65,46 +62,6 @@
 				<p>CocoaHeads DC is the capital region's premiere Apple-oriented monthly meetup group. While we take our name from Apple’s programming framework for Mac OS X, including the iPhone, we also delve into other Apple-related technologies such as MacRuby and mobile Safari. Our meetings are held on the first Thursday of every month where members present projects and tutorials. </p>
 				<p>More information can be found at our site <a href="http://www.cocoaheadsdc.org">http://www.cocoaheadsdc.org</a>.</p>				
 			</div>
-			<div id="columbus" class="usergroup">
-				<h3>Columbus iPhone Developers User Group</h3>
-				<p>Meetings are the fourth Tuesday of the month at 6:30 PM</p>
-				<p>OCLC - 6565 Kilgour Place Dublin, OH </p>
-				<p><a href="http://groups.google.com/group/cidug">http://groups.google.com/group/cidug</a></p>
-			</div>
-
-			<div id="louisville" class="usergroup">
-				<h3>Louisville, Kentucky CocoaHeads</h3>
-				<p>Thursday, August 11, 2011 18:30 at Mac Authority 128 Breckenridge Lane Louisville, KY 40207</p>
-				<p>Topic to be announced Please register for the meeting at: <a href="http://www.meetup.com/Louisville-Cocoaheads">http://www.meetup.com/Louisville-Cocoaheads</a></p>
-			</div>
-			<div id="cleveland" class="usergroup">
-				<h3>Cleveland, Ohio CocoaHeads</h3>
-				<p>We meet the second Monday of every month at the offices of Sideways in downtown Cleveland.</p>
-				<p>Free pizza begins at 6:00, the presentation follows at 6:30.</p>
-				<p><a href="http://groups.google.com/group/cocoaheads-cleveland">http://groups.google.com/group/cocoaheads-cleveland</a></p>
-			</div>
-			<div id="cincinnati" class="usergroup">
-				<h3>Cincinnati, Ohio CocoaHeads</h3>
-				<p>We meet on the third Thursday of the month to discuss iOS and Mac development topics</p>
-				<p><a href="http://www.CincinnatiCocoaDev.org">http://www.CincinnatiCocoaDev.org</a></p>
-			</div>
-			<div id="annarbor" class="usergroup">
-				<h3>Ann Arbor, Michigan CocoaHeads</h3>
-				<p>Our group includes a number of long time developers as well as developers new to the environment. We welcome all skill levels, and we discuss both Mac and iPhone topics.</p>
-				<p>Please come help build the Cocoa community in Ann Arbor!</p>
-				<p><a href="http://groups.google.com/group/a2-cocoaheads">http://groups.google.com/group/a2-cocoaheads</a></p>
-			</div>
-			<div id="pittsburgh" class="usergroup">
-				<h3>Pittsburgh, Pennsylvania CocoaHeads</h3>
-				<p>We meet the third Thursday of every month to discuss Cocoa topics on the Mac and the iPhone.</p>
-				<p>Meeting location and map can be found at <a href="http://bit.ly/cocoaheads-smithmicro">http://bit.ly/cocoaheads-smithmicro</a></p>
-			</div>
-			<div id="indianapolis" class="usergroup">
-				<h3>Indianapolis, Indiana CocoaHeads</h3>
-				<p>A forum for Mac and iOS app developers and entrepreneurs throughout central Indiana. Indy CocoaHeads exists to create a community of successful Mac and iOS developers in Central Indiana.</p>
-				<p><a href="http://indycocoaheads.com">http://indycocoaheads.com</a> or <a href="http://meetup.com/IndyCocoaHeads">http://meetup.com/IndyCocoaHeads</a></p>
-			</div>
--->
 			<br/>
 			<p>If your group would like be a CocoaConf partner write to us at <a href="mailto:info@cocoaconf.com">info@cocoaconf</a></p>
 		</div>

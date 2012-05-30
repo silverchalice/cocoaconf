@@ -50,8 +50,7 @@ class HomeController {
     def partners = {}
 
 	def chicago_slides = {}
-
-
+  
     def team = {}
 
     def nearYou = {
