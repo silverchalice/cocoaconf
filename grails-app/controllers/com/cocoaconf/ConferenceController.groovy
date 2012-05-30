@@ -12,7 +12,27 @@ class ConferenceController {
         redirect(action: "list", params: params)
     }
 
-    def list() {
+    def home() {
+        println "...and so now we are in the ConferenceController home action..."
+        println "...and the params are " + params
+
+        Conference.list().each { 
+            println "the id is ${it.id} and the tinyName is ${it.tinyName}"
+        }
+
+        def conferenceInstance = Conference.findByTinyName(params.tinyName)
+
+        if(conferenceInstance){
+            println "so there was a conferenceInstance. we are supposed to render the view now..."
+            render view: "home", model: ["conferenceInstance": conferenceInstance] 
+        } else {
+            println "...and there was no conference. :("
+            println "we are going to redirect"
+            redirect controller: "home"
+        }
+    }
+
+   def list() {
         params.max = Math.min(params.max ? params.int('max') : 10, 100)
         [conferenceInstanceList: Conference.list(params), conferenceInstanceTotal: Conference.count()]
     }
