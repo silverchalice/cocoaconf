@@ -1,3 +1,4 @@
+<%@ page import="com.cocoaconf.Conference" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
@@ -7,6 +8,7 @@
         <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
         <feed:meta kind="atom" version="1.0" controller="post" action="feed"/>
         <g:layoutHead />
+        <g:set var="conference" value="${Conference.get(1)}" />
         <script type="text/javascript">
 
           var _gaq = _gaq || [];
@@ -51,7 +53,7 @@
 
            </div>
            <div id="sidebar" style="min-height: 927px;">
-                <div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;"><h3>Washington DC</h3></div>
+                <a href="${request.contextPath}/columbus12"><div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;"><h3>Washington DC${conference}</h3></div></a>
                 <div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;"><h3>Columbus, Ohio</h3></div>
                 <div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;"><h3>Raleigh, NC</h3></div>
                <br/>
