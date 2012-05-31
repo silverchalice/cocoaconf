@@ -124,16 +124,6 @@ class ConferenceController {
         }
     }
 
-/*    def schedule = {
-	    def conf = Conference.get(params.id)
-	    def schedule 
-	    if (conf){
-		    schedule = scheduleService.loadScheduleMap(conf)
-		    [schedule:schedule, conference:conf]
-	    }
-	    else{render "No conference selected."}
-    } */
-
     def schedule = {
 
         def choice = null
