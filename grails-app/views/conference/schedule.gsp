@@ -68,7 +68,8 @@
         }
 
         td {
-            border: 1px solid #EDECEC;
+            border: 0 none;
+            border-bottom: 1px solid lightgray;
             margin: 0;
             padding: 10px 5px;
         }
@@ -78,7 +79,7 @@
         }
 
         th {
-            border:1px solid #EDECEC;
+            border:1px solid lightgray;
             margin: 0
         }
 
@@ -100,22 +101,14 @@
             border-bottom: 1px solid #35b6ff
         }
 
-        tr.session td{
-	
-        }
-
-        tr.general td{
-	
-        }
-
         tr.break td {
-            background: #fff;
+            background: #edecec;
             border:1px solid #edecec;
             padding: 4px 0 0 0;
         }
 
         tr.break th {
-            background: #fff;
+            background: white;
             border:1px solid #edecec;
             padding: 4px 0 0 0;
         }
@@ -130,15 +123,10 @@
 
         td.track3 {
             background-color: white;
-            border-right: 1px solid #EDECEC;
+            border-right: 1px solid lightgray;
         }
 
         td.time {
-            border:1px solid #edecec;
-            background-color: #edecec;
-        }
-		
-		tr.break td.time {
             border:1px solid #edecec;
             background-color: #edecec;
         }
@@ -184,33 +172,15 @@
             </div>
         </g:if>
 
-        <h1 style="float:left">${conference.description} Schedule</h1>
+        <h1 style="float:left">Chicago, 2012: Schedule</h1>
 
-        <g:each in="${schedule}" var="dayMap">
-		    <h3 style="clear:both">${conference.days[dayMap.day -1]}</h3>
-		    <table border="1" width="700" class="schedule">
-			<g:each in="${dayMap.slots}" var="slot">
-			    <g:set var="sessions" value="${slot.value}" />
- 		  	    <tr class="${sessions[0]?.type}">
-  		        <td align="center" width="75" align="center" class="time">${sessions[0].start}-${sessions[0].end}</td>
-                <g:each in="${sessions.sort{it.track}}" var="sess">
-	                <g:if test="${sessions.size() == 1}">
-	                    <g:if test="${sess?.type != 'break'}">
-	                        <td align="center" colspan="3"><g:link controller="session" action="details" id="${sess?.presentation?.id}">${sess?.presentation?.title}</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="${sess?.presentation?.speaker?.id}">${sess?.presentation?.speaker}</g:link></th>
-		                </g:if>
-		                <g:else>
-		                    <td align="center" colspan="3">${sess?.presentation?.title}</span></th>
-		                </g:else>
-		            </g:if>
-		            <g:else>
-                           <td align="center" width="200" class="track${sess?.track}"><span class="sessionTitle"><g:link controller="session" action="details" id="${sess?.presentation?.id}">${sess?.presentation?.title}</g:link></span> <span class="sessionSpeaker"><g:link controller="speaker" action="viewDetails" id="${sess?.presentation?.speaker?.id}">${sess?.presentation?.speaker}</g:link></span></td>
-		            </g:else>
-		        </g:each>
-		  	    </tr>
-		    </g:each>
-		    </table>
-		</g:each>
+        <sec:ifLoggedIn>
+            <g:render template="scheduleLoggedIn" model="['choice': choice]"/>
+        </sec:ifLoggedIn>
+        <sec:ifNotLoggedIn>
+            <g:render template="schedule_chicago"/>
+        </sec:ifNotLoggedIn>
 
-	</body>
+
+    </body>
 </html>
-		
