@@ -162,4 +162,8 @@ class ConferenceController {
 
     }
 
+    def speakers = {
+        [speakerInstanceList: Speaker.findAllByCurrent(true, [sort:'lastName']), speakerInstanceTotal: Speaker.count()]
+    }
+
 }
