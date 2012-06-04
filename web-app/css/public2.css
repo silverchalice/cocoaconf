@@ -102,7 +102,7 @@ body {
 #nav {
     text-align:center;
     background-image: url(../images/bar-bg.png);
-    height:70px;
+    height:60px;
     width:100%;
 }
 
@@ -112,8 +112,8 @@ body {
     font-weight: normal;
     text-decoration: none;
     border-right: 1px solid gray;
-    line-height:70px;
-    height:70px;
+    line-height:60px;
+    height:60px;
     width:100px;
     padding-left:20px;
     display: block;
