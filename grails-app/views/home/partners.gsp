@@ -35,7 +35,7 @@
 			</div>
 			<div style="clear: both">
                 <a href="http://www.manning.com/"><img src="${resource(dir:'images',file:'manning.png')}" style="margin-left:15px; float:left;"/></a>
-				<a href="http://pragprog.com/"><img src="${resource(dir:'images',file:'pragprog.png')}" style="width:auto; float:left;" /></a>
+				<a href="http://wiley.com"><img src="${resource(dir:'images',file:'wiley.jpg')}" style="margin-top:15px;width:300px; height:auto"/></a>
 				<a href="http://informit.com/learnmac"><img src="${resource(dir:'images',file:'Addison-Wesley.jpg')}" style="margin-top:15px;width:550px; height:auto"/></a>
 			</div>
     	</div>
