@@ -51,7 +51,7 @@
         </div>
             <div id="sidebar" style="min-height: 927px;">
                 <div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;">
-                    <a href="${createLink(controller: 'conference', action:'home', id:conferenceInstance.tinyName)}">Home</a>
+                    <g:link controller="conference" action="home" params="[tinyName: conferenceInstance.tinyName]">Home</g:link>
                     <h3>Speakers</h3>
                     <h3>Schedule</h3>
                     <h3>Venue</h3>
