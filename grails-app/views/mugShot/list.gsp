@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/html">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="layout" content="public" />
+        <meta name="layout" content="home" />
          <meta name="tab" content="home" /> <!-- must changes this... -->
         <g:set var="entityName" value="${message(code: 'mugShot.label', default: 'MugShot')}" />
         <title>CocoaConf | Mug Shots</title>
