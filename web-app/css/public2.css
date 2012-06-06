@@ -137,10 +137,9 @@ body {
 }
 
 #sidebar {
-    width:240px;
-    padding: 25px 15px 15px;
+    width:250px;
+    padding: 0;
     float:left;
-    border-right:1px dotted black;
 }
 
 
@@ -157,6 +156,28 @@ body {
 
 }
 
+.conferenceCell {
+    border: none;
+    text-align:center;
+    padding-top: 150px
+}
+
+.conferenceCellName {
+    background: rgb(0, 0, 0) transparent;
+    background: rgba(0, 0, 0, 0.5); /* nice browsers */
+    color:white;
+    padding:10px;
+}
+
+.conferenceCellHover {
+    background-color: black;
+    /*filter:alpha(opacity=40); */
+}
+
+.conferenceName a {
+    text-decoration: none;
+    font-size: 16px;
+}
 
 #content {
 

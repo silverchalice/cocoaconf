@@ -5,6 +5,7 @@
         <title><g:layoutTitle default="Grails" /></title>
         <link rel="stylesheet" href="${resource(dir:'css',file:'public2.css')}" />
         <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
+        <g:javascript library="jquery" plugin="jquery"/>
         <feed:meta kind="atom" version="1.0" controller="post" action="feed"/>
         <g:layoutHead />
         <script type="text/javascript">
@@ -19,6 +20,22 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
+
+          $(document).ready(function(){
+
+              $(".conferenceCell").hover(
+                function () {
+                    console.log('Hover');
+                  $(this).addClass("conferenceCellHover");
+                },
+                function () {
+                    console.log('Hover out');
+                  $(this).removeClass("conferenceCellHover");
+                }
+              );
+
+          })
+
 
         </script>
     </head>
@@ -39,21 +56,29 @@
         </div>
         <div id="page">
 
-           <div id="spinner" class="spinner" style="display:none;">
+            <div id="spinner" class="spinner" style="display:none;">
                 <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
-           </div>
-           <div id="logo"><a href="${request.contextPath}/">
+            </div>
+            <div id="logo"><a href="${request.contextPath}/">
 			   <img src="${resource(dir:'images',file:'cc-logo.png')}" alt="CocoaConf - the conference for iPhone, iPad and Mac developers" border="0" />
 		   	   the conference for <span>iPhone</span>, <span>iPad</span> and <span>Mac</span> developers
-		   </a>
-           </div>
-        <div id="announcementHeader">
-            <span style="color:#ff9627">Registration now open – Early-bird rate ends May 4th.</span>
-        </div>
+		    </a>
+            </div>
+            <div id="announcementHeader">
+                <span style="color:#ff9627">Registration now open – Early-bird rate ends May 4th.</span>
+            </div>
             <div id="sidebar" style="min-height: 927px;">
-                <a href="${request.contextPath}/columbus12"><div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;"><h3>Washington DC${conference}</h3></div></a>
-                <div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;"><h3>Columbus, Ohio</h3></div>
-                <div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;"><h3>Raleigh, NC</h3></div>
+                <a href="${request.contextPath}/columbus12"><div class="conferenceCell" style="background-image:url(${resource(dir: 'images', file:'dc.png')});">
+
+                    <div class="conferenceCellName">Washington DC - June 28-30</div>
+                </div>
+                </a>
+                <div  class="conferenceCell" style="background-image:url(${resource(dir: 'images', file:'columbus.png')})">
+                    <div class="conferenceCellName">Columbus, Ohio - August 9-11</div>
+                </div>
+                <div  class="conferenceCell" style="background-image:url(${resource(dir: 'images', file:'raleigh.png')})">
+                    <div class="conferenceCellName">Raleigh, NC - TBA</div>
+                </div>
                <br/>
                <br/>
                <h2 style="color:#1da0d1;"><g:link controller="mugShot" action="list">CocoaConf - The Mug</g:link></h2>
@@ -63,7 +88,7 @@
               <br/>
               <a href="${resource(dir:'images', file:'sponsorship.pdf')}">Sponsorship Opportunities Available</a>
               <br/><br/>
-           </div>
+            </div>
 
            <div id="content">
               <div class="body"><g:layoutBody /></div>
