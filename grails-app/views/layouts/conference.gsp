@@ -52,11 +52,11 @@
         </div>
             <div id="sidebar" style="min-height: 927px;">
                 <div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;">
-                    <g:link controller="conference" action="home" params="[tinyName: conference.tinyName]">Home</g:link>
-                    <g:link controller="conference" action="speakers" params="[tinyName: conference.tinyName]">Speakers</g:link>
-                    <g:link controller="conference" action="schedule" params="[tinyName: conference.tinyName]">Schedule</g:link>
-                    <h3>Venue</h3>
-                    <h3>Register</h3>
+                    <p><g:link controller="conference" action="home" params="[tinyName: conference.tinyName]">Event Home</g:link></p>
+                    <p><g:link controller="conference" action="speakers" params="[tinyName: conference.tinyName]">Speakers</g:link></p>
+                    <p><g:link controller="conference" action="schedule" params="[tinyName: conference.tinyName]">Schedule</g:link></p>
+                    <p><g:link controller="conference" action="venue" params="[tinyName: conference.tinyName]">Venue</g:link></p>
+                    <p><g:link controller="conference" action="register" params="[tinyName: conference.tinyName]">Register</g:link></p>
             </div>
            </div>
 
