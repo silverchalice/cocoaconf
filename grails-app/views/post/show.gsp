@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="layout" content="public" />
+        <meta name="layout" content="home" />
         <g:set var="entityName" value="${message(code: 'post.label', default: 'Post')}" />
         <title>CocoaConf | iOS/OS X Developer Conference | Chicago, Illinois | March 16 & 17</title>
 

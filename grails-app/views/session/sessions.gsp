@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="layout" content="public" />
+        <meta name="layout" content="home" />
           <meta name="tab" content="sessions" />
         <g:set var="entityName" value="${message(code: 'speaker.label', default: 'Speaker')}" />
         <title>CocoaConf | iOS/OS X Developer Conference | Washington DC Area | June 29 & 30, 2012</title>

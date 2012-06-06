@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="layout" content="public" />
+        <meta name="layout" content="home" />
          <meta name="tab" content="home" /> <!-- must changes this... -->
         <title>CocoaConf | Slides</title>
 

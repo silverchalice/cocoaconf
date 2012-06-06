@@ -2,7 +2,7 @@
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
     <head>
-        <title><g:layoutTitle default="CocoaConf" /></title>
+        <title><g:layoutTitle default="Grails" /></title>
         <link rel="stylesheet" href="${resource(dir:'css',file:'public2.css')}" />
         <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
         <feed:meta kind="atom" version="1.0" controller="post" action="feed"/>
@@ -51,13 +51,18 @@
             <span style="color:#ff9627">Registration now open – Early-bird rate ends May 4th.</span>
         </div>
             <div id="sidebar" style="min-height: 927px;">
-                <div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;">
-                    <g:link controller="conference" action="home" params="[tinyName: conference.tinyName]">Home</g:link>
-                    <g:link controller="conference" action="speakers" params="[tinyName: conference.tinyName]">Speakers</g:link>
-                    <g:link controller="conference" action="schedule" params="[tinyName: conference.tinyName]">Schedule</g:link>
-                    <h3>Venue</h3>
-                    <h3>Register</h3>
-            </div>
+                <a href="${request.contextPath}/columbus12"><div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;"><h3>Washington DC${conference}</h3></div></a>
+                <div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;"><h3>Columbus, Ohio</h3></div>
+                <div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;"><h3>Raleigh, NC</h3></div>
+               <br/>
+               <br/>
+               <h2 style="color:#1da0d1;"><g:link controller="mugShot" action="list">CocoaConf - The Mug</g:link></h2>
+               <g:link controller="mugShot" action="list"><g:img dir="images" file="mugThumb.png" style="width:160px; margin:10px 20px" /> </g:link>
+               <br/>
+              <h2 style="color:#1da0d1;">Our Sponsors</h2>
+              <br/>
+              <a href="${resource(dir:'images', file:'sponsorship.pdf')}">Sponsorship Opportunities Available</a>
+              <br/><br/>
            </div>
 
            <div id="content">
