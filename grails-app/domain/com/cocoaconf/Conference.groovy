@@ -10,7 +10,6 @@ class Conference {
     Venue venue
     String description
     String tinyName
-    String foo
     List days
 
     static hasMany = [speakers : Speaker, sessions : Session, days: ConferenceDay]
