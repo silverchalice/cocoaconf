@@ -21,11 +21,11 @@ class ConferenceController {
             println "the id is ${it.id} and the tinyName is ${it.tinyName}"
         }
 
-        def conferenceInstance = Conference.findByTinyName(params.tinyName)
+        def conference = Conference.findByTinyName(params.tinyName)
 
-        if(conferenceInstance){
-            println "so there was a conferenceInstance. we are supposed to render the view now..."
-            render view: "home", model: ["conferenceInstance": conferenceInstance] 
+        if(conference){
+            println "so there was a conference. we are supposed to render the view now..."
+            render view: "home", model: ["conference": conference] 
         } else {
             println "...and there was no conference. :("
             println "we are going to redirect"
@@ -35,49 +35,49 @@ class ConferenceController {
 
    def list() {
         params.max = Math.min(params.max ? params.int('max') : 10, 100)
-        [conferenceInstanceList: Conference.list(params), conferenceInstanceTotal: Conference.count()]
+        [conferenceList: Conference.list(params), conferenceTotal: Conference.count()]
     }
 
     def create() {
-        [conferenceInstance: new Conference(params)]
+        [conference: new Conference(params)]
     }
 
     def save() {
-        def conferenceInstance = new Conference(params)
-        if (!conferenceInstance.save(flush: true)) {
-            render(view: "create", model: [conferenceInstance: conferenceInstance])
+        def conference = new Conference(params)
+        if (!conference.save(flush: true)) {
+            render(view: "create", model: [conference: conference])
             return
         }
 
-		flash.message = message(code: 'default.created.message', args: [message(code: 'conference.label', default: 'Conference'), conferenceInstance.id])
-        redirect(action: "show", id: conferenceInstance.id)
+		flash.message = message(code: 'default.created.message', args: [message(code: 'conference.label', default: 'Conference'), conference.id])
+        redirect(action: "show", id: conference.id)
     }
 
     def show() {
-        def conferenceInstance = Conference.get(params.id)
-        if (!conferenceInstance) {
+        def conference = Conference.get(params.id)
+        if (!conference) {
 			flash.message = message(code: 'default.not.found.message', args: [message(code: 'conference.label', default: 'Conference'), params.id])
             redirect(action: "list")
             return
         }
 
-        [conferenceInstance: conferenceInstance]
+        [conference: conference]
     }
 
     def edit() {
-        def conferenceInstance = Conference.get(params.id)
-        if (!conferenceInstance) {
+        def conference = Conference.get(params.id)
+        if (!conference) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'conference.label', default: 'Conference'), params.id])
             redirect(action: "list")
             return
         }
 
-        [conferenceInstance: conferenceInstance]
+        [conference: conference]
     }
 
     def update() {
-        def conferenceInstance = Conference.get(params.id)
-        if (!conferenceInstance) {
+        def conference = Conference.get(params.id)
+        if (!conference) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'conference.label', default: 'Conference'), params.id])
             redirect(action: "list")
             return
@@ -85,36 +85,36 @@ class ConferenceController {
 
         if (params.version) {
             def version = params.version.toLong()
-            if (conferenceInstance.version > version) {
-                conferenceInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
+            if (conference.version > version) {
+                conference.errors.rejectValue("version", "default.optimistic.locking.failure",
                           [message(code: 'conference.label', default: 'Conference')] as Object[],
                           "Another user has updated this Conference while you were editing")
-                render(view: "edit", model: [conferenceInstance: conferenceInstance])
+                render(view: "edit", model: [conference: conference])
                 return
             }
         }
 
-        conferenceInstance.properties = params
+        conference.properties = params
 
-        if (!conferenceInstance.save(flush: true)) {
-            render(view: "edit", model: [conferenceInstance: conferenceInstance])
+        if (!conference.save(flush: true)) {
+            render(view: "edit", model: [conference: conference])
             return
         }
 
-		flash.message = message(code: 'default.updated.message', args: [message(code: 'conference.label', default: 'Conference'), conferenceInstance.id])
-        redirect(action: "show", id: conferenceInstance.id)
+		flash.message = message(code: 'default.updated.message', args: [message(code: 'conference.label', default: 'Conference'), conference.id])
+        redirect(action: "show", id: conference.id)
     }
 
     def delete() {
-        def conferenceInstance = Conference.get(params.id)
-        if (!conferenceInstance) {
+        def conference = Conference.get(params.id)
+        if (!conference) {
 			flash.message = message(code: 'default.not.found.message', args: [message(code: 'conference.label', default: 'Conference'), params.id])
             redirect(action: "list")
             return
         }
 
         try {
-            conferenceInstance.delete(flush: true)
+            conference.delete(flush: true)
 			flash.message = message(code: 'default.deleted.message', args: [message(code: 'conference.label', default: 'Conference'), params.id])
             redirect(action: "list")
         }
@@ -139,10 +139,11 @@ class ConferenceController {
     }
 
     def speakers = {
+		params.each{key, val -> println "$key == $val"}
         def conf = Conference.findByTinyName(params.tinyName)
         if(conf){
             println "and its speakers are " + conf.speakers
-            [speakerInstanceList: conf.speakers, speakerInstanceTotal: Speaker.count()]
+            [conference:conf, speakerInstanceList: conf.speakers, speakerInstanceTotal: Speaker.count()]
         } else {
             redirect controller: "home"
         }

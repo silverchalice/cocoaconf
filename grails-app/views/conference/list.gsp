@@ -39,27 +39,27 @@
 					</tr>
 				</thead>
 				<tbody>
-				<g:each in="${conferenceInstanceList}" status="i" var="conferenceInstance">
+				<g:each in="${conferenceList}" status="i" var="conference">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${conferenceInstance.id}">${fieldValue(bean: conferenceInstance, field: "startDate")}</g:link></td>
+						<td><g:link action="show" id="${conference.id}">${fieldValue(bean: conference, field: "startDate")}</g:link></td>
 					
-						<td><g:formatDate date="${conferenceInstance.endDate}" /></td>
+						<td><g:formatDate date="${conference.endDate}" /></td>
 					
-						<td>${fieldValue(bean: conferenceInstance, field: "venue")}</td>
+						<td>${fieldValue(bean: conference, field: "venue")}</td>
 					
-						<td>${fieldValue(bean: conferenceInstance, field: "description")}</td>
+						<td>${fieldValue(bean: conference, field: "description")}</td>
 					
-						<td>${fieldValue(bean: conferenceInstance, field: "city")}</td>
+						<td>${fieldValue(bean: conference, field: "city")}</td>
 					
-						<td>${fieldValue(bean: conferenceInstance, field: "state")}</td>
+						<td>${fieldValue(bean: conference, field: "state")}</td>
 					
 					</tr>
 				</g:each>
 				</tbody>
 			</table>
 			<div class="pagination">
-				<g:paginate total="${conferenceInstanceTotal}" />
+				<g:paginate total="${conferenceTotal}" />
 			</div>
 		</div>
 	</body>
