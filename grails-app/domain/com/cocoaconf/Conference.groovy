@@ -22,6 +22,10 @@ class Conference {
 		days nullable:true
     }
 
+    def getSpeakers(){
+        sessions.collect { it.presentation.speaker }
+    }
+
     static mapping = {
 		days sort:'id'
     }

@@ -1,3 +1,4 @@
+<%@ page import="com.cocoaconf.Conference" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
@@ -7,6 +8,7 @@
         <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
         <feed:meta kind="atom" version="1.0" controller="post" action="feed"/>
         <g:layoutHead />
+        <g:set var="conference" value="${Conference.get(1)}" />
         <script type="text/javascript">
 
           var _gaq = _gaq || [];
@@ -52,17 +54,9 @@
 
            </div>
            <div id="sidebar" style="min-height: 927px;">
-               <h2 style="color:#1da0d1;">About CocoaConf</h2>
-               <h3>CocoaConf is a technical conference, pure and simple.</h3>
-               <p>Instead of vendor booths or vendor keynotes, you'll find:</p>
-               <ul style="list-style: none">
-                   <li style="border-bottom: 1px dotted gray"><strong>In-depth</strong> technical sessions.</li>           
-                   <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Multiple <strong>concurrent tracks</strong>.</li>
-                   <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Full-day, hands-on <strong>iOS workshop</strong>.</li>
-                   <li style="border-bottom: 1px dotted gray; margin-bottom:15px;">Fun and informative <strong>speaker panel</strong>.</li>
-                   <li style="border-bottom: 1px dotted gray; margin-bottom:15px; font-weight: bold">And much more!</li>
-               </ul>
-               <a href="http://www.twitter.com/cocoaconf" style="margin-left: 20px"><img src="http://twitter-badges.s3.amazonaws.com/follow_us-c.png" alt="Follow CocoaConf on Twitter"/></a>
+                <a href="${request.contextPath}/columbus12"><div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;"><h3>Washington DC${conference}</h3></div></a>
+                <div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;"><h3>Columbus, Ohio</h3></div>
+                <div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;"><h3>Raleigh, NC</h3></div>
                <br/>
                <br/>
                <h2 style="color:#1da0d1;"><g:link controller="mugShot" action="list">CocoaConf - The Mug</g:link></h2>
