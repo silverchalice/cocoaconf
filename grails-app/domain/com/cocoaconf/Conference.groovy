@@ -23,7 +23,8 @@ class Conference {
     }
 
     def getSpeakers(){
-        sessions.collect { it.presentation.speaker }
+        def speakers = sessions.collect { it.presentation.speaker }.sort{it.lastName}
+        return speakers.unique()
     }
 
     static mapping = {

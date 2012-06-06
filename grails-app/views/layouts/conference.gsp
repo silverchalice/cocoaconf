@@ -2,7 +2,7 @@
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
     <head>
-        <title><g:layoutTitle default="Grails" /></title>
+        <title><g:layoutTitle default="CocoaConf" /></title>
         <link rel="stylesheet" href="${resource(dir:'css',file:'public2.css')}" />
         <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
         <feed:meta kind="atom" version="1.0" controller="post" action="feed"/>
