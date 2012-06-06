@@ -23,6 +23,7 @@
         </script>
     </head>
     <body id="announcement">
+        <div id="navWrapper">
             <div id="nav">
                 <g:link class="${pageProperty(name:'meta.tab') == 'home' ? 'current' : ''}" uri="/">Home</g:link>
                 <g:link class="${pageProperty(name:'meta.tab') == 'blog' ? 'current' : ''}" controller="post" action="list" style="background-position: -100px 0;">Blog</g:link>
@@ -35,7 +36,7 @@
 
 
             </div>
-
+        </div>
         <div id="page">
 
            <div id="spinner" class="spinner" style="display:none;">

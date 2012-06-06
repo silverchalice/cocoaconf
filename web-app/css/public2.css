@@ -100,6 +100,11 @@ body {
 }
 
 #nav {
+    width:1000px;
+    margin:0 auto;
+}
+
+#navWrapper {
     text-align:center;
     background-image: url(../images/bar-bg.png);
     height:60px;
@@ -111,11 +116,12 @@ body {
     float:left;
     font-weight: normal;
     text-decoration: none;
-    border-right: 1px solid gray;
+    /*border-right: 1px solid gray;  */
+    border-left: 1px solid gray;
     line-height:60px;
     height:60px;
-    width:100px;
-    padding-left:20px;
+    width:143px;
+    padding-left:0px;
     display: block;
 }
 

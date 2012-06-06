@@ -33,6 +33,7 @@ class PostController {
     def show = {
         def postInstance
         if(params.slug){
+	        println "post viewed: ${params.slug} - ${new Date()}"
             postInstance = Post.findBySlug(params.slug)
         } else {
             postInstance = Post.get(params.id)
@@ -104,6 +105,7 @@ class PostController {
     }
 
     def feed = {
+	    println "feed called at ${new Date()}"
         render (feedType: "atom", feedVersion:"1.0") {
             title = "The CocoaConf Blog"
             link = "http://cocoaconf.com/feed"
