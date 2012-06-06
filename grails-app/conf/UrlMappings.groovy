@@ -35,6 +35,11 @@ class UrlMappings {
             action = "venue"
             id = "$tinyName"
 		}
+		"/$tinyName/register"{
+            controller = "conference"
+            action = "register"
+            id = "$tinyName"
+		}
 		"/venue"{
 			controller = "home"
 			action = "about"
