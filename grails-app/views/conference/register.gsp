@@ -10,7 +10,7 @@
 <html>
   <head>
       <title>CocoaConf | iOS/OS X Developer Conference | Washington DC Area | June 29 & 30, 2012</title>
-      <meta name="layout" content="public" />
+      <meta name="layout" content="conference" />
         <meta name="tab" content="register" />
       <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
 
@@ -64,36 +64,6 @@
 
       </script>
 
-      <style type="text/css">
-
-          #announcement .ui-widget-header {
-              background:none;
-              border:0;
-          }
-          #content {
-              min-height:360px;
-          }
-          #register {
-              font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-              font-size:17px;
-              margin-left:75px;
-              margin-top:15px;
-          }
-
-          #openDialog {
-              font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-              font-size:15px;
-              margin-left:25px;
-              margin-top:5px;
-            }
-
-            #closeFlash {
-              font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-              font-size:15px;
-              margin-left:25px;
-              margin-top:5px;
-            }
-        </style>
     </head>
 
     <body>

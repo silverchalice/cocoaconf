@@ -55,8 +55,6 @@
 
         <style type="text/css">
 
-
-
         table {
             border: 0;
             margin: 0;

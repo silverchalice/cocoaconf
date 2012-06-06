@@ -58,37 +58,6 @@
 
         </script>
 
-        <style type="text/css">
-
-            #announcement .ui-widget-header {
-                background:none;
-                border:0;
-            }
-
-            .button {
-                font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-                font-size:18px;
-                margin-left:200px;
-                margin-top:15px;
-            }
-
-            a {
-                text-decoration: none;
-                color:#2ab0e2;
-            }
-
-            a:hover {
-                text-decoration: underline
-            }
-
-            #closeFlash {
-                font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-                font-size:15px;
-                margin-left:25px;
-                margin-top:5px;
-            }
-
-        </style>
     </head>
 
     <body>
