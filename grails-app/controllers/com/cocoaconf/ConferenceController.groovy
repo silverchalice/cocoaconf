@@ -126,26 +126,12 @@ class ConferenceController {
 
     def schedule = {
 
-        def choice = null
-        def slides = null
-
-        def conferenceInstance = Conference.findByTinyName(params.tinyName)
-
-        if(conferenceInstance){
-            if(springSecurityService.isLoggedIn()) {
-                def user = User.get(springSecurityService.principal.id)
-                choice = user.choice
-
-                //File scheduleSlideDownload = new File(config.slideDirectory + "cocoaconf_columbus_2011_all_slides.zip")
-                //if(scheduleSlideDownload.exists()) {
-                //    slides = "cocoaconf_columbus_2011_all_slides.zip"
-                //}
-            } else {
-               println "no user"
-            }
-
-           [choice: choice, /* slides:slides */]
-
+        def conf = Conference.findByTinyName(params.tinyName)
+        def schedule 
+        if (conf){
+            schedule = scheduleService.loadScheduleMap(conf)
+            println "!! yayz!!!!!1 and the schedule was: " + schedule
+            [schedule:schedule, conference:conf]
         } else {
             redirect controller: "home"
         }
@@ -153,7 +139,12 @@ class ConferenceController {
     }
 
     def speakers = {
-        [speakerInstanceList: Speaker.findAllByCurrent(true, [sort:'lastName']), speakerInstanceTotal: Speaker.count()]
+        def conf = Conference.findByTinyName(params.tinyName)
+        if(conf){
+            [speakerInstanceList: conf.speakers, speakerInstanceTotal: Speaker.count()]
+        } else {
+            redirect controller: "home"
+        }
     }
 
     def venue = {}
