@@ -23,87 +23,87 @@
 			</g:if>
 			<ol class="property-list conference">
 			
-				<g:if test="${conferenceInstance?.startDate}">
+				<g:if test="${conference?.startDate}">
 				<li class="fieldcontain">
 					<span id="startDate-label" class="property-label"><g:message code="conference.startDate.label" default="Start Date" /></span>
 					
-						<span class="property-value" aria-labelledby="startDate-label"><g:formatDate date="${conferenceInstance?.startDate}" /></span>
+						<span class="property-value" aria-labelledby="startDate-label"><g:formatDate date="${conference?.startDate}" /></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${conferenceInstance?.endDate}">
+				<g:if test="${conference?.endDate}">
 				<li class="fieldcontain">
 					<span id="endDate-label" class="property-label"><g:message code="conference.endDate.label" default="End Date" /></span>
 					
-						<span class="property-value" aria-labelledby="endDate-label"><g:formatDate date="${conferenceInstance?.endDate}" /></span>
+						<span class="property-value" aria-labelledby="endDate-label"><g:formatDate date="${conference?.endDate}" /></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${conferenceInstance?.venue}">
+				<g:if test="${conference?.venue}">
 				<li class="fieldcontain">
 					<span id="venue-label" class="property-label"><g:message code="conference.venue.label" default="Venue" /></span>
 					
-						<span class="property-value" aria-labelledby="venue-label"><g:link controller="venue" action="show" id="${conferenceInstance?.venue?.id}">${conferenceInstance?.venue?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="venue-label"><g:link controller="venue" action="show" id="${conference?.venue?.id}">${conference?.venue?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${conferenceInstance?.description}">
+				<g:if test="${conference?.description}">
 				<li class="fieldcontain">
 					<span id="description-label" class="property-label"><g:message code="conference.description.label" default="Description" /></span>
 					
-						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${conferenceInstance}" field="description"/></span>
+						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${conference}" field="description"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${conferenceInstance?.city}">
+				<g:if test="${conference?.city}">
 				<li class="fieldcontain">
 					<span id="city-label" class="property-label"><g:message code="conference.city.label" default="City" /></span>
 					
-						<span class="property-value" aria-labelledby="city-label"><g:fieldValue bean="${conferenceInstance}" field="city"/></span>
+						<span class="property-value" aria-labelledby="city-label"><g:fieldValue bean="${conference}" field="city"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${conferenceInstance?.sessions}">
+				<g:if test="${conference?.sessions}">
 				<li class="fieldcontain">
 					<span id="sessions-label" class="property-label"><g:message code="conference.sessions.label" default="Sessions" /></span>
 					
-						<g:each in="${conferenceInstance.sessions}" var="s">
+						<g:each in="${conference.sessions}" var="s">
 						<span class="property-value" aria-labelledby="sessions-label"><g:link controller="session" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
 						</g:each>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${conferenceInstance?.speakers}">
+				<g:if test="${conference?.speakers}">
 				<li class="fieldcontain">
 					<span id="speakers-label" class="property-label"><g:message code="conference.speakers.label" default="Speakers" /></span>
 					
-						<g:each in="${conferenceInstance.speakers}" var="s">
+						<g:each in="${conference.speakers}" var="s">
 						<span class="property-value" aria-labelledby="speakers-label"><g:link controller="speaker" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
 						</g:each>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${conferenceInstance?.state}">
+				<g:if test="${conference?.state}">
 				<li class="fieldcontain">
 					<span id="state-label" class="property-label"><g:message code="conference.state.label" default="State" /></span>
 					
-						<span class="property-value" aria-labelledby="state-label"><g:fieldValue bean="${conferenceInstance}" field="state"/></span>
+						<span class="property-value" aria-labelledby="state-label"><g:fieldValue bean="${conference}" field="state"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${conferenceInstance?.tinyName}">
+				<g:if test="${conference?.tinyName}">
 				<li class="fieldcontain">
 					<span id="tinyName-label" class="property-label"><g:message code="conference.tinyName.label" default="Tiny Name" /></span>
 					
-						<span class="property-value" aria-labelledby="tinyName-label"><g:fieldValue bean="${conferenceInstance}" field="tinyName"/></span>
+						<span class="property-value" aria-labelledby="tinyName-label"><g:fieldValue bean="${conference}" field="tinyName"/></span>
 					
 				</li>
 				</g:if>
@@ -111,8 +111,8 @@
 			</ol>
 			<g:form>
 				<fieldset class="buttons">
-					<g:hiddenField name="id" value="${conferenceInstance?.id}" />
-					<g:link class="edit" action="edit" id="${conferenceInstance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
+					<g:hiddenField name="id" value="${conference?.id}" />
+					<g:link class="edit" action="edit" id="${conference?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
 					<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
 				</fieldset>
 			</g:form>
