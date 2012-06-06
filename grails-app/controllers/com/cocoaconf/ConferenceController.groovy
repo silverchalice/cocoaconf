@@ -141,6 +141,7 @@ class ConferenceController {
     def speakers = {
         def conf = Conference.findByTinyName(params.tinyName)
         if(conf){
+            println "and its speakers are " + conf.speakers
             [speakerInstanceList: conf.speakers, speakerInstanceTotal: Speaker.count()]
         } else {
             redirect controller: "home"
