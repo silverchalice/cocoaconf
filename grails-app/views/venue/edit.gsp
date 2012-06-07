@@ -39,6 +39,15 @@
                                     <g:textArea name="description" cols="40" rows="5" value="${venueInstance?.description}" />
                                 </td>
                             </tr>
+
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="googleMapsCode"><g:message code="venue.googleMapsCode.label" default="Google Maps code" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: venueInstance, field: 'googleMapsCode', 'errors')}">
+                                    <g:textArea name="googleMapsCode" cols="40" rows="5" value="${venueInstance?.googleMapsCode}" />
+                                </td>
+                            </tr>
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
