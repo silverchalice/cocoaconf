@@ -71,25 +71,7 @@
             </g:if>
 
             <h1>Chicago, IL: March 16 & 17, 2012</h1>
-            <img src="${resource(dir:'images', file:'raleigh2.JPG')}" style="float:left; width:250px; margin:14px;"/>
-            <p>Join us in Chicago for the first CocoaConf of 2012.  This March we will gather a hundred iOS and OS X developers for two days packed with cutting edge technical content.  Our speakers include developers, trainers, and authors who have been there and done that.  And they're eager to pass on what they've learned to all of us.
-            </p>
-            <p>Opportunities to learn from experts like this don&#8217;t come very often, so we want to help you make the most of it.  From the classroom arrangement to providing all meals and snacks to keeping the attendee to speaker ratio as low as possible, this event is all about providing you with the best learning experience ever.
-            <p>With three tracks on Friday and Saturday, we will have sessions for all skill levels, but for those just getting started, we also offer an all-day hands-on iOS tutorial on Thursday, March 15th. In this intense class, you&#8217;ll learn by building a real application with the help of an expert instructor.  There's never been a better time to get into this exciting and fast-growing field of development.</p>
-            <p>You don&#8217;t want to miss this conference, so <g:link controller="home" action="register">register today</g:link> and be prepared to learn! </p>
-
-            <!-- <div style="background-image: url(${resource(dir:'images',file:'threesateam.png')}); background-position: 0 0; padding-left: 80px; background-repeat: no-repeat; margin-top: 20px; min-height: 75px">
-
-                <h2>Two's Company, Three's a <span style="color:#2ab0e2">Team</span></h2>
-	    	    <p><strong>The team that trains together stays together</strong>, so we are offering a special discount for teams of three or more.  For every two people that register in one transaction, we will give your team one free pass.
-                <br/><a href="/blog/threes-a-team">Get the details here.</a></p>
-            </div>  -->
-
-            <h2 style="color:#1da0d1;">Raleigh 2011 Wrap Up!</h2>
-            <p><img src="${resource(dir:'images', file:'cc-small.png')}" class="paralogo">The second CocoaConf was held in Raleigh, North Carolina on December 2nd and 3rd. Over seventy iPhone, iPad, and Mac developers met up for two days packed with in-depth technical content. With fourteen excellent speakers and three tracks, it was often difficult to decide what to attend, but the tough choices paid off with great ideas, new insights and renewed motivation.</p>
-            <g:link controller="blogLink" action="roundup" style="color:#ff9627; font-size:18px; font-weight: bold">Read more!</g:link>
-        </div>
-
+            ${conference?.blurb}
 
         <div id="featuredSpeakers">
             <h2 style="color:#1da0d1;">Featured Speakers</h2>
