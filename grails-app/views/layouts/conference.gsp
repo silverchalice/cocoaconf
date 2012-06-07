@@ -25,14 +25,13 @@
     <body id="announcement">
         <div id="navWrapper">
             <div id="nav">
-                <g:link class="${pageProperty(name:'meta.tab') == 'home' ? 'current' : ''}" uri="/">Home</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'blog' ? 'current' : ''}" controller="post" action="list" style="background-position: -100px 0;">Blog</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}" controller="speaker" action="speakers" style="background-position: -200px 0;">Speakers</g:link>
-                <a href="http://cocoaconf.com/schedule" class="${pageProperty(name:'meta.tab') == 'schedule' ? 'current' : ''}" style="background-position: -300px 0;">Schedule</a>
-                <g:link class="${pageProperty(name:'meta.tab') == 'about' ? 'current' : ''}" controller="home" action="about" style="background-position: -400px 0;">Venue</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}" controller="home" action="register" style="background-position: -500px 0;">Register</g:link>
-
-                <g:link class="${pageProperty(name:'meta.tab') == 'next' ? 'current' : ''}" controller="home" action="nearYou" style="background-position: -700px 0; width:130px;">[cocoaConf next]</g:link>
+                <g:link uri="/">Home</g:link>
+                <g:link controller="post" action="list" style="background-position: -100px 0;">Blog</g:link>
+                <g:link controller="speaker" action="speakers" style="background-position: -200px 0;">Speakers</g:link>
+                <a href="http://cocoaconf.com/schedule" style="background-position: -300px 0;">Schedule</a>
+                <g:link controller="home" action="about" style="background-position: -400px 0;">Venue</g:link>
+                <g:link controller="home" action="register" style="background-position: -500px 0;">Register</g:link>
+                <g:link controller="home" action="nearYou" style="background-position: -700px 0; width:130px;">[cocoaConf next]</g:link>
 
 
             </div>
@@ -54,6 +53,7 @@
                 <div style="background-color:gray; border: 1px solid black; padding:30px 0px; margin:12px 12px; text-align:center;">
                     <p><g:link controller="conference" action="home" params="[tinyName: conference.tinyName]">Event Home</g:link></p>
                     <p><g:link controller="conference" action="speakers" params="[tinyName: conference.tinyName]">Speakers</g:link></p>
+                    <p><g:link controller="conference" action="sessions" params="[tinyName: conference.tinyName]">Sessions</g:link></p>
                     <p><g:link controller="conference" action="schedule" params="[tinyName: conference.tinyName]">Schedule</g:link></p>
                     <p><g:link controller="conference" action="venue" params="[tinyName: conference.tinyName]">Venue</g:link></p>
                     <p><g:link controller="conference" action="register" params="[tinyName: conference.tinyName]">Register</g:link></p>
