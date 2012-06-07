@@ -30,6 +30,10 @@ class UrlMappings {
             controller = "conference"
             action = "speakers"
 		}
+		"/$tinyName/sessions"{
+            controller = "conference"
+            action = "sessions"
+		}
 		"/$tinyName/venue"{
             controller = "conference"
             action = "venue"
