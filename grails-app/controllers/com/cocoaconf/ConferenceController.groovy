@@ -149,6 +149,15 @@ class ConferenceController {
         }
     }
 
+    def sessions = {
+        def conf = Conference.findByTinyName(params.tinyName)
+        if(conf){
+            [conference:conf, sessions: conf.sessionList().sort{ it.presentation.title }]
+        } else {
+            redirect controller: "home"
+        }
+    }
+
     def venue = {
         def conf = Conference.findByTinyName(params.tinyName)
         if(conf){
