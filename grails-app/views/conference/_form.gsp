@@ -34,6 +34,30 @@
 	<g:textArea name="description" cols="40" rows="5" maxlength="10000" value="${conference?.description}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'blurb', 'error')} ">
+	<label for="blurb">
+		<g:message code="conference.blurb.label" default="Blurb (will appear on conference home page)" />
+		
+	</label>
+	<g:textArea name="blurb" cols="40" rows="5" maxlength="10000" value="${conference?.blurb}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'registrationBlurb', 'error')} ">
+	<label for="registrationBlurb">
+		<g:message code="conference.registrationBlurb.label" default="Registration Blurb (will appear on conference home page)" />
+		
+	</label>
+	<g:textArea name="registrationBlurb" cols="40" rows="5" maxlength="10000" value="${conference?.registrationBlurb}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'eventBriteBlurb', 'error')} ">
+	<label for="eventBriteBlurb">
+		<g:message code="conference.eventBriteBlurb.label" default="EventBrite Blurb (for showing EventBriteness on conference registration page)" />
+		
+	</label>
+	<g:textArea name="eventBriteBlurb" cols="40" rows="5" maxlength="10000" value="${conference?.eventBriteBlurb}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'city', 'error')} ">
 	<label for="city">
 		<g:message code="conference.city.label" default="City" />
