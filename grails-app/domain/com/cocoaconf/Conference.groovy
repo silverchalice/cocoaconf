@@ -9,6 +9,9 @@ class Conference {
     Date endDate
     Venue venue
     String description
+    String blurb //text on conference home page
+    String registrationBlurb //text on conference "Register" page
+    String eventBriteBlurb //code to display EventBrite stuff on "Register" page
     String tinyName
     List days
 
@@ -24,11 +27,18 @@ class Conference {
 
     def getSpeakers(){
         def speakers = sessions.collect { it.presentation.speaker }.sort{it.lastName}
+        speakers = speakers - Speaker.findByFirstName("TBA")
         return speakers.unique()
+    }
+
+    def sessionList(){
+        def sessions = sessions.findAll{it.type != 'break'}
     }
 
     static mapping = {
 		days sort:'id'
+        registrationBlurb type: 'text'
+        eventBriteBlurb type: 'text'
     }
 }
 
