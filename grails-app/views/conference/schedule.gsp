@@ -90,7 +90,7 @@
             text-decoration: none;
             border-bottom: 1px dotted #35b6ff;
             font-size: 12px;
-            color: #35b6ff;
+            color: #2AB0E2;
             font-weight: bold;
         }
 
