@@ -15,7 +15,7 @@
             $(document).ready(function() {
 
                 $('#conferenceNav').corner("5px");
-                $('#announcementHeader').corner("2px");
+
                 $('.odd').corner("5px");
                 $('.even').corner("5px");
 
@@ -61,8 +61,9 @@
                the conference for <span>iPhone</span>, <span>iPad</span> and <span>Mac</span> developers
            </a>
            </div>
-
-            </div>
+            <div id="announcementHeader">
+                   <span style="color:#ff9627">&nbsp;</span>
+               </div>
                 <div id="sidebar" style="text-align: center; width: 180px;">
                     <div id="conferenceNav">
                         <ul>
