@@ -16,7 +16,8 @@ class SpeakerController {
     }
 
     def speakers = {
-        [speakerInstanceList: Speaker.findAllByCurrent(true, [sort:'lastName']), speakerInstanceTotal: Speaker.count()]
+	    def speakers = Speaker.where{firstName != 'TBA' && firstName != 'Mystery'}.list([sort:'lastName'])
+        [speakerInstanceList: speakers, speakerInstanceTotal: Speaker.count()]
     }
 
     def create = {

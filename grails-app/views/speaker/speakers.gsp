@@ -59,7 +59,7 @@
 
     </head>
     <body>
-         <h1>Herndon, Virginia 2012: Speakers</h1>
+         <h1>CocoaConf Speakers</h1>
         <p>CocoaConf speakers include well known trainers, authors, and professional iOS and OS X developers.</p>
 
         <div class="list">
