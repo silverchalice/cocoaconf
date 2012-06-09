@@ -50,13 +50,13 @@
     <body id="announcement">
         <div id="navWrapper">
             <div id="nav">
-                <g:link class="${pageProperty(name:'meta.tab') == 'home' ? 'current' : ''}" uri="/" style="background-position: -40% 0;">Home</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'about' ? 'current' : ''}"  controller="home" action="about" style="background-position: -10% 0;">About</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'blog' ? 'current' : ''}"  controller="post" action="list" style="background-position: -0% 0;">Blog</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}"  controller="speaker" action="speakers" style="background-position: 10% 0;">Our Speakers</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}"  controller="home" action="partners" style="background-position: 35% 0;">Our Partners</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'home' ? 'current' : ''}" uri="/">Home</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'about' ? 'current' : ''}"  controller="home" action="about">About</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'blog' ? 'current' : ''}"  controller="post" action="list">Blog</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}"  controller="speaker" action="speakers">Our Speakers</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}"  controller="home" action="partners">Our Partners</g:link>
                 <g:link class="${pageProperty(name:'meta.tab') == 'events' ? 'current' : ''}"  style="background-position: 55% 0;">Events</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'next' ? 'current' : ''}"  controller="home" action="nearYou" style="background-position: 60% 0; width:130px;">[cocoaConf next]</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'next' ? 'current' : ''}"  controller="home" action="nearYou" style="width:130px;">[cocoaConf next]</g:link>
 
 
             </div>
@@ -76,14 +76,14 @@
             </div>
             <div id="sidebar" style="margin:10px;">
                 <a href="${request.contextPath}/dc-2012/home">
-                <div class="conferenceCell" style="background-image:url(${resource(dir: 'images', file:'dc.png')}); background-repeat: no-repeat;">
+                <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'dc.png')}) no-repeat bottom;">
                     <div class="conferenceCellName">Washington DC - June 28-30</div>
                 </div>
                 </a>
-                <div class="conferenceCell" style="background-image:url(${resource(dir: 'images', file:'columbus.png')}); background-repeat: no-repeat;">
+                <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'columbus.png')}) no-repeat bottom;">
                     <div class="conferenceCellName">Columbus, Ohio - August 9-11</div>
                 </div>
-                <div class="conferenceCell" style="background-image:url(${resource(dir: 'images', file:'raleigh.png')}); background-repeat: no-repeat;">
+                <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'raleigh.png')}) no-repeat bottom;">
                     <div class="conferenceCellName">Raleigh, NC - TBA</div>
                 </div>
                <br/>

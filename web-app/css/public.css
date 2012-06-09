@@ -159,21 +159,24 @@ body {
 .conferenceCell {
     border: none;
     text-align:center;
-    padding-top: 150px;
+    padding-top: 120px;
     margin-bottom: 10px;
+}
 
+.conferenceCell:hover {
 
 }
 
 .conferenceCellName {
     background: rgb(0, 0, 0) transparent;
-    background: rgba(0, 0, 0, 0.5); /* nice browsers */
+    background: rgba(0, 0, 0, 0.7); /* nice browsers */
     color:white;
     padding:10px;
 }
 
-.conferenceCellHover {
+.conferenceCellName:hover {
     background-color: black;
+    color: #1DA0D1;
     /*filter:alpha(opacity=40); */
 }
 

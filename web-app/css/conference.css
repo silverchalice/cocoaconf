@@ -159,11 +159,11 @@ body {
 }
 
 #nav a:hover  {
-     background-image:url(../images/bar-bg-b.png);
+     background-color: #2AB0E2;
 }
 
 #nav a.current  {
-     background-image:url(../images/bar-bg-b.png);
+    background-color: #2AB0E2;
 }
 
 #nav a.home {

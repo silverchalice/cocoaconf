@@ -16,6 +16,8 @@
 
                 $('#conferenceNav').corner("5px");
                 $('#announcementHeader').corner("2px");
+                $('.odd').corner("5px");
+                $('.even').corner("5px");
 
             });
 
@@ -39,51 +41,64 @@
     <body id="announcement">
         <div id="navWrapper">
             <div id="nav">
-                <g:link class="${pageProperty(name:'meta.tab') == 'home' ? 'current' : ''}" uri="/" style="background-position: -40% 0;">Home</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'about' ? 'current' : ''}"  controller="home" action="about" style="background-position: -10% 0;">About</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'blog' ? 'current' : ''}"  controller="post" action="list" style="background-position: -0% 0;">Blog</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}"  controller="speaker" action="speakers" style="background-position: 10% 0;">Our Speakers</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}"  controller="home" action="partners" style="background-position: 35% 0;">Our Partners</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'home' ? 'current' : ''}" uri="/">Home</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'about' ? 'current' : ''}"  controller="home" action="about">About</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'blog' ? 'current' : ''}"  controller="post" action="list">Blog</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}"  controller="speaker" action="speakers">Our Speakers</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}"  controller="home" action="partners">Our Partners</g:link>
                 <g:link class="${pageProperty(name:'meta.tab') == 'events' ? 'current' : ''}"  style="background-position: 55% 0;">Events</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'next' ? 'current' : ''}"  controller="home" action="nearYou" style="background-position: 60% 0; width:130px;">[cocoaConf next]</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'next' ? 'current' : ''}"  controller="home" action="nearYou" style="width:130px;">[cocoaConf next]</g:link>
 
 
             </div>
         </div>
         <div id="page">
 
-           <div id="spinner" class="spinner" style="display:none;">
-                <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
-           </div>
-           <div id="logo"><a href="${request.contextPath}/">
-               <img src="${resource(dir:'images',file:'cc-logo.png')}" alt="CocoaConf - the conference for iPhone, iPad and Mac developers" border="0" />
-               the conference for <span>iPhone</span>, <span>iPad</span> and <span>Mac</span> developers
-           </a>
-           </div>
-        <div id="announcementHeader">
-            <span style="color:#ff9627">Registration now open – Early-bird rate ends May 4th.</span>
-        </div>
-            <div id="sidebar" style="width: 180px;">
-                <div id="conferenceNav">
-                    <ul>
-                        <li><g:link class="${pageProperty(name:'meta.nav') == 'home' ? 'current' : ''}" controller="conference" action="home" params="[tinyName: conference.tinyName]">Event Home</g:link></li>
-                        <li><g:link class="${pageProperty(name:'meta.nav') == 'speakers' ? 'current' : ''}" controller="conference" action="speakers" params="[tinyName: conference.tinyName]">Speakers</g:link></li>
-                        <li><g:link class="${pageProperty(name:'meta.nav') == 'sessions' ? 'current' : ''}"  controller="conference" action="sessions" params="[tinyName: conference.tinyName]">Sessions</g:link></li>
-                        <li><g:link class="${pageProperty(name:'meta.nav') == 'schedule' ? 'current' : ''}" controller="conference" action="schedule" params="[tinyName: conference.tinyName]">Schedule</g:link></li>
-                        <li><g:link class="${pageProperty(name:'meta.nav') == 'venue' ? 'current' : ''}" controller="conference" action="venue" params="[tinyName: conference.tinyName]">Venue</g:link></li>
-                        <li><g:link class="${pageProperty(name:'meta.nav') == 'register' ? 'current' : ''}" controller="conference" action="register" params="[tinyName: conference.tinyName]">Register</g:link></li>
-                    </ul>
+            <div id="spinner" class="spinner" style="display:none;">
+                 <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
             </div>
-           </div>
+            <div id="logo"><a href="${request.contextPath}/">
+                <img src="${resource(dir:'images',file:'cc-logo.png')}" alt="CocoaConf - the conference for iPhone, iPad and Mac developers" border="0" />
+                the conference for <span>iPhone</span>, <span>iPad</span> and <span>Mac</span> developers
+            </a>
+            </div>
+            <div id="announcementHeader">
+                <span style="color:#ff9627">Registration now open – Early-bird rate ends May 4th.</span>
+            </div>
+                <div id="sidebar" style="text-align: center; width: 180px;">
+                    <div id="conferenceNav">
+                        <ul>
+                            <li><g:link class="${pageProperty(name:'meta.nav') == 'home' ? 'current' : ''}" controller="conference" action="home" params="[tinyName: conference.tinyName]">Event Home</g:link></li>
+                            <li><g:link class="${pageProperty(name:'meta.nav') == 'speakers' ? 'current' : ''}" controller="conference" action="speakers" params="[tinyName: conference.tinyName]">Speakers</g:link></li>
+                            <li><g:link class="${pageProperty(name:'meta.nav') == 'sessions' ? 'current' : ''}"  controller="conference" action="sessions" params="[tinyName: conference.tinyName]">Sessions</g:link></li>
+                            <li><g:link class="${pageProperty(name:'meta.nav') == 'schedule' ? 'current' : ''}" controller="conference" action="schedule" params="[tinyName: conference.tinyName]">Schedule</g:link></li>
+                            <li><g:link class="${pageProperty(name:'meta.nav') == 'venue' ? 'current' : ''}" controller="conference" action="venue" params="[tinyName: conference.tinyName]">Venue</g:link></li>
+                            <li><g:link class="${pageProperty(name:'meta.nav') == 'register' ? 'current' : ''}" controller="conference" action="register" params="[tinyName: conference.tinyName]">Register</g:link></li>
+                        </ul>
 
-           <div id="content">
-              <div class="body" style="width: 760px"><g:layoutBody /></div>
-               <div style="clear: both"></div>
-           </div>
-           <div style="clear: both"></div>
-           <div id="footer">
-               <p>Copyright &copy; 2012 Simply Cocoa, LLC. Site by <a href="http://silver-chalice.com">Silver Chalice</a>, LLC.</p>
-           </div>
+
+                </div>
+
+                <br/>
+                <br/>
+                <h2 style="color:#1da0d1;"><g:link controller="mugShot" action="list">Our Mug</g:link></h2>
+                <g:link controller="mugShot" action="list"><g:img dir="images" file="mugThumb.png" style="width:160px; margin:10px" /> </g:link>
+                <br/>
+                <br/>
+                <h2 style="color:#1da0d1;">Our Sponsors</h2>
+                <br/>
+                <a href="${resource(dir:'images', file:'sponsorship.pdf')}">Sponsorship Options Available</a>
+                <br/><br/>
+            </div>
+
+            <div id="content">
+               <div class="body" style="width: 760px"><g:layoutBody /></div>
+                <div style="clear: both"></div>
+            </div>
+            <div style="clear: both"></div>
+            <div id="footer">
+                <p>Copyright &copy; 2012 Simply Cocoa, LLC. Site by <a href="http://silver-chalice.com">Silver Chalice</a>, LLC.</p>
+            </div>
         </div>
     </body>
 </html>
