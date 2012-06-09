@@ -4,6 +4,8 @@
     <head>
         <title><g:layoutTitle default="Grails" /></title>
         <link rel="stylesheet" href="${resource(dir:'css',file:'public2.css')}" />
+        <meta name="tab" content="events" />
+
         <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
         <g:javascript library="jquery" plugin="jquery"/>
         <feed:meta kind="atom" version="1.0" controller="post" action="feed"/>
@@ -42,14 +44,13 @@
     <body id="announcement">
         <div id="navWrapper">
             <div id="nav">
-                <g:link class="${pageProperty(name:'meta.tab') == 'home' ? 'current' : ''}" uri="/">Home</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'about' ? 'current' : ''}"  controller="home" action="about" style="background-position: -100px 0;">About</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'blog' ? 'current' : ''}"  controller="post" action="list" style="background-position: -200px 0;">Blog</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}"  controller="speaker" action="speakers" style="background-position: -300px 0;">Our Speakers</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}"  controller="home" action="partners" style="background-position: -400px 0;">Our Partners</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'register' ? 'current' : ''}"  controller="home" action="register" style="background-position: -500px 0;">Register</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'next' ? 'current' : ''}"  controller="home" action="nearYou" style="background-position: -700px 0; width:130px;">[cocoaConf next]</g:link>
-
+                <g:link class="${pageProperty(name:'meta.tab') == 'home' ? 'current' : ''}" uri="/" style="background-position: -40% 0;">Home</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'about' ? 'current' : ''}"  controller="home" action="about" style="background-position: -10% 0;">About</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'blog' ? 'current' : ''}"  controller="post" action="list" style="background-position: -0% 0;">Blog</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}"  controller="speaker" action="speakers" style="background-position: 10% 0;">Our Speakers</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}"  controller="home" action="partners" style="background-position: 35% 0;">Our Partners</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'events' ? 'current' : ''}"  style="background-position: 55% 0;">Events</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'next' ? 'current' : ''}"  controller="home" action="nearYou" style="background-position: 60% 0; width:130px;">[cocoaConf next]</g:link>
 
 
             </div>
@@ -68,7 +69,7 @@
                 <span style="color:#ff9627">Registration now open – Early-bird rate ends May 4th.</span>
             </div>
             <div id="sidebar" style="min-height: 927px;">
-                <a href="${request.contextPath}/columbus12"><div class="conferenceCell" style="background-image:url(${resource(dir: 'images', file:'dc.png')});">
+                <a href="${request.contextPath}/dc-2012/home"><div class="conferenceCell" style="background-image:url(${resource(dir: 'images', file:'dc.png')});">
 
                     <div class="conferenceCellName">Washington DC - June 28-30</div>
                 </div>

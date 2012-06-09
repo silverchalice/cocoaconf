@@ -2,7 +2,8 @@
     <head>
         <title>CocoaConf | iOS/OS X Developer Conference | Washington DC Area | June 29 & 30, 2012</title>
         <meta name="layout" content="conference"/>
-        <meta name="tab" content="schedule"/>
+        <meta name="tab" content="events" />
+        <meta name="nav" content="schedule" />
 
         <link rel="stylesheet" href="${resource(dir:'js/jquery-checkbox', file: 'jquery.checkbox.css')}" />
         <link rel="stylesheet" href="${resource(dir:'js/jquery-checkbox', file: 'jquery.safari-checkbox.css')}"/>
