@@ -2,20 +2,11 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: conference, field: 'startDate', 'error')} ">
-	<label for="startDate">
-		<g:message code="conference.startDate.label" default="Start Date" />
-		
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'dates', 'error')} ">
+	<label for="dates">
+		<g:message code="conference.dates.label" default="Dates" />
 	</label>
-	<g:datePicker name="startDate" precision="day"  value="${conference?.startDate}" default="none" noSelection="['': '']" />
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: conference, field: 'endDate', 'error')} ">
-	<label for="endDate">
-		<g:message code="conference.endDate.label" default="End Date" />
-		
-	</label>
-	<g:datePicker name="endDate" precision="day"  value="${conference?.endDate}" default="none" noSelection="['': '']" />
+	<g:textField name="dates" value="${conference?.dates}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'venue', 'error')} ">

@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7d267dc-4b70-49a8-8f44-005f90c7f2eb" name="Default" comment="Layout changes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/UploadController.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/upload/image.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/com/cocoaconf/UploadControllerTests.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocoaconf-grailsPlugins.iml" afterPath="$PROJECT_DIR$/cocoaconf-grailsPlugins.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocoaconf.iml" afterPath="$PROJECT_DIR$/cocoaconf.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/VenueController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/VenueController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/com/cocoaconf/Conference.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/com/cocoaconf/Conference.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/conference/_form.gsp" afterPath="$PROJECT_DIR$/grails-app/views/conference/_form.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/conference/home.gsp" afterPath="$PROJECT_DIR$/grails-app/views/conference/home.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/conference.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/conference.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/venue/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/venue/create.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/venue/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/venue/edit.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/venue/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/venue/list.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/venue/show.gsp" afterPath="$PROJECT_DIR$/grails-app/views/venue/show.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/com/cocoaconf/VenueControllerTests.groovy" afterPath="$PROJECT_DIR$/test/unit/com/cocoaconf/VenueControllerTests.groovy" />
     </list>
     <list id="ba78e5f6-d6cf-4a61-8f65-29d4245d2d23" name="Rejected commit: Default" comment="Mugshot revamp; new google map" />
     <ignored path="cocoaconf.iws" />
@@ -76,25 +81,7 @@
       <file leaf-file-name="conference.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-app/css/conference.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="250" selection-end="266" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="public.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/css/public.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="67" selection-start="2152" selection-end="2152" vertical-scroll-proportion="-2.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
+            <state line="172" column="0" selection-start="2430" selection-end="2430" vertical-scroll-proportion="-8.115385">
               <folding />
             </state>
           </provider>
@@ -103,35 +90,65 @@
       <file leaf-file-name="home.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/home.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="44" selection-start="1751" selection-end="1751" vertical-scroll-proportion="-7.12">
+            <state line="71" column="57" selection-start="3578" selection-end="3578" vertical-scroll-proportion="-9.08">
               <folding>
-                <marker date="1339277200000" expanded="true" signature="2057:2085" placeholder="{...}" />
-                <marker date="1339277200000" expanded="true" signature="2235:2263" placeholder="{...}" />
-                <marker date="1339277200000" expanded="true" signature="2412:2439" placeholder="{...}" />
-                <marker date="1339277200000" expanded="true" signature="2598:2625" placeholder="{...}" />
-                <marker date="1339277200000" expanded="true" signature="2789:2816" placeholder="{...}" />
-                <marker date="1339277200000" expanded="true" signature="2942:2969" placeholder="{...}" />
-                <marker date="1339277200000" expanded="true" signature="3122:3162" placeholder="{...}" />
-                <marker date="1339277200000" expanded="true" signature="5148:5177" placeholder="{...}" />
+                <marker date="1339283023000" expanded="true" signature="2760:2787" placeholder="{...}" />
+                <marker date="1339283023000" expanded="true" signature="2940:2952" placeholder="{...}" />
+                <marker date="1339283023000" expanded="true" signature="4884:4913" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conference.gsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="conference.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/conference.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="104" selection-start="561" selection-end="664" vertical-scroll-proportion="-3.4">
+            <state line="71" column="64" selection-start="4198" selection-end="4198" vertical-scroll-proportion="0.81145585">
               <folding>
-                <marker date="1339277326000" expanded="true" signature="1674:1702" placeholder="{...}" />
-                <marker date="1339277326000" expanded="true" signature="1852:1880" placeholder="{...}" />
-                <marker date="1339277326000" expanded="true" signature="2029:2056" placeholder="{...}" />
-                <marker date="1339277326000" expanded="true" signature="2215:2242" placeholder="{...}" />
-                <marker date="1339277326000" expanded="true" signature="2406:2433" placeholder="{...}" />
-                <marker date="1339277326000" expanded="true" signature="2559:2580" placeholder="{...}" />
-                <marker date="1339277326000" expanded="true" signature="2559:2586" placeholder="{...}" />
-                <marker date="1339277326000" expanded="true" signature="2739:2779" placeholder="{...}" />
-                <marker date="1339277326000" expanded="true" signature="2763:2779" placeholder="{...}" />
+                <marker date="1339284313000" expanded="true" signature="2461:2482" placeholder="{...}" />
+                <marker date="1339284313000" expanded="true" signature="2461:2488" placeholder="{...}" />
+                <marker date="1339284313000" expanded="true" signature="2641:2653" placeholder="{...}" />
+                <marker date="1339284313000" expanded="true" signature="5093:5117" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConferenceController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/ConferenceController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="160" column="0" selection-start="5437" selection-end="5437" vertical-scroll-proportion="-9.304348">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="venue.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/conference/venue.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="58" selection-start="203" selection-end="203" vertical-scroll-proportion="3.5416667">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MugShotController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/MugShotController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/mugShot/list.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="141" column="156" selection-start="6078" selection-end="6078" vertical-scroll-proportion="-9.5625">
+              <folding>
+                <marker date="1339283281000" expanded="true" signature="4076:4113" placeholder="{...}" />
+                <marker date="1339283281000" expanded="true" signature="4879:4917" placeholder="{...}" />
+                <marker date="1339283281000" expanded="true" signature="5977:6049" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -140,16 +157,7 @@
       <file leaf-file-name="schedule.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/conference/schedule.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="176" selection-end="267" vertical-scroll-proportion="-1.4166666">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sessions.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/conference/sessions.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="42" selection-start="278" selection-end="278" vertical-scroll-proportion="-2.125">
+            <state line="92" column="26" selection-start="3048" selection-end="3048" vertical-scroll-proportion="-5.6666665">
               <folding />
             </state>
           </provider>
@@ -158,7 +166,7 @@
       <file leaf-file-name="speakers.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/conference/speakers.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="112" selection-start="49" selection-end="49" vertical-scroll-proportion="-0.35416666">
+            <state line="62" column="71" selection-start="1714" selection-end="1714" vertical-scroll-proportion="-3.4583333">
               <folding />
             </state>
           </provider>
@@ -167,16 +175,7 @@
       <file leaf-file-name="home.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/conference/home.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="108" selection-start="17" selection-end="17" vertical-scroll-proportion="-0.35416666">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="roundup.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/blogLink/roundup.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="41" selection-start="183" selection-end="183" vertical-scroll-proportion="-2.125">
+            <state line="1" column="108" selection-start="17" selection-end="17" vertical-scroll-proportion="3.1875">
               <folding />
             </state>
           </provider>
@@ -195,6 +194,7 @@
         <option value="Zachary Klein &lt;zak@silver-chalice.com&gt;" />
       </list>
     </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -205,22 +205,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/public.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/home (Zacharys-MacBook-Air's conflicted copy 2012-06-08).gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/conference/home.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/conference/speakers.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/conference/sessions.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/conference/schedule.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/conference/venue.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/conference/register.gsp" />
-        <option value="$PROJECT_DIR$/web-app/css/conference.css" />
-        <option value="$PROJECT_DIR$/grails-app/views/layouts/conference.gsp" />
         <option value="$PROJECT_DIR$/web-app/css/public2.css" />
         <option value="$PROJECT_DIR$/grails-app/views/blogLink/roundup.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/layouts/home.gsp" />
-        <option value="$PROJECT_DIR$/web-app/css/public.css" />
         <option value="$PROJECT_DIR$/application.properties" />
+        <option value="$PROJECT_DIR$/web-app/css/public.css" />
+        <option value="$PROJECT_DIR$/grails-app/views/conference/speakers.gsp" />
+        <option value="$PROJECT_DIR$/web-app/css/conference.css" />
+        <option value="$PROJECT_DIR$/grails-app/views/conference/schedule.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/mugShot/list.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/conference/venue.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/home.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/conference.gsp" />
       </list>
     </option>
   </component>
@@ -594,7 +594,15 @@
       <created>1339277304338</created>
       <updated>1339277304338</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="merge">
+      <created>1339277372821</created>
+      <updated>1339277372822</updated>
+    </task>
+    <task id="LOCAL-00024" summary="More CSS/layout changes">
+      <created>1339284100812</created>
+      <updated>1339284100812</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers>
       <GitHub shared="false">
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
@@ -634,18 +642,18 @@
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26456878" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2645349" sideWeight="0.49712643" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39859438" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3201804" sideWeight="0.6771605" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2645349" sideWeight="0.49784482" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.123563215" sideWeight="0.6744186" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.123563215" sideWeight="0.7354651" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901233" sideWeight="0.671371" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3255814" sideWeight="0.0" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255814" sideWeight="0.0" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949877" sideWeight="0.0" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -703,7 +711,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="More layout/CSS changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="More CSS/layout changes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -716,8 +724,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Swapped Dalrymple with Biggus" />
-    <MESSAGE value="New styles" />
     <MESSAGE value="Swapping images for Chicago" />
     <MESSAGE value="Added partners tab" />
     <MESSAGE value="Added loggedInSchedule for Chicago" />
@@ -741,6 +747,8 @@
     <MESSAGE value="Layout changes" />
     <MESSAGE value="More layout changes" />
     <MESSAGE value="More layout/CSS changes" />
+    <MESSAGE value="merge" />
+    <MESSAGE value="More CSS/layout changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -786,65 +794,9 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/bin/grails-2.0.4/src/grails-plugin-gsp-2.0.4-sources.jar!/org/codehaus/groovy/grails/plugins/web/taglib/ApplicationTagLib.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="192" column="13" selection-start="8135" selection-end="8135" vertical-scroll-proportion="0.33226836">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/conference/register.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="40" selection-start="451" selection-end="451" vertical-scroll-proportion="-4.9583335">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/ConferenceController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="0" selection-start="5437" selection-end="5437" vertical-scroll-proportion="-8.913043">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/conference/venue.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="42" selection-start="360" selection-end="360" vertical-scroll-proportion="-4.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/conference/speakers.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="112" selection-start="49" selection-end="49" vertical-scroll-proportion="-0.35416666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/conference/sessions.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="42" selection-start="278" selection-end="278" vertical-scroll-proportion="-2.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/conference/schedule.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="176" selection-end="267" vertical-scroll-proportion="-1.4166666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="41" selection-start="164" selection-end="164" vertical-scroll-proportion="0.40963855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/conference/home.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="108" selection-start="17" selection-end="17" vertical-scroll-proportion="-0.35416666">
           <folding />
         </state>
       </provider>
@@ -856,64 +808,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/blogLink/roundup.gsp">
+    <entry file="file://$PROJECT_DIR$/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="183" selection-end="183" vertical-scroll-proportion="-2.125">
+        <state line="14" column="53" selection-start="328" selection-end="328" vertical-scroll-proportion="0.37245697">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/conference.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/blogLink/roundup.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="104" selection-start="561" selection-end="664" vertical-scroll-proportion="-3.4">
-          <folding>
-            <marker date="1339277326000" expanded="true" signature="1674:1702" placeholder="{...}" />
-            <marker date="1339277326000" expanded="true" signature="1852:1880" placeholder="{...}" />
-            <marker date="1339277326000" expanded="true" signature="2029:2056" placeholder="{...}" />
-            <marker date="1339277326000" expanded="true" signature="2215:2242" placeholder="{...}" />
-            <marker date="1339277326000" expanded="true" signature="2406:2433" placeholder="{...}" />
-            <marker date="1339277326000" expanded="true" signature="2559:2580" placeholder="{...}" />
-            <marker date="1339277326000" expanded="true" signature="2559:2586" placeholder="{...}" />
-            <marker date="1339277326000" expanded="true" signature="2739:2779" placeholder="{...}" />
-            <marker date="1339277326000" expanded="true" signature="2763:2779" placeholder="{...}" />
-          </folding>
+        <state line="13" column="82" selection-start="649" selection-end="649" vertical-scroll-proportion="-4.6041665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/conference/sessions.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="42" selection-start="278" selection-end="278" vertical-scroll-proportion="-2.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/css/public.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="36" selection-start="1210" selection-end="1257" vertical-scroll-proportion="-10.730769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/conference/schedule.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="26" selection-start="3048" selection-end="3048" vertical-scroll-proportion="-5.6666665">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-app/css/conference.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="250" selection-end="266" vertical-scroll-proportion="0.0">
+        <state line="172" column="0" selection-start="2430" selection-end="2430" vertical-scroll-proportion="-8.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/MugShotController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/mugShot/list.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="156" selection-start="6078" selection-end="6078" vertical-scroll-proportion="-9.5625">
+          <folding>
+            <marker date="1339283281000" expanded="true" signature="4076:4113" placeholder="{...}" />
+            <marker date="1339283281000" expanded="true" signature="4879:4917" placeholder="{...}" />
+            <marker date="1339283281000" expanded="true" signature="5977:6049" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/conference/speakers.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="71" selection-start="1714" selection-end="1714" vertical-scroll-proportion="-3.4583333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/conference/home.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="108" selection-start="17" selection-end="17" vertical-scroll-proportion="3.1875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/cocoaconf/ConferenceController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="160" column="0" selection-start="5437" selection-end="5437" vertical-scroll-proportion="-9.304348">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/conference/venue.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="58" selection-start="203" selection-end="203" vertical-scroll-proportion="3.5416667">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/home.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="44" selection-start="1751" selection-end="1751" vertical-scroll-proportion="-7.12">
+        <state line="71" column="57" selection-start="3578" selection-end="3578" vertical-scroll-proportion="-9.08">
           <folding>
-            <marker date="1339277200000" expanded="true" signature="2057:2085" placeholder="{...}" />
-            <marker date="1339277200000" expanded="true" signature="2235:2263" placeholder="{...}" />
-            <marker date="1339277200000" expanded="true" signature="2412:2439" placeholder="{...}" />
-            <marker date="1339277200000" expanded="true" signature="2598:2625" placeholder="{...}" />
-            <marker date="1339277200000" expanded="true" signature="2789:2816" placeholder="{...}" />
-            <marker date="1339277200000" expanded="true" signature="2942:2969" placeholder="{...}" />
-            <marker date="1339277200000" expanded="true" signature="3122:3162" placeholder="{...}" />
-            <marker date="1339277200000" expanded="true" signature="5148:5177" placeholder="{...}" />
+            <marker date="1339283023000" expanded="true" signature="2760:2787" placeholder="{...}" />
+            <marker date="1339283023000" expanded="true" signature="2940:2952" placeholder="{...}" />
+            <marker date="1339283023000" expanded="true" signature="4884:4913" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/public.css">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/conference.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="67" selection-start="2152" selection-end="2152" vertical-scroll-proportion="-2.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="71" column="64" selection-start="4198" selection-end="4198" vertical-scroll-proportion="0.81145585">
+          <folding>
+            <marker date="1339284313000" expanded="true" signature="2461:2482" placeholder="{...}" />
+            <marker date="1339284313000" expanded="true" signature="2461:2488" placeholder="{...}" />
+            <marker date="1339284313000" expanded="true" signature="2641:2653" placeholder="{...}" />
+            <marker date="1339284313000" expanded="true" signature="5093:5117" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

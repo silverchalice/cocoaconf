@@ -71,7 +71,7 @@
                 </div>
             </g:if>
 
-            <h1>Chicago, IL: March 16 & 17, 2012</h1>
+            <h1>${conference?.city}, ${conference?.state}: ${conference.dates}</h1>
             ${conference?.blurb}
           </div>
 

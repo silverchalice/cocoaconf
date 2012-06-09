@@ -3,7 +3,7 @@
 <html>
     <head>
         <title><g:layoutTitle default="CocoaConf" /></title>
-        <link rel="stylesheet" href="${resource(dir:'css',file:'conference.css')}" />
+        <link rel="stylesheet" href="${resource(dir:'css',file:'conference?.css')}" />
         <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
         <g:javascript library="jquery" plugin="jquery"/>
 
@@ -53,17 +53,15 @@
             </div>
         </div>
         <div id="page">
+           <div id="spinner" class="spinner" style="display:none;">
+                <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
+           </div>
+           <div id="logo"><a href="${request.contextPath}/">
+               <img src="${resource(dir:'images',file:'cc-logo.png')}" alt="CocoaConf - the conference for iPhone, iPad and Mac developers" border="0" />
+               the conference for <span>iPhone</span>, <span>iPad</span> and <span>Mac</span> developers
+           </a>
+           </div>
 
-            <div id="spinner" class="spinner" style="display:none;">
-                 <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
-            </div>
-            <div id="logo"><a href="${request.contextPath}/">
-                <img src="${resource(dir:'images',file:'cc-logo.png')}" alt="CocoaConf - the conference for iPhone, iPad and Mac developers" border="0" />
-                the conference for <span>iPhone</span>, <span>iPad</span> and <span>Mac</span> developers
-            </a>
-            </div>
-            <div id="announcementHeader">
-                <span style="color:#ff9627">Registration now open – Early-bird rate ends May 4th.</span>
             </div>
                 <div id="sidebar" style="text-align: center; width: 180px;">
                     <div id="conferenceNav">
