@@ -63,7 +63,7 @@
     <body>
 
 
-        <div style="width:480px; float:left; padding-left:20px">
+        <div style="float:left; width: 480px; padding-left:20px">
             <g:if test="${flash.message}">
                 <div id="flashMessage"><p>${flash.message}</p>
                  <span class="button" id="closeFlash" >Ok!</span>
@@ -72,6 +72,7 @@
 
             <h1>Chicago, IL: March 16 & 17, 2012</h1>
             ${conference?.blurb}
+          </div>
 
         <div id="featuredSpeakers">
             <h2 style="color:#1da0d1;">Featured Speakers</h2>
