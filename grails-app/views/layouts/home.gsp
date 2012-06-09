@@ -3,13 +3,16 @@
 <html>
     <head>
         <title><g:layoutTitle default="Grails" /></title>
-        <link rel="stylesheet" href="${resource(dir:'css',file:'public2.css')}" />
+        <link rel="stylesheet" href="${resource(dir:'css',file:'public.css')}" />
         <meta name="tab" content="events" />
 
         <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
         <g:javascript library="jquery" plugin="jquery"/>
         <feed:meta kind="atom" version="1.0" controller="post" action="feed"/>
         <g:layoutHead />
+
+
+        <script type="text/javascript"  src="${resource(dir:'js', file:'jquery.corner.js')}"></script>
         <script type="text/javascript">
 
           var _gaq = _gaq || [];
@@ -35,6 +38,9 @@
                   $(this).removeClass("conferenceCellHover");
                 }
               );
+
+              $(".conferenceCell").corner("5px");
+              $(".conferenceCellName").corner("5px bottom");
 
           })
 
@@ -68,16 +74,16 @@
             <div id="announcementHeader">
                 <span style="color:#ff9627">Registration now open – Early-bird rate ends May 4th.</span>
             </div>
-            <div id="sidebar" style="min-height: 927px;">
-                <a href="${request.contextPath}/dc-2012/home"><div class="conferenceCell" style="background-image:url(${resource(dir: 'images', file:'dc.png')});">
-
+            <div id="sidebar" style="margin:10px;">
+                <a href="${request.contextPath}/dc-2012/home">
+                <div class="conferenceCell" style="background-image:url(${resource(dir: 'images', file:'dc.png')}); background-repeat: no-repeat;">
                     <div class="conferenceCellName">Washington DC - June 28-30</div>
                 </div>
                 </a>
-                <div  class="conferenceCell" style="background-image:url(${resource(dir: 'images', file:'columbus.png')})">
+                <div class="conferenceCell" style="background-image:url(${resource(dir: 'images', file:'columbus.png')}); background-repeat: no-repeat;">
                     <div class="conferenceCellName">Columbus, Ohio - August 9-11</div>
                 </div>
-                <div  class="conferenceCell" style="background-image:url(${resource(dir: 'images', file:'raleigh.png')})">
+                <div class="conferenceCell" style="background-image:url(${resource(dir: 'images', file:'raleigh.png')}); background-repeat: no-repeat;">
                     <div class="conferenceCellName">Raleigh, NC - TBA</div>
                 </div>
                <br/>
