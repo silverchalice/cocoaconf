@@ -2,7 +2,7 @@ package com.cocoaconf
 
 class UploadController {
 
-    def index() { }
+    def index() { redirect action: "image" }
 
     def image() {}
 
