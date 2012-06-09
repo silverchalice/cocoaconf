@@ -3,7 +3,7 @@
 <html>
     <head>
         <title><g:layoutTitle default="CocoaConf" /></title>
-        <link rel="stylesheet" href="${resource(dir:'css',file:'conference.css')}" />
+        <link rel="stylesheet" href="${resource(dir:'css',file:'conference?.css')}" />
         <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
         <g:javascript library="jquery" plugin="jquery"/>
 
@@ -66,12 +66,12 @@
             <div id="sidebar" style="width: 180px;">
                 <div id="conferenceNav">
                     <ul>
-                        <li><g:link class="${pageProperty(name:'meta.nav') == 'home' ? 'current' : ''}" controller="conference" action="home" params="[tinyName: conference.tinyName]">Event Home</g:link></li>
-                        <li><g:link class="${pageProperty(name:'meta.nav') == 'speakers' ? 'current' : ''}" controller="conference" action="speakers" params="[tinyName: conference.tinyName]">Speakers</g:link></li>
-                        <li><g:link class="${pageProperty(name:'meta.nav') == 'sessions' ? 'current' : ''}"  controller="conference" action="sessions" params="[tinyName: conference.tinyName]">Sessions</g:link></li>
-                        <li><g:link class="${pageProperty(name:'meta.nav') == 'schedule' ? 'current' : ''}" controller="conference" action="schedule" params="[tinyName: conference.tinyName]">Schedule</g:link></li>
-                        <li><g:link class="${pageProperty(name:'meta.nav') == 'venue' ? 'current' : ''}" controller="conference" action="venue" params="[tinyName: conference.tinyName]">Venue</g:link></li>
-                        <li><g:link class="${pageProperty(name:'meta.nav') == 'register' ? 'current' : ''}" controller="conference" action="register" params="[tinyName: conference.tinyName]">Register</g:link></li>
+                        <li><g:link class="${pageProperty(name:'meta.nav') == 'home' ? 'current' : ''}" controller="conference" action="home" params="[tinyName: conference?.tinyName]">Event Home</g:link></li>
+                        <li><g:link class="${pageProperty(name:'meta.nav') == 'speakers' ? 'current' : ''}" controller="conference" action="speakers" params="[tinyName: conference?.tinyName]">Speakers</g:link></li>
+                        <li><g:link class="${pageProperty(name:'meta.nav') == 'sessions' ? 'current' : ''}"  controller="conference" action="sessions" params="[tinyName: conference?.tinyName]">Sessions</g:link></li>
+                        <li><g:link class="${pageProperty(name:'meta.nav') == 'schedule' ? 'current' : ''}" controller="conference" action="schedule" params="[tinyName: conference?.tinyName]">Schedule</g:link></li>
+                        <li><g:link class="${pageProperty(name:'meta.nav') == 'venue' ? 'current' : ''}" controller="conference" action="venue" params="[tinyName: conference?.tinyName]">Venue</g:link></li>
+                        <li><g:link class="${pageProperty(name:'meta.nav') == 'register' ? 'current' : ''}" controller="conference" action="register" params="[tinyName: conference?.tinyName]">Register</g:link></li>
                     </ul>
             </div>
            </div>

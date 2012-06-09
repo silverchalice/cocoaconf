@@ -13,8 +13,9 @@ class UrlMappings {
 		}
 		
 		"/register"{
-			controller = "home"
+			controller = "conference"
 			action = "register"
+            tinyName = "dc-2012"
 		}
 		"/$tinyName/home"{
             controller = "conference"

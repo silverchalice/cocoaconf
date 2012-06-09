@@ -7,6 +7,7 @@ class Conference {
     String state
     Date startDate
     Date endDate
+    String dates
     Venue venue
     String description
     String blurb //text on conference home page
