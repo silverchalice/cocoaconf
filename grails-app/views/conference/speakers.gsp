@@ -3,7 +3,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="conference" />
-         <meta name="tab" content="speakers" />
+        <meta name="tab" content="events" />
+        <meta name="nav" content="speakers" />
         <g:set var="entityName" value="${message(code: 'speaker.label', default: 'Speaker')}" />
         <title>CocoaConf | Our Speakers</title>
 

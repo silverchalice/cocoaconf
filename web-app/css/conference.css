@@ -11,7 +11,7 @@ html {
 }
 
 #announcementHeader {
-    width:100%;
+    width:997px;
     background-image:url(../images/bar-bg.png);
     text-align:center;
     height:25px;
@@ -98,6 +98,40 @@ body {
 
 
 }
+
+#conferenceNav {
+    text-align:center;
+    margin:10px;
+    padding:10px;
+    background-color: #222;
+    border: 1px dotted #000
+}
+
+#conferenceNav ul {
+    margin: 0;
+}
+
+#conferenceNav ul li {
+    border-bottom: 1px dotted #000000;
+    padding:6px 0;
+    list-style: none;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif
+}
+
+#conferenceNav ul li:hover {
+    background: #252525;
+}
+
+
+#conferenceNav ul li a:hover, a.current {
+    color: #FF9627;
+    text-decoration: none;
+}
+
+
+
+
 
 #nav {
     width:1000px;
