@@ -17,6 +17,7 @@ class Conference {
     String tinyName
     String displayName
     List days
+    Boolean active
 
     static hasMany = [speakers : Speaker, sessions : Session, days: ConferenceDay]
 
