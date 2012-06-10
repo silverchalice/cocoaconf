@@ -13,7 +13,9 @@ class Conference {
     String blurb //text on conference home page
     String registrationBlurb //text on conference "Register" page
     String eventBriteBlurb //code to display EventBrite stuff on "Register" page
+    String partnerBlurb //html for partner page for a specific conference
     String tinyName
+    String displayName
     List days
 
     static hasMany = [speakers : Speaker, sessions : Session, days: ConferenceDay]
@@ -24,6 +26,11 @@ class Conference {
 		venue nullable:true
 		description maxSize:10000
 		days nullable:true
+		dates nullable:true
+		displayName nullable:true
+		registrationBlurb nullable:true, maxSize:10000
+		eventBriteBlurb nullable:true, maxSize:10000
+		partnerBlurb nullable:true, maxSize:100000
     }
 
     def getSpeakers(){
@@ -40,6 +47,7 @@ class Conference {
 		days sort:'id'
         registrationBlurb type: 'text'
         eventBriteBlurb type: 'text'
+        partnerBlurb type:'text'
     }
 }
 

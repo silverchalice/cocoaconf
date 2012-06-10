@@ -27,7 +27,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'blurb', 'error')} ">
 	<label for="blurb">
-		<g:message code="conference.blurb.label" default="Blurb (will appear on conference home page)" />
+		<g:message code="conference.blurb.label" default="Blurb " />
 		
 	</label>
 	<g:textArea name="blurb" cols="40" rows="5" maxlength="10000" value="${conference?.blurb}"/>
@@ -35,7 +35,7 @@
 
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'registrationBlurb', 'error')} ">
 	<label for="registrationBlurb">
-		<g:message code="conference.registrationBlurb.label" default="Registration Blurb (will appear on conference home page)" />
+		<g:message code="conference.registrationBlurb.label" default="Registration Blurb" />
 		
 	</label>
 	<g:textArea name="registrationBlurb" cols="40" rows="5" maxlength="10000" value="${conference?.registrationBlurb}"/>
@@ -43,12 +43,19 @@
 
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'eventBriteBlurb', 'error')} ">
 	<label for="eventBriteBlurb">
-		<g:message code="conference.eventBriteBlurb.label" default="EventBrite Blurb (for showing EventBriteness on conference registration page)" />
+		<g:message code="conference.eventBriteBlurb.label" default="EventBrite Blurb" />
 		
 	</label>
 	<g:textArea name="eventBriteBlurb" cols="40" rows="5" maxlength="10000" value="${conference?.eventBriteBlurb}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'partnerBlurb', 'error')} ">
+	<label for="partnerBlurb">
+		<g:message code="conference.partnerBlurb.label" default="Partner Blurb" />
+		
+	</label>
+	<g:textArea name="partnerBlurb" cols="40" rows="5" maxlength="10000" value="${conference?.partnerBlurb}"/>
+</div>
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'city', 'error')} ">
 	<label for="city">
 		<g:message code="conference.city.label" default="City" />
