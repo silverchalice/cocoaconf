@@ -119,17 +119,19 @@ body {
     /*border-right: 1px solid gray;  */
     line-height:60px;
     height:60px;
-    width:143px;
-    padding-left:0px;
+    width:142px;
+    padding-left:0;
     display: block;
+    border-right: 1px solid black;
 }
 
 #nav a:hover  {
-     background-image:url(../images/bar-bg-b.png);
+     background-color: #2AB0E2;
 }
 
+
 #nav a.current  {
-     background-image:url(../images/bar-bg-b.png);
+    background-color: #2AB0E2;
 }
 
 #nav a.home {
@@ -180,10 +182,22 @@ body {
     /*filter:alpha(opacity=40); */
 }
 
-.conferenceName a {
+#sidebar a {
     text-decoration: none;
-    font-size: 16px;
 }
+
+#sidebar a:hover {
+    text-decoration: none;
+}
+
+
+.conferenceHeadlineImage {
+    clear: both;
+    margin-right:15px;
+    width: 420px;
+    height: 272px
+}
+
 
 #content {
 
