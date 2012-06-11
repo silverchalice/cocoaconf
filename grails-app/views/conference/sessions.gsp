@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="body">
-            <h1><g:message code="default.list.label" args="[entityName]" /></h1><br />
+         <h1>${conference?.description}: Sessions</h1>
             <div class="list">
                 <g:each in="${sessions}" status="i" var="session">
                     <div style="height:160px;">
