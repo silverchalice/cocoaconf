@@ -50,7 +50,7 @@ class UrlMappings {
             action = "register"
             id = "$tinyName"
 		}
-		"/venue"{
+		"/about"{
 			controller = "home"
 			action = "about"
 		}
