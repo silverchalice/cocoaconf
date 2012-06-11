@@ -37,7 +37,7 @@
 
   <body>
 
-  <br/>
+  <h1>${conference?.description}: Venue</h1>
   <h2>${conference?.venue?.name}</h2>
   ${conference?.venue?.description}
  <br/>

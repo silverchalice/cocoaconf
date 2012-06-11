@@ -183,7 +183,7 @@
             </div>
         </g:if>
 
-        <h1 style="float:left">${conference.description} Schedule</h1>
+        <h1>${conference?.description}: Schedule</h1>
 
         <g:each in="${schedule}" var="dayMap">
 		    <h3 style="clear:both">${conference.days[dayMap.day -1]}</h3>

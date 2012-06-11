@@ -38,7 +38,7 @@
   <body>
 
   <br/>
-  <h2>${conference?.description}</h2>
+  <h1>${conference?.description}: Parters</h1>
   ${conference?.partnerBlurb}
  <br/>
   </body>

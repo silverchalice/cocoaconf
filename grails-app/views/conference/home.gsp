@@ -71,7 +71,7 @@
                 </div>
             </g:if>
 
-            <h1>${conference?.city}, ${conference?.state}: ${conference.dates}</h1>
+            <h1>${conference?.description}: ${conference?.dates}</h1>
             ${conference?.blurb}
           </div>
 
