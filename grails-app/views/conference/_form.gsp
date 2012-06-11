@@ -105,3 +105,10 @@
 	<g:textField name="tinyName" value="${conference?.tinyName}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'active', 'error')} ">
+	<label for="active">
+		<g:message code="conference.active.label" default="Active" />
+		
+	</label>
+    <g:checkBox name="active" value="${conference?.active}" />
+</div>
