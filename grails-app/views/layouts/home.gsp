@@ -13,6 +13,7 @@
 
 
         <script type="text/javascript"  src="${resource(dir:'js', file:'jquery.corner.js')}"></script>
+
         <script type="text/javascript">
 
           var _gaq = _gaq || [];
@@ -30,11 +31,9 @@
 
               $(".conferenceCell").hover(
                 function () {
-                    console.log('Hover');
                   $(this).addClass("conferenceCellHover");
                 },
                 function () {
-                    console.log('Hover out');
                   $(this).removeClass("conferenceCellHover");
                 }
               );
@@ -51,15 +50,15 @@
         <div id="navWrapper">
             <div id="nav">
                 <g:link class="${pageProperty(name:'meta.tab') == 'home' ? 'current' : ''}" uri="/">Home</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'about' ? 'current' : ''}"  controller="home" action="about">About</g:link>
                 <g:link class="${pageProperty(name:'meta.tab') == 'blog' ? 'current' : ''}"  controller="post" action="list">Blog</g:link>
                 <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}"  controller="speaker" action="speakers">Our Speakers</g:link>
                 <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}"  controller="home" action="partners">Our Partners</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'events' ? 'current' : ''}"  style="background-position: 55% 0;">Events</g:link>
+                <a  href="${request.contextPath}/dc-2012/home" class="${pageProperty(name:'meta.tab') == 'events' ? 'current' : ''}"  style="background-position: 55% 0;">Events</a>
                 <g:link class="${pageProperty(name:'meta.tab') == 'next' ? 'current' : ''}"  controller="home" action="nearYou" style="width:130px;">[cocoaConf next]</g:link>
 
 
             </div>
+
         </div>
         <div id="page">
             <div id="spinner" class="spinner" style="display:none;">
@@ -71,7 +70,7 @@
 		    </a>
             </div>
             <div id="announcementHeader">
-                <span style="color:#ff9627">Registration now open – Early-bird rate ends May 4th.</span>
+                <span style="color:#ff9627">Returning to Columbus, Ohio on August 9 - 11, 2012!</span>
             </div>
             <div id="sidebar" style="margin:10px;">
                 <a href="${request.contextPath}/dc-2012/home">
