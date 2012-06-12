@@ -50,10 +50,14 @@ class UrlMappings {
             action = "register"
             id = "$tinyName"
 		}
+        /* taking this out until we
+           have time to add text to
+           the About page
 		"/about"{
 			controller = "home"
 			action = "about"
 		}
+        */
 		"/schedule"{
 			controller = "conference"
 			action = "schedule"
