@@ -78,9 +78,11 @@
                     <div class="conferenceCellName">Washington DC - June 28-30</div>
                 </div>
                 </a>
+                <a href="${request.contextPath}/columbus-2012/home">
                 <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'columbus.png')}) no-repeat bottom;">
                     <div class="conferenceCellName">Columbus, Ohio - August 9-11</div>
                 </div>
+                </a>
                 <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'raleigh.png')}) no-repeat bottom;">
                     <div class="conferenceCellName">Raleigh, NC - TBA</div>
                 </div>
