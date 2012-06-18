@@ -56,6 +56,13 @@
 	</label>
 	<g:textArea name="partnerBlurb" cols="40" rows="5" maxlength="10000" value="${conference?.partnerBlurb}"/>
 </div>
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'featuredSpeakers', 'error')} ">
+	<label for="featuredSpeakers">
+		<g:message code="conference.featuredSpeakers.label" default="Featured Speakers" />
+		
+	</label>
+	<g:textArea name="featuredSpeakers" cols="60" rows="5" maxlength="10000" value="${conference?.featuredSpeakers}"/>
+</div>
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'city', 'error')} ">
 	<label for="city">
 		<g:message code="conference.city.label" default="City" />
