@@ -195,4 +195,28 @@ class ConferenceController {
         }
     }
 
+    def speakerDetails = {
+	    params.each{key, val -> println "$key == $val"}
+	    def conf = Conference.get(params.confId)
+	    def speaker = Speaker.get(params.id)
+	    def speakerPresentations = conf.sessions.findAll{it?.presentation?.speaker?.id == speaker.id}.collect{it.presentation}
+	    speakerPresentations.each{println it}
+	    if (conf && speaker){
+		    return[conference:conf, speaker:speaker, speakerPresentations:speakerPresentations]
+	    }	 
+	    else {
+	        redirect controller: "home"
+	    }
+    }
+
+    def sessionDetails = {
+	    def conf = Conference.get(params.confId)
+	    def presentation = Presentation.get(params.id)
+	    if (conf && presentation){
+		    return[conference:conf, presentation:presentation]
+	    }	 
+	    else {
+	        redirect controller: "home"
+	    }
+    }
 }
