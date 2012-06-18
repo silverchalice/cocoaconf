@@ -6,19 +6,19 @@
         <meta name="tab" content="events" />
         <meta name="nav" content="sessions" />
         <g:set var="entityName" value="${message(code: 'session.label', default: 'Session')}" />
-        <title><g:message code="default.list.label" args="[entityName]" /></title>
+        <title>${conference?.description}: Sessions</title>
     </head>
     <body>
         <div class="body">
          <h1>${conference?.description}: Sessions</h1>
             <div class="list">
                 <g:each in="${sessions}" status="i" var="session">
-                    <div style="height:160px;">
+                    <div style="height:auto;">
 
-                         <div style="height:160px;  width:700p">
+                         <div style="height:auto;width:700px;">
                              <h3>${session?.presentation?.title}</h3>
                              <p style="font-size:smaller;">${session?.presentation?.speaker}</p>
-                             ${session?.presentation?.pAbstract}<br/>
+                             <p>${session?.presentation?.pAbstract}</p><br/>
                          </div>
                     </div><br />
 

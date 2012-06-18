@@ -11,7 +11,7 @@
   <head>
       <title>${conference?.description} -  ${conference?.dates}</title>
       <meta name="layout" content="conference" />
-      <meta name="tab" content="partners" />
+      <meta name="tab" content="events" />
       <meta name="nav" content="partners" />
       <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
 
