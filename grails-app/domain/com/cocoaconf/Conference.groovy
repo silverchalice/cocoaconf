@@ -41,6 +41,7 @@ class Conference {
     def getSpeakers(){
         def speakers = sessions.collect { it.presentation.speaker }.sort{it.lastName}
         speakers = speakers - Speaker.findByFirstName("TBA")
+        speakers = speakers - Speaker.findByFirstName("Mystery")
         return speakers.unique()
     }
 
