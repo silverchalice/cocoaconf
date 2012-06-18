@@ -286,7 +286,7 @@
                <img src="${resource(dir:'images',file:'dudney.png')}"/>
                <p><strong>Bill Dudney</strong> - Author of Pragmatic Programmer’s books <a href="http://pragprog.com/titles/adios">iPhone SDK Development</a> and <a href="http://pragprog.com/titles/bdcora/core-animation-for-mac-os-x-and-the-iphone">Core Animation</a>.
                 - <a href="http://bill.dudney.net">http://bill.dudney.net</a></p>
-                                                                                                                                                                                                             c
+
            </div>
             <div class="featured">
                 <img src="${resource(dir:'images',file:'adamson.png')}"/>
@@ -296,7 +296,7 @@
             </div>
 
 
-            <div class="featured">                                                                              ˝
+            <div class="featured">
                 <img src="${resource(dir:'images',file:'biggus.png')}"/>
                 <p><strong>Jeff Biggus</strong> - Founder of HyperJeff, Inc. and curator of the <a href="http://hyperjeff.net">HyperJeff Network</a>.</p>
 
