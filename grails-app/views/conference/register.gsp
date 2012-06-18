@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
   <head>
-      <title>CocoaConf | iOS/OS X Developer Conference | Washington DC Area | June 29 & 30, 2012</title>
+      <title>${conference?.description}</title>
       <meta name="layout" content="conference" />
       <meta name="tab" content="events" />
       <meta name="nav" content="register" />
@@ -69,7 +69,7 @@
     </head>
 
     <body>
-        <h1>Register for the DC Area CocoaConf</h1>
+        <h1>Register for CocoaConf</h1>
         <h2>What you get</h2>
         ${conference?.registrationBlurb}
         <p><strong>Group discounts are also available.</strong>  Contact us at <a href="mailto:info@cocoaconf.com">info@cocoaconf.com</a> for details.</p>

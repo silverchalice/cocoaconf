@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
   <head>
-      <title>CocoaConf | iOS/OS X Developer Conference | Washington DC Area | June 29 & 30, 2012</title>
+      <title>${conference?.description} -  ${conference?.dates}</title>
       <meta name="layout" content="conference" />
       <meta name="tab" content="partners" />
       <meta name="nav" content="partners" />
@@ -38,7 +38,7 @@
   <body>
 
   <br/>
-  <h1>${conference?.description}: Parters</h1>
+  <h1>${conference?.description} Partners</h1>
   ${conference?.partnerBlurb}
  <br/>
   </body>

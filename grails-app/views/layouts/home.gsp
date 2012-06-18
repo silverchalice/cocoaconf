@@ -84,7 +84,7 @@
                 </div>
                 </a>
                 <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'raleigh.png')}) no-repeat bottom;">
-                    <div class="conferenceCellName">Raleigh, NC - TBA</div>
+                    <div class="conferenceCellName">Raleigh, NC - To Be Announced</div>
                 </div>
                <br/>
                <br/>
@@ -93,6 +93,7 @@
                <br/>
               <h2 style="color:#1da0d1;">Our Sponsors</h2>
               <br/>
+              ${conference?.sponsorListBlurb}
               <a href="${resource(dir:'images', file:'sponsorship.pdf')}">Sponsorship Opportunities Available</a>
               <br/><br/>
             </div>

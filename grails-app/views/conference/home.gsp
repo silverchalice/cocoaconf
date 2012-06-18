@@ -70,8 +70,8 @@
                  <span class="button" id="closeFlash" >Ok!</span>
                 </div>
             </g:if>
-
-            <h1>${conference?.description}: ${conference?.dates}</h1>
+            <br/>
+            <h2>${conference?.description}: ${conference?.dates}</h2>
             ${conference?.blurb}
           </div>
 

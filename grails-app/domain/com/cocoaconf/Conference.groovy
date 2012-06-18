@@ -17,6 +17,7 @@ class Conference {
     String featuredSpeakers
     String tinyName
     String displayName
+    String sponsorListBlurb
     List days
     Boolean active
 
@@ -34,6 +35,7 @@ class Conference {
 		eventBriteBlurb nullable:true, maxSize:10000
 		partnerBlurb nullable:true, maxSize:100000
 		featuredSpeakers nullable:true, maxSize:100000
+		sponsorListBlurb nullable:true, maxSize:100000
     }
 
     def getSpeakers(){
@@ -52,6 +54,7 @@ class Conference {
         eventBriteBlurb type: 'text'
         partnerBlurb type:'text'
         featuredSpeakers type:'text'
+        sponsorListBlurb type:'text'
     }
 }
 

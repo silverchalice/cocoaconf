@@ -67,6 +67,7 @@
                <br/>
               <h2 style="color:#1da0d1;">Our Sponsors</h2>
               <br/>
+              ${conference?.sponsorListBlurb}
               <a href="${resource(dir:'images', file:'sponsorship.pdf')}">Sponsorship Opportunities Available</a>
               <br/><br/>
            </div>
