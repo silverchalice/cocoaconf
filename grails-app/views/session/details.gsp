@@ -5,6 +5,16 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="home" />
         <title>CocoaConf Presentation: ${presentationInstance?.title}</title>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                $('.speaker').corner("5px");
+
+            });
+
+        </script>
+
     </head>
     <body>
             <h1>Session Details</h1>
@@ -22,7 +32,7 @@
 
 
          </sec:ifLoggedIn><br/>
-        <div style="background-color: #eeeeee; padding:10px;">
+        <div class="speaker" style="background-color: #eeeeee; padding:10px;">
             <g:link controller="speaker" action="viewDetails" id="${presentationInstance?.speaker?.id}"><img src="${request.contextPath}/${presentationInstance.speaker?.imagePath}" style="float:left" /></g:link>
             <h2><g:link controller="speaker" action="viewDetails" id="${presentationInstance?.speaker?.id}">${presentationInstance?.speaker}</g:link></h2>
             <p>${presentationInstance?.speaker?.bio}</p>

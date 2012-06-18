@@ -7,8 +7,13 @@
           <meta name="tab" content="speakers" />
         <g:set var="entityName" value="${message(code: 'speaker.label', default: 'Speaker')}" />
         <title>CocoaConf | ${speaker}</title>
+        <script type="text/javascript"  src="${resource(dir:'js', file:'jquery.corner.js')}"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
 
-	<script type="text/javascript">
+                $('.presentation').corner("5px");
+
+            });
 
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-23159724-1']);
@@ -22,6 +27,22 @@
 
 
 	</script>
+
+        <style type="text/css">
+            .presentations {
+                display: block; width:520px; padding: 1px 40px 0 20px;
+            }
+
+            .presentation {
+                padding: 10px; border: 1px solid #eee; list-style: none; margin-bottom:20px; background:#eeeeee;
+            }
+
+            .presentation a {
+                color:#2ab0e2; font-weight: bold; font-size: 16px; text-decoration: none
+            }
+
+        </style>
+
     </head>
     <body>
 
@@ -31,10 +52,10 @@
             <p>${speaker.bio}</p>
 
         </div>
-        <ul style="display: block; background-image: url(${resource(dir:'images', file:'background.png')}); width:520px; border: 1px solid gray; padding: 1px 40px 0 20px">
+        <ul class="presentations">
            <h3>Presentations by ${speaker}:</h3>
          <g:each in="${speaker.presentations.findAll{it.current == true}.sort{it.id}}" var="presentation">
-            <li style="background: white; padding: 6px; border: 1px solid gray; list-style: none; margin-bottom:20px;"><strong style="color:#2ab0e2"><g:link controller="session" action="details" id="${presentation.id}">${presentation.title}</g:link></strong><br/>
+            <li class="presentation"><g:link controller="session" action="details" id="${presentation.id}">${presentation.title}</g:link><br/>
             <p>${presentation.pAbstract}</p></li>
 
 
