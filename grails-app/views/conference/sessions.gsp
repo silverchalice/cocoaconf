@@ -7,15 +7,27 @@
         <meta name="nav" content="sessions" />
         <g:set var="entityName" value="${message(code: 'session.label', default: 'Session')}" />
         <title>${conference?.description}: Sessions</title>
+
+        <script type="text/javascript"  src="${resource(dir:'js', file:'jquery.corner.js')}"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                $('.session').corner("5px");
+
+            });
+
+        </script>
+
+
     </head>
     <body>
         <div class="body">
          <h1>${conference?.description}: Sessions</h1>
             <div class="list">
                 <g:each in="${sessions}" status="i" var="session">
-                    <div style="height:auto;">
+                    <div class="session" style="height:auto; background: #eee; width:680px; ">
 
-                         <div style="height:auto;width:700px;">
+                         <div style="height:auto;padding:15px;">
                              <h3>${session?.presentation?.title}</h3>
                              <p style="font-size:smaller;">${session?.presentation?.speaker}</p>
                              <p>${session?.presentation?.pAbstract}</p><br/>
