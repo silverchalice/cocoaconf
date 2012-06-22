@@ -126,7 +126,7 @@ class ConferenceController {
 
     def schedule = {
 
-        def conf = Conference.findByTinyName(params.tinyName)
+        def conf = Conference.findByTinyName(params.tinyName) ?: Conference.get(params.id)
         def schedule 
         if (conf){
             schedule = scheduleService.loadScheduleMap(conf)
