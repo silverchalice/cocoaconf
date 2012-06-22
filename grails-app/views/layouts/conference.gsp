@@ -61,7 +61,7 @@
            </a>
            </div>
             <div id="announcementHeader">
-                   <span style="color:#ff9627">Returning to Columbus, Ohio on August 9 - 11, 2012!</span>
+                   <span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/columbus-2012/home">Returning to Columbus, Ohio on August 9 - 11, 2012!</a></span>
                </div>
                 <div id="sidebar" style="text-align: center; width: 180px;">
                     <div id="conferenceNav">

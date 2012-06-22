@@ -7,8 +7,13 @@
           <meta name="tab" content="speakers" />
         <g:set var="entityName" value="${message(code: 'speaker.label', default: 'Speaker')}" />
         <title>CocoaConf | ${speaker}</title>
+        <script type="text/javascript"  src="${resource(dir:'js', file:'jquery.corner.js')}"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
 
-	<script type="text/javascript">
+                $('.presentation').corner("5px");
+
+            });
 
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-23159724-1']);
@@ -21,18 +26,28 @@
 	  })();
 
 	</script>
+
+    <style type="text/css">
+        .presentation {
+            background: #eee; padding: 15px; list-style: none; margin-bottom:20px;
+        }
+    </style>
+
     </head>
     <body>
         <div>
-            <img src="${request.contextPath}/${speaker?.imagePath}" style="float:left" />
+            <img src="${request.contextPath}/${speaker?.imagePath}" style="float:left; margin: 0 10px 10px 0" />
             <h1>${speaker}</h1>
             <p>${speaker.bio}</p>
         </div>
-        <ul style="display: block; background-image: url(${resource(dir:'images', file:'background.png')}); width:520px; border: 1px solid gray; padding: 1px 40px 0 20px">
-           <h3>Presentations by ${speaker}:</h3>
+        <ul style="display: block; width:720px; border: none; padding: 1px 40px 0 20px">
+           <h2>Presentations by ${speaker}:</h2>
+            <br/>
          <g:each in="${speakerPresentations?.sort{it.id}}" var="presentation">
-            <li style="background: white; padding: 6px; border: 1px solid gray; list-style: none; margin-bottom:20px;"><strong style="color:#2ab0e2"><g:link controller="conference" action="sessionDetails" id="${presentation.id}" params="${[confId:conference?.id]}">${presentation.title}</g:link></strong><br/>
-            <p>${presentation.pAbstract}</p></li>
+            <li class="presentation"><h3 style="color:#2ab0e2; padding: 0; margin:0"><g:link controller="conference" action="sessionDetails" id="${presentation.id}" params="${[confId:conference?.id]}">${presentation.title}</g:link></h3>
+            <p>${presentation.pAbstract}</p>
+            <span style="font-size: 14px; float:right;"><g:link controller="conference" action="sessionDetails" id="${presentation.id}" params="${[confId:conference?.id]}">View Details</g:link></span>
+            <span style="clear:both">&nbsp;</span> </li>
          </g:each>
         </ul>
     </body>

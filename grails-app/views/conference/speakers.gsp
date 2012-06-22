@@ -8,7 +8,7 @@
         <g:set var="entityName" value="${message(code: 'speaker.label', default: 'Speaker')}" />
         <title>CocoaConf | Our Speakers</title>
 
-        <script type="text/javascript"  src="${resource(dir:'js', file:'jquery.corner.js')}"></script>
+        <script type="text/javascript" src="${resource(dir:'js', file:'jquery.corner.js')}"></script>
         <script type="text/javascript">
             $(document).ready(function() {
 

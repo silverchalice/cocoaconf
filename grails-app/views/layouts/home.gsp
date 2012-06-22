@@ -70,12 +70,13 @@
 		    </a>
             </div>
             <div id="announcementHeader">
-                <span style="color:#ff9627">Returning to Columbus, Ohio on August 9 - 11, 2012!</span>
+                <span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/columbus-2012/home">Returning to Columbus, Ohio on August 9 - 11, 2012!</a></span>
             </div>
             <div id="sidebar" style="margin:10px;">
                 <a href="${request.contextPath}/dc-2012/home">
                 <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'dc.png')}) no-repeat bottom;">
-                    <div class="conferenceCellName">Washington DC - June 28-30</div>
+                    <div class="conferenceCellName" style="color:#ff9627">Washington DC - June 28-30 <br/>
+                    <strong style="font-size:11px">Registration Closing!</strong></div>
                 </div>
                 </a>
                 <a href="${request.contextPath}/columbus-2012/home">

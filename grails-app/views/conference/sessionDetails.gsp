@@ -5,6 +5,15 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="conference" />
         <title>CocoaConf Presentation: ${presentation?.title}</title>
+
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                $('.speaker').corner("5px");
+
+            });
+        </script>
     </head>
     <body>
             <h1>Session Details</h1>
@@ -22,10 +31,12 @@
 
 
          </sec:ifLoggedIn><br/>
-        <div style="background-color: #eeeeee; padding:10px;">
-            <g:link controller="conference" action="speakerDetails" id="${presentation?.speaker?.id}" params="${[confId:conference?.id]}"><img src="${request.contextPath}/${presentation.speaker?.imagePath}" style="float:left" /></g:link>
+        <div class="speaker" style="background-color: #eeeeee; padding:15px;">
+            <g:link controller="conference" action="speakerDetails" id="${presentation?.speaker?.id}" params="${[confId:conference?.id]}"><img src="${request.contextPath}/${presentation.speaker?.imagePath}" style="float:left; margin:0 10px 10px; 0" /></g:link>
             <h2><g:link controller="conference" action="speakerDetails" id="${presentation?.speaker?.id}" params="${[confId:conference?.id]}">${presentation?.speaker}</g:link></h2>
             <p>${presentation?.speaker?.bio}</p>
+            <span style="font-size: 14px; float:right;"><g:link controller="conference" action="speakerDetails" id="${presentation?.speaker?.id}" params="${[confId:conference?.id]}">View Details</g:link></span>
+            <span style="clear:both">&nbsp;</span>
         </div>
     </body>
 </html>
