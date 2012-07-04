@@ -49,6 +49,17 @@ class Conference {
         def sessions = sessions.findAll{it.type != 'break'}
     }
 
+	def getHomePagePartners(){
+		def levels = ['basic', 'silver', 'gold', 'platinum']
+		def homePagePartners = partners.findAll{levels.contains(it.level)}
+		return homePagePartners
+	}
+	
+	def getGroupPartners(){
+		def groupPartners = partners.findAll{it.level == 'usergroup'}
+		return groupPartners
+	}
+	
     static mapping = {
 		days sort:'id'
         registrationBlurb type: 'text'
