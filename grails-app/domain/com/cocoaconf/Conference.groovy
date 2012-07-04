@@ -53,13 +53,13 @@ class Conference {
 
 	def getSponsorPartners(){
 		def levels = ['basic', 'silver', 'gold', 'platinum']
-		def homePagePartners = partners.findAll{levels.contains(it.partner.level)}
+		def homePagePartners = partners.findAll{levels.contains(it.level)}
 		def results = homePagePartners.collect{it.partner}
 		return results.sort{it.priority}
 	}
 	
 	def getGroupPartners(){
-		def groupPartners = partners.findAll{it.partner.level == 'usergroup'}
+		def groupPartners = partners.findAll{it.level == 'usergroup'}
 		def result = groupPartners.collect{it.partner}
 		return groupPartners.sort{it.priority}
 	}
