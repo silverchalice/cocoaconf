@@ -32,13 +32,11 @@
               var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
 
-
-
-
         </script>
 
     </head>
     <body id="announcement">
+
         <div id="navWrapper">
             <div id="nav">
                 <g:link class="${pageProperty(name:'meta.tab') == 'home' ? 'current' : ''}" uri="/">Home</g:link>
@@ -47,55 +45,28 @@
                 <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}"  controller="home" action="partners">Our Partners</g:link>
                 <a  href="${request.contextPath}/dc-2012/home" class="${pageProperty(name:'meta.tab') == 'events' ? 'current' : ''}"  style="background-position: 55% 0;">Events</a>
                 <g:link class="${pageProperty(name:'meta.tab') == 'next' ? 'current' : ''}"  controller="home" action="nearYou" style="width:130px;">[cocoaConf next]</g:link>
-
-
             </div>
         </div>
+
         <div id="page">
-           <div id="spinner" class="spinner" style="display:none;">
+
+            <div id="spinner" class="spinner" style="display:none;">
                 <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
-           </div>
-           <div id="logo"><a href="${request.contextPath}/">
+            </div>
+
+            <div id="logo"><a href="${request.contextPath}/">
                <img src="${resource(dir:'images',file:'cc-logo.png')}" alt="CocoaConf - the conference for iPhone, iPad and Mac developers" border="0" />
                the conference for <span>iPhone</span>, <span>iPad</span> and <span>Mac</span> developers
-           </a>
-           </div>
+                </a>
+            </div>
+
             <div id="announcementHeader">
-                   <span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/columbus-2012/home">Returning to Columbus, Ohio on August 9 - 11, 2012!</a></span>
-               </div>
-                <div id="sidebar" style="text-align: center; width: 180px;">
-                    <div id="conferenceNav">
-                        <ul>
-                            <li><g:link class="${pageProperty(name:'meta.nav') == 'home' ? 'current' : ''}" controller="conference" action="home" params='[tinyName: "${conference.tinyName}"]'>Event Home</g:link></li>
-                            <li><g:link class="${pageProperty(name:'meta.nav') == 'speakers' ? 'current' : ''}" controller="conference" action="speakers" params='[tinyName: "${conference.tinyName}"]'>Speakers</g:link></li>
-                            <li><g:link class="${pageProperty(name:'meta.nav') == 'sessions' ? 'current' : ''}"  controller="conference" action="sessions" params='[tinyName: "${conference.tinyName}"]'>Sessions</g:link></li>
-                            <li><g:link class="${pageProperty(name:'meta.nav') == 'schedule' ? 'current' : ''}" controller="conference" action="schedule" params='[tinyName: "${conference.tinyName}"]'>Schedule</g:link></li>
-                            <li><g:link class="${pageProperty(name:'meta.nav') == 'venue' ? 'current' : ''}" controller="conference" action="venue" params='[tinyName: "${conference.tinyName}"]'>Venue</g:link></li>
-							<li><g:link class="${pageProperty(name:'meta.nav') == 'partners' ? 'current' : ''}" controller="conference" action="partners" params='[tinyName: "${conference.tinyName}"]'>Partners</g:link></li>
-                            <li><g:link class="${pageProperty(name:'meta.nav') == 'register' ? 'current' : ''}" controller="conference" action="register" params='[tinyName: "${conference.tinyName}"]'>Register</g:link></li>
-                        </ul>
-
-
-                </div>
-
-                <br/>
-                <br/>
-                <h2 style="color:#1da0d1;"><g:link controller="mugShot" action="list">Our Mug</g:link></h2>
-                <g:link controller="mugShot" action="list"><g:img dir="images" file="mugThumb.png" style="width:160px; margin:10px" /> </g:link>
-                <br/>
-                <br/>
-                <h2 style="color:#1da0d1;">Our Sponsors</h2>
-                <br/>
-                ${conference?.sponsorListBlurb}
-                <a href="${resource(dir:'images', file:'sponsorship.pdf')}">Sponsorships Available</a>
-                <br/><br/>
+               <span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/columbus-2012/home">Returning to Columbus, Ohio on August 9 - 11, 2012!</a></span>
             </div>
-
             <div id="content">
-               <div class="body" style="width: 760px"><g:layoutBody /></div>
-                <div style="clear: both"></div>
+                <g:layoutBody />
             </div>
-            <div style="clear: both"></div>
+
             <div id="footer">
                 <p>Copyright &copy; 2012 Simply Cocoa, LLC. Site by <a href="http://silver-chalice.com">Silver Chalice</a>, LLC.</p>
             </div>

@@ -36,10 +36,16 @@
   </head>
 
   <body>
+      <div id="confSidebar">
+          <g:render template="confNav" model="['conference': conference, 'current': 'partners']" />
+      </div>
 
-  <br/>
-  <h1>${conference?.description} Partners</h1>
-  ${conference?.partnerBlurb}
- <br/>
+      <div class="body">
+          <br/>
+          <h1>${conference?.description} Partners</h1>
+          ${conference?.partnerBlurb}
+         <br/>
+      </div>
+      <div style="clear: both"></div>
   </body>
 </html>

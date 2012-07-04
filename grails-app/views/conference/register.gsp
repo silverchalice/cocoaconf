@@ -69,11 +69,18 @@
     </head>
 
     <body>
-        <h1>Register for CocoaConf</h1>
-        <h2>What you get</h2>
-        ${conference?.registrationBlurb}
-        <p><strong>Group discounts are also available.</strong>  Contact us at <a href="mailto:info@cocoaconf.com">info@cocoaconf.com</a> for details.</p>
-        ${conference?.eventBriteBlurb}
+        <div id="confSidebar">
+            <g:render template="confNav" model="['conference': conference, 'current': 'register']" />
+        </div>
+
+        <div class="body">
+            <h1>Register for CocoaConf</h1>
+            <h2>What you get</h2>
+            ${conference?.registrationBlurb}
+            <p><strong>Group discounts are also available.</strong>  Contact us at <a href="mailto:info@cocoaconf.com">info@cocoaconf.com</a> for details.</p>
+            ${conference?.eventBriteBlurb}
+        </div>
+    <div style="clear: both"></div>
     </body>
 </html>
 

@@ -21,22 +21,27 @@
 
     </head>
     <body>
-        <div class="body">
+    <div id="confSidebar">
+        <g:render template="confNav" model="['conference': conference, 'current': 'sessions']" />
+    </div>
+
+    <div class="body">
          <h1>${conference?.description}: Sessions</h1>
-            <div class="list">
-                <g:each in="${sessions}" status="i" var="session">
-                    <div class="session" style="height:auto; background: #eee; width:680px; ">
+             <div class="list">
+                 <g:each in="${sessions}" status="i" var="session">
+                     <div class="session" style="height:auto; background: #eee; width:680px; ">
 
                          <div style="height:auto;padding:15px;">
                              <h3>${session?.presentation?.title}</h3>
                              <p style="font-size:smaller;">${session?.presentation?.speaker}</p>
                              <p>${session?.presentation?.pAbstract}</p><br/>
                          </div>
-                    </div><br />
+                     </div><br />
 
-                     </g:each>
-                     <div style="clear:both"></div>
+                 </g:each>
+             <div style="clear:both"></div>
         </div>
-      </div>
+        </div>
+        <div style="clear: both"></div>
     </body>
 </html>

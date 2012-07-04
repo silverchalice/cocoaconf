@@ -36,12 +36,18 @@
   </head>
 
   <body>
+      <div id="confSidebar">
+          <g:render template="confNav" model="['conference': conference, 'current': 'venue']" />
+      </div>
 
-  <h1>${conference?.description} Venue</h1>
-  <h2>${conference?.venue?.name}</h2>
-  ${conference?.venue?.description}
- <br/>
- <br/>
-    ${conference?.venue?.googleMapsCode}
+      <div class="body">
+          <h1>${conference?.description} Venue</h1>
+          <h2>${conference?.venue?.name}</h2>
+          ${conference?.venue?.description}
+         <br/>
+         <br/>
+            ${conference?.venue?.googleMapsCode}
+      </div>
+      <div style="clear: both"></div>
   </body>
 </html>
