@@ -177,39 +177,46 @@
     </head>
 
     <body>
-        <g:if test="${flash.message}">
-            <div id="flashMessage" style="">
-                <p>${flash.message}</p>
-            </div>
-        </g:if>
+        <div id="confSidebar">
+            <g:render template="confNav" model="['conference': conference, 'current': 'schedule']" />
+        </div>
 
-        <h1>${conference?.description}: Schedule</h1>
+        <div class="body">
+            <g:if test="${flash.message}">
+                <div id="flashMessage" style="">
+                    <p>${flash.message}</p>
+                </div>
+            </g:if>
 
-        <g:each in="${schedule}" var="dayMap">
-		    <h3 style="clear:both">${conference.days[dayMap.day -1]}</h3>
-		    <table border="1" width="700" class="schedule">
-			<g:each in="${dayMap.slots}" var="slot">
-			    <g:set var="sessions" value="${slot.value}" />
- 		  	    <tr class="${sessions[0]?.type}">
-  		        <td align="center" width="75" align="center" class="time">${sessions[0].start}-${sessions[0].end}</td>
-                <g:each in="${sessions.sort{it.track}}" var="sess">
-	                <g:if test="${sessions.size() == 1}">
-	                    <g:if test="${sess?.type != 'break'}">
-	                        <td align="center" colspan="3"><g:link controller="conference" action="sessionDetails" id="${sess?.presentation?.id}" params="${[confId:conference?.id]}">${sess?.presentation?.title}</g:link></span> <span class="sessionSpeaker"><g:link controller="conference" action="speakerDetails" id="${sess?.presentation?.speaker?.id}" params="${[confId:conference?.id]}">${sess?.presentation?.speaker}</g:link></th>
-		                </g:if>
-		                <g:else>
-		                    <td align="center" colspan="3">${sess?.presentation?.title}</span></th>
-		                </g:else>
-		            </g:if>
-		            <g:else>
-                           <td align="center" width="200" class="track${sess?.track}"><span class="sessionTitle"><g:link controller="conference" action="sessionDetails" id="${sess?.presentation?.id}" params="${[confId:conference?.id]}">${sess?.presentation?.title}</g:link></span> <span class="sessionSpeaker"><g:link controller="conference" action="speakerDetails" id="${sess?.presentation?.speaker?.id}" params="${[confId:conference?.id]}">${sess?.presentation?.speaker}</g:link></span></td>
-		            </g:else>
-		        </g:each>
-		  	    </tr>
-		    </g:each>
-		    </table>
-		</g:each>
+            <h1>${conference?.description}: Schedule</h1>
 
-	</body>
+            <g:each in="${schedule}" var="dayMap">
+                <h3 style="clear:both">${conference.days[dayMap.day -1]}</h3>
+                <table border="1" width="700" class="schedule">
+                <g:each in="${dayMap.slots}" var="slot">
+                    <g:set var="sessions" value="${slot.value}" />
+                    <tr class="${sessions[0]?.type}">
+                    <td align="center" width="75" align="center" class="time">${sessions[0].start}-${sessions[0].end}</td>
+                    <g:each in="${sessions.sort{it.track}}" var="sess">
+                        <g:if test="${sessions.size() == 1}">
+                            <g:if test="${sess?.type != 'break'}">
+                                <td align="center" colspan="3"><g:link controller="conference" action="sessionDetails" id="${sess?.presentation?.id}" params="${[confId:conference?.id]}">${sess?.presentation?.title}</g:link></span> <span class="sessionSpeaker"><g:link controller="conference" action="speakerDetails" id="${sess?.presentation?.speaker?.id}" params="${[confId:conference?.id]}">${sess?.presentation?.speaker}</g:link></th>
+                            </g:if>
+                            <g:else>
+                                <td align="center" colspan="3">${sess?.presentation?.title}</span></th>
+                            </g:else>
+                        </g:if>
+                        <g:else>
+                               <td align="center" width="200" class="track${sess?.track}"><span class="sessionTitle"><g:link controller="conference" action="sessionDetails" id="${sess?.presentation?.id}" params="${[confId:conference?.id]}">${sess?.presentation?.title}</g:link></span> <span class="sessionSpeaker"><g:link controller="conference" action="speakerDetails" id="${sess?.presentation?.speaker?.id}" params="${[confId:conference?.id]}">${sess?.presentation?.speaker}</g:link></span></td>
+                        </g:else>
+                    </g:each>
+                    </tr>
+                </g:each>
+                </table>
+            </g:each>
+
+        </div>
+        <div style="clear: both"></div>
+    </body>
 </html>
 		

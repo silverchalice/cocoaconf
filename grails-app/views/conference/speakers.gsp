@@ -69,15 +69,18 @@
 
     </head>
     <body>
-         <h1>${conference?.description}: Speakers</h1>
-        <p>CocoaConf speakers include well known trainers, authors, and professional iOS and OS X developers.</p>
-
-        <div class="list">
-            <g:each in="${speakerInstanceList}" status="i" var="speaker">
-                <div class="${(i % 2) == 0 ? 'odd' : 'even'}" style="min-height:160px; margin-bottom:10px;">
+        <div id="confSidebar">
+            <g:render template="confNav" model="['conference': conference, 'current': 'speakers']" />
+        </div>
 
 
+        <div class="body">
+            <h1>${conference?.description}: Speakers</h1>
+            <p>CocoaConf speakers include well known trainers, authors, and professional iOS and OS X developers.</p>
 
+            <div class="list">
+                <g:each in="${speakerInstanceList}" status="i" var="speaker">
+                    <div class="${(i % 2) == 0 ? 'odd' : 'even'}" style="min-height:160px; margin-bottom:10px;">
 
                      <div class="bio" style="width:98%">
                          <h3>${speaker} </h3>
@@ -86,11 +89,14 @@
                         </g:if>
                          <p>${speaker.bio}</p><br/>
                          <span style="font-size: 14px; float:right; "><g:link controller="speaker" action="viewDetails" id="${speaker?.id}">View Details</g:link></span>
-                </div>
-                    <div style="clear:both">&nbsp;</div>
-                </div>
+                    </div>
+                        <div style="clear:both">&nbsp;</div>
+                    </div>
 
-            </g:each>
+                </g:each>
+            </div>
+
         </div>
+        <div style="clear: both"></div>
     </body>
 </html>

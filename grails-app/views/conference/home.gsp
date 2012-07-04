@@ -63,22 +63,31 @@
 
     <body>
 
-
-        <div style="float:left; width: 480px; padding-left:20px">
-            <g:if test="${flash.message}">
-                <div id="flashMessage"><p>${flash.message}</p>
-                 <span class="button" id="closeFlash" >Ok!</span>
-                </div>
-            </g:if>
-            <br/>
-            <h2>${conference?.description}: ${conference?.dates}</h2>
-            ${conference?.blurb}
-          </div>
-
-        <div id="featuredSpeakers">
-            <h2 style="color:#1da0d1;">Featured Speakers</h2>
-            ${conference?.featuredSpeakers}
+        <div id="confSidebar">
+            <g:render template="confNav" model="['conference': conference, 'current': 'home']" />
         </div>
+
+
+        <div class="body">
+
+            <div style="float:left; width: 480px;">
+                <g:if test="${flash.message}">
+                    <div id="flashMessage"><p>${flash.message}</p>
+                     <span class="button" id="closeFlash" >Ok!</span>
+                    </div>
+                </g:if>
+                <br/>
+                <h1>${conference?.description}</h1>
+                <h3>${conference?.dates}</h3>
+                ${conference?.blurb}
+              </div>
+
+            <div id="featuredSpeakers">
+                <h2 style="color:#1da0d1;">Featured Speakers</h2>
+                ${conference?.featuredSpeakers}
+            </div>
+        </div>
+        <div style="clear: both"></div>
 
 
 

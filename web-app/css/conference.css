@@ -109,6 +109,7 @@ body {
 
 #conferenceNav ul {
     margin: 0;
+    padding: 0;
 }
 
 #conferenceNav ul li {
@@ -130,7 +131,22 @@ body {
 }
 
 
+#confSidebar {
+    text-align: center;
+    width: 180px;
+    float: left;
+}
 
+
+#confPartners {
+    text-align: center
+}
+
+#confPartners img {
+  text-align: center;
+  padding:10px 0;
+  max-width: 150px;
+}
 
 
 #nav {
@@ -226,8 +242,9 @@ body {
 
 .body {
     float:right;
-    width:640px;
+    width:720px;
     padding-right:50px;
+    padding-left:20px
 }
 
 .sponsor img {
