@@ -70,7 +70,7 @@ environments {
 }
 
 grails.plugins.springsecurity.securityConfigType = SecurityConfigType.InterceptUrlMap
-/*grails.plugins.springsecurity.interceptUrlMap = [
+grails.plugins.springsecurity.interceptUrlMap = [
 
     '/':                                                     ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/images/**':                                            ['IS_AUTHENTICATED_ANONYMOUSLY'],
@@ -128,7 +128,7 @@ grails.plugins.springsecurity.securityConfigType = SecurityConfigType.InterceptU
     '/interest/*':                                                             ['ROLE_ADMIN'],
     '/**':                                                                     ['ROLE_ADMIN']
 ]
-*/
+
 
 // Added by the Spring Security Core plugin:
 
