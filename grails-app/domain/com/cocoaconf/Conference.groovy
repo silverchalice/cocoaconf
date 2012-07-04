@@ -52,12 +52,12 @@ class Conference {
 	def getHomePagePartners(){
 		def levels = ['basic', 'silver', 'gold', 'platinum']
 		def homePagePartners = partners.findAll{levels.contains(it.level)}
-		return homePagePartners
+		return homePagePartners.sort{it.priority}
 	}
 	
 	def getGroupPartners(){
 		def groupPartners = partners.findAll{it.level == 'usergroup'}
-		return groupPartners
+		return groupPartners.sort{it.priority}
 	}
 	
     static mapping = {

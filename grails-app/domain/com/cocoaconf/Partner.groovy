@@ -9,6 +9,7 @@ class Partner {
 	String logoFile
 	String logoStyle1
 	String logoStyle2
+	Integer priority = 99
 	
     static constraints = {
 	    conference()
