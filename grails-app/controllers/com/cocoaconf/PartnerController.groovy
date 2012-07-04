@@ -103,7 +103,7 @@ class PartnerController {
 
     def addEvent(){
 		def partner = Partner.get(params.id)
-		def event = Conference.get(params.event)
+		def event = Conference.get(params.event?.toLong())
 		def sponsorship = new Sponsorship(partner:partner, conference:event, level:params.level, priority:params.priority)
 		if (!sponsorship.save()){
 			sponsorship.errors.allErrors.each{println it}
