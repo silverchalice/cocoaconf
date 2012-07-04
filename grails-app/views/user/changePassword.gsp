@@ -1,5 +1,5 @@
 <head>
-<meta name='layout' content='main' />
+<meta name='layout' content='home' />
 <title>Login</title>
 <style type='text/css' media='screen'>
 #login {

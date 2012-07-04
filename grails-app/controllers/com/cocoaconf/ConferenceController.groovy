@@ -16,12 +16,8 @@ class ConferenceController {
     def home() {
         println "...and so now we are in the ConferenceController home action..."
         println "...and the params are " + params
-
-        Conference.list().each { 
-            println "the id is ${it.id} and the tinyName is ${it.tinyName}"
-        }
-
         def conference = Conference.findByTinyName(params.tinyName)
+        def blogLinks = BlogLink.findAllByEvent(conference)
 
         if(conference){
             println "so there was a conference. we are supposed to render the view now..."

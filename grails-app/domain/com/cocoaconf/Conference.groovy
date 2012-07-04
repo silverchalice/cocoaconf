@@ -21,7 +21,7 @@ class Conference {
     List days
     Boolean active
 
-    static hasMany = [speakers : Speaker, sessions : Session, days: ConferenceDay]
+    static hasMany = [speakers : Speaker, sessions : Session, days: ConferenceDay, partners: Partner]
 
     static constraints = {
 		startDate nullable:true
