@@ -15,6 +15,7 @@ class Conference {
     String eventBriteBlurb //code to display EventBrite stuff on "Register" page
     String partnerBlurb //html for partner page for a specific conference
     String featuredSpeakers
+    String galleryBlurb
     String tinyName
     String displayName
     String sponsorListBlurb
@@ -34,6 +35,7 @@ class Conference {
 		displayName nullable:true
 		registrationBlurb nullable:true, maxSize:10000
 		eventBriteBlurb nullable:true, maxSize:10000
+		galleryBlurb nullable:true, maxSize:10000
 		partnerBlurb nullable:true, maxSize:100000
 		featuredSpeakers nullable:true, maxSize:100000
 		sponsorListBlurb nullable:true, maxSize:100000

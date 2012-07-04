@@ -49,6 +49,14 @@
 	<g:textArea name="eventBriteBlurb" cols="40" rows="5" maxlength="10000" value="${conference?.eventBriteBlurb}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'galleryBlurb', 'error')} ">
+	<label for="galleryBlurb">
+		<g:message code="conference.galleryBlurb.label" default="Gallery Blurb" />
+
+	</label>
+	<g:textArea name="galleryBlurb" cols="40" rows="5" maxlength="10000" value="${conference?.galleryBlurb}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'partnerBlurb', 'error')} ">
 	<label for="partnerBlurb">
 		<g:message code="conference.partnerBlurb.label" default="Partner Blurb" />
@@ -128,4 +136,12 @@
 		
 	</label>
     <g:checkBox name="active" value="${conference?.active}" />
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'completed', 'error')} ">
+	<label for="completed">
+		<g:message code="conference.active.label" default="Completed" />
+
+	</label>
+    <g:checkBox name="completed" value="${conference?.completed}" />
 </div>

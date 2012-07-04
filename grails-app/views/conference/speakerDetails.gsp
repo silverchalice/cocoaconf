@@ -36,7 +36,7 @@
     </head>
     <body>
         <div>
-            <img src="${request.contextPath}/${speaker?.imagePath}" style="float:left; margin: 0 10px 10px 0" />
+            <img src="${request.contextPath}/${speaker?.imagePath}" style="float:left; max-height: 140px; max-width: 140px; margin: 0 10px 10px 0" />
             <h1>${speaker}</h1>
             <p>${speaker.bio}</p>
         </div>

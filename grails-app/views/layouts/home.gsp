@@ -72,13 +72,12 @@
             <div id="announcementHeader">
                 <span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/columbus-2012/home">Returning to Columbus, Ohio on August 9 - 11, 2012!</a></span>
             </div>
+
+
             <div id="sidebar" style="margin:10px;">
-                <a href="${request.contextPath}/dc-2012/home">
-                <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'dc.png')}) no-repeat bottom;">
-                    <div class="conferenceCellName" style="color:#ff9627">Washington DC - June 28-30 <br/>
-                    <strong style="font-size:11px">Registration Closing!</strong></div>
-                </div>
-                </a>
+
+                <h1 style="margin-left: 10px; color: #1da0d1">Upcoming Events</h1>
+
                 <a href="${request.contextPath}/columbus-2012/home">
                 <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'columbus.png')}) no-repeat bottom;">
                     <div class="conferenceCellName">Columbus, Ohio - August 9-11</div>
@@ -87,16 +86,28 @@
                 <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'raleigh.png')}) no-repeat bottom;">
                     <div class="conferenceCellName">Raleigh, NC - To Be Announced</div>
                 </div>
-               <br/>
-               <br/>
-               <h2 style="color:#1da0d1;"><g:link controller="mugShot" action="list">CocoaConf - The Mug</g:link></h2>
-               <g:link controller="mugShot" action="list"><g:img dir="images" file="mugThumb.png" style="width:160px; margin:10px 20px" /> </g:link>
-               <br/>
-              <h2 style="color:#1da0d1;">Our Sponsors</h2>
-              <br/>
-              ${conference?.sponsorListBlurb}
-              <a href="${resource(dir:'images', file:'sponsorship.pdf')}">Sponsorship Opportunities Available</a>
-              <br/><br/>
+                <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'portland.png')}) no-repeat bottom;">
+                    <div class="conferenceCellName">Portland, OR - To Be Announced</div>
+                </div>
+                <br/>
+
+                <h1 style="margin-left: 10px; color: #1da0d1">Recent Events</h1>
+
+                <a href="${request.contextPath}/dc-2012/home">
+                <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'dc.png')}) no-repeat bottom;">
+                    <div class="conferenceCellName">Washington DC - June 28-30 <br/>
+                    <strong style="font-size:11px">Registration Closed</strong></div>
+                </div>
+                </a>
+                <br/>
+                <h2><g:link controller="mugShot" action="list">Our Mug</g:link></h2>
+                <g:link controller="mugShot" action="list"><g:img dir="images" file="mugThumb.png" style="width:160px; margin:20px" /> </g:link>
+                <br/>
+                <h2>Our Sponsors</h2>
+                <br/>
+                ${conference?.sponsorListBlurb}
+                <a href="${resource(dir:'images', file:'sponsorship.pdf')}">Sponsorship Opportunities Available</a>
+                <br/><br/>
             </div>
 
            <div id="content">

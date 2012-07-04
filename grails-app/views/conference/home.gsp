@@ -70,17 +70,7 @@
 
         <div class="body">
 
-            <div style="float:left; width: 480px;">
-                <g:if test="${flash.message}">
-                    <div id="flashMessage"><p>${flash.message}</p>
-                     <span class="button" id="closeFlash" >Ok!</span>
-                    </div>
-                </g:if>
-                <br/>
-                <h1>${conference?.description}</h1>
-                <h3>${conference?.dates}</h3>
-                ${conference?.blurb}
-              </div>
+            <g:render template="${conference.completed ? 'roundup' : 'confHome'}" model="['conference': conference]"/>
 
             <div id="featuredSpeakers">
                 <h2 style="color:#1da0d1;">Featured Speakers</h2>
