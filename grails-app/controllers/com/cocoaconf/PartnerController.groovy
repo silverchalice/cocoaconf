@@ -100,4 +100,17 @@ class PartnerController {
             redirect(action: "show", id: params.id)
         }
     }
+
+    def addEvent(){
+		def partner = Partner.get(params.id)
+		def event = Conference.get(params.event)
+		def sponsorship = new Sponsorship(partner:partner, conference:event, level:params.level, priority:params.priority)
+		if (!sponsorship.save()){
+			sponsorship.errors.allErrors.each{println it}
+			render "Error adding event!"
+		}
+		else{
+			render template:'events', model:[partnerInstance:partner]
+		}
+	}
 }

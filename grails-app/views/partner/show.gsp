@@ -23,15 +23,6 @@
 			</g:if>
 			<ol class="property-list partner">
 			
-				<g:if test="${partnerInstance?.conference}">
-				<li class="fieldcontain">
-					<span id="conference-label" class="property-label"><g:message code="partner.conference.label" default="Conference" /></span>
-					
-						<span class="property-value" aria-labelledby="conference-label"><g:link controller="conference" action="show" id="${partnerInstance?.conference?.id}">${partnerInstance?.conference?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${partnerInstance?.name}">
 				<li class="fieldcontain">
 					<span id="name-label" class="property-label"><g:message code="partner.name.label" default="Name" /></span>
@@ -55,15 +46,6 @@
 					<span id="blurb-label" class="property-label"><g:message code="partner.blurb.label" default="Blurb" /></span>
 					
 						<span class="property-value" aria-labelledby="blurb-label"><g:fieldValue bean="${partnerInstance}" field="blurb"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${partnerInstance?.level}">
-				<li class="fieldcontain">
-					<span id="level-label" class="property-label"><g:message code="partner.level.label" default="Level" /></span>
-					
-						<span class="property-value" aria-labelledby="level-label"><g:fieldValue bean="${partnerInstance}" field="level"/></span>
 					
 				</li>
 				</g:if>
@@ -94,7 +76,16 @@
 					
 				</li>
 				</g:if>
-			
+                <div id="events">
+                    <g:render template="events" />			
+			    </div>
+				<g:formRemote name="eventForm" url="${[action:'addEvent']}" update="events">
+					Event id: <g:textField name="event" />
+					Level: <g:select name="level" from="['basic', 'silver', 'gold', 'platinum', 'usergroup', 'individual']"/>
+					Priority: <g:textField name="priority" />
+					<input type="hidden" name="id" value="${partnerInstance.id}" />
+					<input type="submit" value="Add Event" />
+				</g:formRemote>
 			</ol>
 			<g:form>
 				<fieldset class="buttons">

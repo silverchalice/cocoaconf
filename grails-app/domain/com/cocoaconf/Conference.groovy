@@ -20,8 +20,9 @@ class Conference {
     String sponsorListBlurb
     List days
     Boolean active
+    Boolean completed = false
 
-    static hasMany = [speakers : Speaker, sessions : Session, days: ConferenceDay, partners: Partner]
+    static hasMany = [speakers : Speaker, sessions : Session, days: ConferenceDay, partners: Sponsorship]
 
     static constraints = {
 		startDate nullable:true
@@ -36,6 +37,7 @@ class Conference {
 		partnerBlurb nullable:true, maxSize:100000
 		featuredSpeakers nullable:true, maxSize:100000
 		sponsorListBlurb nullable:true, maxSize:100000
+		completed nullable:true
     }
 
     def getSpeakers(){
@@ -51,12 +53,14 @@ class Conference {
 
 	def getSponsorPartners(){
 		def levels = ['basic', 'silver', 'gold', 'platinum']
-		def homePagePartners = partners.findAll{levels.contains(it.level)}
-		return homePagePartners.sort{it.priority}
+		def homePagePartners = partners.findAll{levels.contains(it.partner.level)}
+		def results = homePagePartners.collect{it.partner}
+		return results.sort{it.priority}
 	}
 	
 	def getGroupPartners(){
-		def groupPartners = partners.findAll{it.level == 'usergroup'}
+		def groupPartners = partners.findAll{it.partner.level == 'usergroup'}
+		def result = groupPartners.collect{it.partner}
 		return groupPartners.sort{it.priority}
 	}
 	

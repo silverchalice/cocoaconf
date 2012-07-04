@@ -2,14 +2,6 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: partnerInstance, field: 'conference', 'error')} required">
-	<label for="conference">
-		<g:message code="partner.conference.label" default="Conference" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:select id="conference" name="conference.id" from="${com.cocoaconf.Conference.list()}" optionKey="id" required="" value="${partnerInstance?.conference?.id}" class="many-to-one"/>
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: partnerInstance, field: 'name', 'error')} ">
 	<label for="name">
 		<g:message code="partner.name.label" default="Name" />
@@ -34,14 +26,6 @@
 	<g:textArea name="blurb" cols="40" rows="5" maxlength="5000" value="${partnerInstance?.blurb}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: partnerInstance, field: 'level', 'error')} ">
-	<label for="level">
-		<g:message code="partner.level.label" default="Level" />
-		
-	</label>
-	<g:select name="level" from="${partnerInstance.constraints.level.inList}" value="${partnerInstance?.level}" valueMessagePrefix="partner.level" noSelection="['': '']"/>
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: partnerInstance, field: 'logoFile', 'error')} ">
 	<label for="logoFile">
 		<g:message code="partner.logoFile.label" default="Logo File" />
@@ -64,5 +48,22 @@
 		
 	</label>
 	<g:textField name="logoStyle2" value="${partnerInstance?.logoStyle2}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: partnerInstance, field: 'events', 'error')} ">
+	<label for="events">
+		<g:message code="partner.events.label" default="Events" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${partnerInstance?.events?}" var="e">
+    <li><g:link controller="sponsorship" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="sponsorship" action="create" params="['partner.id': partnerInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'sponsorship.label', default: 'Sponsorship')])}</g:link>
+</li>
+</ul>
+
 </div>
 
