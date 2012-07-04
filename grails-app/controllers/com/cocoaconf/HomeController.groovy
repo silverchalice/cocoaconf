@@ -2,6 +2,7 @@ package com.cocoaconf
 
 import org.codehaus.groovy.grails.commons.ConfigurationHolder
 
+//`Oh! captive, bound, and double-ironed,' cried the phantom, `not to know, that ages of incessant labour, by immortal creatures, for this earth must pass into eternity before the good of which it is susceptible is all developed.
 
 class HomeController {
 
