@@ -144,6 +144,15 @@ body {
     float:left;
 }
 
+#sidebar h2 {
+    margin-left: 20px;
+    color:#1da0d1;
+}
+
+#sidebar h2 a {
+    color: #1da0d1;
+}
+
 
 #sidebar ul {
     padding-left: 5px;
