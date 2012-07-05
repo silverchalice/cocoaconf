@@ -29,14 +29,17 @@
          <h1>${conference?.description}: Sessions</h1>
              <div class="list">
                  <g:each in="${sessions}" status="i" var="session">
-                     <div class="session" style="height:auto; background: #eee; width:680px; ">
 
-                         <div style="height:auto;padding:15px;">
-                             <h3>${session?.presentation?.title}</h3>
-                             <p style="font-size:smaller;">${session?.presentation?.speaker}</p>
-                             <p>${session?.presentation?.pAbstract}</p><br/>
-                         </div>
-                     </div><br />
+                     <g:if test="${session?.presentation?.title != 'TBA'}">
+                         <div class="session" style="height:auto; background: #eee; width:680px; ">
+
+                             <div style="height:auto;padding:10px 25px;">
+                                 <h3>${session?.presentation?.title}</h3>
+                                 <p><g:link controller="conference" action="speakerDetails" id="${session?.presentation?.speaker?.id}" params="${[confId:conference?.id]}">${session?.presentation?.speaker}</g:link></p>
+                                 <p>${session?.presentation?.pAbstract}</p><br/>
+                             </div>
+                         </div><br />
+                     </g:if>
 
                  </g:each>
              <div style="clear:both"></div>
