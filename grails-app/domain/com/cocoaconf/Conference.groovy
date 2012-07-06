@@ -23,7 +23,7 @@ class Conference {
     Boolean active
     Boolean completed = false
 
-    static hasMany = [speakers : Speaker, sessions : Session, days: ConferenceDay, partners: Sponsorship]
+    static hasMany = [speakers : Speaker, sessions : Session, days: ConferenceDay, partners: Sponsorship, slides: PresentationFile]
 
     static constraints = {
 		startDate nullable:true
@@ -40,6 +40,7 @@ class Conference {
 		featuredSpeakers nullable:true, maxSize:100000
 		sponsorListBlurb nullable:true, maxSize:100000
 		completed nullable:true
+		slides nullable:true
     }
 
     def getSpeakers(){
