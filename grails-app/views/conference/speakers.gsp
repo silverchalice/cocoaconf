@@ -12,8 +12,9 @@
         <script type="text/javascript">
             $(document).ready(function() {
 
-                $('.odd').corner("5px");
-                $('.even').corner("5px");
+                $('.speaker').corner("5px");
+                $('.speakerPic').corner("5px");
+
 
             });
 
@@ -34,36 +35,20 @@
 
         <style type="text/css">
 
-            div.odd {
+            div.speaker {
                 background:#eeeeee;
                 border:0;
-                padding: 15px;
-            }
-
-            div.odd h3 {
-                color:#2d587a;
-            }
-
-            div.odd img {
+                padding: 0 15px;
                 float: left;
+                width: 300px;
+                height: 200px;
+                margin: 5px;
+
             }
 
 
-            div.even img {
-                float:right;
-            }
 
-            div.even h3 {
-                color:#2ab0e2;
-            }
 
-            div.even div.bio {
-                float:left;
-            }
-
-            div.odd div.bio {
-                float:right;
-            }
 
         </style>
 
@@ -80,15 +65,16 @@
 
             <div class="list">
                 <g:each in="${speakerInstanceList}" status="i" var="speaker">
-                    <div class="${(i % 2) == 0 ? 'odd' : 'even'}" style="min-height:160px; margin-bottom:10px;">
+                    <div class="speaker" style="min-height:160px; margin-bottom:10px;">
 
                      <div class="bio" style="width:98%">
-                         <h3>${speaker} </h3>
+
                          <g:if test="${speaker?.imagePath}">
-                             <g:link controller="speaker" action="viewDetails" id="${speaker?.id}"><img class="speakerPic" style=" float:left; margin-right:10px; margin-bottom: 2px; max-width: 140px;" src="${request.contextPath}/${speaker?.imagePath}"/></g:link>
+                             <g:link controller="speaker" action="viewDetails" id="${speaker?.id}"><img class="speakerPic" style=" float:left; margin-right:10px; margin-bottom: 2px; max-width: 120px;" src="${request.contextPath}/${speaker?.imagePath}"/></g:link>
                         </g:if>
-                         <p>${speaker.bio}</p><br/>
-                         <span style="font-size: 14px; float:right; "><g:link controller="speaker" action="viewDetails" id="${speaker?.id}">View Details</g:link></span>
+                         <h3>${speaker} </h3>
+                         <p><cc:truncate value="${speaker.bio}" size="100" /></p><br/>
+                         <span style="font-size: 14px; float:right; vertical-align: bottom; "><g:link controller="speaker" action="viewDetails" id="${speaker?.id}">View Details</g:link></span>
                     </div>
                         <div style="clear:both">&nbsp;</div>
                     </div>

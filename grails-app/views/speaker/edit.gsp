@@ -57,7 +57,23 @@
                                     <g:textField name="email" value="${speakerInstance?.email}" />
                                 </td>
                             </tr>
-                        
+                        <tr class="prop">
+                            <td valign="top" class="name">
+                              <label for="twitter"><g:message code="speaker.twitter.label" default="Twitter" /></label>
+                            </td>
+                            <td valign="top" class="value ${hasErrors(bean: speakerInstance, field: 'twitter', 'errors')}">
+                                <g:textField name="twitter" value="${speakerInstance?.twitter}" />
+                            </td>
+                        </tr>
+                        <tr class="prop">
+                            <td valign="top" class="blog">
+                              <label for="blog"><g:message code="speaker.blog.label" default="Blog" /></label>
+                            </td>
+                            <td valign="top" class="value ${hasErrors(bean: speakerInstance, field: 'blog', 'errors')}">
+                                <g:textField name="blog" value="${speakerInstance?.blog}" />
+                            </td>
+                        </tr>
+
                             <tr class="prop">
                                 <td valign="top" class="name">
                                   <label for="bio"><g:message code="speaker.bio.label" default="Bio" /></label>
