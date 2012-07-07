@@ -20,7 +20,14 @@
       <script src="${resource(dir:'js', file:'jquery-ui-1.8.11.custom.min.js')}" type="text/javascript"></script>
       <script src="${resource(dir:'js', file:'jquery.validate.min.js')}" type="text/javascript"></script>
       <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAUBuwYLt8MoHV8G-JyWegDxTedV6jzRPejGhJGvcW1KcUcMdW1RS2Dxifye3ZKPwd2B2Sx7KUnQeZrw" type="text/javascript"></script>
+      <script type="text/javascript"  src="${resource(dir:'js', file:'jquery.corner.js')}"></script>
       <script type="text/javascript">
+          $(document).ready(function() {
+
+              $('.body img').corner("5px");
+
+          });
+
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-23159724-1']);
           _gaq.push(['_trackPageview']);
