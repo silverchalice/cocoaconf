@@ -94,6 +94,7 @@ grails.plugins.springsecurity.interceptUrlMap = [
     '/**/venue':                                             ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/**/partners':                                          ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/**/register':                                          ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/**/slides':                                            ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/about':                                                ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/venue':                                                ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/conference/speakerDetails':                            ['IS_AUTHENTICATED_ANONYMOUSLY'],
