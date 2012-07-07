@@ -6,6 +6,7 @@ class ConferenceController {
 	
     def springSecurityService
 	def scheduleService
+	def slideService
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
@@ -221,4 +222,20 @@ class ConferenceController {
 	        redirect controller: "home"
 	    }
     }
+
+    def slides = {
+	    println "in slides action"
+	    params.each{key, val -> println "$key == $val"}
+        def conf = Conference.findByTinyName(params.tinyName)
+        if(conf){
+            def slideMap = slideService.loadSlides(conf)
+            if (!slideMap){
+				redirect controller: "home"
+				return
+			}
+            return [conference:conf, slideMap:slideMap]
+        } else {
+            redirect controller: "home"
+        }
+	}
 }

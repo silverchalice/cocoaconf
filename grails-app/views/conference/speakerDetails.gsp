@@ -12,7 +12,6 @@
             $(document).ready(function() {
 
                 $('.presentation').corner("5px");
-                $('.speakerPic').corner("5px");
 
             });
 
