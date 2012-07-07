@@ -12,6 +12,7 @@
             $(document).ready(function() {
 
                 $('.presentation').corner("5px");
+                $('.speakerPic').corner("5px");
 
             });
 
@@ -41,13 +42,17 @@
                 color:#2ab0e2; font-weight: bold; font-size: 16px; text-decoration: none
             }
 
+            .speakerPic {
+                float:left; max-height: 140px; max-width: 140px; margin: 0 10px 10px 0
+            }
+
         </style>
 
     </head>
     <body>
 
         <div>
-            <img src="${request.contextPath}/${speaker?.imagePath}" style="float:left; max-height: 140px; max-width: 140px; margin: 0 10px 10px 0" />
+            <img src="${request.contextPath}/${speaker?.imagePath}" class="speakerPic"/>
             <h1>${speaker}</h1>
             <p>${speaker.bio}</p>
 

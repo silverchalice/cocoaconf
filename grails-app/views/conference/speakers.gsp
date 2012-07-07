@@ -70,11 +70,14 @@
                      <div class="bio" style="width:98%">
 
                          <g:if test="${speaker?.imagePath}">
-                             <g:link controller="speaker" action="viewDetails" id="${speaker?.id}"><img class="speakerPic" style=" float:left; margin-right:10px; margin-bottom: 2px; max-width: 120px;" src="${request.contextPath}/${speaker?.imagePath}"/></g:link>
+
+                             <g:link controller="conference" action="speakerDetails" id="${speaker?.id}" params="${[confId:conference?.id]}"><img class="speakerPic" style=" float:left; margin-right:10px; margin-bottom: 2px; max-width: 120px;" src="${request.contextPath}/${speaker?.imagePath}"/></g:link>
                         </g:if>
                          <h3>${speaker} </h3>
                          <p><cc:truncate value="${speaker.bio}" size="100" /></p><br/>
-                         <span style="font-size: 14px; float:right; vertical-align: bottom; "><g:link controller="speaker" action="viewDetails" id="${speaker?.id}">View Details</g:link></span>
+                         <span style="font-size: 14px; float:right; vertical-align: bottom; ">
+                             <g:link controller="conference" action="speakerDetails" id="${speaker?.id}" params="${[confId:conference?.id]}">View Details</g:link>
+                         </span>
                     </div>
                         <div style="clear:both">&nbsp;</div>
                     </div>
