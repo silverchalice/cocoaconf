@@ -35,6 +35,10 @@
 
     </head>
     <body>
+        <div id="confSidebar">
+            <g:render template="confNav" model="['conference': conference, 'current': 'none']" />
+        </div>
+
         <div>
             <img src="${request.contextPath}/${speaker?.imagePath}" style="float:left; max-height: 140px; max-width: 140px; margin: 0 10px 10px 0" />
             <h1>${speaker}</h1>

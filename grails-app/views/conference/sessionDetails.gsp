@@ -16,6 +16,11 @@
         </script>
     </head>
     <body>
+
+        <div id="confSidebar">
+            <g:render template="confNav" model="['conference': conference, 'current': 'none']" />
+        </div>
+
             <h1>Session Details</h1>
 
             <h2 style="color:#35b6ff">${presentation?.title}</h2>
