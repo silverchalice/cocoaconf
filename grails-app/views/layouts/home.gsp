@@ -40,11 +40,20 @@
 
               $(".conferenceCell").corner("5px");
               $(".conferenceCellName").corner("5px bottom");
+              $(".featured img").corner("8px");
 
           })
 
 
         </script>
+
+        <style type="text/css">
+            .featured img {
+                width: 120px;
+                border: 1px solid #eee;
+            }
+        </style>
+
     </head>
     <body id="announcement">
         <div id="navWrapper">

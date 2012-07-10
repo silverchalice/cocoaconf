@@ -13,10 +13,19 @@
             $(document).ready(function() {
 
                 $('.session').corner("5px");
+                $('.speakerPic').corner("5px");
 
             });
 
         </script>
+
+        <style type="text/css">
+            .speakerPic {
+                width: 100px;
+                float: right;
+                margin: 10px;
+            }
+        </style>
 
 
     </head>
@@ -34,8 +43,10 @@
                          <div class="session" style="height:auto; background: #eee; width:680px; ">
 
                              <div style="height:auto;padding:10px 25px;">
+                                 <g:link controller="conference" action="speakerDetails" id="${session?.presentation?.speaker?.id}" params="${[confId:conference?.id]}"><img src="${request.contextPath}/${session?.presentation?.speaker?.imagePath}" class="speakerPic" /></g:link>
                                  <h3>${session?.presentation?.title}</h3>
                                  <p><g:link controller="conference" action="speakerDetails" id="${session?.presentation?.speaker?.id}" params="${[confId:conference?.id]}">${session?.presentation?.speaker}</g:link></p>
+
                                  <p>${session?.presentation?.pAbstract}</p><br/>
                              </div>
                          </div><br />

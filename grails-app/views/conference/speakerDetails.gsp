@@ -12,6 +12,7 @@
             $(document).ready(function() {
 
                 $('.presentation').corner("5px");
+                $('.speakerPic').corner("5px");
 
             });
 
@@ -29,30 +30,56 @@
 
     <style type="text/css">
         .presentation {
-            background: #eee; padding: 15px; list-style: none; margin-bottom:20px;
+            background: #eee;
+            padding: 15px;
+            margin: 5px 5px 20px;
+            list-style: none;
+            width:300px;
+            height: 200px;
+            float: left;
+        }
+
+        .speakerPic {
+            float:left;
+            max-height: 140px;
+            max-width: 140px;
+            margin: 0 10px 10px 0
         }
     </style>
 
     </head>
     <body>
-        <div id="confSidebar">
-            <g:render template="confNav" model="['conference': conference, 'current': 'none']" />
-        </div>
+    <div id="confSidebar">
+        <g:render template="confNav" model="['conference': conference, 'current': 'speakers']" />
+    </div>
 
-        <div>
-            <img src="${request.contextPath}/${speaker?.imagePath}" style="float:left; max-height: 140px; max-width: 140px; margin: 0 10px 10px 0" />
+
+    <div class="body">
+        <div class="margin:5px;">
+            <img src="${request.contextPath}/${speaker?.imagePath}" class="speakerPic" />
             <h1>${speaker}</h1>
             <p>${speaker.bio}</p>
         </div>
-        <ul style="display: block; width:720px; border: none; padding: 1px 40px 0 20px">
-           <h2>Presentations by ${speaker}:</h2>
+        <div style="clear: both">&nbsp;</div>
+
+
+           <h2>${conference.description} Presentations by ${speaker}:</h2>
             <br/>
+
          <g:each in="${speakerPresentations?.sort{it.id}}" var="presentation">
-            <li class="presentation"><h3 style="color:#2ab0e2; padding: 0; margin:0"><g:link controller="conference" action="sessionDetails" id="${presentation.id}" params="${[confId:conference?.id]}">${presentation.title}</g:link></h3>
-            <p>${presentation.pAbstract}</p>
-            <span style="font-size: 14px; float:right;"><g:link controller="conference" action="sessionDetails" id="${presentation.id}" params="${[confId:conference?.id]}">View Details</g:link></span>
-            <span style="clear:both">&nbsp;</span> </li>
+             <g:if test="${presentation.title != 'TBA'}">
+                 <div class="presentation">
+                     <h3 style="color:#2ab0e2; padding: 0; margin:0"><g:link controller="conference" action="sessionDetails" id="${presentation.id}" params="${[confId:conference?.id]}">${presentation.title}</g:link></h3>
+                     <p><cc:truncate value="${presentation.pAbstract}" size="300"/> </p>
+                    <span style="font-size: 14px; float:right; vertical-align: bottom"><g:link controller="conference" action="sessionDetails" id="${presentation.id}" params="${[confId:conference?.id]}">View Details</g:link></span>
+
+                 </div>
+             </g:if>
+
+
          </g:each>
-        </ul>
-    </body>
+
+    </div>
+    <div style="clear: both"></div>
+</body>
 </html>

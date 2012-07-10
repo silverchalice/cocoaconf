@@ -1,4 +1,4 @@
-<div style="float:left; width: 480px;">
+<div class="confHome">
 <h1>${conference?.description}</h1>
 <h3>${conference?.dates}</h3>
 ${conference?.blurb}

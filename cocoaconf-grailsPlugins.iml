@@ -4,10 +4,10 @@
     <facet type="web" name="GrailsWeb">
       <configuration>
         <webroots>
+          <root url="file://$USER_HOME$/.grails/2.0.4/projects/cocoaconf/plugins/jquery-ui-1.8.15/web-app" relative="/" />
           <root url="file://$USER_HOME$/.grails/2.0.4/projects/cocoaconf/plugins/ckeditor-3.6.0.0/web-app" relative="/" />
           <root url="file://$USER_HOME$/.grails/2.0.4/projects/cocoaconf/plugins/ckeditor-3.6.0.0/grails-app/views" relative="/" />
           <root url="file://$USER_HOME$/.grails/2.0.4/projects/cocoaconf/plugins/feeds-1.5/web-app" relative="/" />
-          <root url="file://$USER_HOME$/.grails/2.0.4/projects/cocoaconf/plugins/jquery-ui-1.8.15/web-app" relative="/" />
           <root url="file://$USER_HOME$/.grails/2.0.4/projects/cocoaconf/plugins/jquery-1.7.2/web-app" relative="/" />
         </webroots>
         <sourceRoots />
