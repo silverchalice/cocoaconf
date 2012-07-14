@@ -61,7 +61,7 @@
                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 </g:if>
                 <g:if test="${speaker.blog}">
-                    <a href="${speaker.blog}" style="color: black; text-decoration: none"><span style="font-size:14px; font-weight: bold; padding-left:20px; line-height: 30px; vertical-align: top">Read ${speaker.firstName}'s blog:</span> <img src="${resource(dir:'images', file: 'feed-icon-28x28.png')}" alt="${speaker}'s blog"></a>
+                    <a href="${speaker.blog}" style="color: black; text-decoration: none"><span style="font-size:14px; font-weight: bold; padding-left:20px; line-height: 30px; vertical-align: top">Read ${speaker.firstName.trim()}'s blog:</span> <img src="${resource(dir:'images', file: 'feed-icon-28x28.png')}" alt="${speaker}'s blog"></a>
                 </g:if>
             </p>
 

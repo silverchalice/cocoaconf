@@ -61,7 +61,7 @@
             </div>
 
             <div id="announcementHeader">
-               <span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/columbus-2012/home">Columbus Registration ends August 4 – Register now!</a></span>
+               <span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/columbus-2012/home">Columbus Registration ends August 3rd – Register now!</a></span>
             </div>
             <div id="content">
                 <g:layoutBody />
