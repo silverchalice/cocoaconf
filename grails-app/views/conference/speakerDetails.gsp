@@ -31,11 +31,10 @@
     <style type="text/css">
         .presentation {
             background: #eee;
-            padding: 15px;
+            padding:20px;
             margin: 5px 5px 20px;
             list-style: none;
-            width:300px;
-            height: 200px;
+            width:550px;
             float: left;
         }
 
@@ -56,21 +55,31 @@
 
     <div class="body">
         <div class="margin:5px;">
-            <img src="${request.contextPath}/${speaker?.imagePath}" class="speakerPic" />
+            <img src="${request.contextPath}/${speaker?.imagePath}" class="speakerPic"  alt="${speaker}"/>
             <h1>${speaker}</h1>
             <p>${speaker.bio}</p>
+            <p>
+                <g:if test="${speaker.twitter}">
+                    <a href="https://twitter.com/${speaker.twitter}" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @ZacharyAKlein</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </g:if>
+                <g:if test="${speaker.blog}">
+                    <a href="${speaker.blog}" style="color: black; text-decoration: none"><span style="font-size:14px; font-weight: bold; padding-left:20px; line-height: 30px; vertical-align: top">Read ${speaker.firstName}'s blog:</span> <img src="${resource(dir:'images', file: 'feed-icon-28x28.png')}" alt="${speaker}'s blog"></a>
+                </g:if>
+            </p>
+
         </div>
         <div style="clear: both">&nbsp;</div>
 
 
-           <h2>${conference.description} Presentations by ${speaker}:</h2>
-            <br/>
+        <h2>${conference.description} Presentations:</h2>
+        <br/>
 
-         <g:each in="${speakerPresentations?.sort{it.id}}" var="presentation">
+        <g:each in="${speakerPresentations?.sort{it.id}}" var="presentation">
              <g:if test="${presentation.title != 'TBA'}">
                  <div class="presentation">
                      <h3 style="color:#2ab0e2; padding: 0; margin:0"><g:link controller="conference" action="sessionDetails" id="${presentation.id}" params="${[confId:conference?.id]}">${presentation.title}</g:link></h3>
-                     <p><cc:truncate value="${presentation.pAbstract}" size="300"/> </p>
+                     <p>${presentation.pAbstract}</p>
                     <span style="font-size: 14px; float:right; vertical-align: bottom"><g:link controller="conference" action="sessionDetails" id="${presentation.id}" params="${[confId:conference?.id]}">View Details</g:link></span>
 
                  </div>
