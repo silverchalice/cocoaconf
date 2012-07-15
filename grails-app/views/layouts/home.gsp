@@ -40,11 +40,20 @@
 
               $(".conferenceCell").corner("5px");
               $(".conferenceCellName").corner("5px bottom");
+              $(".featured img").corner("8px");
 
           })
 
 
         </script>
+
+        <style type="text/css">
+            .featured img {
+                width: 120px;
+                border: 1px solid #eee;
+            }
+        </style>
+
     </head>
     <body id="announcement">
         <div id="navWrapper">
@@ -70,7 +79,7 @@
 		    </a>
             </div>
             <div id="announcementHeader">
-                <span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/columbus-2012/home">Returning to Columbus, Ohio on August 9 - 11, 2012!</a></span>
+               <span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/columbus-2012/home">Columbus Registration ends August 3rd – Register now!</a></span>
             </div>
 
 

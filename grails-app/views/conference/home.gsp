@@ -10,6 +10,7 @@
 
         <script src="${resource(dir:'js', file:'jquery-ui-1.8.11.custom.min.js')}" type="text/javascript"></script>
         <script src="${resource(dir:'js', file:'jquery.validate.min.js')}" type="text/javascript"></script>
+        <script type="text/javascript"  src="${resource(dir:'js', file:'jquery.corner.js')}"></script>
         <script src="${resource(dir:'js', file:'script.js')}" type="text/javascript"></script>
 
         <script type="text/javascript">
@@ -25,10 +26,6 @@
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
 
-        </script>
-
-
-        <script type="text/javascript">
            $(document).ready(function() {
               $("#dialog").dialog({ autoOpen: false, width:300, modal: true, title: 'Enter your email', hide: "fade", resizable:false, show: "fade" });
 
@@ -54,10 +51,23 @@
 
               $("#interestForm").validate();
 
+               $('.confHome img').corner("5px");
+               $('#featuredSpeakers img').corner("10px");
+
            });
 
 
         </script>
+
+        <style type="text/css">
+            .confHome {
+                float:left; width: 480px;
+            }
+
+            #featuredSpeakers img {
+                border: 1px solid #eee
+            }
+        </style>
 
     </head>
 
