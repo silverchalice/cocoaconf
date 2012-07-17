@@ -57,11 +57,10 @@
             <p>${speaker.bio}</p>
             <p>
                 <g:if test="${speaker.twitter}">
-                    <a href="https://twitter.com/${speaker.twitter}" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @${speaker.twitter}</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    <a target="_blank" href="http://twitter.com/${speaker.twitter}" style="color: black; text-decoration: none"><span style="font-size:14px; font-weight: bold; padding-left:20px; line-height: 30px; vertical-align: top">Follow ${speaker.firstName.trim()}:</span> <img src="${resource(dir:'images', file: 'twitter.png')}" alt="${speaker.twitter}"></a>
                 </g:if>
                 <g:if test="${speaker.blog}">
-                    <a href="${speaker.blog}" style="color: black; text-decoration: none"><span style="font-size:14px; font-weight: bold; padding-left:20px; line-height: 30px; vertical-align: top">Read ${speaker.firstName.trim()}'s blog:</span> <img src="${resource(dir:'images', file: 'feed-icon-28x28.png')}" alt="${speaker}'s blog"></a>
+                    <a target="_blank" href="${speaker.blog}" style="color: black; text-decoration: none"><span style="font-size:14px; font-weight: bold; padding-left:20px; line-height: 30px; vertical-align: top">Read ${speaker.firstName.trim()}'s blog:</span> <img src="${resource(dir:'images', file: 'feed-icon-28x28.png')}" alt="${speaker}'s blog"></a>
                 </g:if>
             </p>
 
