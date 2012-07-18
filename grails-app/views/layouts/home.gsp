@@ -92,11 +92,11 @@
                     <div class="conferenceCellName">Columbus, Ohio - August 9-11</div>
                 </div>
                 </a>
-                <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'raleigh.png')}) no-repeat bottom;">
-                    <div class="conferenceCellName">Raleigh, NC - To Be Announced</div>
-                </div>
                 <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'portland.png')}) no-repeat bottom;">
                     <div class="conferenceCellName">Portland, OR - To Be Announced</div>
+                </div>
+                <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'raleigh.png')}) no-repeat bottom;">
+                    <div class="conferenceCellName">Raleigh, NC - To Be Announced</div>
                 </div>
                 <br/>
 
