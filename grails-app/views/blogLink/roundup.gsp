@@ -31,7 +31,7 @@
         <style type="text/css">
             
 			.aboutContent {
-				width:450px;
+				width:620px;
 				float:left; 
 				padding-left:0;
 			}
