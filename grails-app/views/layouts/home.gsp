@@ -86,7 +86,14 @@
             <div id="sidebar" style="margin:10px;">
 
                 <h1 style="margin-left: 10px; color: #1da0d1">Upcoming Events</h1>
-
+                <a href="${request.contextPath}/blog">
+                <div style="text-align:center">
+                    <h3>Help us celebrate our 27th Wedding Anniversary!<h3>
+	                <h3>Today only, save 27% on CocoaConf Columbus.</h3>
+	                <h3>Read our blog for details.</h3>
+                </div>
+                </a>
+                
                 <a href="${request.contextPath}/columbus-2012/home">
                 <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'columbus.png')}) no-repeat bottom;">
                     <div class="conferenceCellName">Columbus, Ohio - August 9-11</div>
