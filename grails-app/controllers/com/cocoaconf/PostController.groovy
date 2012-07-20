@@ -105,17 +105,10 @@ class PostController {
     }
 
     def feed = {
-	    println "feed called at ${new Date()}"
-        render (feedType: "atom", feedVersion:"1.0") {
-            title = "The CocoaConf Blog"
-            link = "http://cocoaconf.com/feed"
-            Post.list(max:10).each{ post ->
-                entry(post.title){
-                    link = "http://cocoaconf.com/blog/${post.slug}"
-                    post.body 
-                }
-            }
-        }
+        def list = Post.list(max:10)
+        def lastUpdated = list[0].lastUpdated
+        render(view:"feed", model: [ postInstanceList:list, lastUpdated:lastUpdated ])
+        return
     }
 
 }
