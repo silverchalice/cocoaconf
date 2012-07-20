@@ -93,6 +93,14 @@
                             </tr>
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                  <label for="feed"><g:message code="speaker.feed.label" default="Feed URL" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: speakerInstance, field: 'feed', 'errors')}">
+                                    <g:textField name="feed" value="${speakerInstance?.feed}" />
+                                </td>
+                            </tr>
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                   <label for="current"><g:message code="speaker.current.label" default="Current" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: speakerInstance, field: 'current', 'errors')}">

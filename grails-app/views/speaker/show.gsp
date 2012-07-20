@@ -56,6 +56,13 @@
                             <td valign="top" class="value">${fieldValue(bean: speakerInstance, field: "bio")}</td>
                             
                         </tr>
+
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="speaker.feed.label" default="Feed URL" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: speakerInstance, field: "feed")}</td>
+                            
+                        </tr>
                     
                         <tr class="prop">
                             <td valign="top" class="name"><g:message code="speaker.imagePath.label" default="Image Path" /></td>

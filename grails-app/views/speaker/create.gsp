@@ -63,6 +63,14 @@
                                     <g:textArea name="bio" cols="40" rows="5" value="${speakerInstance?.bio}" />
                                 </td>
                             </tr>
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="feed"><g:message code="speaker.feed.label" default="Feed URL" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: speakerInstance, field: 'feed', 'errors')}">
+                                    <g:textField name="feed" value="${speakerInstance?.feed}" />
+                                </td>
+                            </tr>
 
                         <tr class="prop">
                             <td valign="top" class="name">
