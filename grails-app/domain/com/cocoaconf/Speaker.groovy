@@ -9,6 +9,7 @@ class Speaker {
 	String bio
 	String imagePath
 	String blog
+    String feed
 	String twitter
 
     //TODO: remove this
@@ -23,6 +24,7 @@ class Speaker {
 	    bio nullable:true, maxSize: 2000
 	    imagePath nullable:true
 	    blog nullable:true
+        feed nullable:true
 	    twitter nullable:true
     }
 
