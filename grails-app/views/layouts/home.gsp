@@ -86,10 +86,13 @@
             <div id="sidebar" style="margin:10px;">
 
                 <h1 style="margin-left: 10px; color: #1da0d1">Upcoming Events</h1>
+
+
                 <a href="${request.contextPath}/blog">
-                <div style="text-align:center">
+
+                <div class="conferenceCell" style="text-align:center; background: black url(${resource(dir: 'images', file:'kleins.png')}) no-repeat bottom; color: white; text-shadow:0.1em 0.1em 0.5em #333; height: 150px; padding: 10px">
                     <h3>Help us celebrate our 27th Wedding Anniversary!<h3>
-	                <h3>Today only, save 27% on CocoaConf Columbus.</h3>
+	                <h3 style="color:#ff9627">Today only, save 27% on CocoaConf Columbus.</h3>
 	                <h3>Read our blog for details.</h3>
                 </div>
                 </a>
