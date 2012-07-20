@@ -31,7 +31,7 @@
         <style type="text/css">
             
 			.aboutContent {
-				width:400px;
+				width:620px;
 				float:left; 
 				padding-left:0;
 			}
@@ -162,6 +162,21 @@
                    <li style="border-bottom: 1px dotted gray; margin-bottom:15px; font-weight: bold">And much more!</li>
                </ul>
             <br/>
+
+            <object width="450" height="338"> <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fcocoaconf%2Fsets%2F72157630420867714%2Fshow%2F&page_show_back_url=%2Fphotos%2Fcocoaconf%2Fsets%2F72157630420867714%2F&set_id=72157630420867714&jump_to="></param> <param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf?v=109615"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/slideshow/show.swf?v=109615" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fcocoaconf%2Fsets%2F72157630420867714%2Fshow%2F&page_show_back_url=%2Fphotos%2Fcocoaconf%2Fsets%2F72157630420867714%2F&set_id=72157630420867714&jump_to=" width="450" height="338"></embed></object>
+            <h1 style="color:#1da0d1;">CocoaConf DC 2012 Wrap Up!</h1>
+
+            <g:each in="${dcBlogLinks}" var="link">
+                <div class="blogLink">
+                    <h4>${link.title}</h4>
+                    <p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
+                </div>
+            </g:each>
+
+
+
+
+
             <h1 style="color:#1da0d1;">Chicago 2012 Wrap Up!</h1>
             <div id="gallery">
 
@@ -238,7 +253,7 @@
                     <p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
                 </div>
             </g:each>
-            <br/><br/>
+            <!-- <br/><br/>
             <h1 style="color:#1da0d1;">Raleigh 2011 Wrap Up!</h1>
             <img src="${resource(dir:'images/slideshow/slides', file:'raleigh1.JPG')}" class="conferenceHeadlineImage" />
 
@@ -313,7 +328,7 @@
                 <p><strong>Christopher Judd</strong> - Leader of <a href="http://groups.google.com/group/cidug?pli=1">Columbus iPhone Developer User Group</a> and author of <a href="http://www.beginninggroovyandgrails.com/site/content/index">Beginning Groovy and Grails</a>
                 <a href="http://www.juddsolutions.com">http://www.juddsolutions.com</a></p>
 
-            </div>
+            </div> -->
 
          </div>
 
