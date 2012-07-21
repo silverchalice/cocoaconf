@@ -8,11 +8,20 @@ class HomeController {
 
     def springSecurityService
     def config = ConfigurationHolder.config
+    def feedService
 
     def index = {
 	    redirect action: 'announcement'
 	}
 
+    def testFeed = {
+		def feedList = feedService.latestFromSpeaker(16, 5)
+		feedList.each{
+			println "**********************************************************"
+			println it}
+		render "ok"
+	}
+	
     def announcement = {}
 
     def register = {}
