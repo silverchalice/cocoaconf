@@ -10,7 +10,7 @@
         <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
 
         <script src="${resource(dir:'js', file:'jquery-1.6.2.min.js')}" type="text/javascript"></script>
-
+        <script src="http://www.flickrshow.co.uk/static/scripts/flickrshow-7.2.min.js"></script>
         <script src="${resource(dir:'js', file:'jquery-ui-1.8.11.custom.min.js')}" type="text/javascript"></script>
         <script src="${resource(dir:'js', file:'jquery.validate.min.js')}" type="text/javascript"></script>
         <script src="${resource(dir:'js', file:'script.js')}" type="text/javascript"></script>
@@ -23,6 +23,13 @@
 
                 $('.conferenceHeadlineImage').corner('5px');
                 $('#gallery').corner('5px');
+
+
+                var robin = new flickrshow('robin', {
+                    autoplay:true,
+                    interval:5000,
+                    'set':'72157630420867714'
+                });
 
             })
 
@@ -148,6 +155,10 @@
                 border:none;
             }
 
+            .flickrGallery {
+                width: 450px; height: 338px
+            }
+
         </style>
     </head>
     <body>
@@ -163,7 +174,9 @@
                </ul>
             <br/>
 
-            <object width="450" height="338"> <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fcocoaconf%2Fsets%2F72157630420867714%2Fshow%2F&page_show_back_url=%2Fphotos%2Fcocoaconf%2Fsets%2F72157630420867714%2F&set_id=72157630420867714&jump_to="></param> <param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf?v=109615"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/slideshow/show.swf?v=109615" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fcocoaconf%2Fsets%2F72157630420867714%2Fshow%2F&page_show_back_url=%2Fphotos%2Fcocoaconf%2Fsets%2F72157630420867714%2F&set_id=72157630420867714&jump_to=" width="450" height="338"></embed></object>
+            <div class="flickrGallery" id="robin">
+                <p>Please enable Javascript to view this slideshow</p>
+            </div>
             <h1 style="color:#1da0d1;">CocoaConf DC 2012 Wrap Up!</h1>
 
             <g:each in="${dcBlogLinks}" var="link">
