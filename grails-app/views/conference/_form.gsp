@@ -137,18 +137,3 @@
 	<g:select from="${['pending', 'active', 'completed']}" name="status" value="${conference?.status}" />
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: conference, field: 'active', 'error')} ">
-	<label for="active">
-		<g:message code="conference.active.label" default="Active" />
-		
-	</label>
-    <g:checkBox name="active" value="${conference?.active}" />
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: conference, field: 'completed', 'error')} ">
-	<label for="completed">
-		<g:message code="conference.active.label" default="Completed" />
-
-	</label>
-    <g:checkBox name="completed" value="${conference?.completed}" />
-</div>

@@ -13,6 +13,8 @@
         <script type="text/javascript"  src="${resource(dir:'js', file:'jquery.corner.js')}"></script>
         <script src="${resource(dir:'js', file:'script.js')}" type="text/javascript"></script>
 
+
+
         <script type="text/javascript">
 
             var _gaq = _gaq || [];
@@ -52,6 +54,7 @@
               $("#interestForm").validate();
 
                $('.confHome img').corner("5px");
+               $('.interest').corner("10px");
                $('#featuredSpeakers img').corner("10px");
 
            });
