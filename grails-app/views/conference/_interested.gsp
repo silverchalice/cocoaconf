@@ -1,4 +1,4 @@
-<div style="float:left; width: 480px;">
+<div class="confHome" style="float:left; width: 480px;">
     <h1>${conference.description} </h1>
     <div style="background-color: #eeeeee; padding:15px" class="interest">
         <h3>${conference?.blurb} </h3>
