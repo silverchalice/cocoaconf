@@ -79,8 +79,15 @@
 
 
         <div class="body">
-
-            <g:render template="${conference.completed ? 'roundup' : 'confHome'}" model="['conference': conference]"/>
+            <g:if test="${conference?.status == 'active'}">
+                <g:render template="confHome" model="['conference': conference]"/>
+            </g:if>
+            <g:elseif test="${conference?.status == 'completed'}">
+                <g:render template="roundup" model="['conference': conference]"/>
+            </g:elseif>
+            <g:elseif test="${conference?.status == 'pending'}">
+                <g:render template="interested" model="['conference': conference]"/>
+            </g:elseif>
 
             <div id="featuredSpeakers">
                 <h2 style="color:#1da0d1;">Featured Speakers</h2>

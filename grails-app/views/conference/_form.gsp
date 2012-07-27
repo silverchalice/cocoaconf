@@ -130,6 +130,13 @@
 	<g:textField name="tinyName" value="${conference?.tinyName}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'status', 'error')} ">
+	<label for="status">
+		<g:message code="conference.status.label" default="Status" />
+	</label>
+	<g:select from="${['pending', 'active', 'completed']}" name="status" value="${conference?.status}" />
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'active', 'error')} ">
 	<label for="active">
 		<g:message code="conference.active.label" default="Active" />

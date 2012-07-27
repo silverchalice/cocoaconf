@@ -20,10 +20,12 @@ class Conference {
     String displayName
     String sponsorListBlurb
     List days
-    Boolean active
-    Boolean completed = false
+	String status = PENDING
 
-    static hasMany = [speakers : Speaker, sessions : Session, days: ConferenceDay, partners: Sponsorship, slides: PresentationFile]
+    static hasMany = [speakers : Speaker, sessions : Session, days: ConferenceDay, partners: Sponsorship, slides: PresentationFile, leads: Interest]
+    static PENDING = 'pending'
+    static ACTIVE = 'active'
+    static COMPLETED = 'completed'
 
     static constraints = {
 		startDate nullable:true
@@ -39,8 +41,8 @@ class Conference {
 		partnerBlurb nullable:true, maxSize:100000
 		featuredSpeakers nullable:true, maxSize:100000
 		sponsorListBlurb nullable:true, maxSize:100000
-		completed nullable:true
 		slides nullable:true
+		status nullable:true, inList:[PENDING, ACTIVE, COMPLETED]
     }
 
     def getSpeakers(){

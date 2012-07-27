@@ -19,4 +19,14 @@ class FeedService {
         }
     }
 
+
+	def refreshSpeakerFeeds(){
+		def speakers = Speaker.findAllByFeedIsNotNull()
+		def feedEntries = []
+		for (speaker in speakers){
+		    feedEntries = feedEntries.add latestFromSpeaker(speaker.id)	
+		}
+		return feedEntries.size()
+	}
+    
 }
