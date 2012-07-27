@@ -30,6 +30,19 @@ class InterestController {
         redirect(action: "show", id: interestInstance.id)
     }
 
+    def saveInterest = {
+        println params
+
+        def interestInstance = new Interest(params)
+        if (!interestInstance.save(flush: true)) {
+            render "<span style='font-size:16px; color:#FF9627; font-weight:bold;'>Sorry, something went wrong. We're on it...</span>"
+            return
+        } else {
+            render "<span style='font-size:16px; color:#FF9627; font-weight:bold;'>Thanks! We'll get back to you!</span>"
+        }
+
+    }
+
     def show() {
         def interestInstance = Interest.get(params.id)
         if (!interestInstance) {
