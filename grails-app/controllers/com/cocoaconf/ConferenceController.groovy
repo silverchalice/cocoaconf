@@ -15,17 +15,17 @@ class ConferenceController {
     }
 
     def home() {
-        println "...and so now we are in the ConferenceController home action..."
-        println "...and the params are " + params
+       // println "...and so now we are in the ConferenceController home action..."
+       // println "...and the params are " + params
         def conference = Conference.findByTinyName(params.tinyName)
         def blogLinks = BlogLink.findAllByEvent(conference)
 
         if(conference){
-            println "so there was a conference. we are supposed to render the view now..."
+        //    println "so there was a conference. we are supposed to render the view now..."
             render view: "home", model: ["conference": conference] 
         } else {
-            println "...and there was no conference. :("
-            println "we are going to redirect"
+         //   println "...and there was no conference. :("
+          //  println "we are going to redirect"
             redirect controller: "home"
         }
     }
@@ -133,7 +133,7 @@ class ConferenceController {
         def schedule 
         if (conf){
             schedule = scheduleService.loadScheduleMap(conf)
-            println "!! yayz!!!!!1 and the schedule was: " + schedule
+           // println "!! yayz!!!!!1 and the schedule was: " + schedule
             [schedule:schedule, conference:conf]
         } else {
             redirect controller: "home"
@@ -142,10 +142,10 @@ class ConferenceController {
     }
 
     def speakers = {
-		params.each{key, val -> println "$key == $val"}
+//		params.each{key, val -> println "$key == $val"}
         def conf = Conference.findByTinyName(params.tinyName)
         if(conf){
-            println "and its speakers are " + conf.speakers
+//            println "and its speakers are " + conf.speakers
             [conference:conf, speakerInstanceList: conf.speakers, speakerInstanceTotal: Speaker.count()]
         } else {
             redirect controller: "home"
@@ -199,11 +199,11 @@ class ConferenceController {
     }
 
     def speakerDetails = {
-	    params.each{key, val -> println "$key == $val"}
+//	    params.each{key, val -> println "$key == $val"}
 	    def conf = Conference.get(params.confId)
 	    def speaker = Speaker.get(params.id)
 	    def speakerPresentations = conf.sessions.findAll{it?.presentation?.speaker?.id == speaker.id}.collect{it.presentation}
-	    speakerPresentations.each{println it}
+//	    speakerPresentations.each{println it}
 	    if (conf && speaker){
 		    return[conference:conf, speaker:speaker, speakerPresentations:speakerPresentations]
 	    }	 
@@ -224,7 +224,7 @@ class ConferenceController {
     }
 
     def slides = {
-	    println "in slides action"
+//	    println "in slides action"
 	    params.each{key, val -> println "$key == $val"}
         def conf = Conference.findByTinyName(params.tinyName)
         if(conf){
