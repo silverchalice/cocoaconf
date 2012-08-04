@@ -43,6 +43,7 @@ class Conference {
 		sponsorListBlurb nullable:true, maxSize:100000
 		slides nullable:true
 		status nullable:true, inList:[PENDING, ACTIVE, COMPLETED]
+		leads nullable:true
     }
 
     def getSpeakers(){
