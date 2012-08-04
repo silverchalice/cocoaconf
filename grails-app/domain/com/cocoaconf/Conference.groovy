@@ -22,7 +22,7 @@ class Conference {
     List days
 	String status = PENDING
 
-    static hasMany = [speakers : Speaker, sessions : Session, days: ConferenceDay, partners: Sponsorship, slides: PresentationFile, leads: Interest]
+    static hasMany = [speakers : Speaker, sessions : Session, days: ConferenceDay, partners: Sponsorship, slides: PresentationFile, leads: Interest, prizes: Prize]
     static PENDING = 'pending'
     static ACTIVE = 'active'
     static COMPLETED = 'completed'
