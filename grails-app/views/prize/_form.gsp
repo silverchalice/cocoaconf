@@ -11,11 +11,8 @@
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: prizeInstance, field: 'imageName', 'error')} ">
-	<label for="imageName">
-		<g:message code="prize.imageName.label" default="Image Name" />
-		
-	</label>
-	<g:textField name="imageName" value="${prizeInstance?.imageName}"/>
+    <label for="image">File:</label>
+    <input type="file" id="image" name="image"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: prizeInstance, field: 'description', 'error')} ">
@@ -32,5 +29,13 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field type="number" name="priority" step="any" required="" value="${prizeInstance.priority}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: prizeInstance, field: 'conferences', 'error')} ">
+	<label for="conferences">
+		<g:message code="prize.conferences.label" default="Conferences" />
+		
+	</label>
+	
 </div>
 
