@@ -2,11 +2,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="layout" content="conference" />
-        <meta name="tab" content="events" />
-        <meta name="nav" content="speakers" />
+        <meta name="layout" content="home" />
         <g:set var="entityName" value="${message(code: 'prize.label', default: 'Prize')}" />
-        <title>CocoaConf | Prizes</title>
+        <title>CocoaConf | Conference Prizes</title>
 
         <script type="text/javascript" src="${resource(dir:'js', file:'jquery.corner.js')}"></script>
         <script type="text/javascript">
@@ -69,28 +67,24 @@
 
     </head>
     <body>
-        <div id="confSidebar">
-            <g:render template="confNav" model="['conference': conference, 'current': 'prizes']" />
-        </div>
-
 
         <div class="body">
-            <h1>${conference?.description}: Prizes</h1>
-            <p>CocoaConf prizes include well known trainers, authors, and professional iOS and OS X developers.</p>
+            <h1>Prizes</h1>
+
 
             <div class="list">
-                <g:each in="${prizeInstanceList}" status="i" var="prize">
-                    <div class="${(i % 2) == 0 ? 'odd' : 'even'}" style="min-height:160px; margin-bottom:10px;">
+                <g:each in="${prizes}" status="i" var="prize">
+                     <div class="${(i % 2) == 0 ? 'odd' : 'even'}" style="min-height:160px; margin-bottom:10px;">
 
                      <div class="bio" style="width:98%">
-                         <h3>${prize} </h3>
+                         <h3>${prize.name}</h3>
                          <g:if test="${prize?.imageName}">
-                             <img class="speakerPic" style=" float:left; margin-right:10px; margin-bottom: 2px; max-width: 140px;" src="${request.contextPath}/${prize?.imageName}"/>
+                             <img class="speakerPic" style=" float:left; margin-right:10px; margin-bottom: 2px; max-width: 140px;" src="${request.contextPath}/${prize?.imageName}" alt="${prize.name}"/>
                         </g:if>
-                         <p>${prize.bio}</p><br/>
-                         <span style="font-size: 14px; float:right; "><g:link controller="prize" action="viewDetails" id="${prize?.id}">View Details</g:link></span>
-                    </div>
-                        <div style="clear:both">&nbsp;</div>
+                         <p>${prize.description}</p><br/>
+
+                     </div>
+                     <div style="clear:both">&nbsp;</div>
                     </div>
 
                 </g:each>

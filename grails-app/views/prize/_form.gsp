@@ -11,8 +11,8 @@
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: prizeInstance, field: 'imageName', 'error')} ">
-    <label for="image">File:</label>
-    <input type="file" id="image" name="image"/>
+    <label for="imageName">ImageName:</label>
+    <input type="text" id="imageName" name="imageName"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: prizeInstance, field: 'description', 'error')} ">
