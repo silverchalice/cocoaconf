@@ -24,7 +24,7 @@
     </head>
     <body id="announcement">
         <div id="announcementHeader">
-           <span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/columbus-2012/home">Columbus Registration ends August 3rd – Register now!</a></span>
+           <span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/portland-2012/home">Coming to Portland, Oregon October 25 - 27, 2012</a></span>
         </div>
 
         <div id="page">
