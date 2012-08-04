@@ -3,7 +3,7 @@
 <!doctype html>
 <html>
 	<head>
-		<meta name="layout" content="admin">
+		<meta name="layout" content="main">
 		<g:set var="entityName" value="${message(code: 'prize.label', default: 'Prize')}" />
 		<title><g:message code="default.list.label" args="[entityName]" /></title>
 	</head>
@@ -30,6 +30,8 @@
 					
 						<g:sortableColumn property="description" title="${message(code: 'prize.description.label', default: 'Description')}" />
 					
+						<g:sortableColumn property="active" title="${message(code: 'prize.active.label', default: 'Active')}" />
+					
 						<g:sortableColumn property="priority" title="${message(code: 'prize.priority.label', default: 'Priority')}" />
 					
 					</tr>
@@ -43,6 +45,8 @@
 						<td>${fieldValue(bean: prizeInstance, field: "imageName")}</td>
 					
 						<td>${fieldValue(bean: prizeInstance, field: "description")}</td>
+					
+						<td><g:formatBoolean boolean="${prizeInstance.active}" /></td>
 					
 						<td>${fieldValue(bean: prizeInstance, field: "priority")}</td>
 					
