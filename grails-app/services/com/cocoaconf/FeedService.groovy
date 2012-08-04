@@ -23,12 +23,12 @@ class FeedService {
             println feed.entries[0]
 
             feed.entries.each {
-                def e = new FeedEntry(title: it.title, link: it.link, body: it.contents[0].value, published: it.publishedDate, speakerId: speaker.id)
-                if(!FeedEntry.findByTitleAndSpeakerId(it.title, speaker.id) && e.save()){
+                def e = new FeedEntry(title: it.title, link: it.link, body: it.contents[0].value, published: it.publishedDate ?: it.updatedDate, speakerId: speaker.id)
+                if(!FeedEntry.findByTitleAndSpeakerId(it.title, speaker.id)){
                     entrification.add(e)
+                    e.save(failOnError:true)
                 } else {
                     println "AAHHHHHHHH!!!!!!!!!!!!!!!"
-                    e.errors.allErrors.each { println it }
                 }
             }
         }
