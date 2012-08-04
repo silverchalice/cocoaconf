@@ -8,7 +8,7 @@ import com.sun.syndication.io.XmlReader
 
 class FeedService {
 
-    def latestFromSpeaker(id, count) {
+    def latestFromSpeaker(id) {
 	println "begin latestFrom Speaker $id"
         def speaker = Speaker.get(id)
         if(speaker && speaker.feed){
@@ -23,10 +23,10 @@ class FeedService {
 
 	def refreshSpeakerFeeds(){
 		println "begin refreshSpeakers"
-		def speakers = Speaker.findAllByFeedIsNotNull()
+		def speakers = Speaker.findAllByFeedIsNotNull(sort:'id')
 		def feedEntries = []
 		for (speaker in speakers){
-		    feedEntries = feedEntries.add latestFromSpeaker(speaker.id)	
+		    feedEntries.add latestFromSpeaker(speaker.id)
 		}
 		return feedEntries.size()
 	}

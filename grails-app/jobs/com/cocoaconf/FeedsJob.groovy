@@ -8,8 +8,8 @@ class FeedsJob {
     }
 
     def execute() {
-	  // println "Calling feedService..."
-    //    def feedCount = feedService.refreshSpeakerFeeds()
-     //   log.info("$feedCount entries were loaded.")
+	  println "Calling feedService..."
+       def feedCount = feedService.refreshSpeakerFeeds()
+       println("$feedCount entries were loaded.")
     }
 }
