@@ -35,8 +35,7 @@
 <br/>
 <div id="confPartners">
     <g:each in="${conference.getSponsorPartners()}" var="partner">
-
-        <img src="${resource(dir:'images', file: partner.logoFile)}" alt="${partner.name}" />
+        <a href="${partner.url}"><img src="${resource(dir:'images', file: partner.logoFile)}" alt="${partner.name}" /></a>
     </g:each>
     <a href="${resource(dir:'images', file:'sponsorship.pdf')}">Sponsorships Available</a>
 </div>
