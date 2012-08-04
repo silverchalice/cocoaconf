@@ -75,6 +75,15 @@
          </g:each>
         </ul>
 
+        <ul class="presentations">
+         <h3>Posts by ${speaker}:</h3>
+         <g:each in="${feedEntries}" var="entry">
+            <li class="presentation"><a href="${entry.link}">${entry.title}</a><br/>
+            <p>${entry.body}</p></li>
+
+
+         </g:each>
+        </ul>
 
 
     </body>
