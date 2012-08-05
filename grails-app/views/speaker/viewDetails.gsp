@@ -75,15 +75,16 @@
          </g:each>
         </ul>
 
-        <ul class="presentations">
-         <h3>Recent blog posts by ${speaker}:</h3>
-         <g:each in="${feedEntries}" var="entry">
-            <li class="presentation"><a href="${entry.link}">${entry.title}</a><br/>
-            <p>${entry.body}</p></li>
-
-
-         </g:each>
-        </ul>
+        <g:if test="${feedEntries?.size() > 0}">
+            <ul class="presentations">
+             <h3>Recent blog posts by ${speaker}:</h3>
+             <g:each in="${feedEntries}" var="entry">
+                 <li class="presentation"><a href="${entry.link}">${entry.title}</a>
+                 <p><strong><g:formatDate format="EEEE, MMMM dd, yyyy" value="${entry.published}" /></strong></p>
+                 <p><cc:truncate value="${entry.body}" size="350" /></p></li>
+             </g:each>
+            </ul>
+        </g:if>
 
 
     </body>

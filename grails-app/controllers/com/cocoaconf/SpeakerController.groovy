@@ -63,7 +63,7 @@ class SpeakerController {
             redirect(action: "speakers")
         }
         else {
-            [speaker: speakerInstance, feedEntries: FeedEntry.findAllBySpeakerId(speakerInstance.id, [max:5, sort:'published', order:'desc'])]
+            [speaker: speakerInstance, feedEntries: FeedEntry.findAllBySpeakerId(speakerInstance.id, [max:3, sort:'published', order:'desc'])]
         }
     }
 
