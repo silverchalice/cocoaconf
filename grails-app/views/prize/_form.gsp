@@ -11,8 +11,11 @@
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: prizeInstance, field: 'imageName', 'error')} ">
-    <label for="image">File:</label>
-    <input type="file" id="image" name="image"/>
+	<label for="imageName">
+		<g:message code="prize.imageName.label" default="Image Name" />
+		
+	</label>
+	<g:textField name="imageName" value="${prizeInstance?.imageName}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: prizeInstance, field: 'description', 'error')} ">
@@ -21,6 +24,14 @@
 		
 	</label>
 	<g:textArea name="description" cols="40" rows="5" maxlength="5000" value="${prizeInstance?.description}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: prizeInstance, field: 'active', 'error')} ">
+	<label for="active">
+		<g:message code="prize.active.label" default="Active" />
+		
+	</label>
+	<g:checkBox name="active" value="${prizeInstance?.active}" />
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: prizeInstance, field: 'priority', 'error')} required">
@@ -38,4 +49,5 @@
 	</label>
 	
 </div>
+
 

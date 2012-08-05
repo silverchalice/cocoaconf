@@ -3,7 +3,7 @@
 <!doctype html>
 <html>
 	<head>
-		<meta name="layout" content="admin">
+		<meta name="layout" content="main">
 		<g:set var="entityName" value="${message(code: 'prize.label', default: 'Prize')}" />
 		<title><g:message code="default.show.label" args="[entityName]" /></title>
 	</head>
@@ -50,6 +50,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${prizeInstance?.active}">
+				<li class="fieldcontain">
+					<span id="active-label" class="property-label"><g:message code="prize.active.label" default="Active" /></span>
+					
+						<span class="property-value" aria-labelledby="active-label"><g:formatBoolean boolean="${prizeInstance?.active}" /></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${prizeInstance?.priority}">
 				<li class="fieldcontain">
 					<span id="priority-label" class="property-label"><g:message code="prize.priority.label" default="Priority" /></span>
@@ -58,6 +67,8 @@
 					
 				</li>
 				</g:if>
+			
+
 			
 			</ol>
 			<g:form>

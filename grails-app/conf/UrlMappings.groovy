@@ -31,10 +31,6 @@ class UrlMappings {
             controller = "conference"
             action = "speakers"
 		}
-		"/$tinyName/prizes"{
-            controller = "conference"
-            action = "prizes"
-		}
 		"/$tinyName/sessions"{
             controller = "conference"
             action = "sessions"
@@ -119,6 +115,10 @@ class UrlMappings {
         "/feed"{
             controller = "post"
             action = "feed"
+        }
+        "/prizes"{
+            controller = "prize"
+            action = "prizes"
         }
         "/chicago_slides"{
             controller = "home"

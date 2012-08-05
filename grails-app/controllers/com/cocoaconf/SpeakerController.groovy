@@ -33,7 +33,7 @@ class SpeakerController {
             def webRootDir = servletContext.getRealPath("/")
             def speakerDir = new File(webRootDir, "images/speaker/${speakerInstance.firstName.toLowerCase().replaceAll(" ", "-")}-${speakerInstance.lastName.toLowerCase().replaceAll(" ", "-")}")
             speakerDir.mkdirs()
-            image.transferTo( new File(speakerDir, image.originalFilename))
+            image.transferTo(new File(speakerDir, image.originalFilename))
             speakerInstance.imagePath = "images/speaker/" + speakerInstance.firstName.toLowerCase().replaceAll(" ", "-") + "-" + speakerInstance.lastName.toLowerCase().replaceAll(" ", "-") + "/" + image.originalFilename // don't look too closely
         }
         if (speakerInstance.save(flush: true)) {

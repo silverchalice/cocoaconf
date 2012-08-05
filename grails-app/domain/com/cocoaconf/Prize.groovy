@@ -8,8 +8,6 @@ class Prize {
     Boolean active
     Double priority = 99.0
 
-    static hasMany = [conferences : Conference]
-    static belongsTo = Conference
 
     static constraints = {
         name()

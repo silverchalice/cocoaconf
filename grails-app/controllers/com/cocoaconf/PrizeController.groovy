@@ -21,21 +21,6 @@ class PrizeController {
 
     def save() {
         def prizeInstance = new Prize(params)
-        def file = request.getFile('image')
-
-        //upload the prize image
-        if(!file.empty){
-            def webRootDir = servletContext.getRealPath("/")
-            def imagesDir = new File(webRootDir, "/images/prizes").mkdirs()
-            if(new File(imagesDir, file.originalFilename).exists()){
-                flash.message = "There is already a prize image with the name &#8220;${file.originalFilename}.&#8221; Please use another name."
-                render(view: "create", model: [prizeInstance: prizeInstance])
-                return
-            } else {
-                file.transferTo(new File(imagesDir, file.originalFilename))
-            }
-        }
-
         if (!prizeInstance.save(flush: true)) {
             render(view: "create", model: [prizeInstance: prizeInstance])
             return
@@ -114,5 +99,11 @@ class PrizeController {
 			flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'prize.label', default: 'Prize'), params.id])
             redirect(action: "show", id: params.id)
         }
+    }
+
+    def prizes = {
+        println "hey!"
+        render view: 'prizes', model: [prizes: Prize.findAllByActive(true)]
+
     }
 }
