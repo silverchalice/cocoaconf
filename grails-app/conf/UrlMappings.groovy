@@ -116,6 +116,10 @@ class UrlMappings {
             controller = "post"
             action = "feed"
         }
+        "/prizes"{
+            controller = "prize"
+            action = "prizes"
+        }
         "/chicago_slides"{
             controller = "home"
             action = "chicago_slides"

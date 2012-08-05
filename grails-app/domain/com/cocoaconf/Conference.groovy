@@ -22,7 +22,7 @@ class Conference {
     List days
 	String status = PENDING
 
-    static hasMany = [speakers : Speaker, sessions : Session, days: ConferenceDay, partners: Sponsorship, slides: PresentationFile, leads: Interest]
+    static hasMany = [speakers : Speaker, sessions : Session, days: ConferenceDay, partners: Sponsorship, slides: PresentationFile, leads: Interest, prizes: Prize]
     static PENDING = 'pending'
     static ACTIVE = 'active'
     static COMPLETED = 'completed'
@@ -43,6 +43,7 @@ class Conference {
 		sponsorListBlurb nullable:true, maxSize:100000
 		slides nullable:true
 		status nullable:true, inList:[PENDING, ACTIVE, COMPLETED]
+		leads nullable:true
     }
 
     def getSpeakers(){

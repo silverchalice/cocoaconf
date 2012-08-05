@@ -26,6 +26,14 @@
 	<g:textArea name="description" cols="40" rows="5" maxlength="5000" value="${prizeInstance?.description}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: prizeInstance, field: 'active', 'error')} ">
+	<label for="active">
+		<g:message code="prize.active.label" default="Active" />
+		
+	</label>
+	<g:checkBox name="active" value="${prizeInstance?.active}" />
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: prizeInstance, field: 'priority', 'error')} required">
 	<label for="priority">
 		<g:message code="prize.priority.label" default="Priority" />
@@ -33,4 +41,13 @@
 	</label>
 	<g:field type="number" name="priority" step="any" required="" value="${prizeInstance.priority}"/>
 </div>
+
+<div class="fieldcontain ${hasErrors(bean: prizeInstance, field: 'conferences', 'error')} ">
+	<label for="conferences">
+		<g:message code="prize.conferences.label" default="Conferences" />
+		
+	</label>
+	
+</div>
+
 

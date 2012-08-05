@@ -152,6 +152,17 @@ class ConferenceController {
         }
     }
 
+    def prizes = {
+		params.each{key, val -> println "$key == $val"}
+        def conf = Conference.findByTinyName(params.tinyName)
+        if(conf){
+            println "and its prizes are " + conf.prizes
+            [conference:conf, speakerInstanceList: conf.speakers, speakerInstanceTotal: Speaker.count()]
+        } else {
+            redirect controller: "home"
+        }
+    }
+
     def partners(){
 	    def conf = Conference.findByTinyName(params.tinyName)
 	    if(conf){

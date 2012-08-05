@@ -7,8 +7,8 @@ import org.codehaus.groovy.grails.commons.ConfigurationHolder
 class HomeController {
 
     def springSecurityService
-    def config = ConfigurationHolder.config
     def feedService
+    def config = ConfigurationHolder.config
 
     def index = {
 	    redirect action: 'announcement'
@@ -73,6 +73,11 @@ class HomeController {
         response.contentType = "application/zip"
 	    response.contentLength = download.size()
 	    response.outputStream.write(download.readBytes())
+    }
+
+    def testFeeds = {
+        def speaker = Speaker.findByLastName("Dudney")
+        feedService.latestFromSpeaker(speaker?.id)
     }
 
 }

@@ -100,4 +100,10 @@ class PrizeController {
             redirect(action: "show", id: params.id)
         }
     }
+
+    def prizes = {
+        println "hey!"
+        render view: 'prizes', model: [prizes: Prize.findAllByActive(true)]
+
+    }
 }
