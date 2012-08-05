@@ -10,8 +10,8 @@
         <script type="text/javascript">
             $(document).ready(function() {
 
-                $('.odd').corner("5px");
-                $('.even').corner("5px");
+                $('.prize').corner("10px");
+
 
             });
 
@@ -32,54 +32,39 @@
 
         <style type="text/css">
 
-            div.odd {
+            div.prize {
                 background:#eeeeee;
                 border:0;
-                padding: 15px;
+                padding: 5px 15px;
             }
 
-            div.odd h3 {
+            div.prize h3 {
                 color:#2d587a;
             }
 
-            div.odd img {
+            div.prize img {
                 float: left;
             }
 
-
-            div.even img {
-                float:right;
-            }
-
-            div.even h3 {
-                color:#2ab0e2;
-            }
-
-            div.even div.bio {
-                float:left;
-            }
-
-            div.odd div.bio {
-                float:right;
-            }
 
         </style>
 
     </head>
     <body>
 
-        <div class="body">
-            <h1>Prizes</h1>
 
 
             <div class="list">
-                <g:each in="${prizes}" status="i" var="prize">
-                     <div class="${(i % 2) == 0 ? 'odd' : 'even'}" style="min-height:160px; margin-bottom:10px;">
+                <h1>Prizes</h1>
+                <p>This is a prize page, and we put prizes on it. See? SEE? Finally... about time. This is a prize page, and we put prizes on it. See? SEE? Finally... about time. </p>
 
-                     <div class="bio" style="width:98%">
+                <g:each in="${prizes}" status="i" var="prize">
+                     <div class="prize" style="margin-bottom:20px;">
+
+                     <div style="width:98%">
                          <h3>${prize.name}</h3>
                          <g:if test="${prize?.imageName}">
-                             <img class="speakerPic" style=" float:left; margin-right:10px; margin-bottom: 2px; max-width: 140px;" src="${request.contextPath}/${prize?.imageName}" alt="${prize.name}"/>
+                             <img class="prizePic" style=" float:left; margin-right:10px; margin-bottom: 2px; max-width: 75px;" src="${request.contextPath}/images/prizes/${prize?.imageName}" alt="${prize.name}"/>
                         </g:if>
                          <p>${prize.description}</p><br/>
 
@@ -90,7 +75,5 @@
                 </g:each>
             </div>
 
-        </div>
-        <div style="clear: both"></div>
     </body>
 </html>

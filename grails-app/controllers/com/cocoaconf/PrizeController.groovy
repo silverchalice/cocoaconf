@@ -102,8 +102,8 @@ class PrizeController {
     }
 
     def prizes = {
-
-        [prizes: Prize.findAllByActive(true)]
+        println "hey!"
+        render view: 'prizes', model: [prizes: Prize.findAllByActive(true)]
 
     }
 }
