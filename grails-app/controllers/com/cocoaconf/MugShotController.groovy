@@ -11,7 +11,7 @@ class MugShotController {
     }
 
     def list() {
-        params.max = Math.min(params.max ? params.int('max') : 10, 100)
+        params.max = Math.min(params.max ? params.int('max') : 100, 100)
         [mugShotInstanceList: MugShot.list(params), mugShotInstanceTotal: MugShot.count()]
     }
 
