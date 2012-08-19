@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
   <head>
-      <title>${conference?.description}</title>
+      <title>CocoaConf | iOS/OS X Developer Conference | ${conference?.description} | ${conference?.dates}</title>
       <meta name="layout" content="conference" />
       <meta name="tab" content="events" />
       <meta name="nav" content="register" />

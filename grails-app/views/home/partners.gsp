@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
     <head>
-        <title>CocoaConf | iOS/OS X Developer Conference | Washington DC Area | June 29 & 30, 2012</title>
+        <title>CocoaConf | iOS/OS X Developer Conference</title>
         <meta name="layout" content="home" />
         <meta name="tab" content="partners" />
 
