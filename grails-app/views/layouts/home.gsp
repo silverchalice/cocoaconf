@@ -92,9 +92,11 @@
                         <div class="conferenceCellName">Portland, OR - October 25-27</div>
                     </div>
                 </a>
+                <a href="${request.contextPath}/raleigh-2012/home">
                 <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'raleigh.png')}) no-repeat bottom;">
-                    <div class="conferenceCellName">Raleigh, NC - To Be Announced</div>
+                    <div class="conferenceCellName">Raleigh, NC - November 29 - December 1</div>
                 </div>
+                </a>
                 <br/>
 
                 <h1 style="margin-left: 10px; color: #1da0d1">Recent Events</h1>
