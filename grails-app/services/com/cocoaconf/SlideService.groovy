@@ -3,7 +3,7 @@ package com.cocoaconf
 class SlideService {
 
     def loadSlides(conference) {
-		def slides = conference.slides
+		def slides = conference.slides.sort{it.speaker}
 		def slideMap = [:]
 		def speakerMap = slides.groupBy{it.speaker}
 		speakerMap.each{key, val -> 
