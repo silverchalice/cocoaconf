@@ -22,6 +22,11 @@ class UrlMappings {
             action = "home"
             id = "$tinyName"
 		}
+		"/$tinyName/home."{
+            controller = "conference"
+            action = "home"
+            id = "$tinyName"
+		}
 		"/$tinyName/schedule"{
             controller = "conference"
             action = "schedule"
