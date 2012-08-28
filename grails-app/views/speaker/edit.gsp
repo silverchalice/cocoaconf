@@ -66,6 +66,14 @@
                             </td>
                         </tr>
                         <tr class="prop">
+                            <td valign="top" class="name">
+                              <label for="appnet"><g:message code="speaker.appnet.label" default="App.net" /></label>
+                            </td>
+                            <td valign="top" class="value ${hasErrors(bean: speakerInstance, field: 'appnet', 'errors')}">
+                                <g:textField name="appnet" value="${speakerInstance?.appnet}" />
+                            </td>
+                        </tr>
+                        <tr class="prop">
                             <td valign="top" class="blog">
                               <label for="blog"><g:message code="speaker.blog.label" default="Blog" /></label>
                             </td>
