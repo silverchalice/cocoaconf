@@ -63,6 +63,22 @@
                                     <g:textArea name="bio" cols="40" rows="5" value="${speakerInstance?.bio}" />
                                 </td>
                             </tr>
+	                        <tr class="prop">
+	                            <td valign="top" class="name">
+	                              <label for="twitter"><g:message code="speaker.twitter.label" default="Twitter" /></label>
+	                            </td>
+	                            <td valign="top" class="value ${hasErrors(bean: speakerInstance, field: 'twitter', 'errors')}">
+	                                <g:textField name="twitter" value="${speakerInstance?.twitter}" />
+	                            </td>
+	                        </tr>
+	                        <tr class="prop">
+	                            <td valign="top" class="name">
+	                              <label for="appnet"><g:message code="speaker.appnet.label" default="App.net" /></label>
+	                            </td>
+	                            <td valign="top" class="value ${hasErrors(bean: speakerInstance, field: 'appnet', 'errors')}">
+	                                <g:textField name="appnet" value="${speakerInstance?.appnet}" />
+	                            </td>
+	                        </tr>
                             <tr class="prop">
                                 <td valign="top" class="name">
                                   <label for="feed"><g:message code="speaker.feed.label" default="Feed URL" /></label>
