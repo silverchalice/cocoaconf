@@ -40,6 +40,10 @@ class UrlMappings {
             controller = "conference"
             action = "sessions"
 		}
+		"/$tinyName/session/$slug"{
+            controller = "conference"
+            action = "sessionDetails"
+		}
 		"/$tinyName/venue"{
             controller = "conference"
             action = "venue"

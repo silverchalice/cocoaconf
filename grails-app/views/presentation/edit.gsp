@@ -33,6 +33,30 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                  <label for="title"><g:message code="presentation.title.label" default="Title" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: presentationInstance, field: 'title', 'errors')}">
+                                    <g:textField name="title" value="${presentationInstance?.title}" />
+                                </td>
+                            </tr>                                                                                                                                   =
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="shortName"><g:message code="presentation.shortName.label" default="Short Name" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: presentationInstance, field: 'shortName', 'errors')}">
+                                    <g:textField name="shortName" value="${presentationInstance?.shortName}" />
+                                </td>
+                            </tr>                                                                                                                                   =
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="slug"><g:message code="presentation.slug.label" default="Slug" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: presentationInstance, field: 'slug', 'errors')}">
+                                    <g:textField name="slug" value="${presentationInstance?.slug}" />
+                                </td>
+                            </tr>                                                                                                                                   =
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                   <label for="pAbstract"><g:message code="presentation.pAbstract.label" default="PA bstract" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: presentationInstance, field: 'pAbstract', 'errors')}">
@@ -67,14 +91,6 @@
                                 </td>
                             </tr>
                         
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                  <label for="title"><g:message code="presentation.title.label" default="Title" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: presentationInstance, field: 'title', 'errors')}">
-                                    <g:textField name="title" value="${presentationInstance?.title}" />
-                                </td>
-                            </tr>                                                                                                                                   =
                             <tr class="prop">
                                 <td valign="top" class="name">
                                   <label for="current"><g:message code="presnetation.current.label" default="Current" /></label>

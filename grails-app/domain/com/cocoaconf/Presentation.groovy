@@ -12,6 +12,7 @@ class Presentation {
     Integer slot
     Integer track
     Boolean current
+    String slug
 
     static belongsTo = Speaker
 
@@ -20,6 +21,7 @@ class Presentation {
 	    shortName nullable:true
 		slot nullable:true
 		track nullable:true
+		slug nullable:true
     }
 
 
