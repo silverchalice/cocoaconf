@@ -121,6 +121,10 @@ class UrlMappings {
             controller = "post"
             action = "feed"
         }
+        "/profile/$firstName/$lastName"{
+	        controller = "speaker"
+	        action = "viewDetails"
+        }
         "/prizes"{
             controller = "prize"
             action = "prizes"

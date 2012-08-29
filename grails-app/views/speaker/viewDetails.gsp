@@ -57,10 +57,13 @@
             <p>${speaker.bio}</p>
             <p>
                 <g:if test="${speaker.twitter}">
-                    <a target="_blank" href="http://twitter.com/${speaker.twitter}" style="color: black; text-decoration: none"><span style="font-size:14px; font-weight: bold; padding-left:20px; line-height: 30px; vertical-align: top">Follow ${speaker.firstName.trim()}:</span> <img src="${resource(dir:'images', file: 'twitter.png')}" alt="${speaker.twitter}"></a>
+                    <a target="_blank" href="http://twitter.com/${speaker.twitter}" style="color: black; text-decoration: none; vertical-align: top"><img src="${resource(dir:'images', file: 'twitter.png')}" alt="Twitter" style="vertical-align:middle"><span style="font-size:14px; font-weight: bold; padding:0 20px 0 5px; line-height: 30px;">Follow ${speaker.firstName.trim()} on Twitter </span></a>
+                </g:if>
+                <g:if test="${speaker.appnet}">
+                    <a target="_blank" href="http://alpha.app.net/${speaker.appnet}" style="color: black; text-decoration: none; vertical-align: top"><img src="${resource(dir:'images', file: 'appnet.jpg')}" alt="App.net" style="vertical-align:middle"><span style="font-size:14px; font-weight: bold; padding:0 20px 0 5px; line-height: 30px;">Follow ${speaker.firstName.trim()} on App.net </span></a>
                 </g:if>
                 <g:if test="${speaker.blog}">
-                    <a target="_blank" href="${speaker.blog}" style="color: black; text-decoration: none"><span style="font-size:14px; font-weight: bold; padding-left:20px; line-height: 30px; vertical-align: top">Read ${speaker.firstName.trim()}'s blog:</span> <img src="${resource(dir:'images', file: 'feed-icon-28x28.png')}" alt="${speaker}'s blog"></a>
+                    <a target="_blank" href="${speaker.blog}" style="color: black; text-decoration: none; vertical-align: top"><img src="${resource(dir:'images', file: 'feed-icon-28x28.png')}" alt="${speaker}'s blog" style="vertical-align:middle"><span style="font-size:14px; font-weight: bold; padding:0 20px 0 5px; line-height: 30px;">Read ${speaker.firstName.trim()}'s blog</span></a>
                 </g:if>
             </p>
 
