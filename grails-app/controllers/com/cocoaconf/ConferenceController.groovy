@@ -224,8 +224,16 @@ class ConferenceController {
     }
 
     def sessionDetails = {
-	    def conf = Conference.get(params.confId)
-	    def presentation = Presentation.get(params.id)
+	    def conf
+	    def presentation
+	    if(params.tinyName){
+		    conf = Conference.findByTinyName(params.tinyName)
+		    presentation = Presentation.findBySlug(params.slug)
+	    }
+	    else{
+	        conf = Conference.get(params.confId)
+	        presentation = Presentation.get(params.id)
+	    }
 	    if (conf && presentation){
 		    return[conference:conf, presentation:presentation]
 	    }	 
@@ -236,7 +244,7 @@ class ConferenceController {
 
     def slides = {
 //	    println "in slides action"
-	    params.each{key, val -> println "$key == $val"}
+	  //  params.each{key, val -> println "$key == $val"}
         def conf = Conference.findByTinyName(params.tinyName)
         if(conf){
             def slideMap = slideService.loadSlides(conf)

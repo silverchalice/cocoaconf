@@ -203,7 +203,7 @@
                             </g:else>
                         </g:if>
                         <g:else>
-                               <td align="center" width="200" class="track${sess?.track}"><span class="sessionTitle"><g:link controller="conference" action="sessionDetails" id="${sess?.presentation?.id}" params="${[confId:conference?.id]}">${sess?.presentation?.title}</g:link></span> <span class="sessionSpeaker"><g:link controller="conference" action="speakerDetails" id="${sess?.presentation?.speaker?.id}" params="${[confId:conference?.id]}">${sess?.presentation?.speaker}</g:link></span></td>
+                               <td align="center" width="200" class="track${sess?.track}"><span class="sessionTitle"><g:link controller="conference" action="sessionDetails" params="${[tinyName:conference?.tinyName, slug:sess?.presentation?.slug ?: 'null']}">${sess?.presentation?.title}</g:link></span> <span class="sessionSpeaker"><g:link controller="conference" action="speakerDetails" id="${sess?.presentation?.speaker?.id}" params="${[confId:conference?.id]}">${sess?.presentation?.speaker}</g:link></span></td>
                         </g:else>
                     </g:each>
                     </tr>
