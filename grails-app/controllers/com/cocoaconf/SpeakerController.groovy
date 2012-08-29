@@ -57,7 +57,12 @@ class SpeakerController {
     }
 
     def viewDetails = {
-        def speakerInstance = Speaker.get(params.id)
+        def speakerInstance
+        if (params.firstName){
+	        speakerInstance = Speaker.findByFirstNameAndLastName(params.firstName, params.lastName)
+        }
+        else
+            speakerInstance = Speaker.get(params.id)
         if (!speakerInstance) {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'speaker.label', default: 'Speaker'), params.id])}"
             redirect(action: "speakers")
