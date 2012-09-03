@@ -265,6 +265,10 @@ label.error {
     margin-top:20px;
 }
 
+.followButtons{
+	clear:both;
+}
+
 /*Image styles*/
 #xcode {
     float:right;

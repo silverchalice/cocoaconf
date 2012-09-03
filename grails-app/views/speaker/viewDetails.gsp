@@ -55,7 +55,7 @@
             <img src="${request.contextPath}/${speaker?.imagePath}" class="speakerPic"/>
             <h1>${speaker}</h1>
             <p>${speaker.bio}</p>
-            <p>
+            <p class="followButtons">
                 <g:if test="${speaker.twitter}">
                     <a target="_blank" href="http://twitter.com/${speaker.twitter}" style="color: black; text-decoration: none; vertical-align: top"><img src="${resource(dir:'images', file: 'twitter.png')}" alt="Twitter" style="vertical-align:middle"><span style="font-size:14px; font-weight: bold; padding:0 20px 0 5px; line-height: 30px;">Follow ${speaker.firstName.trim()} on Twitter </span></a>
                 </g:if>
@@ -83,7 +83,7 @@
              <h3>Recent blog posts by ${speaker}:</h3>
              <g:each in="${feedEntries}" var="entry">
                  <li class="presentation"><a href="${entry.link}">${entry.title}</a>
-                 <p><strong><g:formatDate format="EEEE, MMMM dd, yyyy" value="${entry.published}" /></strong></p>
+              <!--   <p><strong><g:formatDate format="EEEE, MMMM dd, yyyy" value="${entry.published}" /></strong></p> -->
                  <p><cc:truncate value="${entry.body}" size="350" /></p></li>
              </g:each>
             </ul>
