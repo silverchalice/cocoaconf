@@ -58,7 +58,7 @@
             <img src="${request.contextPath}/${speaker?.imagePath}" class="speakerPic"  alt="${speaker}"/>
             <h1>${speaker}</h1>
             <p>${speaker.bio}</p>
-            <p>
+            <p class="followButtons">
                 <g:if test="${speaker.twitter}">
                     <a target="_blank" href="http://twitter.com/${speaker.twitter}" style="color: black; text-decoration: none; vertical-align: top"><img src="${resource(dir:'images', file: 'twitter.png')}" alt="Twitter" style="vertical-align:middle"><span style="font-size:14px; font-weight: bold; padding:0 20px 0 5px; line-height: 30px;">Follow ${speaker.firstName.trim()} on Twitter </span></a>
                 </g:if>
