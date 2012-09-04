@@ -134,6 +134,7 @@ body {
 #confSidebar {
     text-align: center;
     width: 180px;
+    height: 100%;
     float: left;
 }
 

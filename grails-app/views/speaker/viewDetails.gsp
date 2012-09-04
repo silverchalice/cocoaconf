@@ -83,7 +83,7 @@
              <h3>Recent blog posts by ${speaker}:</h3>
              <g:each in="${feedEntries}" var="entry">
                  <li class="presentation"><a href="${entry.link}">${entry.title}</a>
-              <!--   <p><strong><g:formatDate format="EEEE, MMMM dd, yyyy" value="${entry.published}" /></strong></p> -->
+                 <p><strong><g:formatDate format="EEEE, MMMM dd, yyyy" date="${entry.published}" /></strong></p>
                  <p><cc:truncate value="${entry.body}" size="350" /></p></li>
              </g:each>
             </ul>
