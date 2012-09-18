@@ -1,5 +1,5 @@
 <head>
-    <meta name='layout' content='public' />
+    <meta name='layout' content='home' />
     <title>Login</title>
     <style type='text/css' media='screen'>
 
@@ -67,6 +67,9 @@
 					<label for='remember_me'>Remember me</label>
 					<input type='checkbox' class='chk' name='${rememberMeParameter}' id='remember_me'
 					<g:if test='${hasCookie}'>checked='checked'</g:if> />
+				</p>
+				<p>
+					<label for='nothing'><g:link action="password_forgettification">Forgot password?</g:link></label>
 				</p>
 				<p>
 					<input type='submit' value='Login' />
