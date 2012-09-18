@@ -109,11 +109,11 @@
 
                  </tr>
                  <tr>
-                    <td><lable for="city">City:</lable></td>
+                    <td><label for="city">City:</label></td>
                     <td><g:textField name="city" value="${locationRequestInstance?.city}"/></td>
                  </tr>
                  <tr>
-                    <td> <lable for="state">State:</lable></td>
+                    <td> <label for="state">State:</label></td>
                     <td><g:select name="state" from="${states}" value="${locationRequestInstance?.state}"/></td>
                  </tr>
                                   <tr>
@@ -122,11 +122,11 @@
                     </td>
                  </tr>
                                   <tr>
-                    <td><lable for="email">Name:</lable></td>
+                    <td><label for="email">Name:</label></td>
                     <td><g:textField name="name" value="${locationRequestInstance?.name}"/></td>
                  </tr>
                                   <tr>
-                    <td><lable for="email">Email:</lable></td>
+                    <td><label for="email">Email:</label></td>
                     <td><g:textField name="email" value="${locationRequestInstance?.email}"/></td>
                  </tr>
 
