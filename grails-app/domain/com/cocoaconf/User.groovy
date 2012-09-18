@@ -16,6 +16,7 @@ class User {
 	boolean accountExpired
 	boolean accountLocked
 	boolean passwordExpired
+    boolean temporaryPassword
 	SessionChoice choice
 	
 	static constraints = {

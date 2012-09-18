@@ -1,8 +1,12 @@
+package com.cocoaconf
+
 import grails.converters.JSON
 
 import javax.servlet.http.HttpServletResponse
 
 import org.codehaus.groovy.grails.plugins.springsecurity.SpringSecurityUtils
+
+import org.apache.commons.lang.RandomStringUtils
 
 import org.springframework.security.authentication.AccountExpiredException
 import org.springframework.security.authentication.CredentialsExpiredException
@@ -14,6 +18,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 class LoginController {
 
+    static allowedMethods = [password_changeness: "POST", password_resetness: "POST"]
+
 	/**
 	 * Dependency injection for the authenticationTrustResolver.
 	 */
@@ -23,6 +29,11 @@ class LoginController {
 	 * Dependency injection for the springSecurityService.
 	 */
 	def springSecurityService
+
+	/**
+	 * Also other services.
+	 */
+    def mailService
 
 	/**
 	 * Default action; redirects to 'defaultTargetUrl' if logged in, /login/auth otherwise.
@@ -87,21 +98,24 @@ class LoginController {
 	 * Callback after a failed login. Redirects to the auth page with a warning message.
 	 */
 	def authfail = {
-
 		def username = session[UsernamePasswordAuthenticationFilter.SPRING_SECURITY_LAST_USERNAME_KEY]
 		String msg = ''
 		def exception = session[WebAttributes.AUTHENTICATION_EXCEPTION]
 		if (exception) {
 			if (exception instanceof AccountExpiredException) {
+                println "account expired"
 				msg = SpringSecurityUtils.securityConfig.errors.login.expired
 			}
 			else if (exception instanceof CredentialsExpiredException) {
+                println "credentials expired"
 				msg = SpringSecurityUtils.securityConfig.errors.login.passwordExpired
 			}
 			else if (exception instanceof DisabledException) {
+                println "disabled"
 				msg = SpringSecurityUtils.securityConfig.errors.login.disabled
 			}
 			else if (exception instanceof LockedException) {
+                println "locked"
 				msg = SpringSecurityUtils.securityConfig.errors.login.locked
 			}
 			else {
@@ -131,4 +145,56 @@ class LoginController {
 	def ajaxDenied = {
 		render([error: 'access denied'] as JSON)
 	}
+
+    def password_forgettification = {}
+
+    def password_resetness = {
+        def user = User.findByEmail(params.email)
+        if(user){
+            def password = org.apache.commons.lang.RandomStringUtils.random(17, true, true)
+            user.password = springSecurityService.encodePassword(password)
+            user.temporaryPassword = true
+            user.save()
+            mailService.sendMail {
+                to params.email
+                subject "Your CocoaConf Password Has Been Reset"
+                body(view:"/login/password_reset", 
+                model:[user:user, password: password])
+            }
+            println "we sented the mail!!1!!!1!"
+        }
+        flash.message = "Your password has been reset. Please check your inbox."
+        redirect action: 'auth'
+    }
+
+    def change_password = {}
+
+    def password_changeness = {
+        def user = User.get(springSecurityService.currentUser.id)
+        String message = null
+        if(!params.currentPassword){
+            message = "Please enter your current password."
+        } else if (params.currentPassword && springSecurityService.encodePassword(params.currentPassword) != user.password) {
+            message = "You did not enter your current password correctly. Please try again."
+        } else if (!params.newPassword){
+            message = "Please enter a new password."
+        } else if (params.newPassword && params.newPassword != params.confirmPassword) {
+            message = "New passwords did not match. Please try again."
+        } else if (springSecurityService.encodePassword(params.currentPassword) == user.password &&
+                   params.newPassword == params.confirmPassword) {
+            user.password = springSecurityService.encodePassword(params.newPassword)
+            user.temporaryPassword = false
+            user.save()
+        }
+
+        if(message){
+            flash.message = message
+            redirect action: "change_password"
+        } else {
+            redirect action: "password_change"
+        }
+    }
+
+    def password_change = {}
+
 }
