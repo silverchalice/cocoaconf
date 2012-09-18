@@ -61,7 +61,7 @@
             </div>
 
             <div id="announcementHeader">
-               <span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/portland-2012/home">Portland Early-bird registration ends September 14 -- Don't miss it!</a></span>
+               <span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/raleigh-2012/home">CocoaConf Raleigh registration opens soon!</a></span>
             </div>
             <div id="content">
                 <g:layoutBody />
