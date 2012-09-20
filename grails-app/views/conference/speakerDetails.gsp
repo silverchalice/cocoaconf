@@ -48,7 +48,7 @@
 
     </head>
     <body>
-    <div id="confSidebar">
+    <div id="confSidebar" style="height:1000px">
         <g:render template="confNav" model="['conference': conference, 'current': 'speakers']" />
     </div>
 
@@ -58,7 +58,7 @@
             <img src="${request.contextPath}/${speaker?.imagePath}" class="speakerPic"  alt="${speaker}"/>
             <h1>${speaker}</h1>
             <p>${speaker.bio}</p>
-            <p>
+            <p class="followButtons">
                 <g:if test="${speaker.twitter}">
                     <a target="_blank" href="http://twitter.com/${speaker.twitter}" style="color: black; text-decoration: none; vertical-align: top"><img src="${resource(dir:'images', file: 'twitter.png')}" alt="Twitter" style="vertical-align:middle"><span style="font-size:14px; font-weight: bold; padding:0 20px 0 5px; line-height: 30px;">Follow ${speaker.firstName.trim()} on Twitter </span></a>
                 </g:if>
@@ -73,11 +73,11 @@
         </div>
         <div style="clear: both">&nbsp;</div>
 
+        <div>
+          <h2>${conference.description} Presentations:</h2>
+          <br/>
 
-        <h2>${conference.description} Presentations:</h2>
-        <br/>
-
-        <g:each in="${speakerPresentations?.sort{it.id}}" var="presentation">
+          <g:each in="${speakerPresentations?.sort{it.id}}" var="presentation">
              <g:if test="${presentation.title != 'TBA'}">
                  <div class="presentation">
                      <h3 style="color:#2ab0e2; padding: 0; margin:0"><g:link controller="conference" action="sessionDetails" id="${presentation.id}" params="${[confId:conference?.id]}">${presentation.title}</g:link></h3>
@@ -86,11 +86,23 @@
 
                  </div>
              </g:if>
-
-
-         </g:each>
-
+           </g:each>
+        </div>
+        <div style="float:left;"> 
+	       <g:if test="${feedEntries?.size() > 0}">
+             <h2>Recent blog posts by ${speaker}:</h2>
+              <br/>
+              <g:each in="${feedEntries}" var="entry">
+                  <div class="presentation">
+	                <a href="${entry.link}">${entry.title}</a>
+                    <p><strong><g:formatDate format="EEEE, MMMM dd, yyyy" date="${entry.published}" /></strong></p>
+                    <p><cc:truncate value="${entry.body}" size="350" /></p>
+                  </div>
+              </g:each>
+	       </g:if>
+         </div>
     </div>
     <div style="clear: both"></div>
+ 
 </body>
 </html>

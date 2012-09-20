@@ -10,10 +10,10 @@ class CocoaConfTagLib {
       def value = attrs.value
       value = value?.replaceAll("<(.|\n)*?>", '');
       if (value?.length() > size) {
-        out << "${value?.substring(0,size)?.encodeAsHTML()}..."
+        out << "${value?.substring(0,size)}..."
       }
       else {
-        out << value.encodeAsHTML()
+        out << value
       }
     }
 
