@@ -79,7 +79,7 @@
 		    </a>
             </div>
             <div id="announcementHeader">
-               <span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/raleigh-2012/home">CocoaConf Raleigh registration opens soon!</a></span>
+               <span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/raleigh-2012/home"><a href="http://cocoaconf.com/raleigh-2012/home">CocoaConf Raleigh registration now open! - Early bird registration ends October 12th</a></a></span>
             </div>
 
 
