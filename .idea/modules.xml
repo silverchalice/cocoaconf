@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/cocoaconf.iml" filepath="$PROJECT_DIR$/cocoaconf.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cocoaconf-grailsPlugins.iml" filepath="$PROJECT_DIR$/cocoaconf-grailsPlugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cocoaconf.iml" filepath="$PROJECT_DIR$/Cocoaconf.iml" />
     </modules>
   </component>
 </project>

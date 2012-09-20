@@ -21,6 +21,10 @@ html {
     color:white
 }
 
+h1 {
+    color:#1da0d1;
+}
+
 h2 {
     color:#232323;
     margin:0;
@@ -221,8 +225,7 @@ body {
 
 .body {
     float:right;
-    width:640px;
-    padding-right:50px;
+    width:700px;
 }
 
 .sponsor img {

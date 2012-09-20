@@ -83,7 +83,7 @@
             </div>
 
 
-            <div id="sidebar" style="margin:10px;">
+            <div id="sidebar" style="margin: 0 10px;">
 
                 <h1 style="margin-left: 10px; color: #1da0d1">Upcoming Events</h1>
 
