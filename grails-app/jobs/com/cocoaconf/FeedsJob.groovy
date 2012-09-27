@@ -4,7 +4,7 @@ class FeedsJob {
 	def feedService
 	
     static triggers = {
-      simple name: 'importTrigger', startDelay: 60000l, repeatInterval: 600000l
+      simple name: 'importTrigger', startDelay: 60000l, repeatInterval: 6000000l
     }
 
     def execute() {

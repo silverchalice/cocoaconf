@@ -58,19 +58,9 @@
 			                </g:if>
 	                     </span>
                        <span style="font-size: 14px; float:right;"><g:link controller="conference" action="speakerDetails" id="${presentation?.speaker?.id}" params="${[confId:conference?.id]}">View Details</g:link></span>
-
                    </div>
                     <p>${presentation?.pAbstract}
                     </p>
-                    <sec:ifLoggedIn>
-                       <g:if test="${slides}">
-                           <a href="${createLink(controller:'home', action:'downloadSlides', params:[file:slides])}" style="background-image: url(${resource(dir:'images', file:'download.png')}); background-position: 270px 0px; background-repeat: no-repeat; padding-top:9px; display:block; width:400px; height:50px; font-weight:bold; font-size: 18px">Download Slides/Sample Code</a>
-
-                       </g:if>
-                       <g:else>
-                           <span style="padding-top:9px; display:block; width:400px; height:50px; font-weight:bold; font-size: 18px">No Slides Available</span>
-                       </g:else>
-                    </sec:ifLoggedIn><br/>
                 </div>
 
 

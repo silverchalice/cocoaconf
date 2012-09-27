@@ -1,15 +1,15 @@
 package com.cocoaconf
 
 class SessionChoice {
-	Boolean session01 = false
-	Boolean session02 = false
-	Boolean session03 = false
-	Boolean session04 = false
-	Boolean session05 = false
-	Boolean session06 = false
-	Boolean session07 = false
-	Boolean session08 = false
-	Boolean session09 = false
+	Boolean session1 = false
+	Boolean session2 = false
+	Boolean session3 = false
+	Boolean session4 = false
+	Boolean session5 = false
+	Boolean session6 = false
+	Boolean session7 = false
+	Boolean session8 = false
+	Boolean session9 = false
 	Boolean session10 = false 
 	Boolean session11 = false
 	Boolean session12 = false
@@ -34,4 +34,7 @@ class SessionChoice {
 
 	static belongsTo = [user:User]
 	
+	Boolean checkProp(String propName){
+		return self."${propName}"
+	}
 }
