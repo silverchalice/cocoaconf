@@ -173,6 +173,7 @@
     </head>
 
     <body>
+        <g:set var="ix" value="${1}" />
         <div id="confSidebar">
             <g:render template="confNav" model="['conference': conference, 'current': 'schedule']" />
         </div>
@@ -192,18 +193,59 @@
                 <g:each in="${dayMap.slots}" var="slot">
                     <g:set var="sessions" value="${slot.value}" />
                     <tr class="${sessions[0]?.type}">
-                    <td align="center" width="75" align="center" class="time">${sessions[0].start}-${sessions[0].end}</td>
+                    <td align="center" width="75" align="center" class="time">
+	                  ${sessions[0].start}-${sessions[0].end}
+	                </td>
                     <g:each in="${sessions.sort{it.track}}" var="sess">
                         <g:if test="${sessions.size() == 1}">
                             <g:if test="${sess?.type != 'break'}">
-                                <td align="center" colspan="3"><g:link controller="conference" action="sessionDetails" id="${sess?.presentation?.id}" params="${[confId:conference?.id]}"> ${sess?.presentation?.title} </g:link><span class="sessionSpeaker"><g:link controller="conference" action="speakerDetails" id="${sess?.presentation?.speaker?.id}" params="${[confId:conference?.id]}">${sess?.presentation?.speaker}</g:link></span></td>
+                                <td align="center" colspan="3">
+	                              <g:link controller="conference" 
+	                                      action="sessionDetails" 
+	                                      id="${sess?.presentation?.id}" 
+	                                      params="${[confId:conference?.id]}"> 
+	                                ${sess?.presentation?.title} 
+	                              </g:link>
+	                              <span class="sessionSpeaker">
+		                            <g:link controller="conference" 
+		                                    action="speakerDetails" 
+		                                    id="${sess?.presentation?.speaker?.id}" 
+		                                    params="${[confId:conference?.id]}">
+		                              ${sess?.presentation?.speaker}
+		                            </g:link>
+		                          </span>
+		                        </td>
                             </g:if>
                             <g:else>
-                                <td align="center" colspan="3">${sess?.presentation?.title}</td>
+                                <td align="center" colspan="3">
+	                              ${sess?.presentation?.title}
+	                            </td>
                             </g:else>
                         </g:if>
                         <g:else>
-                               <td align="center" width="200" class="track${sess?.track}"><span class="sessionTitle"><g:link controller="conference" action="sessionDetails" params="${[tinyName:conference?.tinyName, slug:sess?.presentation?.slug ?: 'null']}">${sess?.presentation?.title}</g:link></span> <span class="sessionSpeaker"><g:link controller="conference" action="speakerDetails" id="${sess?.presentation?.speaker?.id}" params="${[confId:conference?.id]}">${sess?.presentation?.speaker}</g:link></span></td>
+                          <td align="center" width="200" class="track${sess?.track}">
+                            <span class="sessionTitle">
+	                          <g:link controller="conference" 
+	                                  action="sessionDetails" 
+	                                  params="${[tinyName:conference?.tinyName, 
+		                                         slug:sess?.presentation?.slug ?: 'null']}">
+		                        ${sess?.presentation?.title}
+		                      </g:link>
+		                    </span>
+		                    <span class="sessionSpeaker">
+			                  <g:link controller="conference" 
+			                          action="speakerDetails" 
+			                          id="${sess?.presentation?.speaker?.id}" 
+			                          params="${[confId:conference?.id]}">
+			                    ${sess?.presentation?.speaker}
+			                  </g:link>
+			                </span>
+			                <sec:ifLoggedIn>
+			                    <br/>
+			                    <g:set var="sessionName" value="${'session' + ix++}" />
+			                    <input type="checkbox" name="${sessionName}" ${choice?.checkProp(sessionName) ? "checked='checked'" : ''} />
+			                </sec:ifLoggedIn>
+			              </td>
                         </g:else>
                     </g:each>
                     </tr>
