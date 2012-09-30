@@ -12,7 +12,7 @@
       <title>CocoaConf | iOS/OS X Developer Conference | ${conference?.description} | ${conference?.dates}</title>
       <meta name="layout" content="conference" />
       <meta name="tab" content="events" />
-      <meta name="nav" content="register" />
+      <meta name="nav" content="events" />
 
       <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
 
