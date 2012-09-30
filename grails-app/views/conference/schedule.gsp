@@ -173,7 +173,10 @@
     </head>
 
     <body>
-        <g:set var="ix" value="${1}" />
+	    <sec:ifLoggedIn>
+            <g:set var="ix" value="${1}" />
+            <form id="myForm" name="myForm" action="conference/pickSessions">
+	    </sec:ifLoggedIn>
         <div id="confSidebar">
             <g:render template="confNav" model="['conference': conference, 'current': 'schedule']" />
         </div>
@@ -224,37 +227,46 @@
                         </g:if>
                         <g:else>
                           <td align="center" width="200" class="track${sess?.track}">
-
-                                  <span class="sessionTitle">
-                                      <g:link controller="conference"
-                                              action="sessionDetails"
-                                              params="${[tinyName:conference?.tinyName,
-                                                         slug:sess?.presentation?.slug ?: 'null']}">
-                                        ${sess?.presentation?.title}
-                                      </g:link>
-                                    </span>
-                                    <span class="sessionSpeaker">
-                                      <g:link controller="conference"
-                                              action="speakerDetails"
-                                              id="${sess?.presentation?.speaker?.id}"
-                                              params="${[confId:conference?.id]}">
-                                        ${sess?.presentation?.speaker}
-                                      </g:link>
-                                    </span>
-                                    <sec:ifLoggedIn>
-                                        <br/>
-                                        <g:set var="sessionName" value="${'session' + ix++}" />
-                                        <input style="position: relative; bottom: 0" type="checkbox" name="${sessionName}" ${choice?.checkProp(sessionName) ? "checked='checked'" : ''} />
-                                    </sec:ifLoggedIn>
-
+                            <span class="sessionTitle">
+	                          <g:link controller="conference" 
+	                                  action="sessionDetails" 
+	                                  params="${[tinyName:conference?.tinyName, 
+		                                         slug:sess?.presentation?.slug ?: 'null']}">
+		                        ${sess?.presentation?.title}
+		                      </g:link>
+		                    </span>
+		                    <span class="sessionSpeaker">
+			                  <g:link controller="conference" 
+			                          action="speakerDetails" 
+			                          id="${sess?.presentation?.speaker?.id}" 
+			                          params="${[confId:conference?.id]}">
+			                    ${sess?.presentation?.speaker}
+			                  </g:link>
+			                </span>
 			              </td>
                         </g:else>
                     </g:each>
                     </tr>
+                    <sec:ifLoggedIn>
+                      <g:if test="${sessions.size() > 1 && !(sessions[0].presentation?.title?.contains('Tutorial'))}">
+	                    <tr>
+		                  <td align="center" width="75" align="center" class="time"></td>
+		                  <g:each in="${sessions.sort{it.track}}" var="sess">
+		                    <td align="center" width="200" class="track${sess?.track}">
+	                          <g:set var="sessionName" value="${'session' + ix++}" />
+	                          <input type="radio" name="${sessionName}" ${choice?.checkProp(sessionName) ? "checked='checked'" : ''} />
+	                        </td>
+	                      </g:each>
+	                    </tr>
+	                  </g:if>
+	                </sec:ifLoggedIn>
                 </g:each>
                 </table>
             </g:each>
-
+            <sec:ifLoggedIn>
+                <input type="submit" value="Save Selections" />
+                </form>
+            </sec:ifLoggedIn>
         </div>
         <div style="clear: both"></div>
     </body>
