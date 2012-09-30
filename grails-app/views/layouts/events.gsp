@@ -98,11 +98,6 @@
             </div>
         </a>
 
-        <h2>Our Sponsors</h2>
-        <br/>
-
-        <a href="${resource(dir:'images', file:'sponsorship.pdf')}">Sponsorship Opportunities Available</a>
-        <br/><br/>
     </div>
 
     <div id="content">
