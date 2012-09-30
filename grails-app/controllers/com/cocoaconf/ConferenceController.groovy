@@ -32,6 +32,7 @@ class ConferenceController {
 
    def list() {
         params.max = Math.min(params.max ? params.int('max') : 10, 100)
+        params.sort = "startDate"
         [conferenceList: Conference.list(params), conferenceTotal: Conference.count()]
     }
 

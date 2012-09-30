@@ -28,6 +28,15 @@ class HomeController {
 
     def about = {}
 
+    def events = {
+
+
+
+
+        [conferenceInstanceList : Conference.findAllByStatusNotInList([Conference.COMPLETED], [sort: 'startDate'])]
+
+    }
+
     def schedule = {
 
         def choice = null

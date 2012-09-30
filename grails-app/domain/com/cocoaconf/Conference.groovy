@@ -19,6 +19,8 @@ class Conference {
     String tinyName
     String displayName
     String sponsorListBlurb
+    String thumbnail
+
     List days
 	String status = PENDING
 
@@ -44,6 +46,7 @@ class Conference {
 		slides nullable:true
 		status nullable:true, inList:[PENDING, ACTIVE, COMPLETED]
 		leads nullable:true
+        thumbnail nullable: true
     }
 
     def getSpeakers(){
