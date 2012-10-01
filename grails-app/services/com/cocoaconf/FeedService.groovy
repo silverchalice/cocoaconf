@@ -23,13 +23,15 @@ class FeedService {
             println feed.entries[0]
 */
 
-            println "the speaker is $speaker"
+/*            println "the speaker is $speaker"
             println "does he have a feed? ${speaker.feed}"
             println "\n"
+
             feed.properties.each { key, value ->
                 println "$key: $value"
             }
             println "\n"
+*/
             feed.entries.each {
                 def e = new FeedEntry(title: it.title, link: it.link, body: it.contents[0]?.value ?: it.description?.value, published: it.publishedDate ?: it.updatedDate, speakerId: speaker.id)
                 if(!FeedEntry.findByTitleAndSpeakerId(it.title, speaker.id)){

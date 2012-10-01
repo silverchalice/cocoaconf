@@ -5,52 +5,16 @@
         <meta name="tab" content="events" />
         <meta name="nav" content="schedule" />
 
-        <link rel="stylesheet" href="${resource(dir:'js/jquery-checkbox', file: 'jquery.checkbox.css')}" />
-        <link rel="stylesheet" href="${resource(dir:'js/jquery-checkbox', file: 'jquery.safari-checkbox.css')}"/>
-
-        <script type="text/javascript" src="${resource(dir:'js/jquery-checkbox', file: 'jquery.js')}"></script>
-        <script type="text/javascript" src="${resource(dir:'js/jquery-checkbox', file: 'jquery.checkbox.min.js')}"></script>
-
+		<script lib="jquery />
         <script type="text/javascript">
             $(document).ready(function() {
-                $('input:checkbox:not([safari])').checkbox();
-                $('input[safari]:checkbox').checkbox({cls:'jquery-safari-checkbox'});
-                $('input:radio').checkbox();
-
-                $(":checkbox").click(function() {
-                    $(this).siblings().removeAttr('checked');
-                });
-
+	
+				$('input:radio').click(function() {
+					var rowClass = $(this).attr('class');
+				    $('.' + rowClass).filter(':checked').not(this).removeAttr('checked');
+				});
+				
             });
-
-            displayForm = function (elementId)
-            {
-                var content = [];
-                $('#' + elementId + ' input').each(function(){
-                    var el = $(this);
-                    if ( (el.attr('type').toLowerCase() == 'radio'))
-                    {
-                        if ( this.checked )
-                            content.push([
-                                '"', el.attr('name'), '": ',
-                                'value="', ( this.value ), '"',
-                                ( this.disabled ? ', disabled' : '' )
-                            ].join(''));
-                    }
-                    else
-                        content.push([
-                            '"', el.attr('name'), '": ',
-                            ( this.checked ? 'checked' : 'not checked' ),
-                            ( this.disabled ? ', disabled' : '' )
-                        ].join(''));
-                });
-                alert(content.join('\n'));
-            };
-
-            changeStyle = function(skin)
-            {
-                jQuery('#myform :checkbox').checkbox((skin ? {cls: skin} : {}));
-            }
 
         </script>
 
@@ -175,7 +139,7 @@
     <body>
 	    <sec:ifLoggedIn>
             <g:set var="ix" value="${1}" />
-            <form id="myForm" name="myForm" action="conference/pickSessions">
+            <form id="myForm" name="myForm" action="pickSessions">
 	    </sec:ifLoggedIn>
         <div id="confSidebar">
             <g:render template="confNav" model="['conference': conference, 'current': 'schedule']" />
@@ -254,7 +218,7 @@
 		                  <g:each in="${sessions.sort{it.track}}" var="sess">
 		                    <td align="center" width="200" class="track${sess?.track}">
 	                          <g:set var="sessionName" value="${'session' + ix++}" />
-	                          <input type="radio" name="${sessionName}" ${choice?.checkProp(sessionName) ? "checked='checked'" : ''} />
+	                          <input type="radio" class="row${slot.key}" name="${sessionName}" ${choice?.checkProp(sessionName) ? "checked='checked'" : ''} />
 	                        </td>
 	                      </g:each>
 	                    </tr>

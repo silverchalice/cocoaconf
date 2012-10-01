@@ -64,6 +64,11 @@ class UrlMappings {
             action = "slides"
             id = "$tinyName"
 		}
+		"/$tinyName/pickSessions"{
+            controller = "conference"
+            action = "pickSessions"
+            id = "$tinyName"
+		}
         /* taking this out until we
            have time to add text to
            the About page

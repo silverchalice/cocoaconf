@@ -266,22 +266,23 @@ class ConferenceController {
 		params.each{key, val -> println "$key == $val"}
 
 	        def user = User.findByUsername(springSecurityService.principal.username)
+	        println "User is $user"
 	        if (!user.choice){
 
 	            user.choice = new SessionChoice(params)
 	        }
 	        else {
 	            user.choice.properties = params
-
-	            user.choice.session01 = params.session1 ? true : false
-	            user.choice.session02 = params.session2 ? true : false
-	            user.choice.session03 = params.session3 ? true : false
-	            user.choice.session04 = params.session4 ? true : false
-	            user.choice.session05 = params.session5 ? true : false
-	            user.choice.session06 = params.session6 ? true : false
-	            user.choice.session07 = params.session7 ? true : false
-	            user.choice.session08 = params.session8 ? true : false
-	            user.choice.session09 = params.session9 ? true : false
+                user.choice.conference = params.tinyName
+	            user.choice.session1 = params.session1 ? true : false
+	            user.choice.session2 = params.session2 ? true : false
+	            user.choice.session3 = params.session3 ? true : false
+	            user.choice.session4 = params.session4 ? true : false
+	            user.choice.session5 = params.session5 ? true : false
+	            user.choice.session6 = params.session6 ? true : false
+	            user.choice.session7 = params.session7 ? true : false
+	            user.choice.session8 = params.session8 ? true : false
+	            user.choice.session9 = params.session9 ? true : false
 	            user.choice.session10 = params.session10 ? true : false
 	            user.choice.session11 = params.session11 ? true : false
 	            user.choice.session12 = params.session12 ? true : false
@@ -303,8 +304,6 @@ class ConferenceController {
 	            user.choice.session28 = params.session28 ? true : false
 	            user.choice.session29 = params.session29 ? true : false
 	            user.choice.session30 = params.session30 ? true : false
-
-
 	        }
 	        if (!user.save()){
 	            user.errors.allErrors.each{println it}

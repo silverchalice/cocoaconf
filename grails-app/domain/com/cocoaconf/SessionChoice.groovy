@@ -31,8 +31,7 @@ class SessionChoice {
 	Boolean session28 = false
 	Boolean session29 = false
 	Boolean session30 = false
-    Date dateCreated
-    Date lastUpdated
+    String conference
 	static belongsTo = [user:User]
 	
 	Boolean checkProp(String propName){
