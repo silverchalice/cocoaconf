@@ -6,12 +6,14 @@
         <meta name="nav" content="schedule" />
 
 		<script lib="jquery />
+		
         <script type="text/javascript">
             $(document).ready(function() {
 	
-				$('input:radio').click(function() {
+				$('input:checkbox').click(function() {
 					var rowClass = $(this).attr('class');
 				    $('.' + rowClass).filter(':checked').not(this).removeAttr('checked');
+				    $(this).prop("checked", true);
 				});
 				
             });
@@ -218,7 +220,8 @@
 		                  <g:each in="${sessions.sort{it.track}}" var="sess">
 		                    <td align="center" width="200" class="track${sess?.track}">
 	                          <g:set var="sessionName" value="${'session' + ix++}" />
-	                          <input type="radio" class="row${slot.key}" name="${sessionName}" ${choice?.checkProp(sessionName) ? "checked='checked'" : ''} />
+	                          <g:set var="selected" value="${choice?.checkProp(sessionName)}" />
+	                          <input type="checkbox" class="row${dayMap.day}-${slot.key}" name="${sessionName}" ${selected ? "checked='checked'" : ''} />
 	                        </td>
 	                      </g:each>
 	                    </tr>
@@ -228,7 +231,9 @@
                 </table>
             </g:each>
             <sec:ifLoggedIn>
-                <input type="submit" value="Save Selections" />
+                <input type="hidden" name="tinyName" value="${tinyName}" />
+				<br/>
+                <input type="submit" value="Save Session Selections" style="float:right;" />
                 </form>
             </sec:ifLoggedIn>
         </div>

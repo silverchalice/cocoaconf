@@ -131,11 +131,12 @@ class ConferenceController {
         } else {
             conf = Conference.get(params.id)
         }
+        def user = User.findByUsername(springSecurityService.principal.username)
         def schedule 
         if (conf){
             schedule = scheduleService.loadScheduleMap(conf)
            // println "!! yayz!!!!!1 and the schedule was: " + schedule
-            [schedule:schedule, conference:conf]
+            [schedule:schedule, conference:conf, tinyName:params.tinyName, choice:user?.choice]
         } else {
             redirect controller: "home"
         }
@@ -270,6 +271,7 @@ class ConferenceController {
 	        if (!user.choice){
 
 	            user.choice = new SessionChoice(params)
+	            user.choice.conference = params.tinyName
 	        }
 	        else {
 	            user.choice.properties = params
@@ -309,7 +311,7 @@ class ConferenceController {
 	            user.errors.allErrors.each{println it}
 	        }
 	        flash.message = "Thank you for your help!"
-	        redirect(controller:'home', action:'schedule')
+	        redirect(controller:'conference', action:'schedule', id: params.tinyName, params:[tinyName:params.tinyName])
 	    }
 
 }

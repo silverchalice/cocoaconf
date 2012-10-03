@@ -55,6 +55,20 @@ grails.exceptionresolver.params.exclude = ['password']
 
 grails.app.context = "/"
 
+grails {
+   mail {
+     host = "smtp.gmail.com"
+     port = 465
+     username = "info@cocoaconf.com"
+     password = "g5551212"
+     props = ["mail.smtp.auth":"true", 					   
+              "mail.smtp.socketFactory.port":"465",
+              "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+              "mail.smtp.socketFactory.fallback":"false"]
+   }
+}
+
+
 // set per-environment serverURL stem for creating absolute links
 environments {
     production {

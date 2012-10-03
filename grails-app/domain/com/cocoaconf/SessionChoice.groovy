@@ -35,6 +35,8 @@ class SessionChoice {
 	static belongsTo = [user:User]
 	
 	Boolean checkProp(String propName){
-		return self."${propName}"
+		def val = this."${propName}"
+		println "checkProp for $propName is $val"
+		return val
 	}
 }
