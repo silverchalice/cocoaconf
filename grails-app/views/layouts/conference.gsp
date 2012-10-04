@@ -60,8 +60,9 @@
             </div>
 
             <div id="announcementHeader">
-	           <span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/raleigh-2012/home">CocoaConf Raleigh early bird registration ends October 12th</a></span><span style="color:#ff9627; margin-left:30px; margin-right:30px;">|</span><span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/portland-2012/home">CocoaConf PDX ticket sales end October 21st</a></span>
+	           <g:render template="/layouts/announcement_bar" />
             </div>
+
             <div id="content">
                 <g:layoutBody />
             </div>
