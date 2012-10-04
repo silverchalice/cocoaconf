@@ -131,7 +131,10 @@ class ConferenceController {
         } else {
             conf = Conference.get(params.id)
         }
-        def user = User.findByUsername(springSecurityService.principal.username)
+        def user
+        if (springSecurityService.isLoggedIn()){ 
+            user = User.findByUsername(springSecurityService.principal.username)
+        }
         def schedule 
         if (conf){
             schedule = scheduleService.loadScheduleMap(conf)
