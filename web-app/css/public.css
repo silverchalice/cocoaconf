@@ -11,14 +11,18 @@ html {
 }
 
 #announcementHeader {
-    width:997px;
+    width:995px;
     background-image:url(../images/bar-bg.png);
     text-align:center;
     height:25px;
     padding-top:8px;
-    margin-bottom:0px;
+    margin:0 0 0 2px;
     font-weight:bold;
     color:white
+}
+
+h1 {
+    color:#1da0d1;
 }
 
 h2 {
@@ -100,7 +104,7 @@ body {
 }
 
 #nav {
-    width:900px;
+    width:750px;
     margin:0 auto;
 }
 
@@ -221,8 +225,7 @@ body {
 
 .body {
     float:right;
-    width:640px;
-    padding-right:50px;
+    width:700px;
 }
 
 .sponsor img {
@@ -338,4 +341,13 @@ div.featured img {
     font-weight:bold;
 
     font-size: 18px
+}
+
+.message {
+    background: #f3f8fc url(../images/skin/information.png) 8px 50% no-repeat;
+    border: 1px solid #b2d1ff;
+    color: #006dba;
+    margin: 10px 0 5px 0;
+    padding: 5px 5px 5px 30px;
+    width:600px;
 }

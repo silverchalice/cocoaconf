@@ -43,8 +43,7 @@
                 <g:link class="${pageProperty(name:'meta.tab') == 'blog' ? 'current' : ''}"  controller="post" action="list">Blog</g:link>
                 <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}"  controller="speaker" action="speakers">Our Speakers</g:link>
                 <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}"  controller="home" action="partners">Our Partners</g:link>
-                <a  href="${request.contextPath}/dc-2012/home" class="${pageProperty(name:'meta.tab') == 'events' ? 'current' : ''}"  style="background-position: 55% 0;">Events</a>
-                <g:link class="${pageProperty(name:'meta.tab') == 'next' ? 'current' : ''}"  controller="home" action="nearYou" style="width:130px;">[cocoaConf next]</g:link>
+                <g:link class="${pageProperty(name:'meta.tab') == 'events' ? 'current' : ''}"  controller="home" action="events" style="background-position: -500px 0;">Events</g:link>
             </div>
         </div>
 
@@ -61,8 +60,9 @@
             </div>
 
             <div id="announcementHeader">
-	           <span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/raleigh-2012/home">CocoaConf Raleigh early bird registration ends October 12th</a></span><span style="color:#ff9627; margin-left:30px; margin-right:30px;">|</span><span><a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/portland-2012/home">CocoaConf PDX ticket sales end October 21st</a></span>
+	           <g:render template="/layouts/announcement_bar" />
             </div>
+
             <div id="content">
                 <g:layoutBody />
             </div>

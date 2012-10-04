@@ -55,6 +55,20 @@ grails.exceptionresolver.params.exclude = ['password']
 
 grails.app.context = "/"
 
+grails {
+   mail {
+     host = "smtp.gmail.com"
+     port = 465
+     username = "info@cocoaconf.com"
+     password = "g5551212"
+     props = ["mail.smtp.auth":"true", 					   
+              "mail.smtp.socketFactory.port":"465",
+              "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+              "mail.smtp.socketFactory.fallback":"false"]
+   }
+}
+
+
 // set per-environment serverURL stem for creating absolute links
 environments {
     production {
@@ -105,6 +119,7 @@ grails.plugins.springsecurity.interceptUrlMap = [
     '/**/partners':                                          ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/**/register':                                          ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/**/slides':                                            ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/**/pickSessions':                                      ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/about':                                                ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/venue':                                                ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/conference/speakerDetails':                            ['IS_AUTHENTICATED_ANONYMOUSLY'],
@@ -152,7 +167,7 @@ grails.plugins.springsecurity.interceptUrlMap = [
     '/session/**':                                                             ['ROLE_ADMIN'],
     '/locationRequest/*':                                                      ['ROLE_ADMIN'],
     '/interest/*':                                                             ['ROLE_ADMIN'],
-    '/**':                                                                     ['ROLE_ADMIN']
+    '/**':                                                         ['IS_AUTHENTICATED_FULLY']
 ]
 
 

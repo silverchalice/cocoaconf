@@ -130,6 +130,14 @@
 	<g:textField name="tinyName" value="${conference?.tinyName}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'thumbnail', 'error')} ">
+    <label for="thumbnail">
+        <g:message code="conference.thumbnail.label" default="Thumbnail" />
+
+    </label>
+    <g:textField name="thumbnail" value="${conference?.thumbnail}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'status', 'error')} ">
 	<label for="status">
 		<g:message code="conference.status.label" default="Status" />

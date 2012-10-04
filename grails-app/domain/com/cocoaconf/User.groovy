@@ -28,6 +28,9 @@ class User {
 		state nullable:true
 		zip nullable:true
 		choice nullable:true
+		firstName nullable:true
+		lastName nullable:true
+		email nullable:true
 		
 	}
 

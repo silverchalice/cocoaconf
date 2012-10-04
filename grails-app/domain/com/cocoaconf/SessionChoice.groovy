@@ -31,10 +31,12 @@ class SessionChoice {
 	Boolean session28 = false
 	Boolean session29 = false
 	Boolean session30 = false
-
+    String conference
 	static belongsTo = [user:User]
 	
 	Boolean checkProp(String propName){
-		return self."${propName}"
+		def val = this."${propName}"
+		println "checkProp for $propName is $val"
+		return val
 	}
 }

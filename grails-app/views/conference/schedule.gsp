@@ -5,52 +5,18 @@
         <meta name="tab" content="events" />
         <meta name="nav" content="schedule" />
 
-        <link rel="stylesheet" href="${resource(dir:'js/jquery-checkbox', file: 'jquery.checkbox.css')}" />
-        <link rel="stylesheet" href="${resource(dir:'js/jquery-checkbox', file: 'jquery.safari-checkbox.css')}"/>
-
-        <script type="text/javascript" src="${resource(dir:'js/jquery-checkbox', file: 'jquery.js')}"></script>
-        <script type="text/javascript" src="${resource(dir:'js/jquery-checkbox', file: 'jquery.checkbox.min.js')}"></script>
-
+		<script lib="jquery />
+		
         <script type="text/javascript">
             $(document).ready(function() {
-                $('input:checkbox:not([safari])').checkbox();
-                $('input[safari]:checkbox').checkbox({cls:'jquery-safari-checkbox'});
-                $('input:radio').checkbox();
-
-                $(":checkbox").click(function() {
-                    $(this).siblings().removeAttr('checked');
-                });
-
+	
+				$('input:checkbox').click(function() {
+					var rowClass = $(this).attr('class');
+				    $('.' + rowClass).filter(':checked').not(this).removeAttr('checked');
+				    $(this).prop("checked", true);
+				});
+				
             });
-
-            displayForm = function (elementId)
-            {
-                var content = [];
-                $('#' + elementId + ' input').each(function(){
-                    var el = $(this);
-                    if ( (el.attr('type').toLowerCase() == 'radio'))
-                    {
-                        if ( this.checked )
-                            content.push([
-                                '"', el.attr('name'), '": ',
-                                'value="', ( this.value ), '"',
-                                ( this.disabled ? ', disabled' : '' )
-                            ].join(''));
-                    }
-                    else
-                        content.push([
-                            '"', el.attr('name'), '": ',
-                            ( this.checked ? 'checked' : 'not checked' ),
-                            ( this.disabled ? ', disabled' : '' )
-                        ].join(''));
-                });
-                alert(content.join('\n'));
-            };
-
-            changeStyle = function(skin)
-            {
-                jQuery('#myform :checkbox').checkbox((skin ? {cls: skin} : {}));
-            }
 
         </script>
 
@@ -173,7 +139,10 @@
     </head>
 
     <body>
-        <g:set var="ix" value="${1}" />
+	    <sec:ifLoggedIn>
+            <g:set var="ix" value="${1}" />
+            <form id="myForm" name="myForm" action="pickSessions">
+	    </sec:ifLoggedIn>
         <div id="confSidebar">
             <g:render template="confNav" model="['conference': conference, 'current': 'schedule']" />
         </div>
@@ -240,19 +209,33 @@
 			                    ${sess?.presentation?.speaker}
 			                  </g:link>
 			                </span>
-			                <sec:ifLoggedIn>
-			                    <br/>
-			                    <g:set var="sessionName" value="${'session' + ix++}" />
-			                    <input type="checkbox" name="${sessionName}" ${choice?.checkProp(sessionName) ? "checked='checked'" : ''} />
-			                </sec:ifLoggedIn>
 			              </td>
                         </g:else>
                     </g:each>
                     </tr>
+                    <sec:ifLoggedIn>
+                      <g:if test="${sessions.size() > 1 && !(sessions[0].presentation?.title?.contains('Tutorial'))}">
+	                    <tr>
+		                  <td align="center" width="75" align="center" class="time"></td>
+		                  <g:each in="${sessions.sort{it.track}}" var="sess">
+		                    <td align="center" width="200" class="track${sess?.track}">
+	                          <g:set var="sessionName" value="${'session' + ix++}" />
+	                          <g:set var="selected" value="${choice?.checkProp(sessionName)}" />
+	                          <input type="checkbox" class="row${dayMap.day}-${slot.key}" name="${sessionName}" ${selected ? "checked='checked'" : ''} />
+	                        </td>
+	                      </g:each>
+	                    </tr>
+	                  </g:if>
+	                </sec:ifLoggedIn>
                 </g:each>
                 </table>
             </g:each>
-
+            <sec:ifLoggedIn>
+                <input type="hidden" name="tinyName" value="${tinyName}" />
+				<br/>
+                <input type="submit" value="Save Session Selections" style="float:right;" />
+                </form>
+            </sec:ifLoggedIn>
         </div>
         <div style="clear: both"></div>
     </body>
