@@ -142,6 +142,10 @@ class UrlMappings {
             controller = "home"
             action = "chicago_slides"
         }
+        "/events"{
+            controller = "home"
+            action = "events"
+        }
 		"500"(view:'/error')
 	}
 }
