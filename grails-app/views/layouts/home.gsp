@@ -97,12 +97,12 @@
 
                 <a href="${request.contextPath}/chicago-2013/home">
                     <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'chicago.png')}) no-repeat bottom;">
-                        <div class="conferenceCellName">Elk Grove, IL - March 7 - 9 </div>
+                        <div class="conferenceCellName">Chicago, IL - March 7 - 9 </div>
                     </div>
                 </a>
                 <a href="${request.contextPath}/dc-2013/home">
                     <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'dc.png')}) no-repeat bottom;">
-                        <div class="conferenceCellName">Herndon, VA - March 21 - 23</div>
+                        <div class="conferenceCellName">Washington, DC - March 21 - 23</div>
                     </div>
                 </a>
                 <a href="${request.contextPath}/dallas-2012/home">

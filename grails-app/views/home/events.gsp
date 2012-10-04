@@ -79,11 +79,8 @@
 <body>
 <h1>Upcoming Events</h1>
 
-<p>We should probably have some blurbage here. We should probably have some blurbage here. We should probably have some blurbage here.
-We should probably have some blurbage here. We should probably have some blurbage here. We should probably have some blurbage here.
-We should probably have some blurbage here. </p>
-<p>We should probably have some blurbage here. We should probably have some blurbage here. We should probably have some blurbage here. </p>
-
+<p>We are thrilled to be bringing the great technical content, exciting keynotes, fun and informative panels other awesomeness that is CocoaConf to eight cities across the US in 2013. Make your plans now to attend the CocoaConf closest to you or in a city you've been wanting to visit!</p>
+<p><strong>If you would like to be notified when registration opens for any of these events,</strong> just click the image below and enter your email address on the event page. We will let you know about registration before we announce it elsewhere, so you can be sure to get a spot.</p>
 <div class="list">
     <g:each in="${conferenceInstanceList}" status="i" var="conference">
 

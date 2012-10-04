@@ -116,5 +116,5 @@
 
 <div>
 	<label>Role:</label>
-        <g:select name="role" from="${com.cocoaconf.Role.list()}" optionKey="id" value="${it.authority}"  />
+        <g:select name="role" from="${com.cocoaconf.Role.list()}" optionKey="id" value="${it?.authority}"  />
 </div>

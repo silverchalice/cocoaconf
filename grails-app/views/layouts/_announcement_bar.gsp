@@ -13,7 +13,7 @@
 </span>
 <span style="color:#ffffff; float:right; margin-right:20px">
     <sec:ifLoggedIn>
-       <g:link controller="login" action="index">Logout</g:link>
+       <g:link controller="logout" action="index">Logout</g:link>
     </sec:ifLoggedIn>
     <sec:ifNotLoggedIn>
        <g:link controller="login" action="index">Login</g:link>
