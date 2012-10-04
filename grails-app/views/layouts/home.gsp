@@ -105,12 +105,12 @@
                         <div class="conferenceCellName">Washington, DC - March 21 - 23</div>
                     </div>
                 </a>
-                <a href="${request.contextPath}/dallas-2012/home">
+                <a href="${request.contextPath}/dallas-2013/home">
                     <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'dallas.png')}) no-repeat bottom;">
                         <div class="conferenceCellName">Dallas, TX - April 4 - 6</div>
                     </div>
                 </a>
-                <a href="${request.contextPath}/sanjose-2012/home">
+                <a href="${request.contextPath}/sanjose-2013/home">
                     <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'sanjose.png')}) no-repeat bottom;">
                         <div class="conferenceCellName">San Jose, CA - April 18 - 20</div>
                     </div>
