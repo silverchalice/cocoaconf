@@ -1,6 +1,6 @@
 <span>
 	<a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/raleigh-2012/home">
-		CocoaConf Raleigh early bird registration ends October 12th
+		CocoaConf Raleigh ticket sales end November 25th
 	</a>
 </span>
 <span style="color:#C0C0C0; margin-left:30px; margin-right:30px;">
