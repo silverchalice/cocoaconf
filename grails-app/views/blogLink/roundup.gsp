@@ -34,7 +34,7 @@
                 var portland = new flickrshow('portland', {
                     autoplay:true,
                     interval:5000,
-                    'set':'72157630420867714'
+                    'set':'72157631914020050'
                 });
 
             })
@@ -84,7 +84,7 @@
         </g:each>
 
         <h1>CocoaConf DC 2012 Wrap Up!</h1>
-        <div class="flickrGallery" id="robin">
+        <div class="flickrGallery" id="dc">
             <p>Please enable Javascript to view this slideshow</p>
         </div>
 
