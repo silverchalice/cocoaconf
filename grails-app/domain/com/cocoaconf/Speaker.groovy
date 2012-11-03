@@ -29,6 +29,7 @@ class Speaker {
         feed nullable:true
 	    twitter nullable:true
 	    appnet nullable:true
+	    travelInfo nullable:true
     }
 
     static mapping = {
