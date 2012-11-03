@@ -21,6 +21,6 @@ class TravelInfo {
 
 
 
-    String toString(){ "${speaker.firstName} ${speaker.lastName} Travel" }
+    String toString(){ "${speaker?.firstName} ${speaker?.lastName} Travel" }
 
 }
