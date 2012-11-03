@@ -82,6 +82,12 @@
     <div id="sidebar" style="margin: 0 10px;">
         <h1 style="margin-left: 10px; padding-bottom: 15px; color: #1da0d1">Recent Events</h1>
 
+        <a href="${request.contextPath}/portland-2012/home">
+            <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'portland.png')}) no-repeat bottom;">
+                <div class="conferenceCellName">Portland, OR - October 25-27</div>
+            </div>
+        </a>
+
         <a href="${request.contextPath}/columbus-2012/home">
             <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'columbus.png')}) no-repeat bottom; margin-bottom: 30px;">
                 <div class="conferenceCellName">Columbus, Ohio - August 9-11</div>
