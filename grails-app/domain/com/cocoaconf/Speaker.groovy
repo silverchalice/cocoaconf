@@ -12,6 +12,7 @@ class Speaker {
     String feed
 	String twitter
 	String appnet
+	TravelInfo travelInfo
 
     //TODO: remove this
     Boolean current

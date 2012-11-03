@@ -112,7 +112,7 @@ class BlogLinkController {
         }
 
 		def dcBlogLinks = BlogLink.findAllByEvent(Conference.get(4), [sort:'id', order:'desc'])
-		def chicagoBlogLinks = BlogLink.findAllByEvent(Conference.get(3), [sort:'id', order:'desc'])
-		[dcBlogLinks:dcBlogLinks, chicagoLinks:chicagoBlogLinks]
+		def pdxBlogLinks = BlogLink.findAllByEvent(Conference.get(6), [sort:'id', order:'desc'])
+		[dcBlogLinks:dcBlogLinks, pdxLinks:chicagoBlogLinks]
 	}
 }
