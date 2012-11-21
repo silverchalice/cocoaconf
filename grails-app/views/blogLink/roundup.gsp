@@ -70,7 +70,14 @@
                </ul>
             <br/>
         </div>
-
+        <a href="http://localhost:8080/blog/plaid-friday" style="text-align:center">
+	     <div>
+		   <h1>Great Deals for Plaid Friday!</h1>
+	       <img align="center" src="${resource(dir:'images', file: 'PlaidC.png')}" alt="PlaidFriday Sale" width="300px"/>
+	       <p>For 24 hours only, save big on your ticket to CocoaConf Raleigh!</p>
+	      </div>
+	    </a>
+        <br/>
 		<h1>CocoaConf PDX 2012 Wrap Up!</h1>
         <div class="flickrGallery" id="portland">
             <p>Please enable Javascript to view this slideshow</p>

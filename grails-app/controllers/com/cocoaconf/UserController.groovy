@@ -78,116 +78,87 @@ class UserController {
     }
     
     def importUsers = {
-        if (User.findByUsername('cynthia.young@wacom.com')){
+        if (User.findByUsername('lliu@oanda.com')){
             render "Import already run."
             return
         }
         def file = [
-        "Thompson        Patrick     patrick@pthompson.org               ",
-		"Hillhouse       Jim         jimhillhouse@me.com                 ",
-		"Poole           John        john@primatelabs.ca                 ",
-		"Young           Cynthia     cynthia.young@wacom.com             ",
-		"Hanson          Mark        mark.hanson@wacom.com               ",
-		"Gomes           Rick        rgomes@wacom.com                    ",
-		"Barnes          Patrick     pmbarnes@gmail.com                  ",
-		"Brandorff       Steffen     sbrand@imv.au.dk                    ",
-		"Adams           Ron         the4eegroup@gmail.com               ",
-		"Ruffenach       Collin      cruffenach@gmail.com                ",
-		"Barker          Dustin      dustin.barker@gmail.com             ",
-		"So              Bill        hokchun@gmail.com                   ",
-		"Rupp            David       david@ruppworks.com                 ",
-		"Hayter          Ron         rshayter@mac.com                    ",
-		"Bauer           Jon         jon@covelop.org                     ",
-		"Gillespie       Art         art@tapsquare.com                   ",
-		"KETTER          NICK        nketter@gmail.com                   ",
-		"Zhang           Yuduo       yzhang@yammer-inc.com               ",
-		"Weston          Dave        dweston@yammer-inc.com              ",
-		"Roth            David       uzziel@gmail.com                    ",
-		"Medford         Jeremy      jeremymedford@vintagerobotdev.com   ",
-		"Brooks          Tim         usna91@msn.com                      ",
-		"McLeman         Jeff        jeffmc@sidecar.me                   ",
-		"Linnemann       Robert      robertlinnemann@gmail.com           ",
-		"Wineman         Dan         dwineman@gmail.com                  ",
-		"H               Gene        news@littledogmedia.com             ",
-		"Hjelle          Jon         hjon@andyet.net                     ",
-		"Eickmann        Robert      roberte3@gmail.com                  ",
-		"Chambless       Bjorn       bjorn@builtlight.org                ",
-		"Arnold          Tim         tim@timarnold.org                   ",
-		"Pauley          Kyle        kyle@creativetechs.com              ",
-		"Zilberstein     Gene        genia@genia.org                     ",
-		"Bransfield      Jack        jack@builtlight.org                 ",
-		"Olson           Michael     MichaelOlsonApps@gmail.com          ",
-		"Buckley         Michael     michael@buckleyisms.com             ",
-		"Cornaby         Colin       colin.cornaby@mac.com               ",
-		"Howell          Dave        dave@avatron.com                    ",
-		"Pattee          Mike        mike@avatron.com                    ",
-		"Buletti         Heather     heather@avatron.com                 ",
-		"Elliott         Stephen     selliott@avatron.com                ",
-		"Lopez Jr        Jaime       jaime.lopez.jr@gmail.com            ",
-		"Tran            Nghia       scott.tran@gmail.com                ",
-		"Lisac           Will        will@lisac.org                      ",
-		"Wainstock       Scott       ssw@rentrakmail.com                 ",
-		"Karwanski       Michal      michal.karwanski@allegro.pl         ",
-		"Deneka          Daniel      daniel.deneka@allegro.pl            ",
-		"Rakes           Mark        mrakes@me.com                       ",
-		"Rossi           Shiney      srossi@manilla.com                  ",
-		"Lewis           Michael     mlewis@tappin.com                   ",
-		"Savino          Laura       laura.savino@gmail.com              ",
-		"Kasprzyk        David       joragan@gmail.com                   ",
-		"Beck            Craig       craig.beck@bonzalabs.com            ",
-		"Miller          Craig       craig.miller@spatialminds.com       ",
-		"Bentch          Jeremiah    jbentch@gmail.com                   ",
-		"Goracke         Paul        paul@blackpixel.com                 ",
-		"de Saint Salvy  Hugues      hugo@artifiction.net                ",
-		"Hanagan         David       dave@hamagain.com                   ",
-		"Henderson       Brian       brian.henderson@ymail.com           ",
-		"May             Joshua      notjosh@gmail.com                   ",
-		"Irons           Nathaniel   com-cocoaconf@bumppo.net            ",
-		"Read            Noah        noahread@gmail.com                  ",
-		"Sun             Ke          ksun@ballytech.com                  ",
-		"Schmitt         Frank       fschmitt@ballytech.com              ",
-		"Valenzuela      Jorge       jvalenzu@ksu.edu                    ",
-		"McDonald        Adam        adam@xhatch.com                     ",
-		"Dinsmore        Jason       jason@xhatch.com                    ",
-		"Moore           Jake        jake@xhatch.com                     ",
-		"Nucho           Natalie     natalie@anchorfree.com              ",
-		"Connell         Amanda      amanda.connell@apporchard.com       ",
-		"Kim             Kevin       kevin@apporchard.com                ",
-		"Lipscomb Jr.    McAdory     mcadory.lipscomb.jr@apporchard.com  ",
-		"Nason           Neville     neville@sfo2nrt.com                 ",
-		"Smith           Bennett     bennett@focalshift.com              ",
-		"Twist           Josh        josh@molmorg.com                    ",
-		"Williams        Spencer     s@spencerenglish.com                ",
-		"Emmet           Noah        noah@upstartlabs.com                ",
-		"Oslislo         Jennifer    poeks@upstartlabs.com               ",
-		"Guimont         Kelly       kellyg@tuaw.com                     ",
-		"Lucas           Tate        tl@tatelucas.com                    ",
-		"Spahr-Summers   Justin      jspahrsummers@github.com            ",
-		"Pena            Sheree      shereemaria@gmail.com               ",
-		"Hughes          Gordon      gordon@me.com                       ",
-		"Rutherford      Jim         jim.rutherford@gmail.com            ",
-		"Albright        Robb        ralbright@walmartlabs.com           ",
-		"Reagan          Matt        mreagan@walmartlabs.com             ",
-		"Salo            Patrick     newtdude@surewest.net               ",
-		"Terrell         Ilan        ilanterrell@gmail.com               "
-		]
+        "Moser          Steve       service@stevemoser.org                     ",
+        "Johnson        Nick        nickicle@gmail.com                     ",
+        "Stuart         Mark        stuarmark@gmail.com                        ",
+        "Ivers          Doug        doug.ivers@rolemodelsoftware.com           ",
+        "Stough         Abbie       abbie@appsolutegenius.com                  ",
+        "Hope           Erik        erikjhope@gmail.com                        ",
+        "Beaudoin       Jacob       dxjacob@gmail.com                          ",
+        "Evans          Rick        javaswinger@yahoo.com                      ",
+        "Sebeny         Stephen     ssebeny@neo.rr.com                         ",
+        "Crisp          Greg        greg@zo-be.com                             ",
+        "Sebeny         Carl        csebeny@neo.rr.com                         ",
+        "Edwards        Andrew      andrew.edwards.dev@me.com              ",
+        "Liu            Lu          lliu@oanda.com                         ",
+        "Shepherd       Carol       carol@zo-be.com                            ",
+        "Mourant        Ronald      mourant@gmail.com                      ",
+        "moore          Steve       Steve.moore@mac.com                        ",
+        "Fry            Mitch       m.fry@techsmith.com                    ",
+        "Foster         Steve       foster@flightblog.org                      ",
+        "Anderson       Josh        janderson@stepleaderdigital.com            ",
+        "Miller         Christian   christian@pariahware.com                   ",
+        "Tang           Jonathan    jtang@captechconsulting.com                ",
+        "Weller         Trish       trish@mundue.com                           ",
+        "Conigliaro     Sal         sconig@gmail.com                           ",
+        "Bernard        Lismond     lbernard@stepleaderdigital.com         ",
+        "Oldis          David       doldis@stepleaderdigital.com               ",
+        "Bradley        Paul        pbradley@stepleaderdigital.com         ",
+        "Turner         John        john@assistronics.com                      ",
+        "Bowers         Jess        jbow912@me.com                             ",
+        "kendall        rachel      madEthelFlint@gmail.com                ",
+        "Martel         Matt        matt@mundue.com                            ",
+        "Kottu          Rajesh      rkottu@stepleaderdigital.com               ",
+        "Dakessian      Paul        paulsbusinessemail@yahoo.com               ",
+        "Stroh          Eric        estroh@captechconsulting.com               ",
+        "Cipollina      Nicholas    ncipollina@gmail.com                       ",
+        "Ricketts       Eric        ewricketts@me.com                          ",
+        "Sipe           Steve       sesipe@earthlink.net                       ",
+        "Norman         Dustin      dustin.norman@gmail.com                    ",
+        "Usiyan         Thompson    griotspeak@gmail.com                       ",
+        "Marks          Adam        marksfamily@gmail.com                      ",
+        "Zobkiw         Joe         zobkiw@gmail.com                           ",
+        "Lange          Dan         dlange@cardinalsolutions.com               ",
+        "Morgan         Scott       smorgan@cardinalsolutions.com              ",
+        "Kennedy        Matt        mkennedy@fourclouds.com                ",
+        "Norgren        Mark        m@marknorgren.com                      ",
+        "Di Lorenzo     Christian   rcdilorenzo@me.com                         ",
+        "Poolos         Ryan        jbird@superduperinc.com                ",
+        "Lyerly         Jay         jayl@sonicbunny.org                        ",
+        "Maxim          Ben         bmaxim@msufcu.org                          ",
+        "Wismar         Andy        wismar@gmail.com                           ",
+        "McFarling      Matthew     matthew.mcfarling@gmail.com                ",
+        "Hnat           Brian       brian.hnat@tryonsolutions.com              ",
+        "Hayes          Keefe       Keefe.Hayes@sas.com                        ",
+        "Strenglein     Ralph       RStrenglein@gmail.com                      ",
+        "Graham         Dustin      dustin.graham@railinc.com                  ",
+        "Webber         Abe         jbird@superduperinc.com                    ",
+        "Platz          Steve       steve_platz@lord.com                       ",
+        "Owen           Josh        josh.owen@tryonsolutions.com               ",
+        "Beccio         Paul        pjb54@georgetown.edu                       "        
+        ]
 
         
         def attendeeRole = Role.findByAuthority('ROLE_ATTENDEE')
         def records = []
         file.each{line ->
             def data = [:]
-            data.lastName = line[0..15].trim()
-            data.firstName = line[16..27].trim()
-            data.email = line[28..63].trim()
-            data.username = line[28..63].trim()
+            data.lastName = line[0..14].trim()
+            data.firstName = line[15..26].trim()
+            data.email = line[27..63].trim()
+            data.username = line[27..63].trim()
             data.enabled = true
             data.accountExpired = false
             data.accountLocked = false
             data.passwordExpired = false
             def user = new User(data)
             user.password = springSecurityService.encodePassword("cocoaconf")
-            if (!user.save())
+           if (!user.save())
                 user.errors.allErrors.each{println it}
             else
                 UserRole.create user, attendeeRole
@@ -196,10 +167,10 @@ class UserController {
     }
     
     def resetTaha = {
-	    def user = User.get(192)
-	    user.password = springSecurityService.encodePassword("cocoaconf")
-	    user.save()
-	    render "Done!"
+        def user = User.get(192)
+        user.password = springSecurityService.encodePassword("cocoaconf")
+        user.save()
+        render "Done!"
     }
 
     def changePassword = {  
