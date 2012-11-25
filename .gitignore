@@ -12,3 +12,5 @@ target
 .idea/*
 web-app/images/prizes/*
 cocoaconf.iml
+
+.idea/compiler.xml
