@@ -6,7 +6,7 @@
     <meta name="layout" content="events" />
     <meta name="tab" content="events" />
     <g:set var="entityName" value="${message(code: 'speaker.label', default: 'Speaker')}" />
-    <title>CocoaConf | Our Speakers</title>
+    <title>CocoaConf | Upcoming CocoaConf Events</title>
 
     <script type="text/javascript"  src="${resource(dir:'js', file:'jquery.corner.js')}"></script>
     <script type="text/javascript">

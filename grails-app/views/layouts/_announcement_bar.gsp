@@ -1,6 +1,6 @@
 <span>
-	<a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/raleigh-2012/home">
-		CocoaConf Raleigh ticket sales end November 25th!
+	<a style="color:#ff9627; text-decoration: none" href="${request.contextPath}/events">
+		Registration for CocoaConf Spring Tour opening soon!
 	</a>
 </span>
 <!-- <span style="color:#C0C0C0; margin-left:30px; margin-right:30px;">
