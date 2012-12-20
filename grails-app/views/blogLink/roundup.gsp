@@ -76,7 +76,7 @@
     </div>
 
 
-    <a style="text-decoration: none" href="${request.contextPath}/blog"><h1 style="line-height: 20px">A Message From<br/> the CocoaConf Team</h1></a>
+    <a style="text-decoration: none" href="${request.contextPath}/blog"><h1 style="line-height: 32px">A Message From<br/> the CocoaConf Team</h1></a>
 
     <a style="text-decoration: none" href="${request.contextPath}/blog">
     <img id="message" src="${resource(dir:'images', file:'message.jpg')}" alt="Klein Family" />
