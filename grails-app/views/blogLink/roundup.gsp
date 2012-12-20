@@ -24,6 +24,7 @@
                 $('.conferenceHeadlineImage').corner('5px');
                 $('#gallery').corner('5px');
                 $('#about').corner('5px');
+                $('#message').corner('10px');
 
                 var dc = new flickrshow('dc', {
                     autoplay:true,
@@ -58,7 +59,16 @@
         </style>
     </head>
     <body>
-        <div id="about" style="float: right; width:230px; background:#eee; padding: 0 10px; margin:50px 15px 0 15px;">
+
+    <a style="text-decoration: none" href="${request.contextPath}/blog"><h1>A Message From the CocoaConf Team</h1></a>
+
+    <a style="text-decoration: none" href="${request.contextPath}/blog">
+    <img id="message" src="${resource(dir:'images', file:'message.jpg')}" alt="Klein Family" />
+    </a>
+
+
+
+    <div id="about" style="float: right; width:230px; background:#eee; padding: 0 10px; margin:0px 15px 0 15px;">
             <h3>CocoaConf is a technical conference, <span style="color:#1da0d1">pure and simple.</span></h3>
                <p>Instead of vendor booths or vendor keynotes, you'll find:</p>
                <ul style="list-style:none">
@@ -70,6 +80,9 @@
                </ul>
             <br/>
         </div>
+
+
+
 		<h1>CocoaConf PDX 2012 Wrap Up!</h1>
         <div class="flickrGallery" id="portland">
             <p>Please enable Javascript to view this slideshow</p>
@@ -82,16 +95,5 @@
             </div>
         </g:each>
 
-        <h1>CocoaConf DC 2012 Wrap Up!</h1>
-        <div class="flickrGallery" id="dc">
-            <p>Please enable Javascript to view this slideshow</p>
-        </div>
-
-        <g:each in="${dcBlogLinks}" var="link">
-            <div class="blogLink">
-                <h4>${link.title}</h4>
-                <p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
-            </div>
-        </g:each>
     </body>
 </html>
