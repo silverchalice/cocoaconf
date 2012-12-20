@@ -23,12 +23,15 @@
 
 </script>
         <style type="text/css">
+
+
+            .list {
+                width: 640px;
+            }
+
             div.odd img {
                 float: left;
             }
-
-
-
 
             div.even img {
                 float:right;
@@ -42,17 +45,33 @@
                 float:right;
             }
 
+            .paginateButtons a {
+                padding-left:  8px;
+                color: rgb(29, 160, 209)
+
+            }
+
+            .paginateButtons {
+                text-align: center;
+                font-weight: bold;
+                color: rgb(29, 160, 209)
+
+            }
+
         </style>
 
     </head>
     <body>
         <div class="list">
             <g:each in="${postInstanceList}" status="i" var="post">
-                   <g:link controller="post" action="show" params="['slug':post.slug]"><h1>${post.title}</g:link></h1>
-                   <p style="font-size:smaller;">Posted by ${post.postedBy} (<g:formatDate format="MMMM d, yyyy" date="${post.dateCreated}"/>, at <g:formatDate format="HH:mm aa" date="${post.dateCreated}"/>)</p>
-                   ${post.body}
-                   <br />
+                <g:link controller="post" action="show" params="['slug':post.slug]" class="blogTitle"><h1>${post.title}</g:link></h1>
+                <p style="font-size:smaller;">Posted by ${post.postedBy} (<g:formatDate format="MMMM d, yyyy" date="${post.dateCreated}"/>, at <g:formatDate format="HH:mm aa" date="${post.dateCreated}"/>)</p>
+                ${post.body}
+                <hr/>
+                <br />
+
             </g:each>
+            <hr/>
         </div>
 
         <div class="paginateButtons">

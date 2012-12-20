@@ -37,9 +37,7 @@
         </div>
 
         <div class="body">
-                <h1>Session Details</h1>
-
-                <h2 style="color:#35b6ff">${presentation?.title}</h2>
+                <h1 style="color:#35b6ff">${presentation?.title}</h1>
 
                 <div>
                     <div class="speaker" style="background-color: #eeeeee; padding:15px;">

@@ -21,9 +21,35 @@ html {
     color:white
 }
 
-h1 {
-    color:#1da0d1;
+#announcementHeadline a {
+    color:#ff9627;
+    text-decoration: none
 }
+
+#announcementHeadline a:hover {
+    color: #ffac0a;
+}
+
+#authControls {
+    float:right;
+    margin-right:20px
+
+}
+
+#authControls a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#authControls a:hover {
+    color:#35b6ff;
+}
+
+h1 {
+    color:#35b6ff;
+}
+
+
 
 h2 {
     color:#232323;
@@ -99,7 +125,6 @@ body {
     bottom:25px;
     left:220px;
     font-variant:small-caps;
-
 
 }
 
@@ -350,4 +375,11 @@ div.featured img {
     margin: 10px 0 5px 0;
     padding: 5px 5px 5px 30px;
     width:600px;
+}
+
+
+
+.blogTitle {
+    color:#35b6ff;
+    text-decoration: none;
 }

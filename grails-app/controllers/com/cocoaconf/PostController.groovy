@@ -9,7 +9,7 @@ class PostController {
     }
 
     def list = {
-        params.max = Math.min(params.max ? params.int('max') : 10, 100)
+        params.max = Math.min(params.max ? params.int('max') : 4, 100)
         [postInstanceList: Post.list(params), postInstanceTotal: Post.count()]
     }
 
