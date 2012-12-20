@@ -76,6 +76,7 @@
         <div class="body">
             <h1>Register for CocoaConf</h1>
             <h2>What you get</h2>
+            <br/>
             ${conference?.registrationBlurb}
             <p><strong>Group discounts are also available.</strong>  Contact us at <a href="mailto:info@cocoaconf.com">info@cocoaconf.com</a> for details.</p>
             ${conference?.eventBriteBlurb}
