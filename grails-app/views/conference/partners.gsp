@@ -41,7 +41,6 @@
       </div>
 
       <div class="body">
-          <br/>
           <h1>${conference?.description} Partners</h1>
           ${conference?.partnerBlurb}
          <br/>

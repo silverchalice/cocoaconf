@@ -60,27 +60,27 @@
     </head>
     <body>
 
-    <a style="text-decoration: none" href="${request.contextPath}/blog"><h1>A Message From the CocoaConf Team</h1></a>
+
+
+    <div id="about" style="float: right; width:230px; background:#eee; padding: 0 10px; margin:50px 15px 0 15px;">
+        <h3>CocoaConf is a technical conference, <span style="color:#1da0d1">pure and simple.</span></h3>
+        <p>Instead of vendor booths or vendor keynotes, you'll find:</p>
+        <ul style="list-style:none">
+            <li style="margin-left: 5px;"><strong>In-depth</strong> technical sessions.</li>           
+            <li style="margin-bottom:15px; margin-left: 5px;">Multiple <strong>concurrent tracks</strong>.</li>
+            <li style="margin-bottom:15px; margin-left: 5px;">Full-day, hands-on <strong>iOS workshop</strong>.</li>
+            <li style="margin-bottom:15px; margin-left: 5px;">Fun and informative <strong>speaker panel</strong>.</li>
+            <li style="margin-bottom:15px; font-weight: bold">And much more!</li>
+        </ul>
+        <br/>
+    </div>
+
+
+    <a style="text-decoration: none" href="${request.contextPath}/blog"><h1 style="line-height: 20px">A Message From<br/> the CocoaConf Team</h1></a>
 
     <a style="text-decoration: none" href="${request.contextPath}/blog">
     <img id="message" src="${resource(dir:'images', file:'message.jpg')}" alt="Klein Family" />
     </a>
-
-
-
-    <div id="about" style="float: right; width:230px; background:#eee; padding: 0 10px; margin:0px 15px 0 15px;">
-            <h3>CocoaConf is a technical conference, <span style="color:#1da0d1">pure and simple.</span></h3>
-               <p>Instead of vendor booths or vendor keynotes, you'll find:</p>
-               <ul style="list-style:none">
-                   <li style="margin-left: 5px;"><strong>In-depth</strong> technical sessions.</li>           
-                   <li style="margin-bottom:15px; margin-left: 5px;">Multiple <strong>concurrent tracks</strong>.</li>
-                   <li style="margin-bottom:15px; margin-left: 5px;">Full-day, hands-on <strong>iOS workshop</strong>.</li>
-                   <li style="margin-bottom:15px; margin-left: 5px;">Fun and informative <strong>speaker panel</strong>.</li>
-                   <li style="margin-bottom:15px; font-weight: bold">And much more!</li>
-               </ul>
-            <br/>
-        </div>
-
 
 
 		<h1>CocoaConf PDX 2012 Wrap Up!</h1>
