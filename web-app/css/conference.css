@@ -11,14 +11,42 @@ html {
 }
 
 #announcementHeader {
-    width:997px;
+    width:995px;
     background-image:url(../images/bar-bg.png);
     text-align:center;
     height:25px;
     padding-top:8px;
-    margin-bottom:0px;
+    margin:0 0 0 2px;
     font-weight:bold;
     color:white
+}
+
+#announcementHeadline a {
+    color:#ff9627;
+    text-decoration: none
+}
+
+#announcementHeadline a:hover {
+    color: #ffac0a;
+}
+
+#authControls {
+    float:right;
+    margin-right:20px
+
+}
+
+#authControls a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#authControls a:hover {
+    color:#35b6ff;
+}
+
+h1 {
+    color:#35b6ff;
 }
 
 h2 {
