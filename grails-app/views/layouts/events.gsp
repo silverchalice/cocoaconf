@@ -80,7 +80,7 @@
     </div>
 
     <div id="sidebar" style="margin: 0 10px;">
-        <h1 style="margin-left: 10px; padding-bottom: 15px; color: #1da0d1">Recent Events</h1>
+        <h1 style="margin-left: 10px;">Past Events</h1>
 
         <a href="${request.contextPath}/raleigh-2012/home">
             <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'raleigh.jpg')}) no-repeat bottom;">

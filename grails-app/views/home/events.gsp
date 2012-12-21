@@ -77,15 +77,33 @@
 
 </head>
 <body>
-<h1>CocoaConf 2013 Event Schedule</h1>
+<h1>CocoaConf 2013 Spring Tour</h1>
 
 <p>We are thrilled to be bringing the great technical content, exciting keynotes, fun and informative panels other awesomeness that is CocoaConf to <strong>eight cities across the US in 2013</strong>. Make your plans now to attend the CocoaConf closest to you or in a city you've been wanting to visit!</p>
-<p><strong>If you would like to be notified when registration opens for any of these events,</strong> just click the image below and enter your email address on the event page. We will let you know about registration before we announce it elsewhere, so you can be sure to get a spot.</p>
 <div class="list">
-    <g:each in="${conferenceInstanceList}" status="i" var="conference">
+    <g:each in="${activeConferenceList}" status="i" var="conference">
 
         <a href="${createLink(controller: 'conference', action: 'home', params: ['tinyName': conference.tinyName])}"><div class="conferenceCell" style="background: url(${resource(dir: 'images', file: conference.thumbnail )}) no-repeat bottom;">
            <g:if test="${conference.status == 'active'}"><div class="register">Register Now!</div></g:if>
+
+            <div class="conferenceCellDetails">
+                <h3>${conference.description}</h3>
+                ${conference.dates}<br/>
+                ${conference.city}, ${conference.state}
+            </div>
+        </div></a>
+    </g:each>
+</div>
+
+<div class="list">
+    <div style="clear: both; padding-top: 36px">
+        <h1>CocoaConf 2013 Fall Tour</h1>
+        <p><strong>If you would like to be notified when registration opens for any of these events,</strong> just click the image below and enter your email address on the event page. We will let you know about registration before we announce it elsewhere, so you can be sure to get a spot.</p>
+    </div>
+    <g:each in="${pendingConferenceList}" status="i" var="conference">
+
+        <a href="${createLink(controller: 'conference', action: 'home', params: ['tinyName': conference.tinyName])}"><div class="conferenceCell" style="background: url(${resource(dir: 'images', file: conference.thumbnail )}) no-repeat bottom;">
+            <g:if test="${conference.status == 'active'}"><div class="register">Register Now!</div></g:if>
 
             <div class="conferenceCellDetails">
                 <h3>${conference.description}</h3>

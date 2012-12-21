@@ -22,31 +22,36 @@
 
 </script>
         <style type="text/css">
-            div.odd img {
-                float: left;
-            }
 
 
+        .list {
+            width: 640px;
+        }
 
+        div.odd img {
+            float: left;
+        }
 
-            div.even img {
-                float:right;
-            }
+        div.even img {
+            float:right;
+        }
 
-            div.even div.bio {
-                float:left;
-            }
+        div.even div.bio {
+            float:left;
+        }
 
-            div.odd div.bio {
-                float:right;
-            }
+        div.odd div.bio {
+            float:right;
+        }
+
 
         </style>
+
 
     </head>
     <body>
         <div class="list">
-               <br /><h1>${postInstance.title}</h1>
+               <h1>${postInstance.title}</h1>
                <p style="font-size:smaller;">Posted by ${postInstance.postedBy} (<g:formatDate format="MMMM d, yyyy" date="${postInstance.dateCreated}"/>, at <g:formatDate format="HH:mm aa" date="${postInstance.dateCreated}"/>)</p>
                ${postInstance.body}
                <p>&#8592; <g:link controller="post" action="list">Blog</g:link></p>

@@ -30,10 +30,10 @@ class HomeController {
 
     def events = {
 
-
-
-
-        [conferenceInstanceList : Conference.findAllByStatusNotInList([Conference.COMPLETED], [sort: 'startDate'])]
+        [
+            activeConferenceList : Conference.findAllByStatus(Conference.ACTIVE, [sort: 'startDate']),
+            pendingConferenceList : Conference.findAllByStatus(Conference.PENDING, [sort: 'startDate'])
+        ]
 
     }
 
