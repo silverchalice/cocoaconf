@@ -79,7 +79,7 @@
 <body>
 <h1>CocoaConf 2013 Spring Tour</h1>
 
-<p>We are thrilled to be bringing the great technical content, exciting keynotes, fun and informative panels other awesomeness that is CocoaConf to <strong>eight cities across the US in 2013</strong>. Make your plans now to attend the CocoaConf closest to you or in a city you've been wanting to visit!</p>
+<p>We are thrilled to be bringing the great technical content, exciting keynotes, fun and informative panels and all the awesomeness that is CocoaConf to <strong>eight cities across the US in 2013</strong>. Make your plans now to attend the CocoaConf closest to you or in a city you've been wanting to visit!</p>
 <div class="list">
     <g:each in="${activeConferenceList}" status="i" var="conference">
 
