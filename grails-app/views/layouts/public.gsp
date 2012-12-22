@@ -4,7 +4,7 @@
     <head>
         <title><g:layoutTitle default="Grails" /></title>
         <link rel="stylesheet" href="${resource(dir:'css',file:'public.css')}" />
-        <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
+        <g:render template="/layouts/favicons" />
         <feed:meta kind="atom" version="1.0" controller="post" action="feed"/>
         <g:layoutHead />
         <script type="text/javascript">

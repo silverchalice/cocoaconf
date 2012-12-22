@@ -4,7 +4,7 @@
     <head>
         <title><g:layoutTitle default="CocoaConf" /></title>
         <link rel="stylesheet" href="${resource(dir:'css',file:'conference.css')}" />
-        <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
+        <g:render template="/layouts/favicons" />
         <g:javascript library="jquery" plugin="jquery"/>
 
         <feed:meta kind="atom" version="1.0" controller="post" action="feed"/>
