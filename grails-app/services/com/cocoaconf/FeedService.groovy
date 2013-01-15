@@ -15,7 +15,8 @@ class FeedService {
         if(speaker && speaker.feed){
             URL feedUrl = new URL(speaker.feed)
             SyndFeedInput input = new SyndFeedInput()
-            SyndFeed feed = input.build(new XmlReader(feedUrl))
+            try {
+                SyndFeed feed = input.build(new XmlReader(feedUrl))
 
 /*            println "the titles here are ${feed.entries.collect{it.title}}"
 
@@ -32,12 +33,16 @@ class FeedService {
             }
             println "\n"
 */
-            feed.entries.each {
-                def e = new FeedEntry(title: it.title, link: it.link, body: it.contents[0]?.value ?: it.description?.value, published: it.publishedDate ?: it.updatedDate, speakerId: speaker.id)
-                if(!FeedEntry.findByTitleAndSpeakerId(it.title, speaker.id)){
-                    entrification.add(e)
-                    e.save(failOnError:true)
-                } 
+                feed.entries.each {
+                    def e = new FeedEntry(title: it.title, link: it.link, body: it.contents[0]?.value ?: it.description?.value, published: it.publishedDate ?: it.updatedDate, speakerId: speaker.id)
+                    if(!FeedEntry.findByTitleAndSpeakerId(it.title, speaker.id)){
+                        entrification.add(e)
+                        e.save(failOnError:true)
+                    } 
+                }
+            } catch (Exception e) {
+                println "o nooes there WAS an EXCEPTION!!! ..printed it now..."
+                println "Error fetching feed items from ${speaker.firstName} ${speaker.lastName}'s feed: " + e.message
             }
         }
         return entrification
