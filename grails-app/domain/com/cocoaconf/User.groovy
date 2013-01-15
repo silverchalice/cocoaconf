@@ -18,6 +18,8 @@ class User {
 	boolean passwordExpired
     boolean temporaryPassword
 	SessionChoice choice
+
+    static hasMany = [conferences : Conference]
 	
 	static constraints = {
 		username blank: false, unique: true
