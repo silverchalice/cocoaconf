@@ -76,11 +76,11 @@
     </div>
 
 
-    <a style="text-decoration: none" href="${request.contextPath}/blog"><h1 style="line-height: 32px">A Message From<br/> the CocoaConf Team</h1></a>
-
-    <a style="text-decoration: none" href="${request.contextPath}/blog">
-    <img id="message" src="${resource(dir:'images', file:'message.jpg')}" alt="Klein Family" />
-    </a>
+    <a style="text-decoration: none" href="${request.contextPath}/blog/2013-spring-tour"><h1 style="line-height: 32px">CocoaConf in 2013</h1></a>
+    <a href="${request.contextPath}/blog/2013-spring-tour"><img src="http://cocoaconf.com/images/DSC_0774.JPG" width="420" height="280" /></a><br />
+    <p>As we all get ready for 2013 and even more exciting tools and technology coming out of Cupertino, we are preparing even more great training events to help you take advantage of it all.</p>
+    <p><a href="${request.contextPath}/blog/2013-spring-tour">Continue reading...</a></p>
+    <p>&nbsp;</p>
 
 
 		<h1>CocoaConf PDX 2012 Wrap Up!</h1>
