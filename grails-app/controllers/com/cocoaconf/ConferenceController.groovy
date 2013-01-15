@@ -139,7 +139,7 @@ class ConferenceController {
         if (conf){
             schedule = scheduleService.loadScheduleMap(conf)
            // println "!! yayz!!!!!1 and the schedule was: " + schedule
-            [schedule:schedule, conference:conf, tinyName:params.tinyName, choice:user?.choice]
+            [schedule:schedule, conference:conf, tinyName:params.tinyName, choice:user?.choice, registered: user?.conferences.collect { it.id }.contains(conf.id) ? true : false]
         } else {
             redirect controller: "home"
         }
