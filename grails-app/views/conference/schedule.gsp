@@ -214,18 +214,20 @@
                     </g:each>
                     </tr>
                     <sec:ifLoggedIn>
-                      <g:if test="${sessions.size() > 1 && !(sessions[0].presentation?.title?.contains('Tutorial'))}">
-	                    <tr>
-		                  <td align="center" width="75" align="center" class="time"></td>
-		                  <g:each in="${sessions.sort{it.track}}" var="sess">
-		                    <td align="center" width="200" class="track${sess?.track}">
-	                          <g:set var="sessionName" value="${'session' + ix++}" />
-	                          <g:set var="selected" value="${choice?.checkProp(sessionName)}" />
-	                          <input type="checkbox" class="row${dayMap.day}-${slot.key}" name="${sessionName}" ${selected ? "checked='checked'" : ''} />
-	                        </td>
-	                      </g:each>
-	                    </tr>
-	                  </g:if>
+                      <g:if test="${registered}">
+                          <g:if test="${sessions.size() > 1 && !(sessions[0].presentation?.title?.contains('Tutorial'))}">
+    	                    <tr>
+    		                  <td align="center" width="75" align="center" class="time"></td>
+    		                  <g:each in="${sessions.sort{it.track}}" var="sess">
+    		                    <td align="center" width="200" class="track${sess?.track}">
+    	                          <g:set var="sessionName" value="${'session' + ix++}" />
+    	                          <g:set var="selected" value="${choice?.checkProp(sessionName)}" />
+    	                          <input type="checkbox" class="row${dayMap.day}-${slot.key}" name="${sessionName}" ${selected ? "checked='checked'" : ''} />
+    	                        </td>
+    	                      </g:each>
+    	                    </tr>
+    	                  </g:if>
+                        </g:if>
 	                </sec:ifLoggedIn>
                 </g:each>
                 </table>
