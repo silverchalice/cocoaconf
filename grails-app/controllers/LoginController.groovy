@@ -77,6 +77,7 @@ class LoginController {
 	 * Show denied page.
 	 */
 	def denied = {
+        println "Entering LoginController:denied..."
 		if (springSecurityService.isLoggedIn() &&
 				authenticationTrustResolver.isRememberMe(SCH.context?.authentication)) {
 			// have cookie but the page is guarded with IS_AUTHENTICATED_FULLY
@@ -98,28 +99,29 @@ class LoginController {
 	 * Callback after a failed login. Redirects to the auth page with a warning message.
 	 */
 	def authfail = {
+        println "Entering LoginController:authfail..."
 		def username = session[UsernamePasswordAuthenticationFilter.SPRING_SECURITY_LAST_USERNAME_KEY]
 		String msg = ''
 		def exception = session[WebAttributes.AUTHENTICATION_EXCEPTION]
 		if (exception) {
 			if (exception instanceof AccountExpiredException) {
                 println "account expired"
-				msg = SpringSecurityUtils.securityConfig.errors.login.expired
+				msg = "Sorry, this account is expired"
 			}
 			else if (exception instanceof CredentialsExpiredException) {
                 println "credentials expired"
-				msg = SpringSecurityUtils.securityConfig.errors.login.passwordExpired
+                msg = "Sorry, this account is expired"
 			}
 			else if (exception instanceof DisabledException) {
                 println "disabled"
-				msg = SpringSecurityUtils.securityConfig.errors.login.disabled
+                msg = "Sorry, this account is disabled"
 			}
 			else if (exception instanceof LockedException) {
                 println "locked"
-				msg = SpringSecurityUtils.securityConfig.errors.login.locked
+                msg = "Sorry, this account is locked"
 			}
 			else {
-				msg = SpringSecurityUtils.securityConfig.errors.login.fail
+				msg ="Oops! Wrong username or password - please try again!"
 			}
 		}
 
@@ -143,6 +145,7 @@ class LoginController {
 	 * The Ajax denied redirect url.
 	 */
 	def ajaxDenied = {
+        println "Entering LoginController:ajaxDenied..."
 		render([error: 'access denied'] as JSON)
 	}
 
