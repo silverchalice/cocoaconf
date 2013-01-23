@@ -119,7 +119,8 @@
                 <br/>
                 <h2>Our Sponsors</h2>
                 <br/>
-                ${conference?.sponsorListBlurb}
+				<a href="http://www.windowsazure.com/ios"><img src="${resource(dir:'images', file:'WinAzure_200.png')}" /></a>
+                <br/>
                 <a href="${resource(dir:'images', file:'sponsorship.pdf')}">Sponsorship Opportunities Available</a>
                 <br/><br/>
             </div>
@@ -130,7 +131,7 @@
            </div>
            <div style="clear: both"></div>
            <div id="footer">
-               <p>Copyright &copy; 2012 Simply Cocoa, LLC. Site by <a href="http://silver-chalice.com">Silver Chalice</a>, LLC.</p>
+               <p>Copyright &copy; 2013 Simply Cocoa, LLC. Site by <a href="http://silver-chalice.com">Silver Chalice</a>, LLC.</p>
            </div>
         </div>
     </body>
