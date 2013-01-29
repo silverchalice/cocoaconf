@@ -12,4 +12,8 @@ class Sponsorship {
 	    partner()
 	    level(inList:['basic', 'silver', 'gold', 'platinum', 'usergroup', 'individual'])
     }
+
+    String toString() {
+        return "$partner.name: $conference.tinyName"
+    }
 }

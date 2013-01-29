@@ -81,6 +81,11 @@ class Conference {
         featuredSpeakers type:'text'
         sponsorListBlurb type:'text'
     }
+
+
+    String toString() {
+        return tinyName
+    }
 }
 
 

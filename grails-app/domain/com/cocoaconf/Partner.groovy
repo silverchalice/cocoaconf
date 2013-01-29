@@ -18,4 +18,8 @@ class Partner {
 		logoStyle1(nullable:true, blank:true)
 		logoStyle2(nullable:true, blank:true)
     }
+
+    String toString() {
+        return name
+    }
 }
