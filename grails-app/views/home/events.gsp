@@ -99,6 +99,7 @@
     <div style="clear: both; padding-top: 36px">
         <h1>CocoaConf 2013 Fall Tour</h1>
         <p><strong>If you would like to be notified when registration opens for any of these events,</strong> just click the image below and enter your email address on the event page. We will let you know about registration before we announce it elsewhere, so you can be sure to get a spot.</p>
+		<p><strong>Please note that our Fall dates are all tentative and likely to change.  We will announce firm dates once we have them.</strong></p>
     </div>
     <g:each in="${pendingConferenceList}" status="i" var="conference">
 
