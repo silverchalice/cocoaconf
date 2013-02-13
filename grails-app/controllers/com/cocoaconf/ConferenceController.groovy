@@ -218,8 +218,8 @@ class ConferenceController {
 //	    params.each{key, val -> println "$key == $val"}
 	    def conf = Conference.get(params.confId)
 	    def speaker = Speaker.get(params.id)
-	    def speakerPresentations = conf.sessions.findAll{it?.presentation?.speaker?.id == speaker.id}.collect{it.presentation}
-	    def feedEntries = FeedEntry.findAllBySpeakerId(speaker.id, [max:3, sort:'published', order:'desc'])
+	    def speakerPresentations = conf?.sessions?.findAll{it?.presentation?.speaker?.id == speaker?.id}.collect{it?.presentation}
+	    def feedEntries = FeedEntry.findAllBySpeakerId(speaker?.id, [max:3, sort:'published', order:'desc'])
 //	    speakerPresentations.each{println it}
 	    if (conf && speaker){
 		    return[conference:conf, speaker:speaker, 
