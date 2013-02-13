@@ -11,6 +11,8 @@
 		CocoaConf PDX ticket sales end October 21st
 	</a>
 </span> -->
+
+<!--
 <span id="authControls">
     <sec:ifLoggedIn>
        <g:link controller="logout" action="index">Logout</g:link>
@@ -19,3 +21,4 @@
        <g:link controller="login" action="index">Login</g:link>
     </sec:ifNotLoggedIn>
 </span>
+    -->
