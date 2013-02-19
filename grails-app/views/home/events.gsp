@@ -97,22 +97,8 @@
 
 <div class="list">
     <div style="clear: both; padding-top: 36px">
-        <h1>CocoaConf 2013 Fall Tour</h1>
-        <p><strong>If you would like to be notified when registration opens for any of these events,</strong> just click the image below and enter your email address on the event page. We will let you know about registration before we announce it elsewhere, so you can be sure to get a spot.</p>
-		<p><strong>Please note that our Fall dates are all tentative and likely to change.  We will announce firm dates once we have them.</strong></p>
-    </div>
-    <g:each in="${pendingConferenceList}" status="i" var="conference">
-
-        <a href="${createLink(controller: 'conference', action: 'home', params: ['tinyName': conference.tinyName])}"><div class="conferenceCell" style="background: url(${resource(dir: 'images', file: conference.thumbnail )}) no-repeat bottom;">
-            <g:if test="${conference.status == 'active'}"><div class="register">Register Now!</div></g:if>
-
-            <div class="conferenceCellDetails">
-                <h3>${conference.description}</h3>
-                ${conference.dates}<br/>
-                ${conference.city}, ${conference.state}
-            </div>
-        </div></a>
-    </g:each>
+        <h1>Check back soon for more information</h1>
+        <h1>about our 2013 Fall Tour</h1>
 
 </div>
 </body>
