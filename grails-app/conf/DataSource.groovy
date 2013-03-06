@@ -18,7 +18,7 @@ environments {
 			username = "cocoaconf"
 			password = "cc5551212"
 			dbCreate = "update"
-            url = "jdbc:mysql://207.223.253.64:3306/cocoaDb"
+            url = "jdbc:mysql://66.116.97.250:3306/cocoaDb"
 			dialect=org.hibernate.dialect.MySQLInnoDBDialect
             properties {
 				validationQuery="select 1"

@@ -119,6 +119,7 @@
                 <br/>
 				<a href="http://www.windowsazure.com/ios"><img src="${resource(dir:'images', file:'WinAzure_200.png')}" /></a>
                 <br/>
+				<a href="http://www.shinobicontrols.com"><img src="${resource(dir:'images', file:'shinobi_square.jpg')}" /></a>
                 <a href="${resource(dir:'images', file:'sponsorship.pdf')}">Sponsorship Opportunities Available</a>
                 <br/><br/>
             </div>

@@ -146,6 +146,14 @@ class UrlMappings {
             controller = "home"
             action = "events"
         }
+		"/speaker.json"{
+			controller = "remote"
+			action = "getSpeaker"
+		}
+		"/session.json"{
+			controller = "remote"
+			action = "getSession"
+		}
 		"500"(view:'/error')
 	}
 }
