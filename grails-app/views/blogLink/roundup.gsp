@@ -22,8 +22,8 @@
             $(document).ready(function() {
 
                 $('.conferenceHeadlineImage').corner('5px');
-                $('#gallery').corner('5px');
-                $('#about').corner('5px');
+                $('#gallery').corner('10px');
+                $('#about').corner('10px');
                 $('#message').corner('10px');
 
                 var dc = new flickrshow('dc', {
