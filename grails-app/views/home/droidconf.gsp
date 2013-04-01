@@ -153,16 +153,23 @@
 
         <div id="right_container">
             <div id="about">
-                <p style="font-weight: bold"><span style="color:#3BCE00;">DroidConf</span> brings a plethora of practical advice and timely insights for Android developers of any skill level, kernel version or screen size, including:</p>
+                <p style="font-weight: bold"><span style="color:#3BCE00;">DroidConf</span> brings a plethora of practical advice and timely insights to Android developers of any skill level, kernel version or screen size, including:</p>
                 <ul style="list-style:circle">
-                    <li style="margin-bottom:15px;">Android for iOS Developers.</li>
+                    <li style="margin-bottom:15px;">Android For iOS Developers.</li>
                     <li style="margin-bottom:15px;">Spice Up Your Java With XML.</li>
+<<<<<<< HEAD
                     <li style="margin-bottom:15px;">Eclipse: It Really is an IDE.</li>
                     <li style="margin-bottom:15px;">Innovation is Overrated.</li>
                     <li style="margin-bottom:15px;">Designing For The Lowest Common Denominator</li>
                     <li style="margin-bottom:15px;">Bodybuilding With The Galaxy S4s</li>
+=======
+                    <li style="margin-bottom:15px;">Eclipse: It Really Is An IDE.</li>
+                    <li style="margin-bottom:15px;">Innovation Is Overrated.</li>
+                    <li style="margin-bottom:15px;">Designing For The Least Common Denominator</li>
+                    <li style="margin-bottom:15px;">Bodybuilding With The Galaxy S4s.</li>
+>>>>>>> fbe67ebb0148667582e97ea65ab1ba6d7e83ea6b
                 </ul>
-                <p>And be sure to join us for our exclusive developer show-and-tell:</p>
+                <p>And be sure to join us for our exclusive developer show-and-tell panel:</p>
                 <ul style="list-style:circle">
                     <li style="margin-bottom:15px"><strong>We Ported An App For That!</strong></li>
                 </ul>
@@ -170,13 +177,17 @@
                 <br>
             </div>
 
+<<<<<<< HEAD
             <a href="http://twitter.com/cocoaconf"><img src="${resource(dir:'images', file:'follow-droidconf.png')}" style="margin-top: 20px" alt="Follow us on Twitter!"/></a>
 
         </div>
 
             <a style="text-decoration: none;" href="/blog/2013-spring-tour"><h1 style="font-size: 52px; line-height: 52px">We've Been Ported!</h1></a>
+=======
+            <a style="text-decoration: none;" href="/blog/2013-spring-tour"><h1 style="font-size: 52px; line-height: 52px">We&#8217;ve Been Ported!</h1></a>
+>>>>>>> fbe67ebb0148667582e97ea65ab1ba6d7e83ea6b
             <p><img src="${resource(dir:'images', file: 'droidconf-small.png')}" alt="DroidConf" style="float:left; margin-right:8px;"/>
-                In light of recent changes in the market &#8212; such as the way Samsung and other manufacturers continue to dominate the smart phone industry, and the way Apple refuses to meet customer demands for larger, more full-featured phones &#8212; it&#8217;s become clear to us that <strong>Android is winning</strong>.</p>  <p>So rather than continue to serve a dying market, we&#8217;ve decided to adapt to the situation.
+                In light of recent changes in the market &#8212; such as the way Samsung and other manufacturers continue to dominate the smartphone industry, and the way Apple refuses to meet customer demands for larger, more full-featured phones &#8212; it&#8217;s become clear to us that <strong>Android is winning</strong>.</p>  <p>So rather than continue to serve a dying market, we&#8217;ve decided to adapt to the situation.
             </p>
             <p>
                 <img style="float:left" src="${resource(dir:'images', file:'android.png')}" alt="" />
@@ -193,7 +204,7 @@
                We are pleased to introduce to you <span style="font-weight: bold; color:#3BCE00;">DroidConf</span>, the conference for Nexus 4 and Galaxy S3 and Xperia Z and Galaxy Note and Galaxy Note II and Galaxy Note 8 and Xperia ZL and Galaxy Note 10 and Galaxy S4 and HTC One and Droid RAZR MAXX HD and Nexus 7 and Nexus 10 and AT300 developers.
            </p>
         <p><img src="${resource(dir: 'images', file: 'samsung-lineup.png')}" alt=""></p>
-        <p style="font-size: smaller">(We will update our slogan as additional device profiles are tested for compatibility)</p>
+        <p style="font-size: smaller">(We will update our slogan as additional device profiles are tested for compatibility.)</p>
             <p>&nbsp;</p>
 
 
