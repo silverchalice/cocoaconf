@@ -101,16 +101,11 @@ class BlogLinkController {
 	def roundup = {
 
         if(session.fooled) {
-            Conference.list().each {
-                println "$it.id $it"
-            }
-
-            def dcBlogLinks = BlogLink.findAllByEvent(Conference.get(4), [sort:'id', order:'desc'])
+            def dcBlogLinks = BlogLink.findAllByEvent(Conference.get(9), [sort:'id', order:'desc'])
             def pdxBlogLinks = BlogLink.findAllByEvent(Conference.get(6), [sort:'id', order:'desc'])
             [dcBlogLinks:dcBlogLinks, pdxBlogLinks:pdxBlogLinks]
-        } else {
-            redirect controller: 'home', action: 'droidconf'
+        }  else {
+            redirect(controller: 'home', action: 'droidconf')
         }
-
 	}
 }

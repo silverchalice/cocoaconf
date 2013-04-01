@@ -29,7 +29,7 @@
                 var dc = new flickrshow('dc', {
                     autoplay:true,
                     interval:5000,
-                    'set':'72157630420867714'
+                    'set':'72157633094975265'
                 });
 
                 var portland = new flickrshow('portland', {
@@ -76,19 +76,20 @@
     </div>
 
 
-    <a style="text-decoration: none" href="${request.contextPath}/blog/2013-spring-tour"><h1 style="line-height: 32px">CocoaConf in 2013</h1></a>
+    <a style="text-decoration: none" href="${request.contextPath}/blog/2013-spring-tour"><h1 style="line-height: 32px">April Fools!</h1></a>
     <a href="${request.contextPath}/blog/2013-spring-tour"><img src="http://cocoaconf.com/images/DSC_0774.JPG" width="420" height="280" /></a><br />
-    <p>As we all get ready for 2013 and even more exciting tools and technology coming out of Cupertino, we are preparing even more great training events to help you take advantage of it all.</p>
-    <p><a href="${request.contextPath}/blog/2013-spring-tour">Continue reading...</a></p>
-    <p>&nbsp;</p>
+	<p>Don&#8217;t worry &#8212; we&#8217;re not <em>that</em> crazy.  We will continue to gather the best and the brightest in the Apple developer community and bring them close to home for you.</p>
+	<p>We still have seats available for our <a href="http://cocoaconf.com/dallas-2013/home">Dallas</a> and <a href="http://cocoaconf.com/sanjose-2013/home">San Jose</a> events coming up this month.</p>
+	<p>And today (4/1/13) only, because we&#8217;re feeling a bit foolish, we&#8217;re offering a 20% discount on any ticket. Just use the coupon code <strong>AprilFool</strong> when you register for either the <a href="http://cocoaconf.com/dallas-2013/register">Dallas</a> or <a href="http://cocoaconf.com/sanjose-2013/register">San Jose</a> events!</p>
+	<p>&nbsp;</p>
 
 
-		<h1>CocoaConf PDX 2012 Wrap Up!</h1>
-        <div class="flickrGallery" id="portland">
+		<h1>CocoaConf DC 2013 Wrap Up!</h1>
+        <div class="flickrGallery" id="dc">
             <p>Please enable Javascript to view this slideshow</p>
         </div>
 
-        <g:each in="${pdxBlogLinks}" var="link">
+        <g:each in="${dcBlogLinks}" var="link">
             <div class="blogLink">
                 <h4>${link.title}</h4>
                 <p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
