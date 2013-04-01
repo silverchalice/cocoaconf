@@ -25,6 +25,7 @@
     <meta name="tab" content="home">
 
     <link href="/css/custom/jquery-ui-1.8.11.custom.css" rel="stylesheet" type="text/css">
+    <link href="/js/jquery-simplyscroll-2/jquery.simplyscroll.css" rel="stylesheet" type="text/css">
 
     <script src="/js/jquery-1.6.2.min.js" type="text/javascript"></script>
     <script src="/js/jquery/marquee.js" type="text/javascript"></script>
@@ -99,7 +100,8 @@
             $("#about").corner("15px");
             $(".conferenceCellName").corner("5px bottom");
             $(".featured img").corner("8px");
-            $('#slogan').marquee();
+
+            $('#slogan').show().marquee();
 
         })
 
@@ -131,17 +133,25 @@
     </div>
     <div id="logo"><a href="#">
         <img src="/images/dc-logo.png" alt="CocoaConf - the conference for iPhone, iPad and Mac developers" border="0">   </a>
-        <div style="overflow: scroll; height: 19px; width:960px; margin: 0 auto; overflow-y: hidden" >
-            <div id="slogan">
+        <div id="slogan"  style="overflow: scroll; height: 19px; width:960px; margin: 0 auto; overflow-y: hidden" >
+            <div>
                 the conference for <span>LG Nexus 4</span>, <span>HTC One</span>, <span>Samsung Galaxy S3 and S4 and Note and Note 2 and Note 8 and Note 10</span>, <span>Sony Xperia Z & Xperia ZL</span>,  <span>Motorola Droid RAZR MAXX HD</span>, <span>Google Nexus 7 and 10</span>, and <span>Toshiba AT300</span> developers
-            </div>
-
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                the conference for <span>LG Nexus 4</span>, <span>HTC One</span>, <span>Samsung Galaxy S3 and S4 and Note and Note 2 and Note 8 and Note 10</span>, <span>Sony Xperia Z & Xperia ZL</span>,  <span>Motorola Droid RAZR MAXX HD</span>, <span>Google Nexus 7 and 10</span>, and <span>Toshiba AT300</span> developers
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                the conference for <span>LG Nexus 4</span>, <span>HTC One</span>, <span>Samsung Galaxy S3 and S4 and Note and Note 2 and Note 8 and Note 10</span>, <span>Sony Xperia Z & Xperia ZL</span>,  <span>Motorola Droid RAZR MAXX HD</span>, <span>Google Nexus 7 and 10</span>, and <span>Toshiba AT300</span> developers
+         </div>
         </div>
 
     </div>
 
     <div id="content">
 
+        <div id="right_container">
             <div id="about">
                 <p style="font-weight: bold"><span style="color:#3BCE00;">DroidConf</span> brings a plethora of practical advice and timely insights for Android developers of any skill level, kernel version or screen size, including:</p>
                 <ul style="list-style:circle">
@@ -149,7 +159,7 @@
                     <li style="margin-bottom:15px;">Spice Up Your Java With XML.</li>
                     <li style="margin-bottom:15px;">Eclipse: It Really is an IDE.</li>
                     <li style="margin-bottom:15px;">Innovation is Overrated.</li>
-                    <li style="margin-bottom:15px;">Designing For The Least Common Denominator</li>
+                    <li style="margin-bottom:15px;">Designing For The Lowest Common Denominator</li>
                     <li style="margin-bottom:15px;">Bodybuilding With The Galaxy S4s</li>
                 </ul>
                 <p>And be sure to join us for our exclusive developer show-and-tell:</p>
@@ -159,6 +169,10 @@
 
                 <br>
             </div>
+
+            <a href="http://twitter.com/cocoaconf"><img src="${resource(dir:'images', file:'follow-droidconf.png')}" style="margin-top: 20px" alt="Follow us on Twitter!"/></a>
+
+        </div>
 
             <a style="text-decoration: none;" href="/blog/2013-spring-tour"><h1 style="font-size: 52px; line-height: 52px">We've Been Ported!</h1></a>
             <p><img src="${resource(dir:'images', file: 'droidconf-small.png')}" alt="DroidConf" style="float:left; margin-right:8px;"/>

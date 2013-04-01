@@ -30,8 +30,12 @@ html {
     color: #ffac0a;
 }
 
+#right_container {
+    float: right;
+}
+
 #about {
-    float: right; width: 270px; background-color: rgb(238, 238, 238); padding: 0px 10px; margin: 0 15px 0px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; background-position: initial initial; background-repeat: initial initial;
+    width: 270px; background-color: rgb(238, 238, 238); padding: 5px 10px; margin: 0 15px 0px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; background-position: initial initial; background-repeat: initial initial;
 }
 
 #authControls {
