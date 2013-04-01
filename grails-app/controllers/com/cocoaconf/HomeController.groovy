@@ -1,6 +1,7 @@
 package com.cocoaconf
 
 import org.codehaus.groovy.grails.commons.ConfigurationHolder
+import org.springframework.web.context.request.RequestContextHolder as RCH
 
 //`Oh! captive, bound, and double-ironed,' cried the phantom, `not to know, that ages of incessant labour, by immortal creatures, for this earth must pass into eternity before the good of which it is susceptible is all developed.
 
@@ -88,5 +89,11 @@ class HomeController {
         def speaker = Speaker.findByLastName("Dudney")
         feedService.latestFromSpeaker(speaker?.id)
     }
+
+    def droidconf = {
+        RCH.requestAttributes.session['fooled'] = 'true'
+
+    }
+
 
 }
