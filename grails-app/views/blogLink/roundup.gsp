@@ -60,8 +60,6 @@
     </head>
     <body>
 
-
-
 		<g:each in="${blurbs}" var="blurb">
 			<div class="blurb">
 		    	${blurb}
