@@ -257,6 +257,11 @@ body {
     max-width:600px;
 }
 
+
+.blurb {
+    margin: 15px 0;
+}
+
 #footer {
     display: block;
     width:998px;
