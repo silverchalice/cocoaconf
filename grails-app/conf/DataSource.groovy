@@ -19,7 +19,6 @@ environments {
 			password = "cc5551212"
 			dbCreate = "update"
             url = "jdbc:mysql://localhost:3306/cocoaDb"
-			dialect=org.hibernate.dialect.MySQLInnoDBDialect
             properties {
 				validationQuery="select 1"
 				testWhileIdle=true
@@ -36,7 +35,6 @@ environments {
 			password = "cc5551212"
 			dbCreate = "update"
             url = "jdbc:mysql://66.116.97.250:3306/cocoaDb"
-			dialect=org.hibernate.dialect.MySQLInnoDBDialect
             properties {
 				validationQuery="select 1"
 				testWhileIdle=true
@@ -53,7 +51,6 @@ environments {
 			password = "cc5551212"
 			dbCreate = "update"
             url = "jdbc:mysql://localhost:3306/cocoaDb"
-			dialect=org.hibernate.dialect.MySQLInnoDBDialect
             properties {
 				validationQuery="select 1"
 				testWhileIdle=true

@@ -1,9 +1,9 @@
 package com.cocoaconf
 
 class HomePageBlurb {
-	Long priority = 0
+	Long priority
 	String blurb
-	Boolean active = false
+	Boolean active
 	
     static constraints = {
 		active()
