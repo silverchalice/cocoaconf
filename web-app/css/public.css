@@ -239,7 +239,7 @@ body {
 
 #content {
 
-    width:980px;
+    width:960px;
     border:0;
     padding-top:0;
     padding-left:20px;
@@ -255,6 +255,11 @@ body {
 
 .sponsor img {
     max-width:600px;
+}
+
+
+.blurb {
+    margin: 15px 0;
 }
 
 #footer {
