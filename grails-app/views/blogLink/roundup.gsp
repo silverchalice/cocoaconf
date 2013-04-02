@@ -60,18 +60,7 @@
     </head>
     <body>
 
-    <div id="about" style="float: right; width:230px; background:#eee; padding: 0 10px; margin:50px 15px 0 15px;">
-        <h3>CocoaConf is a technical conference, <span style="color:#1da0d1">pure and simple.</span></h3>
-        <p>Instead of vendor booths or vendor keynotes, you'll find:</p>
-        <ul style="list-style:none; text-indent: none">
-            <li ><strong>In-depth</strong> technical sessions.</li>
-            <li style="margin-bottom:15px">Multiple <strong>concurrent tracks</strong>.</li>
-            <li style="margin-bottom:15px">Full-day, pre-conference<strong>workshops</strong>.</li>
-            <li style="margin-bottom:15px">Fun and informative <strong>speaker panel</strong>.</li>
-            <li style="margin-bottom:15px">And much more!</li>
-        </ul>
-        <br/>
-    </div>
+
 
 		<g:each in="${blurbs}" var="blurb">
 			<div class="blurb">
