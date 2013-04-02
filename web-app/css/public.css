@@ -249,8 +249,9 @@ body {
 
 
 .body {
-    float:right;
-    width:700px;
+    float: right;
+    padding-right: 30px;
+    width: 640px;
 }
 
 .sponsor img {
