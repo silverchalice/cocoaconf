@@ -12,7 +12,6 @@ class Speaker {
     String feed
 	String twitter
 	String appnet
-	TravelInfo travelInfo
 
     //TODO: remove this
     Boolean current
@@ -29,7 +28,6 @@ class Speaker {
         feed nullable:true
 	    twitter nullable:true
 	    appnet nullable:true
-	    travelInfo nullable:true
     }
 
     static mapping = {

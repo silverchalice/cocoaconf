@@ -6,7 +6,6 @@ class AirlineInfo {
 	String airlineName
 	String ffNumber
 	
-    static belongsTo = [travelInfo:TravelInfo]
 
     static constraints = {
 	    airlineName nullable:false
