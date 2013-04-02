@@ -99,18 +99,6 @@ class BlogLinkController {
     }
 	
 	def roundup = {
-
-        println "Hey!"
-
-		//def columbusBlogLinks = BlogLink.findAllByEvent(Conference.get(1), [sort:'priority'])
-//		println "columbus links is $columbusBlogLinks"
-		//def raleighBlogLinks = BlogLink.findAllByEvent(Conference.get(2), [sort:'id', order:'desc'])
-//		println "raleigh links is $raleighBlogLinks"
-
-        Conference.list().each {
-            println "$it.id $it"
-        }
-
 		def dcBlogLinks = BlogLink.findAllByEvent(Conference.get(9), [sort:'id', order:'desc'])
 		def pdxBlogLinks = BlogLink.findAllByEvent(Conference.get(6), [sort:'id', order:'desc'])
 		def blurbs = HomePageBlurb.findAllByActive(true, [sort:priority, order:'asc'])

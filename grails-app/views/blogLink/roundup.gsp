@@ -22,8 +22,8 @@
             $(document).ready(function() {
 
                 $('.conferenceHeadlineImage').corner('5px');
-                $('#gallery').corner('5px');
-                $('#about').corner('5px');
+                $('#gallery').corner('10px');
+                $('#about').corner('10px');
                 $('#message').corner('10px');
 
                 var dc = new flickrshow('dc', {
@@ -62,25 +62,12 @@
 
 
 
-    <div id="about" style="float: right; width:230px; background:#eee; padding: 0 10px; margin:50px 15px 0 15px;">
-        <h3>CocoaConf is a technical conference, <span style="color:#1da0d1">pure and simple.</span></h3>
-        <p>Instead of vendor booths or vendor keynotes, you'll find:</p>
-        <ul style="list-style:none">
-            <li style="margin-left: 5px;"><strong>In-depth</strong> technical sessions.</li>           
-            <li style="margin-bottom:15px; margin-left: 5px;">Multiple <strong>concurrent tracks</strong>.</li>
-            <li style="margin-bottom:15px; margin-left: 5px;">Full-day, hands-on <strong>iOS workshop</strong>.</li>
-            <li style="margin-bottom:15px; margin-left: 5px;">Fun and informative <strong>speaker panel</strong>.</li>
-            <li style="margin-bottom:15px; font-weight: bold">And much more!</li>
-        </ul>
-        <br/>
-    </div>
-
-
 		<g:each in="${blurbs}" var="blurb">
 			<div class="blurb">
 		    	${blurb}
 			</div>
 		</g:each>
+
 		<h1>CocoaConf DC 2013 Wrap Up!</h1>
         <div class="flickrGallery" id="dc">
             <p>Please enable Javascript to view this slideshow</p>

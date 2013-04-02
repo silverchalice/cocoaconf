@@ -8,14 +8,8 @@ class UrlMappings {
 		}
 
 		"/"{
-			if (session.fooled){
-				controller = "blogLink"
-				action = "roundup"
-			}
-			else{
-				controller = "fooled"
-				action = "droidConf"
-			}
+			controller = "blogLink"
+			action = "roundup"
 		}
 		
 		"/register"{

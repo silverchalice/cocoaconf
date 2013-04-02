@@ -87,6 +87,7 @@ grails.plugins.springsecurity.securityConfigType = SecurityConfigType.InterceptU
 grails.plugins.springsecurity.interceptUrlMap = [
 
     '/':                                                     ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/home/droidconf':                                            ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/images/**':                                            ['IS_AUTHENTICATED_ANONYMOUSLY'],
 '/interest/saveInterest':                                    ['IS_AUTHENTICATED_ANONYMOUSLY'],
 '/interest/saveInterest/*':                                  ['IS_AUTHENTICATED_ANONYMOUSLY'],
