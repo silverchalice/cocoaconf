@@ -99,7 +99,7 @@
     <div style="clear: both; padding-top: 36px">
         <h1>Check back soon for more information</h1>
         <h1>about our 2013 Fall Tour</h1>
-
+          </div>
 </div>
 </body>
 </html>
