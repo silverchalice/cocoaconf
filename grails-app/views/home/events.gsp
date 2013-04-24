@@ -77,7 +77,7 @@
 
 </head>
 <body>
-<h1>CocoaConf 2013 Spring Tour</h1>
+<h1>Check back soon for more information about our 2013 Fall Tour</h1>
 
 <p>We are thrilled to be bringing the great technical content, exciting keynotes, fun and informative panels and all the awesomeness that is CocoaConf to <strong>eight cities across the US in 2013</strong>. Make your plans now to attend the CocoaConf closest to you or in a city you've been wanting to visit!</p>
 <div class="list">
@@ -95,11 +95,5 @@
     </g:each>
 </div>
 
-<div class="list">
-    <div style="clear: both; padding-top: 36px">
-        <h1>Check back soon for more information</h1>
-        <h1>about our 2013 Fall Tour</h1>
-          </div>
-</div>
 </body>
 </html>
