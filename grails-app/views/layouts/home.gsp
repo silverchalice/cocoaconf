@@ -84,7 +84,7 @@
             </div>
             <div id="sidebar" style="margin: 0 10px;">
 
-                <h1 style="margin-left: 10px; color: #35b6ff">2013 Spring Tour!</h1>
+                <h1 style="margin-left: 10px; color: #35b6ff">2013 Spring Events</h1>
 
 
 
