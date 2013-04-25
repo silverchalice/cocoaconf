@@ -12,6 +12,12 @@ class UrlMappings {
 			action = "roundup"
 		}
 		
+		"/alt"{
+			controller = "conference"
+			action = "home"
+			id = "alt-2013"
+		}
+		
 		"/register"{
 			controller = "conference"
 			action = "register"
