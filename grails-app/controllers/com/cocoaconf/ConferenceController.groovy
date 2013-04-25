@@ -1,6 +1,7 @@
 package com.cocoaconf
 
 import org.springframework.dao.DataIntegrityViolationException
+import com.cocoaconf.Conference
 
 class ConferenceController {
 	
@@ -15,19 +16,16 @@ class ConferenceController {
     }
 
     def home() {
-       // println "...and so now we are in the ConferenceController home action..."
-       // println "...and the params are " + params
         def conference = Conference.findByTinyName(params.tinyName)
-        def blogLinks = BlogLink.findAllByEvent(conference)
 
         if(conference){
-        //    println "so there was a conference. we are supposed to render the view now..."
-            render view: "home", model: ["conference": conference] 
-        } else {
-         //   println "...and there was no conference. :("
-          //  println "we are going to redirect"
-            redirect controller: "home"
-        }
+
+            def blogLinks = BlogLink.findAllByEvent(conference)
+
+            if(conference.tinyName == "alt-2013") render view:'alt', model: ["conference": conference]
+            else  render view: "home", model: ["conference": conference]
+
+        } else redirect controller: "home"
     }
 
    def list() {
