@@ -108,7 +108,7 @@
 
     </div>
 
-    <div id="content">
+    <div id="content" style="width: 920px">
         <div class="body" style="width: 640px; margin: 0"><g:layoutBody /></div>
         <div style="clear: both"></div>
     </div>
