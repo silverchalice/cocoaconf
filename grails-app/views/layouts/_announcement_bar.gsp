@@ -1,6 +1,6 @@
 <span id="announcementHeadline">
-	<a href="${request.contextPath}/alt">
-		CocoaConf Alt registration open now!
+	<a href="${request.contextPath}/blog/alt-2013-canceled">
+		CocoaConf Fall Tour registration opening soon.
 	</a>
 </span>
 <!-- <span style="color:#C0C0C0; margin-left:30px; margin-right:30px;">
