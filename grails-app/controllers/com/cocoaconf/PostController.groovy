@@ -31,6 +31,7 @@ class PostController {
     }
 
     def show = {
+        println  params
         def postInstance
         if(params.slug){
 	        println "post viewed: ${params.slug} - ${new Date()}"
