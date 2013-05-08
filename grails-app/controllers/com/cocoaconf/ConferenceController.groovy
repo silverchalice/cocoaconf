@@ -22,8 +22,11 @@ class ConferenceController {
 
             def blogLinks = BlogLink.findAllByEvent(conference)
 
-            if(conference.tinyName == "alt-2013") render view:'alt', model: ["conference": conference]
-            else  render view: "home", model: ["conference": conference]
+            if(conference.tinyName == "alt-2013"){
+                redirect(controller: 'post', params: [slug: 'alt-2013-canceled'])
+            } else {
+                render view: "home", model: ["conference": conference]
+            }
 
         } else redirect controller: "home"
     }
