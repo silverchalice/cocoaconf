@@ -82,30 +82,26 @@
     <div id="sidebar" style="margin: 0 10px;">
         <h1 style="margin-left: 10px;">Past Events</h1>
 
-        <a href="${request.contextPath}/raleigh-2012/home">
-            <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'raleigh.jpg')}) no-repeat bottom;">
-                <div class="conferenceCellName">Raleigh, NC - November 29 - Dec 1</div>
+        <a href="${request.contextPath}/chicago-2013/home">
+            <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'chicago.png')}) no-repeat bottom;">
+                <div class="conferenceCellName">Chicago, IL - March 7 - 9 </div>
             </div>
         </a>
-
-        <a href="${request.contextPath}/portland-2012/home">
-            <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'portland.png')}) no-repeat bottom;">
-                <div class="conferenceCellName">Portland, OR - October 25-27</div>
-            </div>
-        </a>
-
-        <a href="${request.contextPath}/columbus-2012/home">
-            <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'columbus.png')}) no-repeat bottom; margin-bottom: 30px;">
-                <div class="conferenceCellName">Columbus, Ohio - August 9-11</div>
-            </div>
-        </a>
-        <a href="${request.contextPath}/dc-2012/home">
+        <a href="${request.contextPath}/dc-2013/home">
             <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'dc.png')}) no-repeat bottom;">
-                <div class="conferenceCellName">Washington DC - June 28-30 <br/>
-                    <strong style="font-size:11px">Registration Closed</strong></div>
+                <div class="conferenceCellName">Washington, DC - March 21 - 23</div>
             </div>
         </a>
-
+        <a href="${request.contextPath}/dallas-2013/home">
+            <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'dallas.png')}) no-repeat bottom;">
+                <div class="conferenceCellName">Dallas, TX - April 4 - 6</div>
+            </div>
+        </a>
+        <a href="${request.contextPath}/sanjose-2013/home">
+            <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'sanjose.png')}) no-repeat bottom;">
+                <div class="conferenceCellName">San Jose, CA - April 18 - 20</div>
+            </div>
+        </a>
     </div>
 
     <div id="content" style="width: 920px">
