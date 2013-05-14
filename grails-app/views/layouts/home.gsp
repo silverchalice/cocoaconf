@@ -105,7 +105,7 @@
                 </a>
                 <a href="${request.contextPath}/atlanta-2013/home">
                     <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'atlanta.png')}) no-repeat bottom;">
-                        <div class="conferenceCellName">Atlanta, GA - November 8 - 9</div>
+                        <div class="conferenceCellName">Atlanta, GA - November 15 - 16</div>
                     </div>
                 </a>
 
@@ -117,9 +117,8 @@
                 <br/>
                 <h2>Our Sponsors</h2>
                 <br/>
-				<a href="http://www.windowsazure.com/ios"><img src="${resource(dir:'images', file:'WinAzure_200.png')}" /></a>
+				<a href="http://bignerdranch.com"><img src="${resource(dir:'images', file:'big-nerd-ranch.jpg')}" /></a>
                 <br/>
-				<a href="http://www.shinobicontrols.com"><img src="${resource(dir:'images', file:'shinobi_square.jpg')}" /></a>
                 <a href="${resource(dir:'images', file:'sponsorship.pdf')}">Sponsorship Opportunities Available</a>
                 <br/><br/>
             </div>
