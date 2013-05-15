@@ -78,7 +78,7 @@
 </head>
 <body>
 <h1>Upcoming CocoaConf Events</h1>
-<h2>Announcing the 2013 Fall Tour</h2>
+<h2>Announcing the 2013 Fall Tour!</h2>
 
 <p>We are thrilled to be bringing the great technical content, exciting keynotes, fun and informative panels and all the awesomeness that is CocoaConf to <strong>four cities across the US this Fall</strong>. Make your plans now to attend the CocoaConf closest to you or in a city you've been wanting to visit!</p>
 <div class="list">
