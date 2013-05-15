@@ -82,7 +82,7 @@
 
 <p>We are thrilled to be bringing the great technical content, exciting keynotes, fun and informative panels and all the awesomeness that is CocoaConf to <strong>four cities across the US this Fall</strong>. Make your plans now to attend the CocoaConf closest to you or in a city you've been wanting to visit!</p>
 <div class="list">
-    <g:each in="${pendingConferenceList}" status="i" var="conference">
+    <g:each in="${activeConferenceList}" status="i" var="conference">
 
         <a href="${createLink(controller: 'conference', action: 'home', params: ['tinyName': conference.tinyName])}"><div class="conferenceCell" style="background: url(${resource(dir: 'images', file: conference.thumbnail )}) no-repeat bottom;">
            <g:if test="${conference.status == 'active'}"><div class="register">Register Now!</div></g:if>
