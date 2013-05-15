@@ -84,28 +84,28 @@
             </div>
             <div id="sidebar" style="margin: 0 10px;">
 
-                <h1 style="margin-left: 10px; color: #35b6ff">2013 Spring Events</h1>
+                <h1 style="margin-left: 10px; color: #35b6ff">2013 Fall Tour</h1>
 
 
 
-                <a href="${request.contextPath}/chicago-2013/home">
-                    <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'chicago.png')}) no-repeat bottom;">
-                        <div class="conferenceCellName">Chicago, IL - March 7 - 9 </div>
+                <a href="${request.contextPath}/portland-2013/home">
+                    <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'portland.png')}) no-repeat bottom;">
+                        <div class="conferenceCellName">Portland, OR - August 15 - 16 </div>
                     </div>
                 </a>
-                <a href="${request.contextPath}/dc-2013/home">
-                    <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'dc.png')}) no-repeat bottom;">
-                        <div class="conferenceCellName">Washington, DC - March 21 - 23</div>
+                <a href="${request.contextPath}/columbus-2013/home">
+                    <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'columbus.png')}) no-repeat bottom;">
+                        <div class="conferenceCellName">Columbus, OH - September 27 - 28</div>
                     </div>
                 </a>
-                <a href="${request.contextPath}/dallas-2013/home">
-                    <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'dallas.png')}) no-repeat bottom;">
-                        <div class="conferenceCellName">Dallas, TX - April 4 - 6</div>
+                <a href="${request.contextPath}/boston-2013/home">
+                    <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'boston.png')}) no-repeat bottom;">
+                        <div class="conferenceCellName">Boston, MA - October 25 - 26</div>
                     </div>
                 </a>
-                <a href="${request.contextPath}/sanjose-2013/home">
-                    <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'sanjose.png')}) no-repeat bottom;">
-                        <div class="conferenceCellName">San Jose, CA - April 18 - 20</div>
+                <a href="${request.contextPath}/atlanta-2013/home">
+                    <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'atlanta.png')}) no-repeat bottom;">
+                        <div class="conferenceCellName">Atlanta, GA - November 15 - 16</div>
                     </div>
                 </a>
 
@@ -117,15 +117,15 @@
                 <br/>
                 <h2>Our Sponsors</h2>
                 <br/>
-				<a href="http://www.windowsazure.com/ios"><img src="${resource(dir:'images', file:'WinAzure_200.png')}" /></a>
+				<a href="http://bignerdranch.com"><img src="${resource(dir:'images', file:'big-nerd-ranch.jpg')}" /></a>
                 <br/>
-				<a href="http://www.shinobicontrols.com"><img src="${resource(dir:'images', file:'shinobi_square.jpg')}" /></a>
-                <a href="${resource(dir:'images', file:'sponsorship.pdf')}">Sponsorship Opportunities Available</a>
+                <br/>
+                <a href="${resource(dir:'images', file:'sponsorship.pdf')}"><h4>Sponsorship Opportunities Available</h4></a>
                 <br/><br/>
             </div>
 
-           <div id="content">
-              <div class="body"><g:layoutBody /></div>
+           <div id="content" style="width: 920px">
+              <div class="body" style="width:640px"><g:layoutBody /></div>
                <div style="clear: both"></div>
            </div>
            <div style="clear: both"></div>
