@@ -119,7 +119,8 @@
                 <br/>
 				<a href="http://bignerdranch.com"><img src="${resource(dir:'images', file:'big-nerd-ranch.jpg')}" /></a>
                 <br/>
-                <a href="${resource(dir:'images', file:'sponsorship.pdf')}">Sponsorship Opportunities Available</a>
+                <br/>
+                <a href="${resource(dir:'images', file:'sponsorship.pdf')}"><h4>Sponsorship Opportunities Available</h4></a>
                 <br/><br/>
             </div>
 
