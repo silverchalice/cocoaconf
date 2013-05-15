@@ -15,7 +15,8 @@ class UrlMappings {
 		"/alt"{
 			controller = "conference"
 			action = "home"
-			tinyName = "alt-2013"
+			id = "alt-2013"
+			tinyName="alt-2013"
 		}
 		
 		"/register"{
