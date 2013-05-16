@@ -36,6 +36,9 @@
 
     <div class="body">
          <h1>${conference?.description}: Sessions</h1>
+            <g:if test="${1 > sessions.size()}">
+                <p><strong>We are still finalizing the schedule for this event.</strong> Please check back soon!</p>
+            </g:if>
              <div class="list">
                  <g:each in="${sessions}" status="i" var="session">
 
