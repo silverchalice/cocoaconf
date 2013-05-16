@@ -155,7 +155,7 @@
             </g:if>
 
             <h1>${conference?.description}: Schedule</h1>
-            <g:if test="${1 > schedule.slots}">
+            <g:if test="${!schedule}">
                 <p><strong>We are still working on the schedule for this event.</strong> Please check back soon!</p>
             </g:if>
 
