@@ -71,6 +71,6 @@
 		<g:message code="session.presentation.label" default="Presentation" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="presentation" name="presentation.id" from="${com.cocoaconf.Presentation.list()}" optionKey="id" required="" value="${sessionInstance?.presentation?.id}" class="many-to-one"/>
+	<g:select id="presentation" name="presentation.id" from="${com.cocoaconf.Presentation.list(sort:'speaker')}" optionKey="id" required="" value="${sessionInstance?.presentation?.id}" class="many-to-one"/>
 </div>
 
