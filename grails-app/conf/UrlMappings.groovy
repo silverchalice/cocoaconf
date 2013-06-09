@@ -157,6 +157,10 @@ class UrlMappings {
         	controller = "wwdcPhoto"
         	action = "list"
         }
+        "/wwdc-photos"{
+        	controller = "wwdcPhoto"
+        	action = "list"
+        }
 		"/speaker.json"{
 			controller = "remote"
 			action = "getSpeaker"
