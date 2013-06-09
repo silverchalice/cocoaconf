@@ -16,6 +16,7 @@ class UrlMappings {
 			controller = "conference"
 			action = "home"
 			id = "alt-2013"
+			tinyName="alt-2013"
 		}
 		
 		"/register"{
@@ -151,6 +152,10 @@ class UrlMappings {
         "/events"{
             controller = "home"
             action = "events"
+        }
+        "wwdcphotos"{
+        	controller = "wwdcPhoto"
+        	action = "list"
         }
 		"/speaker.json"{
 			controller = "remote"
