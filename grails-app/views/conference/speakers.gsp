@@ -61,7 +61,12 @@
 
         <div class="body">
             <h1>${conference?.description}: Speakers</h1>
-            <p>CocoaConf speakers include well known trainers, authors, and professional iOS and OS X developers.</p>
+            <g:if test="${speakerInstanceList}">
+                <p>CocoaConf speakers include well known trainers, authors, and professional iOS and OS X developers.</p>
+            </g:if>
+            <g:else>
+            <p><strong>We are still putting together the schedule for this event.</strong> Please check back soon!</p>
+            </g:else>
 
             <div class="list">
                 <g:each in="${speakerInstanceList}" status="i" var="speaker">

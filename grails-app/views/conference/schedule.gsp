@@ -155,6 +155,9 @@
             </g:if>
 
             <h1>${conference?.description}: Schedule</h1>
+            <g:if test="${!schedule}">
+                <p><strong>We are still working on the schedule for this event.</strong> Please check back soon!</p>
+            </g:if>
 
             <g:each in="${schedule}" var="dayMap">
                 <h3 style="clear:both">${conference.days[dayMap.day -1]}</h3>
