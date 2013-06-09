@@ -153,7 +153,7 @@ class UrlMappings {
             controller = "home"
             action = "events"
         }
-        "wwdcphotos"{
+        "/wwdcphotos"{
         	controller = "wwdcPhoto"
         	action = "list"
         }
