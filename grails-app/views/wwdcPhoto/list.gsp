@@ -6,7 +6,7 @@
         <meta name="layout" content="home" />
          <meta name="tab" content="home" /> <!-- must changes this... -->
         <g:set var="entityName" value="${message(code: 'wwdcPhoto.label', default: 'MugShot')}" />
-        <title>CocoaConf | Mug Shots</title>
+        <title>CocoaConf | WWDC Week Photo Contest</title>
 
         <script type="text/javascript">
 
