@@ -156,6 +156,7 @@ grails.plugins.springsecurity.interceptUrlMap = [
     '/feed/**':                                              ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/feed':                                                 ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/home/partners':                                        ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/wwdc-photos':                                          ['IS_AUTHENTICATED_ANONYMOUSLY'],
 	'/speaker.json':  										 ['IS_AUTHENTICATED_ANONYMOUSLY'],
 	'/session.json':  										 ['IS_AUTHENTICATED_ANONYMOUSLY'],
 	'/remote/getSpeaker':  									 ['IS_AUTHENTICATED_ANONYMOUSLY'],
