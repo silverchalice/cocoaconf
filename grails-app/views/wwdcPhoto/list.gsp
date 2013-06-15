@@ -122,7 +122,7 @@
         <p>Looking good so far. Keep them coming.  We'll collect entries until Saturday, June 15th. (Note: Click the caption to see the photo source.)</p>
         <p><strong>For details about the contest and how you can participate, <a href="http://cocoaconf.com/blog/wwdc-contest-2013">check out this blog post</a>.</strong></p>
         <g:each in="${wwdcPhotoInstanceList}" status="i" var="wwdcPhoto">
-            <div style="float:left; width:240px; text-align: center; margin: 30px 40px 60px 40px; height: 240px">
+            <div style="float:left; width:240px; text-align: center; margin: 40px 40px 60px 40px; height: 240px">
 
                 <g:if test="${wwdcPhoto?.imagePath}">
 
