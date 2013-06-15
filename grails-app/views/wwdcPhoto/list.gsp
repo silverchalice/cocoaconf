@@ -139,7 +139,6 @@
         </g:each>
 
         <p>&nbsp;</p>
-        <p>&nbsp;</p>
         <br />
         <br />
 
