@@ -120,7 +120,10 @@
 				<a href="http://bignerdranch.com"><img src="${resource(dir:'images', file:'big-nerd-ranch.jpg')}" /></a>
                 <br/>
                 <br/>
-                < href=""><img src="${resource(dir:'images', file:'github.png')}" /></a>
+                <href="http://github.com"><img src="${resource(dir:'images', file:'github.png')}"/></a>
+                <br/>
+                <br/>
+                <href="http://www.airsquirrels.com/reflector"><img src="${resource(dir:'images', file:'reflector.png')}"/></a>
                 <br/>
                 <br/>
                 <a href="${resource(dir:'images', file:'sponsorship.pdf')}"><h4>Sponsorship Opportunities Available</h4></a>
