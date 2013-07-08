@@ -52,7 +52,7 @@
 		
 </div>
 
-<div id="shinobi" class="sponsor" style="height 100px; border-bottom: 1px #ddd dotted">
+<div id="shinobi" class="sponsor" style="height 150px; border-bottom: 1px #ddd dotted">
   <p><a href="http://www.shinobicontrols.com/"><img src="/images/shinobi_square.jpg" style="float: left; padding-right:8px;"/></a>
   <strong>Creating iOS applications? Got data to show off?</strong></p>
   <p>ShinobiControls is the premier component provider for iOS. Reduce the time, cost and effort needed to develop stunning interactive apps!</p>
@@ -61,7 +61,7 @@
   <p style="text-align:center"><strong>Follow us on Twitter <a href="http://twitter.com/shinobicontrols">@shinobicontrols</a></strong></p>
 </div>
 
-<br/><br/>
+<br/><br/><br/>
 			<div id="mmc" class="sponsor" style="height:100px">
 				<p><a href="http://macminicolo.net"><img src="${resource(dir:'images', file: 'macminicolo.png')}"style="float: right; padding-left:8px;"/></a>
 				Dedicated Server - World Class Data Center - Low Cost Hardware - Incredibly Fast Bandwidth - Easy To Setup and Maintain - No Setup Fee - Up to 16GB of RAM - Friendly Support Staff - Up to One TB of Storage - Run Whatever You Want - High Performance Worldwide - High Quality Worldwide</p>	
@@ -78,29 +78,5 @@
     	</div>
         <div style="clear: both; padding-top: 20px;"><p>For more information about becoming a CocoaConf sponsor, drop us a line at <a href="mailto:info@cocoaconf.com">info@cocoaconf</a></p></div>
 
-        <div id="user-groups" style="padding-top: 10px">
-			<h2>CocoaHeads Partners</h2>
-			<p>CocoaHeads, NSCoderNight and other groups are playing a huge role in bringing CocoaConf to the Chicago area.  Several of our speakers are group organizers and almost all of them are active participants. If you haven't been to a CocoaHeads meeting or NSCoder Night, find the group near you and get involved.  There is much we can learn from each other and many good times to be had.</p>
-			<p>Check out our partner groups below. You can also find other active groups at the <a href="http://cocoaheads.org">CocoaHeads website</a> or <a href="http://cocoa.meetup.com/">meetup.com</a>.  If all else fails, <a href="https://www.google.com/#hl=en&tok=X804PHYtlp0B8MtT7VPxEQ&cp=29&gs_id=qd&xhr=t&q=Cocoa+user+groups+chicago%2C+il&pf=p&sclient=psy-ab&source=hp&pbx=1&oq=Cocoa+user+groups+chicago,+il&aq=f&aqi=&aql=&gs_sm=&gs_upl=&bav=on.2,or.r_gc.r_pw.,cf.osb&fp=31d7cccccf4c56c5&biw=1728&bih=795">Google</a> is your friend. :-)</p>
-			<p><a href=""></a></p>
-			<div id="nscoder-dc" class="usergroup">
-                <br />
-				<a href="http://nscodernightdc.com"><img src="${resource(dir:'images',file:'nsdc.png')}" style="float: left; padding-right:10px;"/></a><h3>NSCoder Night DC</h3>
-                <p><a href="http://nscodernightdc.com">NSCoder Night DC</a>. As the name might imply, we are the DC Area chapter of <a href="http://nscodernight.com/">NSCoder Night</a>. Basically, we are a weekly get-together of developers interested in Cocoa programming for Mac OS X and iPhone. Every Tuesday night for last 4 years we have met to hang out together, code and help each other. In addition to expected antics of a bunch of geeks getting together, we are also strong believers of eating pastries on a regularly scheduled basis. If you happen to be in DC area, on a tuesday night and feel like a pastry and some geeking out, come on over and join us.</p>
-			</div>			
-            <div id="raleigh" class="usergroup">
-                <h3>Triangle CocoaHeads</h3>
-                <p>Meetings are the fourth Thursday of the month</p>
-                <p>Come out for great presentations, networking and a lot of fun. Find out more details at <a href="http://www.trianglecocoa.com">http://www.trianglecocoa.com</a>.</p>
-                <p>Follow us on Twitter at <a href="http://twitter.com/trianglecocoa">http://twitter.com/trianglecocoa</a>.</p>
-            </div>
-			<div id="dc" class="usergroup">
-				<h3>CocoaHeads DC</h3>
-				<p>CocoaHeads DC is the capital region's premiere Apple-oriented monthly meetup group. While we take our name from Apple’s programming framework for Mac OS X, including the iPhone, we also delve into other Apple-related technologies such as MacRuby and mobile Safari. Our meetings are held on the first Thursday of every month where members present projects and tutorials. </p>
-				<p>More information can be found at our site <a href="http://www.cocoaheadsdc.org">http://www.cocoaheadsdc.org</a>.</p>				
-			</div>
-			<br/>
-			<p>If your group would like be a CocoaConf partner write to us at <a href="mailto:info@cocoaconf.com">info@cocoaconf</a></p>
-		</div>
 	</body>
 </html>
