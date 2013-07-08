@@ -52,7 +52,7 @@
 		
 </div>
 
-<div id="shinobi" class="sponsor" style="height 150px; border-bottom: 1px #ddd dotted">
+<div id="shinobi" class="sponsor" style="height 200px; border-bottom: 1px #ddd dotted">
   <p><a href="http://www.shinobicontrols.com/"><img src="/images/shinobi_square.jpg" style="float: left; padding-right:8px;"/></a>
   <strong>Creating iOS applications? Got data to show off?</strong></p>
   <p>ShinobiControls is the premier component provider for iOS. Reduce the time, cost and effort needed to develop stunning interactive apps!</p>
@@ -61,7 +61,7 @@
   <p style="text-align:center"><strong>Follow us on Twitter <a href="http://twitter.com/shinobicontrols">@shinobicontrols</a></strong></p>
 </div>
 
-<br/><br/><br/>
+<br/><br/><br/><br/><br/>
 			<div id="mmc" class="sponsor" style="height:100px">
 				<p><a href="http://macminicolo.net"><img src="${resource(dir:'images', file: 'macminicolo.png')}"style="float: right; padding-left:8px;"/></a>
 				Dedicated Server - World Class Data Center - Low Cost Hardware - Incredibly Fast Bandwidth - Easy To Setup and Maintain - No Setup Fee - Up to 16GB of RAM - Friendly Support Staff - Up to One TB of Storage - Run Whatever You Want - High Performance Worldwide - High Quality Worldwide</p>	
