@@ -20,11 +20,48 @@
 		<div id="sponsors">
             <h1>Partners</h1>
 			<h2 style="font-size:18px;">The following organizations are helping to make CocoaConf awesome! </h2>  <br/>
-            <div id="heroku" class="sponsor" style="height:185px">
-				<p><a href="http://www.heroku.com"><img src="${resource(dir:'images',file:'heroku-logo-light-234x60.png')}" style="margin-left:15px; float:left;"/></a>Heroku (pronounced her-OH-koo) is a cloud application platform – a new way of building and deploying web apps. Developers can focus 100% on  code and never think about servers, instances, or VMs again. Heroku lets you run any application from simple to complex, from Ruby, Java, Node.JS, Python or Clojure.</p>
-				<p>Heroku takes full responsibility for your app's health, keeping it up and running through thick and thin, while you manage and command your app with a full set of control surface APIs.</p>
-				<p>Tens of thousands of developers have deployed hundreds of thousands of apps to Heroku already.</p>
-			</div>
+<div id="Big Nerd Ranch" class="sponsor" style="height:auto; border-bottom: 1px #ddd dotted">
+    <p><a href="http://www.bignerdranch.com"><img src="/images/big-nerd-ranch.jpg" style="width:250px; float:left; padding-right:8px"/></a>
+        When the <a href="http://www.bignerdranch.com/">Big Nerd Ranch</a> started out, we did one thing and we did it well: we taught programming languages. Now, over a decade later, we’ve expanded to include consulting, software products and an ever-growing library of <a href="http://www.bignerdranch.com/books">Big Nerd Ranch books</a>.</p> <p>The key to the Ranch getting bigger - and better - every day? We started out teaching, but we never stopped learning. Our teachers became experts. Who became consultants. And they learned even more. All that knowledge influenced our software products division. And our software products division? Everything they learn comes back to influence our classes and our consulting. So every horse in our proverbial stable helps make the others that much stronger.</p> <p>Notice a theme here? Learning. It’s at the core of everything we do now and everything we’ll do in the future.</p>		
+</div>
+
+<div id="github" class="sponsor" style="height:100px; border-bottom: 1px #ddd dotted">
+  <p><a href="http://github.com"><img src="/images/github.png" style="float: right; padding-left:8px;"/></a>
+    <a href="http://github.com">GitHub</a> is version control for software development and so much more. Whether it's a weekend side project, your favorite open source
+	library, a startup destined for glory, or your company's app, GitHub helps everyone work together with tools for easier collaboration and more visibility. Check it out — open source is free!
+  </p>
+</div>
+
+
+<div id="Reflector" class="sponsor" style="height:250px; border-bottom: 1px #ddd dotted">
+  <p><a href="http://www.airsquirrels.com/reflector"><img src="/images/reflector.png" style="float: left; padding-left:8px;"/></a>
+    <a href="http://www.airsquirrels.com/reflector">Reflector</a> is the easiest way to display your iOS screen on your Mac or PC. Instead of sending screenshots, recorded videos or unfinished app builds, present concepts and betas in real time from real hardware. Just like the iOS simulator, enable frames to show what an application will look like on a real device. With Reflector, there's no need to worry about distributing beta apps or installing software. Wirelessly display your device using services that are already built in. Instead of using a lightning or 30-pin cable, Reflector connects wirelessly from the presenter's hands for an easy and seamless presentations and demos. 
+  </p>
+</div>
+
+<div id="azure" class="sponsor" style="height:auto; border-bottom: 1px #ddd dotted">
+    <p><a href="http://www.windowsazure.com/ios/"><img src="/images/WinAzure_200.png" style="width:250px; float:right; padding-right:8px"/></a>
+        Windows Azure Mobile Services allows developers to add a scalable and
+		secure backend hosted in Windows Azure to native iOS apps written in
+		Objective-C. Mobile Services makes it easy to structure your storage, add
+		user authentication via Facebook, Twitter, Microsoft, or Google account,
+		and send push notifications.  All you need is ten minutes and about as
+		many lines of code.  That means you can focus on building a great user
+		experience instead of backend infrastructure.  You can always reach the
+		Mobile Services team directly through <a href="mailto:iOS@microsoft.com">iOS@microsoft.com</a>.</p>
+		
+</div>
+
+<div id="shinobi" class="sponsor" style="height 100px; border-bottom: 1px #ddd dotted">
+  <p><a href="http://www.shinobicontrols.com/"><img src="/images/shinobi_square.jpg" style="float: left; padding-right:8px;"/></a>
+  <strong>Creating iOS applications? Got data to show off?</strong></p>
+  <p>ShinobiControls is the premier component provider for iOS. Reduce the time, cost and effort needed to develop stunning interactive apps!</p>
+  <p>By delivering high quality user interface components, our overall aim is to help businesses improve the quality and variety of their mobile offerings. Our outstanding API is already delighting developers, who are able to focus on the core functionality their users want, whilst ShinobiControls quickly and easily takes care of displaying your all-important data.<p>
+  <p style="text-align:center"><strong>For more information and to take a 30-day free trial visit <a href="http://www.shinobicontrols.com/">www.shinobicontrols.com</a></strong></p>
+  <p style="text-align:center"><strong>Follow us on Twitter <a href="http://twitter.com/shinobicontrols">@shinobicontrols</a></strong></p>
+</div>
+
+<br/><br/>
 			<div id="mmc" class="sponsor" style="height:100px">
 				<p><a href="http://macminicolo.net"><img src="${resource(dir:'images', file: 'macminicolo.png')}"style="float: right; padding-left:8px;"/></a>
 				Dedicated Server - World Class Data Center - Low Cost Hardware - Incredibly Fast Bandwidth - Easy To Setup and Maintain - No Setup Fee - Up to 16GB of RAM - Friendly Support Staff - Up to One TB of Storage - Run Whatever You Want - High Performance Worldwide - High Quality Worldwide</p>	
