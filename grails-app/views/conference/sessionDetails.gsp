@@ -27,6 +27,11 @@
                 float:left; margin:0 10px 10px 0;
                 width: 100px;
             }
+
+            h1 {
+                line-height: 36px;
+                color:#35b6ff
+            }
         </style>
 
     </head>
@@ -37,7 +42,7 @@
         </div>
 
         <div class="body">
-                <h1 style="color:#35b6ff">${presentation?.title}</h1>
+                <h1>${presentation?.title}</h1>
 
                 <div>
                     <div class="speaker" style="background-color: #eeeeee; padding:15px;">

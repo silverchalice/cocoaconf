@@ -28,6 +28,7 @@
     }
 
     h1 {
+        line-height: 36px;
         color:#35b6ff
     }
 
