@@ -33,17 +33,15 @@
         <style type="text/css">
 
         div.speaker {
-            background:#eeeeee;
-            border:0;
-            padding: 0 15px 10px 15px;
+            font-size:14px;
+            border-bottom: 1px solid #eee;
+            border-right: 1px solid #eee;
+            padding: 0 15px 10px 5px;
             float: left;
             width: 280px;
-            height: 200px;
-            margin: 5px;
-
+            height: 250px;
+            margin: 5px 5px 10px 5px;
         }
-
-
         </style>
 
     </head>
@@ -53,7 +51,7 @@
 
         <div class="list">
             <g:each in="${speakerInstanceList}" status="i" var="speaker">
-                           <div class="speaker" style="min-height:160px; margin-bottom:10px;">
+                           <div class="speaker" >
 
                             <div class="bio" style="width:98%">
 
@@ -63,22 +61,24 @@
                                </g:if>
                                 <h3>${speaker} </h3>
                                 <p><cc:truncate value="${speaker.bio}" size="80" /></p><br/>
-		                         <span style="float:left">
-					                <g:if test="${speaker.twitter}">
-					                    <a target="_blank" href="http://twitter.com/${speaker.twitter}" style="color: black; text-decoration: none; vertical-align: top"><img src="${resource(dir:'images', file: 'twitter.png')}" alt="Twitter" style="vertical-align:top; padding-right:8px; margin-bottom:5px;"></a>
-					                </g:if>
-					                <g:if test="${speaker.appnet}">
-					                    <a target="_blank" href="http://alpha.app.net/${speaker.appnet}" style="color: black; text-decoration: none; vertical-align: top"><img src="${resource(dir:'images', file: 'appnet.jpg')}" alt="App.net" style="vertical-align:top; padding-right:8px; margin-bottom:5px;"></a>
-					                </g:if>
-					                <g:if test="${speaker.blog}">
-					                    <a target="_blank" href="${speaker.blog}" style="color: black; text-decoration: none; vertical-align: top"><img src="${resource(dir:'images', file: 'feed-icon-28x28.png')}" alt="${speaker}'s blog" style="vertical-align:top; padding-right:8px; margin-bottom:5px;"></a>
-					                </g:if>
-			                     </span>
-                                <span style="font-size: 14px; float:right; vertical-align: bottom; ">
-                                    <g:link controller="speaker" action="viewDetails" id="${speaker?.id}">View Details</g:link>
-                                </span>
+
                            </div>
-                               <div style="clear:both">&nbsp;</div>
+                               <div style="clear:both">
+                                   <span style="float:left">
+                                       <g:if test="${speaker.twitter}">
+                                           <a target="_blank" href="http://twitter.com/${speaker.twitter}" style="color: black; text-decoration: none; vertical-align: top"><img src="${resource(dir:'images', file: 'twitter.png')}" alt="Twitter" style="vertical-align:top; padding-right:8px; margin-bottom:5px;"></a>
+                                       </g:if>
+                                       <g:if test="${speaker.appnet}">
+                                           <a target="_blank" href="http://alpha.app.net/${speaker.appnet}" style="color: black; text-decoration: none; vertical-align: top"><img src="${resource(dir:'images', file: 'appnet.jpg')}" alt="App.net" style="vertical-align:top; padding-right:8px; margin-bottom:5px;"></a>
+                                       </g:if>
+                                       <g:if test="${speaker.blog}">
+                                           <a target="_blank" href="${speaker.blog}" style="color: black; text-decoration: none; vertical-align: top"><img src="${resource(dir:'images', file: 'feed-icon-28x28.png')}" alt="${speaker}'s blog" style="vertical-align:top; padding-right:8px; margin-bottom:5px;"></a>
+                                       </g:if>
+                                   </span>
+                                   <span style="font-size: 14px; float:right; vertical-align: bottom; ">
+                                       <g:link controller="speaker" action="viewDetails" id="${speaker?.id}">View Details</g:link>
+                                   </span>
+                               </div>
                            </div>
 
                        </g:each>
