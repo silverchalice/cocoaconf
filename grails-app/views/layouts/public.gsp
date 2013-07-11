@@ -4,6 +4,7 @@
     <head>
         <title><g:layoutTitle default="Grails" /></title>
         <link rel="stylesheet" href="${resource(dir:'css',file:'public.css')}" />
+        <script type="text/javascript" src="${resource(dir: 'js', file: 'retina.js')}"></script>
         <g:render template="/layouts/favicons" />
         <feed:meta kind="atom" version="1.0" controller="post" action="feed"/>
         <g:layoutHead />

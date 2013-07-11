@@ -1,8 +1,8 @@
 html {
     background: url(../images/background.png) repeat;
-    font-family:'Helvetica', Arial,clean,sans-serif;
-    font-size:13px;
-    line-height: 18px;
+    font-family:'HelveticaNeue-Light', Arial ,clean,sans-serif;
+    font-size:16px;
+    line-height: 25px;
     font-color: #232323;
 }
 
@@ -12,10 +12,10 @@ html {
 
 #announcementHeader {
     width:995px;
-    background-image:url(../images/bar-bg.png);
     text-align:center;
-    height:25px;
-    padding-top:8px;
+    height:32px;
+    background-color: black;
+    padding-top:5px;
     margin:0 0 0 2px;
     font-weight:bold;
     color:white
@@ -136,7 +136,7 @@ body {
 
 #navWrapper {
     text-align:center;
-    background-image: url(../images/bar-bg.png);
+    background-color: black;
     height:60px;
     width:100%;
 }
@@ -213,6 +213,7 @@ body {
     background: rgba(0, 0, 0, 0.7); /* nice browsers */
     color:white;
     padding:10px;
+    font-size: 14px;
 }
 
 .conferenceCellName:hover {
