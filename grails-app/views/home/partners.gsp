@@ -44,7 +44,7 @@
     </div>
 
 
-    <div id="Reflector" class="sponsor" style="height:250px; border-bottom: 1px #ddd dotted">
+    <div id="Reflector" class="sponsor" style="border-bottom: 1px #ddd dotted">
         <p><a href="http://www.airsquirrels.com/reflector"><img src="/images/reflector.png"
                                                                 style="float: left; padding-left:8px;"/></a>
             <a href="http://www.airsquirrels.com/reflector">Reflector</a> is the easiest way to display your iOS screen on your Mac or PC. Instead of sending screenshots, recorded videos or unfinished app builds, present concepts and betas in real time from real hardware. Just like the iOS simulator, enable frames to show what an application will look like on a real device. With Reflector, there's no need to worry about distributing beta apps or installing software. Wirelessly display your device using services that are already built in. Instead of using a lightning or 30-pin cable, Reflector connects wirelessly from the presenter's hands for an easy and seamless presentations and demos.
