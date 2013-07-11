@@ -10,8 +10,9 @@
 
     .sponsor {
         width: 640px;
-        min-height: 180px;
-        margin: 30px 0;
+        margin: 0 0 60px 0;
+        padding-bottom: 45px;
+        border-bottom: 1px #ddd dotted
     }
 
     </style>
@@ -24,7 +25,7 @@
 
     <h2 style="font-size:18px;">The following organizations are helping to make CocoaConf awesome!</h2>  <br/>
 
-    <div id="Big Nerd Ranch" class="sponsor" style="height:auto; border-bottom: 1px #ddd dotted">
+    <div id="Big Nerd Ranch" class="sponsor">
         <p><a href="http://www.bignerdranch.com"><img src="/images/big-nerd-ranch.jpg"
                                                       style="width:250px; float:left; padding-right:8px"/></a>
             When the <a
@@ -36,7 +37,7 @@
         <p>Notice a theme here? Learning. It’s at the core of everything we do now and everything we’ll do in the future.</p>
     </div>
 
-    <div id="github" class="sponsor" style="height:100px; border-bottom: 1px #ddd dotted">
+    <div id="github" class="sponsor">
         <p><a href="http://github.com"><img src="/images/github.png" style="float: right; padding-left:8px;"/></a>
             <a href="http://github.com">GitHub</a> is version control for software development and so much more. Whether it's a weekend side project, your favorite open source
         library, a startup destined for glory, or your company's app, GitHub helps everyone work together with tools for easier collaboration and more visibility. Check it out — open source is free!
@@ -44,14 +45,14 @@
     </div>
 
 
-    <div id="Reflector" class="sponsor" style="border-bottom: 1px #ddd dotted">
+    <div id="Reflector" class="sponsor" >
         <p><a href="http://www.airsquirrels.com/reflector"><img src="/images/reflector.png"
                                                                 style="float: left; padding-left:8px;"/></a>
             <a href="http://www.airsquirrels.com/reflector">Reflector</a> is the easiest way to display your iOS screen on your Mac or PC. Instead of sending screenshots, recorded videos or unfinished app builds, present concepts and betas in real time from real hardware. Just like the iOS simulator, enable frames to show what an application will look like on a real device. With Reflector, there's no need to worry about distributing beta apps or installing software. Wirelessly display your device using services that are already built in. Instead of using a lightning or 30-pin cable, Reflector connects wirelessly from the presenter's hands for an easy and seamless presentations and demos.
         </p>
     </div>
 
-    <div id="azure" class="sponsor" style="height:auto; border-bottom: 1px #ddd dotted">
+    <div id="azure" class="sponsor" style="">
         <p><a href="http://www.windowsazure.com/ios/"><img src="/images/WinAzure_200.png"
                                                            style="width:250px; float:right; padding-right:8px"/></a>
             Windows Azure Mobile Services allows developers to add a scalable and
@@ -65,7 +66,7 @@
 
     </div>
 
-    <div id="shinobi" class="sponsor" style="height 200px; border-bottom: 1px #ddd dotted">
+    <div id="shinobi" class="sponsor">
         <p><a href="http://www.shinobicontrols.com/"><img src="/images/shinobi_square.jpg"
                                                           style="float: left; padding-right:8px;"/></a>
             <strong>Creating iOS applications? Got data to show off?</strong></p>
@@ -90,9 +91,8 @@
         </p>
     </div>
 
-    <div id="5by5" class="sponsor" style="height:110px">
-        <p><a href="http://www.5by5.tv"><img src="${resource(dir: 'images', file: '5by5.png')}"
-                                             style="float: left; padding-right:8px;"/></a>
+    <div id="5by5" class="sponsor">
+        <p><a href="http://www.5by5.tv"><img src="${resource(dir: 'images', file: '5by5.png')}"/></a>
             <a href="http://5by5.tv">5by5</a> is an Internet broadcasting network, home to <a
                 href="http://5by5.tv/broadcasts">shows</a> like <a href="http://5by5.tv/talkshow">The Talk Show</a>, <a
                 href="http://5by5.tv/b2w">Back to Work</a>, <a href="http://5by5.tv/bigwebshow">The Big Web Show</a>, <a
