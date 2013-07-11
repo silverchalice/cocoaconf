@@ -5,7 +5,7 @@
         <title><g:layoutTitle default="CocoaConf" /></title>
         <link rel="stylesheet" href="${resource(dir:'css',file:'public.css')}" />
         <meta name="tab" content="events" />
-
+        <script type="text/javascript" src="${resource(dir: 'js', file: 'retina.js')}"></script>
         <g:render template="/layouts/favicons" />
         <g:javascript library="jquery" plugin="jquery"/>
         <feed:meta kind="atom" version="1.0" controller="post" action="feed"/>

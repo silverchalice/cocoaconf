@@ -6,6 +6,7 @@
         <title><g:layoutTitle default="Grails" /></title>
         <link rel="stylesheet" href="${resource(dir:'css',file:'public.css')}" />
         <g:render template="/layouts/favicons" />
+        <script type="text/javascript" src="${resource(dir: 'js', file: 'retina.js')}"></script>
         <feed:meta kind="atom" version="1.0" controller="post" action="feed"/>
         <g:layoutHead />
         <g:set var="conference" value="${Conference.get(1)}" />

@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="${resource(dir:'css',file:'conference.css')}" />
         <g:render template="/layouts/favicons" />
         <g:javascript library="jquery" plugin="jquery"/>
-
+        <script type="text/javascript" src="${resource(dir: 'js', file: 'retina.js')}"></script>
         <feed:meta kind="atom" version="1.0" controller="post" action="feed"/>
         <g:layoutHead />
 
