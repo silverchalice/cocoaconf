@@ -93,7 +93,7 @@
             </g:elseif>
 
             <div id="featuredSpeakers">
-                <h2 style="color:#1da0d1;">Featured Speakers</h2>
+                <h2>Featured Speakers</h2>
                 ${conference?.featuredSpeakers}
             </div>
         </div>

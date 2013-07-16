@@ -236,14 +236,15 @@ body {
     color: #1da0d1;
 }
 
-
-
 #featuredSpeakers {
+    line-height:18px;
     float:right;
     width:180px;
     padding: 25px 10px 0;
-    border-left: 1px dotted black;
+}
 
+#featuredSpeakers h2 {
+    font-size: 20px;
 }
 
 .conferenceCell {
