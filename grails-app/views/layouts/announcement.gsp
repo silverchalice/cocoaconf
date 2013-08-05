@@ -63,6 +63,7 @@
               ${conference?.sponsorListBlurb}
               <a href="${resource(dir:'images', file:'sponsorship.pdf')}">Sponsorship Opportunities Available</a>
               <br/><br/>
+              <g:link controller="home" view="kleinfamily">Meet the family behind CocoaConf</g:link>
            </div>
            <div id="content">
               <g:layoutBody />

@@ -23,7 +23,8 @@
 	</head>
 	<body>
 		<h2>About the family behind CocoaConf</h2>
-		<center><img style="width:90%;" src="${resource(dir:'images', file:'klein_family.png')}" /></center>
+		<br/>
+		<img style="width:95%;" src="${resource(dir:'images', file:'klein_family.png')}" />
 		<p>Hi, we’re Dave and Debbie Klein.  Our family works together to bring you CocoaConf, and we are glad you are here!  You’ve probably noticed a few of us scurrying about; maybe you are curious.  Or maybe you are just bored.  In any case, here’s a little about us.</p>
 
 		<p>We were married in 1985 and planned on being your average American family, a nice house, two cars, 2.5 kids. Normal.  But then we realized from God’s word, the Bible, that there was a lot more to life than that.  That we, just like you, were created for a purpose.  In order to fulfill that purpose, we needed to let God take the lead in our lives.  So far, that has led to 14 dearly loved children, a school bus in the driveway, and an average wait for the bathroom of just under 17 minutes.</p>
