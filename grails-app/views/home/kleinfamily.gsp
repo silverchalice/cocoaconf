@@ -22,6 +22,7 @@
 		</script>
 	</head>
 	<body>
+        <br />
 		<h2>About the family behind CocoaConf</h2>
 		<br/>
 		<img style="width:95%;" src="${resource(dir:'images', file:'klein_family.png')}" />
