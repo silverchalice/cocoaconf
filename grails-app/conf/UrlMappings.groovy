@@ -18,6 +18,11 @@ class UrlMappings {
 			id = "alt-2013"
 			tinyName="alt-2013"
 		}
+
+		"/about"{
+			controller = "home"
+			action = "kleinfamily"
+		}
 		
 		"/register"{
 			controller = "conference"
