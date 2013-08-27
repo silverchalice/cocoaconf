@@ -89,11 +89,6 @@
 
 
 
-                <a href="${request.contextPath}/portland-2013/home">
-                    <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'portland.png')}) no-repeat bottom;">
-                        <div class="conferenceCellName">Portland, OR - August 15 - 16 </div>
-                    </div>
-                </a>
                 <a href="${request.contextPath}/columbus-2013/home">
                     <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'columbus.png')}) no-repeat bottom;">
                         <div class="conferenceCellName">Columbus, OH - September 27 - 28</div>
@@ -111,7 +106,13 @@
                 </a>
 
                 <br/>
-
+                <h2>Also Check out CocoaSlopes</h2>
+                <a href="http://cocoaslopes.com">
+                    <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'cocoaslopes.jpg')}) no-repeat bottom;">
+                        <div class="conferenceCellName">Ogden, UT - October 12</div>
+                    </div>
+                </a>
+                <br/>
 
                 <h2><g:link controller="mugShot" action="list">Our Mug</g:link></h2>
                 <g:link controller="mugShot" action="list"><g:img dir="images" file="mugThumb.png" style="width:160px; margin:20px" /> </g:link>
