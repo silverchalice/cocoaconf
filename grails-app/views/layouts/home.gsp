@@ -106,7 +106,7 @@
                 </a>
 
                 <br/>
-                <h2>Also Check out CocoaSlopes</h2>
+                <h2>Also Check out </h2>
                 <a href="http://cocoaslopes.com">
                     <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'cocoaslopes.jpg')}) no-repeat bottom;">
                         <div class="conferenceCellName">Ogden, UT - October 12</div>
