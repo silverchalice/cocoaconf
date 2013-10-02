@@ -89,11 +89,6 @@
 
 
 
-                <a href="${request.contextPath}/columbus-2013/home">
-                    <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'columbus.png')}) no-repeat bottom;">
-                        <div class="conferenceCellName">Columbus, OH - September 27 - 28</div>
-                    </div>
-                </a>
                 <a href="${request.contextPath}/boston-2013/home">
                     <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'boston.png')}) no-repeat bottom;">
                         <div class="conferenceCellName">Boston, MA - October 25 - 26</div>
@@ -144,7 +139,7 @@
            </div>
            <div style="clear: both"></div>
            <div id="footer">
-               <p>Copyright &copy; 2013 Simply Cocoa, LLC. Site by <a href="http://silver-chalice.com">Silver Chalice</a>, LLC.</p>
+               <p>Copyright &copy; 2013 Simply Cocoa, LLC. Site by <a href="http://silver-chalice.com">Silver Chalice</a>, LLC. | <a href="http://cocoaconf.com/about">About the Klein Family</a></p>
            </div>
         </div>
     </body>

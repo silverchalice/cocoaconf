@@ -82,29 +82,39 @@
     <div id="sidebar" style="margin: 0 10px;">
         <h1 style="margin-left: 10px;">Past Events</h1>
 
-        <a href="${request.contextPath}/chicago-2013/home">
-            <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'chicago.png')}) no-repeat bottom;">
-                <div class="conferenceCellName">Chicago, IL - March 7 - 9 </div>
+        <a href="${request.contextPath}/columbus-2013/home">
+            <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'columbus.png')}) no-repeat bottom;">
+                <div class="conferenceCellName">Columbus, OH - September 27 - 28</div>
             </div>
         </a>
-        <a href="${request.contextPath}/dc-2013/home">
-            <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'dc.png')}) no-repeat bottom;">
-                <div class="conferenceCellName">Washington, DC - March 21 - 23</div>
+
+        <a href="${request.contextPath}/portland-2013/home">
+            <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'portland.png')}) no-repeat bottom;">
+                <div class="conferenceCellName">Portland, OR - August 15 - 16 </div>
             </div>
         </a>
-        <a href="${request.contextPath}/dallas-2013/home">
-            <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'dallas.png')}) no-repeat bottom;">
-                <div class="conferenceCellName">Dallas, TX - April 4 - 6</div>
-            </div>
-        </a>
+
         <a href="${request.contextPath}/sanjose-2013/home">
             <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'sanjose.png')}) no-repeat bottom;">
                 <div class="conferenceCellName">San Jose, CA - April 18 - 20</div>
             </div>
         </a>
-        <a href="${request.contextPath}/portland-2013/home">
-            <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'portland.png')}) no-repeat bottom;">
-                <div class="conferenceCellName">Portland, OR - August 15 - 16 </div>
+
+        <a href="${request.contextPath}/dallas-2013/home">
+            <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'dallas.png')}) no-repeat bottom;">
+                <div class="conferenceCellName">Dallas, TX - April 4 - 6</div>
+            </div>
+        </a>
+
+        <a href="${request.contextPath}/dc-2013/home">
+            <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'dc.png')}) no-repeat bottom;">
+                <div class="conferenceCellName">Washington, DC - March 21 - 23</div>
+            </div>
+        </a>
+
+        <a href="${request.contextPath}/chicago-2013/home">
+            <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'chicago.png')}) no-repeat bottom;">
+                <div class="conferenceCellName">Chicago, IL - March 7 - 9 </div>
             </div>
         </a>
 
@@ -116,7 +126,7 @@
     </div>
     <div style="clear: both"></div>
     <div id="footer">
-        <p>Copyright &copy; 2013 Simply Cocoa, LLC. Site by <a href="http://silver-chalice.com">Silver Chalice</a>, LLC.</p>
+        <p>Copyright &copy; 2013 Simply Cocoa, LLC. Site by <a href="http://silver-chalice.com">Silver Chalice</a>, LLC. | <a href="http://cocoaconf.com/about">About the Klein Family</a></p>
     </div>
 </div>
 </body>
