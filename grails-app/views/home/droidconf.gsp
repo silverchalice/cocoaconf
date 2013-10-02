@@ -29,7 +29,8 @@
 
     <script src="/js/jquery-1.6.2.min.js" type="text/javascript"></script>
     <script src="/js/jquery/marquee.js" type="text/javascript"></script>
-    <script src="http://www.flickrshow.co.uk/static/scripts/flickrshow-7.2.min.js"></script>
+    <script src="/js/script.js" type="text/javascript"></script>
+    <script src="/js/flickrshow-7.2.min.js"></script>
     <script src="/js/jquery-ui-1.8.11.custom.min.js" type="text/javascript"></script>
     <script src="/js/jquery.validate.min.js" type="text/javascript"></script>
     <script src="/js/script.js" type="text/javascript"></script>

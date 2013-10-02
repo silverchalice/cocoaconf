@@ -10,7 +10,7 @@
         <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
 
         <script src="${resource(dir:'js', file:'jquery-1.6.2.min.js')}" type="text/javascript"></script>
-        <script src="http://www.flickrshow.co.uk/static/scripts/flickrshow-7.2.min.js"></script>
+        <script src="${resource(dir:'js', file:'flickrshow-7.2.min.js type="text/javascript"></script>
         <script src="${resource(dir:'js', file:'jquery-ui-1.8.11.custom.min.js')}" type="text/javascript"></script>
         <script src="${resource(dir:'js', file:'jquery.validate.min.js')}" type="text/javascript"></script>
         <script src="${resource(dir:'js', file:'script.js')}" type="text/javascript"></script>
