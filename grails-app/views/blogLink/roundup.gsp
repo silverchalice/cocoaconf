@@ -32,13 +32,20 @@
                     'set':'72157633094975265'
                 });
 
+                var sanjose = new flickrshow('sanjose', {
+                    autoplay:true,
+                    interval:5000,
+                    'set':'72157633396616932'
+                });
+
                 var portland = new flickrshow('portland', {
                     autoplay:true,
                     interval:5000,
-                    'set':'72157631914020050'
+                    'set':'72157635187685973'
                 });
 
             })
+
 
         </script>
 
@@ -68,7 +75,19 @@
 			</div>
 		</g:each>
 
-		<h1>CocoaConf DC 2013 Wrap Up!</h1>
+        <h1>CocoaConf San Jose 2013 Wrap Up!</h1>
+        <div class="flickrGallery" id="sanjose">
+            <p>Please enable Javascript to view this slideshow</p>
+        </div>
+
+        <g:each in="${sjBlogLinks}" var="link">
+            <div class="blogLink">
+                <h4>${link.title}</h4>
+                <p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
+            </div>
+        </g:each>
+
+        <h1>CocoaConf DC 2013 Wrap Up!</h1>
         <div class="flickrGallery" id="dc">
             <p>Please enable Javascript to view this slideshow</p>
         </div>
@@ -80,7 +99,7 @@
             </div>
         </g:each>
 
-    <h1>CocoaConf PDX 2012 Wrap Up!</h1>
+    <h1>CocoaConf PDX 2013 Wrap Up!</h1>
     <div class="flickrGallery" id="portland">
         <p>Please enable Javascript to view this slideshow</p>
     </div>

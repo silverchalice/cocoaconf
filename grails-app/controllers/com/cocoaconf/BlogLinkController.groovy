@@ -100,8 +100,9 @@ class BlogLinkController {
 	
 	def roundup = {
 		def dcBlogLinks = BlogLink.findAllByEvent(Conference.get(9), [sort:'id', order:'desc'])
-		def pdxBlogLinks = BlogLink.findAllByEvent(Conference.get(6), [sort:'id', order:'desc'])
+        def sjBlogLinks = BlogLink.findAllByEvent(Conference.get(11), [sort:'id', order:'desc'])
+        def pdxBlogLinks = BlogLink.findAllByEvent(Conference.get(15), [sort:'id', order:'desc'])
 		def blurbs = HomePageBlurb.findAllByActive(true, [sort: 'priority', order:'asc'])
-		[dcBlogLinks:dcBlogLinks, pdxBlogLinks:pdxBlogLinks, blurbs:blurbs]
+		[dcBlogLinks:dcBlogLinks, pdxBlogLinks:pdxBlogLinks, sjBlogLinks: sjBlogLinks, blurbs:blurbs]
 	}
 }

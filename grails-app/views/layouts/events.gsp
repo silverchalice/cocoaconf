@@ -102,6 +102,12 @@
                 <div class="conferenceCellName">San Jose, CA - April 18 - 20</div>
             </div>
         </a>
+        <a href="${request.contextPath}/portland-2013/home">
+            <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'portland.png')}) no-repeat bottom;">
+                <div class="conferenceCellName">Portland, OR - August 15 - 16 </div>
+            </div>
+        </a>
+
     </div>
 
     <div id="content" style="width: 920px">
