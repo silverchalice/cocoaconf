@@ -89,11 +89,6 @@
 
 
 
-                <a href="${request.contextPath}/boston-2013/home">
-                    <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'boston.png')}) no-repeat bottom;">
-                        <div class="conferenceCellName">Boston, MA - October 25 - 26</div>
-                    </div>
-                </a>
                 <a href="${request.contextPath}/atlanta-2013/home">
                     <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'atlanta.png')}) no-repeat bottom;">
                         <div class="conferenceCellName">Atlanta, GA - November 15 - 16</div>
@@ -101,12 +96,6 @@
                 </a>
 
                 <br/>
-                <h2>Also Check out </h2>
-                <a href="http://cocoaslopes.com">
-                    <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'cocoaslopes.jpg')}) no-repeat bottom;">
-                        <div class="conferenceCellName">Ogden, UT - October 12</div>
-                    </div>
-                </a>
                 <br/>
 
                 <h2><g:link controller="mugShot" action="list">Our Mug</g:link></h2>
