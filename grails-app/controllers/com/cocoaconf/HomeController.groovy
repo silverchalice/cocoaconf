@@ -23,6 +23,10 @@ class HomeController {
 		render "ok"
 	}
 	
+    def s = {
+      session.sawCountdown = "yup"
+    }
+
     def announcement = {}
 
     def register = {}

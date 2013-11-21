@@ -11,6 +11,11 @@ class UrlMappings {
 			controller = "blogLink"
 			action = "roundup"
 		}
+
+    "/c"{
+      controller = "home"
+      action = "s"
+    }
 		
 		"/alt"{
 			controller = "conference"
