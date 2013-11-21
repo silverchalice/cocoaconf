@@ -24,6 +24,11 @@ class HomeController {
 	}
 	
     def s = {
+      if(params.beautiful){
+          session.beautiful = true
+      } else {
+          session.beautiful = null
+      }
       session.sawCountdown = "yup"
     }
 

@@ -8,14 +8,14 @@ class UrlMappings {
 		}
 
 		"/"{
-			controller = "blogLink"
-			action = "roundup"
+			controller = "home"
+			action = "s"
 		}
 
-    "/c"{
-      controller = "home"
-      action = "s"
-    }
+/*		"/"{
+			controller = "blogLink"
+			action = "roundup"
+		} */
 		
 		"/alt"{
 			controller = "conference"

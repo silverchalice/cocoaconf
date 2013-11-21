@@ -12,15 +12,15 @@
 
 <div class="main">
 
-  <img class="logo" src="images/cc-logo.png" height="100" width="790" alt="CocoaConf"/>
+  <img class="logo" src="images/cc-logo-a.png" height="100" width="790" alt="CocoaConf"/>
   <p class="slogan">the conference for <span>iPhone</span>, <span>iPad</span> and <span>Mac</span> developers</p>
-  <h1>2014 Spring Tour</h1>
+  <h1>2014 Spring Tour${session.beautiful ? '!' : ''}</h1>
 
   <h2>Registration is opening in</h2>
   
   <span id="timer"></span>
 <br/>
-  <h2>CocoaConf will be coming to</h2>
+  <h2 style="margin-top: 50px;">CocoaConf will be coming to</h2>
 
   <ul class="schedule">
     <li>
