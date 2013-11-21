@@ -4,8 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-
-
+<title><g:layoutTitle default="CocoaConf | 2014 Spring Tour" /></title>
 <link rel="${resource(dir:'js/jquery', file:'jquery.countdown.css')}" type="text/css">
 <g:if test="${session.beautiful}">
   <link rel="stylesheet" href="${resource(dir:'css', file:'b.css')}" type="text/css">

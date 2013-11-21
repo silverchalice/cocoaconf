@@ -24,7 +24,7 @@ class HomeController {
 	}
 	
     def s = {
-      if(params.beautiful){
+      if(params.beautifulAndShiny){
           session.beautiful = true
       } else {
           session.beautiful = null

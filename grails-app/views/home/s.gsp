@@ -20,7 +20,7 @@
   
   <span id="timer"></span>
 <br/>
-  <h2 style="margin-top: 50px;">CocoaConf will be coming to</h2>
+  <h2 id="locations">CocoaConf will be coming to</h2>
 
   <ul class="schedule">
     <li>

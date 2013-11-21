@@ -34,6 +34,10 @@ h2 {
   margin: 65px 0 60px;
 }
 
+h2#locations {
+  margin-top: 50px;
+}
+
 #timer {
   width:1000px;
   height:200px;
