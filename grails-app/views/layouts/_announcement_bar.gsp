@@ -1,6 +1,7 @@
 <span id="announcementHeadline">
-	<a href="${request.contextPath}/blog/2013-fall-tour">
-		2013 Fall Tour Registration Now Open!
+	<!--<a href="${request.contextPath}/blog/2013-fall-tour">-->
+  <a href="/">
+		2014 Spring Tour Registration Opening Soon!
 	</a>
 </span>
 <!-- <span style="color:#C0C0C0; margin-left:30px; margin-right:30px;">
