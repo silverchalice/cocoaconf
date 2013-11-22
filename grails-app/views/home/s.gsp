@@ -24,26 +24,31 @@
 
   <ul class="schedule">
     <li>
-      <h3>Chicago, IL</h3>
+      <h2>Chicago</h2>
+      <h3>Illinois</h3>
       <p>March 7-8 2014</p>
     </li>
       
     <li>
-      <h3>Washington DC</h3>
+      <h2>Washington</h2>
+        <h3>DC</h3>
       <p>March 28-29 2014</p>
     </li>
     
     <li>
-      <h3>Austin, TX</h3>
+      <h2>Austin</h2>
+       <h3>Texas</h3>
       <p>April 4-5 2014</p>
     </li>
     
     <li>
-      <h3>San Jose, CA</h3>
+      <h2>San Jose</h2>
+      <h3>California</h3>
       <p>April 25-26 2014</p>
     </li>
     <li>
-      <h3>Raleigh, NC</h3>
+      <h2>Raleigh</h2>
+      <h3>North Carolina</h3>
       <p>May 9-10 2014</p>
     </li>
   </ul>
