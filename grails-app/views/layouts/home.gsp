@@ -95,8 +95,8 @@
                     </div>
                 </a>
 
-                <br/>
                 <br/> -->
+                <br/>
 
                 <h2><g:link controller="mugShot" action="list">Our Mug</g:link></h2>
                 <g:link controller="mugShot" action="list"><g:img dir="images" file="mugThumb.png" style="width:160px; margin:20px" /> </g:link>
