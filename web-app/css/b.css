@@ -12,6 +12,7 @@ body {
   padding: 0;
   margin: 0 auto;
     height: 100%;
+    background: black;
 }
 
 .clear {
@@ -21,7 +22,7 @@ body {
 .main {
   margin 0 auto;
   padding: 0;
-  min-height: 1000px;
+  height: 85%;
   background: pink;
 }
 
@@ -45,7 +46,7 @@ h2#locations {
 #timer {
   width:1000px;
   height:200px;
-  font-size: 39pt;
+  font-size: 36pt;
   padding: 30px 50px;
 }
 
@@ -54,13 +55,14 @@ h2#locations {
 }
 
 .schedule {
-  width: 1000px;
   margin:0 auto;
+  max-width: 900px;
+  padding: 0;
 }
 
 .schedule li {
   float:left;
-  width: 200px;
+  width: 20%;
   list-style: none;
 }
 
