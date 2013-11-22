@@ -85,7 +85,7 @@
             </div>
             <div id="sidebar" style="margin: 0 10px;">
 
-                <h1 style="margin-left: 10px; color: #35b6ff">2013 Fall Tour</h1>
+                <!--<h1 style="margin-left: 10px; color: #35b6ff">2013 Fall Tour</h1>
 
 
 
@@ -96,7 +96,7 @@
                 </a>
 
                 <br/>
-                <br/>
+                <br/> -->
 
                 <h2><g:link controller="mugShot" action="list">Our Mug</g:link></h2>
                 <g:link controller="mugShot" action="list"><g:img dir="images" file="mugThumb.png" style="width:160px; margin:20px" /> </g:link>
