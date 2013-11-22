@@ -5,11 +5,13 @@ html {
   line-height: 19px;
   text-align: center;
   padding: 0;
+    height: 100%;
 }
 
 body {
   padding: 0;
   margin: 0 auto;
+    height: 100%;
 }
 
 .clear {
@@ -19,7 +21,8 @@ body {
 .main {
   margin 0 auto;
   padding: 0;
-  min-height: 800px;
+  min-height: 1000px;
+  background: pink;
 }
 
 h1 {
@@ -36,12 +39,13 @@ h2 {
 
 h2#locations {
   margin-top: 50px;
+  /*margin: 60px 0 25px;*/
 }
 
 #timer {
   width:1000px;
   height:200px;
-  font-size: 42pt;
+  font-size: 39pt;
   padding: 30px 50px;
 }
 
@@ -50,14 +54,23 @@ h2#locations {
 }
 
 .schedule {
-  width: 1280px;
+  width: 1000px;
   margin:0 auto;
 }
 
 .schedule li {
   float:left;
-  width: 250px;
+  width: 200px;
   list-style: none;
+}
+
+.schedule h2, h3 {
+    margin: 10px;
+}
+
+.schedule h2 {
+    font-size: 32px;
+    line-height: 48px;
 }
 
 .share {
@@ -83,9 +96,8 @@ h2#locations {
 #footer {
   text-align:center;
   background-color: black;
-  height:15%;
+  height:250px;
   width:100%;
-  position: bottom;
   bottom: 0;
 }
 
