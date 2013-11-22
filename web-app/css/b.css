@@ -22,7 +22,7 @@ body {
 .main {
   margin 0 auto;
   padding: 0;
-  height: 85%;
+  min-height: 900px;
   background: pink;
 }
 
