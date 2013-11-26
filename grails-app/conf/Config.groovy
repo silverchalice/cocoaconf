@@ -87,7 +87,7 @@ grails.plugins.springsecurity.securityConfigType = SecurityConfigType.InterceptU
 grails.plugins.springsecurity.interceptUrlMap = [
 
     '/':                                                     ['IS_AUTHENTICATED_ANONYMOUSLY'],
-    '/c':                                                     ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '/blogLink/roundup':                                                     ['IS_AUTHENTICATED_ANONYMOUSLY'],
 '/alt':                                                      ['IS_AUTHENTICATED_ANONYMOUSLY'],
 '/home/droidconf':                                           ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/images/**':                                            ['IS_AUTHENTICATED_ANONYMOUSLY'],
