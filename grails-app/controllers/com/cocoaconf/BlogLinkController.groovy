@@ -99,10 +99,6 @@ class BlogLinkController {
     }
 	
 	def roundup = {
-    if(!session.sawCountdown){
-        redirect controller: "home", action: "s"
-        return
-    }
 		def dcBlogLinks = BlogLink.findAllByEvent(Conference.get(9), [sort:'id', order:'desc'])
         def sjBlogLinks = BlogLink.findAllByEvent(Conference.get(11), [sort:'id', order:'desc'])
         def pdxBlogLinks = BlogLink.findAllByEvent(Conference.get(15), [sort:'id', order:'desc'])
