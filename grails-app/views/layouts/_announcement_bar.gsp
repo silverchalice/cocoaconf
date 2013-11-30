@@ -1,5 +1,5 @@
 <span id="announcementHeadline">
-	<a href="${request.contextPath}/blog/2013-fall-tour">
+  <a href="/">
 		2014 Spring Tour Registration Opening Soon!
 	</a>
 </span>

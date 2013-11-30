@@ -23,6 +23,15 @@ class HomeController {
 		render "ok"
 	}
 	
+    def s = {
+      if(params.beautifulAndShiny){
+          session.beautiful = true
+      } else {
+          session.beautiful = null
+      }
+      session.sawCountdown = "yup"
+    }
+
     def announcement = {}
 
     def register = {}
