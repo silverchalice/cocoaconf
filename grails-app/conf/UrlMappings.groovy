@@ -81,6 +81,12 @@ class UrlMappings {
             action = "pickSessions"
             id = "$tinyName"
 		}
+		"/speaking/$tinyName"{
+			controller = "conference"
+			action = "speaking"
+			id = "$tinyName"
+		}
+		
         /* taking this out until we
            have time to add text to
            the About page

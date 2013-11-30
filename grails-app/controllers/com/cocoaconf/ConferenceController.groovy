@@ -32,6 +32,17 @@ class ConferenceController {
         }
     }
 
+    def speaking(){
+        def referer = request.getHeader("referer")
+        def tag = params.tag
+        def conference = null
+        if (params.tinyName){
+            conference = Conference.findByTinyName(params.tinyName)
+        }
+        new Click(referer:referer, tag:tag, conference:conference).save(flush:true)
+        redirect(action:'home', params:[tinyName:params.tinyName])
+    }
+
    def list() {
         params.max = Math.min(params.max ? params.int('max') : 10, 100)
         params.sort = "startDate"
