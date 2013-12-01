@@ -24,11 +24,27 @@
 				<thead>
 					<tr>
 					
+						<g:sortableColumn property="referer" title="${message(code: 'click.referer.label', default: 'Referer')}" />
+					
+						<g:sortableColumn property="tag" title="${message(code: 'click.tag.label', default: 'Tag')}" />
+					
+						<th><g:message code="click.conference.label" default="Conference" /></th>
+					
+						<g:sortableColumn property="dateCreated" title="${message(code: 'click.dateCreated.label', default: 'Date Created')}" />
+					
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${clickInstanceList}" status="i" var="clickInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+					
+						<td><g:link action="show" id="${clickInstance.id}">${fieldValue(bean: clickInstance, field: "referer")}</g:link></td>
+					
+						<td>${fieldValue(bean: clickInstance, field: "tag")}</td>
+					
+						<td>${fieldValue(bean: clickInstance, field: "conference")}</td>
+					
+						<td><g:formatDate date="${clickInstance.dateCreated}" /></td>
 					
 					</tr>
 				</g:each>

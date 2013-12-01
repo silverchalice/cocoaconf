@@ -23,6 +23,42 @@
 			</g:if>
 			<ol class="property-list click">
 			
+				<g:if test="${clickInstance?.referer}">
+				<li class="fieldcontain">
+					<span id="referer-label" class="property-label"><g:message code="click.referer.label" default="Referer" /></span>
+					
+						<span class="property-value" aria-labelledby="referer-label"><g:fieldValue bean="${clickInstance}" field="referer"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${clickInstance?.tag}">
+				<li class="fieldcontain">
+					<span id="tag-label" class="property-label"><g:message code="click.tag.label" default="Tag" /></span>
+					
+						<span class="property-value" aria-labelledby="tag-label"><g:fieldValue bean="${clickInstance}" field="tag"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${clickInstance?.conference}">
+				<li class="fieldcontain">
+					<span id="conference-label" class="property-label"><g:message code="click.conference.label" default="Conference" /></span>
+					
+						<span class="property-value" aria-labelledby="conference-label"><g:link controller="conference" action="show" id="${clickInstance?.conference?.id}">${clickInstance?.conference?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${clickInstance?.dateCreated}">
+				<li class="fieldcontain">
+					<span id="dateCreated-label" class="property-label"><g:message code="click.dateCreated.label" default="Date Created" /></span>
+					
+						<span class="property-value" aria-labelledby="dateCreated-label"><g:formatDate date="${clickInstance?.dateCreated}" /></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form>
 				<fieldset class="buttons">
