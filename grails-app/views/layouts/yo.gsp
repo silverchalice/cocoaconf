@@ -18,7 +18,7 @@
 
 <script type="text/javascript">
 $(function () {
-  var launchDate = new Date("December 2, 2013, 00:00:00")
+  var launchDate = new Date("December 2, 2013, 10:00:00")
   $('#timer').countdown({until: launchDate, layout:'<span>{d<}{dn}</span> {dl}, {d>}'+ 
     '<span>{hn}</span> {hl}, <span>{mn}</span> {ml}, <span>{sn}</span> {sl}'}); 
 });
