@@ -2,7 +2,7 @@
   <a href="/">
 		2014 Spring Tour Registration Opening Soon!
 	</a>
-</span>
+</span
 <!-- <span style="color:#C0C0C0; margin-left:30px; margin-right:30px;">
 	|
 </span>

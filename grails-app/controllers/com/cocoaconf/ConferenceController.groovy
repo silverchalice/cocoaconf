@@ -39,7 +39,7 @@ class ConferenceController {
         if (params.tinyName){
             conference = Conference.findByTinyName(params.tinyName)
         }
-        new Click(referer:referer, tag:tag, conference:conference).save(flush:true)
+        new Click(dateCreated:new Date(), referer:referer, tag:tag, conference:conference).save(flush:true)
         redirect(action:'home', params:[tinyName:params.tinyName])
     }
 
