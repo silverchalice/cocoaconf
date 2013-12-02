@@ -85,17 +85,14 @@
             </div>
             <div id="sidebar" style="margin: 0 10px;">
 
-                <!--<h1 style="margin-left: 10px; color: #35b6ff">2013 Fall Tour</h1>
+                <h1 style="margin-left: 10px; color: #35b6ff">2013 Fall Tour</h1>
 
 
 
-                <a href="${request.contextPath}/atlanta-2013/home">
-                    <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'atlanta.png')}) no-repeat bottom;">
-                        <div class="conferenceCellName">Atlanta, GA - November 15 - 16</div>
-                    </div>
-                </a>
+                <cc:activeEventSidebar />
 
-                <br/> -->
+
+                <br/>
                 <br/>
 
                 <h2><g:link controller="mugShot" action="list">Our Mug</g:link></h2>

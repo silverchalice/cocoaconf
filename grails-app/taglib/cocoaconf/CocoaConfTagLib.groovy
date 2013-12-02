@@ -1,5 +1,7 @@
 package cocoaconf
 
+import com.cocoaconf.*
+
 class CocoaConfTagLib {
 
     static namespace = "cc"
@@ -15,6 +17,16 @@ class CocoaConfTagLib {
       else {
         out << value
       }
+    }
+
+    def activeEventSidebar = {
+
+        def events = Conference.findAllByStatus(Conference.ACTIVE, [sort: 'startDate'])
+
+        events.each { event ->
+            out << render(template: '/home/conferenceCell', model: [conference: event])
+        }
+
     }
 
 }
