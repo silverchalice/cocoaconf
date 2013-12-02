@@ -84,7 +84,7 @@
 
         <a href="${request.contextPath}/atlanta-2013/home">
             <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'atlanta.png')}) no-repeat bottom;">
-                <div class="conferenceCellName">Atlanta, GA - Novenber 15 - 16</div>
+                <div class="conferenceCellName">Atlanta, GA - November 15 - 16</div>
             </div>
         </a>
 
