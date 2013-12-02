@@ -28,9 +28,11 @@ body {
 
 h1 {
   font-weight: normal;
-  font-size: 36pt;
-  margin: 50px 0;
+  font-size: 37pt;
+  margin: 40px 0 50px;
 }
+
+p { font-size: x-large }
 
 h2 {
   padding: 15px 0 19px;
@@ -79,7 +81,7 @@ h2#locations {
 }
 
 .logo {
-  margin-top: 25px;
+  margin-top: 180px;
 }
 
 .slogan {

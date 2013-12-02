@@ -12,9 +12,9 @@
 
 <div class="main">
 
-  <img class="logo" src="images/cc-logo-a.png" height="100" width="790" alt="CocoaConf"/>
-  <p class="slogan">the conference for <span>iPhone</span>, <span>iPad</span> and <span>Mac</span> developers</p>
-  <h1>We'll be back soon</h1>
+  <img class="logo" src="images/flat.png" height="50" width="51" alt="CocoaConf"/>
+  <h1>We&#8217;ll be back.</h1>
+  <p>We&#8217;re busy updating CocoaConf for you and will be back soon.</p>
 
 </div>
 
