@@ -48,7 +48,10 @@
       </div>
 
       <div class="body">
-          <h1>${conference?.description} Venue</h1>
+          <h1>${conference?.description}: Venue</h1>
+          <g:if test="${!schedule}">
+            <p><strong>We are still working on the schedule for this event.</strong> Please check back soon!</p>
+          </g:if>
           <h2>${conference?.venue?.name}</h2>
           ${conference?.venue?.description}
          <br/>
