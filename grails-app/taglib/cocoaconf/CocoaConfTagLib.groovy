@@ -21,7 +21,13 @@ class CocoaConfTagLib {
 
     def activeEventSidebar = {
 
-        def events = Conference.findAllByStatus(Conference.ACTIVE, [sort: 'startDate'])
+        def events = []
+
+        events << Conference.findByDescription("CocoaConf Chicago 2014")
+        events << Conference.findByDescription("CocoaConf DC 2014")
+        events << Conference.findByDescription("CocoaConf Mini Austin 2014")
+        events << Conference.findByDescription("CocoaConf San Jose 2014")
+        events << Conference.findByDescription("CocoaConf Mini Raleigh 2014")
 
         events.each { event ->
             out << render(template: '/home/conferenceCell', model: [conference: event])
