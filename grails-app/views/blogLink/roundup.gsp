@@ -75,41 +75,18 @@
 			</div>
 		</g:each>
 
-        <h1>CocoaConf San Jose 2013 Wrap Up!</h1>
+    <!--<h1>CocoaConf San Jose 2013 Wrap Up!</h1>
         <div class="flickrGallery" id="sanjose">
             <p>Please enable Javascript to view this slideshow</p>
         </div>
 
-        <g:each in="${sjBlogLinks}" var="link">
+         <g:each in="${sjBlogLinks}" var="link">
             <div class="blogLink">
                 <h4>${link.title}</h4>
                 <p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
             </div>
-        </g:each>
+        </g:each> -->
 
-        <h1>CocoaConf DC 2013 Wrap Up!</h1>
-        <div class="flickrGallery" id="dc">
-            <p>Please enable Javascript to view this slideshow</p>
-        </div>
-
-        <g:each in="${dcBlogLinks}" var="link">
-            <div class="blogLink">
-                <h4>${link.title}</h4>
-                <p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
-            </div>
-        </g:each>
-
-    <h1>CocoaConf PDX 2013 Wrap Up!</h1>
-    <div class="flickrGallery" id="portland">
-        <p>Please enable Javascript to view this slideshow</p>
-    </div>
-
-    <g:each in="${pdxBlogLinks}" var="link">
-        <div class="blogLink">
-            <h4>${link.title}</h4>
-            <p>&#8220;${link.snippet}&#8221; <a href="${link.url}">Read more...</a></p>
-        </div>
-    </g:each>
 
     </body>
 </html>
