@@ -82,6 +82,12 @@
     <div id="sidebar" style="margin: 0 10px;">
         <h1 style="margin-left: 10px;">Past Events</h1>
 
+        <a href="${request.contextPath}/atlanta-2013/home">
+            <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'atlanta.png')}) no-repeat bottom;">
+                <div class="conferenceCellName">Atlanta, GA - Novenber 15 - 16</div>
+            </div>
+        </a>
+
         <a href="${request.contextPath}/boston-2013/home">
             <div class="conferenceCell" style="background: url(${resource(dir: 'images', file:'boston.png')}) no-repeat bottom;">
                 <div class="conferenceCellName">Boston, MA - October 25 - 26</div>
