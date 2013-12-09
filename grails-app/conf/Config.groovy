@@ -87,6 +87,7 @@ grails.plugins.springsecurity.securityConfigType = SecurityConfigType.InterceptU
 grails.plugins.springsecurity.interceptUrlMap = [
 
     '/':                                                     ['IS_AUTHENTICATED_ANONYMOUSLY'],
+    '**/session/**':                                         ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/blogLink/roundup':                                                     ['IS_AUTHENTICATED_ANONYMOUSLY'],
 '/alt':                                                      ['IS_AUTHENTICATED_ANONYMOUSLY'],
 '/home/droidconf':                                           ['IS_AUTHENTICATED_ANONYMOUSLY'],
@@ -183,7 +184,6 @@ grails.plugins.springsecurity.interceptUrlMap = [
     '/locationRequest/*':                                                      ['ROLE_ADMIN'],
 	'/homePageBlurb/*': 														['ROLE_ADMIN'],	
     '/interest/*':                                                              ['ROLE_ADMIN'],
-    '**/session/**':                                         ['IS_AUTHENTICATED_ANONYMOUSLY'],
     '/**':                                                         ['IS_AUTHENTICATED_FULLY']
 ]
 
