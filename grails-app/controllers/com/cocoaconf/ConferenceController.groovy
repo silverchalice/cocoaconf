@@ -245,20 +245,25 @@ class ConferenceController {
     }
 
     def sessionDetails = {
+      println "in sessionDetails with these params: $params"
 	    def conf
 	    def presentation
 	    if(params.tinyName){
+        println "there was a tinyName"
 		    conf = Conference.findByTinyName(params.tinyName)
 		    presentation = Presentation.findBySlug(params.slug)
 	    }
 	    else{
+          println "there was not a tinyName"
 	        conf = Conference.get(params.confId)
 	        presentation = Presentation.get(params.id)
 	    }
 	    if (conf && presentation){
+        println "there was a conference and also a presentation"
 		    return[conference:conf, presentation:presentation]
 	    }	 
 	    else {
+          println "there weren't things. We will redirect it to the home"
 	        redirect controller: "home"
 	    }
     }
