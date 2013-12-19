@@ -120,10 +120,14 @@ class UrlMappings {
 			controller = "speaker"
 			action = "speakers"
 		}
-        "/sessions"{
-      			controller = "session"
-      			action = "sessions"
-      	}
+		"/sponsor"{
+			controller = "home"
+			action = "prospectus"
+		}
+    "/sessions"{
+  		controller = "session"
+      action = "sessions"
+    }
 		"/roundup"{
 			controller = "blogLink"
 			action = "roundup"
