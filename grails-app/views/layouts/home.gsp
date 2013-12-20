@@ -101,7 +101,7 @@
                 <a href="http://github.com"><img src="${resource(dir:'images', file:'github.png')}"/></a>
                 <br/>
                 <br/>
-                <href="http://revealapp.com"><img src="${resource(dir:'images', file:'reveal-logo.png')}"/></a>
+                <a href="http://revealapp.com"><img src="${resource(dir:'images', file:'reveal-logo.png')}"/></a>
                 <br/>
                 <br/>
                 <g:link controller="home" action="prospectus"><h4>Sponsorship Opportunities Available</h4></g:link>
