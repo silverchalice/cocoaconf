@@ -61,7 +61,7 @@
               <h2 style="color:#1da0d1;">Our Sponsors</h2>
               <br/>
               ${conference?.sponsorListBlurb}
-              <a href="${resource(dir:'images', file:'sponsorship.pdf')}">Sponsorship Opportunities Available</a>
+              <g:link controller="home" action="prospectus">Sponsorship Opportunities Available</g:link>
               <br/><br/>
               <g:link controller="home" view="kleinfamily">Meet the family behind CocoaConf</g:link>
            </div>

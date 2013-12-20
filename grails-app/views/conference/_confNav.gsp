@@ -38,6 +38,6 @@
         <a href="${partner.url}"><img src="${resource(dir:'images', file: partner.logoFile)}" alt="${partner.name}" /></a>
     </g:each>
     <br/>
-    <a href="${resource(dir:'images', file:'sponsorship.pdf')}">Sponsorships Available</a>
+    <g:link controller="home" action="prospectus">Sponsorships Available</g:link>
 </div>
 <br/><br/>
