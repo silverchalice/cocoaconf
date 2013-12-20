@@ -29,12 +29,18 @@
         <p><a href="http://www.bignerdranch.com"><img src="/images/big-nerd-ranch.jpg"
                                                       style="width:250px; float:left; padding-right:8px"/></a>
             When the <a
-                href="http://www.bignerdranch.com/">Big Nerd Ranch</a> started out, we did one thing and we did it well: we taught programming languages. Now, over a decade later, we’ve expanded to include consulting, software products and an ever-growing library of <a
+                href="http://www.bignerdranch.com/">Big Nerd Ranch</a> started out, we did one thing and we did it well: we taught programming languages. Now, over a decade later, we&#8217;ve expanded to include consulting, software products and an ever-growing library of <a
                 href="http://www.bignerdranch.com/books">Big Nerd Ranch books</a>.</p>
 
         <p>The key to the Ranch getting bigger - and better - every day? We started out teaching, but we never stopped learning. Our teachers became experts. Who became consultants. And they learned even more. All that knowledge influenced our software products division. And our software products division? Everything they learn comes back to influence our classes and our consulting. So every horse in our proverbial stable helps make the others that much stronger.</p>
 
-        <p>Notice a theme here? Learning. It’s at the core of everything we do now and everything we’ll do in the future.</p>
+        <p>Notice a theme here? Learning. It&#8217;s at the core of everything we do now and everything we&#8217;ll do in the future.</p>
+    </div>
+
+    <div id="Reveal" class="sponsor">
+        <p><a href="http://revealapp.com"><img src="/images/reveal-logo.png"
+                                                      style="float:left; padding-right:8px"/></a>
+            <a href="http://revealapp.com">Reveal</a> brings the power of tools like Firebug and Web Inspector to iOS developers. See your application&#8217;s view hierarchy at runtime with advanced 2D and 3D visualisations. Debug view layout and rendering problems in seconds. Reveal lets you edit and modify views in your running application to see the effect immediately. No more recompiling to test simple visual changes. Debugging your apps will never be the same again.</p>
     </div>
 
     <div id="github" class="sponsor">
