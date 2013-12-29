@@ -12,7 +12,7 @@ class HomeController {
     def config = ConfigurationHolder.config
 
     def index = {
-	    redirect action: 'announcement'
+	    //redirect action: 'announcement'
 	}
 
     def testFeed = {
