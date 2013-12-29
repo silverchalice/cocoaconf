@@ -9,10 +9,11 @@ class HomeController {
 
     def springSecurityService
     def feedService
+    def randomService
     def config = ConfigurationHolder.config
 
     def index = {
-	    //redirect action: 'announcement'
+      [useImg: randomService?.nextInteger(50) + 1]
 	}
 
     def testFeed = {
