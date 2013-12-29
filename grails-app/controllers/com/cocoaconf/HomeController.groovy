@@ -13,7 +13,7 @@ class HomeController {
     def config = ConfigurationHolder.config
 
     def index = {
-      [useImg: randomService?.nextInteger(50) + 1]
+      [useImg: randomService?.nextInteger(100) + 1]
 	}
 
     def testFeed = {

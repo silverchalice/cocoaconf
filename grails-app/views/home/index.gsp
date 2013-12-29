@@ -9,7 +9,7 @@
 <body>
 <div class="about">
     <div class="container">
-        <div class="media"> <img src="${useImg > 24 ? resource(dir: 'images', file: 'img_imac.png') : resource(dir: 'images', file: 'img_iphone_c.png')}" alt="${useImg > 24 ? 'An iMac' : 'An iPhone 5c'}" class="pull-right ${useImg > 24 ? 'imac' : 'iphone'}"></a>
+        <div class="media"> <img src="${useImg > 75 ? resource(dir: 'images', file: 'img_imac.png') : resource(dir: 'images', file: 'img_iphone_c.png')}" alt="${useImg > 75 ? 'An iMac' : 'An iPhone 5c'}" class="pull-right ${useImg > 75 ? 'imac' : 'iphone'}"></a>
             <div class="media-body">
 
   <h2>About CocoaConf</h2>
