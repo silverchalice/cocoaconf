@@ -24,35 +24,35 @@
         <div class="row">
             <div class="span1">&nbsp;</div>
             <div class="span2">
-                <a href="#"><h3>Chicago<br>
-                    <small>March 7–8</small></h3></a>
-                <p><i class="ion-ios7-contact-outline"></i> <a href="city_speakers.html">Speakers</a></p>
-                <p><i class="ion-ios7-chatboxes-outline"></i> <a href="city_sessions.html">Session Topics</a></p>
-                <a href="#" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward"></i></a> </div>
+                <g:link controller="conference" action="home" params="['tinyName': 'chicago-2014']"><h3>Chicago<br>
+                    <small>March 7–8</small></h3></g:link>
+                <p><i class="ion-ios7-contact-outline"></i> <g:link controller="conference" action="speakers" params="['tinyName': 'chicago-2014']">Speakers</g:link></p>
+                <p><i class="ion-ios7-chatboxes-outline"></i> <g:link controller="conference" action="sessions" params="['tinyName': 'chicago-2014']">Session Topics</g:link></p>
+                <g:link controller="conference" action="register" params="['tinyName': 'chicago-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward"></i></g:link> </div>
             <div class="span2">
-                <a href="#"><h3><em class="dc-title">Washington DC</em><br>
-                    <small>March 28–29</small></h3></a>
-                <p><i class="ion-ios7-contact-outline"></i> <a href="city_speakers.html">Speakers</a></p>
-                <p><i class="ion-ios7-chatboxes-outline"></i> <a href="city_sessions.html">Session Topics</a></p>
-                <a href="#" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward"></i></a> </div>
+                <g:link controller="conference" action="home" params="['tinyName': 'dc-2014']"><h3>DC<br>
+                    <small>March 7–8</small></h3></g:link>
+                <p><i class="ion-ios7-contact-outline"></i> <g:link controller="conference" action="speakers" params="['tinyName': 'dc-2014']">Speakers</g:link></p>
+                <p><i class="ion-ios7-chatboxes-outline"></i> <g:link controller="conference" action="sessions" params="['tinyName': 'dc-2014']">Session Topics</g:link></p>
+                <g:link controller="conference" action="register" params="['tinyName': 'dc-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward"></i></g:link> </div>
             <div class="span2">
-                <a href="#"><h3>Austin<br>
-                    <small>April 4–5</small></h3></a>
-                <p><i class="ion-ios7-contact-outline"></i> <a href="city_speakers.html">Speakers</a></p>
-                <p><i class="ion-ios7-chatboxes-outline"></i> <a href="city_sessions.html">Session Topics</a></p>
-                <a href="#" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward"></i></a> </div>
+                <g:link controller="conference" action="home" params="['tinyName': 'austin-2014']"><h3>Austin<br>
+                    <small>March 7–8</small></h3></g:link>
+                <p><i class="ion-ios7-contact-outline"></i> <g:link controller="conference" action="speakers" params="['tinyName': 'austin-2014']">Speakers</g:link></p>
+                <p><i class="ion-ios7-chatboxes-outline"></i> <g:link controller="conference" action="sessions" params="['tinyName': 'austin-2014']">Session Topics</g:link></p>
+                <g:link controller="conference" action="register" params="['tinyName': 'austin-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward"></i></g:link> </div>
             <div class="span2">
-                <a href="#"><h3>San Jose<br>
-                    <small>April 25–26</small></h3></a>
-                <p><i class="ion-ios7-contact-outline"></i> <a href="city_speakers.html">Speakers</a></p>
-                <p><i class="ion-ios7-chatboxes-outline"></i> <a href="city_sessions.html">Session Topics</a></p>
-                <a href="#" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward"></i></a> </div>
+                <g:link controller="conference" action="home" params="['tinyName': 'sanjose-2014']"><h3>San Jose<br>
+                    <small>March 7–8</small></h3></g:link>
+                <p><i class="ion-ios7-contact-outline"></i> <g:link controller="conference" action="speakers" params="['tinyName': 'sanjose-2014']">Speakers</g:link></p>
+                <p><i class="ion-ios7-chatboxes-outline"></i> <g:link controller="conference" action="sessions" params="['tinyName': 'sanjose-2014']">Session Topics</g:link></p>
+                <g:link controller="conference" action="register" params="['tinyName': 'raleigh-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward"></i></g:link> </div>
             <div class="span2">
-                <a href="#"><h3>Raleigh<br>
-                    <small>May 9–10</small></h3></a>
-                <p><i class="ion-ios7-contact-outline"></i> <a href="city_speakers.html">Speakers</a></p>
-                <p><i class="ion-ios7-chatboxes-outline"></i> <a href="city_sessions.html">Session Topics</a></p>
-                <a href="#" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward"></i></a> </div>
+                <g:link controller="conference" action="home" params="['tinyName': 'raleigh-2014']"><h3>Raleigh<br>
+                    <small>March 7–8</small></h3></g:link>
+                <p><i class="ion-ios7-contact-outline"></i> <g:link controller="conference" action="speakers" params="['tinyName': 'raleigh-2014']">Speakers</g:link></p>
+                <p><i class="ion-ios7-chatboxes-outline"></i> <g:link controller="conference" action="sessions" params="['tinyName': 'raleigh-2014']">Session Topics</g:link></p>
+                <g:link controller="conference" action="register" params="['tinyName': 'raleigh-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward"></i></g:link> </div>
             <div class="span1">&nbsp;</div>
         </div>
     </div>
@@ -63,21 +63,21 @@
         <p class="lead text-center">Cocoa Conf speakers are thought leaders, authors, and professional iOS and OS X developers. <a href="#" title="All speakers">Meet them all <i class="ion-ios7-arrow-forward"></i></a></p>
         <p>&nbsp;</p>
         <div class="row">
-            <div class="span3"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'photo_adamson_chris.jpg')}" alt="Speaker image"></a>
-                <h3 class="text-center">Chris Adamson</h3>
-                <h4 class="text-center"><span>Writer, Editor, Developer</span></h4>
+            <div class="span3"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'aaron.png')}" alt="Speaker image"></a>
+                <h3 class="text-center">Aaron Hillegass</h3>
+                <h4 class="text-center"><span>Founder, Big Nerd Ranch</span></h4>
             </div>
-            <div class="span3"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'photo_williams_justin.jpg')}" alt="Speaker image"></a>
+            <div class="span3"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'jonathan.jpg')}" alt="Speaker image" /></a>
+                <h3 class="text-center">Jonathan Penn</h3>
+                <h4 class="text-center"><span>Owner, Rubber City Wizards</span></h4>
+            </div>
+            <div class="span3"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'dlpasco.png')}" alt="Speaker image" /></a>
+                <h3 class="text-center">Daniel Pasco</h3>
+                <h4 class="text-center"><span>CEO, Black Pixel</span></h4>
+            </div>
+            <div class="span3"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'photo_williams_justin_140.jpg')}" alt="Speaker image"></a>
                 <h3 class="text-center">Justin Williams</h3>
-                <h4 class="text-center"><span> Chief at Second Gear</span></h4>
-            </div>
-            <div class="span3"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file:'photo_speaker.jpg')}" alt="Speaker image"></a>
-                <h3 class="text-center">Speaker Name</h3>
-                <h4 class="text-center"><span>Speaker Title</span></h4>
-            </div>
-            <div class="span3"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'photo_speaker.jpg')}" alt="Speaker image"></a>
-                <h3 class="text-center">Speaker Name</h3>
-                <h4 class="text-center"><span>Speaker Title</span></h4>
+                <h4 class="text-center"><span>Crew Chief, Second Gear</span></h4>
             </div>
         </div>
     </div>
@@ -86,20 +86,20 @@
     <div class="container">
         <h2 class="text-center">Sessions</h2>
         <div class="row">
-            <div class="span6">
-                <div class="media"> <a href="#" title="Learn more" class="pull-left"><img src="${resource(dir: 'images', file: 'img_session_home_01.png')}" alt="Speaker image"></a>
+          <div class="span6">
+              <div class="media"> <a href="#" title="learn more" class="pull-left"><img src="${resource(dir: 'images', file: 'img_session_home_03.png')}" alt="speaker image"></a>
                     <div class="media-body">
                         <h3><a href="#" class="muted">Designing App Engagement</a></h3>
-                        <h4><span>by <a href="#" title="Learn more about this speaker">Chris Adamson</a></span></h4>
+                        <h4><span>by <a href="#" title="learn more about this speaker">Brittany Tarvin</a></span></h4>
                         <p>With so many apps in the app store, what can you be thinking about to get and keep people interested in your app? Having a great concept is just the beginning. How much thinking goes into the personality and tone of your app? What about writing the error messages, alerts, calls-to-action, app descriptions or release notes?</p>
                     </div>
                 </div>
             </div>
-            <div class="span6">
-                <div class="media"> <a href="#" title="Learn more" class="pull-left"><img src="${resource(dir: 'images', file: 'img_session_home_02.png')}" alt="Speaker image"></a>
+          <div class="span6">
+              <div class="media"> <a href="#" title="learn more" class="pull-left"><img src="${resource(dir: 'images', file: 'img_session_home_01.png')}" alt="speaker image"></a>
                     <div class="media-body">
-                        <h3><a href="#" class="muted">Another Session Title</a></h3>
-                        <h4><span>by <a href="#" title="Learn more about this speaker">Speaker Name</a></span></h4>
+                        <h3><a href="#" class="muted">Designing App Engagement</a></h3>
+                        <h4><span>by <a href="#" title="learn more about this speaker">Chris Adamson</a></span></h4>
                         <p>With so many apps in the app store, what can you be thinking about to get and keep people interested in your app? Having a great concept is just the beginning. How much thinking goes into the personality and tone of your app? What about writing the error messages, alerts, calls-to-action, app descriptions or release notes?</p>
                     </div>
                 </div>
