@@ -10,11 +10,12 @@ class HomeController {
     def springSecurityService
     def feedService
     def randomService
+    def randomizationalService
     def config = ConfigurationHolder.config
 
     def index = {
       [useImg: randomService?.nextInteger(100) + 1]
-	}
+    }
 
     def testFeed = {
 		def feedList = feedService.latestFromSpeaker(16, 5)
