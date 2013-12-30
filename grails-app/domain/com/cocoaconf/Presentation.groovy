@@ -6,6 +6,7 @@ class Presentation {
     Speaker speaker
     String title
     String pAbstract
+    String displayPAbstract
     String codePath
     String slidesPath
     String shortName
@@ -18,6 +19,7 @@ class Presentation {
 
     static constraints = {
 	    pAbstract maxSize:10000, nullable:true
+	    displayPAbstract maxSize:335, nullable:true
 	    shortName nullable:true
 		slot nullable:true
 		track nullable:true
