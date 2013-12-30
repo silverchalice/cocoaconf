@@ -70,11 +70,11 @@
             <ul class="dropdown-menu">
               <!--<li class="nav-header">Choose a City</li>
               <li class="divider"></li>-->
-              <li><a href="chicago.html">Chicago, IL</a></li>
-              <li><a href="#">Washington D.C.</a></li>
-              <li><a href="#">Austin, TX</a></li>
-              <li><a href="#">San Jose, CA</a></li>
-              <li><a href="#">Raleigh, NC</a></li>
+              <li><g:link controller="conference" action="home" params="[tinyName: 'chicago-2014']">Chicago, IL</g:link></li>
+              <li><g:link controller="conference" action="home" params="[tinyName: 'dc-2014']">Washington D.C.</g:link></li>
+              <li><g:link controller="conference" action="home" params="[tinyName: 'austin-2014']">Austin, TX</g:link></li>
+              <li><g:link controller="conference" action="home" params="[tinyName: 'sanjose-2014']">San Jose, CA</g:link></li>
+              <li><g:link controller="conference" action="home" params="[tinyName: 'raleigh-2014']">Raleigh, NC</g:link></li>
             </ul>
           </li>
         </ul>
@@ -113,11 +113,11 @@
             <ul class="dropdown-menu">
               <!--<li class="nav-header">Choose a City</li>
               <li class="divider"></li>-->
-              <li><a href="chicago.html">Chicago, IL</a></li>
-              <li><a href="#">Washington D.C.</a></li>
-              <li><a href="#">Austin, TX</a></li>
-              <li><a href="#">San Jose, CA</a></li>
-              <li><a href="#">Raleigh, NC</a></li>
+              <li><g:link controller="conference" action="home" params="[tinyName: 'chicago-2014']">Chicago, IL</g:link></li>
+              <li><g:link controller="conference" action="home" params="[tinyName: 'dc-2014']">Washington D.C.</g:link></li>
+              <li><g:link controller="conference" action="home" params="[tinyName: 'austin-2014']">Austin, TX</g:link></li>
+              <li><g:link controller="conference" action="home" params="[tinyName: 'sanjose-2014']">San Jose, CA</g:link></li>
+              <li><g:link controller="conference" action="home" params="[tinyName: 'raleigh-2014']">Raleigh, NC</g:link></li>
             </ul>
           </li>
         </ul>
