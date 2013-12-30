@@ -63,6 +63,15 @@
                                     <g:textArea name="pAbstract" cols="40" rows="5" value="${presentationInstance?.pAbstract}" />
                                 </td>
                             </tr>
+
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="displayPAbstract"><g:message code="presentation.displayPAbstract.label" default="Display Abstract" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: presentationInstance, field: 'displayPAbstract', 'errors')}">
+                                    <g:textArea name="displayPAbstract" cols="40" rows="5" value="${presentationInstance?.displayPAbstract}" />
+                                </td>
+                            </tr>
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
