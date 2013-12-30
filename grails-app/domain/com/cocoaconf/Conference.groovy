@@ -49,6 +49,18 @@ class Conference {
         thumbnail nullable: true
     }
 
+    static namedQueries = {
+
+      upcoming {
+        eq 'status', Conference.ACTIVE
+      }
+
+    }
+
+    static getUpcoming(){
+      return findAllByStatus(Conference.ACTIVE)
+    }
+
     def getSpeakers(){
         def speakers = sessions.collect { it.presentation.speaker }.sort{it.lastName}
         speakers = speakers - Speaker.findByFirstName("TBA")

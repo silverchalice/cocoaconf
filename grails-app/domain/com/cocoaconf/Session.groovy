@@ -25,5 +25,16 @@ class Session {
 		type inList: ['session', 'general', 'break']
     }
 
+    static namedQueries = {
+
+      allUpcoming {
+          conference {
+              eq 'status', Conference.ACTIVE
+              gt 'start', new Date()
+          }
+      }
+
+    }
+
     String toString(){"${start}-${end}, Track ${track}"}
 }

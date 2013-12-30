@@ -6,6 +6,7 @@ class Speaker {
 	String firstName
 	String lastName
 	String email
+  String title
 	String bio
 	String imagePath
 	String blog
@@ -22,6 +23,7 @@ class Speaker {
 	    firstName nullable:false
 	    lastName nullable:false
 	    email nullable:false, email:true
+	    title nullable:false, maxSize: 100
 	    bio nullable:true, maxSize: 2000
 	    imagePath nullable:true
 	    blog nullable:true
@@ -35,8 +37,17 @@ class Speaker {
         order 'asc'
     }
 
+    static upcomingSpeakers() {
+      List speakers = []
+      Conference.findAllByStatus(Conference.ACTIVE).collect { it.speakers }.each {
+        speakers << it
+      }
+      return speakers?.unique()
+    }
 
-
+    static allUpcoming() {
+      return Conference.findAllByStatusAndStartDateGreaterThan(Conference.ACTIVE, new Date()).collect { it.speakers }.unique()
+    }
 
     String toString(){ "${firstName} ${lastName}" }
 
