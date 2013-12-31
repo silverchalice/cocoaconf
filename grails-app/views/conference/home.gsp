@@ -1,105 +1,93 @@
-<html>
-    <head>
-        <title>CocoaConf | iOS/OS X Developer Conference | ${conference?.description} | ${conference?.dates}</title>
-        <meta name="layout" content="conference" />
-        <meta name="tab" content="events" />
-        <meta name="nav" content="home" />
-        <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
-
-        <script src="${resource(dir:'js', file:'jquery-1.6.2.min.js')}" type="text/javascript"></script>
-
-        <script src="${resource(dir:'js', file:'jquery-ui-1.8.11.custom.min.js')}" type="text/javascript"></script>
-        <script src="${resource(dir:'js', file:'jquery.validate.min.js')}" type="text/javascript"></script>
-        <script type="text/javascript"  src="${resource(dir:'js', file:'jquery.corner.js')}"></script>
-        <script src="${resource(dir:'js', file:'script.js')}" type="text/javascript"></script>
-
-
-
-        <script type="text/javascript">
-
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-23131242-2']);
-            _gaq.push(['_setDomainName', '.cocoaconf.com']);
-            _gaq.push(['_trackPageview']);
-
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-
-           $(document).ready(function() {
-              $("#dialog").dialog({ autoOpen: false, width:300, modal: true, title: 'Enter your email', hide: "fade", resizable:false, show: "fade" });
-
-
-              <g:if test="${flash.message}">
-                  $("#flashMessage").dialog({ autoOpen: true, title: 'Thank you!', width:300, modal: true, resizable:false, show: "fade", hide: "fade"});
-                  $("#closeFlash").click(function(){
-                      $("#flashMessage").dialog("close");
-                  });
-              </g:if>
-
-
-              $(".openDialog").click(function() {
-                  $("#dialog").dialog('open');
-              });
-
-
-              $('.button').button();
-
-              $('#dialogButton').button();
-
-              $('#register').button();
-
-              $("#interestForm").validate();
-
-               $('.confHome img').corner("5px");
-               $('.interest').corner("10px");
-               $('#featuredSpeakers img').corner("10px");
-
-           });
-
-
-        </script>
-
-        <style type="text/css">
-            .confHome {
-                float:left; width: 480px;
-            }
-
-            #featuredSpeakers img {
-                border: 1px solid #eee
-            }
-        </style>
-
-    </head>
-
-    <body>
-
-        <div id="confSidebar">
-            <g:render template="confNav" model="['conference': conference, 'current': 'home']" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>${conference?.description} &#8212; ${conference?.dates} / CocoaConf 2014: the conference for iPhone, iPad and Mac developers</title>
+<meta name="layout" content="home" />
+</head>
+<body class="secondary ${conference?.city.toLowerCase()}">
+<div class="container main-text">
+  <h1>Austin</h1>
+</div>
+<div class="content container">
+  <div class="gradient"></div>
+  
+  <!-- Main hero unit for a primary marketing message or call to action -->
+  <div class="row-fluid">
+    <div class="span7">
+      <h1>Join us in ${conference?.cityNickname} <small>${conference?.dates}</small></h1>
+      <p class="lead">Featuring three tracks and over twenty-five breakout and general sessions, CocoaConf Chicago has something for every iPhone, iPad, and Mac developer.</p>
+    </div>
+    <div class="span3">
+    <h2><small>Early-bird Discounts Available</small></h2>
+      <button class="btn btn-block btn-large btn-flat">Register for Austin <i class="ion-ios7-arrow-forward"></i></button>
+    </div>
+  </div>
+  <hr>
+  <!-- Example row of columns -->
+  <div class="row-fluid">
+    <div class="span2 hidden-phone hidden-tablet">
+    <h3>Austin Links</h3>
+      <ul class="nav nav-list">
+        <li class="about active"><a href="austin.html">About</a></li>
+        <li class="speakers"><a href="#">Speakers</a></li>
+        <li class="sessions"><a href="#">Sessions</a></li>
+        <li class="schedule"><a href="#">Schedule</a></li>
+        <li class="venue"><a href="#">Venue</a></li>
+        <li class="partners"><a href="#">Partners</a></li>
+        <li class="register"><a href="#">Register</a></li>
+      </ul>
+    </div>
+    <div class="span6">
+  <p><img class="img-rounded" src="${resource(dir: 'images', file: 'img_austin_small_01.jpg')}" alt="Photo (cc) by ___ on Flickr"></p>
+      <p class="lead">CocoaConf Austin kicks off April 4 and 5, preceded by three optional all-day workshops on the 6th. Exclusive highlights include our one-of-a-kind “We Made An App For That” panel and the CocoaConf Game Show.</p>
+      <p>We’ll be bringing back some of the familiar faces you’ve come to know — Daniel Steinberg, Chris Adamson, Jonathan Penn, Josh Smith — and others whose work you well may recognize, including Justin Williams of Second Gear and Danny Greg from Github. </p>
+      <p>As we did last time, we’ll be offering some full-day, pre-conference workshops, taught by masters in the industry. For those new to iOS (or to software development in general), Apple veteran James Dempsey will be heading up an all-day iOS tutorial. For the more seasoned developer, we’ll be having a 2D Game Development workshop taught by Josh Smith and Jonathan Penn, and another on AV Foundation taught by Chris Adamson. </p>
+      <p>As always, attendance at CocoaConf is capped to ensure a focused and intense learning experience, and to maximize your opportunities to of meet awesome new people and hang out with the speakers. So don’t sit on the fence — register for CocoaConf Chicago today!</p>
+      <p><a class="btn btn-flat btn-large" href="http://www.gurrydesign.com">Register Today <i class="ion-ios7-arrow-forward"></i></a></p>
+    </div>
+    <div class="span2">
+      <h4>Austin Sponsors<br>
+        &nbsp;</h4>
+      <p><a href="#"><img src="${resource(dir: 'images', file: 'logo_wiley.jpg')}" alt="Wiley logo"></a></p>
+      <hr>
+      <a href="#"><img src="${resource(dir: 'images', file: 'logo_windows.jpg')}" alt="Windows Azure logo"></a>
+      <hr>
+      <p><a class="btn btn-flat-gray" href="#">Sponsor Opportunities</a></p>
+    </div>
+  </div>
+  <div class="navbar navbar-inverse">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" href="#top"><i class="ion-ios7-arrow-thin-up"></i>&nbsp;Top </a>
+        <!--<a class="brand" href="#"><img src="${resource(dir: 'images', file: 'img_cocoaconf_logo.png')}" height="40" width="40" alt="CocoaConf logo"> CocoaConf</a>-->
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li class="dropup"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chicago, IL &nbsp; <i class="ion-ios7-arrow-up"></i></a>
+              <ul class="dropdown-menu">
+                <!--<li class="nav-header">Choose a City</li>
+              <li class="divider"></li>-->
+                <li><a href="chicago.html">Chicago, IL</a></li>
+                <li><a href="#">Washington D.C.</a></li>
+                <li class="disabled"><a href="#">Austin, TX</a></li>
+                <li><a href="#">San Jose, CA</a></li>
+                <li><a href="#">Raleigh, NC</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav pull-right">
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#sessions">Sessions</a></li>
+            <li><a href="#contact">Venues</a></li>
+            <li><a href="#contact">Partners</a></li>
+            <li><a href="#contact">Blog</a></li>
+            <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li>
+          </ul>
         </div>
-
-
-        <div class="body">
-            <g:if test="${conference?.status == 'active'}">
-                <g:render template="confHome" model="['conference': conference]"/>
-            </g:if>
-            <g:elseif test="${conference?.status == 'completed'}">
-                <g:render template="roundup" model="['conference': conference]"/>
-            </g:elseif>
-            <g:elseif test="${conference?.status == 'pending'}">
-                <g:render template="interested" model="['conference': conference]"/>
-            </g:elseif>
-
-            <div id="featuredSpeakers">
-                <h2>Featured Speakers</h2>
-                ${conference?.featuredSpeakers}
-            </div>
-        </div>
-        <div style="clear: both"></div>
-
-
-
-    </body>
+        <!--/.nav-collapse --> 
+      </div>
+    </div>
+  </div>
+  <div class="gradient"></div>
+</div>
+</body>
 </html>
