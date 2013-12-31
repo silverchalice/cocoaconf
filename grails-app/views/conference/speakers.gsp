@@ -32,9 +32,9 @@
       <ul class="nav nav-list">
         <li class="about"><g:link controller="conference" action="home" params='["tinyName": "${conference.tinyName}"]'>About</g:link></li>
         <li class="speakers active"><g:link controller="conference" action="speakers" params='["tinyName": "${conference.tinyName}"]'>Speakers</g:link></li>
-        <li class="sessions"><a href="chicago_sessions.html">Sessions</a></li>
-        <li class="schedule"><a href="chicago_schedule.html">Schedule</a></li>
-        <li class="venue"><a href="#">Venue</a></li>
+        <li class="sessions"><g:link controller="conference" action="sessions" params='["tinyName": "${conference?.tinyName}"]'>Sessions</g:link></li>
+        <li class="schedule"><a href="#">Schedule</a></li>
+        <li class="venue"><g:link controller="conference" action="venue" params='["tinyName": "${conference?.tinyName}"]'>Venue</g:link></li>
         <li class="partners"><a href="#">Partners</a></li>
         <li class="register"><a href="#">Register</a></li>
       </ul>
