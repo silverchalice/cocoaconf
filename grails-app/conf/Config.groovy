@@ -83,6 +83,8 @@ environments {
 
 }
 
+random.generator.default="MERSENNE_TWISTER"
+
 grails.plugins.springsecurity.securityConfigType = SecurityConfigType.InterceptUrlMap
 grails.plugins.springsecurity.interceptUrlMap = [
 
