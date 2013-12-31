@@ -3,20 +3,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="layout" content="home" />
-         <meta name="tab" content="speakers" />
+        <meta name="layout" content="speakers" />
         <g:set var="entityName" value="${message(code: 'speaker.label', default: 'Speaker')}" />
         <title>CocoaConf | Our Speakers</title>
-
-        <script type="text/javascript"  src="${resource(dir:'js', file:'jquery.corner.js')}"></script>
         <script type="text/javascript">
-            $(document).ready(function() {
-
-                $('#conferenceNav').corner("5px");
-                $('.speaker').corner("5px");
-                $('.speakerPic').corner("5px");
-
-            });
 
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-23131242-2']);
@@ -30,58 +20,121 @@
           })();
 
         </script>
-        <style type="text/css">
 
-        div.speaker {
-            font-size:14px;
-            border-bottom: 1px solid #eee;
-            border-right: 1px solid #eee;
-            padding: 0 15px 10px 5px;
-            float: left;
-            width: 280px;
-            height: 250px;
-            margin: 5px 5px 10px 5px;
-        }
-        </style>
 
     </head>
     <body>
-         <h1>CocoaConf Speakers</h1>
-        <p>CocoaConf speakers include well known trainers, authors, and professional iOS and OS X developers.</p>
 
-        <div class="list">
+    <div class="container main-text">
+        <h1><span></span> All Speakers</h1>
+    </div>
+    <div class="content container">
+        <div class="gradient"></div>
+
+        <!-- Main hero unit for a primary marketing message or call to action -->
+        <div class="row-fluid">
+            <div class="span1"> </div>
+            <div class="span8">
+                <div class="media"> <img src="${resource(dir:'images', file:'img_speaker_icon.jpg')}" alt="A person icon" class="pull-left media-object">
+                    <div class="media-body">
+                        <h1>Our speakers include well-known trainers, authors, and professional developers.</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="span1"> </div>
+        </div>
+        <img class="photostrip hidden-phone" src="${resource(dir:'images', file:'img_photostrip_chicago_speaker.jpg')}" alt="Speakers at last year's CocoaConf">
+        <!-- Example row of columns -->
+
+
+        <!--
+
+                <div class="well well-small">
+            <h3 class="text-center">Browse by last name</h3>
+            <div class="pagination pagination-centered pagination-large">
+                <ul>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">D</a></li>
+                    <li class="disabled"><a href="#">E</a></li>
+                    <li><a href="#">F</a></li>
+                    <li><a href="#">G</a></li>
+                    <li><a href="#">H</a></li>
+                    <li><a href="#">I</a></li>
+                    <li class="disabled"><a href="#">J</a></li>
+                    <li><a href="#">K</a></li>
+                    <li><a href="#">L</a></li>
+                    <li><a href="#">M</a></li>
+                    <li class="disabled"><a href="#">N</a></li>
+                    <li class="disabled"><a href="#">O</a></li>
+                    <li class="disabled"><a href="#">P</a></li>
+                    <li class="disabled"><a href="#">Q</a></li>
+                    <li><a href="#">R</a></li>
+                    <li><a href="#">S</a></li>
+                    <li><a href="#">T</a></li>
+                    <li class="disabled"><a href="#">U</a></li>
+                    <li><a href="#">V</a></li>
+                    <li><a href="#">W</a></li>
+                    <li><a href="#">X</a></li>
+                    <li class="disabled"><a href="#">Y</a></li>
+                    <li class="disabled"><a href="#">Z</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr/>
+        -->
+
+
+
+        <div class="gradient"></div>
+
+        <h2>&nbsp;</h2>
+        <hr>
+
+    <div class="row-fluid">
+
             <g:each in="${speakerInstanceList}" status="i" var="speaker">
-                           <div class="speaker" >
 
-                            <div class="bio" style="width:98%">
+                <div class="span3">
+                    <ul class="media-list">
+                        <li class="media"> <g:link controller="speaker" action="viewDetails" id="${speaker?.id}" class="pull-left"> <img class="media-object img-circle" src="${request.contextPath}/${speaker?.imagePath}" alt="Speaker photo"> </g:link>
+                            <div class="media-body">
+                                <h3 class="media-heading">${speaker} <span>/ Author</span></h3>
+                            </div>
+                            <p><cc:truncate value="${speaker.bio}" size="200" /></p>
+                            <p class="author-links">
 
-                                <g:if test="${speaker?.imagePath}">
+                            <!--<i class="ion-ios7-location-outline"></i>&nbsp;<span class="location"> Speaking in <a href="chicago.html">Chicago, IL</a></span>-->
 
-                                    <g:link controller="speaker" action="viewDetails" id="${speaker?.id}"><img class="speakerPic" style=" float:left; margin-right:10px; margin-bottom: 2px; max-width: 120px;" src="${request.contextPath}/${speaker?.imagePath}"/></g:link>
-                               </g:if>
-                                <h3>${speaker} </h3>
-                                <p><cc:truncate value="${speaker.bio}" size="80" /></p><br/>
+                            <g:if test="${speaker.twitter}">
+                                <span class="twitter"><a href="https://twitter.com/${speaker.twitter}" title="Visit ${speaker} on Twitter" target="_blank"><i class="ion-social-twitter-outline"></i>&nbsp;${speaker.twitter}</a></span>
+                            </g:if>
 
-                           </div>
-                               <div style="clear:both">
-                                   <span style="float:left">
-                                       <g:if test="${speaker.twitter}">
-                                           <a target="_blank" href="http://twitter.com/${speaker.twitter}" style="color: black; text-decoration: none; vertical-align: top"><img src="${resource(dir:'images', file: 'twitter.png')}" alt="Twitter" style="vertical-align:top; padding-right:8px; margin-bottom:5px;"></a>
-                                       </g:if>
-                                       <g:if test="${speaker.appnet}">
-                                           <a target="_blank" href="http://alpha.app.net/${speaker.appnet}" style="color: black; text-decoration: none; vertical-align: top"><img src="${resource(dir:'images', file: 'appnet.jpg')}" alt="App.net" style="vertical-align:top; padding-right:8px; margin-bottom:5px;"></a>
-                                       </g:if>
-                                       <g:if test="${speaker.blog}">
-                                           <a target="_blank" href="${speaker.blog}" style="color: black; text-decoration: none; vertical-align: top"><img src="${resource(dir:'images', file: 'feed-icon-28x28.png')}" alt="${speaker}'s blog" style="vertical-align:top; padding-right:8px; margin-bottom:5px;"></a>
-                                       </g:if>
-                                   </span>
-                                   <span style="font-size: 14px; float:right; vertical-align: bottom; ">
-                                       <g:link controller="speaker" action="viewDetails" id="${speaker?.id}">View Details</g:link>
-                                   </span>
-                               </div>
-                           </div>
+                            <g:if test="${speaker.appnet}">
+                                <span class="appnet"><i class="ion-ios7-arrow-up"></i>&nbsp;<a href="http://alpha.app.net/${speaker.appnet}">${speaker.appnet}</a></span>
+                            </g:if>
 
-                       </g:each>
+                            <g:if test="${speaker.blog}">
+                                <span class="website"><a href="${speaker.blog}" title="Visit ${speaker}'s website" target="_blank"><i class="ion-social-rss"></i>&nbsp;${speaker.blog}</a></span>
+                            </g:if>
+
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <g:if test="${i > 0 && (i + 1) % 3 == 0}">
+                    </div>
+
+                     <div class="row-fluid">
+
+                </g:if>
+
+            </g:each>
+
+        </div>
 
         </div>
     </body>
