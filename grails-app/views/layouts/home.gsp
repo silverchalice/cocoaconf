@@ -1,121 +1,120 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-    <head>
-        <title><g:layoutTitle default="Grails" /></title>
-        <link rel="stylesheet" href="${resource(dir:'css',file:'public.css')}" />
-        <script type="text/javascript" src="${resource(dir: 'js', file: 'retina.js')}"></script>
-        <meta name="tab" content="events" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title><g:layoutTitle default="CocoaConf 2014: the conference for iPhone, iPad and Mac developers" /></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
 
+<!-- Le styles -->
+<link href="${resource(dir: 'css', file: 'bootstrap.css')}" rel="stylesheet">
+<link href="${resource(dir: 'css', file: 'bootstrap-responsive.css')}" rel="stylesheet">
+<link href="${resource(dir: 'css', file: 'main.css')}" rel="stylesheet">
+<link href="${resource(dir: 'css', file: 'ionicons.css')}" rel="stylesheet">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="${resource(dir: 'js', file: 'html5shiv.js')}"></script>
+    <![endif]-->
 
+<!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="${resource(dir: 'ico', file: 'apple-touch-icon-144-precomposed.png')}">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="${resource(dir: 'ico', file: 'apple-touch-icon-114-precomposed.png')}">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="${resource(dir: 'ico', file: 'apple-touch-icon-72-precomposed.png')}">
+<link rel="apple-touch-icon-precomposed" href="${resource(dir: 'ico', file: 'apple-touch-icon-57-precomposed.png')}">
+<link rel="shortcut icon" href="${resource(dir: 'ico', file: 'favicon.png')}">
 
-        <g:render template="/layouts/favicons" />
+<g:javascript library="jquery" plugin="jquery"/>
+<feed:meta kind="atom" version="1.0" controller="post" action="feed"/>
+<g:layoutHead />
 
+<script type="text/javascript">
 
-        <g:javascript library="jquery" plugin="jquery"/>
-        <feed:meta kind="atom" version="1.0" controller="post" action="feed"/>
-        <g:layoutHead />
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-23131242-2']);
+_gaq.push(['_setDomainName', '.cocoaconf.com']);
+_gaq.push(['_trackPageview']);
 
+(function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 
-        <script type="text/javascript"  src="${resource(dir:'js', file:'jquery.corner.js')}"></script>
+</script>
 
-        <script type="text/javascript">
+<!-- MyFonts Avenir Trial -->
+<script type="text/javascript">
+    (function() {
+        var path = '//easy.myfonts.net/v1/js?sid=10336(font-family=Avenir+35+Light)&sid=10338(font-family=Avenir+55+Roman)&sid=10340(font-family=Avenir+85+Heavy)&sid=10344(font-family=Avenir+65+Medium)&key=SNbNMJyrcR',
+            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+            trial = document.createElement('script');
+        trial.type = 'text/javascript';
+        trial.async = true;
+        trial.src = protocol + path;
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(trial);
+    })();
+</script>
+</head>
 
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-23131242-2']);
-          _gaq.push(['_setDomainName', '.cocoaconf.com']);
-          _gaq.push(['_trackPageview']);
+<body class="${conference?.city.toLowerCase()} secondary">
+<a name="top"></a>
+<div class="navbar navbar-inverse navbar-static-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="brand" href="#"><img src="${resource(dir: 'images', file: 'img_cocoaconf_logo.png')}" height="40" width="40" alt="CocoaConf logo"> CocoaConf</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chicago, IL &nbsp; <i class="ion-ios7-arrow-down"></i></a>
+            <ul class="dropdown-menu">
+              <!--<li class="nav-header">Choose a City</li>
+              <li class="divider"></li>-->
+              <li class="disabled"><a href="chicago.html">Chicago, IL</a></li>
+              <li><a href="#">Washington D.C.</a></li>
+              <li><a href="#">Austin, TX</a></li>
+              <li><a href="#">San Jose, CA</a></li>
+              <li><a href="#">Raleigh, NC</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav pull-right">
+          <li><a href="#">Speakers</a></li>
+          <li><a href="#sessions">Sessions</a></li>
+          <li><a href="#contact">Venues</a></li>
+          <li><a href="#contact">Partners</a></li>
+          <li><a href="#contact">Blog</a></li>
+          <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+  </div>
+</div>
+<g:layoutBody />
+<div class="container">
+  <footer>
+    <p>&copy; 2014 Simply Cocoa, LLC. |  About the <a href="#" title="Learn more about the Kleins">Klein Family</a> |  Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a></p>
+  </footer>
+</div>
+<!-- /container --> 
 
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-
-          $(document).ready(function(){
-
-              $(".conferenceCell").hover(
-                function () {
-                  $(this).addClass("conferenceCellHover");
-                },
-                function () {
-                  $(this).removeClass("conferenceCellHover");
-                }
-              );
-
-              $(".conferenceCell").corner("5px");
-              $(".conferenceCellName").corner("5px bottom");
-              $(".featured img").corner("8px");
-
-          })
-
-
-        </script>
-
-        <style type="text/css">
-            .featured img {
-                width: 120px;
-                border: 1px solid #eee;
-            }
-        </style>
-
-    </head>
-    <body id="announcement">
-        <div id="navWrapper">
-            <div id="nav">
-                <g:link class="${pageProperty(name:'meta.tab') == 'home' ? 'current' : ''}" uri="/">Home</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'blog' ? 'current' : ''}"  controller="post" action="list">Blog</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'speakers' ? 'current' : ''}"  controller="speaker" action="speakers">Our Speakers</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'partners' ? 'current' : ''}"  controller="home" action="partners">Our Partners</g:link>
-                <g:link class="${pageProperty(name:'meta.tab') == 'events' ? 'current' : ''}"  controller="home" action="events" style="background-position: -500px 0;">Events</g:link>
-            </div>
-
-        </div>
-        <div id="page">
-            <div id="spinner" class="spinner" style="display:none;">
-                <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
-            </div>
-            <div id="logo"><a href="${request.contextPath}/">
-			   <img src="${resource(dir:'images',file:'cc-logo.png')}" alt="CocoaConf - the conference for iPhone, iPad and Mac developers" border="0" />
-		   	   the conference for <span>iPhone</span>, <span>iPad</span> and <span>Mac</span> developers
-		    </a>
-            </div>
-            <div id="announcementHeader">
-	           <g:render template="/layouts/announcement_bar" />
-            </div>
-            <div id="sidebar" style="margin: 0 10px;">
-
-                <h1 style="margin-left: 10px; color: #35b6ff">2014 Spring Tour</h1>
-
-                <cc:activeEventSidebar />
-
-
-                <br/>
-                <br/>
-
-                <h2><g:link controller="mugShot" action="list">Our Mug</g:link></h2>
-                <g:link controller="mugShot" action="list"><g:img dir="images" file="mugThumb.png" style="width:160px; margin:20px" /> </g:link>
-                <br/>
-                <h2>Our Sponsors</h2>
-                <br/>
-                <a href="http://github.com"><img src="${resource(dir:'images', file:'github.png')}"/></a>
-                <br/>
-                <br/>
-                <a href="http://revealapp.com"><img src="${resource(dir:'images', file:'reveal-logo.png')}"/></a>
-                <br/>
-                <br/>
-                <g:link controller="home" action="prospectus"><h4>Sponsorship Opportunities Available</h4></g:link>
-                <br/><br/>
-            </div>
-
-           <div id="content" style="width: 920px">
-              <div class="body" style="width:640px"><g:layoutBody /></div>
-               <div style="clear: both"></div>
-           </div>
-           <div style="clear: both"></div>
-           <div id="footer">
-               <p>Copyright &copy; 2013 Simply Cocoa, LLC. Site by <a href="http://silver-chalice.com">Silver Chalice</a>, LLC. | <a href="http://cocoaconf.com/about">About the Klein Family</a></p>
-           </div>
-        </div>
-    </body>
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="${resource(dir: 'js', file: 'jquery.js')}"></script> 
+<script src="${resource(dir: 'js', file: 'bootstrap-transition.js')}"></script> 
+<script src="${resource(dir: 'js', file: 'bootstrap-alert.js')}"></script> 
+<script src="${resource(dir: 'js', file: 'bootstrap-modal.js')}"></script> 
+<script src="${resource(dir: 'js', file: 'bootstrap-dropdown.js')}"></script> 
+<script src="${resource(dir: 'js', file: 'bootstrap-scrollspy.js')}"></script> 
+<script src="${resource(dir: 'js', file: 'bootstrap-tab.js')}"></script> 
+<script src="${resource(dir: 'js', file: 'bootstrap-tooltip.js')}"></script> 
+<script src="${resource(dir: 'js', file: 'bootstrap-popover.js')}"></script> 
+<script src="${resource(dir: 'js', file: 'bootstrap-button.js')}"></script> 
+<script src="${resource(dir: 'js', file: 'bootstrap-collapse.js')}"></script> 
+<script src="${resource(dir: 'js', file: 'bootstrap-carousel.js')}"></script> 
+<script src="${resource(dir: 'js', file: 'bootstrap-typeahead.js')}"></script>
+</body>
 </html>
