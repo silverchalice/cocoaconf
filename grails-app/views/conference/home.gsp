@@ -28,8 +28,8 @@
     <div class="span2 hidden-phone hidden-tablet">
     <h3>Austin Links</h3>
       <ul class="nav nav-list">
-        <li class="about active"><a href="austin.html">About</a></li>
-        <li class="speakers"><a href="#">Speakers</a></li>
+        <li class="about active"><g:link controller="conference" action="home" params='["tinyName": "${conference.tinyName}"]'>About</g:link></li>
+        <li class="speakers"><g:link controller="conference" action="speakers" params='["tinyName": "${conference.tinyName}"]'>Speakers</g:link></li>
         <li class="sessions"><a href="#">Sessions</a></li>
         <li class="schedule"><a href="#">Schedule</a></li>
         <li class="venue"><a href="#">Venue</a></li>
