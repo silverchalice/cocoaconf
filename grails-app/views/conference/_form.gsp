@@ -138,6 +138,14 @@
     <g:textField name="thumbnail" value="${conference?.thumbnail}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'cityNickname', 'error')} ">
+	<label for="cityNickname">
+		<g:message code="conference.cityNickname.label" default="City Nickname" />
+		
+	</label>
+	<g:textField name="cityNickname" value="${conference?.cityNickname}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'status', 'error')} ">
 	<label for="status">
 		<g:message code="conference.status.label" default="Status" />
