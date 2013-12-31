@@ -114,8 +114,8 @@
           </ul>
           <ul class="nav pull-right">
             <li><a href="#">Speakers</a></li>
-            <li class="active"><a href="#sessions">Sessions</a></li>
-            <li><a href="#contact">Venues</a></li>
+            <!-- <li class="active"><a href="#sessions">Sessions</a></li> -->
+            <!-- <li><a href="#contact">Venues</a></li> -->
             <li><a href="#contact">Partners</a></li>
             <li><a href="#contact">Blog</a></li>
             <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li>

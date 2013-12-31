@@ -39,7 +39,7 @@
             <li class="media"> <a class="pull-left" href="#"> <img class="media-object img-circle" src="${conference?.venue?.imagePath?.startsWith('/') ? conference?.venue?.imagePath : '/' + conference?.venue?.imagePath}" alt="Speaker photo"> </a>
         </g:if>
           <div class="media-body">
-            <h2 class="media-heading">${conference?.venue ?: "Coming soon!"}</h2>
+            <h2 class="media-heading">${conference?.venue ?: "Coming soon"}</h2>
             
             <hr>
             <p class="lead">${conference?.venue?.description ?: "We&#8217;re still working on the venue for this event. Please check back soon!" }</p>
@@ -93,8 +93,8 @@
           </ul>
           <ul class="nav pull-right">
             <li><a href="#">Speakers</a></li>
-            <li><a href="#sessions">Sessions</a></li>
-            <li><a href="#contact">Venues</a></li>
+            <!-- <li><a href="#sessions">Sessions</a></li> -->
+            <!-- <li><a href="#contact">Venues</a></li> -->
             <li><a href="#contact">Partners</a></li>
             <li><a href="#contact">Blog</a></li>
             <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li>

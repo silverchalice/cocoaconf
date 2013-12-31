@@ -18,7 +18,7 @@
     <div class="span8">
       <div class="media"> <img src="${resource(dir: 'images', file: 'img_speaker_icon.png')}" alt="A person icon" class="pull-left media-object">
         <div class="media-body">
-          <h1>Our speakers include trainers, authors, and professional iOS and OS X developers.</h1>
+          <h1>CocoaConf speakers include trainers, authors, and professional iOS and OS X developers.</h1>
         </div>
       </div>
     </div>
@@ -111,8 +111,8 @@
           </ul>
           <ul class="nav pull-right">
             <li class="active"><a href="#">Speakers</a></li>
-            <li><a href="#sessions">Sessions</a></li>
-            <li><a href="#contact">Venues</a></li>
+            <!-- <li><a href="#sessions">Sessions</a></li> -->
+            <!-- <li><a href="#contact">Venues</a></li> -->
             <li><a href="#contact">Partners</a></li>
             <li><a href="#contact">Blog</a></li>
             <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li>
