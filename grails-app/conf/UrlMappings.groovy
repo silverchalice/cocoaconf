@@ -8,8 +8,8 @@ class UrlMappings {
 		}
 
 		"/"{
-			controller = "blogLink"
-			action = "roundup"
+			controller = "home"
+			action = "index"
 		}
 		
 		"/alt"{
