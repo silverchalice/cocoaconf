@@ -86,7 +86,8 @@ body.sanjose {
     background-image: url(../images/bg_sanjose_01.jpg), url(../images/bg_main.jpg);
 }
 body.raleigh {
-    background-image: url(../images/bg_raleigh_01.jpg), url(../images/bg_main.jpg);
+    /* background-image: url(../images/bg_raleigh_01.jpg), url(../images/bg_main.jpg); */
+    background-image: url(../images/bg_raleigh_02.jpg), url(../images/bg_main.jpg);
 }
 a {
 	text-decoration:none;

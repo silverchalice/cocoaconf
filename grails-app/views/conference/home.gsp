@@ -15,18 +15,18 @@
   <div class="row-fluid">
     <div class="span7">
       <h1>Join us in ${conference?.cityNickname} <small>${conference?.dates}</small></h1>
-      <p class="lead">Featuring three tracks and over twenty-five breakout and general sessions, CocoaConf Chicago has something for every iPhone, iPad, and Mac developer.</p>
+      <p class="lead">${conference.intro}</p>
     </div>
     <div class="span3">
-    <h2><small>Early-bird Discounts Available</small></h2>
-      <button class="btn btn-block btn-large btn-flat">Register for Austin <i class="ion-ios7-arrow-forward"></i></button>
+    <h2><small>Early Bird Discounts Available!</small></h2>
+      <button class="btn btn-block btn-large btn-flat">Register for ${conference?.city} <i class="ion-ios7-arrow-forward"></i></button>
     </div>
   </div>
   <hr>
   <!-- Example row of columns -->
   <div class="row-fluid">
     <div class="span2 hidden-phone hidden-tablet">
-    <h3>Austin Links</h3>
+    <h3>${conference?.city} Links</h3>
       <ul class="nav nav-list">
         <li class="about active"><g:link controller="conference" action="home" params='["tinyName": "${conference.tinyName}"]'>About</g:link></li>
         <li class="speakers"><g:link controller="conference" action="speakers" params='["tinyName": "${conference.tinyName}"]'>Speakers</g:link></li>
@@ -46,7 +46,7 @@
       <p><a class="btn btn-flat btn-large" href="http://www.gurrydesign.com">Register Today <i class="ion-ios7-arrow-forward"></i></a></p>
     </div>
     <div class="span2">
-      <h4>Austin Sponsors<br>
+      <h4>${conference.city} Sponsors<br>
         &nbsp;</h4>
       <p><a href="#"><img src="${resource(dir: 'images', file: 'logo_wiley.jpg')}" alt="Wiley logo"></a></p>
       <hr>
