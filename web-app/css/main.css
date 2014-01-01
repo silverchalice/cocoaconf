@@ -76,6 +76,9 @@ body.chicago {
 body.washington {
     background-image: url(../images/bg_washington_01.jpg), url(../images/bg_main.jpg);
 }
+body.dc {
+    background-image: url(../images/bg_washington_01.jpg), url(../images/bg_main.jpg);
+}
 body.austin {
     background-image: url(../images/bg_austin_01.jpg), url(../images/bg_main.jpg);
 }

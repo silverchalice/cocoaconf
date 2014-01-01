@@ -4,9 +4,9 @@
 <title>${conference?.description} &#8212; ${conference?.dates} / CocoaConf 2014: the conference for iPhone, iPad and Mac developers</title>
 <meta name="layout" content="home" />
 </head>
-<body class="secondary ${conference?.city.toLowerCase()}">
+<body class="secondary ${conference?.city.toLowerCase().replaceAll("\\s", "")}">
 <div class="container main-text">
-  <h1>Austin</h1>
+  <h1>${conference?.description}</h1>
 </div>
 <div class="content container">
   <div class="gradient"></div>
@@ -38,7 +38,7 @@
       </ul>
     </div>
     <div class="span6">
-  <p><img class="img-rounded" src="${resource(dir: 'images', file: 'img_austin_small_01.jpg')}" alt="Photo (cc) by ___ on Flickr"></p>
+  <p><cc:conferenceImage id="${conference.id}" /></p>
       <p class="lead">CocoaConf Austin kicks off April 4 and 5, preceded by three optional all-day workshops on the 6th. Exclusive highlights include our one-of-a-kind “We Made An App For That” panel and the CocoaConf Game Show.</p>
       <p>We’ll be bringing back some of the familiar faces you’ve come to know — Daniel Steinberg, Chris Adamson, Jonathan Penn, Josh Smith — and others whose work you well may recognize, including Justin Williams of Second Gear and Danny Greg from Github. </p>
       <p>As we did last time, we’ll be offering some full-day, pre-conference workshops, taught by masters in the industry. For those new to iOS (or to software development in general), Apple veteran James Dempsey will be heading up an all-day iOS tutorial. For the more seasoned developer, we’ll be having a 2D Game Development workshop taught by Josh Smith and Jonathan Penn, and another on AV Foundation taught by Chris Adamson. </p>
