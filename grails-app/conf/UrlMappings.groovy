@@ -14,9 +14,7 @@ class UrlMappings {
 		
 		"/alt"{
 			controller = "conference"
-			action = "home"
-			id = "alt-2013"
-			tinyName="alt-2013"
+			action = "alt"
 		}
 
 		"/about"{
@@ -32,6 +30,11 @@ class UrlMappings {
 		"/$tinyName/home"{
             controller = "conference"
             action = "home"
+            id = "$tinyName"
+		}
+		"/$tinyName"{
+            controller = "conference"
+            action = "sendToHome"
             id = "$tinyName"
 		}
 		"/$tinyName/home."{

@@ -15,21 +15,24 @@ class ConferenceController {
         redirect(action: "list", params: params)
     }
 
+    def sendToHome() {
+        redirect(action: "home", params: ['tinyName': params.tinyName ?: params.id])
+    }
+
     def home() {
         println params
-        if(params.tinyName == "alt-2013"){
-            redirect(url: 'http://cocoaconf.com/blog/alt-2013-canceled')
-            return
-        }
-
         def conference = Conference.findByTinyName(params.tinyName)
-
         if(conference){
             def blogLinks = BlogLink.findAllByEvent(conference)
             render view: "home", model: ["conference": conference]
         } else {
             redirect controller: "home"
         }
+    }
+
+    def alt() {
+        redirect(url: 'http://cocoaconf.com/blog/alt-2013-canceled')
+        return
     }
 
     def speaking(){
