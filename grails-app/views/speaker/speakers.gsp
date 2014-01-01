@@ -35,7 +35,7 @@
         <div class="row-fluid">
             <div class="span1"> </div>
             <div class="span8">
-                <div class="media"> <img src="${resource(dir:'images', file:'img_speaker_icon.jpg')}" alt="A person icon" class="pull-left media-object">
+                <div class="media"> <img src="${resource(dir:'images', file:'img_speaker_icon.png')}" alt="A person icon" class="pull-left media-object">
                     <div class="media-body">
                         <h1>Our speakers include well-known trainers, authors, and professional developers.</h1>
                     </div>
@@ -109,7 +109,7 @@
                             <!--<i class="ion-ios7-location-outline"></i>&nbsp;<span class="location"> Speaking in <a href="chicago.html">Chicago, IL</a></span>-->
 
                             <g:if test="${speaker.twitter}">
-                                <span class="twitter"><a href="https://twitter.com/${speaker.twitter}" title="Visit ${speaker} on Twitter" target="_blank"><i class="ion-social-twitter-outline"></i>&nbsp;${speaker.twitter}</a></span>
+                                <span class="twitter"><a href="https://twitter.com/${speaker.twitter}" title="Visit ${speaker} on Twitter" target="_blank"><i class="ion-social-twitter-outline"></i>&nbsp;@${speaker.twitter}</a></span>
                             </g:if>
 
                             <g:if test="${speaker.appnet}">
@@ -117,7 +117,7 @@
                             </g:if>
 
                             <g:if test="${speaker.blog}">
-                                <span class="website"><a href="${speaker.blog}" title="Visit ${speaker}'s website" target="_blank"><i class="ion-social-rss"></i>&nbsp;${speaker.blog}</a></span>
+                                <span class="website"><a href="${speaker.blog}" title="Visit ${speaker}'s website" target="_blank"><i class="ion-social-rss"></i>&nbsp;${speaker.blog.minus("http://")}</a></span>
                             </g:if>
 
                             </p>
