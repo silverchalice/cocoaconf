@@ -21,6 +21,7 @@ class Conference {
     String sponsorListBlurb
     String thumbnail
     String cityNickname
+    String intro
 
     List days
 	String status = PENDING
@@ -49,6 +50,7 @@ class Conference {
 		leads nullable:true
         thumbnail nullable: true
     cityNickname nullable: false
+    intro nullable: false
     }
 
     def getSpeakers(){
