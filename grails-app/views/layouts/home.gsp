@@ -80,11 +80,11 @@ _gaq.push(['_trackPageview']);
           </li>
         </ul>
         <ul class="nav pull-right">
-          <li><a href="#">Speakers</a></li>
+          <li><g:link controller="speaker" action="speakers">Speakers</g:link></li>
           <!-- <li><a href="#sessions">Sessions</a></li> -->
           <!-- <li><a href="#contact">Venues</a></li> -->
-          <li><a href="#contact">Partners</a></li>
-          <li><a href="#contact">Blog</a></li>
+          <li><g:link controller="home" action="partners">Partners</g:link></li>
+          <li><g:link controller="post" action="list">Blog</g:link></li>
           <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li>
         </ul>
       </div>
