@@ -438,12 +438,12 @@ img.center {
 .navbar-inverse a:hover.brand {
 	color:#0093ee;
 }
-ul.nav.pull-right li:last-child a {
+/* ul.nav.pull-right li:last-child a {
 	color:#0093ee;
 }
 ul.nav.pull-right li:last-child a:hover {
 	color:#fff;
-}
+} */
 .btn-flat {
 	background:transparent;
 	border:1px solid #0093ee;
