@@ -4,7 +4,7 @@
 <title>${conference?.description} &#8212; ${conference?.dates} / CocoaConf 2014: the conference for iPhone, iPad and Mac developers</title>
 <meta name="layout" content="home" />
 </head>
-<body class="secondary ${conference?.city.toLowerCase().replaceAll("\\s", "")}">
+<body class="secondary ${conference?.city?.toLowerCase()?.replaceAll("\\s", "")}">
 <div class="container main-text">
   <h1>${conference?.description}</h1>
 </div>
@@ -62,15 +62,15 @@
         <!--<a class="brand" href="#"><img src="${resource(dir: 'images', file: 'img_cocoaconf_logo.png')}" height="40" width="40" alt="CocoaConf logo"> CocoaConf</a>-->
         <div class="nav-collapse collapse">
           <ul class="nav">
-            <li class="dropup"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chicago, IL &nbsp; <i class="ion-ios7-arrow-up"></i></a>
+            <li class="dropup"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><cc:cityName id="${conference?.id}" /> &nbsp; <i class="ion-ios7-arrow-up"></i></a>
               <ul class="dropdown-menu">
-                <!--<li class="nav-header">Choose a City</li>
+              <!--<li class="nav-header">Choose a City</li>
               <li class="divider"></li>-->
-                <li><a href="chicago.html">Chicago, IL</a></li>
-                <li><a href="#">Washington D.C.</a></li>
-                <li class="disabled"><a href="#">Austin, TX</a></li>
-                <li><a href="#">San Jose, CA</a></li>
-                <li><a href="#">Raleigh, NC</a></li>
+              <li class="${conference?.id == 17 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'chicago-2014']">Chicago, IL</g:link></li>
+              <li class="${conference?.id == 18 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'dc-2014']">Washington D.C.</g:link></li>
+              <li class="${conference?.id == 20 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'austin-2014']">Austin, TX</g:link></li>
+              <li class="${conference?.id == 19 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'sanjose-2014']">San Jose, CA</g:link></li>
+              <li class="${conference?.id == 21 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'raleigh-2014']">Raleigh, NC</g:link></li>
               </ul>
             </li>
           </ul>
@@ -80,7 +80,7 @@
             <!-- <li><a href="#contact">Venues</a></li> -->
             <li><a href="#contact">Partners</a></li>
             <li><a href="#contact">Blog</a></li>
-            <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li>
+            <!-- <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li> -->
           </ul>
         </div>
         <!--/.nav-collapse --> 
