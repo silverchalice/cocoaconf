@@ -58,24 +58,24 @@ _gaq.push(['_trackPageview']);
 </script>
 </head>
 
-<body class="${conference?.city.toLowerCase().replaceAll("\\s", "")} secondary">
+<body class="${conference?.city?.toLowerCase()?.replaceAll("\\s", "")} secondary">
 <a name="top"></a>
 <div class="navbar navbar-inverse navbar-static-top">
   <div class="navbar-inner">
     <div class="container">
       <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="brand" href="#"><img src="${resource(dir: 'images', file: 'img_cocoaconf_logo.png')}" height="40" width="40" alt="CocoaConf logo"> CocoaConf</a>
+      <a class="brand" href="${createLink(uri: '/')}"><img src="${resource(dir: 'images', file: 'img_cocoaconf_logo.png')}" height="40" width="40" alt="CocoaConf logo"> CocoaConf</a>
       <div class="nav-collapse collapse">
         <ul class="nav">
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chicago, IL &nbsp; <i class="ion-ios7-arrow-down"></i></a>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><cc:cityName id="${conference?.id}" /> &nbsp; <i class="ion-ios7-arrow-down"></i></a>
             <ul class="dropdown-menu">
               <!--<li class="nav-header">Choose a City</li>
               <li class="divider"></li>-->
-              <li class="disabled"><a href="chicago.html">Chicago, IL</a></li>
-              <li><a href="#">Washington D.C.</a></li>
-              <li><a href="#">Austin, TX</a></li>
-              <li><a href="#">San Jose, CA</a></li>
-              <li><a href="#">Raleigh, NC</a></li>
+              <li class="${conference?.id == 17 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'chicago-2014']">Chicago, IL</g:link></li>
+              <li class="${conference?.id == 18 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'dc-2014']">Washington D.C.</g:link></li>
+              <li class="${conference?.id == 20 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'austin-2014']">Austin, TX</g:link></li>
+              <li class="${conference?.id == 19 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'sanjose-2014']">San Jose, CA</g:link></li>
+              <li class="${conference?.id == 21 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'raleigh-2014']">Raleigh, NC</g:link></li>
             </ul>
           </li>
         </ul>
@@ -85,7 +85,7 @@ _gaq.push(['_trackPageview']);
           <!-- <li><a href="#contact">Venues</a></li> -->
           <li><g:link controller="home" action="partners">Partners</g:link></li>
           <li><g:link controller="post" action="list">Blog</g:link></li>
-          <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li>
+          <!-- <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li> -->
         </ul>
       </div>
       <!--/.nav-collapse --> 
@@ -95,7 +95,7 @@ _gaq.push(['_trackPageview']);
 <g:layoutBody />
 <div class="container">
   <footer>
-    <p>&copy; 2014 Simply Cocoa, LLC. |  About the <a href="#" title="Learn more about the Kleins">Klein Family</a> |  Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a></p>
+    <p>&copy; 2014 Simply Cocoa, LLC. |  About the <a href="${createLink(controller: 'home', action: 'kleinfamily')}" title="Learn more about the Kleins">Klein Family</a> |  Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a></p>
   </footer>
 </div>
 <!-- /container --> 
