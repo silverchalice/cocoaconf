@@ -64,18 +64,18 @@ _gaq.push(['_trackPageview']);
   <div class="navbar-inner">
     <div class="container">
       <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="brand" href="#"><img src="${resource(dir: 'images', file: 'img_cocoaconf_logo.png')}" height="40" width="40" alt="CocoaConf logo"> CocoaConf</a>
+      <a class="brand" href="${createLink(uri:'/')}"><img src="${resource(dir: 'images', file: 'img_cocoaconf_logo.png')}" height="40" width="40" alt="CocoaConf logo"> CocoaConf</a>
       <div class="nav-collapse collapse">
         <ul class="nav">
           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Choose a City &nbsp; <i class="ion-ios7-arrow-down"></i></a>
             <ul class="dropdown-menu">
               <!--<li class="nav-header">Choose a City</li>
               <li class="divider"></li>-->
-              <li><a href="chicago.html">Chicago, IL</a></li>
-              <li><a href="#">Washington D.C.</a></li>
-              <li><a href="#">Austin, TX</a></li>
-              <li><a href="#">San Jose, CA</a></li>
-              <li><a href="#">Raleigh, NC</a></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'chicago-2014']">Chicago, IL</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'dc-2014']">Washington D.C.</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'austin-2014']">Austin, TX</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'sanjose-2014']">San Jose, CA</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'raleigh-2014']">Raleigh, NC</g:link></li>
             </ul>
           </li>
         </ul>
@@ -85,7 +85,7 @@ _gaq.push(['_trackPageview']);
           <!-- <li><a href="#contact">Venues</a></li> -->
           <li><g:link controller="home" action="partners">Partners</g:link></li>
           <li><g:link controller="post" action="list">Blog</g:link></li>
-          <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li>
+          <!-- <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li> -->
         </ul>
       </div>
       <!--/.nav-collapse --> 
@@ -95,8 +95,8 @@ _gaq.push(['_trackPageview']);
 <div class="header">
   <div class="container">
     <h1>The developer conference <br /> for those who think different.</h1>
-    <h3><span class="hidden-phone hidden-tablet">5 cities / 100+ speakers / one low price &nbsp; </span>
-      <button class="btn btn-large btn-flat-gray">Register &nbsp;<i class="ion-ios7-arrow-right"></i></button>
+    <h3><span class="hidden-phone hidden-tablet">5 cities / 100+ speakers / one other thing &nbsp; </span>
+      <!-- <button class="btn btn-large btn-flat-gray">Register &nbsp;<i class="ion-ios7-arrow-right"></i></button> -->
     </h3>
   </div>
 </div>
@@ -112,11 +112,11 @@ _gaq.push(['_trackPageview']);
             <ul class="dropdown-menu">
               <!--<li class="nav-header">Choose a City</li>
               <li class="divider"></li>-->
-              <li><a href="chicago.html">Chicago, IL</a></li>
-              <li><a href="#">Washington D.C.</a></li>
-              <li><a href="#">Austin, TX</a></li>
-              <li><a href="#">San Jose, CA</a></li>
-              <li><a href="#">Raleigh, NC</a></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'chicago-2014']">Chicago, IL</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'dc-2014']">Washington D.C.</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'austin-2014']">Austin, TX</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'sanjose-2014']">San Jose, CA</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'raleigh-2014']">Raleigh, NC</g:link></li>
             </ul>
           </li>
         </ul>
@@ -126,7 +126,7 @@ _gaq.push(['_trackPageview']);
           <!-- <li><a href="#contact">Venues</a></li> -->
           <li><g:link controller="home" action="partners">Partners</g:link></li>
           <li><g:link controller="post" action="list">Blog</g:link></li>
-          <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li>
+          <!-- <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li> -->
         </ul>
       </div>
       <!--/.nav-collapse --> 
@@ -135,7 +135,7 @@ _gaq.push(['_trackPageview']);
 </div>
 <footer>
   <div class="container">
-    <p class="text-right">&copy; 2014 Simply Cocoa, LLC. &nbsp;| &nbsp; About the <a href="#" title="Learn more about the Kleins">Klein Family</a> &nbsp; | &nbsp; Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a></p>
+    <p class="text-right">&copy; 2014 Simply Cocoa, LLC. &nbsp;| &nbsp; About the <a href="${createLink(controller: 'home', action: 'kleinfamily')}" title="Learn more about the Kleins">Klein Family</a> &nbsp; | &nbsp; Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a></p>
   </div>
 </footer>
 </div>
