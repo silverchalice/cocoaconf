@@ -88,10 +88,10 @@
 
 
 
-        <div class="gradient"></div>
+        <!-- <div class="gradient"></div>
 
         <h2>&nbsp;</h2>
-        <hr>
+        <hr> -->
 
     <div class="row-fluid">
 
@@ -132,9 +132,13 @@
 
                 </g:if>
 
+                <br />
+
             </g:each>
 
         </div>
+
+        <p>&nbsp;</p>
 
         </div>
     </body>
