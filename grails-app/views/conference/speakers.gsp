@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Speakers / Chicago / CocoaConf 2014: the conference for iPhone, iPad and Mac developers</title>
+<title>Speakers / ${conference?.city} / CocoaConf 2014: the conference for iPhone, iPad and Mac developers</title>
 <meta name="layout" content="home" />
 </head>
 <body class="secondary ${conference?.city.toLowerCase()} speakers">
 <div class="container main-text">
-  <h1><span>Chicago / </span> Speakers</h1>
+  <h1><span>${conference?.city} / </span> Speakers</h1>
 </div>
 <div class="content container">
   <div class="gradient"></div>
@@ -28,7 +28,7 @@
   <!-- Example row of columns -->
   <div class="row-fluid">
     <div class="span2 hidden-phone hidden-tablet">
-      <h3>Chicago</h3>
+      <h3>${conference?.city} Links</h3>
       <ul class="nav nav-list">
         <li class="about"><g:link controller="conference" action="home" params='["tinyName": "${conference.tinyName}"]'>About</g:link></li>
         <li class="speakers active"><g:link controller="conference" action="speakers" params='["tinyName": "${conference.tinyName}"]'>Speakers</g:link></li>
@@ -68,9 +68,9 @@
     </div>
     <div class="span2">
       <h4>March 7–8, 2014</h4>
-      <button class="btn btn-block btn-large btn-flat">Register for Chicago <i class="ion-ios7-arrow-forward"></i></button>
+      <button class="btn btn-block btn-large btn-flat">Register for ${conference?.city} <i class="ion-ios7-arrow-forward"></i></button>
       <hr>
-      <h4>Chicago Venue</h4>
+      <h4>${conference?.city} Venue</h4>
       <img src="${resource(dir: 'images', file: 'img_chicago_venue.jpg')}" alt="Image of the Holiday Inn" class="img-rounded">
       <h5>Holiday Inn Chicago-Elk Grove</h5>
       <ul>
@@ -81,7 +81,7 @@
         <li>Website: <a href="www.ihg.com/holidayinn" title="Visit their website">www.ihg.com/holidayinn</a></li>
       </ul>
       <hr>
-      <h4>Chicago Sponsors<br>
+      <h4>${conference?.city} Sponsors<br>
         &nbsp;</h4>
       <p><a href="#"><img src="${resource(dir: 'images', file: 'logo_wiley.jpg')}" alt="Wiley logo"></a></p>
       <hr>
@@ -115,7 +115,7 @@
             <!-- <li><a href="#contact">Venues</a></li> -->
             <li><a href="#contact">Partners</a></li>
             <li><a href="#contact">Blog</a></li>
-            <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li>
+            <!-- <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li> -->
           </ul>
         </div>
         <!--/.nav-collapse --> 
