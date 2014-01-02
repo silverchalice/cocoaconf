@@ -643,3 +643,7 @@ li.partners.active a:before {
 li.register.active a:before {
 	content:"\f1c4";
 }
+
+a.button:hover {
+  text-decoration: none;
+}
