@@ -644,6 +644,26 @@ li.register.active a:before {
 	content:"\f1c4";
 }
 
-a.button:hover {
+a.button:hover, a.post-title:hover {
   text-decoration: none;
+}
+
+.paginateButtons {
+    margin: 0 auto 30px;
+    background: #fff bottom repeat-x;
+    border-top: 0;
+    color: #666;
+    overflow: hidden;
+    padding: 10px 3px;
+}
+.paginateButtons a {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-color: #ccc #aaa #aaa #ccc;
+    color: #666;
+    margin: 0 3px;
+    padding: 2px 6px;
+}
+.paginateButtons span {
+    padding: 2px 3px;
 }
