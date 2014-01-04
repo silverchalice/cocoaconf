@@ -67,7 +67,7 @@ _gaq.push(['_trackPageview']);
       <a class="brand" href="${createLink(uri:'/')}"><img src="${resource(dir: 'images', file: 'img_cocoaconf_logo.png')}" height="40" width="40" alt="CocoaConf logo"> CocoaConf</a>
       <div class="nav-collapse collapse">
         <ul class="nav">
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Choose a City &nbsp; <i class="ion-ios7-arrow-down"></i></a>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pick a City &nbsp; <i class="ion-ios7-arrow-down"></i></a>
             <ul class="dropdown-menu">
               <!--<li class="nav-header">Choose a City</li>
               <li class="divider"></li>-->
@@ -95,7 +95,7 @@ _gaq.push(['_trackPageview']);
 <div class="header">
   <div class="container">
     <h1>The developer conference <br /> for those who think different.</h1>
-    <h3><span class="hidden-phone hidden-tablet">5 cities / 100+ speakers / one other thing &nbsp; </span>
+    <h3><span class="hidden-phone hidden-tablet">16 events / 113 speakers / 1,327 attendees / Since 2011 &nbsp; </span>
       <!-- <button class="btn btn-large btn-flat-gray">Register &nbsp;<i class="ion-ios7-arrow-right"></i></button> -->
     </h3>
   </div>
@@ -108,7 +108,7 @@ _gaq.push(['_trackPageview']);
         <!--<a class="brand" href="#"><img src="${resource(dir: 'images', file: 'img_cocoaconf_logo.png')}" height="40" width="40" alt="CocoaConf logo"> CocoaConf</a>-->
       <div class="nav-collapse collapse">
         <ul class="nav">
-          <li class="dropup"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Choose a City &nbsp; <i class="ion-ios7-arrow-up"></i></a>
+          <li class="dropup"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pick a City &nbsp; <i class="ion-ios7-arrow-up"></i></a>
             <ul class="dropdown-menu">
               <!--<li class="nav-header">Choose a City</li>
               <li class="divider"></li>-->
