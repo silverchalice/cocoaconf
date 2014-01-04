@@ -35,8 +35,16 @@ class Speaker {
         order 'asc'
     }
 
-
-
+    def upcomingConferences() {
+        def conferences = Conference.findAll { startDate > new Date() } 
+        def upcomingWithSpeaker = []
+        conferences.each {
+            if(it?.speakers?.collect { it.id }.contains(this.id)){
+                upcomingWithSpeaker << it
+            }
+        }
+        return upcomingWithSpeaker
+    }
 
     String toString(){ "${firstName} ${lastName}" }
 
