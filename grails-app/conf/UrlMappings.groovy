@@ -155,7 +155,11 @@ class UrlMappings {
             controller = "post"
             action = "feed"
         }
-        "/profile/$firstName/$lastName"{
+        "/speaker/$id"{
+	        controller = "speaker"
+	        action = "viewDetails"
+        }
+        "/profile/$lastName/$firstName"{
 	        controller = "speaker"
 	        action = "viewDetails"
         }
