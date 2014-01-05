@@ -231,12 +231,14 @@ class ConferenceController {
     }
 
     def speakerDetails = {
+      println "entering speakerDetails with params $params"
 //	    params.each{key, val -> println "$key == $val"}
-	    def conf = Conference.get(params.confId)
+	    def conf = params?.tinyName ? Conference.findByTinyName(params.tinyName) : Conference.get(params.confId)
 	    def speaker = Speaker.get(params.id)
-	    def speakerPresentations = conf?.sessions?.findAll{it?.presentation?.speaker?.id == speaker?.id}.collect{it?.presentation}
+	    def speakerPresentations = conf?.sessions?.findAll{it?.presentation?.speaker?.id == speaker?.id}.collect{it?.presentation}.sort { it.title }
 	    def feedEntries = FeedEntry.findAllBySpeakerId(speaker?.id, [max:3, sort:'published', order:'desc'])
 //	    speakerPresentations.each{println it}
+      println "the conf is $conf; the speaker is $speaker"
 	    if (conf && speaker){
 		    return[conference:conf, speaker:speaker, 
 		           speakerPresentations:speakerPresentations,
@@ -254,7 +256,7 @@ class ConferenceController {
 	    if(params.tinyName){
         println "there was a tinyName"
 		    conf = Conference.findByTinyName(params.tinyName)
-		    presentation = Presentation.findBySlug(params.slug)
+		    presentation = params.slug ? Presentation.findBySlug(params.slug) : Presentation.get(params.id)
 	    }
 	    else{
           println "there was not a tinyName"
