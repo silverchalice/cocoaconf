@@ -22,6 +22,7 @@ class Conference {
     String thumbnail
     String cityNickname
     String intro
+    Boolean scheduleReady = false
 
     List days
 	String status = PENDING
@@ -51,6 +52,7 @@ class Conference {
         thumbnail nullable: true
     cityNickname nullable: false
     intro nullable: false
+    scheduleReady nullable: true
     }
 
     def getSpeakers(){
