@@ -146,6 +146,13 @@
 	<g:textField name="cityNickname" value="${conference?.cityNickname}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'scheduleReady', 'error')} ">
+	<label for="scheduleReady">
+		<g:message code="conference.scheduleReady.label" default="Schedule Ready" />
+	</label>
+  <g:checkBox name="scheduleReady" value="${conference?.scheduleReady}" />
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'status', 'error')} ">
 	<label for="status">
 		<g:message code="conference.status.label" default="Status" />
