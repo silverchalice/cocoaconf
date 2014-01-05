@@ -17,7 +17,7 @@
     <div class="span6">
       <div class="media"> <img src="${resource(dir: 'images', file: 'img_session_icon.png')}" alt="A speech bubble icon" class="pull-left media-object">
         <div class="media-body">
-          <h1>Full Session List for<br>
+          <h1>Session List for<br>
             ${conference?.description}</h1>
         </div>
       </div>
