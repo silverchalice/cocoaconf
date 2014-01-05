@@ -60,7 +60,7 @@
 
 
 
-<body class="secondary raleigh sponsors">
+<body class="secondary ${pageProperty(name: 'meta.division') ?: 'raleigh'} sponsors">
 
 
 <a name="top"></a>
