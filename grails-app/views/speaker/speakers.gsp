@@ -1,4 +1,3 @@
-
 <%@ page import="com.cocoaconf.Speaker" %>
 <html>
     <head>
@@ -37,7 +36,7 @@
             <div class="span8">
                 <div class="media"> <img src="${resource(dir:'images', file:'img_speaker_icon.png')}" alt="A person icon" class="pull-left media-object">
                     <div class="media-body">
-                        <h1>Our speakers include well-known trainers, authors, and professional developers.</h1>
+                        <h1>Our speakers include trainers, authors, and professional iOS and OS X developers.</h1>
                     </div>
                 </div>
             </div>
@@ -101,7 +100,7 @@
                     <ul class="media-list">
                         <li class="media"> <g:link controller="speaker" action="viewDetails" id="${speaker?.id}" class="pull-left"> <img class="media-object img-circle" src="${request.contextPath}/${speaker?.imagePath}" alt="Speaker photo"> </g:link>
                             <div class="media-body">
-                                <h3 class="media-heading">${speaker} <span>/ Author</span></h3>
+                                <h3 class="media-heading">${speaker} <!-- <span>/ Author</span>--></h3>
                             </div>
                             <p><cc:truncate value="${speaker.bio}" size="200" /></p>
                             <p class="author-links">
