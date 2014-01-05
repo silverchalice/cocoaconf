@@ -67,7 +67,7 @@
       </ul>
     </div>
     <div class="span2">
-      <h4>March 7–8, 2014</h4>
+      <h4>${conference?.dates}</h4>
       <g:link controller="conference" action="register" params='["tinyName": "${conference?.tinyName}"]' class="button"><button class="btn btn-block btn-large btn-flat">Register for ${conference?.city} <i class="ion-ios7-arrow-forward"></i></button></g:link>
       <hr>
       <h4>${conference?.city} Venue</h4>
