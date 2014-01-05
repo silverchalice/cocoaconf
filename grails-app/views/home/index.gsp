@@ -60,28 +60,28 @@
 <div class="speakers">
   <div class="container">
     <h2 class="text-center">Speakers</h2>
-    <p class="lead text-center">CocoaConf speakers are thought leaders, authors, and professional iOS and OS X developers. <a href="${createLink(controller: 'home', action: 'speakers')}" title="All speakers">Meet them all <i class="ion-ios7-arrow-forward"></i></a></p>
+    <p class="lead text-center">CocoaConf speakers are thought leaders, authors, and professional iOS and OS X developers. <a href="${createLink(controller: 'speaker', action: 'speakers')}" title="All speakers">Meet them all <i class="ion-ios7-arrow-forward"></i></a></p>
     <p>&nbsp;</p>
     <div class="row-fluid">
-      <div class="span2"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'photo_adamson_chris.jpg')}" alt="Speaker image"></a>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="123" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'who.png')}" alt="Speaker image"></g:link>
+        <h3 class="text-center">Casey Liss</h3>
+        <!-- <h4 class="text-center"><span>Co-host, Accidental Tech Podcast</span></h4> -->
+      </div>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="124" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'wiskus.png')}" alt="Speaker image"></g:link>
+        <h3 class="text-center">Dave Wiskus</h3>
+        <!-- <h4 class="text-center"><span>Designer, Vesper</span></h4> -->
+      </div>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="52" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'jaimee.jpg')}" alt="Speaker image"></g:link>
+        <h3 class="text-center">Jaimee Newberry</h3>
+        <!-- <h4 class="text-center"><span> UX Design & Strategy Consultant</span></h4> -->
+      </div>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="1" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'photo_steinberg_daniel.jpg')}" alt="Speaker image"></g:link>
+        <h3 class="text-center">Daniel Steinberg</h3>
+        <!-- <h4 class="text-center"><span></span></h4> -->
+      </div>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="3" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'photo_adamson_chris.jpg')}" alt="Speaker image"></g:link>
         <h3 class="text-center">Chris Adamson</h3>
-        <h4 class="text-center"><span>Learning Core Audio</span></h4>
-      </div>
-      <div class="span2"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'photo_williams_justin.jpg')}" alt="Speaker image"></a>
-        <h3 class="text-center">Justin Williams</h3>
-        <h4 class="text-center"><span> Second Gear</span></h4>
-      </div>
-      <div class="span2"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'aaron-hillegass.jpg')}" alt="Speaker image"></a>
-        <h3 class="text-center">Aaron Hillegass</h3>
-        <h4 class="text-center"><span>Big Nerd Ranch</span></h4>
-      </div>
-      <div class="span2"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'rob-rix.jpg')}" alt="Speaker image"></a>
-        <h3 class="text-center">Rob Rix</h3>
-        <h4 class="text-center"><span>GitHub</span></h4>
-      </div>
-      <div class="span2"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'j-penn.jpg')}" alt="Speaker image"></a>
-        <h3 class="text-center">Jonathan Penn</h3>
-        <h4 class="text-center"><span>Rubber City Wizards</span></h4>
+        <!-- <h4 class="text-center"><span>Author, Learning Core Audio</span></h4> -->
       </div>
     </div>
   </div>
@@ -91,26 +91,26 @@
     <h2 class="text-center">Sessions</h2>
     <div class="row-fluid">
       <div class="span5">
-        <div class="media"> <a href="#" title="Learn more" class="pull-left hidden-tablet"><img src="${resource(dir: 'images', file: 'Jaimee-Newberry-bubble.png')}" alt="Speaker image"></a>
+        <div class="media"> <g:link controller="conference" action="sessionDetails" params="${[tinyName: 'dc-2014', slug: 'leveling-up']}" title="Learn more" class="pull-left hidden-tablet"><img src="${resource(dir: 'images', file: 'Mark-Dalrymple-bubble.png')}" alt="Speaker image"></g:link>
           <div class="media-body">
-            <h3><a href="#" class="muted">Designing App Engagement</a></h3>
-            <h4><span>by <a href="#" title="Learn more about this speaker">Jaimee Newberry</a></span></h4>
-            <p>With so many apps in the app store, what can you be thinking about to get and keep people interested in your app? Having a great concept is just the beginning. How much thinking goes into the personality and tone of your app? What about writing the error messages, alerts, calls-to-action, app descriptions or release notes?</p>
+            <h3><g:link controller="conference" action="sessionDetails" params="${[tinyName: 'dc-2014', slug: 'leveling-up']}" class="muted">Leveling Up</g:link></h3>
+            <h4><span>by <g:link controller="conference" action="speakerDetails" id="15" params="${[confId: '18']}" title="Learn more about this speaker">Mark Dalrymple</g:link></span></h4>
+            <p>Want to take your skills to the next level? Ever wanted to find hidden secrets that lurk in the the undocumented underbelly of the Mac or iPhone? Join MarkD for a ride through reverse engineering, disassembly, swizzling, spying, and general mayhem.</p>
           </div>
         </div>
       </div>
       <div class="span5">
-        <div class="media"> <a href="#" title="Learn more" class="pull-left hidden-tablet"><img src="${resource(dir: 'images', file: 'James-Dempsey-bubble.png')}" alt="Speaker image"></a>
+        <div class="media"> <g:link controller="conference" action="sessionDetails" params="${[tinyName: 'chicago-2014', slug: 'table-views-ios7']}" title="Learn more" class="pull-left hidden-tablet"><img src="${resource(dir: 'images', file: 'James-Dempsey-bubble.png')}" alt="Speaker image"></g:link>
           <div class="media-body">
-            <h3><a href="#" class="muted">Makeover Your Table Views <br />for iOS 7</a></h3>
-            <h4><span>by <a href="#" title="Learn more about this speaker">James Dempsey</a></span></h4>
-            <p>With so many apps in the app store, what can you be thinking about to get and keep people interested in your app? Having a great concept is just the beginning. How much thinking goes into the personality and tone of your app? What about writing the error messages, alerts, calls-to-action, app descriptions or release notes?</p>
+            <h3><g:link controller="conference" action="sessionDetails" params="${[tinyName: 'chicago-2014', slug: 'table-views-ios7']}" class="muted">Makeover Your Table Views <br />for iOS 7</g:link></h3>
+            <h4><span>by <g:link controller="conference" action="speakerDetails" id="60" params="${[confId: '17']}" title="Learn more about this speaker">James Dempsey</g:link></span></h4>
+            <p>Give the table views in your app an iOS 7 makeover by taking advantage of new features and adjusting to subtle changes in appearance and behavior. We'll do a live makeover—add Dynamic Type and dynamic row sizes, modernize the selection appearance, update Storyboard settings and other bits of polish needed to make a table view shine on iOS 7.</p>
           </div>
         </div>
       </div>
     </div>
     <hr>
-    <p class="text-center"><strong>Other topics:</strong> &nbsp; <a href="#" class="muted">Workflow best practices</a> &nbsp; / &nbsp; <a href="#" class="muted">Marketing your new app</a> &nbsp; / &nbsp; <a href="#" class="muted">Coding within constraints</a> &nbsp; / &nbsp; <a href="#" class="muted">Lorem ipsum dolor amet consularium</a> &nbsp; / &nbsp; <a href="#" title="View all session topics">View all topics <i class="ion-ios7-arrow-forward"></i></a></p>
+    <p class="text-center"><!-- <strong>Other topics:</strong> &nbsp; <a href="#" class="muted">Workflow best practices</a> &nbsp; / &nbsp; <a href="#" class="muted">Marketing your new app</a> &nbsp; / &nbsp; <a href="#" class="muted">Coding within constraints</a> &nbsp; / &nbsp; <a href="#" class="muted">Lorem ipsum dolor amet consularium</a> &nbsp; / &nbsp; --><g:link controller="session" action="sessions" title="View all session topics">View all topics <i class="ion-ios7-arrow-forward"></i></g:link></p>
   </div>
 </div>
 <div class="comments">
@@ -131,7 +131,7 @@
 <div class="share">
   <div class="container">
     <h2 class="pull-left">Spread the Word</h2>
-    <p> <a href="#" class="share twitter text-center"><i class="ion-social-twitter"></i></a> <a href="#" class="share facebook text-center"><i class="ion-social-facebook"></i></a> <a href="#" class="share google text-center"><i class="ion-social-googleplus-outline"></i></a> <a href="#" class="share email text-center"><i class="ion-ios7-email"></i></a> <a href="#" class="share more text-center"><i class="ion-ios7-plus-outline"></i></a> <a href="https://twitter.com/CocoaConf" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @CocoaConf</a> 
+    <p> <a href="https://twitter.com/intent/tweet?text=CocoaConf%3A%20The%20developer%20conference%20for%20those%20who%20think%20different&url=http://cocoaconf.com" class="share twitter text-center"><i class="ion-social-twitter"></i></a> <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://cocoaconf.com&p[images][0]=&p[title]=CocoaConf:%20The%20developer%20conference%20for%20those%20who%20think%20different&p[summary]=%E2%80%9CCocoaConf%20is%20a%20touring%20training%20conference%20for%20iPhone,%20iPad,%20and%20Mac%20developers.%20We%20bring%20some%20of%20the%20best%20authors,%20trainers,%20and%20speakers%20to%20the%20most%20passionate,%20engaged%20developers%20in%20a%20region%E2%80%94together,%20they%20make%20magic!%E2%80%9D" class="share facebook text-center"><i class="ion-social-facebook"></i></a> <a href="https://plus.google.com/share?url=http://cocoaconf.com" class="share google text-center"><i class="ion-social-googleplus-outline"></i></a> <a href="mailto:?subject=CocoaConf%3A%20The%20developer%20conference%20for%20those%20who%20think%20different&body=%22CocoaConf%20is%20a%20touring%20training%20conference%20for%20iPhone%2C%20iPad%2C%20and%20Mac%20developers.%20We%20bring%20some%20of%20the%20best%20authors%2C%20trainers%2C%20and%20speakers%20to%20the%20most%20passionate%2C%20engaged%20developers%20in%20a%20region--together%2C%20they%20make%20magic%21%22%0A%0Ahttp%3A//cocoaconf.com" class="share email text-center"><i class="ion-ios7-email"></i></a> <a href="https://alpha.app.net/intent/post/?text=CocoaConf%3A%20The%20developer%20conference%20for%20those%20who%20think%20different&url=http://cocoaconf.com" class="share more text-center"><i class="ion-ios7-plus-outline"></i></a> <a href="https://twitter.com/CocoaConf" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @CocoaConf</a> 
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
     </p>
     </div>
@@ -140,9 +140,9 @@
   <div class="container">
     <h2 class="text-center">Sponsors</h2>
     <div class="row-fluid">
-      <div class="span3"><a href="#"><img class="center" src="${resource(dir: 'images', file: 'logo_wiley_white.png')}" alt="Wiley logo"></a></div>
-      <div class="span4"><a href="#"><img class="center" src="${resource(dir: 'images', file: 'logo_ranch_white.png')}" alt="logo"></a></div>
-      <div class="span3"><a href="#"><img class="center" src="${resource(dir: 'images', file: 'logo_wiley_white.png')}" alt="Wiley logo"></a></div>
+      <div class="span3"><a href="#"><img class="center" src="${resource(dir: 'images', file: 'github.png')}" alt="GitHub logo"></a></div>
+      <div class="span4"><a href="#"><img class="center" src="${resource(dir: 'images', file: 'reveal-logo.png')}" alt="Reveal logo"></a></div>
+      <!-- <div class="span3"><a href="#"><img class="center" src="${resource(dir: 'images', file: 'logo_wiley_white.png')}" alt="Wiley logo"></a></div> -->
     </div>
   </div>
 </div>
