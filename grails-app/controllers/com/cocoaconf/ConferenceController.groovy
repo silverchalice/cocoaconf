@@ -197,7 +197,9 @@ class ConferenceController {
     def sessions = {
         def conf = Conference.findByTinyName(params.tinyName)
         if(conf){
-            [conference:conf, sessions: conf.sessionList().sort{ it.presentation.title }]
+            def sessions = conf.sessionList()
+            sessions.removeAll { it.presentation.speaker.firstName == "Mystery" || it.presentation.speaker.firstName == "TBA" }
+            [conference:conf, sessions: sessions.sort{ it.presentation.title }]
         } else {
             redirect controller: "home"
         }
