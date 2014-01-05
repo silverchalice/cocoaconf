@@ -27,7 +27,7 @@
     </div>
     <div class="span3">
     <h2><small>Early Bird Discounts Available!</small></h2>
-      <button class="btn btn-block btn-large btn-flat">Register for ${conference?.city} <i class="ion-ios7-arrow-forward"></i></button>
+      <g:link controller="conference" action="register" params="${[tinyName: conference?.tinyName]}" class="button"><button class="btn btn-block btn-large btn-flat">Register for ${conference?.city} <i class="ion-ios7-arrow-forward"></i></button></g:link>
     </div>
   </div>
   <hr>
@@ -37,58 +37,63 @@
     <div class="span2">
       <h3>${conference?.city} Links</h3>
       <ul class="nav nav-list">
-        <li class="about"><a href="chicago.html">About</a></li>
-        <li class="speakers"><a href="chicago_speakers.html">Speakers</a></li>
-        <li class="sessions"><a href="chicago_sessions.html">Sessions</a></li>
-        <li class="schedule active"><a href="chicago_schedule.html">Schedule</a></li>
-        <li class="venue"><a href="#">Venue</a></li>
-        <li class="partners"><a href="#">Partners</a></li>
-        <li class="register"><a href="#">Register</a></li>
+        <li class="about"><g:link controller="conference" action="home" params="${[tinyName: conference?.tinyName]}">Home</g:link></li>
+        <li class="speakers"><g:link controller="conference" action="speakers" params="${[tinyName: conference?.tinyName]}">Speakers</g:link></li>
+        <li class="sessions"><g:link controller="conference" action="sessions" params="${[tinyName: conference?.tinyName]}">Sessions</g:link></li>
+        <li class="schedule active"><g:link controller="conference" action="schedule" params="${[tinyName: conference?.tinyName]}">Schedule</g:link></li>
+        <li class="venue"><g:link controller="conference" action="venue" params="${[tinyName: conference?.tinyName]}">Venue</g:link></li>
+        <li class="partners"><g:link controller="conference" action="partners" params="${[tinyName: conference?.tinyName]}">Partners</g:link></li>
+        <li class="register"><g:link controller="conference" action="register" params="${[tinyName: conference?.tinyName]}">Register</g:link></li>
       </ul>
     </div>
     <div class="span8">
       <!-- <button class="btn-flat-gray btn-large pull-right"><i class="ion-ios7-calendar-outline"></i>&nbsp;&nbsp;Save to iCal</button> -->
-      <g:each in="${schedule}" var="dayMap">
-          <h3>${conference.days[dayMap.day - 1]}</h3>
-          <table width="100%" border="1" cellspacing="0" cellpadding="0" summary="This table summarizes the sessions and events at ${conference?.description}" class="table table-hover table-striped">
-            <th scope="row">Time</th>
-            <th scope="row" colspan="3">Event / Sessions</th>
-            <tr>
-            </tr>
-            <g:each in="${dayMap.slots}" var="slot">
-              <g:set var="sessions" value="${slot.value}" />
+      <g:if test="${conference?.scheduleReady}"> 
+        <g:each in="${schedule}" var="dayMap">
+            <h3>${conference.days[dayMap.day - 1]}</h3>
+            <table width="100%" border="1" cellspacing="0" cellpadding="0" summary="This table summarizes the sessions and events at ${conference?.description}" class="table table-hover table-striped">
+              <th scope="row">Time</th>
+              <th scope="row" colspan="3">Event / Sessions</th>
               <tr>
-                <th scope="row">${sessions[0]?.start}-${sessions[0]?.end}</th>
-                <g:each in="${sessions.sort{it.track}}" var="sess">
-                  <g:if test="${sessions.size() == 1}">
-                    <g:if test="${sess?.type != 'break'}">
-                      <td colspan="3">
-                        <g:link controller="conference" action="sessionDetails" id="${sess?.presentation?.id}" params="${[confId: conference?.id]}">
+              </tr>
+              <g:each in="${dayMap.slots}" var="slot">
+                <g:set var="sessions" value="${slot.value}" />
+                <tr>
+                  <th scope="row">${sessions[0]?.start}-${sessions[0]?.end}</th>
+                  <g:each in="${sessions.sort{it.track}}" var="sess">
+                    <g:if test="${sessions.size() == 1}">
+                      <g:if test="${sess?.type != 'break'}">
+                        <td colspan="3">
+                          <g:link controller="conference" action="sessionDetails" id="${sess?.presentation?.id}" params="${[confId: conference?.id]}">
+                            ${sess?.presentation?.title}
+                          </g:link><br>
+                          <g:link controller="conference" action="speakerDetails" id="${sess?.presentation?.speaker?.id}" params="${[confId: conference?.id]}">
+                            ${sess?.presentation?.speaker} 
+                          </g:link>
+                        </td>
+                      </g:if>
+                      <g:else>
+                        <td colspan="3">
                           ${sess?.presentation?.title}
-                        </g:link><br>
-                        <g:link controller="conference" action="speakerDetails" id="${sess?.presentation?.speaker?.id}" params="${[confId: conference?.id]}">
-                          ${sess?.presentation?.speaker} 
-                        </g:link>
-                      </td>
+                        </td>
+                    </g:else>
                     </g:if>
                     <g:else>
-                      <td colspan="3">
+                      <td><g:link controller="conference" action="sessionDetails" params="${[tinyName: conference?.tinyName, slug: sess?.presentation?.slug ?: 'null']}">
                         ${sess?.presentation?.title}
+                        </g:link><br>
+                        <g:link controller="conference" action="speakerDetails" id="${sess?.presentation?.speaker?.id}" params="${[confId: conference?.id]}">${sess?.presentation?.speaker}</g:link></td>
                       </td>
                     </g:else>
-                  </g:if>
-                  <g:else>
-                    <td><g:link controller="conference" action="sessionDetails" params="${[tinyName: conference?.tinyName, slug: sess?.presentation?.slug ?: 'null']}">
-                      ${sess?.presentation?.title}
-                      </g:link><br>
-                      <g:link controller="conference" action="speakerDetails" id="${sess?.presentation?.speaker?.id}" params="${[confId: conference?.id]}">${sess?.presentation?.speaker}</g:link></td>
-                    </td>
-                  </g:else>
-                </g:each>
-              </tr>
-            </g:each>
-          </table>
-      </g:each>
+                  </g:each>
+                </tr>
+              </g:each>
+            </table>
+        </g:each>
+      </g:if>
+      <g:else>
+        <p class="lead">We are still working on the schedule for this event. Please check back soon!</p>
+      </g:else>
     </div>
   </div>
   <div class="navbar navbar-inverse">
@@ -111,11 +116,11 @@
             </li>
           </ul>
           <ul class="nav pull-right">
-            <li><a href="#">Speakers</a></li>
+            <li><g:link controller="speaker" action="speakers">Speakers</g:link></li>
             <!-- <li class="active"><a href="#sessions">Sessions</a></li> -->
             <!-- <li><a href="#contact">Venues</a></li> -->
-            <li><a href="#contact">Partners</a></li>
-            <li><a href="#contact">Blog</a></li>
+            <li><g:link controller="home" action="partners">Partners</g:link></li>
+            <li><g:link controller="post" action="list">Blog</g:link></li>
             <!-- <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li> -->
           </ul>
         </div>
