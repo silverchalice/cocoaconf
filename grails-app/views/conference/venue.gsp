@@ -22,27 +22,29 @@
   <!-- Example row of columns -->
   <div class="row-fluid">
     <div class="span2">
-    <h3>Chicago</h3>
+    <h3>${conference?.city} Links</h3>
       <ul class="nav nav-list">
-        <li class="about"><g:link controller="conference" action="home" params='["tinyName": "${conference.tinyName}"]'>About</g:link></li>
+        <li class="about"><g:link controller="conference" action="home" params='["tinyName": "${conference.tinyName}"]'>Home</g:link></li>
         <li class="speakers"><g:link controller="conference" action="speakers" params='["tinyName": "${conference.tinyName}"]'>Speakers</g:link></li>
         <li class="sessions"><g:link controller="conference" action="sessions" params='["tinyName": "${conference?.tinyName}"]'>Sessions</g:link></li>
-        <li class="schedule"><a href="#">Schedule</a></li>
+        <li class="schedule"><g:link controller="conference" action="schedule" params="${[tinyName: conference?.tinyName]}">Schedule</g:link></li>
         <li class="venue active"><g:link controller="conference" action="venue" params='["tinyName": "${conference?.tinyName}"]'>Venue</g:link></li>
-        <li class="partners"><a href="#">Partners</a></li>
-        <li class="register"><a href="#">Register</a></li>
+        <li class="partners"><g:link controller="conference" action="partners" params="${[tinyName: conference?.tinyName]}">Partners</g:link></li>
+        <li class="register"><g:link controller="conference" action="register" params="${[tinyName: conference?.tinyName]}">Register</g:link></li>
       </ul>
     </div>
     <div class="span8">
       <ul class="media-list">
         <g:if test="${conference?.venue}">
-            <li class="media"> <a class="pull-left" href="#"> <img class="media-object img-circle" src="${conference?.venue?.imagePath?.startsWith('/') ? conference?.venue?.imagePath : '/' + conference?.venue?.imagePath}" alt="Speaker photo"> </a>
+            <li class="media"> <a class="pull-left" href="${conference?.venue?.website}"> <img class="media-object img-circle" width="340" src="${conference?.venue?.imagePath?.startsWith('/') ? conference?.venue?.imagePath : '/' + conference?.venue?.imagePath}" alt="Venue photo"> </a>
         </g:if>
           <div class="media-body">
-            <h2 class="media-heading">${conference?.venue ?: "Coming soon"}</h2>
+            <h2 class="media-heading">${conference?.venue ?: "Coming Soon"}</h2>
             
             <hr>
             <p class="lead">${conference?.venue?.description ?: "We&#8217;re still working on the venue for this event. Please check back soon!" }</p>
+              ${conference?.venue?.googleMapsCode ? '<br />' : ''}
+              ${conference?.venue?.googleMapsCode ?: ''}
               <p>&nbsp;</p>
           </div>
         </li>
@@ -79,25 +81,25 @@
         <!--<a class="brand" href="#"><img src="img/img_cocoaconf_logo.png" height="40" width="40" alt="CocoaConf logo"> CocoaConf</a>-->
         <div class="nav-collapse collapse">
           <ul class="nav">
-            <li class="dropup"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chicago, IL &nbsp; <i class="ion-ios7-arrow-up"></i></a>
+            <li class="dropup"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><cc:cityName id="${conference?.id}" /> &nbsp; <i class="ion-ios7-arrow-up"></i></a>
               <ul class="dropdown-menu">
                 <!--<li class="nav-header">Choose a City</li>
               <li class="divider"></li>-->
-                <li class="disabled"><a href="chicago.html">Chicago, IL</a></li>
-                <li><a href="#">Washington D.C.</a></li>
-                <li><a href="#">Austin, TX</a></li>
-                <li><a href="#">San Jose, CA</a></li>
-                <li><a href="#">Raleigh, NC</a></li>
+                <li class="${conference?.id == 17 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'chicago-2014']">Chicago, IL</g:link></li>
+                <li class="${conference?.id == 18 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'dc-2014']">Washington D.C.</g:link></li>
+                <li class="${conference?.id == 20 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'austin-2014']">Austin, TX</g:link></li>
+                <li class="${conference?.id == 19 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'sanjose-2014']">San Jose, CA</g:link></li>
+                <li class="${conference?.id == 21 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'raleigh-2014']">Raleigh, NC</g:link></li>
               </ul>
             </li>
           </ul>
           <ul class="nav pull-right">
-            <li><a href="#">Speakers</a></li>
+            <li><g:link controller="speaker" action="speakers">Speakers</g:link></li>
             <!-- <li><a href="#sessions">Sessions</a></li> -->
             <!-- <li><a href="#contact">Venues</a></li> -->
-            <li><a href="#contact">Partners</a></li>
-            <li><a href="#contact">Blog</a></li>
-            <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li>
+            <li><g:link controller="home" action="partners">Partners</g:link></li>
+            <li><g:link controller="post" action="list">Blog</g:link></li>
+            <!-- <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li> -->
           </ul>
         </div>
         <!--/.nav-collapse --> 
