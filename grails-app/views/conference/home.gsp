@@ -28,31 +28,28 @@
     <div class="span2 hidden-phone hidden-tablet">
     <h3>${conference?.city} Links</h3>
       <ul class="nav nav-list">
-        <li class="about active"><g:link controller="conference" action="home" params='["tinyName": "${conference.tinyName}"]'>About</g:link></li>
+        <li class="about active"><g:link controller="conference" action="home" params='["tinyName": "${conference.tinyName}"]'>Home</g:link></li>
         <li class="speakers"><g:link controller="conference" action="speakers" params='["tinyName": "${conference.tinyName}"]'>Speakers</g:link></li>
         <li class="sessions"><g:link controller="conference" action="sessions" params='["tinyName": "${conference?.tinyName}"]'>Sessions</g:link></li>
-        <li class="schedule"><a href="#">Schedule</a></li>
+        <li class="schedule"><g:link controller="conference" action="schedule" params="${[tinyName: conference?.tinyName]}">Schedule</g:link></li>
         <li class="venue"><g:link controller="conference" action="venue" params='["tinyName": "${conference?.tinyName}"]'>Venue</g:link></li>
-        <li class="partners"><a href="#">Partners</a></li>
-        <li class="register"><a href="#">Register</a></li>
+        <li class="partners"><g:link controller="conference" action="partners" params="${[tinyName: conference?.tinyName]}">Partners</g:link></li>
+        <li class="register"><g:link controller="conference" action="register" params="${[tinyName: conference?.tinyName]}">Register</g:link></li>
       </ul>
     </div>
     <div class="span6">
   <p><cc:conferenceImage id="${conference.id}" /></p>
-      <p class="lead">CocoaConf Austin kicks off April 4 and 5, preceded by three optional all-day workshops on the 6th. Exclusive highlights include our one-of-a-kind “We Made An App For That” panel and the CocoaConf Game Show.</p>
-      <p>We’ll be bringing back some of the familiar faces you’ve come to know — Daniel Steinberg, Chris Adamson, Jonathan Penn, Josh Smith — and others whose work you well may recognize, including Justin Williams of Second Gear and Danny Greg from Github. </p>
-      <p>As we did last time, we’ll be offering some full-day, pre-conference workshops, taught by masters in the industry. For those new to iOS (or to software development in general), Apple veteran James Dempsey will be heading up an all-day iOS tutorial. For the more seasoned developer, we’ll be having a 2D Game Development workshop taught by Josh Smith and Jonathan Penn, and another on AV Foundation taught by Chris Adamson. </p>
-      <p>As always, attendance at CocoaConf is capped to ensure a focused and intense learning experience, and to maximize your opportunities to of meet awesome new people and hang out with the speakers. So don’t sit on the fence — register for CocoaConf Chicago today!</p>
-      <p><a class="btn btn-flat btn-large" href="http://www.gurrydesign.com">Register Today <i class="ion-ios7-arrow-forward"></i></a></p>
+      <p class="lead">${conference?.blurb}</p>
+      <p><g:link controller="conference" action="register" params="${[tinyName: conference?.tinyName]}" class="btn btn-flat btn-large">Register Today <i class="ion-ios7-arrow-forward"></i></g:link></p>
     </div>
     <div class="span2">
       <h4>${conference.city} Sponsors<br>
         &nbsp;</h4>
-      <p><a href="#"><img src="${resource(dir: 'images', file: 'logo_wiley.jpg')}" alt="Wiley logo"></a></p>
-      <hr>
-      <a href="#"><img src="${resource(dir: 'images', file: 'logo_windows.jpg')}" alt="Windows Azure logo"></a>
-      <hr>
-      <p><a class="btn btn-flat-gray" href="#">Sponsor Opportunities</a></p>
+      <g:each in="${conference?.getSponsorPartners()}" var="partner">
+        <p><a href="${partner?.url}"><img width="200" src="${resource(dir: 'images', file: partner?.logoFile)}" alt="${partner?.name} logo"></a></p>
+        <hr>
+      </g:each>
+      <p><g:link controller="home" action="prospectus" class="btn btn-flat-gray"><i class="ion-document-text"></i>&nbsp; Sponsor Opportunities</g:link></p>
     </div>
   </div>
   <div class="navbar navbar-inverse">
