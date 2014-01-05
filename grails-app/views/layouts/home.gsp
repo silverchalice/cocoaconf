@@ -58,7 +58,7 @@ _gaq.push(['_trackPageview']);
 </script>
 </head>
 
-<body class="${conference?.city?.toLowerCase()?.replaceAll("\\s", "")} secondary">
+<body class="${conference?.city?.toLowerCase()?.replaceAll("\\s", "")} secondary ${pageProperty(name: 'meta.division')}">
 <a name="top"></a>
 <div class="navbar navbar-inverse navbar-static-top">
   <div class="navbar-inner">
