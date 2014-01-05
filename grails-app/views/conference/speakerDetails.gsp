@@ -7,7 +7,7 @@
 </head>
 <body class="individual-speaker">
 <div class="container main-text">
-  <h1><span>${conference.description} / Speakers / </span> ${speaker}</h1>
+  <h1><span>${conference?.city} / Speakers / </span> ${speaker}</h1>
 </div>
 <div class="content container">
   <div class="gradient"></div>
