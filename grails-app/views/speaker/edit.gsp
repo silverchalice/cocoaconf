@@ -48,6 +48,15 @@
                                     <g:textField name="lastName" value="${speakerInstance?.lastName}" />
                                 </td>
                             </tr>
+
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="title"><g:message code="speaker.title.label" default="Title" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: speakerInstance, field: 'title', 'errors')}">
+                                    <g:textField name="title" value="${speakerInstance?.title}" />
+                                </td>
+                            </tr>
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
