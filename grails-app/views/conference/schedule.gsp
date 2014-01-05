@@ -1,248 +1,129 @@
-<html>
-    <head>
-        <title>CocoaConf | iOS/OS X Developer Conference | ${conference?.description} | ${conference?.dates}</title>
-        <meta name="layout" content="conference"/>
-        <meta name="tab" content="events" />
-        <meta name="nav" content="schedule" />
+<%@ page import="com.cocoaconf.Session" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sessions / ${conference?.city} / CocoaConf 2014: the conference for iPhone, iPad and Mac developers</title>
+<meta name="layout" content="home" />
+<meta name="division" content="schedule" />
+</head>
 
-		<script lib="jquery />
-		
-        <script type="text/javascript">
-            $(document).ready(function() {
-	
-				$('input:checkbox').click(function() {
-					var rowClass = $(this).attr('class');
-				    $('.' + rowClass).filter(':checked').not(this).removeAttr('checked');
-				    $(this).prop("checked", true);
-				});
-				
-            });
-
-        </script>
-
-        <style type="text/css">
-
-        table {
-            border: 0;
-            margin: 0;
-            border-collapse: collapse;
-        }
-
-        tr {
-            margin: 0;
-        }
-
-        td {
-            border: 1px solid #EDECEC;
-            margin: 0;
-            padding: 10px 5px;
-        }
-
-        td.choice span {
-            padding-right: 59px;
-        }
-
-        th {
-            border:1px solid #EDECEC;
-            margin: 0
-        }
-
-        .schedule {
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        .schedule a {
-            text-decoration: none;
-            border-bottom: 1px dotted #35b6ff;
-            font-size: 12px;
-            color: #2AB0E2;
-            font-weight: bold;
-        }
-
-        .schedule a:hover {
-
-            border-bottom: 1px solid #35b6ff
-        }
-
-        tr.session td{
-	
-        }
-
-        tr.general td{
-	
-        }
-
-        tr.break td {
-            background: #fff;
-            border:1px solid #edecec;
-            padding: 4px 0 0 0;
-        }
-
-        tr.break th {
-            background: #fff;
-            border:1px solid #edecec;
-            padding: 4px 0 0 0;
-        }
-
-        tr.choice {
-            color:#ff8c00;
-        }
-
-        td.track2 {
-            background-color: #edecec;
-        }
-
-        td.track3 {
-            background-color: white;
-            border-right: 1px solid #EDECEC;
-        }
-
-        td.time {
-            border:1px solid #edecec;
-            background-color: #edecec;
-        }
-		
-		tr.break td.time {
-            border:1px solid #edecec;
-            background-color: #edecec;
-        }
-
-        .sessionSpeaker {
-            display: block;
-        }
-
-        .sessionTitle {
-            font-size: 13px;
-
-        }
-
-        .sessionTitle a {
-            font-size: 13px;
-            color: black;
-        }
-
-        th.keynote {
-            background: #9adeff;
-            padding: 8px 0 4px 0;
-            color: black;
-
-        }
-
-        .keynote a {
-            color:black;
-        }
-
-
-        </style>
-
-    </head>
-
-    <body>
-	    <sec:ifLoggedIn>
-            <g:set var="ix" value="${1}" />
-            <form id="myForm" name="myForm" action="pickSessions">
-	    </sec:ifLoggedIn>
-        <div id="confSidebar">
-            <g:render template="confNav" model="['conference': conference, 'current': 'schedule']" />
+<body class="secondary ${conference?.city.toLowerCase()} schedule">
+<div class="container main-text">
+  <h1><span>${conference?.city} / </span> Schedule</h1>
+</div>
+<div class="content container">
+  <div class="gradient"></div>
+  
+  <!-- Main hero unit for a primary marketing message or call to action -->
+  <div class="row-fluid">
+    <div class="span1"></div>
+    <div class="span6">
+      <div class="media"> <img src="${resource(dir: 'images', file: 'img_schedule_icon.png')}" alt="A clock icon" class="pull-left media-object">
+        <div class="media-body">
+          <h1>Schedule for <br>
+            ${conference?.description}</h1>
         </div>
-
-        <div class="body">
-            <g:if test="${flash.message}">
-                <div id="flashMessage" style="">
-                    <p>${flash.message}</p>
-                </div>
-            </g:if>
-
-            <h1>${conference?.description}: Schedule</h1>
-            <g:if test="${!schedule}">
-                <p><strong>We are still working on the schedule for this event.</strong> Please check back soon!</p>
-            </g:if>
-
-            <g:each in="${schedule}" var="dayMap">
-                <h3 style="clear:both">${conference.days[dayMap.day -1]}</h3>
-                <table border="1" width="700" class="schedule">
-                <g:each in="${dayMap.slots}" var="slot">
-                    <g:set var="sessions" value="${slot.value}" />
-                    <tr class="${sessions[0]?.type}">
-                    <td align="center" width="75" align="center" class="time">
-	                  ${sessions[0].start}-${sessions[0].end}
-	                </td>
-                    <g:each in="${sessions.sort{it.track}}" var="sess">
-                        <g:if test="${sessions.size() == 1}">
-                            <g:if test="${sess?.type != 'break'}">
-                                <td align="center" colspan="3">
-	                              <g:link controller="conference" 
-	                                      action="sessionDetails" 
-	                                      id="${sess?.presentation?.id}" 
-	                                      params="${[confId:conference?.id]}"> 
-	                                ${sess?.presentation?.title} 
-	                              </g:link>
-	                              <span class="sessionSpeaker">
-		                            <g:link controller="conference" 
-		                                    action="speakerDetails" 
-		                                    id="${sess?.presentation?.speaker?.id}" 
-		                                    params="${[confId:conference?.id]}">
-		                              ${sess?.presentation?.speaker}
-		                            </g:link>
-		                          </span>
-		                        </td>
-                            </g:if>
-                            <g:else>
-                                <td align="center" colspan="3">
-	                              ${sess?.presentation?.title}
-	                            </td>
-                            </g:else>
-                        </g:if>
-                        <g:else>
-                          <td align="center" width="200" class="track${sess?.track}">
-                            <span class="sessionTitle">
-	                          <g:link controller="conference" 
-	                                  action="sessionDetails" 
-	                                  params="${[tinyName:conference?.tinyName, 
-		                                         slug:sess?.presentation?.slug ?: 'null']}">
-		                        ${sess?.presentation?.title}
-		                      </g:link>
-		                    </span>
-		                    <span class="sessionSpeaker">
-			                  <g:link controller="conference" 
-			                          action="speakerDetails" 
-			                          id="${sess?.presentation?.speaker?.id}" 
-			                          params="${[confId:conference?.id]}">
-			                    ${sess?.presentation?.speaker}
-			                  </g:link>
-			                </span>
-			              </td>
-                        </g:else>
-                    </g:each>
-                    </tr>
-                    <sec:ifLoggedIn>
-                      <g:if test="${registered}">
-                          <g:if test="${sessions.size() > 1 && !(sessions[0].presentation?.title?.contains('Tutorial'))}">
-    	                    <tr>
-    		                  <td align="center" width="75" align="center" class="time"></td>
-    		                  <g:each in="${sessions.sort{it.track}}" var="sess">
-    		                    <td align="center" width="200" class="track${sess?.track}">
-    	                          <g:set var="sessionName" value="${'session' + ix++}" />
-    	                          <g:set var="selected" value="${choice?.checkProp(sessionName)}" />
-    	                          <input type="checkbox" class="row${dayMap.day}-${slot.key}" name="${sessionName}" ${selected ? "checked='checked'" : ''} />
-    	                        </td>
-    	                      </g:each>
-    	                    </tr>
-    	                  </g:if>
-                        </g:if>
-	                </sec:ifLoggedIn>
+      </div>
+    </div>
+    <div class="span3">
+    <h2><small>Early Bird Discounts Available!</small></h2>
+      <button class="btn btn-block btn-large btn-flat">Register for ${conference?.city} <i class="ion-ios7-arrow-forward"></i></button>
+    </div>
+  </div>
+  <hr>
+  <!--<img class="photostrip hidden-phone" src="img/img_photostrip_chicago_speaker.jpg" alt="Speakers at last year's CocoaConf">--> 
+  <!-- Example row of columns -->
+  <div class="row-fluid">
+    <div class="span2">
+      <h3>${conference?.city} Links</h3>
+      <ul class="nav nav-list">
+        <li class="about"><a href="chicago.html">About</a></li>
+        <li class="speakers"><a href="chicago_speakers.html">Speakers</a></li>
+        <li class="sessions"><a href="chicago_sessions.html">Sessions</a></li>
+        <li class="schedule active"><a href="chicago_schedule.html">Schedule</a></li>
+        <li class="venue"><a href="#">Venue</a></li>
+        <li class="partners"><a href="#">Partners</a></li>
+        <li class="register"><a href="#">Register</a></li>
+      </ul>
+    </div>
+    <div class="span8">
+      <!-- <button class="btn-flat-gray btn-large pull-right"><i class="ion-ios7-calendar-outline"></i>&nbsp;&nbsp;Save to iCal</button> -->
+      <g:each in="${schedule}" var="dayMap">
+          <h3>${conference.days[dayMap.day - 1]}</h3>
+          <table width="100%" border="1" cellspacing="0" cellpadding="0" summary="This table summarizes the sessions and events at ${conference?.description}" class="table table-hover table-striped">
+            <th scope="row">Time</th>
+            <th scope="row" colspan="3">Event / Sessions</th>
+            <tr>
+            </tr>
+            <g:each in="${dayMap.slots}" var="slot">
+              <g:set var="sessions" value="${slot.value}" />
+              <tr>
+                <th scope="row">${sessions[0]?.start}-${sessions[0]?.end}</th>
+                <g:each in="${sessions.sort{it.track}}" var="sess">
+                  <g:if test="${sessions.size() == 1}">
+                    <g:if test="${sess?.type != 'break'}">
+                      <td colspan="3">
+                        <g:link controller="conference" action="sessionDetails" id="${sess?.presentation?.id}" params="${[confId: conference?.id]}">
+                          ${sess?.presentation?.title}
+                        </g:link><br>
+                        <g:link controller="conference" action="speakerDetails" id="${sess?.presentation?.speaker?.id}" params="${[confId: conference?.id]}">
+                          ${sess?.presentation?.speaker} 
+                        </g:link>
+                      </td>
+                    </g:if>
+                    <g:else>
+                      <td colspan="3">
+                        ${sess?.presentation?.title}
+                      </td>
+                    </g:else>
+                  </g:if>
+                  <g:else>
+                    <td><g:link controller="conference" action="sessionDetails" params="${[tinyName: conference?.tinyName, slug: sess?.presentation?.slug ?: 'null']}">
+                      ${sess?.presentation?.title}
+                      </g:link><br>
+                      <g:link controller="conference" action="speakerDetails" id="${sess?.presentation?.speaker?.id}" params="${[confId: conference?.id]}">${sess?.presentation?.speaker}</g:link></td>
+                    </td>
+                  </g:else>
                 </g:each>
-                </table>
+              </tr>
             </g:each>
-            <sec:ifLoggedIn>
-                <input type="hidden" name="tinyName" value="${tinyName}" />
-				<br/>
-                <input type="submit" value="Save Session Selections" style="float:right;" />
-                </form>
-            </sec:ifLoggedIn>
+          </table>
+      </g:each>
+    </div>
+  </div>
+  <div class="navbar navbar-inverse">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" href="#top"><i class="ion-ios7-arrow-thin-up"></i>&nbsp;Top </a>
+        <!--<a class="brand" href="#"><img src="${resource(dir: 'images', file: 'img_cocoaconf_logo.png')}" height="40" width="40" alt="CocoaConf logo"> CocoaConf</a>-->
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li class="dropup"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><cc:cityName id="${conference?.id}" /> &nbsp; <i class="ion-ios7-arrow-up"></i></a>
+              <ul class="dropdown-menu">
+                <!--<li class="nav-header">Choose a City</li>
+              <li class="divider"></li>-->
+              <li class="${conference?.id == 17 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'chicago-2014']">Chicago, IL</g:link></li>
+              <li class="${conference?.id == 18 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'dc-2014']">Washington D.C.</g:link></li>
+              <li class="${conference?.id == 20 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'austin-2014']">Austin, TX</g:link></li>
+              <li class="${conference?.id == 19 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'sanjose-2014']">San Jose, CA</g:link></li>
+              <li class="${conference?.id == 21 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'raleigh-2014']">Raleigh, NC</g:link></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav pull-right">
+            <li><a href="#">Speakers</a></li>
+            <!-- <li class="active"><a href="#sessions">Sessions</a></li> -->
+            <!-- <li><a href="#contact">Venues</a></li> -->
+            <li><a href="#contact">Partners</a></li>
+            <li><a href="#contact">Blog</a></li>
+            <!-- <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li> -->
+          </ul>
         </div>
-        <div style="clear: both"></div>
+        <!--/.nav-collapse --> 
+      </div>
+    </div>
+  </div>
+  <div class="gradient"></div>
+</div>
     </body>
 </html>
-		
