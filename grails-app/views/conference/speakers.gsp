@@ -30,7 +30,7 @@
     <div class="span2 hidden-phone hidden-tablet">
       <h3>${conference?.city} Links</h3>
       <ul class="nav nav-list">
-        <li class="about"><g:link controller="conference" action="home" params='["tinyName": "${conference.tinyName}"]'>About</g:link></li>
+        <li class="about"><g:link controller="conference" action="home" params='["tinyName": "${conference.tinyName}"]'>Home</g:link></li>
         <li class="speakers active"><g:link controller="conference" action="speakers" params='["tinyName": "${conference.tinyName}"]'>Speakers</g:link></li>
         <li class="sessions"><g:link controller="conference" action="sessions" params='["tinyName": "${conference?.tinyName}"]'>Sessions</g:link></li>
         <li class="schedule"><a href="#">Schedule</a></li>
@@ -41,18 +41,23 @@
     </div>
     <div class="span6">
       <ul class="media-list">
-        <g:each in="${speakerInstanceList}" var="speaker" index="i">
-        <li class="media"> <a class="pull-left" href="#"> <img class="media-object img-circle" src="${request.contextPath}/${speaker?.imagePath}" alt="Speaker photo"> </a>
-          <div class="media-body">
-            <h3 class="media-heading">${speaker} <!-- <span>/ Author</span>--></h3>
-            <p>${speaker?.bio} <a href="adamson_chris.html">Read more&nbsp;<i class="ion-ios7-arrow-forward"></i></a></p>
-            <p class="author-links"><g:if test="${speaker?.twitter}"><span class="twitter"><a href="https://twitter.com/${speaker?.twitter}" title="Visit ${speaker?.firstName} on Twitter" target="_blank"><i class="ion-social-twitter-outline"></i>&nbsp;@${speaker?.twitter}</a></span></g:if> <g:if test="${speaker?.blog}"><span class="website"><a href="${speaker?.blog}" title="Visit ${speaker?.firstName}'s website" target="_blank"><i class="ion-social-rss"></i>&nbsp;${speaker?.blog?.startsWith('http://') ? speaker?.blog.minus('http://') : speaker?.blog}</a></span></g:if><g:if test="${speaker?.appnet}"><span class="appnet"><i class="ion-ios7-arrow-up"></i>&nbsp;<a href="http://http://app.net/">${speaker?.appnet}</a></span></g:if> </p>
-          </div>
-        </li>
-        <g:if test="{i != speakerInstanceList.size() - 1}">
-          <hr>
+        <g:if test="${speakerInstanceList?.size() > 0}">
+          <g:each in="${speakerInstanceList}" var="speaker" index="i">
+          <li class="media"> <a class="pull-left" href="#"> <img class="media-object img-circle" width="170" src="${request.contextPath}/${speaker?.imagePath}" alt="Speaker photo"> </a>
+            <div class="media-body">
+              <h3 class="media-heading">${speaker} <!-- <span>/ Author</span>--></h3>
+              <p>${speaker?.bio} <br /><g:link controller="conference" action="speakerDetails" id="${speaker?.id}" params="${[tinyName: conference?.tinyName]}">Read more&nbsp;<i class="ion-ios7-arrow-forward"></i></g:link></p>
+              <p class="author-links"><g:if test="${speaker?.twitter}"><span class="twitter"><a href="https://twitter.com/${speaker?.twitter}" title="Visit ${speaker?.firstName} on Twitter" target="_blank"><i class="ion-social-twitter-outline"></i>&nbsp;@${speaker?.twitter}</a></span></g:if> <g:if test="${speaker?.blog}"><span class="website"><a href="${speaker?.blog}" title="Visit ${speaker?.firstName}'s website" target="_blank"><i class="ion-social-rss"></i>&nbsp;${speaker?.blog?.startsWith('http://') ? speaker?.blog.minus('http://') : speaker?.blog}</a></span></g:if><g:if test="${speaker?.appnet}"><span class="appnet"><i class="ion-ios7-arrow-up"></i>&nbsp;<a href="http://http://app.net/">${speaker?.appnet}</a></span></g:if> </p>
+            </div>
+          </li>
+          <g:if test="{i != speakerInstanceList.size() - 1}">
+            <hr>
+          </g:if>
+          </g:each>
         </g:if>
-        </g:each>
+        <g:else>
+          <p class="lead">We are still confirming speakers for this event. Please check back soon!</p>
+        </g:else>
       </ul>
     </div>
     <div class="span2">
@@ -86,15 +91,15 @@
         <!--<a class="brand" href="#"><img src="${resource(dir: 'images', file: 'img_cocoaconf_logo.png')}" height="40" width="40" alt="CocoaConf logo"> CocoaConf</a>-->
         <div class="nav-collapse collapse">
           <ul class="nav">
-            <li class="dropup"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chicago, IL &nbsp; <i class="ion-ios7-arrow-up"></i></a>
+            <li class="dropup"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><cc:cityName id="${conference?.id}" /> &nbsp; <i class="ion-ios7-arrow-up"></i></a>
               <ul class="dropdown-menu">
                 <!--<li class="nav-header">Choose a City</li>
-              <li class="divider"></li>-->
-                <li class="disabled"><a href="chicago.html">Chicago, IL</a></li>
-                <li><a href="#">Washington D.C.</a></li>
-                <li><a href="#">Austin, TX</a></li>
-                <li><a href="#">San Jose, CA</a></li>
-                <li><a href="#">Raleigh, NC</a></li>
+                <li class="divider"></li>-->
+                <li class="${conference?.id == 17 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'chicago-2014']">Chicago, IL</g:link></li>
+                <li class="${conference?.id == 18 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'dc-2014']">Washington D.C.</g:link></li>
+                <li class="${conference?.id == 20 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'austin-2014']">Austin, TX</g:link></li>
+                <li class="${conference?.id == 19 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'sanjose-2014']">San Jose, CA</g:link></li>
+                <li class="${conference?.id == 21 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'raleigh-2014']">Raleigh, NC</g:link></li>
               </ul>
             </li>
           </ul>
