@@ -41,29 +41,18 @@
     </div>
     <div class="span6">
       <ul class="media-list">
-        <li class="media"> <a class="pull-left" href="#"> <img class="media-object img-circle" src="${resource(dir: 'images', file: 'photo_adamson_chris.jpg')}" alt="Speaker photo"> </a>
+        <g:each in="${speakerInstanceList}" var="speaker" index="i">
+        <li class="media"> <a class="pull-left" href="#"> <img class="media-object img-circle" src="${request.contextPath}/${speaker?.imagePath}" alt="Speaker photo"> </a>
           <div class="media-body">
-            <h3 class="media-heading">Chris Adamson <span>/ Author</span></h3>
-            <p>Chris Adamson is an independent writer, editor, and developer, living in Grand Rapids, Michigan. Along with developing numerous App Store apps for clients, he is the co-author of iPhone SDK Development... <a href="adamson_chris.html">Read more&nbsp;<i class="ion-ios7-arrow-forward"></i></a></p>
-            <p class="author-links"><span class="twitter"><a href="https://twitter.com/invalidname" title="Visit Chris on Twitter" target="_blank"><i class="ion-social-twitter-outline"></i>&nbsp;@invalidname</a></span> <span class="website"><a href="subfurther.com/blog" title="Visit Chris's website" target="_blank"><i class="ion-social-rss"></i>&nbsp;subfurther.com/blog</a></span><span class="appnet"><i class="ion-ios7-arrow-up"></i>&nbsp;<a href="#">App.Net username</a></span> </p>
+            <h3 class="media-heading">${speaker} <!-- <span>/ Author</span>--></h3>
+            <p>${speaker?.bio} <a href="adamson_chris.html">Read more&nbsp;<i class="ion-ios7-arrow-forward"></i></a></p>
+            <p class="author-links"><g:if test="${speaker?.twitter}"><span class="twitter"><a href="https://twitter.com/${speaker?.twitter}" title="Visit ${speaker?.firstName} on Twitter" target="_blank"><i class="ion-social-twitter-outline"></i>&nbsp;@${speaker?.twitter}</a></span></g:if> <g:if test="${speaker?.blog}"><span class="website"><a href="${speaker?.blog}" title="Visit ${speaker?.firstName}'s website" target="_blank"><i class="ion-social-rss"></i>&nbsp;${speaker?.blog?.startsWith('http://') ? speaker?.blog.minus('http://') : speaker?.blog}</a></span></g:if><g:if test="${speaker?.appnet}"><span class="appnet"><i class="ion-ios7-arrow-up"></i>&nbsp;<a href="http://http://app.net/">${speaker?.appnet}</a></span></g:if> </p>
           </div>
         </li>
-        <hr>
-        <li class="media"> <a class="pull-left" href="#"> <img class="media-object img-circle" src="${resource(dir: 'images', file: 'photo_williams_justin.jpg')}" alt="Speaker photo"> </a>
-          <div class="media-body">
-            <h3 class="media-heading">Justin Williams <span>/ Chief at Second Gear</span></h3>
-            <p>the crew chief of Second Gear, the creator of such fine Mac and iOS applications as Elements and Committed. I am a graduate of Purdue University with a degree in Computer and Information Technology. I am currently living in Denver... <a href="#">Read more <i class="ion-ios7-arrow-forward"></i></a></p>
-            <p class="author-links"><span class="twitter"><a href="https://twitter.com/#" title="Visit this speaker on Twitter" target="_blank"><i class="ion-social-twitter-outline"></i>&nbsp;@twitter</a></span> <span class="website"><a href="#" title="Visit speaker's website" target="_blank"><i class="ion-social-rss"></i>&nbsp;www.website.com</a></span><span class="appnet"><i class="ion-ios7-arrow-up"></i>&nbsp;<a href="#">App.Net username</a></span></p>
-          </div>
-        </li>
-        <hr>
-        <li class="media"> <a class="pull-left" href="#"> <img class="media-object img-circle" src="${resource(dir: 'images', file: 'photo_speaker.jpg')}" alt="Speaker photo"> </a>
-          <div class="media-body">
-            <h3 class="media-heading">Speaker Name <span>/ Speaker Title</span></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae aliquam risus. Sed cursus feugiat sapien, ut dignissim magna fermentum vitae. Nunc nisi purus, euismod eget quam eu, ultricies tempor quam. Nullam accumsan tellus et... <a href="#">Read more <i class="ion-ios7-arrow-forward"></i></a></p>
-            <p class="author-links"><span class="twitter"><a href="https://twitter.com/#" title="Visit this speaker on Twitter" target="_blank"><i class="ion-social-twitter-outline"></i>&nbsp;@twitter</a></span> <span class="website"><a href="#" title="Visit speaker's website" target="_blank"><i class="ion-social-rss"></i>&nbsp;www.speakersblog.com</a></span><span class="appnet"><i class="ion-ios7-arrow-up"></i>&nbsp;<a href="#">App.Net username</a></span></p>
-          </div>
-        </li>
+        <g:if test="{i != speakerInstanceList.size() - 1}">
+          <hr>
+        </g:if>
+        </g:each>
       </ul>
     </div>
     <div class="span2">
