@@ -30,14 +30,14 @@
   <!-- Example row of columns -->
   <div class="row-fluid">
     <div class="span2">
-      <h3>Chicago</h3>
+      <h3>${conference?.city} Links</h3>
       <ul class="nav nav-list">
-        <li class="about"><g:link controller="conference" action="home" params='["tinyName": "${conference.tinyName}"]'>About</g:link></li>
+        <li class="about"><g:link controller="conference" action="home" params='["tinyName": "${conference.tinyName}"]'>Home</g:link></li>
         <li class="speakers"><g:link controller="conference" action="speakers" params='["tinyName": "${conference.tinyName}"]'>Speakers</g:link></li>
         <li class="sessions"><g:link controller="conference" action="sessions" params='["tinyName": "${conference?.tinyName}"]'>Sessions</g:link></li>
-        <li class="schedule"><a href="#">Schedule</a></li>
+        <li class="schedule"><g:link controller="conference" action="schedule" params="${[tinyName: conference?.tinyName]}">Schedule</g:link></li>
         <li class="venue"><g:link controller="conference" action="venue" params='["tinyName": "${conference?.tinyName}"]'>Venue</g:link></li>
-        <li class="partners"><a href="#">Partners</a></li>
+        <li class="partners"><g:link controller="conference" action="partners" params="${[tinyName: conference?.tinyName]}">Partners</g:link></li>
         <li class="register active"><g:link controller="conference" action="register" params='["tinyName": "${conference?.tinyName}"]'>Register</g:link></li>
       </ul>
     </div>
@@ -83,12 +83,12 @@
             </li>
           </ul>
           <ul class="nav pull-right">
-            <li><a href="#">Speakers</a></li>
+            <li><g:link controller="speaker" action="speakers">Speakers</g:link></li>
             <!-- <li class="active"><a href="#sessions">Sessions</a></li> -->
             <!-- <li><a href="#contact">Venues</a></li> -->
-            <li><a href="#contact">Partners</a></li>
-            <li><a href="#contact">Blog</a></li>
-            <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li>
+            <li><g:link controller="home" action="partners">Partners</g:link></li>
+            <li><g:link controller="post" action="list">Blog</g:link></li>
+            <!-- <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li> -->
           </ul>
         </div>
         <!--/.nav-collapse --> 
