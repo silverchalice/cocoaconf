@@ -35,9 +35,6 @@
     </div>
     <div class="span8">
       <ul class="media-list">
-        <g:if test="${conference?.venue}">
-            <li class="media"> <a class="pull-left" href="${conference?.venue?.website}"> <img class="media-object img-circle" width="340" src="${conference?.venue?.imagePath?.startsWith('/') ? conference?.venue?.imagePath : '/' + conference?.venue?.imagePath}" alt="Venue photo"> </a>
-        </g:if>
           <div class="media-body">
             <h2 class="media-heading">${conference?.venue ?: "Coming Soon"}</h2>
             
