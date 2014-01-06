@@ -65,23 +65,23 @@
     <div class="row-fluid">
       <div class="span2"> <g:link controller="speaker" action="viewDetails" id="123" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'who.png')}" alt="Speaker image"></g:link>
         <h3 class="text-center">Casey Liss</h3>
-        <!-- <h4 class="text-center"><span>Co-host, Accidental Tech Podcast</span></h4> -->
+        <h4 class="text-center"><span>Accidental Tech Podcaster</span></h4>
       </div>
       <div class="span2"> <g:link controller="speaker" action="viewDetails" id="124" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'wiskus.png')}" alt="Speaker image"></g:link>
         <h3 class="text-center">Dave Wiskus</h3>
-        <!-- <h4 class="text-center"><span>Designer, Vesper</span></h4> -->
+        <h4 class="text-center"><span>Interaction Designer</span></h4>
       </div>
       <div class="span2"> <g:link controller="speaker" action="viewDetails" id="52" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'jaimee.jpg')}" alt="Speaker image"></g:link>
         <h3 class="text-center">Jaimee Newberry</h3>
-        <!-- <h4 class="text-center"><span> UX Design & Strategy Consultant</span></h4> -->
+        <h4 class="text-center"><span> UX / UI Expert</span></h4>
       </div>
       <div class="span2"> <g:link controller="speaker" action="viewDetails" id="1" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'photo_steinberg_daniel.jpg')}" alt="Speaker image"></g:link>
         <h3 class="text-center">Daniel Steinberg</h3>
-        <!-- <h4 class="text-center"><span></span></h4> -->
+        <h4 class="text-center"><span> Author & Trainer</span></h4>
       </div>
       <div class="span2"> <g:link controller="speaker" action="viewDetails" id="3" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'photo_adamson_chris.jpg')}" alt="Speaker image"></g:link>
         <h3 class="text-center">Chris Adamson</h3>
-        <!-- <h4 class="text-center"><span>Author, Learning Core Audio</span></h4> -->
+        <h4 class="text-center"><span>Author, A/V Master</span></h4>
       </div>
     </div>
   </div>
