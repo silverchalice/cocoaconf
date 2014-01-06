@@ -4,6 +4,7 @@
 <head>
 <title>CocoaConf 2014: The conference for iPhone, iPad and Mac developers</title>
 <meta name="layout" content="partners" />
+<meta name="domain" content="speaker" />
 <meta name="division" content="chicago" />
 <g:set var="presentations" value="${speaker.presentations.findAll{it.current == true}.sort{it.id}}" />
 </head>
