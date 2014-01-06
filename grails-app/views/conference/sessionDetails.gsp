@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CocoaConf 2014: The developer conference for those who think different.</title>
+<title>CocoaConf: The developer conference for those who think different.</title>
 <meta name="layout" content="home" />
 <g:set var="speaker" value="${presentation?.speaker}" />
 </head>
