@@ -140,9 +140,9 @@
   <div class="container">
     <h2 class="text-center">Sponsors</h2>
     <div class="row-fluid">
-      <div class="span3"><a href="#"><img class="center" src="${resource(dir: 'images', file: 'github.png')}" alt="GitHub logo"></a></div>
-      <div class="span4"><a href="#"><img class="center" src="${resource(dir: 'images', file: 'reveal-logo.png')}" alt="Reveal logo"></a></div>
-      <!-- <div class="span3"><a href="#"><img class="center" src="${resource(dir: 'images', file: 'logo_wiley_white.png')}" alt="Wiley logo"></a></div> -->
+      <div class="span3"><a href="https://github.com"><img class="center" width="200" src="${resource(dir: 'images', file: 'github-white.png')}" alt="GitHub logo"></a></div>
+      <div class="span3"><a href="http://www.macminicolo.net"><img class="center" style="margin-left: 140px; margin-right: 50px;" width="200" src="${resource(dir: 'images', file: 'mac_mini_colo.png')}" alt="Wiley logo"></a></div>
+      <div class="span4"><a href="http://revealapp.com"><img class="center" width="200" src="${resource(dir: 'images', file: 'reveal-logo-white.png')}" alt="Reveal logo"></a></div>
     </div>
   </div>
 </div>
