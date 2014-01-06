@@ -46,7 +46,7 @@
           <li class="media"> <a class="pull-left" href="#"> <img class="media-object img-circle" width="170" src="${request.contextPath}/${speaker?.imagePath}" alt="Speaker photo"> </a>
             <div class="media-body">
               <h3 class="media-heading">${speaker} <!-- <span>/ Author</span>--></h3>
-              <p><cc:truncate value="${speaker?.bio}" size="100" /> <br /><g:link controller="conference" action="speakerDetails" id="${speaker?.id}" params="${[tinyName: conference?.tinyName]}">Read more&nbsp;<i class="ion-ios7-arrow-forward"></i></g:link></p>
+              <p><cc:truncate value="${speaker?.bio}" size="200" /> <br /><g:link controller="conference" action="speakerDetails" id="${speaker?.id}" params="${[tinyName: conference?.tinyName]}">Read more&nbsp;<i class="ion-ios7-arrow-forward"></i></g:link></p>
               <p class="author-links"><g:if test="${speaker?.twitter}"><span class="twitter"><a href="https://twitter.com/${speaker?.twitter}" title="Visit ${speaker?.firstName} on Twitter" target="_blank"><i class="ion-social-twitter-outline"></i>&nbsp;@${speaker?.twitter}</a></span></g:if> <g:if test="${speaker?.blog}"><span class="website"><a href="${speaker?.blog}" title="Visit ${speaker?.firstName}'s website" target="_blank"><i class="ion-social-rss"></i>&nbsp;${speaker?.blog?.startsWith('http://') ? speaker?.blog.minus('http://') : speaker?.blog}</a></span></g:if><g:if test="${speaker?.appnet}"><span class="appnet"><i class="ion-ios7-arrow-up"></i>&nbsp;<a href="http://http://app.net/">${speaker?.appnet}</a></span></g:if> </p>
             </div>
           </li>
