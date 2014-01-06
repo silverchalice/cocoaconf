@@ -63,25 +63,27 @@
     <div class="span2">
       <h4>${conference?.dates}</h4>
       <g:link controller="conference" action="register" params='["tinyName": "${conference?.tinyName}"]' class="button"><button class="btn btn-block btn-large btn-flat">Register for ${conference?.city} <i class="ion-ios7-arrow-forward"></i></button></g:link>
-      <hr>
-      <h4>${conference?.city} Venue</h4>
-      <img src="${resource(dir: 'images', file: 'img_chicago_venue.jpg')}" alt="Image of the Holiday Inn" class="img-rounded">
-      <h5>Holiday Inn Chicago-Elk Grove</h5>
-      <ul>
-        <li>1000 Busse Road<br>
-          Elk Grove Village, IL<br>
-          60007</li>
-        <li>Phone: 0871-942-9139</li>
-        <li>Website: <a href="www.ihg.com/holidayinn" title="Visit their website">www.ihg.com/holidayinn</a></li>
-      </ul>
+      <g:if test="${conference?.venue}">
+        <hr>
+        <h4>${conference?.city} Venue</h4>
+        <img src="${conference?.venue?.imagePath?.startsWith('/') ? conference?.venue?.imagePath : '/' + conference?.venue?.imagePath}" alt="Venue photo" class="img-rounded">
+        <h5>${conference?.venue}</h5>
+        <ul>
+          <li>${conference?.venue?.address}<br>
+            ${conference?.venue?.city}, ${conference?.venue?.statae}<br>
+            ${conference?.venue?.zip}</li>
+          <li>Phone: ${conference?.venue?.phone}</li>
+          <li>Website: <a href="${conference?.venue?.website?.startsWith('http://') ? conference?.venue?.website : 'http://' + conference?.venue?.website}" title="Visit their website">${conference?.venue?.website?.startsWith('http://') ? conference?.venue?.website?.minus('http://') : conference?.venue?.website}</a></li>
+        </ul>
+      </g:if>
       <hr>
       <h4>${conference?.city} Sponsors<br>
         &nbsp;</h4>
-      <p><a href="#"><img src="${resource(dir: 'images', file: 'logo_wiley.jpg')}" alt="Wiley logo"></a></p>
-      <hr>
-      <a href="#"><img src="${resource(dir: 'images', file: 'logo_windows.jpg')}" alt="Windows Azure logo"></a>
-      <hr>
-      <p><a class="btn btn-flat-gray" href="#">Sponsorship Opportunities</a></p>
+      <g:each in="${conference?.getSponsorPartners()}" var="partner">
+        <p><a href="${partner?.url}"><img width="200" src="${resource(dir: 'images', file: partner?.logoFile)}" alt="${partner?.name} logo"></a></p>
+        <hr>
+      </g:each>
+      <p><g:link controller="home" action="prospectus" class="btn btn-flat-gray"><i class="ion-document-text"></i>&nbsp; Sponsor Opportunities</g:link></p>
     </div>
   </div>
   <div class="navbar navbar-inverse">
