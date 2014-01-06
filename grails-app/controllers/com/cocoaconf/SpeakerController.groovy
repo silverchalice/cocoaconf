@@ -84,7 +84,7 @@ class SpeakerController {
     }
 
     def update = {
-        def speakerInstance = Speaker.get(params.id)
+        def speakerInstance = Speaker.get(params.id.toLong())
         if (speakerInstance) {
             if (params.version) {
                 def version = params.version.toLong()
