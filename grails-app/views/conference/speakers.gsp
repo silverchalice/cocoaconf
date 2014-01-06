@@ -33,10 +33,10 @@
         <li class="about"><g:link controller="conference" action="home" params='["tinyName": "${conference.tinyName}"]'>Home</g:link></li>
         <li class="speakers active"><g:link controller="conference" action="speakers" params='["tinyName": "${conference.tinyName}"]'>Speakers</g:link></li>
         <li class="sessions"><g:link controller="conference" action="sessions" params='["tinyName": "${conference?.tinyName}"]'>Sessions</g:link></li>
-        <li class="schedule"><a href="#">Schedule</a></li>
+        <li class="schedule"><g:link controller="conference" action="schedule" params="${[tinyName: conference?.tinyName]}">Schedule</g:link></li>
         <li class="venue"><g:link controller="conference" action="venue" params='["tinyName": "${conference?.tinyName}"]'>Venue</g:link></li>
-        <li class="partners"><a href="#">Partners</a></li>
-        <li class="register"><a href="#">Register</a></li>
+        <li class="partners"><g:link controller="conference" action="partners" params="${[tinyName: conference?.tinyName]}">Partners</g:link></li>
+        <li class="register"><g:link controller="conference" action="register" params="${[tinyName: conference?.tinyName"]}">Register</g:link></li>
       </ul>
     </div>
     <div class="span6">
