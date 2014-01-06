@@ -73,7 +73,7 @@
             ${conference?.venue?.city}, ${conference?.venue?.state}<br>
             ${conference?.venue?.zip}</li>
           <li>Phone: ${conference?.venue?.phone}</li>
-          <li>Website: <a href="${conference?.venue?.website?.startsWith('http://') ? conference?.venue?.website : 'http://' + conference?.venue?.website}" title="Visit their website"><<cc:truncate value="${conference?.venue?.website?.startsWith('http://') ? conference?.venue?.website?.minus('http://') : conference?.venue?.website}" size="20" /></a></li>
+          <li>Website: <a href="${conference?.venue?.website?.startsWith('http://') ? conference?.venue?.website : 'http://' + conference?.venue?.website}" title="Visit their website"><cc:truncate value="${conference?.venue?.website?.startsWith('http://') ? conference?.venue?.website?.minus('http://') : conference?.venue?.website}" size="20" /></a></li>
         </ul>
       </g:if>
       <hr>
