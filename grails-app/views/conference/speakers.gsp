@@ -43,7 +43,7 @@
       <ul class="media-list">
         <g:if test="${speakerInstanceList?.size() > 0}">
           <g:each in="${speakerInstanceList}" var="speaker" index="i">
-          <li class="media"> <g:link controller="conference" action="speakerDetails" class="pull-left"> <img class="media-object img-circle" width="170" src="${request.contextPath}/${speaker?.imagePath}" alt="Speaker photo"> </g:link>
+          <li class="media"> <g:link controller="conference" action="speakerDetails" id="${speaker?.id}" params="${[tinyName: conference?.tinyName]}" class="pull-left"> <img class="media-object img-circle" width="170" src="${request.contextPath}/${speaker?.imagePath}" alt="Speaker photo"> </g:link>
             <div class="media-body">
               <h3 class="media-heading">${speaker} <!-- <span>/ Author</span>--></h3>
               <p><cc:truncate value="${speaker?.bio}" size="250" /> <br /><g:link controller="conference" action="speakerDetails" id="${speaker?.id}" params="${[tinyName: conference?.tinyName]}">Read more&nbsp;<i class="ion-ios7-arrow-forward"></i></g:link></p>
