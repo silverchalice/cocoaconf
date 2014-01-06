@@ -41,10 +41,11 @@ class HomeController {
 
     def events = {
 
-        [
+        //[
             activeConferenceList : Conference.findAllByStatus(Conference.ACTIVE, [sort: 'startDate']),
             pendingConferenceList : Conference.findAllByStatus(Conference.PENDING, [sort: 'startDate'])
         ]
+        redirect(action: "index)
 
     }
 
