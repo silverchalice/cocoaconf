@@ -54,7 +54,7 @@
             </div>
 
             <div id="logo"><a href="${request.contextPath}/">
-               <img src="${resource(dir:'images',file:'cc-logo.png')}" alt="CocoaConf - the conference for iPhone, iPad and Mac developers" border="0" />
+               <img src="${resource(dir:'images',file:'cc-logo.png')}" alt="CocoaConf - The developer conference for those who think different." border="0" />
                the conference for <span>iPhone</span>, <span>iPad</span> and <span>Mac</span> developers
                 </a>
             </div>

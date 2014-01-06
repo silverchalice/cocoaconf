@@ -133,7 +133,7 @@
         <img src="/images/spinner.gif" alt="Loading...">
     </div>
     <div id="logo"><a href="#">
-        <img src="/images/dc-logo.png" alt="CocoaConf - the conference for iPhone, iPad and Mac developers" border="0">   </a>
+        <img src="/images/dc-logo.png" alt="CocoaConf - The developer conference for those who think different." border="0">   </a>
         <div id="slogan"  style="overflow: scroll; height: 19px; width:960px; margin: 0 auto; overflow-y: hidden" >
             <div>
                 the conference for <span>LG Nexus 4</span>, <span>HTC One</span>, <span>Samsung Galaxy S3 and S4 and Note and Note 2 and Note 8 and Note 10</span>, <span>Sony Xperia Z & Xperia ZL</span>,  <span>Motorola Droid RAZR MAXX HD</span>, <span>Google Nexus 7 and 10</span>, and <span>Toshiba AT300</span> developers

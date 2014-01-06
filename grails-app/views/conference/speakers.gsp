@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Speakers / ${conference?.city} / CocoaConf 2014: the conference for iPhone, iPad and Mac developers</title>
+<title>Speakers / ${conference?.city} / CocoaConf 2014: The developer conference for those who think different.</title>
 <meta name="layout" content="home" />
 </head>
 <body class="secondary ${conference?.city.toLowerCase()} speakers">

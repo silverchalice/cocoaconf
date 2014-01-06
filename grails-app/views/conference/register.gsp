@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Sessions / Chicago / CocoaConf 2014: the conference for iPhone, iPad and Mac developers</title>
+<title>Sessions / Chicago / CocoaConf 2014: The developer conference for those who think different.</title>
 <meta name="layout" content="home" />
 </head>
 

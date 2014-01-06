@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title><g:layoutTitle default="CocoaConf 2014: the conference for iPhone, iPad and Mac developers" /></title>
+    <title><g:layoutTitle default="CocoaConf 2014: The developer conference for those who think different." /></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
