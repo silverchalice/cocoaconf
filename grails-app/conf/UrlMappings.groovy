@@ -159,6 +159,40 @@ class UrlMappings {
             controller = "post"
             action = "feed"
         }
+        "/speaker/create"{
+            controller = "speaker"
+            action = "create"
+        }
+        "/speaker/edit"{
+            controller = "speaker"
+            action = "edit"
+        }
+
+        "/speaker/save"{
+            controller = "speaker"
+            action = "save"
+        }
+
+        "/speaker/update"{
+            controller = "speaker"
+            action = "update"
+        }
+        "/speaker/list"{
+            controller = "speaker"
+            action = "list"
+        }
+        "/speaker/index"{
+            controller = "speaker"
+            action = "index"
+        }
+        "/speaker/delete"{
+            controller = "speaker"
+            action = "delete"
+        }
+        "/speaker/show"{
+            controller = "speaker"
+            action = "show"
+        }
         "/speaker/$id"{
 	        controller = "speaker"
 	        action = "viewDetails"

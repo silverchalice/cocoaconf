@@ -22,9 +22,7 @@
         </div>
       </div>
     </div>
-    <div class="span3">
-    <h2><small>Early Bird Discounts Available!</small></h2>
-    </div>
+
   </div>
   <img class="photostrip hidden-phone" src="${resource(dir: 'images', file: 'img_photostrip_chicago_speaker.jpg')}" alt="Speakers at last year's CocoaConf"> 
   <!-- Example row of columns -->
