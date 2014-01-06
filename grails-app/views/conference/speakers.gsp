@@ -43,7 +43,7 @@
       <ul class="media-list">
         <g:if test="${speakerInstanceList?.size() > 0}">
           <g:each in="${speakerInstanceList}" var="speaker" index="i">
-          <li class="media"> <a class="pull-left" href="#"> <img class="media-object img-circle" width="170" src="${request.contextPath}/${speaker?.imagePath}" alt="Speaker photo"> </a>
+          <li class="media"> <g:link controller="conference" action="speakerDetails" id="${speaker?.id}" params="${[tinyName: conference?.tinyName]}" class="pull-left"> <img class="media-object img-circle" width="170" src="${request.contextPath}/${speaker?.imagePath}" alt="Speaker photo"> </g:link>
             <div class="media-body">
               <h3 class="media-heading">${speaker} <!-- <span>/ Author</span>--></h3>
               <p><cc:truncate value="${speaker?.bio}" size="250" /> <br /><g:link controller="conference" action="speakerDetails" id="${speaker?.id}" params="${[tinyName: conference?.tinyName]}">Read more&nbsp;<i class="ion-ios7-arrow-forward"></i></g:link></p>
@@ -106,11 +106,11 @@
             </li>
           </ul>
           <ul class="nav pull-right">
-            <li class="active"><a href="#">Speakers</a></li>
+            <li class="active"><g:link controller="speaker" action="speakers">Speakers</g:link></li>
             <!-- <li><a href="#sessions">Sessions</a></li> -->
             <!-- <li><a href="#contact">Venues</a></li> -->
-            <li><a href="#contact">Partners</a></li>
-            <li><a href="#contact">Blog</a></li>
+            <li><g:link controller="home" action="partners">Partners</g:link></li>
+            <li><g:link controller="post" action="list">Blog</g:link></li>
             <!-- <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li> -->
           </ul>
         </div>
