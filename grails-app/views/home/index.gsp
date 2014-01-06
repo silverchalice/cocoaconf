@@ -110,7 +110,7 @@
       </div>
     </div>
     <hr>
-    <p class="text-center"><!-- <strong>Other topics:</strong> &nbsp; <a href="#" class="muted">Workflow best practices</a> &nbsp; / &nbsp; <a href="#" class="muted">Marketing your new app</a> &nbsp; / &nbsp; <a href="#" class="muted">Coding within constraints</a> &nbsp; / &nbsp; <a href="#" class="muted">Lorem ipsum dolor amet consularium</a> &nbsp; / &nbsp; --><g:link controller="session" action="sessions" title="View all session topics">View all topics <i class="ion-ios7-arrow-forward"></i></g:link></p>
+    <!-- <p class="text-center"><strong>Other topics:</strong> &nbsp; <a href="#" class="muted">Workflow best practices</a> &nbsp; / &nbsp; <a href="#" class="muted">Marketing your new app</a> &nbsp; / &nbsp; <a href="#" class="muted">Coding within constraints</a> &nbsp; / &nbsp; <a href="#" class="muted">Lorem ipsum dolor amet consularium</a> &nbsp; / &nbsp; <g:link controller="session" action="sessions" title="View all session topics">View all topics <i class="ion-ios7-arrow-forward"></i></g:link></p> -->
   </div>
 </div>
 <div class="comments">
