@@ -94,7 +94,7 @@
         <div class="media"> <g:link controller="conference" action="sessionDetails" params="${[tinyName: 'dc-2014', slug: 'leveling-up']}" title="Learn more" class="pull-left hidden-tablet"><img src="${resource(dir: 'images', file: 'Mark-Dalrymple-bubble.png')}" alt="Speaker image"></g:link>
           <div class="media-body">
             <h3><g:link controller="conference" action="sessionDetails" params="${[tinyName: 'dc-2014', slug: 'leveling-up']}" class="muted">Leveling Up</g:link></h3>
-            <h4><span>by <g:link controller="conference" action="speakerDetails" id="15" params="${[confId: '18']}" title="Learn more about this speaker">Mark Dalrymple</g:link></span></h4>
+            <h4><span>by <g:link controller="conference" action="speakerDetails" id="15" params="${[tinyName: 'dc-2014']}" title="Learn more about this speaker">Mark Dalrymple</g:link></span></h4>
             <p>Want to take your skills to the next level? Ever wanted to find hidden secrets that lurk in the the undocumented underbelly of the Mac or iPhone? Join MarkD for a ride through reverse engineering, disassembly, swizzling, spying, and general mayhem.</p>
           </div>
         </div>
@@ -103,7 +103,7 @@
         <div class="media"> <g:link controller="conference" action="sessionDetails" params="${[tinyName: 'chicago-2014', slug: 'table-views-ios7']}" title="Learn more" class="pull-left hidden-tablet"><img src="${resource(dir: 'images', file: 'James-Dempsey-bubble.png')}" alt="Speaker image"></g:link>
           <div class="media-body">
             <h3><g:link controller="conference" action="sessionDetails" params="${[tinyName: 'chicago-2014', slug: 'table-views-ios7']}" class="muted">Makeover Your Table Views <br />for iOS 7</g:link></h3>
-            <h4><span>by <g:link controller="conference" action="speakerDetails" id="60" params="${[confId: '17']}" title="Learn more about this speaker">James Dempsey</g:link></span></h4>
+            <h4><span>by <g:link controller="conference" action="speakerDetails" id="60" params="${[tinyName: 'chicago-2014']}" title="Learn more about this speaker">James Dempsey</g:link></span></h4>
             <p>Give the table views in your app an iOS 7 makeover by taking advantage of new features and adjusting to subtle changes in appearance and behavior. We'll do a live makeover—add Dynamic Type and dynamic row sizes, modernize the selection appearance, update Storyboard settings and other bits of polish needed to make a table view shine on iOS 7.</p>
           </div>
         </div>
