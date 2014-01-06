@@ -103,6 +103,7 @@
                                 <h3 class="media-heading">${speaker} <!-- <span>/ Author</span>--></h3>
                             </div>
                             <p><cc:truncate value="${speaker.bio}" size="200" /></p>
+                            <p><g:link controller="speaker" action="viewDetails" id="${speaker?.id}">Read more&nbsp;<i class="ion-ios7-arrow-forward"></i></g:link></p>
                             <p class="author-links">
 
                             <!--<i class="ion-ios7-location-outline"></i>&nbsp;<span class="location"> Speaking in <a href="chicago.html">Chicago, IL</a></span>-->
