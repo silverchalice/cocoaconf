@@ -5,6 +5,7 @@
 <title>CocoaConf 2014: The conference for iPhone, iPad and Mac developers</title>
 <meta name="layout" content="partners" />
 <meta name="division" content="chicago" />
+<meta name="domain" content="session" />
 <g:set var="speaker" value="${presentationInstance?.speaker}" />
 </head>
 <body class="individual-speaker">
