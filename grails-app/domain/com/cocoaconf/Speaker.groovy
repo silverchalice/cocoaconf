@@ -5,6 +5,7 @@ class Speaker {
 	
 	String firstName
 	String lastName
+  String title
 	String email
 	String bio
 	String imagePath
@@ -21,6 +22,7 @@ class Speaker {
     static constraints = {
 	    firstName nullable:false
 	    lastName nullable:false
+      title nullable: true
 	    email nullable:false, email:true
 	    bio nullable:true, maxSize: 2000
 	    imagePath nullable:true
