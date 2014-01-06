@@ -24,7 +24,7 @@
                 <g:renderErrors bean="${speakerInstance}" as="list" />
             </div>
             </g:hasErrors>
-            <g:form method="post" enctype="multipart/form-data">
+            <g:form action="update" method="post" enctype="multipart/form-data">
                 <g:hiddenField name="id" value="${speakerInstance?.id}" />
                 <g:hiddenField name="version" value="${speakerInstance?.version}" />
                 <div class="dialog">
