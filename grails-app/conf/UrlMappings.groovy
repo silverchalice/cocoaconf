@@ -17,7 +17,7 @@ class UrlMappings {
 			action = "alt"
 		}
 
-		"/about"{
+		"/family"{
 			controller = "home"
 			action = "kleinfamily"
 		}

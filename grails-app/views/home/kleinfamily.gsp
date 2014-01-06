@@ -8,7 +8,7 @@
             margin: 0 auto 30px;
           }
           div#about-div {
-            width: 40%;
+            width: 60%;
             margin: 30px auto 40px;
           }
           ul#about-ul {
