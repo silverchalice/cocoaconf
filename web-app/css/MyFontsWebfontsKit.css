@@ -36,14 +36,14 @@
 @import url("//hello.myfonts.net/count/2979f9");
 
   
-@font-face {font-family: 'AvenirLTStd-Medium';src: url('webfonts/2979F9_0_0.eot');src: url('webfonts/2979F9_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2979F9_0_0.woff') format('woff'),url('webfonts/2979F9_0_0.ttf') format('truetype');}
+@font-face {font-family: 'AvenirLTStd-Medium';src: url(../webfonts/2979F9_0_0.eot);src: url(../webfonts/2979F9_0_0.eot?#iefix) format('embedded-opentype'),url(../webfonts/2979F9_0_0.woff) format('woff'),url(../webfonts/2979F9_0_0.ttf) format('truetype');}
  
   
-@font-face {font-family: 'AvenirLTStd-Light';src: url('webfonts/2979F9_1_0.eot');src: url('webfonts/2979F9_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2979F9_1_0.woff') format('woff'),url('webfonts/2979F9_1_0.ttf') format('truetype');}
+@font-face {font-family: 'AvenirLTStd-Light';src: url(../webfonts/2979F9_1_0.eot);src: url(../webfonts/2979F9_1_0.eot?#iefix) format('embedded-opentype'),url(../webfonts/2979F9_1_0.woff) format('woff'),url(../webfonts/2979F9_1_0.ttf) format('truetype');}
  
   
-@font-face {font-family: 'AvenirLTStd-Roman';src: url('webfonts/2979F9_2_0.eot');src: url('webfonts/2979F9_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2979F9_2_0.woff') format('woff'),url('webfonts/2979F9_2_0.ttf') format('truetype');}
+@font-face {font-family: 'AvenirLTStd-Roman';src: url(../webfonts/2979F9_2_0.eot);src: url(../webfonts/2979F9_2_0.eot?#iefix) format('embedded-opentype'),url(../webfonts/2979F9_2_0.woff) format('woff'),url(../webfonts/2979F9_2_0.ttf) format('truetype');}
  
   
-@font-face {font-family: 'AvenirLTStd-Heavy';src: url('webfonts/2979F9_3_0.eot');src: url('webfonts/2979F9_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2979F9_3_0.woff') format('woff'),url('webfonts/2979F9_3_0.ttf') format('truetype');}
+@font-face {font-family: 'AvenirLTStd-Heavy';src: url(../webfonts/2979F9_3_0.eot);src: url(../webfonts/2979F9_3_0.eot?#iefix) format('embedded-opentype'),url(../webfonts/2979F9_3_0.woff) format('woff'),url(../webfonts/2979F9_3_0.ttf) format('truetype');}
  
