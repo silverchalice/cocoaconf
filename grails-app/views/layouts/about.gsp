@@ -12,6 +12,7 @@
     <link href="${resource(dir: 'css', file: 'bootstrap-responsive.css')}" rel="stylesheet">
     <link href="${resource(dir: 'css', file: 'main.css')}" rel="stylesheet">
     <link href="${resource(dir: 'css', file: 'ionicons.css')}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'MyFontsWebfontsKit.css')}">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="${resource(dir: 'js', file: 'html5shiv.js')}"></script>
@@ -43,19 +44,6 @@
 
     </script>
 
-    <!-- MyFonts Avenir Trial -->
-    <script type="text/javascript">
-        (function() {
-            var path = '//easy.myfonts.net/v1/js?sid=10336(font-family=Avenir+35+Light)&sid=10338(font-family=Avenir+55+Roman)&sid=10340(font-family=Avenir+85+Heavy)&sid=10344(font-family=Avenir+65+Medium)&key=SNbNMJyrcR',
-                    protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-                    trial = document.createElement('script');
-            trial.type = 'text/javascript';
-            trial.async = true;
-            trial.src = protocol + path;
-            var head = document.getElementsByTagName("head")[0];
-            head.appendChild(trial);
-        })();
-    </script>
 </head>
 
 
