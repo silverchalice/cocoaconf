@@ -22,6 +22,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="${resource(dir: 'ico', file: 'apple-touch-icon-114-precomposed.png')}">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="${resource(dir: 'ico', file: 'apple-touch-icon-72-precomposed.png')}">
 <link rel="apple-touch-icon-precomposed" href="${resource(dir: 'ico', file: 'apple-touch-icon-57-precomposed.png')}">
+
 <link rel="shortcut icon" href="${resource(dir: 'ico', file: 'favicon.png')}">
 
 <g:javascript library="jquery" plugin="jquery"/>
@@ -42,20 +43,7 @@ _gaq.push(['_trackPageview']);
 })();
 
 </script>
-
-<!-- MyFonts Avenir Trial -->
-<script type="text/javascript">
-    (function() {
-        var path = '//easy.myfonts.net/v1/js?sid=10336(font-family=Avenir+35+Light)&sid=10338(font-family=Avenir+55+Roman)&sid=10340(font-family=Avenir+85+Heavy)&sid=10344(font-family=Avenir+65+Medium)&key=SNbNMJyrcR',
-            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-            trial = document.createElement('script');
-        trial.type = 'text/javascript';
-        trial.async = true;
-        trial.src = protocol + path;
-        var head = document.getElementsByTagName("head")[0];
-        head.appendChild(trial);
-    })();
-</script>
+<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'MyFontsWebfontsKit.css')}">
 </head>
 
 <body class="${conference?.city?.toLowerCase()?.replaceAll("\\s", "")} secondary ${pageProperty(name: 'meta.division')}">
