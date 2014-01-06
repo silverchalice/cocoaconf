@@ -70,7 +70,7 @@
         <h5>${conference?.venue}</h5>
         <ul>
           <li>${conference?.venue?.address}<br>
-            ${conference?.venue?.city}, ${conference?.venue?.statae}<br>
+            ${conference?.venue?.city}, ${conference?.venue?.state}<br>
             ${conference?.venue?.zip}</li>
           <li>Phone: ${conference?.venue?.phone}</li>
           <li>Website: <a href="${conference?.venue?.website?.startsWith('http://') ? conference?.venue?.website : 'http://' + conference?.venue?.website}" title="Visit their website">${conference?.venue?.website?.startsWith('http://') ? conference?.venue?.website?.minus('http://') : conference?.venue?.website}</a></li>
