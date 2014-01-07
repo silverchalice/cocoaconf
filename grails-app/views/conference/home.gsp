@@ -45,7 +45,7 @@
     <g:if test="${conference?.featuredSpeakers}">
       ${conference?.featuredSpeakers}
     </g:if>
-    <div class="span2">
+    <div class="span2 pull-right">
       <h4>${conference.city} Sponsors<br>
         &nbsp;</h4>
       <g:each in="${conference?.getSponsorPartners()}" var="partner">
