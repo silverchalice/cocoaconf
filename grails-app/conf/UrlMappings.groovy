@@ -193,7 +193,7 @@ class UrlMappings {
             controller = "speaker"
             action = "show"
         }
-        "/speaker/$id"{
+        "/speakers/$id"{
 	        controller = "speaker"
 	        action = "viewDetails"
         }

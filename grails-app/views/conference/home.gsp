@@ -43,6 +43,11 @@
       <p><g:link controller="conference" action="register" params="${[tinyName: conference?.tinyName]}" class="btn btn-flat btn-large">Register Today <i class="ion-ios7-arrow-forward"></i></g:link></p>
     </div>
     <div class="span2">
+      <h4>Featuring<br>
+        <p><a href="http://cocoaconf.com/speakers/121"><img width="200" src="/images/rob-rhyne.jpg" alt="Rob Rhyne"></a><br />Rob Rhyne</p>
+        <hr>
+    </div>
+    <div class="span2">
       <h4>${conference.city} Sponsors<br>
         &nbsp;</h4>
       <g:each in="${conference?.getSponsorPartners()}" var="partner">
