@@ -45,7 +45,7 @@
     <div class="span2">
       <h3 class="text-center">Featuring
         &nbsp;</h4>
-        <p><a href="http://cocoaconf.com/speakers/121"><img class="img-circle center" width="170" src="/images/rob-rhyne.jpg" alt="Rob Rhyne"></a></p>
+        <p><a href="http://cocoaconf.com/speakers/121"><img class="img-circle center" width="150" src="/images/rob-rhyne.jpg" alt="Rob Rhyne"></a></p>
         <p class="text-center">Rob Rhyne</p>
         <hr>
         <p><a href="http://cocoaconf.com/speakers/121"><img class="img-circle center" width="170" src="/images/rob-rhyne.jpg" alt="Rob Rhyne"></a></p>
