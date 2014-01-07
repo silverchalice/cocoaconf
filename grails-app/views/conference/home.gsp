@@ -43,10 +43,10 @@
       <p><g:link controller="conference" action="register" params="${[tinyName: conference?.tinyName]}" class="btn btn-flat btn-large">Register Today <i class="ion-ios7-arrow-forward"></i></g:link></p>
     </div>
     <div class="span2">
-      <h3>Featuring<br>
+      <h3 class="text-center">Featuring
         &nbsp;</h4>
         <p><a href="http://cocoaconf.com/speakers/121"><img class="img-circle center" width="170" src="/images/rob-rhyne.jpg" alt="Rob Rhyne"></a><br />
-        Rob Rhyne</p>
+        <span style="text-align:center;">Rob Rhyne</span></p>
         <hr>
     </div>
     <div class="span2">
