@@ -44,7 +44,7 @@
     </div>
     <div class="span2">
       <h4>Featuring<br>
-        <p><a href="http://cocoaconf.com/speakers/121"><img width="200" src="/images/rob-rhyne.jpg" alt="Rob Rhyne"></a><br />Rob Rhyne</p>
+        <p><a href="http://cocoaconf.com/speakers/121"><img class="img-circle center" width="170" src="/images/rob-rhyne.jpg" alt="Rob Rhyne"></a><br />Rob Rhyne</p>
         <hr>
     </div>
     <div class="span2">
