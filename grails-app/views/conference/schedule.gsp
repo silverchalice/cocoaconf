@@ -79,7 +79,7 @@
                     </g:else>
                     </g:if>
                     <g:else>
-                      <td colspan="3"><g:link controller="conference" action="sessionDetails" id="${sess?.presentation?.id}" params="${[tinyName: conference?.tinyName, slug: sess?.presentation?.slug]}">
+                      <td><g:link controller="conference" action="sessionDetails" id="${sess?.presentation?.id}" params="${[tinyName: conference?.tinyName, slug: sess?.presentation?.slug]}">
                         ${sess?.presentation?.title}
                         </g:link><br>
                         <g:link controller="conference" action="speakerDetails" id="${sess?.presentation?.speaker?.id}" params="${[tinyName: conference?.tinyName]}">${sess?.presentation?.speaker}</g:link></td>
