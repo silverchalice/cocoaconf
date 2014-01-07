@@ -63,10 +63,6 @@ class UrlMappings {
             controller = "conference"
             action = "sessionDetails"
 		}
-		"/$tinyName/sessions/$id"{
-            controller = "conference"
-            action = "sessionDetails"
-		}
 		"/$tinyName/venue"{
             controller = "conference"
             action = "venue"
