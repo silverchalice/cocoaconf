@@ -42,16 +42,9 @@
       <p class="lead">${conference?.blurb}</p>
       <p><g:link controller="conference" action="register" params="${[tinyName: conference?.tinyName]}" class="btn btn-flat btn-large">Register Today <i class="ion-ios7-arrow-forward"></i></g:link></p>
     </div>
-    <div class="span2">
-      <h3 class="text-center">Featuring
-        &nbsp;</h4>
-        <p><a href="http://cocoaconf.com/speakers/121"><img class="img-circle center" width="150" src="/images/rob-rhyne.jpg" alt="Rob Rhyne"></a></p>
-        <p class="text-center">Rob Rhyne</p>
-        <hr>
-        <p><a href="http://cocoaconf.com/speakers/121"><img class="img-circle center" width="170" src="/images/rob-rhyne.jpg" alt="Rob Rhyne"></a></p>
-        <p class="text-center">Rob Rhyne</p>
-        <hr>
-    </div>
+    <g:if test="${conference?.featuredSpeakers}">
+      ${conference?.featuredSpeakers}
+    </g:if>
     <div class="span2">
       <h4>${conference.city} Sponsors<br>
         &nbsp;</h4>
