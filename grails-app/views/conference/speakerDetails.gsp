@@ -46,7 +46,7 @@
                 <h2><small>${conference?.description} Presentations</small></h2>
               <g:if test="${speakerPresentations}">
                 <g:each in="${speakerPresentations}" var="presentation" index="i">
-               <h3><g:link controller="conference" action="sessionDetails" params="${[tinyName: conference?.tinyName, slug: presentation?.slug]}">${presentation?.title}</g:link></h3>
+               <h3><g:link controller="conference" action="sessionDetails" id="${presentation?.id}" params="${[tinyName: conference?.tinyName, slug: presentation?.slug]}">${presentation?.title}</g:link></h3>
                <p>${presentation.pAbstract}</p>
                <g:if test="${i != speakerPresentations?.size() - 1}">
                  <hr>
