@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Sessions / ${conference?.city} / CocoaConf: The developer conference for those who think different.</title>
+<title>Schedule / ${conference?.city} / CocoaConf: The developer conference for those who think different.</title>
 <meta name="layout" content="home" />
 <meta name="division" content="schedule" />
 </head>
@@ -51,7 +51,7 @@
       <g:if test="${conference?.scheduleReady}"> 
         <g:each in="${schedule}" var="dayMap">
             <h3>${conference.days[dayMap.day - 1]}</h3>
-            <table width="100%" border="1" cellspacing="0" cellpadding="0" summary="This table summarizes the sessions and events at ${conference?.description}" class="table table-hover table-striped">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="This table summarizes the sessions and events at ${conference?.description}" class="table table-hover table-striped">
               <th scope="row">Time</th>
               <th scope="row" colspan="3">Event / Sessions</th>
               <tr>
@@ -59,7 +59,7 @@
               <g:each in="${dayMap.slots}" var="slot">
                 <g:set var="sessions" value="${slot.value}" />
                 <tr>
-                  <th scope="row">${sessions[0]?.start}-${sessions[0]?.end}</th>
+                  <th style="width: 0.5%" scope="row">${sessions[0]?.start}-${sessions[0]?.end}</th>
                   <g:each in="${sessions.sort{it.track}}" var="sess">
                     <g:if test="${sessions.size() == 1}">
                       <g:if test="${sess?.type != 'break'}">
