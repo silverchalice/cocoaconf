@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CocoaConf 2014: The conference for iPhone, iPad and Mac developers</title>
+<title>CocoaConf 2014: The developer conference for those who think different.</title>
 <meta name="layout" content="partners" />
 <meta name="domain" content="speaker" />
 <meta name="division" content="chicago" />

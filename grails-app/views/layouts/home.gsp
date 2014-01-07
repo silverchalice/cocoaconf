@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title><g:layoutTitle default="CocoaConf 2014: the conference for iPhone, iPad and Mac developers" /></title>
+<title><g:layoutTitle default="CocoaConf: The developer conference for those who think different." /></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -92,7 +92,7 @@ _gaq.push(['_trackPageview']);
     ================================================== --> 
 <!-- Placed at the end of the document so the pages load faster --> 
 <script src="${resource(dir: 'js', file: 'jquery.js')}"></script> 
-<script src="${resource(dir: 'js', file: 'bootstrap-transition.js')}"></script> 
+<script src="${resource(dir: 'js', file: 'bootstrap-transition.js')}"></script>
 <script src="${resource(dir: 'js', file: 'bootstrap-alert.js')}"></script> 
 <script src="${resource(dir: 'js', file: 'bootstrap-modal.js')}"></script> 
 <script src="${resource(dir: 'js', file: 'bootstrap-dropdown.js')}"></script> 
@@ -104,5 +104,17 @@ _gaq.push(['_trackPageview']);
 <script src="${resource(dir: 'js', file: 'bootstrap-collapse.js')}"></script> 
 <script src="${resource(dir: 'js', file: 'bootstrap-carousel.js')}"></script> 
 <script src="${resource(dir: 'js', file: 'bootstrap-typeahead.js')}"></script>
+<!-- Yo! -->
+<script type="text/javascript">
+
+    $('.dropdown-menu a').on('click', function(event){
+        event.stopPropagation();
+    });
+    $('.dropdown-menu li').on('click', function(event){
+        event.stopPropagation();
+    });
+</script>
+
+
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>${conference?.description} &#8212; ${conference?.dates} / CocoaConf 2014: the conference for iPhone, iPad and Mac developers</title>
+<title>${conference?.description} &#8212; ${conference?.dates} / CocoaConf: The developer conference for those who think different.</title>
 <meta name="layout" content="home" />
 </head>
 <body class="secondary ${conference?.city?.toLowerCase()?.replaceAll("\\s", "")}">
