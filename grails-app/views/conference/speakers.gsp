@@ -106,7 +106,7 @@
             </li>
           </ul>
           <ul class="nav pull-right">
-            <li class="active"><g:link controller="speaker" action="speakers">Speakers</g:link></li>
+            <li><g:link controller="speaker" action="speakers">Speakers</g:link></li>
             <!-- <li><a href="#sessions">Sessions</a></li> -->
             <!-- <li><a href="#contact">Venues</a></li> -->
             <li><g:link controller="home" action="partners">Partners</g:link></li>
