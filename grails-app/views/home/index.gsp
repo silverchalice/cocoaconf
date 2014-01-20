@@ -91,20 +91,20 @@
     <h2 class="text-center">Sessions</h2>
     <div class="row-fluid">
       <div class="span5">
-        <div class="media"> <g:link controller="conference" action="sessionDetails" params="${[tinyName: 'dc-2014', slug: 'leveling-up']}" title="Learn more" class="pull-left hidden-tablet"><img src="${resource(dir: 'images', file: 'Mark-Dalrymple-bubble.png')}" alt="Speaker image"></g:link>
+        <div class="media"> <g:link controller="conference" action="sessionDetails" params="${[tinyName: 'chicago-2014', slug: 'you-bought-what']}" title="Learn more" class="pull-left hidden-tablet"><img src="${resource(dir: 'images', file: 'justin-williams-bubble.png')}" alt="Speaker image"></g:link>
           <div class="media-body">
-            <h3><g:link controller="conference" action="sessionDetails" params="${[tinyName: 'dc-2014', slug: 'leveling-up']}" class="muted">Leveling Up</g:link></h3>
-            <h4><span>by <g:link controller="conference" action="speakerDetails" id="15" params="${[tinyName: 'dc-2014']}" title="Learn more about this speaker">Mark Dalrymple</g:link></span></h4>
-            <p>Want to take your skills to the next level? Ever wanted to find hidden secrets that lurk in the the undocumented underbelly of the Mac or iPhone? Join MarkD for a ride through reverse engineering, disassembly, swizzling, spying, and general mayhem.</p>
+            <h3><g:link controller="conference" action="sessionDetails" params="${[tinyName: 'chicago-2014', slug: 'you-bought-what']}" class="muted">You Bought What?! Lessons From Acquiring And Running Glassboard</g:link></h3>
+            <h4><span>by <g:link controller="conference" action="speakerDetails" id="111" params="${[tinyName: 'chicago-2014']}" title="Learn more about this speaker">Justin Williams</g:link></span></h4>
+            <p>Learn as Justin walks you through the process of acquiring a product from a legal, professional, and technical perspective. He'll walk you through the process of working dealing with lawyers and contracts, transitioning the technology from the old owner to Second Gear, handling the product announcements, and how he ramped up on new technologies quickly to hit the ground running with Glassboard after the sale announcement.</p>
           </div>
         </div>
       </div>
       <div class="span5">
-        <div class="media"> <g:link controller="conference" action="sessionDetails" params="${[tinyName: 'chicago-2014', slug: 'table-views-ios7']}" title="Learn more" class="pull-left hidden-tablet"><img src="${resource(dir: 'images', file: 'James-Dempsey-bubble.png')}" alt="Speaker image"></g:link>
+        <div class="media"> <g:link controller="conference" action="sessionDetails" params="${[tinyName: 'austin-2014', slug: 'enemy-of-state']}" title="Learn more" class="pull-left hidden-tablet"><img src="${resource(dir: 'images', file: 'Justin-Spahr-Summers.png')}" alt="Speaker image"></g:link>
           <div class="media-body">
-            <h3><g:link controller="conference" action="sessionDetails" params="${[tinyName: 'chicago-2014', slug: 'table-views-ios7']}" class="muted">Makeover Your Table Views <br />for iOS 7</g:link></h3>
-            <h4><span>by <g:link controller="conference" action="speakerDetails" id="60" params="${[tinyName: 'chicago-2014']}" title="Learn more about this speaker">James Dempsey</g:link></span></h4>
-            <p>Give the table views in your app an iOS 7 makeover by taking advantage of new features and adjusting to subtle changes in appearance and behavior. We'll do a live makeover—add Dynamic Type and dynamic row sizes, modernize the selection appearance, update Storyboard settings and other bits of polish needed to make a table view shine on iOS 7.</p>
+            <h3><g:link controller="conference" action="sessionDetails" params="${[tinyName: 'austin-2014', slug: 'enemy-of-state']}" class="muted">Enemy Of The State</g:link></h3>
+            <h4><span>by <g:link controller="conference" action="speakerDetails" id="129" params="${[tinyName: 'austin-2014']}" title="Learn more about this speaker">Justin Spahr-Summers</g:link></span></h4>
+            <p>iOS and Mac apps rely heavily on state to change their presentation and respond to input—it's hard to imagine writing an app without the use of properties and variables. However, state is a huge source of needless complexity, and responsible for most of the easily avoidable bugs that users encounter.</p>
           </div>
         </div>
       </div>
