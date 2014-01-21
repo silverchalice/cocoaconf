@@ -53,7 +53,7 @@
             <h3>${conference.days[dayMap.day - 1]}</h3>
             <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="This table summarizes the sessions and events at ${conference?.description}" class="table table-hover table-striped">
               <th scope="row">Time</th>
-              <th scope="row" colspan="3">Event / Sessions</th>
+              <th scope="row" colspan="4">Event / Sessions</th>
               <tr>
               </tr>
               <g:each in="${dayMap.slots}" var="slot">
@@ -63,7 +63,7 @@
                   <g:each in="${sessions.sort{it.track}}" var="sess">
                     <g:if test="${sessions.size() == 1}">
                       <g:if test="${sess?.type != 'break'}">
-                        <td colspan="3">
+                        <td colspan="4">
                           <g:link controller="conference" action="sessionDetails" params="${[tinyName: conference?.tinyName, slug: sess?.presentation?.slug]}">
                             ${sess?.presentation?.title}
                           </g:link><br>
@@ -73,7 +73,7 @@
                         </td>
                       </g:if>
                       <g:else>
-                        <td colspan="3">
+                        <td colspan="4">
                           ${sess?.presentation?.title}
                         </td>
                     </g:else>
