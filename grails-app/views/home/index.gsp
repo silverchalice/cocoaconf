@@ -117,11 +117,11 @@
   <div class="container">
     <h2 class="text-center">Comments</h2>
     <blockquote>
-      <p class="quotation">“All the #cocoaconf presenters are top shelf. They present better than most marketing pros.”</p>
+      <p class="quotation">“<em>All the #cocoaconf presenters are top shelf</em>. They present better than most marketing pros.”</p>
       <p class="source"><img src="${resource(dir: 'images', file: 'john-caccavale.jpg')}" alt="John photo" class="pull-left img-circle"> <cite>John Caccavale</cite><br> <a href="https://twitter.com/JohnCaccavale">@JohnCaccavale</a> </p>
     </blockquote>
     <blockquote>
-      <p class="quotation">“To my surprise, my favorite moments of the conference weren’t the (admittedly fantastic) technical sessions I attended&#8230; It was nothing short of transformative to be surrounded by people who were all passionate about the same things I am.”</p>
+      <p class="quotation">“To my surprise, my favorite moments of the conference weren’t the (admittedly fantastic) technical sessions I attended&#8230; It was nothing short of transformative to be <em>surrounded by people who were all passionate</em> about the same things I am.”</p>
       <p class="source"><img src="${resource(dir: 'images', file: 'tom-burns.jpg')}" alt="Tom photo" class="pull-left img-circle"><cite>Tom Burns</cite><br>
         <a href="http://tomburns.net">[[TBNBlog alloc] init];</a> </p>
     </blockquote>
