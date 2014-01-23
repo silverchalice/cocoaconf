@@ -63,25 +63,25 @@
     <p class="lead text-center">CocoaConf speakers are thought leaders, authors, and professional iOS and OS X developers. <a href="${createLink(controller: 'speaker', action: 'speakers')}" title="All speakers">Meet them all <i class="ion-ios7-arrow-forward"></i></a></p>
     <p>&nbsp;</p>
     <div class="row-fluid">
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="123" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'who.png')}" alt="Speaker image"></g:link>
-        <h3 class="text-center">Casey Liss</h3>
-        <h4 class="text-center"><span>Accidental Tech Podcaster</span></h4>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="43" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'mike_ash.jpg')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Mike Ash</h3>
+        <h4 class="text-center"><span>Plausible Labs</span></h4>
       </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="124" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'wiskus.png')}" alt="Speaker image"></g:link>
-        <h3 class="text-center">Dave Wiskus</h3>
-        <h4 class="text-center"><span>Interaction Designer</span></h4>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="130" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'laura-savino.jpg')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Laura Savino</h3>
+        <h4 class="text-center"><span> Khan Academy</span></h4>
       </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="52" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'jaimee.jpg')}" alt="Speaker image"></g:link>
-        <h3 class="text-center">Jaimee Newberry</h3>
-        <h4 class="text-center"><span> UX / UI Expert</span></h4>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="79" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'drance.jpeg')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Matt Drance</h3>
+        <h4 class="text-center"><span>Apple Outsider</span></h4>
       </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="1" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'photo_steinberg_daniel.jpg')}" alt="Speaker image"></g:link>
-        <h3 class="text-center">Daniel Steinberg</h3>
-        <h4 class="text-center"><span> Author & Trainer</span></h4>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="84" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'sodade_green.png')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Manton Reece</h3>
+        <h4 class="text-center"><span> Core Intuition</span></h4>
       </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="3" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'photo_adamson_chris.jpg')}" alt="Speaker image"></g:link>
-        <h3 class="text-center">Chris Adamson</h3>
-        <h4 class="text-center"><span>Author, A/V Master</span></h4>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="132" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'mike-rundle.jpg')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Mike Rundle</h3>
+        <h4 class="text-center"><span>Flyosity.com</span></h4>
       </div>
     </div>
   </div>
@@ -100,11 +100,11 @@
         </div>
       </div>
       <div class="span5">
-        <div class="media"> <g:link controller="conference" action="sessionDetails" params="${[tinyName: 'austin-2014', slug: 'enemy-of-state']}" title="Learn more" class="pull-left hidden-tablet"><img src="${resource(dir: 'images', file: 'Justin-Spahr-Summers.png')}" alt="Speaker image"></g:link>
+        <div class="media"> <g:link controller="conference" action="sessionDetails" params="${[tinyName: 'dc-2014', slug: 'designing-app-engagement']}" title="Learn more" class="pull-left hidden-tablet"><img src="${resource(dir: 'images', file: 'Jaimee-Newberry-bubble.png')}" alt="Speaker image"></g:link>
           <div class="media-body">
-            <h3><g:link controller="conference" action="sessionDetails" params="${[tinyName: 'austin-2014', slug: 'enemy-of-state']}" class="muted">Enemy Of The State</g:link></h3>
-            <h4><span>by <g:link controller="conference" action="speakerDetails" id="129" params="${[tinyName: 'austin-2014']}" title="Learn more about this speaker">Justin Spahr-Summers</g:link></span></h4>
-            <p>iOS and Mac apps rely heavily on state to change their presentation and respond to input—it's hard to imagine writing an app without the use of properties and variables. However, state is a huge source of needless complexity, and responsible for most of the easily avoidable bugs that users encounter. <br><g:link controller="conference" action="sessionDetails" params="${[tinyName: 'austin-2014', slug: 'enemy-of-state']}">Read more&#8230;</g:link></p>
+            <h3><g:link controller="conference" action="sessionDetails" params="${[tinyName: 'dc-2014', slug: 'designing-app-engagement']}" class="muted">Designing App Engagement</g:link></h3>
+            <h4><span>by <g:link controller="conference" action="speakerDetails" id="52" params="${[tinyName: 'dc-2014']}" title="Learn more about this speaker">Jaimee Newberry</g:link></span></h4>
+            <p>With so many apps in the app store, what can you be thinking about to get and keep people interested in your app? Having a great concept is just the beginning. How much thinking goes into the personality and tone of your app? What about writing the error messages, alerts, calls-to-action, app descriptions or release notes? &nbsp;<g:link controller="conference" action="sessionDetails" params="${[tinyName: 'dc-2014', slug: 'designing-app-engagement']}">Read more&#8230;</g:link></p>
           </div>
         </div>
       </div>
