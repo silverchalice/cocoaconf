@@ -117,14 +117,13 @@
   <div class="container">
     <h2 class="text-center">Comments</h2>
     <blockquote>
-      <p class="quotation">“It was a great conference—<em>well worth the cost of admission and the time spent.</em> There were two days of really great talks put together by developers who really want to share their knowledge.”</p>
-      <p class="source"><img src="${resource(dir: 'images', file: 'img_benjamin.jpg')}" alt="Benjamin photo" class="pull-left img-circle"><cite>Benjamin Turner</cite><br>
-        <a href="https://twitter.com/kindjar">@kindjar</a> </p>
+      <p class="quotation">“All the #cocoaconf presenters are top shelf. They present better than most marketing pros.”</p>
+      <p class="source"><img src="${resource(dir: 'images', file: 'john-caccavale.jpg')}" alt="John photo" class="pull-left img-circle"> <cite>John Caccavale</cite><br> <a href="https://twitter.com/JohnCaccavale">@JohnCaccavale</a> </p>
     </blockquote>
     <blockquote>
-      <p class="quotation">“Going to CocoaConf... has removed that nagging doubt that maybe this isn’t for me. Now, more than ever, <em>I am determined to release my first two apps</em> into the app store.”</p>
-      <p class="source"><img src="${resource(dir: 'images', file: 'img_dennis.jpg')}" alt="Dennis photo" class="pull-left img-circle"> <cite>Dennis Bowles</cite><br>
-        <a href="http://www.iphoneappexperiment.com/">iphoneappexperiment.com</a> </p>
+      <p class="quotation">“To my surprise, my favorite moments of the conference weren’t the (admittedly fantastic) technical sessions I attended&#8230; It was nothing short of transformative to be surrounded by people who were all passionate about the same things I am.”</p>
+      <p class="source"><img src="${resource(dir: 'images', file: 'tom-burns.jpg')}" alt="Tom photo" class="pull-left img-circle"><cite>Tom Burns</cite><br>
+        <a href="http://tomburns.net">[[TBNBlog alloc] init];</a> </p>
     </blockquote>
   </div>
 </div>
