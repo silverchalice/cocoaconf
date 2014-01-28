@@ -85,26 +85,33 @@ class CocoaConfTagLib {
 
     def alsoSpeakingAt = { attrs ->
         def speaker = Speaker.get(attrs.speakerId)
-        def currentConf = Conference.get(attrs.currentConfId)
         if(speaker){
-            List conferences = speaker.upcomingConferences()
-            conferences.remove { id == currentConf }
+            List conferences = speaker.upcomingConferences().findAll { it.id != attrs.currentConfId }
+            println "and the conferences are $conferences"
             if(conferences){
-                out << '<i class="ion-ios7-location-outline"></i>&nbsp;<span class="location"> Also speaking at '
-                conferences.eachWithIndex { conference, i ->
-                    if(i == conferences.size() - 2){
-                        out << g.link(controller: 'conference', action: 'home', params: [tinyName: conference.tinyName], "${conference.city}")
-                        out << ", and "
-                    } else if(i == conferences.size - 1){
-                        out << g.link(controller: 'conference', action: 'home', params: [tinyName: conference.tinyName], "${conference.city}")
-                    } else {
-                        out << g.link(controller: 'conference', action: 'home', params: [tinyName: conference.tinyName], "${conference.city}")
-                        out << ", "
+                out << '<br><i class="ion-ios7-location-outline"></i>&nbsp;<span class="location"> Also speaking at '
+                if(conferences.size() == 1){
+                    out << g.link(controller: 'conference', action: 'home', params: [tinyName: conferences[0].tinyName], "${conferences[0].city}")
+                } else if(conferences.size() == 2){
+                    out << g.link(controller: 'conference', action: 'home', params: [tinyName: conferences[0].tinyName], "${conferences[0].city}")
+                    out << " and "
+                    out << g.link(controller: 'conference', action: 'home', params: [tinyName: conferences[1].tinyName], "${conferences[1].city}")
+                } else {
+                    conferences.eachWithIndex { conference, i ->
+                        if(i == conferences.size() - 2){
+                            out << g.link(controller: 'conference', action: 'home', params: [tinyName: conference.tinyName], "${conference.city}")
+                            out << ", and "
+                        } else if(i == conferences.size - 1){
+                            out << g.link(controller: 'conference', action: 'home', params: [tinyName: conference.tinyName], "${conference.city}")
+                        } else {
+                            out << g.link(controller: 'conference', action: 'home', params: [tinyName: conference.tinyName], "${conference.city}")
+                            out << ", "
+                        }
                     }
                 }
             }
-            out << "</span>"
         }
+        out << "</span>"
     }
 
 }
