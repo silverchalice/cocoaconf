@@ -47,7 +47,7 @@
         <g:if test="${sessions?.size()> 0}">
           <g:each in="${sessions}" var="session" index="i">
             <g:set var="speaker" value="${session?.presentation?.speaker}" />
-            <li class="media"> <a class="pull-left" href="#"> <img class="media-object img-circle" width="170" src="${speaker.imagePath.startsWith('/') ? speaker.imagePath : '/' + speaker.imagePath}" alt="Speaker photo"> </a>
+            <li class="media"> <g:link class="pull-left" controller="conference" action="speakerDetails" id="${speaker?.id}" params="${[tinyName: conference?.tinyName]}"> <img class="media-object img-circle" width="170" src="${speaker.imagePath.startsWith('/') ? speaker.imagePath : '/' + speaker.imagePath}" alt="Speaker photo"> </g:link>
               <div class="media-body">
                 <h2 class="media-heading">${session?.presentation?.title}<small> / <g:link controller="conference" action="speakerDetails" id="${speaker?.id}" params="${[tinyName: conference?.tinyName]}">${speaker?.firstName}&nbsp;${speaker?.lastName}</g:link></small></h2>
                 <p>${session?.presentation?.pAbstract}</p>
