@@ -38,14 +38,8 @@ class Speaker {
     }
 
     def upcomingConferences() {
-        def conferences = Conference.findAll { startDate > new Date() } 
-        def upcomingWithSpeaker = []
-        conferences.each {
-            if(it?.speakers?.collect { it.id }.contains(this.id)){
-                upcomingWithSpeaker << it
-            }
-        }
-        return upcomingWithSpeaker
+        def conferences = Conference.findAllByStatus(Conference.ACTIVE)
+        return conferences.findAll { it.speakers*.id.contains(id) }
     }
 
     String toString(){ "${firstName} ${lastName}" }
