@@ -83,24 +83,15 @@ class CocoaConfTagLib {
         out << cityName
     }
 
-    def alsoSpeakingAt = { attrs ->
+    def speakingAt = { attrs ->
         def speaker = Speaker.get(attrs.speakerId)
         if(speaker){
             List conferences = speaker.upcomingConferences()
             println "and the conferences are $conferences"
-            if(attrs.currentConfId){
-                conferences = conferences.findAll { it.id != attrs.currentConfId }
-                if(conferences?.size() > 1){
-                    out << """<br><i class="ion-ios7-location-outline"></i>&nbsp;<span class="location"> Also ${speaker?.id == 114 ? 'performing' : 'speaking'} at """
-                } else {
-                    return
-                }
+            if(conferences?.size() > 0){
+                out << """<i class="ion-ios7-location-outline"></i>&nbsp;<span class="location"> ${speaker?.id == 114 ? 'Performing' : 'Speaking'} at """
             } else {
-                if(conferences?.size() > 0){
-                    out << """<i class="ion-ios7-location-outline"></i>&nbsp;<span class="location"> ${speaker?.id == 114 ? 'Performing' : 'Speaking'} at """
-                } else {
-                    return
-                }
+                return
             }
             if(conferences.size() == 1){
                 out << g.link(controller: 'conference', action: 'home', params: [tinyName: conferences[0].tinyName], "${conferences[0].city}")
@@ -125,5 +116,37 @@ class CocoaConfTagLib {
         out << "</span>"
     }
 
+    def alsoSpeakingAt = { attrs ->
+        def speaker = Speaker.get(attrs.speakerId)
+        if(speaker){
+            List conferences = speaker.upcomingConferences().findAll { it.id != attrs.currentConfId }
+            println "and the conferences are $conferences"
+            if(conferences?.size() > 0){
+                out << """<br><i class="ion-ios7-location-outline"></i>&nbsp;<span class="location"> Also ${speaker?.id == 114 ? 'performing' : 'speaking'} at """
+            } else {
+                return
+            }
+            if(conferences.size() == 1){
+                out << g.link(controller: 'conference', action: 'home', params: [tinyName: conferences[0].tinyName], "${conferences[0].city}")
+            } else if(conferences.size() == 2){
+                out << g.link(controller: 'conference', action: 'home', params: [tinyName: conferences[0].tinyName], "${conferences[0].city}")
+                out << " and "
+                out << g.link(controller: 'conference', action: 'home', params: [tinyName: conferences[1].tinyName], "${conferences[1].city}")
+            } else {
+                conferences.eachWithIndex { conference, i ->
+                    if(i == conferences.size() - 2){
+                        out << g.link(controller: 'conference', action: 'home', params: [tinyName: conference.tinyName], "${conference.city}")
+                        out << ", and "
+                    } else if(i == conferences.size - 1){
+                        out << g.link(controller: 'conference', action: 'home', params: [tinyName: conference.tinyName], "${conference.city}")
+                    } else {
+                        out << g.link(controller: 'conference', action: 'home', params: [tinyName: conference.tinyName], "${conference.city}")
+                        out << ", "
+                    }
+                }
+            }
+        }
+        out << "</span>"
+    }
 
 }
