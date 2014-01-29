@@ -41,7 +41,7 @@
             <p class="author-links"><g:if test="${speaker.twitter}"><span class="twitter"><i class="ion-social-twitter-outline"></i>&nbsp;<a href="https://twitter.com/${speaker.twitter}" title="Visit ${speaker.firstName} on Twitter" target="_blank"> @${speaker.twitter}</a></span></g:if> <g:if test="${speaker.blog}"><span class="website"><i class="ion-social-rss"></i>&nbsp;<a href="${speaker.blog}" title="Visit ${speaker.firstName}&#8217;s website" target="_blank">${speaker.blog?.minus('http://')}</a></span></g:if> <g:if test="${speaker.appnet}"><span class="appnet"><i class="ion-ios7-arrow-up"></i>&nbsp;<a href="http://app.net/${speaker.appnet}"> @${speaker.appnet}</a></span></g:if><cc:alsoSpeakingAt speakerId="${speaker?.id}" currentConfId="${conference?.id}" /></p>
             
             <hr>
-            <p class="lead">${speaker.bio}</p>
+            ${speaker.bio}
               <p>&nbsp;</p><div class="well">
                 <h2><small>${conference?.description} Presentations</small></h2>
               <g:if test="${speakerPresentations}">
