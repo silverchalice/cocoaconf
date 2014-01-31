@@ -9,6 +9,7 @@ class Speaker {
 	String email
 	String bio
 	String imagePath
+	String website
 	String blog
     String feed
 	String twitter
@@ -26,6 +27,7 @@ class Speaker {
 	    email nullable:false, email:true
 	    bio nullable:true, maxSize: 2000
 	    imagePath nullable:true
+	    website nullable:true
 	    blog nullable:true
         feed nullable:true
 	    twitter nullable:true
