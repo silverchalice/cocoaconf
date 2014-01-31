@@ -83,6 +83,14 @@
                             </td>
                         </tr>
                         <tr class="prop">
+                            <td valign="top" class="website">
+                              <label for="website"><g:message code="speaker.website.label" default="Website" /></label>
+                            </td>
+                            <td valign="top" class="value ${hasErrors(bean: speakerInstance, field: 'website', 'errors')}">
+                                <g:textField name="website" value="${speakerInstance?.website}" />
+                            </td>
+                        </tr>
+                        <tr class="prop">
                             <td valign="top" class="blog">
                               <label for="blog"><g:message code="speaker.blog.label" default="Blog" /></label>
                             </td>
