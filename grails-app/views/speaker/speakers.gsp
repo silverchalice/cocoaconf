@@ -117,7 +117,7 @@
                             </g:if>
 
                             <g:if test="${speaker.website}">
-                                <span class="website"><a href="${speaker.website}" title="Visit ${speaker}'s website" target="_blank"><i class="ion-social-rss"></i>&nbsp;${speaker.website.minus("http://")}</a></span>
+                                <span class="website"><a href="${speaker.website}" title="Visit ${speaker}'s website" target="_blank"><i class="ion-ios7-world-outline"></i>&nbsp;${speaker.website.minus("http://")}</a></span>
                             </g:if>
 
                             <g:if test="${speaker.blog}">
