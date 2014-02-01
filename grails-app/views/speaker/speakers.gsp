@@ -116,8 +116,12 @@
                                 <span class="appnet"><i class="ion-ios7-arrow-up"></i>&nbsp;<a href="http://alpha.app.net/${speaker.appnet}">${speaker.appnet}</a></span>
                             </g:if>
 
+                            <g:if test="${speaker.website}">
+                                <span class="website"><a href="${speaker.website}" title="Visit ${speaker}'s website" target="_blank"><i class="ion-social-rss"></i>&nbsp;${speaker.website.minus("http://")}</a></span>
+                            </g:if>
+
                             <g:if test="${speaker.blog}">
-                                <span class="website"><a href="${speaker.blog}" title="Visit ${speaker}'s website" target="_blank"><i class="ion-social-rss"></i>&nbsp;${speaker.blog.minus("http://")}</a></span>
+                                <span class="blog"><a href="${speaker.blog}" title="Visit ${speaker}'s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;${speaker.blog.minus("http://")}</a></span>
                             </g:if>
 
                             </p>
