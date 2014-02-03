@@ -49,7 +49,7 @@
             <g:set var="speaker" value="${session?.presentation?.speaker}" />
             <li class="media"> <g:link class="pull-left" controller="conference" action="speakerDetails" id="${speaker?.id}" params="${[tinyName: conference?.tinyName]}"> <img class="media-object img-circle" width="170" src="${speaker.imagePath.startsWith('/') ? speaker.imagePath : '/' + speaker.imagePath}" alt="Speaker photo"> </g:link>
               <div class="media-body">
-                <h2 class="media-heading">${session?.presentation?.title}<small> / <g:link controller="conference" action="speakerDetails" id="${speaker?.id}" params="${[tinyName: conference?.tinyName]}">${speaker?.firstName}&nbsp;${speaker?.lastName}</g:link></small></h2>
+                <h2 class="media-heading"><g:link controller="conference" action="sessionDetails" params="${['tinyName': conference?.tinyName, 'slug': session?.presentation?.slug]}" class="muted">${session?.presentation?.title}</g:link><small> / <g:link controller="conference" action="speakerDetails" id="${speaker?.id}" params="${[tinyName: conference?.tinyName]}">${speaker?.firstName}&nbsp;${speaker?.lastName}</g:link></small></h2>
                 <p>${session?.presentation?.pAbstract}</p>
               </div>
             </li>
