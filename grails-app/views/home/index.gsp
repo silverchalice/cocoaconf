@@ -117,7 +117,7 @@
   <div class="container">
     <h2 class="text-center">Comments</h2>
     <blockquote>
-      <p class="quotation">“<em>All the #cocoaconf presenters are top shelf</em>. They present better than most marketing pros.”</p>
+      <p class="quotation">“<em>All the #cocoaconf presenters are top shelf.</em> They present better than most marketing pros.”</p>
       <p class="source"><img src="${resource(dir: 'images', file: 'john-caccavale.jpg')}" alt="John photo" class="pull-left img-circle"> <cite>John Caccavale</cite><br> <a href="https://twitter.com/JohnCaccavale">@JohnCaccavale</a> </p>
     </blockquote>
     <blockquote>
