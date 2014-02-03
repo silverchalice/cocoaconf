@@ -95,7 +95,7 @@
           <div class="media-body">
             <h3><g:link controller="conference" action="sessionDetails" params="${[tinyName: 'chicago-2014', slug: 'you-bought-what']}" class="muted">You Bought What?! Lessons From Acquiring And Running Glassboard</g:link></h3>
             <h4><span>by <g:link controller="conference" action="speakerDetails" id="111" params="${[tinyName: 'chicago-2014']}" title="Learn more about this speaker">Justin Williams</g:link></span></h4>
-            <p>Learn as Justin walks you through the process of acquiring a product from a legal, professional, and technical perspective. He'll walk you through the process of working dealing with lawyers and contracts, transitioning the technology from the old owner to Second Gear, handling the product announcements, and how he ramped up on new technologies quickly to hit the ground running with Glassboard after the sale announcement. &nbsp;<g:link controller="conference" action="sessionDetails" params="${[tinyName: 'chicago-2014', slug: 'you-bought-what']}">Read more&#8230;</g:link></p>
+            <p>Learn as Justin walks you through the process of acquiring a product from a legal, professional, and technical perspective. He'll walk you through the process of dealing with lawyers and contracts, transitioning the technology from the old owner to Second Gear, handling the product announcements, and how he ramped up on new technologies quickly to hit the ground running with Glassboard after the sale announcement. &nbsp;<g:link controller="conference" action="sessionDetails" params="${[tinyName: 'chicago-2014', slug: 'you-bought-what']}">Read more&#8230;</g:link></p>
           </div>
         </div>
       </div>
