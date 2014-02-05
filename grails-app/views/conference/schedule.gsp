@@ -26,6 +26,7 @@
       </div>
     </div>
     <div class="span3">
+      <h2 style="text-align: center;"><small><cc:weeksUntilSalesEnd id="${conference?.id}" /></small></h2>
       <g:link controller="conference" action="register" params="${[tinyName: conference?.tinyName]}" class="button"><button class="btn btn-block btn-large btn-flat">Register for ${conference?.city} <i class="ion-ios7-arrow-forward"></i></button></g:link>
     </div>
   </div>
