@@ -63,23 +63,23 @@
     <p class="lead text-center">CocoaConf speakers are thought leaders, authors, and professional iOS and OS X developers. <a href="${createLink(controller: 'speaker', action: 'speakers')}" title="All speakers">Meet them all <i class="ion-ios7-arrow-forward"></i></a></p>
     <p>&nbsp;</p>
     <div class="row-fluid">
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="43" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/danny-greg', file: 'danny-greg.jpg')}" width="170" alt="Speaker image"></g:link>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="125" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/danny-greg', file: 'danny-greg.jpg')}" width="170" alt="Speaker image"></g:link>
         <h3 class="text-center">Danny Greg</h3>
         <h4 class="text-center"><span>GitHub</span></h4>
       </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="130" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/rob-rhyne', file: 'rob-rhyne.jpg')}" width="170" alt="Speaker image"></g:link>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="121" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/rob-rhyne', file: 'rob-rhyne.jpg')}" width="170" alt="Speaker image"></g:link>
         <h3 class="text-center">Rob Rhyne</h3>
         <h4 class="text-center"><span> MartianCraft</span></h4>
       </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="79" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/sam-soffes', file: 'Sam-Soffes.jpg')}" width="170" alt="Speaker image"></g:link>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="137" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/sam-soffes', file: 'Sam-Soffes.jpg')}" width="170" alt="Speaker image"></g:link>
         <h3 class="text-center">Sam Soffes</h3>
         <h4 class="text-center"><span>Full Package</span></h4>
       </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="84" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/brittany-young', file: 'Brittany%20Tarvin%20Young%20square.jpeg')}" width="170" alt="Speaker image"></g:link>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="85" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/brittany-young', file: 'Brittany%20Tarvin%20Young%20square.jpeg')}" width="170" alt="Speaker image"></g:link>
         <h3 class="text-center">Brittany Young</h3>
         <h4 class="text-center"><span> New Relic</span></h4>
       </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="132" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/marcus-zarra', file: 'zarra.png')}" width="170" alt="Speaker image"></g:link>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="78" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/marcus-zarra', file: 'zarra.png')}" width="170" alt="Speaker image"></g:link>
         <h3 class="text-center">Marcus Zarra</h3>
         <h4 class="text-center"><span>MartianCraft</span></h4>
       </div>
