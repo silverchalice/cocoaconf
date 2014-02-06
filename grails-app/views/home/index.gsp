@@ -75,7 +75,7 @@
         <h3 class="text-center">Sam Soffes</h3>
         <h4 class="text-center"><span>Full Package</span></h4>
       </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="84" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/brittany-young', file: 'Brittany-Tarvin-Young-square.jpg')}" width="170" alt="Speaker image"></g:link>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="84" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/brittany-young', file: 'Brittany%20Tarvin%20Young%20square.jpeg')}" width="170" alt="Speaker image"></g:link>
         <h3 class="text-center">Brittany Young</h3>
         <h4 class="text-center"><span> New Relic</span></h4>
       </div>
