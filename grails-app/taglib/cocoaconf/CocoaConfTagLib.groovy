@@ -151,7 +151,7 @@ class CocoaConfTagLib {
 
     def maybeShowPastText = { attrs ->
         def c = Conference.get(attrs.id)
-        if(c?.status != Conference.ACTIVE){
+        if(c?.status != Conference.ACTIVE && c.pastText){
             out << """<div class="message">"""
             out << c?.pastText
             out << """</div>"""
