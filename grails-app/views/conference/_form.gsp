@@ -65,6 +65,14 @@
 	<g:textArea name="partnerBlurb" cols="40" rows="5" maxlength="10000" value="${conference?.partnerBlurb}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'pastText', 'error')} ">
+	<label for="pastText">
+		<g:message code="conference.pastText.label" default="Past Text" />
+		
+	</label>
+	<g:textArea name="pastText" cols="40" rows="5" maxlength="10000" value="${conference?.pastText}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'sponsorListBlurb', 'error')} ">
 	<label for="partnerBlurb">
 		<g:message code="conference.sponsorListBlurb.label" default="Sponsor List Blurb" />
