@@ -149,6 +149,15 @@ class CocoaConfTagLib {
         out << "</span>"
     }
 
+    def maybeShowPastText = { attrs ->
+        def c = Conference.get(attrs.id)
+        if(c?.status != Conference.ACTIVE){
+            out << """<div class="message">"""
+            out << c?.pastText
+            out << """</div>"""
+        }
+    }
+
     def weeksUntilSalesEnd = { attrs ->
         def c = Conference.get(attrs.id)
         if(c.status == Conference.ACTIVE){
