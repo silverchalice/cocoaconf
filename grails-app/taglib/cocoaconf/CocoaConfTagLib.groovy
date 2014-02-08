@@ -151,11 +151,13 @@ class CocoaConfTagLib {
 
     def weeksUntilSalesEnd = { attrs ->
         def c = Conference.get(attrs.id)
-        out << "Ticket sales end in "
-        Double timeLeft = c.startDate - new Date()
-        timeLeft = timeLeft / 7; timeLeft = timeLeft.round() - 1
-        out << timeLeft.toInteger()
-        out << "${timeLeft > 1 ? ' weeks!' : ' week!'}"
+        if(c.status == Conference.ACTIVE){
+            out << "Ticket sales end in "
+            Double timeLeft = c.startDate - new Date()
+            timeLeft = timeLeft / 7; timeLeft = timeLeft.round() - 1
+            out << timeLeft.toInteger()
+            out << "${timeLeft > 1 ? ' weeks!' : ' week!'}"
+        }
     }
 
 }
