@@ -670,3 +670,23 @@ a.button:hover, a.post-title:hover {
 span.address {
 	font-family:'Avenir 35 Light';
 }
+
+/* Copied from Grails's default CSS */
+.message {
+  font-size: larger;
+	line-height: 3;
+  text-align: center;
+	margin: 0 2em 3.75em;
+	padding: 2em;
+	background: #f3f3ff;
+	border: 1px solid #b2d1ff;
+	color: #006dba;
+	   -moz-box-shadow: 0 0 0.25em #b2d1ff;
+	-webkit-box-shadow: 0 0 0.25em #b2d1ff;
+	        box-shadow: 0 0 0.25em #b2d1ff;
+	text-indent: 2.2em;
+}
+
+.message a {
+  text-decoration: underline;
+}
