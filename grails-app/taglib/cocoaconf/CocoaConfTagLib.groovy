@@ -65,7 +65,7 @@ class CocoaConfTagLib {
         def cityName
         switch(attrs.id) {
             case 17:
-                cityName = "Chicago, IL"
+                cityName = "Chicago, IL &#8212; <strong>Sold Out</strong>"
                 break
             case 18:
                 cityName = "Washington D.C."
@@ -159,6 +159,10 @@ class CocoaConfTagLib {
     }
 
     def weeksUntilSalesEnd = { attrs ->
+        if(attrs.id == 17){
+            out << "CocoaConf Chicago is sold out!"
+            return
+        }
         def c = Conference.get(attrs.id)
         if(c.status == Conference.ACTIVE){
             out << "Ticket sales end in "
