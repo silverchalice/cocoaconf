@@ -22,7 +22,8 @@
     <div class="span3">
       <h2 style="text-align: center;"><small><cc:weeksUntilSalesEnd id="${conference?.id}" /></small></h2>
       <g:if test="${conference.status == Conference.ACTIVE}">
-        <g:link controller="conference" action="register" params='["tinyName": "${conference?.tinyName}"]' class="button"><button class="btn btn-block btn-large btn-flat">${conference?.id == 17 ? conference.city + ' Waitlist' : 'Register for ' + conference?.city} <i class="ion-ios7-arrow-forward"></i></button></g:link>
+        <g:link controller="conference" action="register" params='["tinyName": "${conference?.tinyName}"]' class="button"><button class="btn btn-block btn-large btn-flat"><cc:registerButton id="${conference?.id}" /> <i class="ion-ios7-arrow-forward"></i></button></g:link>
+        
       </g:if>
     </div>
   </div>

@@ -74,7 +74,7 @@ class CocoaConfTagLib {
                 cityName = "San Jose, CA"
                 break
             case 20:
-                cityName = "Austin, TX"
+                cityName = "Austin, TX &#8212; <strong>Sold Out</strong>"
                 break
             case 21:
                 cityName = "Raleigh, NC"
@@ -162,6 +162,9 @@ class CocoaConfTagLib {
         if(attrs.id == 17){
             out << "CocoaConf Chicago is sold out!"
             return
+        } else if(attrs.id == 20){
+            out << "CocoaConf Mini Austin is sold out!"
+            return
         }
         def c = Conference.get(attrs.id)
         if(c.status == Conference.ACTIVE){
@@ -172,5 +175,17 @@ class CocoaConfTagLib {
             out << "${timeLeft > 1 ? ' weeks!' : ' week!'}"
         }
     }
+
+    def registerButton = { attrs ->
+        def c = Conference.get(attrs.id)
+        if(c.id == 17 || c.id == 20){
+            out << "${c?.city} Waitlist"
+            return
+        }
+        out << "Register for ${c?.city}"
+    }
+
+
+
 
 }
