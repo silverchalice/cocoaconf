@@ -89,6 +89,9 @@ body.raleigh {
     /* background-image: url(../images/bg_raleigh_01.jpg), url(../images/bg_main.jpg); */
     background-image: url(../images/bg_raleigh_02.jpg), url(../images/bg_main.jpg);
 }
+body.atlanta {
+    background-image: url(../images/bg_atlanta_01.jpg), url(../images/bg_main.jpg);
+}
 a {
 	text-decoration:none;
 	color:#0093ee;	
