@@ -11,8 +11,23 @@
 </div>
 <div class="content container">
   <div class="gradient"></div>
-  
-  <!-- Main hero unit for a primary marketing message or call to action -->
+
+    <ul class="nav hidden-desktop visible-phone visible-tablet">
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">${conference?.city} Links &nbsp; <i class="ion-ios7-arrow-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><g:link controller="conference" action="home" params='["tinyName": "${conference.tinyName}"]'>Home</g:link></li>
+                <li class="active"><g:link controller="conference" action="speakers" params='["tinyName": "${conference.tinyName}"]'>Speakers</g:link></li>
+                <li><g:link controller="conference" action="sessions" params='["tinyName": "${conference?.tinyName}"]'>Sessions</g:link></li>
+                <li><g:link controller="conference" action="schedule" params="${[tinyName: conference?.tinyName]}">Schedule</g:link></li>
+                <li><g:link controller="conference" action="venue" params='["tinyName": "${conference?.tinyName}"]'>Venue</g:link></li>
+                <li><g:link controller="conference" action="partners" params="${[tinyName: conference?.tinyName]}">Partners</g:link></li>
+                <li><g:link controller="conference" action="register" params="${[tinyName: conference?.tinyName]}">Register</g:link></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <!-- Main hero unit for a primary marketing message or call to action -->
   <div class="row-fluid">
     <div class="span1"> </div>
     <div class="span8">
@@ -24,7 +39,7 @@
     </div>
     <div class="span1"> </div>
   </div>
-  <img class="photostrip hidden-phone" src="${resource(dir: 'images', file: 'img_photostrip_chicago_speaker.jpg')}" alt="Speakers at last year's CocoaConf"> 
+  <img class="photostrip hidden-phone hidden-tablet" src="${resource(dir: 'images', file: 'img_photostrip_chicago_speaker.jpg')}" alt="Speakers at last year's CocoaConf">
   <!-- Example row of columns -->
   <div class="row-fluid">
     <div class="span2 hidden-phone hidden-tablet">
