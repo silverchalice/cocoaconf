@@ -29,7 +29,6 @@
 
     <!-- Main hero unit for a primary marketing message or call to action -->
   <div class="row-fluid">
-    <cc:maybeShowPastText id="${conference?.id}" />
     <div class="span7">
       <h1>Join us in ${conference?.cityNickname ?: conference?.city + ", " + conference?.state} <small>${conference?.dates}</small></h1>
       <p class="lead">${conference.intro}</p>
