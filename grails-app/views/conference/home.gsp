@@ -4,6 +4,30 @@
 <head>
 <title>${conference?.description} &#8212; ${conference?.dates} / CocoaConf: The developer conference for those who think different.</title>
 <meta name="layout" content="home" />
+
+    <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
+
+    <script src="${resource(dir:'js', file:'jquery-1.6.2.min.js')}" type="text/javascript"></script>
+
+    <script src="${resource(dir:'js', file:'jquery-ui-1.8.11.custom.min.js')}" type="text/javascript"></script>
+    <script src="${resource(dir:'js', file:'jquery.validate.min.js')}" type="text/javascript"></script>
+    <script src="${resource(dir:'js', file:'script.js')}" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-23131242-2']);
+        _gaq.push(['_setDomainName', '.cocoaconf.com']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
 </head>
 <body class="secondary ${conference?.city?.toLowerCase()?.replaceAll("\\s", "")}">
 <div class="container main-text">
@@ -57,9 +81,13 @@
       </ul>
     </div>
     <div class="span6">
-  <p><cc:conferenceImage id="${conference.id}" /></p>
-      <p class="lead">${conference?.blurb}</p>
-      <p><g:link controller="conference" action="register" params="${[tinyName: conference?.tinyName]}" class="btn btn-flat btn-large">Register Today <i class="ion-ios7-arrow-forward"></i></g:link></p>
+
+        <g:if test="${conference?.status == Conference.ACTIVE}">
+            <g:render template="active" model="[conference: conference]" />
+        </g:if>
+        <g:if test="${conference?.status == Conference.COMPLETED}">
+            <g:render template="roundup" model="[conference: conference]" />
+        </g:if>
     </div>
     <g:if test="${conference?.featuredSpeakers}">
       ${conference?.featuredSpeakers}
