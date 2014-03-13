@@ -6,6 +6,13 @@
 <g:each in="${BlogLink.findAllByEvent(conference, [sort:'priority', order:'asc'])}" var="link">
     <div class="blogLink">
         <h3 style="color: #1da0d1">${link.title}</h3>
-        <p>&#8220;${link.snippet}&#8221; <a href="${link.url}" style="font-weight: bold">Read more...</a></p>
+        <p>&#8220;${link.snippet}&#8221;
+
+            <g:if test="${link?.username}">
+                <a href="${link.url}" style="font-weight: bold">${link?.username}</a></p>
+            </g:if>
+            <g:else>
+                <a href="${link.url}" style="font-weight: bold">Read more...</a></p>
+            </g:else>
     </div>
 </g:each>
