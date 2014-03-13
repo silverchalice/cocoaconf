@@ -89,6 +89,9 @@ body.raleigh {
     /* background-image: url(../images/bg_raleigh_01.jpg), url(../images/bg_main.jpg); */
     background-image: url(../images/bg_raleigh_02.jpg), url(../images/bg_main.jpg);
 }
+body.atlanta {
+    background-image: url(../images/bg_atlanta_01.jpg), url(../images/bg_main.jpg);
+}
 a {
 	text-decoration:none;
 	color:#0093ee;	
@@ -123,7 +126,7 @@ body.home .about {
 	border-bottom:1px solid #444;
 }
 body.home .locations {
-	background:url(../images/bg_chicago.jpg) no-repeat center bottom;
+	background:url(../images/bg_washington_01.jpg) no-repeat center bottom;
     background-size: auto 100%;	
 	background-color:#333333;
 }
@@ -669,4 +672,24 @@ a.button:hover, a.post-title:hover {
 }
 span.address {
 	font-family:'Avenir 35 Light';
+}
+
+/* Copied from Grails's default CSS */
+.message {
+  font-size: larger;
+	line-height: 3;
+  text-align: center;
+	margin: 0 2em 3.75em;
+	padding: 2em;
+	background: #f3f3ff;
+	border: 1px solid #b2d1ff;
+	color: #006dba;
+	   -moz-box-shadow: 0 0 0.25em #b2d1ff;
+	-webkit-box-shadow: 0 0 0.25em #b2d1ff;
+	        box-shadow: 0 0 0.25em #b2d1ff;
+	text-indent: 2.2em;
+}
+
+.message a {
+  text-decoration: underline;
 }
