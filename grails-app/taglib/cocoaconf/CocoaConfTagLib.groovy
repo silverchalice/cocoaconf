@@ -68,7 +68,7 @@ class CocoaConfTagLib {
                 cityName = "Chicago, IL &#8212; <strong>Sold Out</strong>"
                 break
             case 18:
-                cityName = "Washington D.C."
+                cityName = "Washington D.C. &#8212; <strong>Sold Out</strong>"
                 break
             case 19:
                 cityName = "San Jose, CA"
@@ -161,6 +161,9 @@ class CocoaConfTagLib {
     def weeksUntilSalesEnd = { attrs ->
         if(attrs.id == 17){
             out << "CocoaConf Chicago is sold out!"
+            return
+        } else if(attrs.id == 18){
+            out << "CocoaConf DC is sold out!"
             return
         } else if(attrs.id == 20){
             out << "CocoaConf Mini Austin is sold out!"
