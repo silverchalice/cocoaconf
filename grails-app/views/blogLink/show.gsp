@@ -49,6 +49,21 @@
                             <td valign="top" class="value">${fieldValue(bean: blogLinkInstance, field: "url")}</td>
                             
                         </tr>
+
+                    <tr class="prop">
+                        <td valign="top" class="name"><g:message code="blogLink.username.label" default="Username" /></td>
+
+                        <td valign="top" class="value">${fieldValue(bean: blogLinkInstance, field: "username")}</td>
+
+                    </tr>
+
+                    <tr class="prop">
+                        <td valign="top" class="name"><g:message code="blogLink.author.label" default="Author" /></td>
+
+                        <td valign="top" class="value">${fieldValue(bean: blogLinkInstance, field: "author")}</td>
+
+                    </tr>
+
                     
                         <tr class="prop">
                             <td valign="top" class="name">Priority</td>

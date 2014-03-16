@@ -57,7 +57,26 @@
                                     <g:textField name="url" value="${blogLinkInstance?.url}" />
                                 </td>
                             </tr>
-                        
+
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="username"><g:message code="blogLink.username.label" default="Username" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: blogLinkInstance, field: 'username', 'errors')}">
+                                    <g:textField name="username" value="${blogLinkInstance?.username}" />
+                                </td>
+                            </tr>
+
+
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="author"><g:message code="blogLink.author.label" default="Author" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: blogLinkInstance, field: 'author', 'errors')}">
+                                    <g:textField name="author" value="${blogLinkInstance?.author}" />
+                                </td>
+                            </tr>
+
                             <tr class="prop">
                                 <td valign="top" class="name">
                                   <label for="priority">Priority</label>

@@ -54,7 +54,7 @@ class CocoaConfTagLib {
     def conferenceImage = { attrs ->
         def conference = Conference.get(attrs.id)
         def images = [17 : 'img_chicago_bean_small.jpg', 18 : 'img_washington_small_02.jpg', 19 : 'img_sanjose_small_01.jpg', 20 : 'img_austin_small_01.jpg', 21 : 'img_raleigh_small_01.jpg']
-        if(conference){
+        if(conference && conference.status == Conference.ACTIVE){
             out << '<img class="img-rounded" src="' + g.resource(dir: 'images', file: images[conference.id.toInteger()]) + '" alt="Photo (cc) by ___ on Flickr" />'
         } else {
             out << '' 
@@ -65,16 +65,16 @@ class CocoaConfTagLib {
         def cityName
         switch(attrs.id) {
             case 17:
-                cityName = "Chicago, IL"
+                cityName = "Chicago, IL &#8212; <strong>Sold Out</strong>"
                 break
             case 18:
-                cityName = "Washington D.C."
+                cityName = "Washington D.C. &#8212; <strong>Sold Out</strong>"
                 break
             case 19:
                 cityName = "San Jose, CA"
                 break
             case 20:
-                cityName = "Austin, TX"
+                cityName = "Austin, TX &#8212; <strong>Sold Out</strong>"
                 break
             case 21:
                 cityName = "Raleigh, NC"
@@ -89,7 +89,7 @@ class CocoaConfTagLib {
             List conferences = speaker.upcomingConferences()
             println "and the conferences are $conferences"
             if(conferences?.size() > 0){
-                out << """<i class="ion-ios7-location-outline"></i>&nbsp;<span class="location"> ${speaker?.id == 114 ? 'Performing' : 'Speaking'} at """
+                out << """<i class="ion-ios7-location-outline"></i>&nbsp;<span class="location"> ${speaker?.id == 114 ? 'Performing' : 'Speaking'} at CocoaConf in """
             } else {
                 return
             }
@@ -149,13 +149,46 @@ class CocoaConfTagLib {
         out << "</span>"
     }
 
-    def weeksUntilSalesEnd = { attrs ->
+    def maybeShowPastText = { attrs ->
         def c = Conference.get(attrs.id)
-        out << "Ticket sales end in "
-        Double timeLeft = c.startDate - new Date()
-        timeLeft = timeLeft / 7; timeLeft = timeLeft.round() - 1
-        out << timeLeft.toInteger()
-        out << "${timeLeft > 1 ? ' weeks!' : ' week!'}"
+        if(c?.status != Conference.ACTIVE && c?.pastText){
+            out << """<div class="message">"""
+            out << c?.pastText
+            out << """</div>"""
+        }
     }
+
+    def weeksUntilSalesEnd = { attrs ->
+        if(attrs.id == 17){
+            out << "CocoaConf Chicago is sold out!"
+            return
+        } else if(attrs.id == 18){
+            out << "CocoaConf DC is sold out!"
+            return
+        } else if(attrs.id == 20){
+            out << "CocoaConf Mini Austin is sold out!"
+            return
+        }
+        def c = Conference.get(attrs.id)
+        if(c.status == Conference.ACTIVE){
+            out << "Ticket sales end in "
+            Double timeLeft = c.startDate - new Date()
+            timeLeft = timeLeft / 7; timeLeft = timeLeft.round() - 1
+            out << timeLeft.toInteger()
+            out << "${timeLeft > 1 ? ' weeks!' : ' week!'}"
+        }
+    }
+
+    def registerButton = { attrs ->
+        def c = Conference.get(attrs.id)
+        if(c.id == 17 || c.id == 18 || c.id == 20){
+            out << "${c?.city} Waitlist"
+            return
+        }
+        out << "Register for ${c?.city}"
+    }
+
+
+
 
 }

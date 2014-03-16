@@ -17,29 +17,28 @@
 </div>
 <div class="locations">
   <div class="container">
-    <h2 class="text-center">When / Where</h2>
+    <h2 class="text-center">Spring Tour 2014</h2>
     <div class="row-fluid">
       <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'chicago-2014']">
         <h3>Chicago, IL<br>
-          <small>March 7–8</small></h3>
+          <small>March 7–8 | Sold Out!</small></h3>
         </g:link>
         <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'chicago-2014']">Speakers</g:link></p>
-        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'chicago-2014']">Session Topics</g:link></p>
-        <g:link controller="conference" action="register" params="['tinyName': 'chicago-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
+        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'chicago-2014']">Session Topics</g:link></p></div>
       <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'dc-2014']">
         <h3>Wash<em class="hidden-tablet dc-title">ington</em> DC<br>
-          <small>Mar<em class="hidden-tablet dc-title">ch</em> 28–29</small></h3>
+          <small>Mar<em class="hidden-tablet dc-title">ch</em> 28–29 | Sold Out!</small></h3>
         </g:link>
         <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'dc-2014']">Speakers</g:link></p>
         <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'dc-2014']">Session Topics</g:link></p>
-        <g:link controller="conference" action="register" params="['tinyName': 'dc-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
+        <g:link controller="conference" action="register" params="['tinyName': 'dc-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Waitlist <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
       <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'austin-2014']">
         <h3>Austin, TX<br>
-          <small>April 4–5</small></h3>
+          <small>April 4–5 | Sold Out!</small></h3>
         </g:link>
         <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'austin-2014']">Speakers</g:link></p>
         <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'austin-2014']">Session Topics</g:link></p>
-        <g:link controller="conference" action="register" params="['tinyName': 'austin-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
+        <g:link controller="conference" action="register" params="['tinyName': 'austin-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Waitlist <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
       <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'sanjose-2014']">
         <h3>San Jose, CA<br>
           <small>April 25–26</small></h3>
@@ -63,23 +62,23 @@
     <p class="lead text-center">CocoaConf speakers are thought leaders, authors, and professional iOS and OS X developers. <a href="${createLink(controller: 'speaker', action: 'speakers')}" title="All speakers">Meet them all <i class="ion-ios7-arrow-forward"></i></a></p>
     <p>&nbsp;</p>
     <div class="row-fluid">
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="43" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/danny-greg', file: 'danny-greg.jpg')}" width="170" alt="Speaker image"></g:link>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="125" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/danny-greg', file: 'danny-greg.jpg')}" width="170" alt="Speaker image"></g:link>
         <h3 class="text-center">Danny Greg</h3>
         <h4 class="text-center"><span>GitHub</span></h4>
       </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="130" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/rob-rhyne', file: 'rob-rhyne.jpg')}" width="170" alt="Speaker image"></g:link>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="121" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/rob-rhyne', file: 'rob-rhyne.jpg')}" width="170" alt="Speaker image"></g:link>
         <h3 class="text-center">Rob Rhyne</h3>
         <h4 class="text-center"><span> MartianCraft</span></h4>
       </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="79" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/sam-soffes', file: 'Sam-Soffes.jpg')}" width="170" alt="Speaker image"></g:link>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="137" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/sam-soffes', file: 'Sam-Soffes.jpg')}" width="170" alt="Speaker image"></g:link>
         <h3 class="text-center">Sam Soffes</h3>
         <h4 class="text-center"><span>Full Package</span></h4>
       </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="84" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/brittany-young', file: 'Brittany-Tarvin-Young-square.jpg')}" width="170" alt="Speaker image"></g:link>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="85" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/brittany-young', file: 'Brittany%20Tarvin%20Young%20square.jpeg')}" width="170" alt="Speaker image"></g:link>
         <h3 class="text-center">Brittany Young</h3>
         <h4 class="text-center"><span> New Relic</span></h4>
       </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="132" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/marcus-zarra', file: 'zarra.png')}" width="170" alt="Speaker image"></g:link>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="78" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/marcus-zarra', file: 'zarra.png')}" width="170" alt="Speaker image"></g:link>
         <h3 class="text-center">Marcus Zarra</h3>
         <h4 class="text-center"><span>MartianCraft</span></h4>
       </div>
