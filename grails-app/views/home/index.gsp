@@ -17,7 +17,7 @@
 </div>
 <div class="locations">
   <div class="container">
-    <h2 class="text-center">When / Where</h2>
+    <h2 class="text-center">Spring Tour 2014</h2>
     <div class="row-fluid">
       <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'chicago-2014']">
         <h3>Chicago, IL<br>
