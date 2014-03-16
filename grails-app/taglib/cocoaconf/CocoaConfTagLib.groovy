@@ -89,7 +89,7 @@ class CocoaConfTagLib {
             List conferences = speaker.upcomingConferences()
             println "and the conferences are $conferences"
             if(conferences?.size() > 0){
-                out << """<i class="ion-ios7-location-outline"></i>&nbsp;<span class="location"> ${speaker?.id == 114 ? 'Performing' : 'Speaking'} at """
+                out << """<i class="ion-ios7-location-outline"></i>&nbsp;<span class="location"> ${speaker?.id == 114 ? 'Performing' : 'Speaking'} at CocoaConf in """
             } else {
                 return
             }

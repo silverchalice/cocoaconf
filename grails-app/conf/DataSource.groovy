@@ -18,7 +18,10 @@ environments {
 			username = "cocoaconf"
 			password = "cc5551212"
 			dbCreate = "update"
+
+
             url = "jdbc:mysql://localhost:3306/cocoaDb"
+            //url = "jdbc:mysql://cocoaconf.com:3306/cocoaDb"
             properties {
 				validationQuery="select 1"
 				testWhileIdle=true
