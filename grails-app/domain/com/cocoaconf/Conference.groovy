@@ -24,6 +24,7 @@ class Conference {
     String cityNickname
     String intro
     Boolean scheduleReady = false
+    Boolean callForSpeakers = false
 
     List days
 	String status = PENDING
@@ -52,9 +53,10 @@ class Conference {
 		status nullable:true, inList:[PENDING, ACTIVE, COMPLETED]
 		leads nullable:true
         thumbnail nullable: true
-    cityNickname nullable: false
-    intro nullable: false
-    scheduleReady nullable: true
+        cityNickname nullable: false
+        intro nullable: false
+        scheduleReady nullable: true
+        callForSpeakers nullable: true
     }
 
     def getSpeakers(){
