@@ -2,11 +2,29 @@ package com.cocoaconf
 
 
 class SpeakerController {
+    def springSecurityService
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index = {
         redirect(action: "list", params: params)
+    }
+    
+    def createSpeakerHash = {
+        def speakers = Speaker.list(sort:'lastName')
+        println "There are ${speakers.size()} speakers."
+        speakers.each{speaker ->
+            if (speaker.firstName && speaker.lastName){
+                speaker.speakerHash = "${speaker.firstName[0..1]}${speaker.id}${speaker.lastName[-2..-1]}"
+                speaker.save(flush:true, failOnError:true)
+            }
+        }
+        def speakerHashList = ''
+        speakers = Speaker.list(sort:'lastName')
+        speakers.each{speaker ->
+            speakerHashList += "<html><p>${speaker.firstName} ${speaker.lastName}, ${speaker.email ?: 'no.email.available'}, http://cocoaconf.com/callForSpeakers/${speaker.speakerHash}</p></html>"
+        }
+        render speakerHashList
     }
 
     def list = {
@@ -137,5 +155,40 @@ class SpeakerController {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'speaker.label', default: 'Speaker'), params.id])}"
             redirect(action: "list")
         }
+    }
+
+    def availability = {
+        def speaker = Speaker.findBySpeakerHash(params.speakerHash)
+        def conferenceList = Conference.findAllByCallForSpeakers(true)
+        def availabilities = [:]
+        conferenceList.each{conf ->
+            availabilities.put(conf.id, Availability.findBySpeakerAndConference(speaker, conf))
+        }
+        [speaker:speaker, conferenceList:conferenceList, availabilities:availabilities]
+    }
+
+    def saveAvailability = {
+        params.each{key, val -> println "$key == $val"}
+        def speaker = Speaker.get(params.id)
+        def confIds = params.conferenceIds?.tokenize(',')
+        confIds.each{confId ->
+            def conference = Conference.get(confId)
+            def availability = Availability.findBySpeakerAndConference(speaker, conference)
+            if (!availability){
+                availability = new Availability()
+            }
+            availability.conference = conference
+            availability.speaker = speaker
+            availability.available = params.get("available_${conference.id}") == 'on' ? true : false
+            if (params.get("numSessions_${conference.id}")?.isNumber()){
+                availability.numberOfTalks = params.get("numberOfTalks${conference.id}").toInteger()
+            } else { availability.numberOfTalks = 0}
+            availability.travelHelp = params.get("travelHelp_${conference.id}") == 'on' ? true : false
+            availability.comments = params.get("comments_${conference.id}")
+            if (availability.save(flush:true, failOnError : true)){
+                flash.message = "Thanks!  Hope to see you this fall."
+            }
+        }
+        redirect action:'availability'
     }
 }

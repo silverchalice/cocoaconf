@@ -81,6 +81,13 @@
 	<g:textArea name="sponsorListBlurb" cols="40" rows="5" maxlength="10000" value="${conference?.sponsorListBlurb}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'intro', 'error')} ">
+	<label for="intro">
+		<g:message code="conference.intro.label" default="Intro Blurb" />
+		
+	</label>
+	<g:textArea name="intro" cols="40" rows="5" maxlength="10000" value="${conference?.intro}"/>
+</div>
 
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'featuredSpeakers', 'error')} ">
 	<label for="featuredSpeakers">
@@ -166,4 +173,11 @@
 		<g:message code="conference.status.label" default="Status" />
 	</label>
 	<g:select from="${['pending', 'active', 'completed']}" name="status" value="${conference?.status}" />
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'callForSpeakers', 'error')} ">
+	<label for="callForSpeakers">
+		<g:message code="conference.callForSpeakers.label" default="Call For Speakers?" />
+	</label>
+  <g:checkBox name="callForSpeakers" value="${conference?.callForSpeakers}" />
 </div>

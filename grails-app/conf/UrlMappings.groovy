@@ -229,6 +229,10 @@ class UrlMappings {
 			controller = "remote"
 			action = "getSession"
 		}
+		"/speaker-availability/$speakerHash"{
+			controller = "speaker"
+			action = "availability"
+		}
 		"500"(view:'/error')
 	}
 }
