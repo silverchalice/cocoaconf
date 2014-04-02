@@ -59,10 +59,10 @@ _gaq.push(['_trackPageview']);
             <ul class="dropdown-menu">
               <!--<li class="nav-header">Choose a City</li>
               <li class="divider"></li>-->
-              <li><g:link controller="conference" action="home" params="['tinyName': 'chicago-2014']">Chicago, IL &#8212; <strong>Sold Out</strong></g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'dc-2014']">Washington D.C. &#8212; <strong>Sold Out</strong></g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'austin-2014']">Austin, TX &#8212; <strong>Sold Out</strong></g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'sanjose-2014']">San Jose, CA</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'chicago-2014']">Chicago, IL &#8212; <strong>Sold Out!</strong></g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'dc-2014']">Washington D.C. &#8212; <strong>Sold Out!</strong></g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'austin-2014']">Austin, TX &#8212; <strong>Sold Out!</strong></g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'sanjose-2014']">San Jose, CA &#8212; <strong>Sold Out!</strong></g:link></li>
               <li><g:link controller="conference" action="home" params="['tinyName': 'raleigh-2014']">Raleigh, NC</g:link></li>
             </ul>
           </li>
@@ -100,10 +100,10 @@ _gaq.push(['_trackPageview']);
             <ul class="dropdown-menu">
               <!--<li class="nav-header">Choose a City</li>
               <li class="divider"></li>-->
-              <li><g:link controller="conference" action="home" params="['tinyName': 'chicago-2014']">Chicago, IL &#8212; <strong>Sold Out</strong></g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'dc-2014']">Washington D.C. &#8212; <strong>Sold Out</strong></g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'austin-2014']">Austin, TX &#8212; <strong>Sold Out</strong></g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'sanjose-2014']">San Jose, CA</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'chicago-2014']">Chicago, IL &#8212; <strong>Sold Out!</strong></g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'dc-2014']">Washington D.C. &#8212; <strong>Sold Out!</strong></g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'austin-2014']">Austin, TX &#8212; <strong>Sold Out!</strong></g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'sanjose-2014']">San Jose, CA &#8212; <strong>Sold Out!</strong></g:link></li>
               <li><g:link controller="conference" action="home" params="['tinyName': 'raleigh-2014']">Raleigh, NC</g:link></li>
             </ul>
           </li>
