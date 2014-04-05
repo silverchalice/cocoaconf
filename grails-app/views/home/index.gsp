@@ -36,8 +36,7 @@
           <small>April 4–5 | Sold Out!</small></h3>
         </g:link>
         <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'austin-2014']">Speakers</g:link></p>
-        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'austin-2014']">Session Topics</g:link></p>
-        <g:link controller="conference" action="register" params="['tinyName': 'austin-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Waitlist <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
+        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'austin-2014']">Session Topics</g:link></p></div>
       <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'sanjose-2014']">
         <h3>San Jose, CA<br>
           <small>April 25–26 | Sold Out!</small></h3>
@@ -65,17 +64,17 @@
         <h3 class="text-center">Danny Greg</h3>
         <h4 class="text-center"><span>GitHub</span></h4>
       </div>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="111" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'photo_williams_justin.jpg')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Justin Williams</h3>
+        <h4 class="text-center"><span>Second Gear</span></h4>
+      </div>
       <div class="span2"> <g:link controller="speaker" action="viewDetails" id="121" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/rob-rhyne', file: 'rob-rhyne.jpg')}" width="170" alt="Speaker image"></g:link>
         <h3 class="text-center">Rob Rhyne</h3>
         <h4 class="text-center"><span> MartianCraft</span></h4>
       </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="137" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/sam-soffes', file: 'Sam-Soffes.jpg')}" width="170" alt="Speaker image"></g:link>
-        <h3 class="text-center">Sam Soffes</h3>
-        <h4 class="text-center"><span>Full Package</span></h4>
-      </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="85" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/brittany-young', file: 'Brittany%20Tarvin%20Young%20square.jpeg')}" width="170" alt="Speaker image"></g:link>
-        <h3 class="text-center">Brittany Young</h3>
-        <h4 class="text-center"><span> New Relic</span></h4>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="130" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'laura-savino.jpg')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Laura Savino</h3>
+        <h4 class="text-center"><span> Khan Academy</span></h4>
       </div>
       <div class="span2"> <g:link controller="speaker" action="viewDetails" id="78" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/marcus-zarra', file: 'zarra.png')}" width="170" alt="Speaker image"></g:link>
         <h3 class="text-center">Marcus Zarra</h3>
@@ -89,11 +88,11 @@
     <h2 class="text-center">Sessions</h2>
     <div class="row-fluid">
       <div class="span5">
-        <div class="media"> <g:link controller="conference" action="sessionDetails" params="${[tinyName: 'chicago-2014', slug: 'you-bought-what']}" title="Learn more" class="pull-left hidden-tablet"><img src="${resource(dir: 'images', file: 'justin-williams-bubble.png')}" alt="Speaker image"></g:link>
+        <div class="media"> <g:link controller="conference" action="sessionDetails" params="${[tinyName: 'sanjose-2014', slug: 'uikit-dynamics-penn']}" title="Learn more" class="pull-left hidden-tablet"><img src="${resource(dir: 'images', file: 'jonathan-penn-bubble.png')}" alt="Speaker image"></g:link>
           <div class="media-body">
-            <h3><g:link controller="conference" action="sessionDetails" params="${[tinyName: 'chicago-2014', slug: 'you-bought-what']}" class="muted">You Bought What?! Lessons From Acquiring And Running Glassboard</g:link></h3>
-            <h4><span>by <g:link controller="conference" action="speakerDetails" id="111" params="${[tinyName: 'chicago-2014']}" title="Learn more about this speaker">Justin Williams</g:link></span></h4>
-            <p>Learn as Justin walks you through the process of acquiring a product from a legal, professional, and technical perspective. He'll walk you through the process of dealing with lawyers and contracts, transitioning the technology from the old owner to Second Gear, handling the product announcements, and how he ramped up on new technologies quickly to hit the ground running with Glassboard after the sale announcement. &nbsp;<g:link controller="conference" action="sessionDetails" params="${[tinyName: 'chicago-2014', slug: 'you-bought-what']}">Read more&#8230;</g:link></p>
+            <h3><g:link controller="conference" action="sessionDetails" params="${[tinyName: 'sanjose-2014', slug: 'uikit-dynamics-penn']}" class="muted">Sure, UIKit Dynamics... But Is It A Good Idea?</g:link></h3>
+            <h4><span>by <g:link controller="conference" action="speakerDetails" id="12" params="${[tinyName: 'sanjose-2014']}" title="Learn more about this speaker">Jonathan Penn</g:link></span></h4>
+            <p>The power to build dynamic animations with UIKit Dynamics is intoxicating. No longer are we bound to the cruel taskmasters of deterministic timing functions! Break free! But does this freedom come with it's own yet-to-be–discovered burdens? We'll take a look at what sets UIKit dynamics apart, and try to figure out if it's really useful or not. &nbsp;<g:link controller="conference" action="sessionDetails" params="${[tinyName: 'sanjose-2014', slug: 'uikit-dynamics-penn']}">Read more&#8230;</g:link></p>
           </div>
         </div>
       </div>
