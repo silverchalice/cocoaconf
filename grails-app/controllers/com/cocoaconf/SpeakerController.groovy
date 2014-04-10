@@ -14,7 +14,7 @@ class SpeakerController {
         def speakers = Speaker.list(sort:'lastName')
         println "There are ${speakers.size()} speakers."
         speakers.each{speaker ->
-            if (speaker.firstName && speaker.lastName){
+            if ((!speaker.speakerHash) && (speaker.firstName && speaker.lastName)){
                 speaker.speakerHash = "${speaker.firstName[0..1]}${speaker.id}${speaker.lastName[-2..-1]}"
                 speaker.save(flush:true, failOnError:true)
             }
@@ -22,7 +22,7 @@ class SpeakerController {
         def speakerHashList = ''
         speakers = Speaker.list(sort:'lastName')
         speakers.each{speaker ->
-            speakerHashList += "<html><p>${speaker.firstName} ${speaker.lastName}, ${speaker.email ?: 'no.email.available'}, http://cocoaconf.com/callForSpeakers/${speaker.speakerHash}</p></html>"
+            speakerHashList += "<html><p>${speaker.firstName} ${speaker.lastName}, ${speaker.email ?: 'no.email.available'}, http://cocoaconf.com/speaker-availability/${speaker.speakerHash}</p></html>"
         }
         render speakerHashList
     }
@@ -171,24 +171,30 @@ class SpeakerController {
         params.each{key, val -> println "$key == $val"}
         def speaker = Speaker.get(params.id)
         def confIds = params.conferenceIds?.tokenize(',')
+
         confIds.each{confId ->
             def conference = Conference.get(confId)
+            String sConfId = conference.id.toString()
             def availability = Availability.findBySpeakerAndConference(speaker, conference)
             if (!availability){
                 availability = new Availability()
             }
+            availability.properties = params[sConfId]
             availability.conference = conference
             availability.speaker = speaker
-            availability.available = params.get("available_${conference.id}") == 'on' ? true : false
-            if (params.get("numSessions_${conference.id}")?.isNumber()){
-                availability.numberOfTalks = params.get("numberOfTalks${conference.id}").toInteger()
+/*            println "${conference.id}.available" + ' === ' + params["'${conference.id}'"]?.available
+            availability.available = params[conference.id].available != null
+            if (params[conference.id].numberOfTalks?.isNumber()){
+                availability.numberOfTalks = params[conference.id].numberOfTalks.toInteger()
             } else { availability.numberOfTalks = 0}
-            availability.travelHelp = params.get("travelHelp_${conference.id}") == 'on' ? true : false
-            availability.comments = params.get("comments_${conference.id}")
+            println "travelHelp is ${params[conference.id].travelHelp != null}"
+            availability.travelHelp = params[conference.id].travelHelp != null
+            availability.comments = params[conference.id].comments
+*/
             if (availability.save(flush:true, failOnError : true)){
                 flash.message = "Thanks!  Hope to see you this fall."
             }
         }
-        redirect action:'availability'
+        redirect action:'availability', params: [speakerHash: speaker.speakerHash]
     }
 }

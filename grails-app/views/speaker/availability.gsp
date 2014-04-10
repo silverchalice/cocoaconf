@@ -29,16 +29,17 @@
         <img class="photostrip hidden-phone" src="${resource(dir:'images', file:'img_photostrip_chicago_speaker.jpg')}" alt="Speakers at last year's CocoaConf">
   
         <div class="row-fluid">
+          <div class="message">${flash.message}</div>
           <g:form action="saveAvailability">
             <input type="hidden" name="id" value="${speaker.id}" />
             <input type="hidden" name="conferenceIds" value="${conferenceList.collect{it.id}.join(',')}" />
             <g:each in="${conferenceList}" status="i" var="conference">
                 <table>
                    <tr><td><h3>${conference.city}, ${conference.state} - ${conference.dates}</h3></td></tr>
-                   <tr><td>Available:</td><td><g:checkBox name="available_${conference.id}" value="${availabilities.get(conference.id)?.available}"/></td></tr>
-                   <tr><td>Number of Sessions:</td><td><input type="text" name="numberOfTalks${conference.id}" value="${availabilities.get(conference.id)?.numberOfTalks}"/></td></tr>
-                   <tr><td>Need travel help:</td><td><g:checkBox name="travelHelp_${conference.id}" value="${availabilities.get(conference.id)?.travelHelp}"/></td></tr>
-                   <tr><td>Comments:</td><td><g:textArea name="comments_${conference.id}" value="${availabilities.get(conference.id)?.comments}"/></td></tr>
+                   <tr><td>Available:</td><td><g:select name="${conference.id}.available" value="${availabilities.get(conference.id)?.available}" from="['Yes', 'No', 'Maybe']" noSelection="['No':'Can you join us?']"/></td></tr>
+                   <tr><td>Number of Sessions:</td><td><g:field type="number" name="${conference.id}.numberOfTalks" value="${availabilities.get(conference.id)?.numberOfTalks?.toInteger()}"/></td></tr>
+                   <tr><td>Need travel help:</td><td><g:checkBox name="${conference.id}.travelHelp" value="${availabilities.get(conference.id)?.travelHelp}"/></td></tr>
+                   <tr><td>Comments:</td><td><g:textArea name="${conference.id}.comments" value="${availabilities.get(conference.id)?.comments}"/></td></tr>
                 </table>
                 <p>&nbsp;</p>
             </g:each>

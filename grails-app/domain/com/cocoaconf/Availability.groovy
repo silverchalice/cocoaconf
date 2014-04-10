@@ -4,13 +4,15 @@ class Availability {
 	Conference Conference
 	User user
 	Speaker speaker
-	Boolean available
+	String available
 	Integer numberOfTalks
 	Boolean travelHelp
 	String comments
+	Boolean confirmed = false
 
     static constraints = {
     	user nullable: true
+    	available inList:["Yes", "No", "Maybe"]
     	comments nullable:true, maxSize:10000
     }
 }

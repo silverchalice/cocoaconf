@@ -70,6 +70,13 @@
                             <td valign="top" class="value">${fieldValue(bean: speakerInstance, field: "imagePath")}</td>
                             
                         </tr>
+
+                        <tr class="prop">
+                            <td valign="top" class="name">Speaker Availability Link:</td>
+                            
+                            <td valign="top" class="value">http://cocoaconf.com/speaker-availability/${fieldValue(bean: speakerInstance, field: "speakerHash")}</td>
+                            
+                        </tr>
                     
                     </tbody>
                 </table>
