@@ -12,19 +12,8 @@ class Availability {
 	Boolean confirmed = false
 
     def beforeValidate() {
-
-      if(numberOfTalks != null){
-        numberOfTalks = numberOfTalks?.isNumber() ? numberOfTalks : 0
-      } else {
-        numberOfTalks = 0
-      }
-
-      if(hotelNights != null){
-        hotelNights = hotelNights?.isNumber() ? hotelNights : 0
-      } else {
-        hotelNights = 0
-      }
-
+      numberOfTalks = numberOfTalks ?: 0
+      hotelNights = hotelNights ?: 0
     }
 
     static constraints = {
