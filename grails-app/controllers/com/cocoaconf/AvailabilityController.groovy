@@ -20,6 +20,8 @@ class AvailabilityController {
     }
 
     def save() {
+        //numberOfTalks isn't nullable, but might come in null
+        params.numberOfTalks = params.numberOfTalks ?: 0
         def availabilityInstance = new Availability(params)
         if (!availabilityInstance.save(flush: true)) {
             render(view: "create", model: [availabilityInstance: availabilityInstance])
