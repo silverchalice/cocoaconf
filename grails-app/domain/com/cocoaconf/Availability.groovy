@@ -12,7 +12,11 @@ class Availability {
 	Boolean confirmed = false
 
     def beforeValidate() {
-      numberOfTalks = numberOfTalks.isNumber() ? numberOfTalks : 0
+      if(numberOfTalks){
+        numberOfTalks = numberOfTalks.isNumber() ? numberOfTalks : 0
+      } else {
+        numberOfTalks = 0
+      }
     }
 
     static constraints = {
