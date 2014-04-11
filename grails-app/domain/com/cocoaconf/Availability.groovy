@@ -13,13 +13,13 @@ class Availability {
 
     def beforeValidate() {
 
-      if(numberOfTalks){
+      if(numberOfTalks != null){
         numberOfTalks = numberOfTalks?.isNumber() ? numberOfTalks : 0
       } else {
         numberOfTalks = 0
       }
 
-      if(hotelNights){
+      if(hotelNights != null){
         hotelNights = hotelNights?.isNumber() ? hotelNights : 0
       } else {
         hotelNights = 0
