@@ -11,6 +11,10 @@ class Availability {
 	String comments
 	Boolean confirmed = false
 
+    def beforeValidate() {
+      numberOfTalks = numberOfTalks.isNumber() ? numberOfTalks : 0
+    }
+
     static constraints = {
     	user nullable: true
     	available inList:["Yes", "No", "Maybe"]
