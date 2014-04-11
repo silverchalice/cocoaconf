@@ -7,6 +7,7 @@ class Availability {
 	String available
 	Integer numberOfTalks
 	Boolean travelHelp
+	Integer hotelNights=0
 	String comments
 	Boolean confirmed = false
 

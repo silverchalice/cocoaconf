@@ -168,7 +168,7 @@ class SpeakerController {
     }
 
     def saveAvailability = {
-        params.each{key, val -> println "$key == $val"}
+        //params.each{key, val -> println "$key == $val"}
         def speaker = Speaker.get(params.id)
         def confIds = params.conferenceIds?.tokenize(',')
 
