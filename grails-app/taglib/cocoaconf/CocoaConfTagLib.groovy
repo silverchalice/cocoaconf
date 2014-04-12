@@ -171,7 +171,11 @@ class CocoaConfTagLib {
         } else if(attrs.id == 20){
             out << "CocoaConf Mini Austin is sold out!"
             return
+        } else if(attrs.id == 22 || attrs.id == 23 || attrs.id == 24 || attrs.id == 25 || attrs.id == 26){
+            out << ""
+            return
         }
+
         def c = Conference.get(attrs.id)
         if(c.status == Conference.ACTIVE){
             out << "Ticket sales end in "
