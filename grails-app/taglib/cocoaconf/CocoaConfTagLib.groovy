@@ -53,7 +53,7 @@ class CocoaConfTagLib {
 
     def conferenceImage = { attrs ->
         def conference = Conference.get(attrs.id)
-        def images = [17 : 'img_chicago_bean_small.jpg', 18 : 'img_washington_small_02.jpg', 19 : 'img_sanjose_small_01.jpg', 20 : 'img_austin_small_01.jpg', 21 : 'img_raleigh_small_01.jpg']
+        def images = [17 : 'img_chicago_bean_small.jpg', 18 : 'img_washington_small_02.jpg', 19 : 'img_sanjose_small_01.jpg', 20 : 'img_austin_small_01.jpg', 21 : 'img_raleigh_small_01.jpg', 22: 'img_columbus_small_01.jpg', 23: 'img_lasvegas_small_01.jpg', 24: 'img_seattle_small_01.jpg', 25: 'img_boston_small_02.jpg', 26: 'img_atlanta_small_01.jpg']
         if(conference && conference.status == Conference.ACTIVE){
             out << '<img class="img-rounded" src="' + g.resource(dir: 'images', file: images[conference.id.toInteger()]) + '" alt="Photo (cc) by ___ on Flickr" />'
         } else {
