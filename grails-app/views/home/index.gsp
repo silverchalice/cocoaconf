@@ -17,40 +17,43 @@
 </div>
 <div class="locations">
   <div class="container">
-    <h2 class="text-center">Spring Tour 2014</h2>
+    <h2 class="text-center">Fall Tour 2014</h2>
     <div class="row-fluid">
-      <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'chicago-2014']">
-        <h3>Chicago, IL<br>
-          <small>March 7–8 | Sold Out!</small></h3>
+      <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'columbus-2014']">
+        <h3>Columbus, OH<br>
+          <small>August 8–9</small></h3>
         </g:link>
-        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'chicago-2014']">Speakers</g:link></p>
-        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'chicago-2014']">Session Topics</g:link></p></div>
-      <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'dc-2014']">
-        <h3>Wash<em class="hidden-tablet dc-title">ington</em> DC<br>
-          <small>Mar<em class="hidden-tablet dc-title">ch</em> 28–29 | Sold Out!</small></h3>
+        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'columbus-2014']">Speakers</g:link></p>
+        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'columbus-2014']">Sessions</g:link></p>
+        <g:link controller="conference" action="register" params="['tinyName': 'columbus-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
+      <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'lasvegas-2014']">
+        <h3>Las Vegas, NV<br>
+          <small>September 19–20</small></h3>
         </g:link>
-        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'dc-2014']">Speakers</g:link></p>
-        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'dc-2014']">Session Topics</g:link></p></div>
-      <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'austin-2014']">
-        <h3>Austin, TX<br>
-          <small>April 4–5 | Sold Out!</small></h3>
+        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'lasvegas-2014']">Speakers</g:link></p>
+        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'lasvegas-2014']">Sessions</g:link></p>
+        <g:link controller="conference" action="register" params="['tinyName': 'lasvegas-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
+      <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'seattle-2014']">
+        <h3>Seattle, WA<br>
+          <small>October 17–18</small></h3>
         </g:link>
-        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'austin-2014']">Speakers</g:link></p>
-        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'austin-2014']">Session Topics</g:link></p></div>
-      <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'sanjose-2014']">
-        <h3>San Jose, CA<br>
-          <small>April 25–26 | Sold Out!</small></h3>
+        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'seattle-2014']">Speakers</g:link></p>
+        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'seattle-2014']">Sessions</g:link></p>
+        <g:link controller="conference" action="register" params="['tinyName': 'seattle-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
+      <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'boston-2014']">
+        <h3>Boston, MA<br>
+          <small>November 14–15</small></h3>
         </g:link>
-        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'sanjose-2014']">Speakers</g:link></p>
-        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'sanjose-2014']">Session Topics</g:link></p>
-        <g:link controller="conference" action="register" params="['tinyName': 'sanjose-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Waitlist <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
-      <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'raleigh-2014']">
-        <h3>Raleigh, NC<br>
-          <small>May 9–10</small></h3>
+        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'boston-2014']">Speakers</g:link></p>
+        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'boston-2014']">Sessions</g:link></p>
+        <g:link controller="conference" action="register" params="['tinyName': 'boston-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
+      <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'atlanta-2014']">
+        <h3>Atlanta, GA<br>
+          <small>December 5–6</small></h3>
         </g:link>
-        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'raleigh-2014']">Speakers</g:link></p>
-        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'raleigh-2014']">Session Topics</g:link></p>
-        <g:link controller="conference" action="register" params="['tinyName': 'raleigh-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
+        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'atlanta-2014']">Speakers</g:link></p>
+        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'atlanta-2014']">Sessions</g:link></p>
+        <g:link controller="conference" action="register" params="['tinyName': 'atlanta-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
     </div>
   </div>
 </div>
@@ -60,29 +63,30 @@
     <p class="lead text-center">CocoaConf speakers are thought leaders, authors, and professional iOS and OS X developers. <a href="${createLink(controller: 'speaker', action: 'speakers')}" title="All speakers">Meet them all <i class="ion-ios7-arrow-forward"></i></a></p>
     <p>&nbsp;</p>
     <div class="row-fluid">
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="125" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/danny-greg', file: 'danny-greg.jpg')}" width="170" alt="Speaker image"></g:link>
-        <h3 class="text-center">Danny Greg</h3>
-        <h4 class="text-center"><span>GitHub</span></h4>
-      </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="111" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'photo_williams_justin.jpg')}" width="170" alt="Speaker image"></g:link>
-        <h3 class="text-center">Justin Williams</h3>
-        <h4 class="text-center"><span>Second Gear</span></h4>
-      </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="121" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/rob-rhyne', file: 'rob-rhyne.jpg')}" width="170" alt="Speaker image"></g:link>
-        <h3 class="text-center">Rob Rhyne</h3>
-        <h4 class="text-center"><span> MartianCraft</span></h4>
-      </div>
       <div class="span2"> <g:link controller="speaker" action="viewDetails" id="130" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'laura-savino.jpg')}" width="170" alt="Speaker image"></g:link>
         <h3 class="text-center">Laura Savino</h3>
         <h4 class="text-center"><span> Khan Academy</span></h4>
       </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="78" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/marcus-zarra', file: 'zarra.png')}" width="170" alt="Speaker image"></g:link>
-        <h3 class="text-center">Marcus Zarra</h3>
-        <h4 class="text-center"><span>MartianCraft</span></h4>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="104" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/daniel-jalkut', file: 'Jalkut1.jpg')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Daniel Jalkut</h3>
+        <h4 class="text-center"><span>Red Sweater</span></h4>
+      </div>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="58" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/brent-simmons', file: 'BrentSimmons2.jpg')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Brent Simmons</h3>
+        <h4 class="text-center"><span> Q Branch</span></h4>
+      </div>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="52" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/jaimee-newberry', file: 'JaimeeNewberry.JPG')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Jaimee Newberry</h3>
+        <h4 class="text-center"><span>Bests.com</span></h4>
+      </div>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="50" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'mattt_T.jpeg')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Mattt Thompson</h3>
+        <h4 class="text-center"><span>Panic Inc</span></h4>
       </div>
     </div>
   </div>
 </div>
+<!--
 <div class="sessions">
   <div class="container">
     <h2 class="text-center">Sessions</h2>
@@ -107,20 +111,21 @@
       </div>
     </div>
     <hr>
-    <p class="text-center">View sessions at &nbsp; <g:link controller="conference" action="sessions" params="${[tinyName: 'chicago-2014']}">CocoaConf Chicago</g:link> &nbsp; / &nbsp; <g:link controller="conference" action="sessions" params="${[tinyName: 'dc-2014']}">CocoaConf D.C.</g:link> &nbsp; / &nbsp; <g:link controller="conference" action="sessions" params="${[tinyName: 'austin-2014']}">CocoaConf Mini Austin</g:link> &nbsp; / &nbsp; <g:link controller="conference" action="sessions" params="${[tinyName: 'sanjose-2014']}">CocoaConf San Jose</g:link> &nbsp; / &nbsp; <g:link controller="conference" action="sessions" params="${[tinyName: 'raleigh-2014']}">CocoaConf Mini Raleigh <i class="ion-ios7-arrow-forward"></i></g:link></p>
+    <p class="text-center">View sessions at &nbsp; <g:link controller="conference" action="sessions" params="${[tinyName: 'columbus-2014']}">CocoaConf Columbus</g:link> &nbsp; / &nbsp; <g:link controller="conference" action="sessions" params="${[tinyName: 'lasvegas-2014']}">CocoaConf Las Vegas</g:link> &nbsp; / &nbsp; <g:link controller="conference" action="sessions" params="${[tinyName: 'seattle-2014']}">CocoaConf Seattle</g:link> &nbsp; / &nbsp; <g:link controller="conference" action="sessions" params="${[tinyName: 'boston-2014']}">CocoaConf Boston</g:link> &nbsp; / &nbsp; <g:link controller="conference" action="sessions" params="${[tinyName: 'atlanta-2014']}">CocoaConf Atlanta <i class="ion-ios7-arrow-forward"></i></g:link></p>
   </div>
 </div>
+-->
 <div class="comments">
   <div class="container">
     <h2 class="text-center">Comments</h2>
     <blockquote>
-      <p class="quotation">“<em>All the #cocoaconf presenters are top shelf.</em> They present better than most marketing pros.”</p>
-      <p class="source"><img src="${resource(dir: 'images', file: 'john-caccavale.jpg')}" alt="John photo" class="pull-left img-circle"> <cite>John Caccavale</cite><br> <a href="https://twitter.com/JohnCaccavale">@JohnCaccavale</a> </p>
+      <p class="quotation">“If you haven’t attended a @cocoaconf before, seriously consider it. <em>That was 2 days of awesome.</em>”</p>
+      <p class="source"><img src="${resource(dir: 'images', file: 'parrots.jpg')}" alt="Curtis photo" class="pull-left img-circle"> <cite>Curtis Herbert</cite><br> <a href="https://twitter.com/parrots">@parrots</a> </p>
     </blockquote>
     <blockquote>
-      <p class="quotation">“To my surprise, my favorite moments of the conference weren’t the (admittedly fantastic) technical sessions I attended&#8230; It was nothing short of transformative to be <em>surrounded by people who were all passionate</em> about the same things I am.”</p>
-      <p class="source"><img src="${resource(dir: 'images', file: 'tom-burns.jpg')}" alt="Tom photo" class="pull-left img-circle"><cite>Tom Burns</cite><br>
-        <a href="http://tomburns.net">[[TBNBlog alloc] init];</a> </p>
+      <p class="quotation">“<em>If you ever have a chance to attend a CocoaConf near you, you should without hesitation do so,</em> doubly so if you are like me 3 years ago and looking for inspiration on what you want your career to become.”</p>
+      <p class="source"><img src="${resource(dir: 'images', file: 'robert-haworth.jpg')}" alt="Robert photo" class="pull-left img-circle"><cite>Robert Haworth</cite><br>
+        <a href="http://robertchaworth.com">Another iOS Blaaahg</a> </p>
     </blockquote>
   </div>
 </div>
