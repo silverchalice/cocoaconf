@@ -58,7 +58,7 @@
       <p class="lead">${conference.intro}</p>
     </div>
     <div class="span3">
-      <g:if test="${conference.id != 19}">
+      <g:if test="${conference.id != 19 && conference.id != 21}">
         <h2 style="text-align: center;"><small>Early Bird discounts available!</small></h2>
       </g:if>
       <g:if test="${conference.status == Conference.ACTIVE}">
