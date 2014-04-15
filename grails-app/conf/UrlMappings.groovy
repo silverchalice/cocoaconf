@@ -21,6 +21,11 @@ class UrlMappings {
 			controller = "home"
 			action = "kleinfamily"
 		}
+
+		"/credits"{
+			controller = "home"
+			action = "credits"
+		}
 		
 		"/register"{
 			controller = "conference"
