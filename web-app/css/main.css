@@ -90,7 +90,7 @@ body.raleigh {
     background-image: url(../images/bg_raleigh_02.jpg), url(../images/bg_main.jpg);
 }
 body.columbus {
-    background-image: url(../images/bg_columbus_01.jpg), url(../images/bg_main.jpg);
+    background-image: url(../images/bg_columbus_01_darker.jpg), url(../images/bg_main.jpg);
 }
 body.lasvegas {
     background-image: url(../images/bg_lasvegas_01.jpg), url(../images/bg_main.jpg);
@@ -138,7 +138,7 @@ body.home .about {
 	border-bottom:1px solid #444;
 }
 body.home .locations {
-	background:url(../images/bg_raleigh_02.jpg) no-repeat center bottom;
+	background:url(../images/bg_boston_01.jpg) no-repeat center bottom;
     background-size: auto 100%;	
 	background-color:#333333;
 }
