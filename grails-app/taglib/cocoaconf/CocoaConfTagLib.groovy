@@ -64,6 +64,12 @@ class CocoaConfTagLib {
     def cityName = { attrs ->
         def cityName
         switch(attrs.id) {
+            case 19:
+                cityName = "San Jose, CA &#8212; <strong>Sold Out!</strong>"
+                break
+            case 21:
+                cityName = "Raleigh, NC"
+                break
             case 22:
                 cityName = "Columbus, OH"
                 break
