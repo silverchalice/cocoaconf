@@ -114,8 +114,12 @@ class HomeController {
     }
 
     def prospectus = {
-      redirect(uri: resource(dir: 'files', file: 'CocoaConf-Sponsorship-Brochure-Fall-2014.pdf'))
+      redirect(uri: resource(dir: 'files', file: 'CocoaConf_Fall 2014_Sponsorship_Brochure.pdf'))
       return
+    }
+
+    def staytuned = {
+      render view: 'staytuned'
     }
 
 
