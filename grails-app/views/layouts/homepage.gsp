@@ -83,7 +83,7 @@ _gaq.push(['_trackPageview']);
 <div class="header">
   <div class="container">
     <h1>The developer conference <br /> for those who think different.</h1>
-    <h3><span class="hidden-phone hidden-tablet">16 events / 113 speakers / 1,327 attendees / Since 2011 &nbsp; </span>
+    <h3><span class="hidden-phone hidden-tablet">18 events / 126 speakers / 1,600+ attendees / Since 2011 &nbsp; </span>
       <!-- <button class="btn btn-large btn-flat-gray">Register &nbsp;<i class="ion-ios7-arrow-right"></i></button> -->
     </h3>
   </div>
