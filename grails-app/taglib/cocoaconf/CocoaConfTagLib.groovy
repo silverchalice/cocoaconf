@@ -64,20 +64,20 @@ class CocoaConfTagLib {
     def cityName = { attrs ->
         def cityName
         switch(attrs.id) {
-            case 17:
-                cityName = "Chicago, IL &#8212; <strong>Sold Out!</strong>"
+            case 22:
+                cityName = "Columbus, OH"
                 break
-            case 18:
-                cityName = "Washington D.C. &#8212; <strong>Sold Out!</strong>"
+            case 23:
+                cityName = "Las Vegas, NV"
                 break
-            case 19:
-                cityName = "San Jose, CA &#8212; <strong>Sold Out!</strong>"
+            case 24:
+                cityName = "Seattle, WA"
                 break
-            case 20:
-                cityName = "Austin, TX &#8212; <strong>Sold Out!</strong>"
+            case 25:
+                cityName = "Boston, MA"
                 break
-            case 21:
-                cityName = "Raleigh, NC"
+            case 26:
+                cityName = "Atlanta, GA"
                 break
         }
         out << cityName
@@ -188,10 +188,10 @@ class CocoaConfTagLib {
 
     def registerButton = { attrs ->
         def c = Conference.get(attrs.id)
-        if(c.id != 21){
+        /*if(c.id != 21){
             out << "${c?.city} Waitlist"
             return
-        }
+        }*/
         out << "Register for ${c?.city}"
     }
 
