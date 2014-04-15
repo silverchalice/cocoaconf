@@ -99,6 +99,8 @@
         <p><a href="${partner?.url}"><img width="200" src="${resource(dir: 'images', file: partner?.logoFile)}" alt="${partner?.name} logo"></a></p>
         <hr>
       </g:each>
+      <img src="${resource(dir: 'images', file: 'beaker.gif')}" alt="Status" />
+      <hr>
       <p><g:link controller="home" action="prospectus" class="btn btn-flat-gray"><i class="ion-document-text"></i>&nbsp; Sponsor Opportunities</g:link></p>
     </div>
   </div>
