@@ -58,7 +58,9 @@
       <p class="lead">${conference.intro}</p>
     </div>
     <div class="span3">
-      <h2 style="text-align: center;"><small>Early Bird discounts available!</small></h2>
+      <g:if test="${conference.id != 19}">
+        <h2 style="text-align: center;"><small>Early Bird discounts available!</small></h2>
+      </g:if>
       <g:if test="${conference.status == Conference.ACTIVE}">
         <g:link controller="conference" action="register" params='["tinyName": "${conference?.tinyName}"]' class="button"><button class="btn btn-block btn-large btn-flat"><cc:registerButton id="${conference?.id}" /> <i class="ion-ios7-arrow-forward"></i></button></g:link>
         

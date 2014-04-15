@@ -194,10 +194,10 @@ class CocoaConfTagLib {
 
     def registerButton = { attrs ->
         def c = Conference.get(attrs.id)
-        /*if(c.id != 21){
+        if(c.id == 19){
             out << "${c?.city} Waitlist"
             return
-        }*/
+        }
         out << "Register for ${c?.city}"
     }
 
