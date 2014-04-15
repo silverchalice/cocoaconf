@@ -59,11 +59,11 @@ _gaq.push(['_trackPageview']);
             <ul class="dropdown-menu">
               <!--<li class="nav-header">Choose a City</li>
               <li class="divider"></li>-->
-              <li><g:link controller="conference" action="home" params="['tinyName': 'chicago-2014']">Chicago, IL &#8212; <strong>Sold Out!</strong></g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'dc-2014']">Washington D.C. &#8212; <strong>Sold Out!</strong></g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'austin-2014']">Austin, TX &#8212; <strong>Sold Out!</strong></g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'sanjose-2014']">San Jose, CA &#8212; <strong>Sold Out!</strong></g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'raleigh-2014']">Raleigh, NC</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'columbus-2014']">Columbus, OH</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'lasvegas-2014']">Las Vegas, NV</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'seattle-2014']">Seattle, WA</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'boston-2014']">Boston, MA</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'atlanta-2014']">Atlanta, GA</g:link></li>
             </ul>
           </li>
         </ul>
@@ -100,11 +100,11 @@ _gaq.push(['_trackPageview']);
             <ul class="dropdown-menu">
               <!--<li class="nav-header">Choose a City</li>
               <li class="divider"></li>-->
-              <li><g:link controller="conference" action="home" params="['tinyName': 'chicago-2014']">Chicago, IL &#8212; <strong>Sold Out!</strong></g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'dc-2014']">Washington D.C. &#8212; <strong>Sold Out!</strong></g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'austin-2014']">Austin, TX &#8212; <strong>Sold Out!</strong></g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'sanjose-2014']">San Jose, CA &#8212; <strong>Sold Out!</strong></g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'raleigh-2014']">Raleigh, NC</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'columbus-2014']">Columbus, OH</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'lasvegas-2014']">Las Vegas, NV</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'seattle-2014']">Seattle, WA</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'boston-2014']">Boston, MA</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'atlanta-2014']">Atlanta, GA</g:link></li>
             </ul>
           </li>
         </ul>
@@ -123,7 +123,7 @@ _gaq.push(['_trackPageview']);
 </div>
 <footer>
   <div class="container">
-    <p class="text-right">&copy; 2014 Simply Cocoa, LLC. &nbsp;| &nbsp; About the <a href="${createLink(controller: 'home', action: 'kleinfamily')}" title="Learn more about the Kleins">Klein Family</a> &nbsp; | &nbsp; Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a></p>
+    <p class="text-right">&copy; 2014 Simply Cocoa, LLC. &nbsp;| &nbsp; About the <a href="${createLink(controller: 'home', action: 'kleinfamily')}" title="Learn more about the Kleins">Klein Family</a> &nbsp; | &nbsp; <a href="${createLink(controller: 'home', action: 'credits')}">Credits</a> &nbsp; | &nbsp; Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a></p>
   </div>
 </footer>
 </div>
