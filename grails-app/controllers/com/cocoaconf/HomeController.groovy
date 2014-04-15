@@ -122,5 +122,8 @@ class HomeController {
       render view: 'staytuned'
     }
 
+    def notfound = {
+      redirect action: 'staytuned'
+    }
 
 }
