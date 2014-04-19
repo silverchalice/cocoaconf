@@ -233,26 +233,31 @@ class ConferenceController {
     }
 
     def speakerDetails = {
-      println "entering speakerDetails with params $params"
-//	    params.each{key, val -> println "$key == $val"}
-	    def conf = params?.tinyName ? Conference.findByTinyName(params.tinyName) : Conference.get(params.confId)
-	    def speaker = Speaker.get(params.id)
-      if(!conf.speakers*.id.contains(speaker?.id)){
-        redirect controller: "conference", action: "speakers", params: [tinyName: conf.tinyName]
-        return
-      }
-	    def speakerPresentations = conf?.sessions?.findAll{it?.presentation?.speaker?.id == speaker?.id}.collect{it?.presentation}.sort { it.title }
-	    def feedEntries = FeedEntry.findAllBySpeakerId(speaker?.id, [max:3, sort:'published', order:'desc'])
-//	    speakerPresentations.each{println it}
-      println "the conf is $conf; the speaker is $speaker"
-	    if (conf && speaker){
-		    return[conference:conf, speaker:speaker, 
-		           speakerPresentations:speakerPresentations,
-		           feedEntries: feedEntries]
-	    }	 
-	    else {
-	        redirect controller: "home"
-	    }
+      if (params.id.isLong()){
+          println "entering speakerDetails with params $params"
+    //	  params.each{key, val -> println "$key == $val"}
+    	  def conf = params?.tinyName ? Conference.findByTinyName(params.tinyName) : Conference.get(params.confId)
+    	  def speaker = Speaker.get(params.id)
+          if(!conf.speakers*.id.contains(speaker?.id)){
+            redirect controller: "conference", action: "speakers", params: [tinyName: conf.tinyName]
+            return
+          }
+    	    def speakerPresentations = conf?.sessions?.findAll{it?.presentation?.speaker?.id == speaker?.id}.collect{it?.presentation}.sort { it.title }
+    	    def feedEntries = FeedEntry.findAllBySpeakerId(speaker?.id, [max:3, sort:'published', order:'desc'])
+    //	    speakerPresentations.each{println it}
+          println "the conf is $conf; the speaker is $speaker"
+    	    if (conf && speaker){
+    		    return[conference:conf, speaker:speaker, 
+    		           speakerPresentations:speakerPresentations,
+    		           feedEntries: feedEntries]
+    	    }	 
+    	    else {
+    	        redirect controller: "home"
+    	    }
+        }
+        else{
+            redirect controller: "home"
+        }
     }
 
     def sessionDetails = {
