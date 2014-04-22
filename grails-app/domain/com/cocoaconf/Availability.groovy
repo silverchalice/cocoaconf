@@ -2,7 +2,6 @@ package com.cocoaconf
 
 class Availability {
 	Conference Conference
-	User user
 	Speaker speaker
 	String available
 	Integer numberOfTalks
@@ -17,7 +16,6 @@ class Availability {
     }
 
     static constraints = {
-    	user nullable: true
     	available inList:["Yes", "No", "Maybe"]
     	comments nullable:true, maxSize:10000
     }
