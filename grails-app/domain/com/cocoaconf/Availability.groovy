@@ -2,7 +2,6 @@ package com.cocoaconf
 
 class Availability {
 	Conference Conference
-	User user
 	Speaker speaker
 	String available
 	Integer numberOfTalks
