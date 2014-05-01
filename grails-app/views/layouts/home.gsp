@@ -59,8 +59,7 @@ _gaq.push(['_trackPageview']);
             <ul class="dropdown-menu">
               <!--<li class="nav-header">Choose a City</li>
               <li class="divider"></li>-->
-              <li><g:link controller="conference" action="home" params="['tinyName': 'sanjose-2014']">San Jose, CA &#8212; <strong>Sold Out!</strong></g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'raleigh-2014']">Raleigh, NC</g:link></li>
+              <li><g:link controller="conference" action="home" params="['tinyName': 'raleigh-2014']">Raleigh, NC &#8212; <strong>Sold Out!</strong></g:link></li>
               <li class="${conference?.id == 22 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'columbus-2014']">Columbus, OH</g:link></li>
               <li class="${conference?.id == 23 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'lasvegas-2014']">Las Vegas, NV</g:link></li>
               <li class="${conference?.id == 24 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'seattle-2014']">Seattle, WA</g:link></li>
