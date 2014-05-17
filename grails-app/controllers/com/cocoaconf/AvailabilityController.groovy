@@ -10,11 +10,28 @@ class AvailabilityController {
         redirect(action: "list", params: params)
     }
 
-    def list(Integer max) {
-        params.max = Math.min(max ?: 10, 100)
-        [availabilityInstanceList: Availability.list(params), availabilityInstanceTotal: Availability.count()]
+    def list() {
+        [availabilityInstance: Availability.list(), availabilityInstanceTotal: Availability.count()]
     }
 
+    def byConference(){
+        def list = Availability.findAllByAvailableNotEqual('No')
+        def map = list.groupBy([{it.conference}, {it.speaker}])
+        [map:map]
+    }
+    
+/*    def byConferenceExport(){
+        def list = Availability.findAllByAvailableNotEqual('No')
+        def map = list.groupBy([{it.conference}, {it.speaker}])
+        def data = new File('/Users/davidklein/Downloads/availability.csv')
+        map.each{conf, confMap ->
+            confMap.each{spkr, availability[0] -> 
+                data.writeln "$conf, $spkr, ${availability.available}, ${availability.numberOfTalks}, ${availability.travelHelp}, ${availability.hotelNights}, ${availability.confirmed}, ${availability.comments}"
+            }
+        }
+        render "Done"
+    }
+*/
     def create() {
         [availabilityInstance: new Availability(params)]
     }

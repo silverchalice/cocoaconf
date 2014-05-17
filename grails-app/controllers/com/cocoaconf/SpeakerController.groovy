@@ -182,15 +182,6 @@ class SpeakerController {
             availability.properties = params[sConfId]
             availability.conference = conference
             availability.speaker = speaker
-/*            println "${conference.id}.available" + ' === ' + params["'${conference.id}'"]?.available
-            availability.available = params[conference.id].available != null
-            if (params[conference.id].numberOfTalks?.isNumber()){
-                availability.numberOfTalks = params[conference.id].numberOfTalks.toInteger()
-            } else { availability.numberOfTalks = 0}
-            println "travelHelp is ${params[conference.id].travelHelp != null}"
-            availability.travelHelp = params[conference.id].travelHelp != null
-            availability.comments = params[conference.id].comments
-*/
             if (availability.save(flush:true, failOnError : true)){
                 flash.message = "Thanks!  Hope to see you this fall."
             }

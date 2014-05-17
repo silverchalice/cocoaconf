@@ -17,6 +17,11 @@ class UrlMappings {
 			action = "alt"
 		}
 
+		"/podcast/$id?"{
+			controller = "podcast"
+			action = "index"
+		}
+
 		"/family"{
 			controller = "home"
 			action = "kleinfamily"
