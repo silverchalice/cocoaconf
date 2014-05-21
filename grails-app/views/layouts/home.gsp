@@ -46,7 +46,7 @@ _gaq.push(['_trackPageview']);
 <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'MyFontsWebfontsKit.css')}">
 </head>
 
-<body class="${conference?.city?.toLowerCase()?.replaceAll("\\s", "")} secondary ${pageProperty(name: 'meta.division')}">
+<body class="${conference?.city?.toLowerCase()?.replaceAll("\\s", "") ?: 'atlanta'} secondary ${pageProperty(name: 'meta.division')}">
 <a name="top"></a>
 <div class="navbar navbar-inverse navbar-static-top">
   <div class="navbar-inner">
