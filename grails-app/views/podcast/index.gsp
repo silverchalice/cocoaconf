@@ -20,6 +20,9 @@
     <ul class="nav hidden-desktop visible-phone visible-tablet">
         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podcast Links &nbsp; <i class="ion-ios7-arrow-down"></i></a>
             <ul class="dropdown-menu">
+                <li><a href="mailto:podcast@cocoaconf.com">Feedback</a></li>
+                <li><a href="">iTunes</a></li>
+                <li><a href="">RSS</a></li>
                 <li><a href="http://twitter.com/cocoaconfcast">Twitter</a></li>
             </ul>
         </li>
@@ -31,11 +34,10 @@
     <div class="span2 hidden-phone hidden-tablet">
       <h3>Podcast Links</h3>
       <ul class="nav nav-list">
-        <li><a href="http://twitter.com/cocoaconfcast"><i class="ion-social-twitter-outline"></i>Twitter</a></li>
-        <li><a href="http://twitter.com/cocoaconfcast"><i class="ion-social-twitter-outline"></i>Twitter</a></li>
-        <li><a href="http://twitter.com/cocoaconfcast"><i class="ion-social-twitter-outline"></i>Twitter</a></li>
-        <li><a href="http://twitter.com/cocoaconfcast"><i class="ion-social-twitter-outline"></i>Twitter</a></li>
-        <li><a href="http://twitter.com/cocoaconfcast"><i class="ion-social-twitter-outline"></i>Twitter</a></li>
+        <li <a href="mailto:podcast@cocoaconf.com"><i class="ion-ios7-email-outline"></i>Feedback</a></li>
+        <li <a href=""><i class="ion-ipod"></i>iTunes</a></li>
+        <li <a href=""><i class="ion-social-rss-outline"></i>RSS</a></li>
+        <li <a href="http://twitter.com/cocoaconfcast"><i class="ion-social-twitter-outline"></i>Twitter</a></li>
       </ul>
     </div>
     <div class="span8">
