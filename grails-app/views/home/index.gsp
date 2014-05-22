@@ -143,7 +143,7 @@
     <div class="row-fluid">
       <div class="span3"><a href="https://github.com"><img class="center" width="200" src="${resource(dir: 'images', file: 'github-white.png')}" alt="GitHub logo"></a></div>
       <div class="span3"><a href="http://www.macminicolo.net"><img class="center" width="200" src="${resource(dir: 'images', file: 'mac_mini_colo.png')}" alt="Wiley logo"></a></div>
-      <div class="span4"><a href="http://revealapp.com"><img class="center" width="200" src="${resource(dir: 'images', file: 'reveal-logo-white.png')}" alt="Reveal logo"></a></div>
+      <div class="span4"><a href="http://www.crittercism.com/"><img class="center" width="500" src="${resource(dir: 'images', file: 'white-Crittercism.png')}" alt="Crittercism logo"></a></div>
     </div>
   </div>
 </div>
