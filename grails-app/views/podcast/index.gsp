@@ -35,10 +35,11 @@
     <div class="span2 hidden-phone hidden-tablet">
       <h3>Podcast Links</h3>
       <ul class="nav nav-list">
-        <li <a href="mailto:podcast@cocoaconf.com"><i class="ion-ios7-email-outline"></i>Feedback</a></li>
-        <li <a href=""><i class="ion-ipod"></i>iTunes</a></li>
-        <li <a href=""><i class="ion-social-rss-outline"></i>RSS</a></li>
-        <li <a href="http://twitter.com/cocoaconfcast"><i class="ion-social-twitter-outline"></i>Twitter</a></li>
+        <li> <a href="mailto:podcast@cocoaconf.com"><i class="ion-ios7-email-outline"></i> Feedback</a></li>
+        <li> <a href=""><i class="ion-ipod"></i> iTunes</a></li>
+        <li> <a href=""><i class="ion-social-rss-outline"></i> RSS</a></li>
+        <li> <a href="http://twitter.com/cocoaconfcast"><i class="ion-social-twitter-outline"></i> Twitter</a></li>
+        <li><a href="skype:cocoaconf.podcast?call"><i class="ion-social-skype-outline"></i> Skype Survey Line</a></li>
       </ul>
     </div>
     <div class="span8">
