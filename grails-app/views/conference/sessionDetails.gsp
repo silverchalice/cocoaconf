@@ -36,7 +36,7 @@
     </div>
     <div class="span8">
       <ul class="media-list">
-        <li class="media"> <g:link class="pull-left" controller="conference" action="speakerDetails" params="${['tinyName': conference.tinyName]}"> <img class="media-object img-circle" width="170" src="${speaker.imagePath.startsWith('/') ? speaker.imagePath : '/' + speaker.imagePath}" alt="Speaker photo"> </g:link>
+        <li class="media"> <img class="media-object img-circle" width="170" src="${speaker.imagePath.startsWith('/') ? speaker.imagePath : '/' + speaker.imagePath}" alt="Speaker photo"> 
           <div class="media-body">
             <h2 class="media-heading">${presentation?.title}</h2>
             <hr>
