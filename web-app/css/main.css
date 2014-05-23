@@ -104,6 +104,9 @@ body.boston {
 body.atlanta {
     background-image: url(../images/bg_atlanta_02.jpg), url(../images/bg_main.jpg);
 }
+body.podcast {
+    background-image: url(../images/bg_podcast_03.jpg), url(../images/bg_main.jpg);
+}
 a {
 	text-decoration:none;
 	color:#0093ee;	
@@ -114,7 +117,10 @@ a:hover {
 a:visited {
 	color:#1d70f2;	
 }
-
+h1 a, h1 a:hover, h1 a:visited {
+	text-decoration:none;
+  color:#fff;
+}
 
 /*	=2: Header
 =============================================== */
@@ -288,6 +294,10 @@ body.home .about img {
 	font-weight:normal;	
 }
 .content h1 {	
+}
+.episode h3 {
+	font-family:'Avenir 35 Light';
+  color: #888;
 }
 .media-body h1 {
 	font-family:'Avenir 35 Light';	
@@ -726,5 +736,5 @@ span.address {
 /* Podcast */
 
 .episode {
-
+  margin-bottom: 70px;
 }
