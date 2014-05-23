@@ -3,14 +3,14 @@
 <html lang="en">
 <head>
 <title>CocoaConf Podcast</title>
-<meta name="layout" content="home" />
-<meta name="division" content="schedule" />
+<meta name="layout" content="podcast" />
+<meta name="division" content="podcast" />
 </head>
 
-<body>
+<body class="podcast">
 
 <div class="container main-text">
-  <h1 style="margin: 36px 0"><img src="${resource(dir: 'images', file: 'podcast-logo2.png')}" /> The CocoaConf Podcast</h1>
+  <h1 style="margin: 36px 0"><g:link controller="podcast" action="index"><img src="${resource(dir: 'images', file: 'podcast-logo2.png')}" /></g:link> <g:link controller="podcast" action="index"> The CocoaConf Podcast </g:link></h1>
 </div>
 
 
@@ -20,11 +20,14 @@
 
     <div class="row-fluid">
         <div class="span7">
-            <h1>Join us in ${conference?.cityNickname ?: conference?.city + ", " + conference?.state} <small>${conference?.dates}</small></h1>
-            <p class="lead">${conference?.intro}</p>
+            <h1>The Professional Development Podcast <br /><small>for iOS and OS X Developers</small></h1>
+            <g:if test="${episodes?.size() > 1}">
+              <p class="lead" style="margin-top:30px;">The CocoaConf Podcast features members of the iOS and OS X community offering tips, insight, facts, and opinions for other iOS and OS X developers. You&#8217;ll recognize many of the voices from the popular CocoaConf conference series.</p>
+            </g:if>
         </div>
         <div class="span3">
-                <h2 style="text-align: center;"><small>Early Bird discounts available!</small></h2>
+          <h2 style="text-align: center;"><small>Available on iTunes.</small></h2>
+          <a href="#" class="button"><button class="btn btn-block btn-large btn-flat"><i class="ion-ipod"></i> &nbsp; Subscribe</button></a>
 
         </div>
     </div>
@@ -59,13 +62,19 @@
     <div class="span8">
       <g:each in="${episodes}" var="episode">
 
-          <div class="episode" style="margin-bottom: 100px">
-          <p class="lead"><g:link controller="podcast" action="index" id="${episode.episodeNumber}">
-              ${episode.title}${episode.subTitle ? ': ' + episode.subTitle : ''}</p>
-          </g:link>
+          <div class="episode">
+          <h2><g:link controller="podcast" action="index" id="${episode.episodeNumber}">
+              ${episode.title}${episode.subTitle ? ': ' + episode.subTitle : ''}</g:link></h2>
+              <h3>
+                <g:formatDate format="MMMM dd, yyyy" date="${episode?.datePublished}" />
+              </h3>
+
               <div class="well">${episode?.showNotes}</div>
           </div>
       </g:each>
+        <div class="paginateButtons" style="max-width: 50%; text-align: center;">
+            <g:paginate total="${episodeInstanceTotal}" />
+        </div>
     </div>
   </div>
 </div>
