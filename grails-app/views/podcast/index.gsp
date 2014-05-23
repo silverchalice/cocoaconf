@@ -10,7 +10,7 @@
 <body class="podcast">
 
 <div class="container main-text">
-  <h1 style="margin: 36px 0"><g:link controller="podcast" action="index"><img src="${resource(dir: 'images', file: 'podcast-logo2.png')}" /></g:link> <g:link controller="podcast" action="index"> The CocoaConf Podcast </g:link></h1>
+  <h1 style="margin: 36px 0"><g:link controller="podcast" action="index"><img src="${resource(dir: 'images', file: 'podcast-logo2.png')}" style="height: 120px" /></g:link> <g:link controller="podcast" action="index"> The CocoaConf Podcast </g:link></h1>
 </div>
 
 
