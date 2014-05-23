@@ -659,6 +659,22 @@ li.register.active a:before {
 	content:"\f1c4";
 }
 
+li.feedback a:before {
+    content: "\f186";
+}
+li.itunes a:before {
+    content: "\f1fb";
+}
+li.rss a:before {
+    content: "\f23c";
+}
+li.twitter a:before {
+    content: "\f242";
+}
+li.skype a:before {
+    content: "\f23f";
+}
+
 a.button:hover, a.post-title:hover {
   text-decoration: none;
 }
