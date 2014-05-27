@@ -64,6 +64,7 @@ class SpeakerController {
     }
 
     def show = {
+        println "\n\n\nin SpeakerController show action with params $params\n\n\n"
         def speakerInstance = Speaker.get(params.id)
         if (!speakerInstance) {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'speaker.label', default: 'Speaker'), params.id])}"
@@ -75,6 +76,7 @@ class SpeakerController {
     }
 
     def viewDetails = {
+        println "\n\n\nin SpeakerController viewDetails action with params $params\n\n\n"
         def speakerInstance
         if (params.firstName){
 	        speakerInstance = Speaker.findByFirstNameAndLastName(params.firstName, params.lastName)
@@ -91,6 +93,7 @@ class SpeakerController {
     }
 
     def edit = {
+        println "\n\n\nin SpeakerController edit action with params $params\n\n\n"
         def speakerInstance = Speaker.get(params.id)
         if (!speakerInstance) {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'speaker.label', default: 'Speaker'), params.id])}"
@@ -102,6 +105,7 @@ class SpeakerController {
     }
 
     def update = {
+        println "\n\n\nin SpeakerController update action with params $params\n\n\n"
         def speakerInstance = Speaker.get(params.id.toLong())
         if (speakerInstance) {
             if (params.version) {
@@ -139,6 +143,7 @@ class SpeakerController {
     }
 
     def delete = {
+        println "\n\n\nin SpeakerController delete action with params $params\n\n\n"
         def speakerInstance = Speaker.get(params.id)
         if (speakerInstance) {
             try {
@@ -168,6 +173,7 @@ class SpeakerController {
     }
 
     def saveAvailability = {
+        println "\n\n\nin SpeakerController saveAvailability action with params $params\n\n\n"
         //params.each{key, val -> println "$key == $val"}
         def speaker = Speaker.get(params.id)
         def confIds = params.conferenceIds?.tokenize(',')
