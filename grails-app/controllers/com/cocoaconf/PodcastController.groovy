@@ -20,8 +20,8 @@ class PodcastController {
     		episodes = Episode.list(params)
         specificEpisode = Episode.last(sort: 'episodeNumber')
     	}
-      //specificEpisode.viewCount++
-      //specificEpisode.save()
+      specificEpisode.viewCount++
+      specificEpisode.save()
 
     	[episodes:episodes, isList: params.id ? false : true, episodeInstanceTotal: Episode.count()]
     }
