@@ -13,6 +13,7 @@ class Episode {
 	String sponsorLink
 	String sponsorBlurb
 	String downloadLink
+	Integer viewCount = 0
 
     static constraints = {
 	  title nullable: false
@@ -27,5 +28,6 @@ class Episode {
 	  sponsorLink nullable: true
 	  sponsorBlurb nullable: true, maxSize: 2000
 	  downloadLink nullable:true
+	  viewCount nullable:true
     }
 }
