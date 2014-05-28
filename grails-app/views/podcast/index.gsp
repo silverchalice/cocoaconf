@@ -38,7 +38,7 @@
             <ul class="dropdown-menu">
                 <li><a href="mailto:podcast@cocoaconf.com">Feedback</a></li>
                 <li><a href="https://itunes.apple.com/us/podcast/cocoaconf-podcast/id882941510">iTunes</a></li>
-                <li><a href="">RSS</a></li>
+                <li><a href="https://media.signalleaf.com/CocoaConf-Podcast/rss">RSS</a></li>
                 <li><a href="http://twitter.com/cocoaconfcast">Twitter</a></li>
                 <li><a href="skype:cocoaconf.podcast?call">Skype Survey Line</a></li>
             </ul>
