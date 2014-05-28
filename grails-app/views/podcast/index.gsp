@@ -27,9 +27,8 @@
             </g:if>
         </div>
         <div class="span3">
-          <!--<h2 style="text-align: center;"><small>Available on iTunes.</small></h2>-->
-          <h2 style="text-align: center;"><small>Coming soon to iTunes.</small></h2>
-          <!--<a href="#" class="button"><button class="btn btn-block btn-large btn-flat"><i class="ion-ipod"></i> &nbsp; Subscribe</button></a>-->
+          <h2 style="text-align: center;"><small>Available on iTunes.</small></h2>
+          <a href="https://itunes.apple.com/us/podcast/cocoaconf-podcast/id882941510" class="button"><button class="btn btn-block btn-large btn-flat"><i class="ion-ipod"></i> &nbsp; Subscribe</button></a>
 
         </div>
     </div>
@@ -38,7 +37,7 @@
         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podcast Links &nbsp; <i class="ion-ios7-arrow-down"></i></a>
             <ul class="dropdown-menu">
                 <li><a href="mailto:podcast@cocoaconf.com">Feedback</a></li>
-                <!--<li><a href="">iTunes</a></li>-->
+                <li><a href="https://itunes.apple.com/us/podcast/cocoaconf-podcast/id882941510">iTunes</a></li>
                 <li><a href="">RSS</a></li>
                 <li><a href="http://twitter.com/cocoaconfcast">Twitter</a></li>
                 <li><a href="skype:cocoaconf.podcast?call">Skype Survey Line</a></li>
@@ -53,7 +52,7 @@
       <h3>Podcast Links</h3>
       <ul class="nav nav-list">
         <li class="feedback"><a href="mailto:podcast@cocoaconf.com">Feedback</a></li>
-        <!--<li class="itunes"><a href="">iTunes</a></li>-->
+        <li class="itunes"><a href="https://itunes.apple.com/us/podcast/cocoaconf-podcast/id882941510">iTunes</a></li>
         <li class="rss"><a href="https://media.signalleaf.com/CocoaConf-Podcast/rss">RSS</a></li>
         <li class="twitter"><a href="http://twitter.com/CocoaConfCast">Twitter</a></li>
         <li class="skype"><a href="skype:cocoaconf.podcast?call">Survey Line</a></li>
