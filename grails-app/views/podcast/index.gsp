@@ -27,8 +27,9 @@
             </g:if>
         </div>
         <div class="span3">
-          <h2 style="text-align: center;"><small>Available on iTunes.</small></h2>
-          <a href="#" class="button"><button class="btn btn-block btn-large btn-flat"><i class="ion-ipod"></i> &nbsp; Subscribe</button></a>
+          <!--<h2 style="text-align: center;"><small>Available on iTunes.</small></h2>-->
+          <h2 style="text-align: center;"><small>Coming soon to iTunes.</small></h2>
+          <!--<a href="#" class="button"><button class="btn btn-block btn-large btn-flat"><i class="ion-ipod"></i> &nbsp; Subscribe</button></a>-->
 
         </div>
     </div>
