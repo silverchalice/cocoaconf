@@ -18,7 +18,7 @@ class Episode {
     static constraints = {
 	  title nullable: false
 	  subTitle nullable: true
-	  signalLeafBlurb nullable: true
+	  signalLeafBlurb nullable: true, maxSize: 500
 	  showNotes nullable: true, maxSize: 10000
 	  episodeNumber nullable: false
 	  dateCreated nullable: true
