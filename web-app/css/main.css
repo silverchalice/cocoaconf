@@ -738,3 +738,7 @@ span.address {
 .episode {
   margin-bottom: 70px;
 }
+
+.well h4 {
+	margin: 30px 0 15px;	
+}
