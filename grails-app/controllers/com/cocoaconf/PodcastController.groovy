@@ -9,7 +9,7 @@ class PodcastController {
         order = 'desc'
       }
     	def episodes = []
-    	if (params.id){
+    	if (params.id && Episode.findByEpisodeNumber(params.id)){
     	  episodes << Episode.findByEpisodeNumber(params.id)
     	} else {
     		episodes = Episode.list(params)
