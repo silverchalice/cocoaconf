@@ -8,12 +8,21 @@ class PodcastController {
         sort = 'episodeNumber'
         order = 'desc'
       }
+      def specificEpisode
+    	if (params.id){
+        specificEpisode = Episode.findByEpisodeNumber(params.id)
+      } 
     	def episodes = []
-    	if (params.id && Episode.findByEpisodeNumber(params.id)){
-    	  episodes << Episode.findByEpisodeNumber(params.id)
+      if(specificEpisode){
+        println "there was one"
+    	  episodes << specificEpisode
     	} else {
     		episodes = Episode.list(params)
+        specificEpisode = Episode.last(sort: 'episodeNumber')
     	}
-    	[episodes:episodes, episodeInstanceTotal: Episode.count()]
+      //specificEpisode.viewCount++
+      //specificEpisode.save()
+
+    	[episodes:episodes, isList: params.id ? false : true, episodeInstanceTotal: Episode.count()]
     }
 }
