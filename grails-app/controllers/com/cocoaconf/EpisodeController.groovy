@@ -21,6 +21,7 @@ class EpisodeController {
 
     def save() {
         def episodeInstance = new Episode(params)
+        episodeInstance.viewCount = episodeInstance.viewCount ?: 0
         if (!episodeInstance.save(flush: true)) {
             render(view: "create", model: [episodeInstance: episodeInstance])
             return
