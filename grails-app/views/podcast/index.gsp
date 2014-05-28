@@ -5,6 +5,7 @@
 <title>CocoaConf Podcast</title>
 <meta name="layout" content="podcast" />
 <meta name="division" content="podcast" />
+
 </head>
 
 <body class="podcast">
@@ -21,7 +22,7 @@
     <div class="row-fluid">
         <div class="span7">
             <h1>The Professional Development Podcast <br /><small>for iOS and OS X Developers</small></h1>
-            <g:if test="${episodes?.size() > 1}">
+            <g:if test="${isList}">
               <p class="lead" style="margin-top:30px;">The CocoaConf Podcast features members of the iOS and OS X community offering tips, insight, facts, and opinions for other iOS and OS X developers. You&#8217;ll recognize many of the voices from the popular CocoaConf conference series.</p>
             </g:if>
         </div>
@@ -51,10 +52,10 @@
       <h3>Podcast Links</h3>
       <ul class="nav nav-list">
         <li class="feedback"><a href="mailto:podcast@cocoaconf.com">Feedback</a></li>
-        <li class="itunes"><a href="">iTunes</a></li>
-        <li class="rss"><a href="">RSS</a></li>
-        <li class="twitter"><a href="http://twitter.com/cocoaconfcast">Twitter</a></li>
-        <li class="skype"><a href="skype:cocoaconf.podcast?call">Skype Survey Line</a></li>
+        <!--<li class="itunes"><a href="">iTunes</a></li>-->
+        <li class="rss"><a href="https://media.signalleaf.com/CocoaConf-Podcast/rss">RSS</a></li>
+        <li class="twitter"><a href="http://twitter.com/CocoaConfCast">Twitter</a></li>
+        <li class="skype"><a href="skype:cocoaconf.podcast?call">Survey Line</a></li>
       </ul>
 
 
@@ -63,13 +64,29 @@
       <g:each in="${episodes}" var="episode">
 
           <div class="episode">
-          <h2><g:link controller="podcast" action="index" id="${episode.episodeNumber}">
-              ${episode.title}${episode.subTitle ? ': ' + episode.subTitle : ''}</g:link></h2>
-              <h3>
-                <g:formatDate format="MMMM dd, yyyy" date="${episode?.datePublished}" />
-              </h3>
 
-              <div class="well">${episode?.showNotes}</div>
+              <h3><g:formatDate format="MMMM dd, yyyy" date="${episode?.datePublished}" /></h3>
+
+              <g:if test="${isList}">
+                  <h2><g:link controller="podcast" action="index" id="${episode.episodeNumber}">
+                    ${episode.title}</g:link></h2>
+              </g:if>
+              <g:else>
+                  <h2>${episode.title}</small></h2>
+              </g:else>
+
+              <h3>${episode.subTitle}</h3>
+
+              <br />
+              ${episode.signalLeafBlurb}
+              <p>&nbsp;</p>
+
+              <div class="well">
+
+                <h3>Show Notes</h3>
+                ${episode?.showNotes}
+              </div>
+
           </div>
       </g:each>
         <div class="paginateButtons" style="max-width: 50%; text-align: center;">
