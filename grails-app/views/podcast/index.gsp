@@ -38,7 +38,7 @@
         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Podcast Links &nbsp; <i class="ion-ios7-arrow-down"></i></a>
             <ul class="dropdown-menu">
                 <li><a href="mailto:podcast@cocoaconf.com">Feedback</a></li>
-                <li><a href="">iTunes</a></li>
+                <!--<li><a href="">iTunes</a></li>-->
                 <li><a href="">RSS</a></li>
                 <li><a href="http://twitter.com/cocoaconfcast">Twitter</a></li>
                 <li><a href="skype:cocoaconf.podcast?call">Skype Survey Line</a></li>
