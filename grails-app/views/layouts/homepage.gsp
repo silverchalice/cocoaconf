@@ -121,7 +121,7 @@
 </div>
 <footer>
   <div class="container">
-    <p class="text-right">&copy; 2014 Simply Cocoa, LLC. &nbsp;| &nbsp; About the <a href="${createLink(controller: 'home', action: 'kleinfamily')}" title="Learn more about the Kleins">Klein Family</a> &nbsp; | &nbsp; <a href="${createLink(controller: 'home', action: 'credits')}">Credits</a> &nbsp; | &nbsp; Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a></p>
+    <p class="text-right">&copy; 2014 Simply Cocoa, LLC. &nbsp;| &nbsp; About the <a href="${createLink(controller: 'home', action: 'kleinfamily')}" title="Learn more about the Kleins">Klein Family</a> &nbsp; | &nbsp; <a href="${createLink(controller: 'home', action: 'credits')}">Credits</a> &nbsp; | &nbsp; Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a> | Hosted by <a href="http://macminicolo.net/">macminicolo.net</a></p>
   </div>
 </footer>
 </div>
