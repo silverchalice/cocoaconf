@@ -65,7 +65,7 @@
 
           <div class="episode">
 
-              <h3><g:formatDate format="MMMM dd, yyyy" date="${episode?.datePublished}" /></h3>
+              <h3><g:formatDate format="MMMM d, yyyy" date="${episode?.datePublished}" /></h3>
 
               <g:if test="${isList}">
                   <h2><g:link controller="podcast" action="index" id="${episode.episodeNumber}">
