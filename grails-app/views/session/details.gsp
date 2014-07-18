@@ -25,7 +25,7 @@
   <!-- Example row of columns -->
     <div class="span12">
       <ul class="media-list">
-        <li class="media"> <a class="pull-left" href="#"> <img class="media-object img-circle" width="170" src="${speaker.imagePath.startsWith('/') ? speaker.imagePath : '/' + speaker.imagePath}" alt="Speaker photo"> </a>
+        <li class="media"> <a class="pull-left" href="#"> <img class="media-object img-circle" width="170" src="${speaker.imagePath?.startsWith('/') ? speaker.imagePath : '/' + speaker.imagePath}" alt="Speaker photo"> </a>
           <div class="media-body">
             <h2 class="media-heading">${presentationInstance?.title}</h2>
             <hr>
