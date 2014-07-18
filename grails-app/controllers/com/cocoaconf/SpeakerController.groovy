@@ -14,15 +14,15 @@ class SpeakerController {
         def speakers = Speaker.list(sort:'lastName')
         println "There are ${speakers.size()} speakers."
         speakers.each{speaker ->
-            if ((!speaker.speakerHash) && (speaker.firstName && speaker.lastName)){
-                speaker.speakerHash = "${speaker.firstName[0..1]}${speaker.id}${speaker.lastName[-2..-1]}"
-                speaker.save(flush:true, failOnError:true)
+            if ((!speaker?.speakerHash) && (speaker?.firstName && speaker?.lastName)){
+                speaker?.speakerHash = "${speaker?.firstName[0..1]}${speaker?.id}${speaker?.lastName[-2..-1]}"
+                speaker?.save(flush:true, failOnError:true)
             }
         }
         def speakerHashList = ''
         speakers = Speaker.list(sort:'lastName')
         speakers.each{speaker ->
-            speakerHashList += "<html><p>${speaker.firstName} ${speaker.lastName}, ${speaker.email ?: 'no.email.available'}, http://cocoaconf.com/speaker-availability/${speaker.speakerHash}</p></html>"
+            speakerHashList += "<html><p>${speaker?.firstName} ${speaker?.lastName}, ${speaker?.email ?: 'no.email.available'}, http://cocoaconf.com/speaker-availability/${speaker?.speakerHash}</p></html>"
         }
         render speakerHashList
     }
@@ -65,6 +65,11 @@ class SpeakerController {
 
     def show = {
         println "\n\n\nin SpeakerController show action with params $params\n\n\n"
+        if(!params.id?.isLong()){
+            println "id in Speaker show action was not Long (${params.id}). redirecting"
+            redirect action: "speakers"
+            return
+        }
         def speakerInstance = Speaker.get(params.id)
         if (!speakerInstance) {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'speaker.label', default: 'Speaker'), params.id])}"
@@ -81,19 +86,30 @@ class SpeakerController {
         if (params.firstName){
 	        speakerInstance = Speaker.findByFirstNameAndLastName(params.firstName, params.lastName)
         }
-        else
-            speakerInstance = Speaker.get(params.id)
-        if (!speakerInstance) {
-            flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'speaker.label', default: 'Speaker'), params.id])}"
-            redirect(action: "speakers")
-        }
         else {
-            [speaker: speakerInstance, feedEntries: FeedEntry.findAllBySpeakerId(speakerInstance.id, [max:3, sort:'published', order:'desc'])]
+            if(!params.id?.isLong()){
+              println "id in Speaker viewDetails action was not Long (${params.id}). redirecting"
+              redirect action: "speakers"
+              return
+            }
+            speakerInstance = Speaker.get(params.id)
+            if (!speakerInstance) {
+                flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'speaker.label', default: 'Speaker'), params.id])}"
+                redirect(action: "speakers")
+            }
+            else {
+                [speaker: speakerInstance, feedEntries: FeedEntry.findAllBySpeakerId(speakerInstance.id, [max:3, sort:'published', order:'desc'])]
+            }
         }
     }
 
     def edit = {
         println "\n\n\nin SpeakerController edit action with params $params\n\n\n"
+        if(!params.id?.isLong()){
+            println "id in Speaker edit action was not Long (${params.id}). redirecting"
+            redirect action: "speakers"
+            return
+        }
         def speakerInstance = Speaker.get(params.id)
         if (!speakerInstance) {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'speaker.label', default: 'Speaker'), params.id])}"
@@ -106,6 +122,11 @@ class SpeakerController {
 
     def update = {
         println "\n\n\nin SpeakerController update action with params $params\n\n\n"
+        if(!params.id?.isLong()){
+            println "id in Speaker update action was not Long (${params.id}). redirecting"
+            redirect action: "speakers"
+            return
+        }
         def speakerInstance = Speaker.get(params.id.toLong())
         if (speakerInstance) {
             if (params.version) {
@@ -144,6 +165,11 @@ class SpeakerController {
 
     def delete = {
         println "\n\n\nin SpeakerController delete action with params $params\n\n\n"
+        if(!params.id?.isLong()){
+            println "id in Speaker delete action was not Long (${params.id}). redirecting"
+            redirect action: "speakers"
+            return
+        }
         def speakerInstance = Speaker.get(params.id)
         if (speakerInstance) {
             try {
@@ -163,7 +189,7 @@ class SpeakerController {
     }
 
     def availability = {
-        def speaker = Speaker.findBySpeakerHash(params.speakerHash)
+        def speaker = Speaker.findBySpeakerHash(params?.speakerHash)
         def conferenceList = Conference.findAllByCallForSpeakers(true)
         def availabilities = [:]
         conferenceList.each{conf ->
@@ -175,6 +201,11 @@ class SpeakerController {
     def saveAvailability = {
         println "\n\n\nin SpeakerController saveAvailability action with params $params\n\n\n"
         //params.each{key, val -> println "$key == $val"}
+        if(!params.id?.isLong()){
+            println "id in Speaker saveAvailability action was not Long (${params.id}). redirecting"
+            redirect action: "speakers"
+            return
+        }
         def speaker = Speaker.get(params.id)
         def confIds = params.conferenceIds?.tokenize(',')
 
@@ -192,6 +223,6 @@ class SpeakerController {
                 flash.message = "Thanks!  Hope to see you this fall."
             }
         }
-        redirect action:'availability', params: [speakerHash: speaker.speakerHash]
+        redirect action:'availability', params: [speakerHash: speaker?.speakerHash]
     }
 }
