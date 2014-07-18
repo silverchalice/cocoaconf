@@ -83,7 +83,7 @@
 				<li class="fieldcontain">
 					<span id="speakers-label" class="property-label"><g:message code="conference.speakers.label" default="Speakers" /></span>
 					
-						<g:each in="${conference.speakers}" var="s">
+						<g:each in="${conference?.speakers}" var="s">
 						<span class="property-value" aria-labelledby="speakers-label"><g:link controller="speaker" action="show" id="${s.id}">${s?.encodeAsHTML()}</g:link></span>
 						</g:each>
 					
