@@ -43,7 +43,7 @@ class Speaker {
 
     def upcomingConferences() {
         def conferences = Conference.findAllByStatus(Conference.ACTIVE)
-        return conferences.findAll { it.speakers*.id.contains(id) }
+        return conferences.findAll { it?.speakers*.id.contains(id) }
     }
 
     String toString(){ "${firstName} ${lastName}" }
