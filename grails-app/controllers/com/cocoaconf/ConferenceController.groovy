@@ -166,8 +166,8 @@ class ConferenceController {
 //		params.each{key, val -> println "$key == $val"}
         def conf = Conference.findByTinyName(params.tinyName)
         if(conf){
-//            println "and its speakers are " + conf.speakers
-            [conference:conf, speakerInstanceList: conf.speakers, speakerInstanceTotal: Speaker.count()]
+//            println "and its speakers are " + conf?.speakers
+            [conference:conf, speakerInstanceList: conf?.speakers, speakerInstanceTotal: Speaker.count()]
         } else {
             redirect controller: "home"
         }
@@ -178,7 +178,7 @@ class ConferenceController {
         def conf = Conference.findByTinyName(params.tinyName)
         if(conf){
             println "and its prizes are " + conf.prizes
-            [conference:conf, speakerInstanceList: conf.speakers, speakerInstanceTotal: Speaker.count()]
+            [conference:conf, speakerInstanceList: conf?.speakers, speakerInstanceTotal: Speaker.count()]
         } else {
             redirect controller: "home"
         }
@@ -233,12 +233,12 @@ class ConferenceController {
     }
 
     def speakerDetails = {
-      if (params.id.isLong()){
+      if (params?.id?.isLong()){
           println "entering speakerDetails with params $params"
     //	  params.each{key, val -> println "$key == $val"}
     	  def conf = params?.tinyName ? Conference.findByTinyName(params.tinyName) : Conference.get(params.confId)
     	  def speaker = Speaker.get(params.id)
-          if(!conf.speakers*.id.contains(speaker?.id)){
+          if(!conf?.speakers*.id.contains(speaker?.id)){
             redirect controller: "conference", action: "speakers", params: [tinyName: conf.tinyName]
             return
           }
