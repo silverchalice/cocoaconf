@@ -32,6 +32,11 @@ class PresentationController {
     }
 
     def show = {
+        if(!params.id?.isLong()){
+            println "id in Presentation show action was not Long (${params.id}). redirecting"
+            redirect action: "list"
+            return
+        }
         def presentationInstance = Presentation.get(params.id)
         if (!presentationInstance) {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'presentation.label', default: 'Presentation'), params.id])}"
@@ -43,6 +48,11 @@ class PresentationController {
     }
 
     def details = {
+        if(!params.id?.isLong()){
+            println "id in Presentation details action was not Long (${params.id}). redirecting"
+            redirect action: "list"
+            return
+        }
         def presentationInstance = Presentation.get(params.id)
         if (!presentationInstance) {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'presentation.label', default: 'Presentation'), params.id])}"
@@ -54,6 +64,11 @@ class PresentationController {
     }
 
     def edit = {
+        if(!params.id?.isLong()){
+            println "id in Presentation edit action was not Long (${params.id}). redirecting"
+            redirect action: "list"
+            return
+        }
         def presentationInstance = Presentation.get(params.id)
         if (!presentationInstance) {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'presentation.label', default: 'Presentation'), params.id])}"
@@ -65,6 +80,11 @@ class PresentationController {
     }
 
     def update = {
+        if(!params.id?.isLong()){
+            println "id in Presentation update action was not Long (${params.id}). redirecting"
+            redirect action: "list"
+            return
+        }
         def presentationInstance = Presentation.get(params.id)
         if (presentationInstance) {
             if (params.version) {
@@ -92,6 +112,11 @@ class PresentationController {
     }
 
     def delete = {
+        if(!params.id?.isLong()){
+            println "id in Presentation delete action was not Long (${params.id}). redirecting"
+            redirect action: "list"
+            return
+        }
         def presentationInstance = Presentation.get(params.id)
         if (presentationInstance) {
             try {
