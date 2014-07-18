@@ -10,6 +10,11 @@ class PodcastController {
       }
       def specificEpisode
     	if (params.id){
+        if(!params.id?.isLong()){
+          println "id in Podcast index action was not Long (${params.id}). redirecting"
+          redirect action: "index"
+          return
+        }
         specificEpisode = Episode.findByEpisodeNumber(params.id)
       } 
     	def episodes = []
