@@ -25,7 +25,7 @@
   <!-- Example row of columns -->
     <div class="span12">
       <ul class="media-list">
-        <li class="media"> <a class="pull-left" href="#"> <img class="media-object img-circle" width="170" src="${speaker.imagePath.startsWith('/') ? speaker.imagePath : '/' + speaker.imagePath}" alt="Speaker photo"> </a>
+        <li class="media"> <a class="pull-left" href="#"> <img class="media-object img-circle" width="170" src="${speaker.imagePath?.startsWith('/') ? speaker.imagePath : '/' + speaker.imagePath}" alt="Speaker photo"> </a>
           <div class="media-body">
             <h2 class="media-heading">${speaker}</h2>
             <p class="author-links"><cc:speakingAt speakerId="${speaker?.id}" /><g:if test="${speaker?.twitter}"><span class="twitter"><i class="ion-social-twitter-outline"></i>&nbsp;<a href="https://twitter.com/${speaker.twitter}" title="Visit ${speaker.firstName} on Twitter" target="_blank"> @${speaker.twitter}</a></span></g:if> <g:if test="${speaker.website}"><span class="website"><i class="ion-ios7-world-outline"></i>&nbsp;<a href="${speaker.website}" title="Visit ${speaker.firstName}&#8217;s website" target="_blank">${speaker.website?.minus('http://')}</a></span></g:if> <g:if test="${speaker.blog}"><span class="blog"><i class="ion-social-rss"></i>&nbsp;<a href="${speaker.blog}" title="Visit ${speaker.firstName}&#8217;s blog" target="_blank">${speaker.blog?.minus('http://')}</a></span></g:if> <g:if test="${speaker.appnet}"><span class="appnet"><i class="ion-ios7-arrow-up"></i>&nbsp;<a href="http://app.net/${speaker.appnet}"> @${speaker.appnet}</a></span></g:if></p>
