@@ -177,7 +177,7 @@ class CocoaConfTagLib {
         } else if(attrs.id == 20){
             out << "CocoaConf Mini Austin is sold out!"
             return
-        } else if(attrs.id == 23 || attrs.id == 24 || attrs.id == 25 || attrs.id == 26){
+        } else if(attrs.id == 24 || attrs.id == 25 || attrs.id == 26){
             out << ""
             return
         }
