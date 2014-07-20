@@ -106,6 +106,12 @@ class SessionController {
     }
 
     def details = {
+        println "\n\n\nin SessionController details action with params $params\n\n\n"
+        if(!params.id?.isLong()){
+            println "id in Session details action was not Long (${params.id}). redirecting"
+            redirect action: "list"
+            return
+        }
         def presentationInstance = Presentation.get(params.id)
         if (!presentationInstance) {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'presentation.label', default: 'Presentation'), params.id])}"
