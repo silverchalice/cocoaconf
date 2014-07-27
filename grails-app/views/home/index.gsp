@@ -81,7 +81,7 @@
       </div>
       <div class="span2"> <g:link controller="speaker" action="viewDetails" id="50" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'mattt_T.jpeg')}" width="170" alt="Speaker image"></g:link>
         <h3 class="text-center">Mattt Thompson</h3>
-        <h4 class="text-center"><span>Panic Inc</span></h4>
+        <h4 class="text-center"><span>NSHipster</span></h4>
       </div>
     </div>
   </div>
