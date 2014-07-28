@@ -165,17 +165,8 @@ class CocoaConfTagLib {
     }
 
     def weeksUntilSalesEnd = { attrs ->
-        if(attrs.id == 17){
-            out << "CocoaConf Chicago is sold out!"
-            return
-        } else if(attrs.id == 18){
-            out << "CocoaConf DC is sold out!"
-            return
-        } else if(attrs.id == 19){
-            out << "CocoaConf San Jose is sold out!"
-            return
-        } else if(attrs.id == 20){
-            out << "CocoaConf Mini Austin is sold out!"
+        if(attrs.id == 22){
+            out << "CocoaConf Columbus is sold out!"
             return
         } else if(attrs.id == 24 || attrs.id == 25 || attrs.id == 26){
             out << ""
@@ -196,7 +187,7 @@ class CocoaConfTagLib {
 
     def registerButton = { attrs ->
         def c = Conference.get(attrs.id)
-        if(c.id == 19){
+        if(c.id == 22){
             out << "${c?.city} Waitlist"
             return
         }
