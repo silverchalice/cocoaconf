@@ -71,7 +71,7 @@ class CocoaConfTagLib {
                 cityName = "Raleigh, NC"
                 break
             case 22:
-                cityName = "Columbus, OH"
+                cityName = "Columbus, OH &#8212; <strong>Sold Out!</strong>"
                 break
             case 23:
                 cityName = "Las Vegas, NV"
@@ -168,7 +168,7 @@ class CocoaConfTagLib {
         if(attrs.id == 22){
             out << "CocoaConf Columbus is sold out!"
             return
-        } else if(attrs.id == 24 || attrs.id == 25 || attrs.id == 26){
+        } else if(attrs.id == 25 || attrs.id == 26){
             out << ""
             return
         }
