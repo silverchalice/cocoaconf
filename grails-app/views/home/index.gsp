@@ -35,7 +35,7 @@
         <g:link controller="conference" action="register" params="['tinyName': 'lasvegas-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
       <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'seattle-2014']">
         <h3>Seattle, WA<br>
-          <small>October 17–18 | Sold Out!</small></h3>
+          <small>Oct. 17–18 | Sold Out!</small></h3>
         </g:link>
         <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'seattle-2014']">Speakers</g:link></p>
         <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'seattle-2014']">Sessions</g:link></p>
