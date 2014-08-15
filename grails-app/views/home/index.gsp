@@ -25,7 +25,7 @@
         </g:link>
         <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'columbus-2014']">Speakers</g:link></p>
         <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'columbus-2014']">Sessions</g:link></p>
-        <g:link controller="conference" action="register" params="['tinyName': 'columbus-2014']" class="btn btn-flat-gray btn-large" title="Get on the waitlist for this city">Waitlist <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
+      </div>
       <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'lasvegas-2014']">
         <h3>Las Vegas, NV<br>
           <small>September 19–20</small></h3>
