@@ -63,25 +63,25 @@
     <p class="lead text-center">CocoaConf speakers are thought leaders, authors, and professional iOS and OS X developers. <a href="${createLink(controller: 'speaker', action: 'speakers')}" title="All speakers">Meet them all <i class="ion-ios7-arrow-forward"></i></a></p>
     <p>&nbsp;</p>
     <div class="row-fluid">
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="130" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'laura-savino.jpg')}" width="170" alt="Speaker image"></g:link>
-        <h3 class="text-center">Laura Savino</h3>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="111" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'photo_williams_justin.jpg')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Justin Williams</h3>
+        <h4 class="text-center"><span> Second Gear</span></h4>
+      </div>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="156" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'jean-macdonald.png')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Jean MacDonald</h3>
+        <h4 class="text-center"><span>App Camp For Girls</span></h4>
+      </div>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="149" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'andy-matuschak.jpeg')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Andy Matuschak</h3>
         <h4 class="text-center"><span> Khan Academy</span></h4>
       </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="104" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/daniel-jalkut', file: 'Jalkut1.jpg')}" width="170" alt="Speaker image"></g:link>
-        <h3 class="text-center">Daniel Jalkut</h3>
-        <h4 class="text-center"><span>Red Sweater</span></h4>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="146" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'gus-mueller.jpg')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Gus Mueller</h3>
+        <h4 class="text-center"><span>Flying Meat</span></h4>
       </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="58" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/brent-simmons', file: 'BrentSimmons2.jpg')}" width="170" alt="Speaker image"></g:link>
-        <h3 class="text-center">Brent Simmons</h3>
-        <h4 class="text-center"><span> Q Branch</span></h4>
-      </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="52" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/jaimee-newberry', file: 'JaimeeNewberry.JPG')}" width="170" alt="Speaker image"></g:link>
-        <h3 class="text-center">Jaimee Newberry</h3>
-        <h4 class="text-center"><span>Bests.com</span></h4>
-      </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="50" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'mattt_T.jpeg')}" width="170" alt="Speaker image"></g:link>
-        <h3 class="text-center">Mattt Thompson</h3>
-        <h4 class="text-center"><span>NSHipster</span></h4>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="137" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/sam-soffes', file: 'Sam-Soffes.jpg')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Sam Soffes</h3>
+        <h4 class="text-center"><span>Full Package</span></h4>
       </div>
     </div>
   </div>
