@@ -22,6 +22,7 @@ class Conference {
     String sponsorListBlurb
     String thumbnail
     String cityNickname
+    String tagline
     String intro
     Boolean scheduleReady = false
     Boolean callForSpeakers = false

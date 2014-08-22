@@ -161,6 +161,14 @@
 	<g:textField name="cityNickname" value="${conference?.cityNickname}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'tagline', 'error')} ">
+	<label for="tagline">
+		<g:message code="conference.tagline.label" default="Tagline" />
+		
+	</label>
+	<g:textField name="tagline" value="${conference?.tagline}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'scheduleReady', 'error')} ">
 	<label for="scheduleReady">
 		<g:message code="conference.scheduleReady.label" default="Schedule Ready" />
