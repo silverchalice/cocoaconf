@@ -39,7 +39,7 @@
     <!-- Main hero unit for a primary marketing message or call to action -->
   <div class="row-fluid">
     <div class="span7">
-      <h1>Join us in ${conference?.cityNickname ?: conference?.city + ", " + conference?.state} <small>${conference?.dates}</small></h1>
+      <h1>Join us in ${conference?.city} for ${conference.description.endsWith(" 2014") ? conference.description.minus(" 2014") : conference.description} <small>${conference?.dates}</small></h1>
       <p class="lead">${conference.intro}</p>
     </div>
     <div class="span3">
