@@ -5,6 +5,7 @@ class Speaker {
 	
 	String firstName
 	String lastName
+  String slug
   String title
 	String email
 	String bio
