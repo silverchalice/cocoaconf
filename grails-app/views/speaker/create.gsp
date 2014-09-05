@@ -48,6 +48,15 @@
 
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                    <label for="slug"><g:message code="speaker.slug.label" default="Slug" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: speakerInstance, field: 'slug', 'errors')}">
+                                    <g:textField name="slug" value="${speakerInstance?.slug}" />
+                                </td>
+                            </tr>
+
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                     <label for="title"><g:message code="speaker.title.label" default="Title" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: speakerInstance, field: 'title', 'errors')}">
