@@ -1,0 +1,697 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "utf-8";
+/* --------- UPDATE INFO --------------------------------
+	
+Created: July 9, 2014
+Updated by: Peter Gurry, www.gurrydesign.com
+
+--------- CONTENTS --------------------------------------
+
+	============================
+	=1: Basic Styles & Structure
+	============================
+	=2: Header
+	============================
+	=3: Navigation
+	============================
+	=4: Content
+	----------------------------
+		=4a: Typography
+		=4b: Lists
+		=4c: Images
+		=4d: Links
+		=4e: Forms
+		=4f: Tables
+	============================
+	=5: Footers
+	============================
+	=6: Misc
+	============================
+		
+--------------------------------------------------------- */
+
+
+
+/*	=1: Basic Styles & Structure
+=============================================== */
+body {
+	color:#555;
+	font-family:'PMN Caecilia Pro 55 Roman','helvetica neue',helvetica,arial,sans-serif;
+	background:#d4d5c4 url(../../images/yosemite/bg_main.jpg) repeat center top;
+	margin:0;
+	padding:0;	
+	border-top:8px solid #292d38;
+}
+strong {
+	font-family:'PMN Caecilia Pro 75 Bold';
+	font-weight:normal;	
+}
+.home .header {
+	padding:30px 0;	
+}
+.home .about, .home .locations, .home .speakers, .home .sessions, .home .comments, .home .sponsors {
+	padding:50px 0 60px;	
+}
+.home .about {	
+}
+.home .locations .row-fluid div {
+	opacity:0.8;	
+}
+.home .locations .row-fluid div:hover {
+	opacity:1;	
+}
+.home .share {
+	padding:25px 0 15px	
+}
+body.secondary {
+    background-repeat: no-repeat, repeat;
+    background-position: center -100px, center top;
+    background-size: 100%, auto;	
+}
+a {
+	text-decoration:none;
+	color:#b74f51;	
+}
+a:hover {
+	text-decoration:underline;	
+}
+hr {
+	height:0;
+	border-top:2px solid #2d373d;
+	opacity:.5;
+	border-bottom:0;
+	margin:20px 0;	
+}
+hr.big-red {
+	margin:41px 0 20px;	
+	border-top-width:14px;
+	opacity:.3;
+}
+h1 i {
+	font-style:normal;	
+}
+
+
+/*	=2: Header
+=============================================== */
+.header-about {
+	padding:50px 45px;
+	margin:25px 0 65px;	
+	border-radius:12px;
+	color:#fff;
+	text-shadow:0 1px 1px rgba(0,0,0,0.5);
+	/* CSS3 gradients */
+background: rgba(47,59,63,0.5);
+}
+
+/*	=3: Navigation
+=============================================== */
+
+
+
+/*	=4: Content
+=============================================== */
+body.home .header {
+	background:url(../../images/yosemite/bg_yosemite_header.jpg) no-repeat right top;	
+    background-size: auto 100%;	
+	background-color:#cdcec0;
+}
+body.home .about {		
+	background:#b74f51;
+	padding:50px 0;
+}
+body.home .locations {
+	background:url(../../images/yosemite/bg_yosemite_valley.jpg) no-repeat center bottom;	
+    background-size: auto 100%;	
+	background-color:#333333;
+}
+body.home .venue {
+	background:url(../../images/yosemite/bg_yosemite_glacier.jpg) no-repeat center bottom;	
+    background-size: auto 100%;	
+	background-color:#333;
+}
+body.home .sessions {
+	background:url(../../images/yosemite/bg_yosemite_glacier_02.jpg) no-repeat center bottom;
+    background-size: 100% auto;	
+	background-color:#e4e9ec;	
+	border-top:1px solid #ccc;
+}
+body.home .comments {
+	background-color:#0093ee;
+	padding:0;
+}
+body.home .comments .container {
+	padding:50px 0 60px;
+    background-image: url(../../images/yosemite/bg_quote_left.png), url(../../images/yosemite/bg_quote_right.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+    background-size: auto, auto;
+}
+body.home .sponsors {
+	background:url(../../images/yosemite/bg_sponsors.jpg) no-repeat center center;	
+    background-size: auto 100%;	
+	background-color:#00263A;
+}
+.content {
+	background:#fff;
+	box-shadow:1px 0 15px rgba(0,0,0,0.3);	
+	padding:0 30px;
+}
+body.secondary .content {
+	max-width:1170px !important;
+}
+.gradient {
+	height:5px;
+	margin:0 -30px;
+	background: #1d6af1; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFkNmFmMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYWQxZmQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left,  #1d6af1 0%, #1ad1fd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1d6af1), color-stop(100%,#1ad1fd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #1d6af1 0%,#1ad1fd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #1d6af1 0%,#1ad1fd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #1d6af1 0%,#1ad1fd 100%); /* IE10+ */
+	background: linear-gradient(to right,  #1d6af1 0%,#1ad1fd 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d6af1', endColorstr='#1ad1fd',GradientType=1 ); /* IE6-8 */
+}
+.gradient:first-child {
+	margin-bottom:15px;	
+}
+.content .navbar {
+	margin:30px -30px 0;
+	font-size:13px;	
+}
+.content .navbar-inner {
+	border-radius:0 !important;
+}
+
+/*	=4a: Typography  
+----------------------------------------------- */
+body.home .header h1 {
+	color:#b74f51;
+}
+body.home p.byline {
+	text-align:right;
+	float:right;
+	margin:0;
+	padding:0 0 0 10px;	
+}
+p.byline a {
+	color:#555;	
+}
+.yosemite-name {
+	font-size:150%;	
+	letter-spacing:-1px;
+	font-family:'URW Clarendon Bold';
+}
+
+body.home .header h3 span, body.home .locations h2, body.home .venue h2,  body.home .locations h3,  body.home .locations h3 span,  body.home .locations p, body.home .comments h2, body.home .sponsors h2 {
+	color:#fff;
+	opacity:.9;
+	text-shadow:0 0 15px rgba(0,0,0,0.4);
+}
+body.home h2 {
+	margin-bottom:35px;	
+	font-size:210%;
+	letter-spacing:-1px;
+	color:#b74f51;
+	font-family:'URW Clarendon Bold';
+}
+body.home .header h2 {
+	margin:0;
+	letter-spacing:0;
+	font-size:185%;
+	font-family:'PMN Caecilia Pro 55 Roman';
+	margin-bottom:65px;
+}
+body.home .header h2 span {
+	color:#b74f51;
+	letter-spacing:-1px;
+	font-family:'URW Clarendon Bold';
+	font-style:normal;
+	font-size:76%;
+	color:#2d373d;
+	opacity:.7;
+}
+body.home .about h2 {
+	margin-bottom:15px;
+	font-family:'PMN Caecilia Pro 55 Roman';
+}
+body.home .about p.lead {
+	font-size:150%;
+	line-height:150%;
+	color:#777;
+}
+body.home .share h2 {
+	margin:0;
+	height:70px;
+	line-height:70px;
+	font-family:'URW Clarendon Bold';
+	font-size:42px;	
+	color:#555;
+	margin-right:35px;	
+}
+body.home .comments h2 {
+	text-shadow:none;
+}
+body.home .header h3 {
+	color:#2f3b3f;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	font-size:120%;	
+}
+body.home .locations h3, body.home .venue h3 {
+	opacity:1;
+	line-height:1.2em;
+	padding:15px 0;
+	border-top:1px solid rgba(255,255,255,0.4);
+	border-bottom:1px solid rgba(255,255,255,0.4);
+}
+body.home .locations h3 small {
+	opacity:.6;
+	font-family:'URW Clarendon Bold';
+	font-size:80%;
+	color:#fff;
+}
+body.home .locations h3 .dc-title {
+	font-style:normal;
+}
+body.home .locations a:hover {
+	color:#fff;
+}
+body.home .locations p {
+	margin:25px 0 10px;	
+}
+body.home .locations p + p {
+	margin:10px 0 25px;	
+}
+body.home .locations p i {
+	font-size:130%;
+	padding-right:5px;	
+}
+body.home .header h1 {
+	opacity:1;
+	margin-bottom:35px;
+	font-weight:normal;
+	font-family:'URW Clarendon Bold';
+}
+body.home .header h3 span {
+	opacity:.7;
+}
+body.home .about img {
+	display:none;	
+}
+.home .locations .row-fluid div p {
+	opacity:.9;	
+}
+.main-text h1 {
+	color:#fff;
+	text-align:center;
+	font-weight:normal;
+  	font-family:'PMN Caecilia Pro 55 Roman';
+	opacity:.9;
+	text-shadow:0 0 12px rgba(0,0,0,0.2);	
+}
+.main-text h1 span {
+	color:#ccc;
+	opacity:.8;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	font-weight:normal;	
+}
+.content h1 {	
+}
+.media-body h1 {
+	font-family:'URW Clarendon Bold';	
+	line-height:1.2em;
+}
+.author-links {
+	font-size:14px;	
+	margin-top:20px;
+}
+.author-links span {
+	padding-right:20px;
+}
+body.speakers .media p.author-links span {
+	display:inline-block;
+}
+body.speakers .media p.author-links span i {
+	color:#777;
+	font-size:18px;
+	display:block;
+	float:left;
+	margin:6px 5px 0 0;
+	line-height:10px;
+}
+.home blockquote {
+	border:none;
+	padding:0;
+	width:50%;
+	float:left;
+}
+.home blockquote:last-child {
+	margin-left:-30px;
+	margin-top:80px;
+}
+.home blockquote p {
+	font-size:22px;
+	line-height:34px;
+}
+.home blockquote p.quotation {
+	color:#bad1df;
+	text-indent:-0.45em;
+	border-radius:25px;
+	font-family:'URW Clarendon Bold';
+	border:none;
+	padding:35px;
+	border:1px solid rgba(255,255,255,0.5);	
+}
+.home blockquote p.quotation {
+	padding-right:55px;
+	position:relative;
+	z-index:5;
+}
+.home blockquote:last-child p.quotation {
+	padding-left:65px;
+	padding-right:35px;
+	border:1px solid rgba(255,255,255,0.3);	
+}
+.home blockquote p.quotation em {
+	color:#fff;
+	font-style:normal;
+	font-family:'PMN Caecilia Pro 55 Roman';
+}
+.home blockquote p.source {
+	padding:15px 0 0 150px;
+	line-height:26px;
+	background: url(../../images/yosemite/img_quote_corner.png) no-repeat 75px top;
+	position:relative;
+	z-index:10;
+	margin-top:-1px;
+}
+.home blockquote p.source a {
+	color:rgba(255,255,255,0.4);
+	font-style:italic;
+	font-size:18px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+.home blockquote p cite {
+	padding:15px 0 0;
+	display:inline-block;	
+	color:#fff;
+}
+.home blockquote p.source img {
+	margin-right:15px;
+}
+
+/*	=4b: Lists  
+----------------------------------------------- */
+ul.nav-list li a {	
+	padding:7px 15px;
+	border-radius:5px;
+	color:#666;
+}
+ul.nav-list li {	
+	border-bottom:1px solid #eee;
+}
+ul.nav-list li:last-child {	
+	border-bottom:none;
+}
+
+/*	=4c: Images  
+----------------------------------------------- */
+.home img.iphone {
+	margin-top:-390px;	
+}
+.home img.imac {
+	margin-top:-450px;	
+	max-height:700px;
+}
+.home .about .media {
+	overflow:visible;	
+}
+.home .sponsors img {
+	margin-top:25px;
+	margin-bottom:25px;	
+}
+.img-rounded {
+    border-radius: 6px;
+}
+.img-polaroid {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+}
+.img-circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 500px;
+}
+.media, .media-body {
+    overflow: hidden;
+}
+.media:first-child {
+    margin-top: 0;
+}
+.media > .pull-left {
+    margin-right: 25px;
+}
+.media-heading {
+    margin: 0 0 5px;
+}
+.media-list {
+    list-style: none outside none;
+    margin-left: 0;
+}
+.content .photostrip {
+	border-top:2px solid #000;
+	border-bottom:2px solid #000;
+	margin:30px 0;
+}
+.content .photostrip {
+	width:100%;
+	max-width:1230px;
+}
+body.all-speakers li.media img {
+	width:75px;	
+}
+img.center {
+	display:block;
+	margin-right:auto;
+	margin-left:auto;	
+}
+
+/*	=4d: Links  
+----------------------------------------------- */
+.navbar-inverse a:hover.brand {
+	color:#0093ee;
+}
+ul.nav.pull-right li:last-child a {
+	color:#0093ee;
+}
+ul.nav.pull-right li:last-child a:hover {
+	color:#fff;
+}
+.btn-flat {
+	background:transparent;
+	border:1px solid #b74f51;
+	color:#b74f51;
+	text-shadow:none;	
+}
+.btn-flat:hover {
+	background:#b74f51;
+	border:1px solid #b74f51;
+	color:#fff;	
+}
+.btn-flat-gray {
+	background:transparent;
+	border:1px solid #fff;
+	color:#888 !important;
+	text-shadow:none;	
+}
+.btn-flat-gray:hover {
+	background:#b74f51;
+	border:1px solid #b74f51;
+	color:#fff !important;	
+}
+.home .btn {
+	font-family:'URW Clarendon Bold';
+	font-size:130%;
+}
+.home .btn-flat-gray {
+	border-color:#ccc;
+	color:#fff !important;
+	opacity:.9;	
+}
+.home .btn-flat-gray:hover {
+	background:#fff;
+	border-color:#fff;
+	color:#b74f51 !important;
+}
+.home .header .btn-flat-gray {
+}
+.home .header .btn-flat-gray:hover {
+	color:#004352 !important;
+	box-shadow:none;
+}
+.home .locations .row-fluid div p a {
+	color:#fff;	
+}
+.home a.share {
+	height:70px;
+	width:70px;
+	line-height:70px;
+	margin:0 5px;
+	padding:0;
+	font-size:40px;
+	display:inline-block;
+	background-color:#444;
+	color:#fff;	
+}
+.home a:hover.share {
+	box-shadow:1px 1px 3px rgba(0,0,0,.2);
+}
+.home a.share.twitter {
+	background-color:#55acee;
+}
+.home a.share.facebook {
+	background-color:#305891;
+}
+.home a.share.google {
+	background-color:#ff4944;
+}
+.home a.share.email {
+	background-color:#888;
+}
+.home a.share.more {
+	background-color:#888;
+	margin-right:35px;	
+}
+a.muted {
+	color:#555;	
+}
+a:hover.muted {
+	color:#0093ee;	
+}
+h3 a.muted, h4 a.muted h5 a.muted {
+	color:#000;	
+}
+
+/*	=4e: Forms  
+----------------------------------------------- */
+
+/*	=4f: Tables  
+----------------------------------------------- */
+table.table td {
+	text-align:center;	
+}
+table.table td:first-child {
+	text-align:left;	
+}
+.schedule table.table td a:first-child {
+	display:inline-block;
+	margin-bottom:10px;
+	font-family:'PMN Caecilia Pro 75 Bold';
+}
+.schedule table.table td {
+	width:30%;	
+	border-right:1px dotted #ccc;
+}
+.schedule table.table td:first-child {	
+	width:10%;
+}
+
+
+/*	=5: Footers
+=============================================== */
+body.secondary footer {
+	margin:20px 0 40px;
+	text-align:right;
+	color:#999;
+	font-size:12px;
+}
+footer a {
+	color:#777 !important;
+	font-family:'PMN Caecilia Pro 75 Bold';
+}
+footer a:hover {
+	text-decoration:underline;
+}
+.home .sponsors + .navbar {
+	margin:0;	
+}
+.home .sponsors + .navbar .navbar-inner {
+	padding:20px 0;
+	border-radius:0;
+}
+.home footer {
+	color:#555;
+	padding:20px 0 10px;
+	font-size:12px;
+	background-color:#000;	
+}
+
+
+/*	=6: Misc
+=============================================== */
+.center {
+	margin:0 auto;
+	display:block;	
+}
+
+/* icons */
+body.secondary .nav-list li a:before {
+	display:block;
+	float:left;
+	font-size:24px;
+	margin:6px 10px 0 0;
+	width:20px;
+	text-align:center;
+	line-height:12px;
+	font-family:"Ionicons";
+}
+li.about a:before {
+	content:"\f1a0";
+}
+li.speakers a:before {
+	content:"\f17f";
+}
+li.sessions a:before {
+	content:"\f168";
+}
+li.schedule a:before {
+	content:"\f171";
+}
+li.venue a:before {
+	content:"\f1a5";
+}
+li.partners a:before {
+	content:"\f1ca";
+}
+li.register a:before {
+	content:"\f1c3";
+}
+li.about.active a:before {
+	content:"\f1a1";
+}
+li.speakers.active a:before {
+	content:"\f180";
+}
+li.sessions.active a:before {
+	content:"\f169";
+}
+li.schedule.active a:before {
+	content:"\f172";
+}
+li.venue.active a:before {
+	content:"\f1a6";
+}
+li.partners.active a:before {
+	content:"\f1cb";
+}
+li.register.active a:before {
+	content:"\f1c4";
+}
