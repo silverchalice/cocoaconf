@@ -1,4 +1,4 @@
-import grails.plugins.springsecurity.SecurityConfigType
+import grails.plugin.springsecurity.SecurityConfigType
 
 // locations to search for config files that get merged into the main config
 // config files can either be Java properties files or ConfigSlurper scripts
@@ -203,9 +203,9 @@ grails.plugin.springsecurity.interceptUrlMap = [
 
 // Added by the Spring Security Core plugin:
 
-grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.cocoaconf.User'
-grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.cocoaconf.UserRole'
-grails.plugins.springsecurity.authority.className = 'com.cocoaconf.Role'
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.cocoaconf.User'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.cocoaconf.UserRole'
+grails.plugin.springsecurity.authority.className = 'com.cocoaconf.Role'
 
 // log4j configuration
 log4j = {

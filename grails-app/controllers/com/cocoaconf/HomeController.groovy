@@ -1,7 +1,7 @@
 package com.cocoaconf
 
-import org.codehaus.groovy.grails.commons.ConfigurationHolder
 import org.springframework.web.context.request.RequestContextHolder as RCH
+import grails.util.Holders
 
 //`Oh! captive, bound, and double-ironed,' cried the phantom, `not to know, that ages of incessant labour, by immortal creatures, for this earth must pass into eternity before the good of which it is susceptible is all developed.
 
@@ -10,7 +10,7 @@ class HomeController {
     def springSecurityService
     def feedService
     def randomService
-    def config = ConfigurationHolder.config
+    def config = Holders.config
 
     def index = {
       [useImg: randomService.nextInteger(100) + 1]

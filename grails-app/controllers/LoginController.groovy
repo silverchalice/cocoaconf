@@ -1,10 +1,8 @@
-package com.cocoaconf
-
 import grails.converters.JSON
 
 import javax.servlet.http.HttpServletResponse
 
-import org.codehaus.groovy.grails.plugins.springsecurity.SpringSecurityUtils
+import grails.plugin.springsecurity.SpringSecurityUtils
 
 import org.apache.commons.lang.RandomStringUtils
 
