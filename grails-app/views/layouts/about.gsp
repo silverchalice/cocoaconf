@@ -10,7 +10,7 @@
     <!-- Le styles -->
     <link href="${resource(dir: 'css', file: 'bootstrap.css')}" rel="stylesheet">
     <link href="${resource(dir: 'css', file: 'bootstrap-responsive.css')}" rel="stylesheet">
-    <link href="${resource(dir: 'css', file: 'main.css')}" rel="stylesheet">
+    <link href="${resource(dir: 'css', file: 'new-main.css')}" rel="stylesheet">
     <link href="${resource(dir: 'css', file: 'ionicons.css')}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'MyFontsWebfontsKit.css')}">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
