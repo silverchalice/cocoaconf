@@ -33,6 +33,8 @@ class HomeController {
       session.sawCountdown = "yup"
     }
 
+    def yosemite = {}
+
     def announcement = {}
 
     def register = {}
