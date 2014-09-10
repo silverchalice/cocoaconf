@@ -12,6 +12,8 @@
 <link href="css/yosemite/bootstrap-responsive_yosemite.css" rel="stylesheet">
 <link href="css/yosemite/main_yosemite.css" rel="stylesheet">
 <link href="css/yosemite/ionicons.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="${resource(dir:'css', file: 'YosemiteWebFonts.css')}">
+
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
       <script src="js/yosemite/html5shiv.js"></script>
