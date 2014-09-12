@@ -481,6 +481,9 @@ img.center {
 	margin-right:auto;
 	margin-left:auto;	
 }
+p.bio {
+  font-size: smaller;
+}
 div.bio img {
 	width:115px;	
 }
