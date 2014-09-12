@@ -149,7 +149,7 @@
           <h4><span><a href="http://qbranch.co/">Q Branch</a></span></h4>
           <p><small><span class="twitter"><a href="https://twitter.com/brentsimmons" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@brentsimmons</a></span> / <span class="blog"><a href="http://inessential.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;inessential.com</a></span></small></p>
           <hr>
-          <p class="bio">Brent Simmons has been writing apps for Apple computers for over 30 years, since his first Apple II Plus in 1980. His professional apprenticeship was at UserLand Software where he worked on Frontier and on Manila, an early blog platform. Later he created apps such as NetNewsWire, TapLynx, Glassboard, and MarsEdit. Brent lives in Seattle with his wife Sheila and his cat Papa, who&#8217;s named for both Ernest Hemingway and the great designated hitter Edgar Martinez.</p>
+          <p class="bio">Brent Simmons has been writing apps for Apple computers for over 30 years, since his first Apple II Plus in 1980. His professional apprenticeship was at UserLand Software where he worked on Frontier and on Manila, an early blog platform. Later he created apps such as NetNewsWire, TapLynx, Glassboard, and MarsEdit &#8212; and he currently writes <a href="http://vesperapp.co/">Vesper</a>. Brent lives in Seattle with his wife Sheila and his cat Papa, who&#8217;s named for both Ernest Hemingway and the great designated hitter Edgar Martinez.</p>
         </div>
       </div>
       <div class="span2"> <a href="#ex3" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Serenity Caldwell.jpg" alt="Speaker image"></a>
@@ -256,17 +256,17 @@
       </div>
       <p>&nbsp;</p>
       <div class="row-fluid">
-        <div class="span2"> <a href="#ex11" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/jaimee newberry.jpg" alt="Speaker image"></a>
+        <div class="span2"> <a href="#ex11" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/jaimee newberry.png" alt="Speaker image"></a>
           <h3 class="text-center">Jaimee Newberry</h3>
-          <h4 class="text-center"><span><a href="http://bests.com/">Bests</a></span></h4>
-          <div id="ex11" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/jaimee newberry.jpg" alt="Speaker image">
+          <h4 class="text-center"><span><a href="http://www.jaimeejaimee.com/">JAIMEEJAIMEE.com</a></span></h4>
+          <div id="ex11" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/jaimee newberry.png" alt="Speaker image">
             <h3>Jaimee Newberry</h3>
-            <h4><span><a href="http://bests.com/">Bests</a></span></h4>
+            <h4><span><a href="http://www.jaimeejaimee.com/">JAIMEEJAIMEE.com</a></span></h4>
             <p><small><span class="twitter"><a href="https://twitter.com/jaimeejaimee" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@jaimeejaimee</a></span> / <span class="blog"><a href="http://www.jaimeejaimee.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;jaimeejaimee.com</a></span></small></p>
             <hr>
             <p class="bio">Jaimee speaks and writes on motivational and tactical topics she&#8217;s learned throughout 17 years as a web and mobile app designer, UX practitioner, manager, co-worker, business owner, partner, and employee counselor. She weaves-in experience and learnings from life as a mom, a woman in tech, a life-designer and as a human being.</p>
-            <p class="bio">She consults Fortune 500 companies, agencies, and startups in nourishing their in-house creative teams and strengthening company-wide experience design and strategy practices. She also coaches owners, managers, product, ux and creative teams in building confidence, communication, execution, balance and success.</p>
-            <p class="bio">Jaimee is the co-founder of <a href="http://bests.com/">Bests.com</a>, co-host of the podcast <a href="http://unprofesh.com/">Unprofessional</a> (since ep. #74), catalyst for <a href="http://twitter.com/wwdcgirls">@wwdcgirls</a>, and co-keeper of <a href="http://jonathanlivingstonseagull.com/">JonathanLivingstonSeagull.com</a>.</p>
+            <p class="bio">She is a UX and Design coach for Fortune 500 companies, agencies, and startups. She also coaches owners, managers, product and engineering teams in building confidence, communication, execution, balance and success.</p>
+            <p class="bio">Jaimee is also the co-CEO of Dwelling Society (coming soon), co-founder of <a href="http://bests.com/">Bests.com</a>, co-host of the podcast <a href="http://unprofesh.com/">Unprofessional</a> (since <a href="http://unprofesh.com/blog/2014/1/7/74-a-series-of-digressions">ep. #74</a>), catalyst for <a href="https://twitter.com/wwdcgirls">@wwdcgirls</a>, and advisor for <a href="http://www.jonathanlivingstonseagull.com/">JonathanLivingstonSeagull.com</a>.</p>
           </div>
         </div>
         <div class="span2"> <a href="#ex12" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/laura savino.jpg" alt="Speaker image"></a>
