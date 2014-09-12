@@ -201,7 +201,7 @@
             <h4><span><a href="http://www.6wunderkinder.com/">6Wunderkinder</a></span></h4>
             <p><small><span class="twitter"><a href="https://twitter.com/duncan" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@duncan</a></span> / <span class="blog"><a href="https://jdd.io/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;jdd.io</a></span></small></p>
             <hr>
-            <p>Duncan Davidson is an author, photographer, and developer, currently residing in Berlin, Germany. These days he spends most of his time as a software engineer at 6Wunderkinder, were he works on Wunderlist. </p>
+            <p>Duncan Davidson is an author, photographer, and developer, currently residing in Berlin, Germany. These days he spends most of his time as a software engineer at 6Wunderkinder, where he works on Wunderlist. </p>
             <p>As a photographer, Duncan regularly covers the TED conferences, and has done work for O&#8217;Reilly, Apple, Gigaom, and more. Previously, Duncan was a software engineer at Sun Microsystems, where he created Tomcat and Ant. Duncan has authored or co-authored books including <i>Learning Cocoa with Objective-C</i>, <i>Cocoa in a Nutshell</i>, and <i>Agile Web Development with Rails</i>.</p>
           </div>
         </div>
