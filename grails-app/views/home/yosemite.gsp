@@ -339,7 +339,7 @@
       <div class="row-fluid">
         <div class="span4"> </div>
         <div class="span2">
-          <p><a href="#speakersMore" class="btn btn-flat btn-block btn-large" id="expanderHead"><span id="expanderSign">More</span> speakers </a></p>
+          <p><a href="#speakersMore" class="btn btn-flat btn-block btn-large" id="expanderHead"><span id="expanderSign">See all</span> </a></p>
         </div>
         <div class="span4"> </div>
       </div>

@@ -38,11 +38,11 @@
 $(document).ready(function(){
 	$("#expanderHead").click(function(){
 		$("#expanderContent").slideToggle();
-		if ($("#expanderSign").text() == "More"){
-			$("#expanderSign").html("Fewer")
+		if ($("#expanderSign").text() == "See all"){
+			$("#expanderSign").html("Close")
 		}
 		else {
-			$("#expanderSign").text("More")
+			$("#expanderSign").text("See all")
 		}
 	});
 	$("#expanderVenue").click(function(){
