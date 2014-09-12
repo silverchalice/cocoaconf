@@ -160,7 +160,7 @@
           <h4><span><a href="http://www.imore.com/">iMore</a></span></h4>
           <p><small><span class="twitter"><a href="https://twitter.com/settern" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@settern</a></span> / <span class="blog"><a href="http://manyhats.tumblr.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;manyhats.tumblr.com</a></span></small></p>
           <hr>
-          <p class="bio">Serenity has been writing and talking and tinkering with Apple products since she was old enough to double-click. In her spare time, she sketches, writes, acts, sings, and wears an assortment of hats.</p>
+          <p class="bio">Serenity has been writing and talking about and tinkering with Apple products since she was old enough to double-click. In her spare time, she sketches, writes, acts, sings, and wears an assortment of hats.</p>
         </div>
       </div>
       <div class="span2"> <a href="#ex4" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Neven Mrgan.jpg" alt="Speaker image"></a>
