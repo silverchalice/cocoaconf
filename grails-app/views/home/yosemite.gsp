@@ -394,6 +394,7 @@
     </div>
   </div>
 </div>
+<!--
 <a name="share"></a>
 <div class="share">
   <div class="container">
@@ -404,6 +405,7 @@
     </p>
   </div>
 </div>
+-->
 <a name="register"></a>
 <div class="sessions">
   <div class="container">
