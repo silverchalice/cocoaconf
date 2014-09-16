@@ -95,7 +95,7 @@
         
         <div class="span6">
           <h2>Reservations</h2>
-          <p>Rooms can be reserved at <a href="www.yosemitepark.com" title="Visit the website">www.yosemitepark.com</a> or by calling 801-559-4935. When registering, use the group code: <span class="yosemite-name">14K5VG</span>. We have group rates for different types and locations of rooms. All rooms are limited.</p><hr>
+          <p>Rooms can be reserved at <a href="http://www.yosemitepark.com" title="Visit the website">www.yosemitepark.com</a> or by calling 801-559-4935. When registering, use the group code: <span class="yosemite-name">14K5VG</span>. We have group rates for different types and locations of rooms. All rooms are limited.</p><hr>
           <p>There is a shuttle that runs between Curry Village and Yosemite Lodge every half hour.</p>
         </div>
         <div class="span4">
