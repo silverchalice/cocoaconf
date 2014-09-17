@@ -282,10 +282,10 @@
         </div>
         <div class="span2"> <a href="#ex13" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Jason Snell.jpg" alt="Speaker image"></a>
           <h3 class="text-center">Jason Snell</h3>
-          <h4 class="text-center"><span><a href="http://5by5.tv/incomparable/">The Incomparable</a></span></h4>
+          <h4 class="text-center"><span><a href="http://sixcolors.com/">Six Colors</a></span></h4>
           <div id="ex13" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/Jason Snell.jpg" alt="Speaker image">
             <h3>Jason Snell</h3>
-            <h4><span><a href="http://5by5.tv/incomparable/">The Incomparable</a></span></h4>
+            <h4><span><a href="http://sixcolors.com/">Six Colors</a></span></h4>
             <p><small><span class="twitter"><a href="https://twitter.com/jsnell" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@jsnell</a></span> / <span class="blog"><a href="http://snellworld.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;snellworld.com</a></span></small></p>
             <hr>
             <p class="bio">Jason Snell was editor in chief of <i>Macworld</i> for nearly a decade. He has covered OS X since the Public Beta, writes about Apple regularly, and also podcasts about technology and popular culture, most notably at <a href="http://5by5.tv/incomparable/">The Incomparable</a>.</p>
