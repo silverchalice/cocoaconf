@@ -407,14 +407,15 @@
 <a name="register"></a>
 <div class="sessions">
   <div class="container">
-    <h2 class="text-center">What you get when you register now.</h2>
+    <h2 class="text-center">You can register today.</h2>
     <div class="row-fluid">
       <div class="span10">
-        <p><strong>Seating for this event is very limited,</strong> so don&#8217;t sit on the fence! With your registration you get admission to all of the sessions, meals from dinner on Monday through lunch on Thursday, awesome swag, and the thrill of knowing you were one of the few that were there!</p>
-        <p style="text-align:center;"><strong>If you have any questions, contact us at <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=info@cocoaconf.com" target="_blank">info@cocoaconf.com</a> or <a href="https://twitter.com/cocoaconf">@cocoaconf</a>.</strong></p>
+        <p><strong>Seating for Yosemite is very limited, so don’t sit on the fence!</strong></p>
+        <p>Your registration gets you admission to all of the sessions and sponsored activities, meals from dinner on Monday through lunch on Thursday, awesome swag, and the thrill of knowing that you were one of the few that were there!</p>
+        <p>If you have any questions, contact us at <a href="mailto:yosemite@cocoaconf.com">yosemite@cocoaconf.com</a> or <a href="https://twitter.com/cocoaconf">@cocoaconf</a> on Twitter.</p>
 
         <br>
-        <div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.com/tickets-external?eid=12988546091&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Online Ticketing</a><span style="color:#ddd;"> for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://www.eventbrite.com/e/yosemite-by-cocoaconf-tickets-12988546091?ref=etckt">Yosemite, by CocoaConf</a> <span style="color:#ddd;">powered by</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
+        <div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.com/tickets-external?eid=12988546091&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Online Ticketing</a><span style="color:#ddd;"> for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://www.eventbrite.com/e/yosemite-by-cocoaconf-tickets-12988546091?ref=etckt">Yosemite, by CocoaConf</a> <span style="color:#ddd;">powered by</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
       </div>
     </div>
     <hr>
