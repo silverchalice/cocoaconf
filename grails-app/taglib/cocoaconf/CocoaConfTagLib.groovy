@@ -171,12 +171,16 @@ class CocoaConfTagLib {
         } else if(attrs.id == 24){
             out << "CocoaConf Seattle is sold out!"
             return
-        } else if(attrs.id == 25 || attrs.id == 26){
+        } else if(attrs.id == 25){
             out << ""
             return
         }
 
         def c = Conference.get(attrs.id)
+        if(!c.startDate){
+            return
+        }
+
         if(c.status == Conference.ACTIVE){
             Double timeLeft = c.startDate - new Date()
             timeLeft = timeLeft / 7; timeLeft = timeLeft.round() - 1
