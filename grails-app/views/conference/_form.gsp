@@ -121,14 +121,6 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: conference, field: 'speakers', 'error')} ">
-	<label for="speakers">
-		<g:message code="conference.speakers.label" default="Speakers" />
-		
-	</label>
-	<g:select name="speakers" from="${com.cocoaconf.Speaker.list([sort:'lastName'])}" multiple="multiple" optionKey="id" size="5" value="${conference?.speakers*.id}" class="many-to-many"/>
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'state', 'error')} ">
 	<label for="state">
 		<g:message code="conference.state.label" default="State" />
