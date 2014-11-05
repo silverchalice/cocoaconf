@@ -23,24 +23,6 @@
 			</g:if>
 			<ol class="property-list course">
 			
-				<g:if test="${courseInstance?.prereq}">
-				<li class="fieldcontain">
-					<span id="prereq-label" class="property-label"><g:message code="course.prereq.label" default="Prereq" /></span>
-					
-						<span class="property-value" aria-labelledby="prereq-label"><g:fieldValue bean="${courseInstance}" field="prereq"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${courseInstance?.description}">
-				<li class="fieldcontain">
-					<span id="description-label" class="property-label"><g:message code="course.description.label" default="Description" /></span>
-					
-						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${courseInstance}" field="description"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${courseInstance?.speaker}">
 				<li class="fieldcontain">
 					<span id="speaker-label" class="property-label"><g:message code="course.speaker.label" default="Speaker" /></span>
@@ -50,11 +32,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${courseInstance?.title}">
+				<g:if test="${courseInstance?.trainingClass}">
 				<li class="fieldcontain">
-					<span id="title-label" class="property-label"><g:message code="course.title.label" default="Title" /></span>
+					<span id="trainingClass-label" class="property-label"><g:message code="course.trainingClass.label" default="Training Class" /></span>
 					
-						<span class="property-value" aria-labelledby="title-label"><g:fieldValue bean="${courseInstance}" field="title"/></span>
+						<span class="property-value" aria-labelledby="trainingClass-label"><g:link controller="trainingClass" action="show" id="${courseInstance?.trainingClass?.id}">${courseInstance?.trainingClass?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

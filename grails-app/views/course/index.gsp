@@ -24,13 +24,9 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="prereq" title="${message(code: 'course.prereq.label', default: 'Prereq')}" />
-					
-						<g:sortableColumn property="description" title="${message(code: 'course.description.label', default: 'Description')}" />
-					
 						<th><g:message code="course.speaker.label" default="Speaker" /></th>
 					
-						<g:sortableColumn property="title" title="${message(code: 'course.title.label', default: 'Title')}" />
+						<th><g:message code="course.trainingClass.label" default="Training Class" /></th>
 					
 					</tr>
 				</thead>
@@ -38,13 +34,9 @@
 				<g:each in="${courseInstanceList}" status="i" var="courseInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${courseInstance.id}">${fieldValue(bean: courseInstance, field: "prereq")}</g:link></td>
+						<td><g:link action="show" id="${courseInstance.id}">${fieldValue(bean: courseInstance, field: "speaker")}</g:link></td>
 					
-						<td>${fieldValue(bean: courseInstance, field: "description")}</td>
-					
-						<td>${fieldValue(bean: courseInstance, field: "speaker")}</td>
-					
-						<td>${fieldValue(bean: courseInstance, field: "title")}</td>
+						<td>${fieldValue(bean: courseInstance, field: "trainingClass")}</td>
 					
 					</tr>
 				</g:each>
