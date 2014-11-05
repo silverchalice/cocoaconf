@@ -73,8 +73,11 @@
 
                   <div class="well">
 
-                    <h3>Show Notes</h3>
-                    ${termInstance?.description}
+                    <h3>Course Descriptions</h3>
+                    <g:each in="${termInstance?.courses}" var="course">
+                      <h4>&#8220;${course?.trainingType?.title},&#8221; with ${course?.speaker}</h4>
+                      ${course?.trainingType?.description}
+                    </g:each>
                   </div>
 
               </div>
