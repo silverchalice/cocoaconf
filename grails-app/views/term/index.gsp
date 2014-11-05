@@ -62,12 +62,11 @@
 
               <div class="training">
 
-                  <h3><g:formatDate format="MMMM d, yyyy" date="${termInstance?.startDate}" /></h3>
 
                   <h2><g:link controller="term" action="index" params="${[slug: termInstance.slug]}">
                         ${termInstance.title}</g:link></h2>
 
-                  <h3>${termInstance.endDate}</h3>
+                  <h3><g:formatDate format="MMMM dd" date="${termInstance?.startDate}" /> &#8211; <g:formatDate format="MMMM dd, yyyy" date="${termInstance?.endDate}" /></h3>
 
                   <p>&nbsp;</p>
 
