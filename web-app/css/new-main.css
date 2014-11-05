@@ -107,6 +107,9 @@ body.atlanta {
 body.podcast {
     background-image: url(../images/bg_podcast_03.jpg), url(../images/bg_main.jpg);
 }
+body.training {
+    background-image: url(../images/bg_university_02.jpg), url(../images/bg_main.jpg);
+}
 a {
 	text-decoration:none;
 	color:#0093ee;	
@@ -741,4 +744,15 @@ span.address {
 
 .well h4 {
 	margin: 30px 0 15px;	
+}
+
+/* Training */
+
+.training {
+  margin-bottom: 70px;
+}
+
+.training h3 {
+	font-family:'Avenir 35 Light';
+  color: #888;
 }
