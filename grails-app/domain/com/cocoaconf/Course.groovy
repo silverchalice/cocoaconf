@@ -5,11 +5,7 @@ class Course {
     static belongsTo = Term
 
     Speaker speaker
-    TrainingClass trainingClass
-
-    String toString(){
-        "${trainingClass?.title}, with $speaker"
-    }
+    TrainingType trainingType
 
     static constraints = {
     }
