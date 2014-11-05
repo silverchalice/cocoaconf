@@ -2,26 +2,16 @@ package com.cocoaconf
 
 class Course {
 
-    Speaker speaker
+    static belongsTo = Term
 
-    String title
-    String description
-    String prereq
+    Speaker speaker
+    TrainingClass trainingClass
 
     String toString(){
-        "$title, by $speaker"
+        "${trainingClass.title}, by $speaker"
     }
 
     static constraints = {
-
-        prereq nullable: true, blank: true
-
     }
 
-    static mapping = {
-
-        description type: "text"
-        prereq type: "text"
-
-    }
 }

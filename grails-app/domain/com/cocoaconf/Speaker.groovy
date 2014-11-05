@@ -17,6 +17,8 @@ class Speaker {
 	String appnet
 	String speakerHash
 
+  byte[] trainingImage
+
     //TODO: remove this
     Boolean current
 
@@ -35,6 +37,7 @@ class Speaker {
 	    twitter nullable:true
 	    appnet nullable:true
 	    speakerHash nullable:true
+      trainingImage nullable: true
     }
 
     static mapping = {
