@@ -11,12 +11,12 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: courseInstance, field: 'trainingClass', 'error')} required">
-	<label for="trainingClass">
-		<g:message code="course.trainingClass.label" default="Training Class" />
+<div class="fieldcontain ${hasErrors(bean: courseInstance, field: 'trainingType', 'error')} required">
+	<label for="trainingType">
+		<g:message code="course.trainingType.label" default="Training Class" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="trainingClass" name="trainingClass.id" from="${com.cocoaconf.TrainingClass.list()}" optionKey="id" required="" value="${courseInstance?.trainingClass?.id}" class="many-to-one"/>
+	<g:select id="trainingType" name="trainingType.id" from="${com.cocoaconf.TrainingType.list()}" optionKey="id" required="" value="${courseInstance?.trainingType?.id}" class="many-to-one"/>
 
 </div>
 
