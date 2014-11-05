@@ -1,6 +1,6 @@
 package com.cocoaconf
 
-class TrainingClass {
+class TrainingType {
 
     String title
     String description

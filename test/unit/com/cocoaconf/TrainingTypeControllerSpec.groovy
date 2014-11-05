@@ -5,9 +5,9 @@ package com.cocoaconf
 import grails.test.mixin.*
 import spock.lang.*
 
-@TestFor(TrainingClassController)
-@Mock(TrainingClass)
-class TrainingClassControllerSpec extends Specification {
+@TestFor(TrainingTypeController)
+@Mock(TrainingType)
+class TrainingTypeControllerSpec extends Specification {
 
     def populateValidParams(params) {
         assert params != null
@@ -21,8 +21,8 @@ class TrainingClassControllerSpec extends Specification {
             controller.index()
 
         then:"The model is correct"
-            !model.trainingClassInstanceList
-            model.trainingClassInstanceCount == 0
+            !model.trainingTypeInstanceList
+            model.trainingTypeInstanceCount == 0
     }
 
     void "Test the create action returns the correct model"() {
@@ -30,7 +30,7 @@ class TrainingClassControllerSpec extends Specification {
             controller.create()
 
         then:"The model is correctly created"
-            model.trainingClassInstance!= null
+            model.trainingTypeInstance!= null
     }
 
     void "Test the save action correctly persists an instance"() {
@@ -38,25 +38,25 @@ class TrainingClassControllerSpec extends Specification {
         when:"The save action is executed with an invalid instance"
             request.contentType = FORM_CONTENT_TYPE
             request.method = 'POST'
-            def trainingClass = new TrainingClass()
-            trainingClass.validate()
-            controller.save(trainingClass)
+            def trainingType = new TrainingType()
+            trainingType.validate()
+            controller.save(trainingType)
 
         then:"The create view is rendered again with the correct model"
-            model.trainingClassInstance!= null
+            model.trainingTypeInstance!= null
             view == 'create'
 
         when:"The save action is executed with a valid instance"
             response.reset()
             populateValidParams(params)
-            trainingClass = new TrainingClass(params)
+            trainingType = new TrainingType(params)
 
-            controller.save(trainingClass)
+            controller.save(trainingType)
 
         then:"A redirect is issued to the show action"
-            response.redirectedUrl == '/trainingClass/show/1'
+            response.redirectedUrl == '/trainingType/show/1'
             controller.flash.message != null
-            TrainingClass.count() == 1
+            TrainingType.count() == 1
     }
 
     void "Test that the show action returns the correct model"() {
@@ -68,11 +68,11 @@ class TrainingClassControllerSpec extends Specification {
 
         when:"A domain instance is passed to the show action"
             populateValidParams(params)
-            def trainingClass = new TrainingClass(params)
-            controller.show(trainingClass)
+            def trainingType = new TrainingType(params)
+            controller.show(trainingType)
 
         then:"A model is populated containing the domain instance"
-            model.trainingClassInstance == trainingClass
+            model.trainingTypeInstance == trainingType
     }
 
     void "Test that the edit action returns the correct model"() {
@@ -84,11 +84,11 @@ class TrainingClassControllerSpec extends Specification {
 
         when:"A domain instance is passed to the edit action"
             populateValidParams(params)
-            def trainingClass = new TrainingClass(params)
-            controller.edit(trainingClass)
+            def trainingType = new TrainingType(params)
+            controller.edit(trainingType)
 
         then:"A model is populated containing the domain instance"
-            model.trainingClassInstance == trainingClass
+            model.trainingTypeInstance == trainingType
     }
 
     void "Test the update action performs an update on a valid domain instance"() {
@@ -98,28 +98,28 @@ class TrainingClassControllerSpec extends Specification {
             controller.update(null)
 
         then:"A 404 error is returned"
-            response.redirectedUrl == '/trainingClass/index'
+            response.redirectedUrl == '/trainingType/index'
             flash.message != null
 
 
         when:"An invalid domain instance is passed to the update action"
             response.reset()
-            def trainingClass = new TrainingClass()
-            trainingClass.validate()
-            controller.update(trainingClass)
+            def trainingType = new TrainingType()
+            trainingType.validate()
+            controller.update(trainingType)
 
         then:"The edit view is rendered again with the invalid instance"
             view == 'edit'
-            model.trainingClassInstance == trainingClass
+            model.trainingTypeInstance == trainingType
 
         when:"A valid domain instance is passed to the update action"
             response.reset()
             populateValidParams(params)
-            trainingClass = new TrainingClass(params).save(flush: true)
-            controller.update(trainingClass)
+            trainingType = new TrainingType(params).save(flush: true)
+            controller.update(trainingType)
 
         then:"A redirect is issues to the show action"
-            response.redirectedUrl == "/trainingClass/show/$trainingClass.id"
+            response.redirectedUrl == "/trainingType/show/$trainingType.id"
             flash.message != null
     }
 
@@ -130,23 +130,23 @@ class TrainingClassControllerSpec extends Specification {
             controller.delete(null)
 
         then:"A 404 is returned"
-            response.redirectedUrl == '/trainingClass/index'
+            response.redirectedUrl == '/trainingType/index'
             flash.message != null
 
         when:"A domain instance is created"
             response.reset()
             populateValidParams(params)
-            def trainingClass = new TrainingClass(params).save(flush: true)
+            def trainingType = new TrainingType(params).save(flush: true)
 
         then:"It exists"
-            TrainingClass.count() == 1
+            TrainingType.count() == 1
 
         when:"The domain instance is passed to the delete action"
-            controller.delete(trainingClass)
+            controller.delete(trainingType)
 
         then:"The instance is deleted"
-            TrainingClass.count() == 0
-            response.redirectedUrl == '/trainingClass/index'
+            TrainingType.count() == 0
+            response.redirectedUrl == '/trainingType/index'
             flash.message != null
     }
 }
