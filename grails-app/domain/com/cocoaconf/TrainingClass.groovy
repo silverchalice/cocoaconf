@@ -6,6 +6,10 @@ class TrainingClass {
     String description
     String prereq
 
+    String toString(){
+        title
+    }
+
     static constraints = {
 
         prereq nullable: true, blank: true
