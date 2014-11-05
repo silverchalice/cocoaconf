@@ -101,4 +101,11 @@ class CourseController {
             '*'{ render status: NOT_FOUND }
         }
     }
+
+    def displayImage = {
+        def course = Course.get(params.id)
+        response.outputStream << course?.speaker?.trainingImage
+        response.outputStream.flush()
+    }
+
 }
