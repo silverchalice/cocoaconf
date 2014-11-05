@@ -51,6 +51,15 @@
 
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                    <label for="trainingImage">Training Image</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: speakerInstance, field: 'trainingImage', 'errors')}">
+                                    <input type="file" id="trainingImage" name="trainingImage" />
+                                </td>
+                            </tr>
+
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                   <label for="slug"><g:message code="speaker.slug.label" default="Slug" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: speakerInstance, field: 'slug', 'errors')}">
