@@ -19,10 +19,9 @@
 
         <div class="row-fluid">
             <div class="span7">
-                <h1>Training by CocoaConf</h1>
-                <g:if test="${isList}">
-                  <p class="lead" style="margin-top:30px;">The CocoaConf Podcast features members of the iOS and OS X community offering tips, insight, facts, and opinions for other iOS and OS X developers. You&#8217;ll recognize many of the voices from the popular CocoaConf conference series.</p>
-                </g:if>
+                <h1>Training by CocoaConf <br /> <small>Industry Training By Industry Professionals</small></h1>
+                <p class="lead" style="margin-top:30px;">CocoaConf University combines the focus of an individual training class with the networking opportunities of a conference, the way that only CocoaConf can.</p>
+
             </div>
             <div class="span3">
               <!--<h2 style="text-align: center;"><small>Available on iTunes.</small></h2>-->
