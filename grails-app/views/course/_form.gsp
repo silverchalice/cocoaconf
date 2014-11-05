@@ -7,7 +7,7 @@
 		<g:message code="course.speaker.label" default="Speaker" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="speaker" name="speaker.id" from="${com.cocoaconf.Speaker.list()}" optionKey="id" required="" value="${courseInstance?.speaker?.id}" class="many-to-one"/>
+	<g:select id="speaker" name="speaker.id" from="${com.cocoaconf.Speaker.list(sort: 'firstName')}" optionKey="id" required="" value="${courseInstance?.speaker?.id}" class="many-to-one"/>
 
 </div>
 
