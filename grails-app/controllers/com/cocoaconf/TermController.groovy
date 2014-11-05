@@ -11,6 +11,11 @@ class TermController {
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
+        if(!params.slug) {
+            def nextTerm = Term.findByStartDateGreaterThan(new Date())
+            redirect action: "index", params: [slug: nextTerm.slug]
+            return
+        }
         println "\n\nhey yo. here are your params as we got them: $params\n\n"
         params.max = Math.min(max ?: 10, 100)
         respond Term.list(params), model:[termInstanceCount: Term.count()]
