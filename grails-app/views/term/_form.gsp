@@ -83,3 +83,11 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: termInstance, field: 'messageText', 'error')}">
+	<label for="messageText">
+		<g:message code="term.messageText.label" default="Message Text" />
+	</label>
+	<g:textArea name="messageText" value="${termInstance?.messageText}"/>
+
+</div>
+

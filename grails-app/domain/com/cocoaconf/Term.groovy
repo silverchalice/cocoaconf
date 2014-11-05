@@ -13,6 +13,7 @@ class Term {
     String slug
     String description
     String registrationBlurb
+    String messageText
 
     String toString() {
         title
@@ -22,6 +23,8 @@ class Term {
 
         courses nullable: true
         venue nullable: true
+        registrationBlurb maxSize: 5000000
+        messageText nullable: true, blank: true, maxSize: 5000
 
     }
 

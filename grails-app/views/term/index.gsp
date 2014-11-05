@@ -23,9 +23,10 @@
                 <p class="lead" style="margin-top:30px;">CocoaConf University combines the focus of an individual training class with the networking opportunities of a conference, the way that only CocoaConf can.</p>
 
             </div>
+
             <div class="span3">
-              <h2 style="text-align: center;"><small>Do foods at your company!</small></h2>
-              <a href="https://itunes.apple.com/us/podcast/cocoaconf-podcast/id882941510" class="button"><button class="btn btn-block btn-large btn-flat"><i class="ion-ipod"></i> &nbsp; Give Us Money</button></a>
+              <h2 style="text-align: center;"><small>We&#8217;ll come to your company!</small></h2>
+              <a href="mailto:training@cocoaconf.com" class="button"><button class="btn btn-block btn-large btn-flat"><i class="ion-ios7-people"></i> &nbsp; Ask about private classes</button></a>
 
             </div>
         </div>
@@ -44,6 +45,11 @@
 
 
       <hr>
+
+      <g:if test="${termInstance?.messageText}">
+        <p class="announce">${termInstance?.messageText}</p>
+      </g:if>
+
       <div class="row-fluid">
         <div class="span3 hidden-phone hidden-tablet">
           <h3>Training Links</h3>
@@ -74,15 +80,21 @@
 
                   ${termInstance?.description}
 
+                  <p style="font-size:larger;">
+                    <strong><a href="#">Register for ${termInstance?.title}</a></strong>
+                  </p>
+
                   <br />
 
                   <div class="well">
 
-                    <h3>Course Descriptions</h3>
+                    <h3>Course Outlines</h3>
                     <g:each in="${termInstance?.courses}" var="course">
                       <h4>&#8220;${course?.trainingType?.title},&#8221; with ${course?.speaker}</h4>
                       <img class="trainingImage" align="left" src="${createLink(controller: 'course', action: 'displayImage', id: course.id)}" />
                       ${course?.trainingType?.description}
+                      <h4>About Your Instructor</h4>
+                      ${course?.speaker?.bio}
                       <br />
                     </g:each>
                   </div>
