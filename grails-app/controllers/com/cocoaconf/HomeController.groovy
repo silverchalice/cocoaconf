@@ -35,6 +35,10 @@ class HomeController {
 
     def yosemite = {}
 
+    def university = {
+      redirect controller: "term", action: "index", params: params
+    }
+
     def announcement = {}
 
     def register = {}
