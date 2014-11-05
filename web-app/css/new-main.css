@@ -756,3 +756,17 @@ span.address {
 	font-family:'Avenir 35 Light';
   color: #888;
 }
+
+div#trainingDesc {
+  margin: 25px 0 0;
+  border: 1px solid #c7c7c7;
+  padding: 17px 17px 10px;
+}
+
+div#trainingDesc p {
+  line-height: 180%;
+}
+
+img.trainingImage {
+  padding: 8px 20px 15px 0;
+}

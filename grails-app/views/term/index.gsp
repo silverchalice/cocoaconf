@@ -24,8 +24,8 @@
 
             </div>
             <div class="span3">
-              <!--<h2 style="text-align: center;"><small>Available on iTunes.</small></h2>-->
-              <a href="https://itunes.apple.com/us/podcast/cocoaconf-podcast/id882941510" class="button"><button class="btn btn-block btn-large btn-flat"><i class="ion-ipod"></i> &nbsp; Subscribe</button></a>
+              <h2 style="text-align: center;"><small>Do foods at your company!</small></h2>
+              <a href="https://itunes.apple.com/us/podcast/cocoaconf-podcast/id882941510" class="button"><button class="btn btn-block btn-large btn-flat"><i class="ion-ipod"></i> &nbsp; Give Us Money</button></a>
 
             </div>
         </div>
@@ -45,19 +45,23 @@
 
       <hr>
       <div class="row-fluid">
-        <div class="span2 hidden-phone hidden-tablet">
+        <div class="span3 hidden-phone hidden-tablet">
           <h3>Training Links</h3>
           <ul class="nav nav-list">
-            <li class="feedback"><a href="mailto:podcast@cocoaconf.com">Feedback</a></li>
-            <li class="itunes"><a href="https://itunes.apple.com/us/podcast/cocoaconf-podcast/id882941510">iTunes</a></li>
-            <li class="rss"><a href="https://media.signalleaf.com/CocoaConf-Podcast/rss">RSS</a></li>
-            <li class="twitter"><a href="http://twitter.com/CocoaConfCast">Twitter</a></li>
-            <li class="skype"><a href="skype:cocoaconf.podcast?call">Survey Line</a></li>
+            <li class="feedback"><a href="mailto:training@cocoaconf.com">Questions?</a></li>
+            <li class="twitter"><a href="http://twitter.com/CocoaConfEDU">Twitter</a></li>
           </ul>
 
+          <div id="trainingDesc">
+            <p><strong>CocoaConf University</strong> is a 4-day multi-class training event for Apple developers of all skill levels. Whether you are new to iOS development or an old hand wanting to stay abreast of changes in this ever-changing field, these full-day, immersive classes will help you take your career to the next level. </p>
+
+            <p>You will be in class all day, focused on the subjects at hand, as taught by some of the best instructors in our field.  </p>
+
+            <p>When classes let out, you&#8217;ll gather with your fellow classmates for meals, group activities, and engaging conversations, adding the conference feel that you&#8217;ve come to appreciate from CocoaConf.</p>
+        </div>
 
         </div>
-        <div class="span8">
+        <div class="span7">
           <g:each in="${termInstanceList}" var="termInstance">
 
               <div class="training">
@@ -68,14 +72,18 @@
 
                   <h3><g:formatDate format="MMMM dd" date="${termInstance?.startDate}" /> &#8211; <g:formatDate format="MMMM dd, yyyy" date="${termInstance?.endDate}" /></h3>
 
-                  <p>&nbsp;</p>
+                  ${termInstance?.description}
+
+                  <br />
 
                   <div class="well">
 
                     <h3>Course Descriptions</h3>
                     <g:each in="${termInstance?.courses}" var="course">
                       <h4>&#8220;${course?.trainingType?.title},&#8221; with ${course?.speaker}</h4>
+                      <img class="trainingImage" align="left" src="${createLink(controller: 'course', action: 'displayImage', id: course.id)}" />
                       ${course?.trainingType?.description}
+                      <br />
                     </g:each>
                   </div>
 
