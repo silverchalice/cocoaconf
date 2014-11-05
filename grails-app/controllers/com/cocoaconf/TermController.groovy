@@ -17,8 +17,9 @@ class TermController {
             return
         }
         println "\n\nhey yo. here are your params as we got them: $params\n\n"
+        def termInstance = Term.findBySlug(params.slug)
         params.max = Math.min(max ?: 10, 100)
-        respond Term.list(params), model:[termInstanceCount: Term.count()]
+        respond Term.list(params), model:[termInstance: termInstance, termInstanceCount: Term.count()]
     }
 
     def show(Term termInstance) {
