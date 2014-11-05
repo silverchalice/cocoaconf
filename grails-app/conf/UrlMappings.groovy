@@ -36,6 +36,16 @@ class UrlMappings {
 			controller = "home"
 			action = "credits"
 		}
+
+		"/training/$slug?"{
+			controller = "term"
+			action = "index"
+		}
+
+		"/university/$slug?"{
+			controller = "home"
+			action = "university"
+		}
 		
 		"/register"{
 			controller = "conference"
