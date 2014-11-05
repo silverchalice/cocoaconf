@@ -8,7 +8,7 @@ class Course {
     TrainingClass trainingClass
 
     String toString(){
-        "${trainingClass.title}, by $speaker"
+        "${trainingClass?.title}, with $speaker"
     }
 
     static constraints = {
