@@ -37,7 +37,7 @@ class Speaker {
 	    twitter nullable:true
 	    appnet nullable:true
 	    speakerHash nullable:true
-      trainingImage nullable: true
+      trainingImage nullable: true, maxSize: 500000000
     }
 
     static mapping = {
