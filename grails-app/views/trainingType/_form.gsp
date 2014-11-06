@@ -7,7 +7,7 @@
 		<g:message code="trainingType.title.label" default="Title" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="title" required="" value="${trainingTypeInstance?.title}"/>
+	<g:textField name="title" required="" style="width: 400px;" value="${trainingTypeInstance?.title}"/>
 
 </div>
 
