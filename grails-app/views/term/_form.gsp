@@ -2,6 +2,33 @@
 
 
 
+<div class="fieldcontain ${hasErrors(bean: termInstance, field: 'title', 'error')} required">
+	<label for="title">
+		<g:message code="term.title.label" default="Title" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="title" required="" style="width: 400px;" value="${termInstance?.title}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: termInstance, field: 'slug', 'error')} required">
+	<label for="slug">
+		<g:message code="term.slug.label" default="Slug" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="slug" required="" value="${termInstance?.slug}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: termInstance, field: 'description', 'error')} required">
+	<label for="description">
+		<g:message code="term.description.label" default="Description" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textArea name="description" required="" value="${termInstance?.description}"/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: termInstance, field: 'courses', 'error')} ">
 	<label for="courses">
 		<g:message code="term.courses.label" default="Courses" />
@@ -20,12 +47,12 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: termInstance, field: 'description', 'error')} required">
-	<label for="description">
-		<g:message code="term.description.label" default="Description" />
+<div class="fieldcontain ${hasErrors(bean: termInstance, field: 'startDate', 'error')} required">
+	<label for="startDate">
+		<g:message code="term.startDate.label" default="Start Date" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="description" required="" value="${termInstance?.description}"/>
+	<g:datePicker name="startDate" precision="day"  value="${termInstance?.startDate}"  />
 
 </div>
 
@@ -38,15 +65,6 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: termInstance, field: 'isActive', 'error')} ">
-	<label for="isActive">
-		<g:message code="term.isActive.label" default="Is Active" />
-		
-	</label>
-	<g:checkBox name="isActive" value="${termInstance?.isActive}" />
-
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: termInstance, field: 'registrationBlurb', 'error')} required">
 	<label for="registrationBlurb">
 		<g:message code="term.registrationBlurb.label" default="Registration Blurb" />
@@ -56,38 +74,20 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: termInstance, field: 'slug', 'error')} required">
-	<label for="slug">
-		<g:message code="term.slug.label" default="Slug" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:textField name="slug" required="" value="${termInstance?.slug}"/>
-
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: termInstance, field: 'startDate', 'error')} required">
-	<label for="startDate">
-		<g:message code="term.startDate.label" default="Start Date" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:datePicker name="startDate" precision="day"  value="${termInstance?.startDate}"  />
-
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: termInstance, field: 'title', 'error')} required">
-	<label for="title">
-		<g:message code="term.title.label" default="Title" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:textField name="title" required="" value="${termInstance?.title}"/>
-
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: termInstance, field: 'messageText', 'error')}">
 	<label for="messageText">
 		<g:message code="term.messageText.label" default="Message Text" />
 	</label>
 	<g:textArea name="messageText" value="${termInstance?.messageText}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: termInstance, field: 'isActive', 'error')} ">
+	<label for="isActive">
+		<g:message code="term.isActive.label" default="Is Active" />
+		
+	</label>
+	<g:checkBox name="isActive" value="${termInstance?.isActive}" />
 
 </div>
 
