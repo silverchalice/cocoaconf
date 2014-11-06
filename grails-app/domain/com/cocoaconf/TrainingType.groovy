@@ -11,16 +11,8 @@ class TrainingType {
     }
 
     static constraints = {
-
-        prereq nullable: true, blank: true
-
-    }
-
-    static mapping = {
-
-        description type: "text"
-        prereq type: "text"
-
+        description maxSize:10000
+        prereq nullable: true, blank: true, maxSize:10000
     }
 
 }
