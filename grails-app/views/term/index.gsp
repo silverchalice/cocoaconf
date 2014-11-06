@@ -25,8 +25,8 @@
             </div>
 
             <div class="span3">
-              <h2 style="text-align: center;"><small>We&#8217;ll come to your company!</small></h2>
-              <a href="mailto:training@cocoaconf.com" class="button"><button class="btn btn-block btn-large btn-flat"><i class="ion-ios7-people"></i> &nbsp; Ask about private classes</button></a>
+              <h2 style="text-align: center;"><small>We&#8217;ll come to your company.</small></h2>
+              <a href="mailto:training@cocoaconf.com?subject=Inquiring%20about%20private%20training%20classes" class="button"><button class="btn btn-block btn-large btn-flat"><i class="ion-ios7-people"></i> &nbsp; Ask about private classes</button></a>
 
             </div>
         </div>
@@ -81,7 +81,7 @@
                   ${termInstance?.description}
 
                   <p style="font-size:larger;">
-                    <strong><a href="#">Register for ${termInstance?.title}</a></strong>
+                    <strong><a href="#register">Register for ${termInstance?.title}</a></strong>
                   </p>
 
                   <br />
@@ -96,7 +96,12 @@
                       <h4>About Your Instructor</h4>
                       ${course?.speaker?.bio}
                       <br />
+
                     </g:each>
+
+                    <a name="register"></a><br />
+                    <h3>Register</h3>
+                    ${termInstance?.registrationBlurb}
                   </div>
 
               </div>
