@@ -19,7 +19,7 @@
 
         <div class="row-fluid">
             <div class="span7">
-                <h1>Training by CocoaConf <br /> <small>Industry Training By Industry Professionals</small></h1>
+                <h1>Training by CocoaConf <br /> <small>Apple Developer Training By The Best In The Business</small></h1>
                 <p class="lead" style="margin-top:30px;">CocoaConf University combines the focus of an individual training class with the networking opportunities of a conference, the way that only CocoaConf can.</p>
 
             </div>
