@@ -89,7 +89,7 @@
                   <div class="well">
 
                     <h3>Course Outlines</h3>
-                    <g:each in="${termInstance?.courses}" var="course">
+                    <g:each in="${termInstance?.courses?.sort{it.id}}" var="course">
                       <h4>&#8220;${course?.trainingType?.title},&#8221; with ${course?.speaker}</h4>
                       <img class="trainingImage" align="left" src="${createLink(controller: 'course', action: 'displayImage', id: course.id)}" />
                       ${course?.trainingType?.description}
