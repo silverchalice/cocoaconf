@@ -9,7 +9,7 @@
 	</head>
 	<body class="training">
     <div class="container main-text">
-      <h1 style="margin: 36px 0"><g:link controller="podcast" action="index"><img src="${resource(dir: 'images', file: 'university-logo.png')}" class="hidden-phone" style="height: 120px" /></g:link> <g:link controller="podcast" action="index"> CocoaConf University </g:link></h1>
+      <h1 style="margin: 36px 0"><g:link controller="term" action="index"><img src="${resource(dir: 'images', file: 'university-logo.png')}" class="hidden-phone" style="height: 120px" /></g:link> <g:link controller="term" action="index"> CocoaConf University </g:link></h1>
     </div>
 
 
