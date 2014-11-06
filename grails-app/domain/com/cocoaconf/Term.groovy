@@ -23,15 +23,9 @@ class Term {
 
         courses nullable: true
         venue nullable: true
+        description maxSize: 5000000
         registrationBlurb maxSize: 5000000
         messageText nullable: true, blank: true, maxSize: 5000
-
-    }
-
-    static mapping = {
-
-        description type: "text"
-        registrationBlurb type: "text"
 
     }
 }
