@@ -11,6 +11,11 @@ class Course {
     }
     
     String toString(){
-        trainingType.title + ', by ' + speaker
+        if (trainingType){
+          trainingType?.title + ', by ' + speaker    
+        } else {
+            "New Course"
+        }
+        
     }
 }
