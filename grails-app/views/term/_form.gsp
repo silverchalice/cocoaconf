@@ -52,7 +52,7 @@
 		<g:message code="term.registrationBlurb.label" default="Registration Blurb" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="registrationBlurb" required="" value="${termInstance?.registrationBlurb}"/>
+	<g:textArea name="registrationBlurb" required="" value="${termInstance?.registrationBlurb}"/>
 
 </div>
 
