@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Sessions / ${conference?.city} / CocoaConf: The developer conference for those who think different.</title>
+<title>Register / ${conference?.city} / CocoaConf: The developer conference for those who think different.</title>
 <meta name="layout" content="home" />
 </head>
 
