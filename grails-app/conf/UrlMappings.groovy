@@ -61,6 +61,11 @@ class UrlMappings {
             controller = "conference"
             action = "sendToHome"
             id = "$tinyName"
+            constraints {
+                tinyName(validator: {
+                    return !(it in ['console'])
+                })
+            }
 		}
 		"/$tinyName/home."{
             controller = "conference"
