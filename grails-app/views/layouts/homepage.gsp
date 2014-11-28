@@ -112,6 +112,8 @@
           <!-- <li><a href="#sessions">Sessions</a></li> -->
           <!-- <li><a href="#contact">Venues</a></li> -->
           <li><g:link controller="home" action="partners">Partners</g:link></li>
+          <li><g:link controller="term">Training</g:link></li>
+          <li><g:link controller="podcast">Podcast</g:link></li>
           <li><g:link controller="post" action="list">Blog</g:link></li>
           <!-- <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li> -->
         </ul>
@@ -122,7 +124,7 @@
 </div>
 <footer>
   <div class="container">
-    <p class="text-right">&copy; 2014 Simply Cocoa, LLC. &nbsp;| &nbsp; About the <a href="${createLink(controller: 'home', action: 'kleinfamily')}" title="Learn more about the Kleins">Klein Family</a> &nbsp; | &nbsp; <a href="${createLink(controller: 'home', action: 'credits')}">Credits</a> &nbsp; | &nbsp; Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a> | Hosted by <a href="http://macminicolo.net/">macminicolo.net</a></p>
+    <p class="text-right">&copy; 2011&#8211;<g:formatDate format="yyyy" date="${new Date()}" /> Simply Cocoa, LLC. &nbsp;| &nbsp; <a href="${createLink(controller: 'home', action: 'kleinfamily')}" title="Learn more about the Kleins">About the Klein Family</a> &nbsp; | &nbsp; <a href="${createLink(controller: 'home', action: 'credits')}">Credits</a> &nbsp; | &nbsp; Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a></p>
   </div>
 </footer>
 </div>
