@@ -71,16 +71,19 @@ body.secondary {
     background-size: 100%, auto;	
 }
 body.chicago {
-    background-image: url(../images/bg_chicago.jpg), url(../images/bg_main.jpg);
+    background-image: url(../images/Chicago-background.png), url(../images/bg_main.jpg);
 }
 body.washington {
     background-image: url(../images/bg_washington_01.jpg), url(../images/bg_main.jpg);
 }
 body.dc {
-    background-image: url(../images/bg_washington_01.jpg), url(../images/bg_main.jpg);
+    background-image: url(../images/DC-background.jpg), url(../images/bg_main.jpg);
+}
+body.portland {
+    background-image: url(../images/portland-background.jpg), url(../images/bg_main.jpg);
 }
 body.austin {
-    background-image: url(../images/bg_austin_02.jpg), url(../images/bg_main.jpg);
+    background-image: url(../images/austin-background.jpg), url(../images/bg_main.jpg);
 }
 body.sanjose {
     background-image: url(../images/bg_sanjose_02.jpg), url(../images/bg_main.jpg);
@@ -105,7 +108,7 @@ body.atlanta {
     background-image: url(../images/bg_atlanta_02.jpg), url(../images/bg_main.jpg);
 }
 body.podcast {
-    background-image: url(../images/bg_podcast_03.jpg), url(../images/bg_main.jpg);
+    background-image: url(../images/bg_podcast_04.jpg), url(../images/bg_main.jpg);
 }
 body.training {
     background-image: url(../images/bg_university_05.jpg), url(../images/bg_main.jpg);
@@ -492,7 +495,7 @@ ul.nav.pull-right li:last-child a:hover {
 .btn-flat-gray:hover {
 	background:#999;
 	border:1px solid #999;
-	color:#fff !important;	
+	color:#fff !impobg_washington_01.jpgrtant;	
 }
 .home .btn-flat-gray {
 	border-color:#ccc;
