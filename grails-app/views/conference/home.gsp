@@ -100,11 +100,11 @@
               <ul class="dropdown-menu">
               <!--<li class="nav-header">Choose a City</li>
               <li class="divider"></li>-->
-              <li class="${conference?.id == 22 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'columbus-2014']">Columbus, OH &#8212; <strong>Sold Out!</strong></g:link></li>
-              <li class="${conference?.id == 23 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'lasvegas-2014']">Las Vegas, NV</g:link></li>
-              <li class="${conference?.id == 24 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'seattle-2014']">Seattle, WA &#8212; <strong>Sold Out!</strong></g:link></li>
-              <li class="${conference?.id == 25 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'boston-2014']">Boston, MA</g:link></li>
               <li class="${conference?.id == 26 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'atlanta-2014']">Atlanta, GA</g:link></li>
+              <li class="${conference?.id == 27 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'chicago-2015']">Chicago, IL</g:link></li>
+              <li class="${conference?.id == 28 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'dc-2015']">Washington,DC</g:link></li>
+              <li class="${conference?.id == 29 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'portland-2015']">Portland, OR</g:link></li>
+              <li class="${conference?.id == 30 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'austin-2015']">Austin, TX</g:link></li>
               </ul>
             </li>
           </ul>
