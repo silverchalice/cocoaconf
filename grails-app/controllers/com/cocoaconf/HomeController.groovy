@@ -35,6 +35,22 @@ class HomeController {
 
     def yosemite = {}
 
+    def select_activities = {
+      [user: User.get(springSecurityService.principal.id)]
+    }
+
+    def toggle_activity_selection = {
+      def user = User.get(springSecurityService.principal.id)
+      def activity = YosemiteActivity.get(params.id) 
+
+      if(activity.attendees.find { it.id == user.id }){
+        activity.attendees -= user
+      } else {
+        activity.attendees += user
+      }
+      activity.save()
+    }
+
     def university = {
       redirect controller: "term", action: "index", params: params
     }
