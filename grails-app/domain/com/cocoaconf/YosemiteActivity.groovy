@@ -5,6 +5,8 @@ class YosemiteActivity {
 	String name
 	String description
 	Integer limit = 1
+  /*Boolean dayOne
+  Boolean dayTwo */
 
 	static hasMany = [attendees: User]
 	static belongsTo = User
