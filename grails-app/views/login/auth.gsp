@@ -1,80 +1,77 @@
-<head>
-    <meta name='layout' content='home' />
-    <title>CocoaConf | Login</title>
-    <link href="${resource(dir:'css/custom', file:'jquery-ui-1.8.11.custom.css')}" rel="stylesheet" type="text/css"/>
-
-    <script src="${resource(dir:'js', file:'jquery-1.6.2.min.js')}" type="text/javascript"></script>
-
-    <script src="${resource(dir:'js', file:'jquery-ui-1.8.11.custom.min.js')}" type="text/javascript"></script>
-    <script src="${resource(dir:'js', file:'jquery.validate.min.js')}" type="text/javascript"></script>
-
-    <script type="text/javascript"  src="${resource(dir:'js', file:'jquery.corner.js')}"></script>
-    <script src="${resource(dir:'js', file:'script.js')}" type="text/javascript"></script>
-
-    <script type="text/javascript">
-
-        $(document).ready(function() {
-
-            $('#login').corner("10px");
-            $('.button').button();
-
-        });
-
-
-    </script>
-
-    <style type='text/css' media='screen'>
-        #login {
-            background-color: #eeeeee;
-            padding:20px 120px 20px 60px;
-            width:350px;
-            font-size: 18px;
-            text-align: right;
-            margin-left: 50px
-        }
-
-        #login input {
-            font-size: 18px;
-        }
-
-
-    </style>
-</head>
-
-<body>
-
-<g:if test='${flash.message}'>
-    <div class='message'>${flash.message}</div>
-    </g:if>
-    <h1 style="margin-left: 75px">Please Login</h1>
-    <div  id='login'>
-
-        <form action='${postUrl}' method='POST' id='loginForm' class='cssform' autocomplete='off'>
-            <p>
-                <label for='username'>Email: </label>
-                <input type='text' class='text_' name='j_username' id='username' />
-            </p>
-            <p>
-                <label for='password'>Password: </label>
-                <input type='password' class='text_' name='j_password' id='password' />
-            </p>
-            <p>
-                <label for='remember_me' style="font-size: 16px">Remember Me</label>
-                <input type='checkbox' class='chk' name='${rememberMeParameter}' id='remember_me'
-                       <g:if test='${hasCookie}'>checked='checked'</g:if> />
-            </p>
-            <p>
-                <label for='nothing'><g:link style="font-size: 16px" action="password_forgettification">Forgot password?</g:link></label>      <input type="submit" value="Login" class="button" style="margin-left: 10px;"  />
-            </p>
-
-        </form>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="layout" content="about" />
+        <title>CocoaConf | Login</title>
+        <style type="text/css">
+          table td p {
+            padding: 10px 0 0 20px;
+          }
+          form {
+            width: 100%;
+          }
+          p.l {
+            font-size: larger;
+          }
+          ul#about-ul {
+            text-align: left;
+            padding-left: 0;
+          }
+          ul#about-ul li {
+            list-style-position: inside;
+            margin: 20px 0;
+          }
+          p.indv {
+            margin: 100px auto;
+          }
+          p#resume {
+            margin-top: 90px;
+          }
+      </style>
+    </head>
+    <body>
+    <div class="container main-text">
+        <h1><span></span> Please Log In</h1>
     </div>
+    <div class="content container">
+        <div class="gradient"></div>
 
-    <script type='text/javascript'>
-    <!--
-    (function(){
-        document.forms['loginForm'].elements['j_username'].focus();
-    })();
-    // -->
-    </script>
-</body>
+        <!-- Main hero unit for a primary marketing message or call to action -->
+        <div class="row-fluid">
+            <div class="span1"> </div>
+                <div class="span8">
+                    <br />
+                    <form action='${postUrl}' method='POST' id='loginForm' autocomplete='off'>
+                        <table cellpadding="10" style="width: 100%;" border="0">
+                          <colgroup>
+                            <col span="1" style="width: 30%;">
+                            <col span="1" style="width: 70%;">
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <td><p class="l">Email:</p></td>
+                              <td align="center"><p><input type='text' class='text_' name='j_username' id='username' style="margin: 3px 20px 0 0; width: 700px;" /></p></td>
+                            </tr>
+                            <tr>
+                              <td><p class="l">Password:</p></td>
+                              <td align="center"><p><input type='password' class='text_' name='j_password' id='password' style="margin: 3px 20px 0 0; width: 700px;" /></p></td>
+                            </tr>
+                            <tr>
+                              <td><p class="l"></p></td>
+                              <td align="center"><p style="margin-right: 20px; text-align: right;">(<g:link style="font-size: 16px" action="password_forgettification">Forgot password?</g:link>)</p></td>
+                            </tr>
+                            <tr>
+                              <td align="center"><p style="margin-right: 20px; text-align: center;"><input style="font-size: larger; width: 100px; height: 50px;" type="submit" value="Login" class="button" style="margin-left: 10px;"  /></p></td>
+                              <td><p></p></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </form>
+                    </div>
+                <div class="span1"> </div>
+            </div>
+        <p>&nbsp;</p>
+        </div>
+        </div>
+    </body>
+</html>
