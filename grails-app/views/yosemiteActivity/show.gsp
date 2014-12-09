@@ -41,11 +41,29 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${yosemiteActivityInstance?.limit}">
+				<g:if test="${yosemiteActivityInstance?.groupSize}">
 				<li class="fieldcontain">
-					<span id="limit-label" class="property-label"><g:message code="yosemiteActivity.limit.label" default="Limit" /></span>
+					<span id="groupSize-label" class="property-label"><g:message code="yosemiteActivity.groupSize.label" default="Group Size" /></span>
 					
-						<span class="property-value" aria-labelledby="limit-label"><g:fieldValue bean="${yosemiteActivityInstance}" field="limit"/></span>
+						<span class="property-value" aria-labelledby="groupSize-label"><g:fieldValue bean="${yosemiteActivityInstance}" field="groupSize"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${yosemiteActivityInstance?.dayOne}">
+				<li class="fieldcontain">
+					<span id="dayOne-label" class="property-label"><g:message code="yosemiteActivity.dayOne.label" default="Day One" /></span>
+					
+						<span class="property-value" aria-labelledby="dayOne-label"><g:formatBoolean boolean="${yosemiteActivityInstance?.dayOne}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${yosemiteActivityInstance?.dayTwo}">
+				<li class="fieldcontain">
+					<span id="dayTwo-label" class="property-label"><g:message code="yosemiteActivity.dayTwo.label" default="Day Two" /></span>
+					
+						<span class="property-value" aria-labelledby="dayTwo-label"><g:formatBoolean boolean="${yosemiteActivityInstance?.dayTwo}" /></span>
 					
 				</li>
 				</g:if>

@@ -20,12 +20,30 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: yosemiteActivityInstance, field: 'limit', 'error')} required">
-	<label for="limit">
-		<g:message code="yosemiteActivity.limit.label" default="Limit" />
+<div class="fieldcontain ${hasErrors(bean: yosemiteActivityInstance, field: 'groupSize', 'error')} required">
+	<label for="groupSize">
+		<g:message code="yosemiteActivity.groupSize.label" default="Group Size" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field name="limit" type="number" value="${yosemiteActivityInstance.limit}" required=""/>
+	<g:field name="groupSize" type="number" value="${yosemiteActivityInstance.groupSize}" required=""/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: yosemiteActivityInstance, field: 'dayOne', 'error')} ">
+	<label for="dayOne">
+		<g:message code="yosemiteActivity.dayOne.label" default="Day One" />
+		
+	</label>
+	<g:checkBox name="dayOne" value="${yosemiteActivityInstance?.dayOne}" />
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: yosemiteActivityInstance, field: 'dayTwo', 'error')} ">
+	<label for="dayTwo">
+		<g:message code="yosemiteActivity.dayTwo.label" default="Day Two" />
+		
+	</label>
+	<g:checkBox name="dayTwo" value="${yosemiteActivityInstance?.dayTwo}" />
 
 </div>
 

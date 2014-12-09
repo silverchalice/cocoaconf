@@ -28,7 +28,11 @@
 					
 						<g:sortableColumn property="description" title="${message(code: 'yosemiteActivity.description.label', default: 'Description')}" />
 					
-						<g:sortableColumn property="limit" title="${message(code: 'yosemiteActivity.limit.label', default: 'Limit')}" />
+						<g:sortableColumn property="groupSize" title="${message(code: 'yosemiteActivity.groupSize.label', default: 'Group Size')}" />
+					
+						<g:sortableColumn property="dayOne" title="${message(code: 'yosemiteActivity.dayOne.label', default: 'Day One')}" />
+					
+						<g:sortableColumn property="dayTwo" title="${message(code: 'yosemiteActivity.dayTwo.label', default: 'Day Two')}" />
 					
 					</tr>
 				</thead>
@@ -40,7 +44,11 @@
 					
 						<td>${fieldValue(bean: yosemiteActivityInstance, field: "description")}</td>
 					
-						<td>${fieldValue(bean: yosemiteActivityInstance, field: "limit")}</td>
+						<td>${fieldValue(bean: yosemiteActivityInstance, field: "groupSize")}</td>
+					
+						<td><g:formatBoolean boolean="${yosemiteActivityInstance.dayOne}" /></td>
+					
+						<td><g:formatBoolean boolean="${yosemiteActivityInstance.dayTwo}" /></td>
 					
 					</tr>
 				</g:each>
