@@ -22,6 +22,11 @@ class UrlMappings {
 			action = "yosemite"
 		}
 
+		"/select_activities"{
+			controller = "home"
+			action = "select_activities"
+		}
+
 		"/podcast/$id?"{
 			controller = "podcast"
 			action = "index"
