@@ -66,26 +66,21 @@
           <tbody>
             <g:each in="${YosemiteActivity.list()}" var="yosemiteActivity">
               <tr>
-                <td><p>(15 left) Foo</p></td>
-                <td align="center"><p><g:checkBox name="walk,dayOne" value="${yosemiteActivity.attendees.collect { id }.contains(user.id)}" /></p></td>
-                <td align="center"><p><g:checkBox name="foo" value="true" /></p></td>
+                <td><p><strong>${yosemiteActivity.name}</strong> <br />
+                    (${yosemiteActivity.groupSize} left) </p>
+                    <p style="font-size: smaller;"><em>${yosemiteActivity.description}</em></p></td>
+                <td align="center"><p>
+                  <g:if test="${yosemiteActivity.dayOne}">
+                    <g:checkBox name="${yosemiteActivity.id},dayOne" value="false" onclick="${remoteFunction(action:'toggle_activity_selection', id: yosemiteActivity.id, params:'\'dayOne=\' + this.checked')}" />
+                  </g:if>
+                </p></td>
+                <td align="center"><p>
+                  <g:if test="${yosemiteActivity.dayTwo}">
+                    <g:checkBox name="${yosemiteActivity.id},dayTwo" value="false" onclick="${remoteFunction(action:'toggle_activity_selection', id: yosemiteActivity.id, params:'\'dayTwo=\' + this.checked')}" />
+                  </g:if>
+                </p></td>
               </tr>
             </g:each>
-            <tr>
-              <td><p>(25 left) Bar</p></td>
-              <td align="center"><p><g:checkBox name="foo" value="true" /></p></td>
-              <td align="center"><p><g:checkBox name="foo" value="true" /></p></td>
-            </tr>
-            <tr>
-              <td><p>(2 left) Bas</p></td>
-              <td align="center"><p><g:checkBox name="foo" value="true" /></p></td>
-              <td align="center"><p><g:checkBox name="foo" value="true" /></p></td>
-            </tr>
-            <tr>
-              <td><p>(45 left) Foo</p></td>
-              <td align="center"><p><g:checkBox name="foo" value="true" /></p></td>
-              <td align="center"><p><g:checkBox name="foo" value="true" /></p></td>
-            </tr>
           </tbody>
         </table>
         <p>&nbsp;</p>
