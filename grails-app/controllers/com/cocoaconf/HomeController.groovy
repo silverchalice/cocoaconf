@@ -36,7 +36,15 @@ class HomeController {
     def yosemite = {}
 
     def select_activities = {
-      [user: User.get(springSecurityService.principal.id)]
+      def user = User.get(springSecurityService.principal.id)
+
+      def activities = YosemiteActivity.withCriteria {
+        attendees {
+          'in'("id", user.id)
+        }
+      }
+
+      return [user: user, activities: activities]
     }
 
     def toggle_activity_selection = {
