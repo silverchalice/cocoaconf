@@ -37,26 +37,29 @@ class HomeController {
 
     def select_activities = {
       def user = User.get(springSecurityService.principal.id)
+      println "here are the activities: " + user.activities
 
-      def activities = YosemiteActivity.withCriteria {
-        attendees {
-          'in'("id", user.id)
-        }
-      }
-
-      return [user: user, activities: activities]
+      return [user: user, activityIds: user.activities.collect { it.id }]
     }
 
     def toggle_activity_selection = {
+      println "in toggle_activity_selection. params are:"
+      println params
       def user = User.get(springSecurityService.principal.id)
       def activity = YosemiteActivity.get(params.id) 
 
-      if(activity.attendees.find { it.id == user.id }){
-        activity.attendees -= user
-      } else {
-        activity.attendees += user
+      if(params.attending == "true"){
+        user.activities.add(activity)
+        activity.groupSize--
+      } else if(activity.attendees.find { it.id == user.id }){
+        user.activities.remove(activity)
+        activity.groupSize++
       }
-      activity.save()
+      user.save(failOnError:true)
+      activity.save(failOnError:true)
+
+      render "(${activity.groupSize} left)"
+      return
     }
 
     def university = {
