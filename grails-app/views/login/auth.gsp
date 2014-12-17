@@ -37,6 +37,10 @@
         <div class="gradient"></div>
 
         <!-- Main hero unit for a primary marketing message or call to action -->
+        <g:if test="${flash.message}">
+          <p class="announce" style="margin: 0 50px;">${flash.message}</p>
+          <p>&nbsp;</p>
+        </g:if>
         <div class="row-fluid">
             <div class="span1"> </div>
                 <div class="span8">
