@@ -67,17 +67,24 @@
             <g:each in="${YosemiteActivity.list()}" var="yosemiteActivity">
               <tr>
                 <td><p><strong>${yosemiteActivity.name}</strong> <br />
-                    (${yosemiteActivity.groupSize} left) </p>
+                    <span id="${yosemiteActivity.id}size">(${yosemiteActivity.groupSize} left)</span> </p>
                     <p style="font-size: smaller;"><em>${yosemiteActivity.description}</em></p></td>
                 <td align="center"><p>
                   <g:if test="${yosemiteActivity.dayOne}">
-                    <g:checkBox name="${yosemiteActivity.id},dayOne" value="false" onclick="${remoteFunction(action:'toggle_activity_selection', id: yosemiteActivity.id, params:'\'dayOne=\' + this.checked')}" />
+                    <g:checkBox name="${yosemiteActivity.id},dayOne" value="${activityIds.contains(yosemiteActivity.id)}" update="${yosemiteActivity.id}size" onclick="${remoteFunction(action:'toggle_activity_selection', id: yosemiteActivity.id, update: yosemiteActivity.id + 'size', params:'\'attending=\' + this.checked')}" />
                   </g:if>
+                  <g:else>
+                    <p>N/A</p>
+                  </g:else>
                 </p></td>
                 <td align="center"><p>
                   <g:if test="${yosemiteActivity.dayTwo}">
-                    <g:checkBox name="${yosemiteActivity.id},dayTwo" value="false" onclick="${remoteFunction(action:'toggle_activity_selection', id: yosemiteActivity.id, params:'\'dayTwo=\' + this.checked')}" />
+                    <g:checkBox name="${yosemiteActivity.id},dayTwo" value="${activityIds.contains(yosemiteActivity.id)}" update="${yosemiteActivity.id}size" onclick="${remoteFunction(action:'toggle_activity_selection', id: yosemiteActivity.id, update: yosemiteActivity.id + 'size', params:'\'attending=\' + this.checked')}" />
                   </g:if>
+                  <g:else>
+                    <p>N/A</p>
+                  </g:else>
+                </p></td>
                 </p></td>
               </tr>
             </g:each>
