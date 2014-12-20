@@ -49,8 +49,7 @@
     <h2 class="text-center">Select activities at Yosemite</h2>
     <div class="row-fluid">
       <div class="span10">
-        <p><strong>Seating for Yosemite is very limited, so don’t sit on the fence!</strong></p>
-        <p>Your registration gets you admission to all of the sessions and sponsored activities, meals from dinner on Monday through lunch on Thursday, awesome swag, and the thrill of knowing that you were one of the few that were there!</p>
+        <p>One of our goals for the Yosemite conference is to make sure we take advantage of the Park while we&#8217;re there. Here is the list of activities we&#8217;ll have for the two conference days Tuesday (April 21) and Wednesday (April 22). Please select the two (one per day) that you would like to attend.</p>
         <br />
         <table cellpadding="10" style="width: 100%; background: url(../images/bg_main.jpg) repeat center top;" border="1">
           <colgroup>
@@ -64,14 +63,14 @@
             <th>Wednesday</th>
           </thead>
           <tbody>
-            <g:each in="${YosemiteActivity.list()}" var="yosemiteActivity">
+            <g:each in="${activities}" var="yosemiteActivity">
               <tr>
                 <td><p><strong>${yosemiteActivity.name}</strong> <br />
                     <span id="${yosemiteActivity.id}size">(${yosemiteActivity.groupSize} left)</span> </p>
                     <p style="font-size: smaller;"><em>${yosemiteActivity.description}</em></p></td>
                 <td align="center"><p>
                   <g:if test="${yosemiteActivity.dayOne}">
-                    <g:checkBox name="${yosemiteActivity.id},dayOne" value="${activityIds.contains(yosemiteActivity.id)}" update="${yosemiteActivity.id}size" onclick="${remoteFunction(action:'toggle_activity_selection', id: yosemiteActivity.id, update: yosemiteActivity.id + 'size', params:'\'attending=\' + this.checked')}" />
+                    <g:checkBox class="dayOne" name="${yosemiteActivity.id},dayOne" value="${activityIds.contains(yosemiteActivity.id)}" update="${yosemiteActivity.id}size" onchange="${remoteFunction(action:'toggle_activity_selection', id: yosemiteActivity.id, update: yosemiteActivity.id + 'size', params:'\'attending=\' + this.checked')}" />
                   </g:if>
                   <g:else>
                     <p>N/A</p>
@@ -79,7 +78,7 @@
                 </p></td>
                 <td align="center"><p>
                   <g:if test="${yosemiteActivity.dayTwo}">
-                    <g:checkBox name="${yosemiteActivity.id},dayTwo" value="${activityIds.contains(yosemiteActivity.id)}" update="${yosemiteActivity.id}size" onclick="${remoteFunction(action:'toggle_activity_selection', id: yosemiteActivity.id, update: yosemiteActivity.id + 'size', params:'\'attending=\' + this.checked')}" />
+                    <g:checkBox class="dayTwo" name="${yosemiteActivity.id},dayTwo" value="${activityIds.contains(yosemiteActivity.id)}" update="${yosemiteActivity.id}size" onchange="${remoteFunction(action:'toggle_activity_selection', id: yosemiteActivity.id, update: yosemiteActivity.id + 'size', params:'\'attending=\' + this.checked')}" />
                   </g:if>
                   <g:else>
                     <p>N/A</p>

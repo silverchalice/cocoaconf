@@ -39,27 +39,37 @@ class HomeController {
       def user = User.get(springSecurityService.principal.id)
       println "here are the activities: " + user.activities
 
-      return [user: user, activityIds: user.activities.collect { it.id }]
+      return [user: user, activities: YosemiteActivity.list(), activityIds: user.activities.collect { it.id }]
     }
 
     def toggle_activity_selection = {
       println "in toggle_activity_selection. params are:"
       println params
       def user = User.get(springSecurityService.principal.id)
-      def activity = YosemiteActivity.get(params.id) 
+      println "params.id is ${params.id}"
+      params.id = params.id?.contains(',day') ? params.id[0..-8] : params.id
+      
+      println "..and now the params.id is ${params.id}"
+      def activity = YosemiteActivity.get(params.int('id')) 
 
-      if(params.attending == "true"){
-        user.activities.add(activity)
-        activity.groupSize--
-      } else if(activity.attendees.find { it.id == user.id }){
-        user.activities.remove(activity)
-        activity.groupSize++
+      if(activity){
+        if(params.attending == "true"){
+          user.activities.add(activity)
+          activity.groupSize--
+          user.activities.findAll { it.id != activity.id && it.dayOne == activity.dayOne }.each {
+            println "\n\nit is $it\n\n"
+            user.activities.remove(it)
+          }
+        } else if(activity.attendees.find { it.id == user.id }){
+          user.activities.remove(activity)
+          activity.groupSize++
+        }
+        user.save(failOnError:true)
+        activity.save(failOnError:true)
+
+        render "(${activity.groupSize} left)"
       }
-      user.save(failOnError:true)
-      activity.save(failOnError:true)
-
-      render "(${activity.groupSize} left)"
-      return
+      return false
     }
 
     def university = {
