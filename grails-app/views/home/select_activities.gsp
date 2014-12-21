@@ -49,7 +49,9 @@
     <h2 class="text-center">Select activities at Yosemite</h2>
     <div class="row-fluid">
       <div class="span10">
-        <p>One of our goals for the Yosemite conference is to make sure we take advantage of the Park while we&#8217;re there. Here is the list of activities we&#8217;ll have for the two conference days Tuesday (April 21) and Wednesday (April 22). Please select the two (one per day) that you would like to attend.</p>
+        <p>One of our goals for the Yosemite conference is to make sure we take advantage of the Park while we&#8217;re there. We will have free time between lunch and the evening sessions, and we are offering the following optional activities that you can take advantage of.  You can choose one activity for each of the two full conference days&#8212;Tuesday (April 21) and Wednesday (April 22).  </p>
+
+        <p><strong>We need to reserve space for these activities, so please make your selection before February 27th.  Thanks!</strong></p>
         <br />
         <table cellpadding="10" style="width: 100%; background: url(../images/bg_main.jpg) repeat center top;" border="1">
           <colgroup>
