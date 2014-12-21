@@ -54,9 +54,14 @@ $(document).ready(function(){
 			$("#expanderVenueSign").text("▾ Room info")
 		}
 	});
+  $('input.dayOne').on('change', function() {
+      $('input.dayOne').not(this).prop('checked', false);  
+  });
+  $('input.dayTwo').on('change', function() {
+      $('input.dayTwo').not(this).prop('checked', false);  
+  });
 });
 </script>
-
 </head>
 
 <body class="home">
