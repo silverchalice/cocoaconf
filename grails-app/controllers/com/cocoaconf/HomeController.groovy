@@ -36,16 +36,16 @@ class HomeController {
     def yosemite = {}
 
     def select_activities = {
-      def user = User.get(springSecurityService.principal.id)
+      def user = User.get(params.id)
       println "here are the activities: " + user.activities
 
-      return [user: user, activities: YosemiteActivity.list(), activityIds: user.activities.collect { it.id }]
+      [user: user, activities: YosemiteActivity.list(), activityIds: user.activities.collect { it.id }]
     }
 
     def toggle_activity_selection = {
       println "in toggle_activity_selection. params are:"
       println params
-      def user = User.get(springSecurityService.principal.id)
+      def user = User.get(params.userId)
       println "params.id is ${params.id}"
       params.id = params.id?.contains(',day') ? params.id[0..-8] : params.id
       

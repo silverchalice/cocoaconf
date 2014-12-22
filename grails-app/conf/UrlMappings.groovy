@@ -22,7 +22,7 @@ class UrlMappings {
 			action = "yosemite"
 		}
 
-		"/select_activities"{
+		"/select_activities/$id"{
 			controller = "home"
 			action = "select_activities"
 		}

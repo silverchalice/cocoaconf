@@ -72,7 +72,7 @@
                     <p style="font-size: smaller;"><em>${yosemiteActivity.description}</em></p></td>
                 <td align="center"><p>
                   <g:if test="${yosemiteActivity.dayOne}">
-                    <g:checkBox class="dayOne" name="${yosemiteActivity.id},dayOne" value="${activityIds.contains(yosemiteActivity.id)}" update="${yosemiteActivity.id}size" onchange="${remoteFunction(action:'toggle_activity_selection', id: yosemiteActivity.id, update: yosemiteActivity.id + 'size', params:'\'attending=\' + this.checked')}" />
+                    <g:checkBox class="dayOne" name="${yosemiteActivity.id},dayOne" value="${activityIds.contains(yosemiteActivity.id)}" update="${yosemiteActivity.id}size" onchange="${remoteFunction(action:'toggle_activity_selection', id: yosemiteActivity.id, update: yosemiteActivity.id + 'size', params:'\'attending=\'+this.checked+\'&userId=' + user.id + '\'')}" />
                   </g:if>
                   <g:else>
                     <p>N/A</p>
@@ -80,7 +80,7 @@
                 </p></td>
                 <td align="center"><p>
                   <g:if test="${yosemiteActivity.dayTwo}">
-                    <g:checkBox class="dayTwo" name="${yosemiteActivity.id},dayTwo" value="${activityIds.contains(yosemiteActivity.id)}" update="${yosemiteActivity.id}size" onchange="${remoteFunction(action:'toggle_activity_selection', id: yosemiteActivity.id, update: yosemiteActivity.id + 'size', params:'\'attending=\' + this.checked')}" />
+                    <g:checkBox class="dayTwo" name="${yosemiteActivity.id},dayTwo" value="${activityIds.contains(yosemiteActivity.id)}" update="${yosemiteActivity.id}size" onchange="${remoteFunction(action:'toggle_activity_selection', id: yosemiteActivity.id, update: yosemiteActivity.id + 'size', params:'\'attending=\'+this.checked+\'&userId=' + user.id + '\'')}" />
                   </g:if>
                   <g:else>
                     <p>N/A</p>
