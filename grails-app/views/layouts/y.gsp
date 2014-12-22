@@ -8,10 +8,10 @@
 <meta name="author" content="">
 
 <!-- Le styles -->
-<link href="css/yosemite/bootstrap.css" rel="stylesheet">
-<link href="css/yosemite/bootstrap-responsive_yosemite.css" rel="stylesheet">
-<link href="css/yosemite/main_yosemite.css" rel="stylesheet">
-<link href="css/yosemite/ionicons.css" rel="stylesheet">
+<link href="${resource(dir: 'css/yosemite', file: 'bootstrap.css')}" rel="stylesheet">
+<link href="${resource(dir: 'css/yosemite', file: 'bootstrap-responsive_yosemite.css')}" rel="stylesheet">
+<link href="${resource(dir: 'css/yosemite', file: 'main_yosemite.css')}" rel="stylesheet">
+<link href="${resource(dir: 'css/yosemite', file: 'ionicons.css')}" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="${resource(dir:'css', file: 'YosemiteWebFonts.css')}">
 <link rel="stylesheet" type="text/css" href="${resource(dir:'css', file: 'YosemiteWebFonts2.css')}">
 
