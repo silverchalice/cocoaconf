@@ -258,10 +258,10 @@
       </div>
       <p>&nbsp;</p>
       <div class="row-fluid">
-        <div class="span2"> <a href="#ex15" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Christa-Mrgan.png" alt="Speaker image"></a>
+        <div class="span2"> <a href="#ex11" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Christa-Mrgan.png" alt="Speaker image"></a>
           <h3 class="text-center">Christa Mrgan</h3>
-          <h4 class="text-center"><span><a href="http://stone.com/">Rogue Amoeba</a></span></h4>
-          <div id="ex15" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/Christa-Mrgan.png" alt="Speaker image">
+          <h4 class="text-center"><span><a href="http://rogueamoeba.com/">Rogue Amoeba</a></span></h4>
+          <div id="ex11" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/Christa-Mrgan.png" alt="Speaker image">
             <h3>Christa Mrgan</h3>
             <h4><span><a href="http://rogueamoeba.com/">Rogue Amoeba</a></span></h4>
             <p><small><span class="twitter"><a href="https://twitter.com/antichrista" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@antichrista</a></span></small></p>
@@ -269,10 +269,10 @@
             <p class="bio">Christa designs quality audio software for <a href="http://rogueamoeba.com/">Rogue Amoeba</a>. She lives in the Pacific Northwest with her husband, daughter and cat, where she eats kale chips and plays the banjo non-ironically.</p>
           </div>
         </div>
-        <div class="span2"> <a href="#ex11" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/jaimee newberry.png" alt="Speaker image"></a>
+        <div class="span2"> <a href="#ex12" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/jaimee newberry.png" alt="Speaker image"></a>
           <h3 class="text-center">Jaimee Newberry</h3>
           <h4 class="text-center"><span><a href="http://www.jaimeejaimee.com/">JAIMEEJAIMEE.com</a></span></h4>
-          <div id="ex11" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/jaimee newberry.png" alt="Speaker image">
+          <div id="ex12" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/jaimee newberry.png" alt="Speaker image">
             <h3>Jaimee Newberry</h3>
             <h4><span><a href="http://www.jaimeejaimee.com/">JAIMEEJAIMEE.com</a></span></h4>
             <p><small><span class="twitter"><a href="https://twitter.com/jaimeejaimee" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@jaimeejaimee</a></span> / <span class="blog"><a href="http://www.jaimeejaimee.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;jaimeejaimee.com</a></span></small></p>
@@ -282,10 +282,10 @@
             <p class="bio">Jaimee is also the co-CEO of Dwelling Society (coming soon), co-founder of <a href="http://bests.com/">Bests.com</a>, co-host of the podcast <a href="http://unprofesh.com/">Unprofessional</a> (since <a href="http://unprofesh.com/blog/2014/1/7/74-a-series-of-digressions">ep. #74</a>), catalyst for <a href="https://twitter.com/wwdcgirls">@wwdcgirls</a>, and advisor for <a href="http://www.jonathanlivingstonseagull.com/">JonathanLivingstonSeagull.com</a>.</p>
           </div>
         </div>
-        <div class="span2"> <a href="#ex12" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/laura savino.jpg" alt="Speaker image"></a>
+        <div class="span2"> <a href="#ex13" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/laura savino.jpg" alt="Speaker image"></a>
           <h3 class="text-center">Laura Savino</h3>
           <h4 class="text-center"><span> <a href="https://www.khanacademy.org/">Khan Academy</a></span></h4>
-          <div id="ex12" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/laura savino.jpg" alt="Speaker image">
+          <div id="ex13" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/laura savino.jpg" alt="Speaker image">
             <h3>Laura Savino</h3>
             <h4><span><a href="https://www.khanacademy.org/">Khan Academy</a></span></h4>
             <p><small><span class="twitter"><a href="https://twitter.com/savinola" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@savinola</a></span></small></p>
@@ -293,10 +293,10 @@
             <p class="bio">Laura is an iOS developer with a penchant for languages, travel, and education. She taught English in rural Korea and French in the environs of Microsoft before cutting her teeth as a mobile developer at Übermind, making awesome apps for big-name clients. She&#8217;s now working to transform learning by building iOS apps at <a href="http://khanacademy.org/">Khan Academy</a>.</p>
           </div>
         </div>
-        <div class="span2"> <a href="#ex13" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Jason Snell.jpg" alt="Speaker image"></a>
+        <div class="span2"> <a href="#ex14" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Jason Snell.jpg" alt="Speaker image"></a>
           <h3 class="text-center">Jason Snell</h3>
           <h4 class="text-center"><span><a href="http://sixcolors.com/">Six Colors</a></span></h4>
-          <div id="ex13" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/Jason Snell.jpg" alt="Speaker image">
+          <div id="ex14" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/Jason Snell.jpg" alt="Speaker image">
             <h3>Jason Snell</h3>
             <h4><span><a href="http://sixcolors.com/">Six Colors</a></span></h4>
             <p><small><span class="twitter"><a href="https://twitter.com/jsnell" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@jsnell</a></span> / <span class="blog"><a href="http://snellworld.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;snellworld.com</a></span></small></p>
@@ -304,10 +304,10 @@
             <p class="bio">Jason Snell was editor in chief of <i>Macworld</i> for nearly a decade. He has covered OS X since the Public Beta, writes about Apple regularly, and also podcasts about technology and popular culture, most notably at <a href="http://5by5.tv/incomparable/">The Incomparable</a>.</p>
           </div>
         </div>
-        <div class="span2"> <a href="#ex14" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/daniel steinberg.jpg" alt="Speaker image"></a>
+        <div class="span2"> <a href="#ex15" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/daniel steinberg.jpg" alt="Speaker image"></a>
           <h3 class="text-center">Daniel Steinberg</h3>
           <h4 class="text-center"><span><a href="http://dimsumthinking.com/">Dim Sum Thinking</a></span></h4>
-          <div id="ex14" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/daniel steinberg.jpg" alt="Speaker image">
+          <div id="ex15" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/daniel steinberg.jpg" alt="Speaker image">
             <h3>Daniel Steinberg</h3>
             <h4><span><a href="http://dimsumthinking.com/">Dim Sum Thinking</a></span></h4>
             <p><small><span class="twitter"><a href="https://twitter.com/dimsumthinking" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@dimsumthinking</a></span> <br /> <span class="blog"><a href="http://dimsumthinking.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;dimsumthinking.com</a></span></small></p>
@@ -321,10 +321,10 @@
       <p>&nbsp;</p>
       <div class="row-fluid">
         <div class="span3"> </div>
-        <div class="span2"> <a href="#ex15" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/andrew stone.jpg" alt="Speaker image"></a>
+        <div class="span2"> <a href="#ex16" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/andrew stone.jpg" alt="Speaker image"></a>
           <h3 class="text-center">Andrew Stone</h3>
           <h4 class="text-center"><span><a href="http://stone.com/">Stone Design</a></span></h4>
-          <div id="ex15" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/andrew stone.jpg" alt="Speaker image">
+          <div id="ex16" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/andrew stone.jpg" alt="Speaker image">
             <h3>Andrew Stone</h3>
             <h4><span><a href="http://stone.com/">Stone Design</a></span></h4>
             <p><small><span class="twitter"><a href="https://twitter.com/twittelator" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@twittelator</a></span> / <span class="blog"><a href="http://stone.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;stone.com</a></span></small></p>
@@ -334,10 +334,10 @@
             <p class="bio">He lives on an urban solar farmstead in Albuquerque New Mexico with his family and is founder of Cocoa Conspiracy, a weekly group of iOS and Ruby developers that does grassroots economic development through personal networking.</p>
           </div>
         </div>
-        <div class="span2"> <a href="#ex16" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Dave-Wiskus.jpg" alt="Speaker image"></a>
+        <div class="span2"> <a href="#ex17" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Dave-Wiskus.jpg" alt="Speaker image"></a>
           <h3 class="text-center">Dave Wiskus</h3>
           <h4 class="text-center"><span><a href="http://qbranch.co/">Q Branch</a></span></h4>
-          <div id="ex16" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/Dave-Wiskus.jpg" alt="Speaker image">
+          <div id="ex17" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/Dave-Wiskus.jpg" alt="Speaker image">
             <h3>Dave Wiskus</h3>
             <h4><span><a href="http://qbranch.co/">Q Branch</a></span></h4>
             <p><small><span class="twitter"><a href="https://twitter.com/dwiskus" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@dwiskus</a></span> / <span class="blog"><a href="http://betterelevation.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;betterelevation.com</a></span></small></p>
