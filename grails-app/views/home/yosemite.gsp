@@ -127,7 +127,7 @@
 <div class="speakers">
   <div class="container">
     <h2 class="text-center">Be inspired.</h2>
-    <p class="lead text-center">Joining us in Yosemite are 16 of the most respected leaders in the Apple community. </p>
+    <p class="lead text-center">Joining us in Yosemite are 17 of the most respected leaders in the Apple community. </p>
     <p>&nbsp;</p>
     <div class="row-fluid">
       <div class="span2"> <a href="#ex1" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Andy Ihnatko.jpg" alt="Speaker image"></a>
@@ -144,9 +144,11 @@
       <div class="span2"> <a href="#ex2" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/brent simmons.jpg" alt="Speaker image"></a>
         <h3 class="text-center">Brent Simmons</h3>
         <h4 class="text-center"><span><a href="http://qbranch.co/">Q Branch</a></span></h4>
+        <h4 class="text-center"><span><a href="http://www.omnigroup.com/">The Omni Group</a></span></h4>
         <div id="ex2" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/brent simmons.jpg" alt="Speaker image">
           <h3>Brent Simmons</h3>
           <h4><span><a href="http://qbranch.co/">Q Branch</a></span></h4>
+          <h4><span><a href="http://www.omnigroup.com/">The Omni Group</a></span></h4>
           <p><small><span class="twitter"><a href="https://twitter.com/brentsimmons" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@brentsimmons</a></span> / <span class="blog"><a href="http://inessential.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;inessential.com</a></span></small></p>
           <hr>
           <p class="bio">Brent Simmons has been writing apps for Apple computers for over 30 years, since his first Apple II Plus in 1980. His professional apprenticeship was at UserLand Software where he worked on Frontier and on Manila, an early blog platform. Later he created apps such as NetNewsWire, TapLynx, Glassboard, and MarsEdit &#8212; and he currently writes <a href="http://vesperapp.co/">Vesper</a>. Brent lives in Seattle with his wife Sheila and his cat Papa, who&#8217;s named for both Ernest Hemingway and the great designated hitter Edgar Martinez.</p>
@@ -256,6 +258,17 @@
       </div>
       <p>&nbsp;</p>
       <div class="row-fluid">
+        <div class="span2"> <a href="#ex15" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Christa-Mrgan.png" alt="Speaker image"></a>
+          <h3 class="text-center">Christa Mrgan</h3>
+          <h4 class="text-center"><span><a href="http://stone.com/">Rogue Amoeba</a></span></h4>
+          <div id="ex15" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/Christa-Mrgan.png" alt="Speaker image">
+            <h3>Christa Mrgan</h3>
+            <h4><span><a href="http://rogueamoeba.com/">Rogue Amoeba</a></span></h4>
+            <p><small><span class="twitter"><a href="https://twitter.com/antichrista" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@antichrista</a></span></small></p>
+            <hr>
+            <p class="bio">Christa designs quality audio software for <a href="http://rogueamoeba.com/">Rogue Amoeba</a>. She lives in the Pacific Northwest with her husband, daughter and cat, where she eats kale chips and plays the banjo non-ironically.</p>
+          </div>
+        </div>
         <div class="span2"> <a href="#ex11" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/jaimee newberry.png" alt="Speaker image"></a>
           <h3 class="text-center">Jaimee Newberry</h3>
           <h4 class="text-center"><span><a href="http://www.jaimeejaimee.com/">JAIMEEJAIMEE.com</a></span></h4>
@@ -299,10 +312,15 @@
             <h4><span><a href="http://dimsumthinking.com/">Dim Sum Thinking</a></span></h4>
             <p><small><span class="twitter"><a href="https://twitter.com/dimsumthinking" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@dimsumthinking</a></span> <br /> <span class="blog"><a href="http://dimsumthinking.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;dimsumthinking.com</a></span></small></p>
             <hr>
-            <p class="bio">Daniel Steinberg has spent the last three decades working as a professional Swift developer. OK, he hasn&#8217;t. But he&#8217;s really enjoying the Swift Programming Language. Daniel has been programming the iPhone and the iPad since the SDKs first appeared in beta and OS X for many years before. Daniel is the author of the books <a href="https://itunes.apple.com/us/book/a-swift-kickstart/id891801923?mt=11&uo=4&at=11l56E"><i>A Swift Kickstart</i></a> and <a href="https://itunes.apple.com/us/book/developing-ios-7-apps-for/id792572211?mt=11&uo=4&at=11l56E"><i>Developing iOS 7 Apps for iPad and iPhone</i></a>, the official companion book to the popular iTunes U series from Stanford University taught by Paul Hegarty this past year.</p>
-            <p class="bio">Daniel presents iPhone, Cocoa, and Swift training and consults through his company <a href="http://dimsumthinking.com/">Dim Sum Thinking</a>. He is also the host of <a href="http://cocoaconf.com/podcast">The CocoaConf Podcast</a>. When he&#8217;s not coding or talking about coding for the Mac, the iPhone, and the iPad he&#8217;s probably cooking or hanging out with his wife and daughter.</p>
+            <p class="bio">Daniel is the author of the best selling books <a href="https://itunes.apple.com/us/book/a-swift-kickstart/id891801923?mt=11&uo=4&at=11l56E"><i>A Swift Kickstart</i></a> and <a href="https://itunes.apple.com/us/book/developing-ios-7-apps-for/id792572211?mt=11&uo=4&at=11l56E"><i>Developing iOS 7 Apps for iPad and iPhone</i></a> (the official companion book to the popular iTunes U series from Stanford University taught by Paul Hegarty).</p>
+            <p class="bio">He has written apps for the iPhone and the iPad since the SDKs first appeared and has written programs for the Mac all the way back to System 7.</p>
+            <p class="bio">Daniel presents iPhone, Cocoa, and Swift training and consults through his company <a href="http://www.dimsumthinking.com/">Dim Sum Thinking</a>. His books are available on the <a href="https://itunes.apple.com/us/artist/daniel-h-steinberg/id396896262?mt=11&uo=4&at=11l56E">iBookstore</a>. He is the host of the <a href="http://www.cocoaconf.com/podcast">CocoaConf Podcast</a>. When he&#8217;s not coding or talking about coding for the Mac, the iPhone, and the iPad he&#8217;s probably cooking or hanging out with his wife and daughter.</p>
           </div>
         </div>
+      </div>
+      <p>&nbsp;</p>
+      <div class="row-fluid">
+        <div class="span3"> </div>
         <div class="span2"> <a href="#ex15" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/andrew stone.jpg" alt="Speaker image"></a>
           <h3 class="text-center">Andrew Stone</h3>
           <h4 class="text-center"><span><a href="http://stone.com/">Stone Design</a></span></h4>
@@ -316,11 +334,6 @@
             <p class="bio">He lives on an urban solar farmstead in Albuquerque New Mexico with his family and is founder of Cocoa Conspiracy, a weekly group of iOS and Ruby developers that does grassroots economic development through personal networking.</p>
           </div>
         </div>
-      </div>
-      <p>&nbsp;</p>
-      <div class="row-fluid">
-        <div class="span2"> </div>
-        <div class="span2"> </div>
         <div class="span2"> <a href="#ex16" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Dave-Wiskus.jpg" alt="Speaker image"></a>
           <h3 class="text-center">Dave Wiskus</h3>
           <h4 class="text-center"><span><a href="http://qbranch.co/">Q Branch</a></span></h4>
@@ -332,8 +345,7 @@
             <p class="bio">Dave Wiskus is a musician, designer, and podcast host. He is also the design arm of Q Branch, maker of <a href="http://vesperapp.co/">Vesper</a>.</p>
           </div>
         </div>
-        <div class="span2"> </div>
-        <div class="span2"> </div>
+        <div class="span3"> </div>
       </div>
     </div>      <p>&nbsp;</p>
       <div class="row-fluid">
