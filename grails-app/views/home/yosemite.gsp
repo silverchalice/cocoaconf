@@ -266,7 +266,7 @@
             <h4><span><a href="http://rogueamoeba.com/">Rogue Amoeba</a></span></h4>
             <p><small><span class="twitter"><a href="https://twitter.com/antichrista" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@antichrista</a></span></small></p>
             <hr>
-            <p class="bio">Christa designs quality audio software for <a href="http://rogueamoeba.com/">Rogue Amoeba</a>. She lives in the Pacific Northwest with her husband, daughter and cat, where she eats kale chips and plays the banjo non-ironically.</p>
+            <p class="bio">Christa Mrgan has a background in video compositing and graphic design, and has been designing user interfaces since 2008. She&#8217;s passionate about creating software that&#8217;s functional and friendly, and brings that passion to <a href="http://rogueamoeba.com/">Rogue Amoeba</a>, where she designs audio software, and to <a href="http://appcamp4girls.com/">App Camp for Girls</a>, where she teaches teen girls about icon and interface design. She lives with her husband and two children in Portland, Oregon.</p>
           </div>
         </div>
         <div class="span2"> <a href="#ex12" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/jaimee newberry.png" alt="Speaker image"></a>
