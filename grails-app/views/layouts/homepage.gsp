@@ -81,7 +81,7 @@
 <div class="header">
   <div class="container">
     <h1>The developer conference <br /> for those who think different.</h1>
-    <h3><span class="hidden-phone hidden-tablet">20 events / 126 speakers / 1,600+ attendees / Since 2011 &nbsp; </span>
+    <h3><span class="hidden-phone hidden-tablet">25 events / 151 speakers / 1,700+ attendees / Since 2011 &nbsp; </span>
       <!-- <button class="btn btn-large btn-flat-gray">Register &nbsp;<i class="ion-ios7-arrow-right"></i></button> -->
     </h3>
   </div>
