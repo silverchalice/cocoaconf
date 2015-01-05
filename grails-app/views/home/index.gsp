@@ -124,6 +124,57 @@
     </blockquote>
   </div>
 </div>
+<div class="speakers">
+  <div class="container">
+    <h2 class="text-center">Training by CocoaConf</h2>
+    <p class="lead text-center">Apple developer training by the best in the business.</p>
+    <p>&nbsp;</p>
+    <div class="row-fluid">
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="1" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/daniel-steinberg', file: 'Daniel-Steinberg.jpg')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Daniel Steinberg</h3>
+        <h4 class="text-center"><span>Dim Sum Thinking</span></h4>
+      </div>
+      <div class="span6">
+      <h3>Spring 2015 Term <small>May 11&#8211;14, Orlando, FL</h3>
+      <p class="lead" style="margin:0 15px 0 0;">We&#8217;ll be running two classes side by side: James Dempsey will be teaching “Beginning iOS Programming” and Daniel Steinberg will be teaching an “iOS 8 Programming in Swift” course for experienced iOS developers. <a href="${createLink(controller: 'term', action: 'index', params: ['slug': 'spring-2015'])}">Read more <i class="ion-ios7-arrow-forward"></i></a></p>
+    </div>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="60" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/james-dempsey', file: 'James Dempsey.JPG')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">James Dempsey</h3>
+        <h4 class="text-center"><span>Tapas Software</span></h4>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="yosemite">
+  <div class="container">
+    <h2 class="text-center">Yosemite</h2>
+    <p class="lead text-center">A conference for Apple developers, designers, and enthusiasts, held in the heart of Yosemite National Park. <a href="${createLink(controller: 'home', action: 'yosemite')}" title="Read more about the Yosemite conference">Read more <i class="ion-ios7-arrow-forward"></i></a></p>
+    <p>&nbsp;</p>
+    <div class="row-fluid">
+      <div class="span2"> <img class="img-circle center" src="${resource(dir: 'images/yosemite/speakers', file: 'Andy Ihnatko.jpg')}" width="170" alt="Speaker image">
+        <h3 class="text-center">Andy Ihnatko</h3>
+        <h4 class="text-center"><span> Chicago Sun-Times</span></h4>
+      </div>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="125" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/yosemite/speakers', file: 'brent simmons.jpg')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Brent Simmons</h3>
+        <h4 class="text-center"><span>Q Branch</span></h4>
+        <h4 class="text-center"><span>Vesper</span></h4>
+      </div>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="125" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/yosemite/speakers', file: 'Serenity Caldwell.jpg')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Serenity Caldwell</h3>
+        <h4 class="text-center"><span> iMore</span></h4>
+      </div>
+      <div class="span2"> <img class="img-circle center" src="${resource(dir: 'images/yosemite/speakers', file: 'Neven Mrgan.jpg')}" width="170" alt="Speaker image">
+        <h3 class="text-center">Neven Mrgan</h3>
+        <h4 class="text-center"><span>Panic Inc.</span></h4>
+      </div>
+      <div class="span2"> <img class="img-circle center" src="${resource(dir: 'images/yosemite/speakers', file: 'Jim_Dalrymple.jpg')}" width="170" alt="Speaker image">
+        <h3 class="text-center">Jim Dalrymple</h3>
+        <h4 class="text-center"><span>The Loop</span></h4>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="share">
   <div class="container">
     <h2 class="pull-left">Spread the Word</h2>
