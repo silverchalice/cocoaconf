@@ -141,39 +141,42 @@
           <p class="bio">Andy Ihnatko has been <i>The Chicago Sun-Times</i>&#8217; technology columnist for ten years and a columnist for <i>Macworld</i> and other Mac magazines for twenty. He is also a host of <i>MacBreak Weekly</i>, consistently rated among iTunes&#8217; top-ten most popular tech podcasts, and he frequently contributes tech segments to local and national news programs.</p>
         </div>
       </div>
-      <div class="span2"> <a href="#ex2" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/brent simmons.jpg" alt="Speaker image"></a>
-        <h3 class="text-center">Brent Simmons</h3>
-        <h4 class="text-center"><span><a href="http://qbranch.co/">Q Branch</a></span></h4>
-        <h4 class="text-center"><span><a href="http://www.omnigroup.com/">The Omni Group</a></span></h4>
-        <div id="ex2" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/brent simmons.jpg" alt="Speaker image">
-          <h3>Brent Simmons</h3>
-          <h4><span><a href="http://qbranch.co/">Q Branch</a></span></h4>
-          <h4><span><a href="http://www.omnigroup.com/">The Omni Group</a></span></h4>
-          <p><small><span class="twitter"><a href="https://twitter.com/brentsimmons" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@brentsimmons</a></span> / <span class="blog"><a href="http://inessential.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;inessential.com</a></span></small></p>
+      <div class="span2"> <a href="#ex2" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/daniel steinberg.jpg" alt="Speaker image"></a>
+        <h3 class="text-center">Daniel Steinberg</h3>
+        <h4 class="text-center"><span><a href="http://dimsumthinking.com/">Dim Sum Thinking</a></span></h4>
+        <div id="ex2" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/daniel steinberg.jpg" alt="Speaker image">
+          <h3>Daniel Steinberg</h3>
+          <h4><span><a href="http://dimsumthinking.com/">Dim Sum Thinking</a></span></h4>
+          <p><small><span class="twitter"><a href="https://twitter.com/dimsumthinking" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@dimsumthinking</a></span> <br /> <span class="blog"><a href="http://dimsumthinking.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;dimsumthinking.com</a></span></small></p>
           <hr>
-          <p class="bio">Brent Simmons has been writing apps for Apple computers for over 30 years, since his first Apple II Plus in 1980. His professional apprenticeship was at UserLand Software where he worked on Frontier and on Manila, an early blog platform. Later he created apps such as NetNewsWire, TapLynx, Glassboard, and MarsEdit &#8212; and he currently writes <a href="http://vesperapp.co/">Vesper</a>. Brent lives in Seattle with his wife Sheila and his cat Papa, who&#8217;s named for both Ernest Hemingway and the great designated hitter Edgar Martinez.</p>
+            <p class="bio">Daniel is the author of the best selling books <a href="https://itunes.apple.com/us/book/a-swift-kickstart/id891801923?mt=11&uo=4&at=11l56E"><i>A Swift Kickstart</i></a> and <a href="https://itunes.apple.com/us/book/developing-ios-7-apps-for/id792572211?mt=11&uo=4&at=11l56E"><i>Developing iOS 7 Apps for iPad and iPhone</i></a> (the official companion book to the popular iTunes U series from Stanford University taught by Paul Hegarty).</p>
+            <p class="bio">He has written apps for the iPhone and the iPad since the SDKs first appeared and has written programs for the Mac all the way back to System 7.</p>
+            <p class="bio">Daniel presents iPhone, Cocoa, and Swift training and consults through his company <a href="http://www.dimsumthinking.com/">Dim Sum Thinking</a>. His books are available on the <a href="https://itunes.apple.com/us/artist/daniel-h-steinberg/id396896262?mt=11&uo=4&at=11l56E">iBookstore</a>. He is the host of the <a href="http://www.cocoaconf.com/podcast">CocoaConf Podcast</a>. When he&#8217;s not coding or talking about coding for the Mac, the iPhone, and the iPad he&#8217;s probably cooking or hanging out with his wife and daughter.</p>
         </div>
       </div>
-      <div class="span2"> <a href="#ex3" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Serenity Caldwell.jpg" alt="Speaker image"></a>
-        <h3 class="text-center">Serenity Caldwell</h3>
-        <h4 class="text-center"><span><a href="http://www.imore.com/">iMore</a></span></h4>
-        <div id="ex3" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/Serenity Caldwell.jpg" alt="Speaker image">
-          <h3>Serenity Caldwell</h3>
-          <h4><span><a href="http://www.imore.com/">iMore</a></span></h4>
-          <p><small><span class="twitter"><a href="https://twitter.com/settern" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@settern</a></span> / <span class="blog"><a href="http://manyhats.tumblr.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;manyhats.tumblr.com</a></span></small></p>
+      <div class="span2"> <a href="#ex3" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/michael lopp.jpg" alt="Speaker image"></a>
+        <h3 class="text-center">Michael Lopp</h3>
+        <h4 class="text-center"><span><a href="https://www.pinterest.com/">Pinterest</a></span></h4>
+        <h4 class="text-center"><span><a href="http://randsinrepose.com/">Rands in Repose</a></span></h4>
+        <div id="ex3" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/michael lopp.jpg" alt="Speaker image">
+          <h3>Michael Lopp</h3>
+            <h4><span><a href="https://www.pinterest.com/">Pinterest</a></span></h4>
+            <p><small><span class="twitter"><a href="https://twitter.com/rands" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@rands</a></span> / <span class="blog"><a href="http://randsinrepose.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;randsinrepose.com</a></span></small></p>
           <hr>
-          <p class="bio">Serenity has been writing and talking about and tinkering with Apple products since she was old enough to double-click. In her spare time, she sketches, writes, acts, sings, and wears an assortment of hats.</p>
+            <p class="bio">Michael Lopp is a Silicon Valley-based engineering leader who builds both people and software at companies such as Borland, Netscape, Palantir, and Apple. While he&#8217;s not worrying about staying relevant, he writes about pens, bridges, people, poker, and werewolves at the popular weblog, <a href="http://randsinrepose.com/">Rands in Repose</a>. He currently works as the head of engineering at Pinterest in San Francisco where he&#8217;s furiously working on helping humans curate their inspiration.</p>
+            <p class="bio">Michael has written two books. His first book <i>Managing Humans, 2nd Edition</i> is a popular guide to the art of engineering leadership and clearly explains that while you be rewarded for what you build, you will only be successful because of your people. His second book <i>Being Geek</i> is a career handbook for geeks and nerds alike.</p>
+            <p class="bio">Michael surfs, plays hockey, mountain bikes, and drinks red wine in the redwoods of Northern California whenever he can because staying sane is more important than staying busy.</p>
         </div>
       </div>
-      <div class="span2"> <a href="#ex4" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Neven Mrgan.jpg" alt="Speaker image"></a>
-        <h3 class="text-center">Neven Mrgan</h3>
-        <h4 class="text-center"><span><a href="http://panic.com/">Panic Inc</a></span></h4>
-        <div id="ex4" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/Neven Mrgan.jpg" alt="Speaker image">
-          <h3>Neven Mrgan</h3>
-          <h4><span><a href="http://panic.com/">Panic Inc</a></span></h4>
-          <p><small><span class="twitter"><a href="https://twitter.com/mrgan" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@mrgan</a></span> / <span class="blog"><a href="http://mrgan.tumblr.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;mrgan.tumblr.com</a></span></small></p>
+      <div class="span2"> <a href="#ex4" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Christa-Mrgan.png" alt="Speaker image"></a>
+        <h3 class="text-center">Christa Mrgan</h3>
+          <h4 class="text-center"><span><a href="http://rogueamoeba.com/">Rogue Amoeba</a></span></h4>
+        <div id="ex4" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/Christa-Mrgan.png" alt="Speaker image">
+          <h3>Christa Mrgan</h3>
+          <h4><span><a href="http://rogueamoeba.com/">Rogue Amoeba</a></span></h4>
+            <p><small><span class="twitter"><a href="https://twitter.com/antichrista" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@antichrista</a></span></small></p>
           <hr>
-          <p class="bio">Neven Mrgan is a designer at <a href="http://panic.com/">Panic Inc</a>, makers of nice apps for Mac and iOS. After hours, he is also one half of Big Bucket Software, a game company you may know from their hit The Incident. He designs apps, websites, games, T-shirts, signage—anything that needs designing. Neven lives in Portland, where he spends the last little bits of his free time on cooking and comedy.</p>
+            <p class="bio">Christa Mrgan has a background in video compositing and graphic design, and has been designing user interfaces since 2008. She&#8217;s passionate about creating software that&#8217;s functional and friendly, and brings that passion to <a href="http://rogueamoeba.com/">Rogue Amoeba</a>, where she designs audio software, and to <a href="http://appcamp4girls.com/">App Camp for Girls</a>, where she teaches teen girls about icon and interface design. She lives with her husband and two children in Portland, Oregon.</p>
         </div>
       </div>
       <div class="span2"> <a href="#ex5" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Jim_Dalrymple.jpg" alt="Speaker image"></a>
@@ -195,10 +198,21 @@
     <a name="speakersMore"></a>
     <div id="expanderContent" style="display:none;">
       <div class="row-fluid">
-        <div class="span2"> <a href="#ex6" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Duncan_Davidson.jpg" alt="Speaker image"></a>
+        <div class="span2"> <a href="#ex6" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Serenity Caldwell.jpg" alt="Speaker image"></a>
+          <h3 class="text-center">Serenity Caldwell</h3>
+          <h4 class="text-center"><span><a href="http://www.imore.com/">iMore</a></span></h4>
+          <div id="ex6" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/Serenity Caldwell.jpg" alt="Speaker image">
+            <h3>Serenity Caldwell</h3>
+            <h4><span><a href="http://www.imore.com/">iMore</a></span></h4>
+          <p><small><span class="twitter"><a href="https://twitter.com/settern" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@settern</a></span> / <span class="blog"><a href="http://manyhats.tumblr.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;manyhats.tumblr.com</a></span></small></p>
+            <hr>
+            <p class="bio">Serenity has been writing and talking about and tinkering with Apple products since she was old enough to double-click. In her spare time, she sketches, writes, acts, sings, and wears an assortment of hats.</p>
+          </div>
+        </div>
+        <div class="span2"> <a href="#ex7" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Duncan_Davidson.jpg" alt="Speaker image"></a>
           <h3 class="text-center">Duncan Davidson</h3>
           <h4 class="text-center"><span><a href="http://www.6wunderkinder.com/">6Wunderkinder</a></span></h4>
-          <div id="ex6" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/Duncan_Davidson.jpg" alt="Speaker image">
+          <div id="ex7" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/Duncan_Davidson.jpg" alt="Speaker image">
             <h3>Duncan Davidson</h3>
             <h4><span><a href="http://www.6wunderkinder.com/">6Wunderkinder</a></span></h4>
             <p><small><span class="twitter"><a href="https://twitter.com/duncan" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@duncan</a></span> / <span class="blog"><a href="https://jdd.io/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;jdd.io</a></span></small></p>
@@ -207,10 +221,10 @@
             <p class="bio">As a photographer, Duncan regularly covers the TED conferences, and has done work for O&#8217;Reilly, Apple, Gigaom, and more. Previously, Duncan was a software engineer at Sun Microsystems, where he created Tomcat and Ant. Duncan has authored or co-authored books including <i>Learning Cocoa with Objective-C</i>, <i>Cocoa in a Nutshell</i>, and <i>Agile Web Development with Rails</i>.</p>
           </div>
         </div>
-        <div class="span2"> <a href="#ex7" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/James Dempsey.jpg" alt="Speaker image"></a>
+        <div class="span2"> <a href="#ex8" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/James Dempsey.jpg" alt="Speaker image"></a>
           <h3 class="text-center">James Dempsey</h3>
           <h4 class="text-center"><span><a href="http://tapas-software.net/">Tapas Software</a></span></h4>
-          <div id="ex7" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/James Dempsey.jpg" alt="Speaker image">
+          <div id="ex8" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/James Dempsey.jpg" alt="Speaker image">
             <h3>James Dempsey</h3>
             <h4><span><a href="http://tapas-software.net/">Tapas Software</a></span></h4>
             <p><small><span class="twitter"><a href="https://twitter.com/jamesdempsey" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@jamesdempsey</a></span> <br /> <span class="blog"><a href="http://jamesdempsey.net/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;jamesdempsey.net</a></span></small></p>
@@ -218,10 +232,10 @@
             <p class="bio">James Dempsey is a fifteen-year Apple veteran gone indie.  At Apple, he worked on iOS, Aperture, and OS X releases Leopard through Lion, including half a decade on the Cocoa frameworks team.  Along the way he&#8217;s trained hundreds of developers on Apple technologies, including teaching Cocoa development at Stanford University and presenting at the Worldwide Developers Conference (WWDC) for over a decade.  He founded <a href="http://tapas-software.net/">Tapas Software</a>  to build apps for iOS and OS X, with an initial release now on the App Store.  His recently released music single <a href="http://itunes.apple.com/us/album/liki-song-minawana-meika-laa/id533753255?ls=1">The Liki Song</a> is widely regarded as the finest Hawaiian song about the history of Cocoa memory management ever written.</p>
           </div>
         </div>
-        <div class="span2"> <a href="#ex8" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/matt drance.jpg" alt="Speaker image"></a>
+        <div class="span2"> <a href="#ex9" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/matt drance.jpg" alt="Speaker image"></a>
           <h3 class="text-center">Matt Drance</h3>
           <h4 class="text-center"><span><a href="http://bookhousesoftware.com/">Bookhouse Software</a></span></h4>
-          <div id="ex8" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/matt drance.jpg" alt="Speaker image">
+          <div id="ex9" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/matt drance.jpg" alt="Speaker image">
             <h3>Matt Drance</h3>
             <h4><span><a href="http://bookhousesoftware.com/">Bookhouse Software</a></span></h4>
             <p><small><span class="twitter"><a href="https://twitter.com/drance" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@drance</a></span> / <span class="blog"><a href="http://www.appleoutsider.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;appleoutsider.net</a></span></small></p>
@@ -229,10 +243,10 @@
             <p class="bio">Matt Drance is a developer, consultant, author, and part-time stay at home dad living in Northern California. He founded <a href="http://bookhousesoftware.com/">Bookhouse Software</a> in 2009, where he builds iOS applications for prominent clients around the US and advises a number of Silicon Valley startups. Matt is co-author of the acclaimed <a href="http://pragprog.com/book/cdirec/ios-recipes"><i>iOS Recipes</i></a> for the Pragmatic Bookshelf, and trains new iOS programmers with the <a href="http://pragmaticstudio.com/ios">Pragmatic Studio</a>. He shares his thoughts on technology, entertainment, and business at <a href="http://www.appleoutsider.com/">Apple Outsider</a>. Prior to life on his own, Matt spent eight years at Apple helping developers navigate the Mac OS X and iPhone SDKs.</p>
           </div>
         </div>
-        <div class="span2"> <a href="#ex9" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Guy English.jpg" alt="Speaker image"></a>
+        <div class="span2"> <a href="#ex10" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Guy English.jpg" alt="Speaker image"></a>
           <h3 class="text-center">Guy English</h3>
           <h4 class="text-center"><span><a href="http://aged-and-distilled.com/">Aged & Distilled</a></span></h4>
-          <div id="ex9" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/Guy English.jpg" alt="Speaker image">
+          <div id="ex10" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/Guy English.jpg" alt="Speaker image">
             <h3>Guy English</h3>
             <h4><span><a href="http://aged-and-distilled.com/">Aged & Distilled</a></span></h4>
             <p><small><span class="twitter"><a href="https://twitter.com/gte" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@gte</a></span> / <span class="blog"><a href="http://kickingbear.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;kickingbear.com</a></span></small></p>
@@ -240,33 +254,18 @@
             <p class="bio">Guy is a long-time game and application developer for Mac and iOS. His company recently launched <a href="https://itunes.apple.com/us/app/napkin-concise-image-annotation/id581789185?mt=12&partnerId=30&siteID=I9*2vU2JkMU">Napkin</a>, an elegant image annotation app for Mac. Separate from his software development expertise, he is an active promoter of the developer social community. In 2011, he co-founded the <a href="http://cingleton.com/en/">Çingleton Symposium</a>, a Mac-developer conference held annually in Montréal, Québec.</p>
           </div>
         </div>
-        <div class="span2"> <a href="#ex10" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/michael lopp.jpg" alt="Speaker image"></a>
-          <h3 class="text-center">Michael Lopp</h3>
-          <h4 class="text-center"><span><a href="https://www.pinterest.com/">Pinterest</a></span></h4>
-          <h4 class="text-center"><span><a href="http://randsinrepose.com/">Rands in Repose</a></span></h4>
-          <div id="ex10" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/michael lopp.jpg" alt="Speaker image">
-            <h3>Michael Lopp</h3>
-            <h4><span><a href="https://www.pinterest.com/">Pinterest</a></span></h4>
-            <h4><span><a href="http://randsinrepose.com/">Rands in Repose</a></span></h4>
-            <p><small><span class="twitter"><a href="https://twitter.com/rands" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@rands</a></span> / <span class="blog"><a href="http://randsinrepose.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;randsinrepose.com</a></span></small></p>
-            <hr>
-            <p class="bio">Michael Lopp is a Silicon Valley-based engineering leader who builds both people and software at companies such as Borland, Netscape, Palantir, and Apple. While he&#8217;s not worrying about staying relevant, he writes about pens, bridges, people, poker, and werewolves at the popular weblog, <a href="http://randsinrepose.com/">Rands in Repose</a>. He currently works as the head of engineering at Pinterest in San Francisco where he&#8217;s furiously working on helping humans curate their inspiration.</p>
-            <p class="bio">Michael has written two books. His first book <i>Managing Humans, 2nd Edition</i> is a popular guide to the art of engineering leadership and clearly explains that while you be rewarded for what you build, you will only be successful because of your people. His second book <i>Being Geek</i> is a career handbook for geeks and nerds alike.</p>
-            <p class="bio">Michael surfs, plays hockey, mountain bikes, and drinks red wine in the redwoods of Northern California whenever he can because staying sane is more important than staying busy.</p>
-          </div>
-        </div>
       </div>
       <p>&nbsp;</p>
       <div class="row-fluid">
-        <div class="span2"> <a href="#ex11" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Christa-Mrgan.png" alt="Speaker image"></a>
-          <h3 class="text-center">Christa Mrgan</h3>
-          <h4 class="text-center"><span><a href="http://rogueamoeba.com/">Rogue Amoeba</a></span></h4>
-          <div id="ex11" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/Christa-Mrgan.png" alt="Speaker image">
-            <h3>Christa Mrgan</h3>
-            <h4><span><a href="http://rogueamoeba.com/">Rogue Amoeba</a></span></h4>
-            <p><small><span class="twitter"><a href="https://twitter.com/antichrista" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@antichrista</a></span></small></p>
+        <div class="span2"> <a href="#ex11" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/Neven Mrgan.jpg" alt="Speaker image"></a>
+          <h3 class="text-center">Neven Mrgan</h3>
+          <h4 class="text-center"><span><a href="http://panic.com/">Panic Inc</a></span></h4>
+          <div id="ex11" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/Neven Mrgan.jpg" alt="Speaker image">
+            <h3>Neven Mrgan</h3>
+            <h4><span><a href="http://panic.com/">Panic Inc</a></span></h4>
+            <p><small><span class="twitter"><a href="https://twitter.com/mrgan" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@mrgan</a></span> / <span class="blog"><a href="http://mrgan.tumblr.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;mrgan.tumblr.com</a></span></small></p>
             <hr>
-            <p class="bio">Christa Mrgan has a background in video compositing and graphic design, and has been designing user interfaces since 2008. She&#8217;s passionate about creating software that&#8217;s functional and friendly, and brings that passion to <a href="http://rogueamoeba.com/">Rogue Amoeba</a>, where she designs audio software, and to <a href="http://appcamp4girls.com/">App Camp for Girls</a>, where she teaches teen girls about icon and interface design. She lives with her husband and two children in Portland, Oregon.</p>
+            <p class="bio">Neven Mrgan is a designer at Panic Inc <http://panic.com/>, makers of nice apps for Mac and iOS. After hours, he is also one half of <a href="http://bigbucketsoftware.com/">Big Bucket Software</a>, a game company you may know from their hit <a href="http://bigbucketsoftware.com/theincident/">The Incident</a>. He designs apps, websites, games, T-shirts, signage—anything that needs designing. Neven lives in Portland, where he spends the last little bits of his free time on cooking and comedy.</p>
           </div>
         </div>
         <div class="span2"> <a href="#ex12" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/jaimee newberry.png" alt="Speaker image"></a>
@@ -304,17 +303,17 @@
             <p class="bio">Jason Snell was editor in chief of <i>Macworld</i> for nearly a decade. He has covered OS X since the Public Beta, writes about Apple regularly, and also podcasts about technology and popular culture, most notably at <a href="http://5by5.tv/incomparable/">The Incomparable</a>.</p>
           </div>
         </div>
-        <div class="span2"> <a href="#ex15" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/daniel steinberg.jpg" alt="Speaker image"></a>
-          <h3 class="text-center">Daniel Steinberg</h3>
-          <h4 class="text-center"><span><a href="http://dimsumthinking.com/">Dim Sum Thinking</a></span></h4>
-          <div id="ex15" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/daniel steinberg.jpg" alt="Speaker image">
-            <h3>Daniel Steinberg</h3>
-            <h4><span><a href="http://dimsumthinking.com/">Dim Sum Thinking</a></span></h4>
-            <p><small><span class="twitter"><a href="https://twitter.com/dimsumthinking" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@dimsumthinking</a></span> <br /> <span class="blog"><a href="http://dimsumthinking.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;dimsumthinking.com</a></span></small></p>
+        <div class="span2"> <a href="#ex15" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite/speakers/brent simmons.jpg" alt="Speaker image"></a>
+          <h3 class="text-center">Brent Simmons</h3>
+          <h4 class="text-center"><span><a href="http://www.omnigroup.com/">The Omni Group</a></span></h4>
+          <h4 class="text-center"><span><a href="http://qbranch.co">Q Branch</a></span></h4>
+          <div id="ex15" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite/speakers/brent simmons.jpg" alt="Speaker image">
+            <h3>Brent Simmons</h3>
+            <h4><span><a href="http://www.omnigroup.com/">The Omni Group</a></span></h4>
+            <h4><span><a href="http://qbranch.co">Q Branch</a></span></h4>
+            <p><small><span class="twitter"><a href="https://twitter.com/brentsimmons" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@brentsimmons</a></span> <br /> <span class="blog"><a href="http://inessential.com/" title="Visit this speaker&#8217;s blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;inessential.com</a></span></small></p>
             <hr>
-            <p class="bio">Daniel is the author of the best selling books <a href="https://itunes.apple.com/us/book/a-swift-kickstart/id891801923?mt=11&uo=4&at=11l56E"><i>A Swift Kickstart</i></a> and <a href="https://itunes.apple.com/us/book/developing-ios-7-apps-for/id792572211?mt=11&uo=4&at=11l56E"><i>Developing iOS 7 Apps for iPad and iPhone</i></a> (the official companion book to the popular iTunes U series from Stanford University taught by Paul Hegarty).</p>
-            <p class="bio">He has written apps for the iPhone and the iPad since the SDKs first appeared and has written programs for the Mac all the way back to System 7.</p>
-            <p class="bio">Daniel presents iPhone, Cocoa, and Swift training and consults through his company <a href="http://www.dimsumthinking.com/">Dim Sum Thinking</a>. His books are available on the <a href="https://itunes.apple.com/us/artist/daniel-h-steinberg/id396896262?mt=11&uo=4&at=11l56E">iBookstore</a>. He is the host of the <a href="http://www.cocoaconf.com/podcast">CocoaConf Podcast</a>. When he&#8217;s not coding or talking about coding for the Mac, the iPhone, and the iPad he&#8217;s probably cooking or hanging out with his wife and daughter.</p>
+            <p class="bio">Brent Simmons has been writing apps for Apple computers for over 30 years, since his first Apple II Plus in 1980. His professional apprenticeship was at UserLand Software where he worked on Frontier and on Manila, an early blog platform. Later he created apps such as NetNewsWire, TapLynx, Glassboard, and MarsEdit &#8212; and he currently writes <a href="http://vesperapp.co/">Vesper</a>. Brent lives in Seattle with his wife Sheila and his cat Papa, who’s named for both Ernest Hemingway and the great designated hitter Edgar Martinez.</p>
           </div>
         </div>
       </div>
