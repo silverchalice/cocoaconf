@@ -55,19 +55,19 @@ class HomeController {
       if(activity){
         if(params.attending == "true"){
           user.activities.add(activity)
-          activity.groupSize--
+          //activity.groupSize--
           user.activities.findAll { it.id != activity.id && it.dayOne == activity.dayOne }.each {
             println "\n\nit is $it\n\n"
             user.activities.remove(it)
           }
         } else if(activity.attendees.find { it.id == user.id }){
           user.activities.remove(activity)
-          activity.groupSize++
+          //activity.groupSize++
         }
         user.save(failOnError:true)
         activity.save(failOnError:true)
 
-        render "(${activity.groupSize} left)"
+        render "(${activity.available()} left)"
       }
       return false
     }

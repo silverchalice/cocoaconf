@@ -148,6 +148,13 @@
 					
 				</li>
 				</g:if>
+				<li>
+				  <ul>
+				    <g:each in="${userInstance?.activities}" var="activity" >
+				      <li>${activity.name}</li>
+				    </g:each>
+				  </ul>
+				</li>
 			
 			</ol>
 			<g:form>

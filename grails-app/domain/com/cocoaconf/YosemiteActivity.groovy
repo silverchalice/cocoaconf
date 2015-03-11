@@ -18,4 +18,8 @@ class YosemiteActivity {
       dayOne nullable:false
       dayTwo nullable:false
     }
+
+    Integer available(){
+      groupSize - attendees.size()
+    }
 }
