@@ -36,7 +36,9 @@ class HomeController {
     def yosemite = {}
 
     def select_activities = {
-      def user = User.get(params.id)
+      def id = params.id?.toLong() / 1273
+      def user = User.get(id)
+      println "the id is $id"
       println "here are the activities: " + user.activities
 
       [user: user, activities: YosemiteActivity.list(), activityIds: user.activities.collect { it.id }]

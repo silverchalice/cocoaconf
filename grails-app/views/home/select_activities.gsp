@@ -51,7 +51,7 @@
       <div class="span10">
         <p>One of our goals for the Yosemite conference is to make sure we take advantage of the Park while we&#8217;re there. We will have free time between lunch and the evening sessions, and we are offering the following optional activities that you can take advantage of.  You can choose one activity for each of the two full conference days&#8212;Tuesday (April 21) and Wednesday (April 22).  </p>
 
-        <p><strong>We need to reserve space for these activities, so please make your selection before February 27th.  Thanks!</strong></p>
+        <p><strong>We need to reserve space for these activities, so please make your selection before March 23rd.  Thanks!</strong></p>
         <br />
         <table cellpadding="10" style="width: 100%; background: url(../images/bg_main.jpg) repeat center top;" border="1">
           <colgroup>
@@ -161,7 +161,7 @@
   </div>
 </div>-->
 <footer>
-  <div class="container"> <a class="brand" href="/"><img src="images/yosemite/img_cocoaconf_logo.png" height="40" width="40" alt="CocoaConf logo" class="pull-left"></a>
+  <div class="container"> <a class="brand" href="/"><img src="/images/yosemite/img_cocoaconf_logo.png" height="40" width="40" alt="CocoaConf logo" class="pull-left"></a>
     <p class="text-right">&copy; 2014 Simply Cocoa, LLC. &nbsp;| &nbsp; About the <a href="/family" title="Learn more about the Kleins">Klein Family</a> &nbsp; | &nbsp; Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a></p>
   </div>
 </footer>
