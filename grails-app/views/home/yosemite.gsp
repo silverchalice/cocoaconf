@@ -90,36 +90,7 @@
       <div class="span2"><img class="img-circle center" src="images/yosemite/img_yosemite_lodge_02.jpg" alt="Yosemite Lodge image"></div>
     </div>
     <div id="expanderVenueContent" style="display:none;">
-    <p>&nbsp;</p><hr>
-      <div class="row-fluid">
-        
-        <div class="span6">
-          <h2>Reservations</h2>
-          <p>Rooms can be reserved by calling 801-559-4932. When registering, use the group code: <span class="yosemite-name">14K5VG</span>. We have group rates for different types and locations of rooms. All rooms are limited.</p><hr>
-          <p>There is a shuttle that runs between Curry Village and Yosemite Lodge every half hour.</p>
-        </div>
-        <div class="span4">
-        <h2>Prices</h2>
-          <table cellpadding="0" cellspacing="0">
-            <tr>
-              <td>Yosemite Lodge Room</td>
-              <td>$237 / night</td>
-            </tr>
-            <tr>
-              <td>Yosemite Lodge Family Bunk Room</td>
-              <td>$228 / night</td>
-            </tr>
-            <tr>
-              <td>Curry Village Cabin with Bathroom</td>
-              <td>$203 / night</td>
-            </tr>
-            <tr>
-              <td>Curry Village Heated Tent</td>
-              <td>$134 / night</td>
-            </tr>
-          </table>
-        </div>
-      </div>
+    ${yosemiteVenueInfo.contents}
     </div>
   </div>
 </div>
