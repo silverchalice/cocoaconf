@@ -33,7 +33,9 @@ class HomeController {
       session.sawCountdown = "yup"
     }
 
-    def yosemite = {}
+    def yosemite = {
+      [yosemiteVenueInfo: TextBit.findByName("yosemiteVenueInfo")]
+    }
 
     def select_activities = {
       def id = params.id?.toLong() / 1273
