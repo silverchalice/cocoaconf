@@ -49,7 +49,7 @@
         <h2>The Apple Conference with a View <span>/ April 20–23, 2015</span></h2>
         <div class="header-about">
           <p class="lead"><span class="yosemite-name">Yosemite</span> is a conference for Apple developers, designers, and enthusiasts. It will be held next Spring, in the heart of <strong>Yosemite National Park</strong>.</p>
-          <p class="lead">You&#8217;ll hear from some of the most-loved members of this awesome community&#8212;people such as Andy Ihnatko, Jim Dalrymple, Brent Simmons, and Michael Lopp. You&#8217;ll also have opportunities to get out and enjoy the beauty and grandeur of the park. There will be guided hikes, a photo walk with TED photographer James Duncan Davidson, and a Breakpoint Jam with James Dempsey.</p>
+          <p class="lead">You&#8217;ll hear from some of the most-loved members of this awesome community&#8212;people such as Andy Ihnatko, Jim Dalrymple, Brent Simmons, and Michael Lopp. You&#8217;ll also have opportunities to get out and enjoy the beauty and grandeur of the park. There will be guided hikes, exploration of the Park with TED photographer James Duncan Davidson, and a Breakpoint Jam with James Dempsey.</p>
           <p class="lead">This is a once-in-a-lifetime event that will be talked about for years to come. <strong>Join us at Yosemite!</strong> </p>
         </div>
       </div>
@@ -360,7 +360,7 @@
           <div style="font-size:14px;">
             <p>&#8226; Breakfast, morning sessions<br />
             &#8226; Lunch<br />
-            &#8226; Exploration / photo walk<br />
+            &#8226; Explore and enjoy Yosemite<br />
             &#8226; Dinner, evening sessions</p>
           </div>
       </div>
