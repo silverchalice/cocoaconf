@@ -19,21 +19,20 @@
   <div class="container">
     <h2 class="text-center">Spring Tour 2015</h2>
     <div class="row-fluid">
-      <div class="span1"></div>
       <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'chicago-2015']">
         <h3>Chicago, IL<br>
           <small>March 27–28</small></h3>
         </g:link>
         <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'chicago-2015']">Speakers</g:link></p>
         <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'chicago-2015']">Sessions</g:link></p>
-        <g:link controller="conference" action="register" params="['tinyName': 'chicago-2015']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
+        <g:link controller="conference" action="home" params="['tinyName': 'chicago-2015']" class="btn btn-flat-gray btn-large" title="View conference page">View <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
       <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'dc-2015']">
         <h3>Washington DC<br>
           <small>April 10–11</small></h3>
         </g:link>
         <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'dc-2015']">Speakers</g:link></p>
         <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'dc-2015']">Sessions</g:link></p>
-        <g:link controller="conference" action="register" params="['tinyName': 'dc-2015']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
+        <g:link controller="conference" action="home" params="['tinyName': 'dc-2015']" class="btn btn-flat-gray btn-large" title="View conference page">View <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
       <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'portland-2015']">
         <h3>Portland, OR<br>
           <small>May 8–9</small></h3>
@@ -48,7 +47,13 @@
         <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'austin-2015']">Speakers</g:link></p>
         <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'austin-2015']">Sessions</g:link></p>
         <g:link controller="conference" action="register" params="['tinyName': 'austin-2015']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
-      <div class="span1"></div>
+      <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'columbus-2015']">
+        <h3>Columbus, OH<br>
+          <small>July 10–11</small></h3>
+        </g:link>
+        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'columbus-2015']">Speakers</g:link></p>
+        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'columbus-2015']">Sessions</g:link></p>
+        <g:link controller="conference" action="register" params="['tinyName': 'columbus-2015']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
     </div>
   </div>
 </div>
@@ -124,6 +129,7 @@
     </blockquote>
   </div>
 </div>
+<!--
 <div class="speakers">
   <div class="container">
     <h2 class="text-center">Training by CocoaConf</h2>
@@ -145,6 +151,7 @@
     </div>
   </div>
 </div>
+-->
 <div class="yosemite">
   <div class="container">
     <h2 class="text-center">Yosemite</h2>
