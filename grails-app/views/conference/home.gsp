@@ -100,9 +100,9 @@
               <ul class="dropdown-menu">
               <!--<li class="nav-header">Choose a City</li>
               <li class="divider"></li>-->
-              <li class="${conference?.id == 31 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'columbus-2015']">Columbus, OH</g:link></li>
               <li class="${conference?.id == 29 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'portland-2015']">Portland, OR</g:link></li>
               <li class="${conference?.id == 30 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'austin-2015']">Austin, TX</g:link></li>
+              <li class="${conference?.id == 31 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'columbus-2015']">Columbus, OH</g:link></li>
               </ul>
             </li>
           </ul>
