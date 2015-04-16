@@ -57,8 +57,7 @@
             <ul class="dropdown-menu">
               <!--<li class="nav-header">Choose a City</li>
               <li class="divider"></li>-->
-              <li><g:link controller="conference" action="home" params="['tinyName': 'chicago-2015']">Chicago, IL</g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'dc-2015']">Washington D.C.</g:link></li>
+i             <li><g:link controller="conference" action="home" params="['tinyName': 'columbus-2015']">Columbus, OH</g:link></li>
               <li><g:link controller="conference" action="home" params="['tinyName': 'portland-2015']">Portland, OR</g:link></li>
               <li><g:link controller="conference" action="home" params="['tinyName': 'austin-2015']">Austin, TX</g:link></li>
             </ul>
