@@ -13,7 +13,8 @@ class HomeController {
     def config = Holders.config
 
     def index = {
-      [useImg: randomService.nextInteger(100) + 1]
+      
+      [subHeadingHome: TextBit.findByName("subHeadingHome"), useImg: randomService.nextInteger(100) + 1]
 	}
 
     def testFeed = {
