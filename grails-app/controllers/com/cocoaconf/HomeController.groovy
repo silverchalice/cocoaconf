@@ -125,7 +125,9 @@ class HomeController {
         [choice: choice, slides:slides]
     }
 
-    def partners = {}
+    def partners = {
+      [partnersPageInfo: TextBit.findByName("partnersPageInfo")]
+    }
 
 	def chicago_slides = {}
   
