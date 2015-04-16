@@ -90,7 +90,7 @@
       <div class="span2"><img class="img-circle center" src="images/yosemite/img_yosemite_lodge_02.jpg" alt="Yosemite Lodge image"></div>
     </div>
     <div id="expanderVenueContent" style="display:none;">
-    ${yosemiteVenueInfo.contents}
+    ${yosemiteVenueInfo?.contents}
     </div>
   </div>
 </div>
