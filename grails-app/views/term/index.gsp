@@ -56,7 +56,7 @@
           </ul>
 
           <div id="trainingDesc">
-            <p><strong>CocoaConf University</strong> is a 4-day multi-class training event for Apple developers of all skill levels. Whether you are new to iOS development or an old hand wanting to stay abreast of changes in this ever-changing field, these full-day, immersive classes will help you take your career to the next level. </p>
+            <p><strong>CocoaConf University</strong> is a 4-day training event for Apple developers of all skill levels. Whether you are new to iOS development or an old hand wanting to stay abreast of changes in this ever-changing field, these full-day, immersive classes will help you take your career to the next level. </p>
 
             <p>You will be in class all day, focused on the subjects at hand, as taught by some of the best instructors in our field.  </p>
 
