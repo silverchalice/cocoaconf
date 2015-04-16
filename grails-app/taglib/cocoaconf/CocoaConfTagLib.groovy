@@ -76,6 +76,9 @@ class CocoaConfTagLib {
             case 30:
                 cityName = "Austin, TX"
                 break
+            case 31:
+                cityName = "Columbus, OH"
+                break
         }
         out << cityName
     }
