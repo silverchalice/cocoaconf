@@ -24,11 +24,9 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="contents" title="${message(code: 'textBit.contents.label', default: 'Contents')}" />
+						<g:sortableColumn property="name" title="${message(code: 'textBit.name.label', default: 'Name')}" />
 					
 						<g:sortableColumn property="description" title="${message(code: 'textBit.description.label', default: 'Description')}" />
-					
-						<g:sortableColumn property="name" title="${message(code: 'textBit.name.label', default: 'Name')}" />
 					
 					</tr>
 				</thead>
@@ -36,11 +34,9 @@
 				<g:each in="${textBitInstanceList}" status="i" var="textBitInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${textBitInstance.id}">${fieldValue(bean: textBitInstance, field: "contents")}</g:link></td>
+						<td><g:link action="show" id="${textBitInstance.id}">${fieldValue(bean: textBitInstance, field: "name")}</g:link></td>
 					
-						<td>${fieldValue(bean: textBitInstance, field: "description")}</td>
-					
-						<td>${fieldValue(bean: textBitInstance, field: "name")}</td>
+						<td>${textBitInstance?.description}</td>
 					
 					</tr>
 				</g:each>
