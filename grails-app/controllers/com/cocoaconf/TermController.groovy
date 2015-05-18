@@ -12,7 +12,9 @@ class TermController {
 
     def index(Integer max) {
         if(!params.slug) {
-            def nextTerm = Term.findByStartDateGreaterThan(new Date())
+            // Get either the next term (if one is coming up) or the last one
+            // (if there are no terms coming up). Either way, a "show" page.
+            def nextTerm = Term.findByStartDateGreaterThan(new Date()) ?: Term.list().last()
             redirect action: "index", params: [slug: nextTerm.slug]
             return
         }
