@@ -196,20 +196,20 @@ class CocoaConfTagLib {
     }
 
     def pickACity = {attrs ->
+        def confs = Conference.findAllByStatus('active', [sort:id])
         out << """
-        <ul class="nav">
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pick a City &nbsp; <i class="ion-ios7-arrow-down"></i></a>
             <ul class="dropdown-menu">
-              <!--<li class="nav-header">Choose a City</li>
-              <li class="divider"></li>-->  
-              <li><g:link controller="conference" action="home" params="['tinyName': 'chicago-2015']">Chicago, IL</g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'dc-2015']">Washington D.C.</g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'portland-2015']">Portland, OR</g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'austin-2015']">Austin, TX</g:link></li>
-            </ul>
-          </li>
-        </ul>
-        """
+                <!--<li class="nav-header">Choose a City</li>
+                <li class="divider"></li>-->
+             """
+        confs.each{
+            out << """
+            <li><g:link controller="conference" action="home" params="['tinyName': ${it.tinyName}]">${it.cityNickName}</g:link></li>
+            """
+        }
+        out << "</ul>"
     }
+
+
 
 }
