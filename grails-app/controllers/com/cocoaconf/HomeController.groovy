@@ -14,7 +14,7 @@ class HomeController {
 
     def index = {
       
-      [subHeadingHome: TextBit.findByName("subHeadingHome"), useImg: randomService.nextInteger(100) + 1]
+      [subHeadingHome: TextBit.findByName("subHeadingHome"), locationsHome: TextBit.findByName("locationsHome"), speakerSectionHome: TextBit.findByName("speakerSectionHome"), commentsHome: TextBit.findByName("commentsHome"), useImg: randomService.nextInteger(100) + 1]
 	}
 
     def testFeed = {
