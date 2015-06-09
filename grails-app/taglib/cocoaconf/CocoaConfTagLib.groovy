@@ -196,7 +196,7 @@ class CocoaConfTagLib {
     }
 
     def pickACity = {attrs ->
-        def confs = Conference.findAllByStatus('active', [sort:id])
+        def confs = Conference.findAllByStatus('active', [sort:'id'])
         out << """
             <ul class="dropdown-menu">
                 <!--<li class="nav-header">Choose a City</li>
@@ -204,7 +204,7 @@ class CocoaConfTagLib {
              """
         confs.each{
             out << """
-            <li><g:link controller="conference" action="home" params="['tinyName': ${it.tinyName}]">${it.cityNickName}</g:link></li>
+            <li><a href="/${it.tinyName}/home">${it.cityNickname}</a></li>
             """
         }
         out << "</ul>"
