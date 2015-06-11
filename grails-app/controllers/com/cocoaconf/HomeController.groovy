@@ -34,8 +34,19 @@ class HomeController {
       session.sawCountdown = "yup"
     }
 
+    def yosemiteTwentyFifteen = { }
+
     def yosemite = {
       [yosemiteVenueInfo: TextBit.findByName("yosemiteVenueInfo")]
+    }
+
+    def yosemiteSignup = { [interestList: Interest.list()] }
+
+    def saveSignup = {
+        def yosemite = Conference.get(34)
+        def signup = new Interest(name: params.name, email: params.email, conference: yosemite)
+        signup.save()
+        render template: "ySignupThanks"
     }
 
     def select_activities = {
