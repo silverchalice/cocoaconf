@@ -53,14 +53,8 @@
       <a class="brand" href="${createLink(uri: '/')}"><img src="${resource(dir: 'images', file: 'img_cocoaconf_logo.png')}" height="40" width="40" alt="CocoaConf logo"> CocoaConf</a>
       <div class="nav-collapse collapse">
         <ul class="nav">
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><cc:cityName id="${conference?.id}" /> &nbsp; <i class="ion-ios7-arrow-down"></i></a>
-            <ul class="dropdown-menu">
-              <!--<li class="nav-header">Choose a City</li>
-              <li class="divider"></li>-->
-              <li><g:link controller="conference" action="home" params="['tinyName': 'portland-2015']">Portland, OR</g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'austin-2015']">Austin, TX</g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'columbus-2015']">Columbus, OH</g:link></li>
-            </ul>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">${conference?.cityNickname} &nbsp; <i class="ion-ios7-arrow-down"></i></a>
+            <cc:pickACity />
           </li>
         </ul>
         <ul class="nav pull-right">
