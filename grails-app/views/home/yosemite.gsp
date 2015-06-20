@@ -37,11 +37,11 @@
 $(document).ready(function(){
 	$("#expanderHead").click(function(){
 		$("#expanderContent").slideToggle();
-		if ($("#expanderSign").text() == "▾ More"){
-			$("#expanderSign").html("▴ Fewer")
+		if ($("#expanderSign").text() == "▾ See all"){
+			$("#expanderSign").html("▴ Close")
 		}
 		else {
-			$("#expanderSign").text("▾ More")
+			$("#expanderSign").text("▾ See all")
 		}
 	});
 	$("#expanderVenue").click(function(){
@@ -124,13 +124,11 @@ $(document).ready(function(){
       <div class="span6">
       <img id="half-dome" src="${resource(dir: 'images/yosemite2016', file: 'yosemite_half_dome.png')}" alt="Half Dome logo">
         <h1><i class="kern-tight">Y</i>osemite</h1>
-        <p class="byline">by <a href="cocoaconf.com">CocoaConf</a></p>
+        <p class="byline">by <a href="/">CocoaConf</a></p>
         <hr class="big-red">
-        <h2>The Apple Conference with a View <span>/ April 20–23, 2015</span></h2>
+        <h2>The Apple Conference with a View <span>/ March 14–17, 2016</span></h2>
         <div class="header-about">
-          <p class="lead"><span class="yosemite-name">Yosemite</span> is a conference for Apple developers, designers, and enthusiasts, held in the heart of Yosemite National Park. We will have presentations by some of the most loved members of this awesome community separated by long breaks to get out and enjoy the beauty and grandeur of the park.</p>
-          <p class="lead">There will be guided hikes and a photo walk led by TED photographer, James Duncan Davidson, and a Breakpoint Jam with James Dempsey.</p>
-          <p class="lead">This is a once-in-a-lifetime event that will be talked about for years to come—don't miss it! </p>
+            ${yosemiteMain?.contents}
         </div>
       </div>
       <div class="span2"></div>
@@ -174,30 +172,7 @@ $(document).ready(function(){
       <div class="row-fluid">
         
         <div class="span6">
-          <h2>Reservations</h2>
-          <p>Rooms can be reserved at <a href="www.yosemitepark.com" title="Visit the website">www.yosemitepark.com</a> or by calling 801-559-4935. When registering, use the group code: <span class="yosemite-name">14K5VG</span>. We have group rates for different types and locations of rooms. All rooms are limited.</p><hr>
-          <p>There is a shuttle that runs between Curry Village and Yosemite Lodge every half hour.</p>
-        </div>
-        <div class="span4">
-        <h2>Prices</h2>
-          <table cellpadding="0" cellspacing="0">
-            <tr>
-              <td>Yosemite Lodge Room</td>
-              <td>$237 / night</td>
-            </tr>
-            <tr>
-              <td>Yosemite Lodge Family Bunk Room</td>
-              <td>$228 / night</td>
-            </tr>
-            <tr>
-              <td>Curry Village Cabin with Bathroom</td>
-              <td>$203 / night</td>
-            </tr>
-            <tr>
-              <td>Curry Village Heated Tent</td>
-              <td>$134 / night</td>
-            </tr>
-          </table>
+          ${yosemiteRoom?.contents}
         </div>
       </div>
     </div>
@@ -206,159 +181,20 @@ $(document).ready(function(){
 <a name="speakers"></a>
 <div class="speakers">
   <div class="container">
-    <h2 class="text-center">Learn from the best in the business.</h2>
-    <p class="lead text-center">Yosemite speakers are thought leaders, authors, and professional Apple developers and designers.</p>
-    <p>&nbsp;</p>
-    <div class="row-fluid">
-      <div class="span2"> <a href="#ex1" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite2016/speakers/Serenity Caldwell.jpg" alt="Speaker image"></a>
-        <h3 class="text-center">Serenity Caldwell</h3>
-        <h4 class="text-center"><span>Title</span></h4>
-        <div id="ex1" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite2016/speakers/Serenity Caldwell.jpg" alt="Speaker image">
-          <h3>Serenity Caldwell</h3>
-          <h4><span>Title</span></h4>
-          <p><span class="twitter"><a href="#" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@handle</a></span> / <span class="blog"><a href="#" title="Visit this speaker's blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;website.com/blog</a></span></p>
-          <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor tincidunt vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam ornare varius dolor. In mattis dolor sit amet rhoncus lacinia. Sed a consectetur diam. Vivamus vitae metus fringilla, vulputate elit eget, viverra massa. Suspendisse potenti. Donec elit sapien, fringilla vel purus at, pellentesque malesuada nisi.</p>
-        </div>
-      </div>
-      <div class="span2"> <a href="#ex2" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite2016/speakers/Neven Mrgan.jpg" alt="Speaker image"></a>
-        <h3 class="text-center">Neven Morgan</h3>
-        <h4 class="text-center"><span>Title</span></h4>
-        <div id="ex2" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite2016/speakers/Neven Mrgan.jpg" alt="Speaker image">
-          <h3>Neven Morgan</h3>
-          <h4><span>Title</span></h4>
-          <p><span class="twitter"><a href="#" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@handle</a></span> / <span class="blog"><a href="#" title="Visit this speaker's blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;website.com/blog</a></span></p>
-          <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor tincidunt vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam ornare varius dolor. In mattis dolor sit amet rhoncus lacinia. Sed a consectetur diam. Vivamus vitae metus fringilla, vulputate elit eget, viverra massa. Suspendisse potenti. Donec elit sapien, fringilla vel purus at, pellentesque malesuada nisi.</p>
-        </div>
-      </div>
-      <div class="span2"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite2016/speakers/Michael Lopp.jpg" alt="Speaker image"></a>
-        <h3 class="text-center">Michael Lopp</h3>
-        <h4 class="text-center"><span>Speaker Title</span></h4>
-      </div>
-      <div class="span2"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite2016/speakers/Matt Drance.jpg" alt="Speaker image"></a>
-        <h3 class="text-center">Matt Drance</h3>
-        <h4 class="text-center"><span>Speaker Title</span></h4>
-      </div>
-      <div class="span2"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite2016/speakers/laura Savino.jpg" alt="Speaker image"></a>
-        <h3 class="text-center">Laura Savino</h3>
-        <h4 class="text-center"><span>Speaker Title</span></h4>
-      </div>
-    </div>
-    <p>&nbsp;</p>
-    <a name="speakersMore"></a>
-    <div id="expanderContent" style="display:none;">
-      <div class="row-fluid">
-        <div class="span2"> <a href="#ex6" rel="modal:open" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite2016/speakers/Jason-Snell.jpg" alt="Speaker image"></a>
-          <h3 class="text-center">Jason Snell</h3>
-          <h4 class="text-center"><span>Title</span></h4>
-          <div id="ex6" class="bio" style="display:none;"> <img class="img-circle pull-right" src="images/yosemite2016/speakers/Jason-Snell.jpg" alt="Speaker image">
-            <h3>Jason Snell</h3>
-            <h4><span>Title</span></h4>
-            <p><span class="twitter"><a href="#" title="Follow on Twitter"><i class="ion-social-twitter"></i>&nbsp;@handle</a></span> / <span class="blog"><a href="#" title="Visit this speaker's blog" target="_blank"><i class="ion-social-rss"></i>&nbsp;website.com/blog</a></span></p>
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor tincidunt vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam ornare varius dolor. In mattis dolor sit amet rhoncus lacinia. Sed a consectetur diam. Vivamus vitae metus fringilla, vulputate elit eget, viverra massa. Suspendisse potenti. Donec elit sapien, fringilla vel purus at, pellentesque malesuada nisi.</p>
-          </div>
-        </div>
-        <div class="span2"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite2016/speakers/James Duncan Davidson.jpg" alt="Speaker image"></a>
-          <h3 class="text-center">James Duncan Davidson</h3>
-          <h4 class="text-center"><span>Title</span></h4>
-        </div>
-        <div class="span2"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite2016/speakers/James Dempsey.jpg" alt="Speaker image"></a>
-          <h3 class="text-center">James Dempsey</h3>
-          <h4 class="text-center"><span>Speaker Title</span></h4>
-        </div>
-        <div class="span2"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite2016/speakers/Jaimee Newberry.jpg" alt="Speaker image"></a>
-          <h3 class="text-center">Jaimee Newberry</h3>
-          <h4 class="text-center"><span>Speaker Title</span></h4>
-        </div>
-        <div class="span2"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite2016/speakers/Guy English.jpg" alt="Speaker image"></a>
-          <h3 class="text-center">Guy English</h3>
-          <h4 class="text-center"><span>Speaker Title</span></h4>
-        </div>
-      </div>
-      <p>&nbsp;</p>
-      <div class="row-fluid">
-        <div class="span2"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite2016/speakers/Dave Wiskus.jpg" alt="Speaker image"></a>
-          <h3 class="text-center">Dave Wiskus</h3>
-          <h4 class="text-center"><span>Writer, Editor, Developer</span></h4>
-        </div>
-        <div class="span2"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite2016/speakers/Daniel Steinberg.jpg" alt="Speaker image"></a>
-          <h3 class="text-center">Daniel Steinberg</h3>
-          <h4 class="text-center"><span> Chief at Second Gear</span></h4>
-        </div>
-        <div class="span2"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite2016/speakers/Brent Simmons.jpg" alt="Speaker image"></a>
-          <h3 class="text-center">Brent Simmons</h3>
-          <h4 class="text-center"><span>Speaker Title</span></h4>
-        </div>
-        <div class="span2"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite2016/speakers/Andy Ihnatko.jpg" alt="Speaker image"></a>
-          <h3 class="text-center">Andy Ihnatko</h3>
-          <h4 class="text-center"><span>Speaker Title</span></h4>
-        </div>
-        <div class="span2"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite2016/speakers/Andrew_Stone.jpg" alt="Speaker image"></a>
-          <h3 class="text-center">Andrew_Stone</h3>
-          <h4 class="text-center"><span>Speaker Title</span></h4>
-        </div>
-      </div>
-      <p>&nbsp;</p>
-      <div class="row-fluid">
-        <div class="span2"> </div>
-        <div class="span2"> </div>
-        <div class="span2"> <a href="#" title="Learn more about this speaker"><img class="img-circle center" src="images/yosemite2016/photo_speaker.jpg" alt="Speaker image"></a>
-          <h3 class="text-center">Speaker Name</h3>
-          <h4 class="text-center"><span>Speaker Title</span></h4>
-        </div>
-        <div class="span2"> </div>
-        <div class="span2"> </div>
-      </div>
-    </div>
-    <p>&nbsp;</p>
-    <div class="row-fluid">
-      <div class="span4"> </div>
-      <div class="span2">
-        <p><a href="#speakersMore" class="btn btn-flat btn-block btn-large" id="expanderHead"><span id="expanderSign">▾ More</span> speakers </a></p>
-      </div>
-      <div class="span4"> </div>
-    </div>
+    ${yosemiteSpeakers?.contents}
   </div>
 </div>
 <a name="schedule"></a>
 <div class="locations">
   <div class="container">
-    <h2 class="text-center">A schedule with room to explore.</h2>
-    <div class="row-fluid">
-      <div class="span2">
-        <h3>Monday<br>
-          <small>April 20</small></h3>
-        <p>Check-in from 5:00 pm - 9:00 pm</p>
-      </div>
-      <div class="span2">
-        <h3>Tuesday<br>
-          <small>April 21</small></h3>
-        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<a href="city_speakers.html">Speakers</a></p>
-        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<a href="city_sessions.html">Session Topics</a></p>
-      </div>
-      <div class="span2"> <img class="img-circle center" src="http://cdn1.stocksy.com/a/pt5000/z5/22681.jpg" alt="Yosemite Valley"> </div>
-      <div class="span2">
-        <h3>Wednesday<br>
-          <small>April 22</small></h3>
-        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<a href="city_speakers.html">Speakers</a></p>
-        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<a href="city_sessions.html">Session Topics</a></p>
-      </div>
-      <div class="span2">
-        <h3>Thursday<br>
-          <small>April 23</small></h3>
-        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<a href="city_speakers.html">Speakers</a></p>
-        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<a href="city_sessions.html">Session Topics</a></p>
-      </div>
-    </div>
+    ${yosemiteSchedule?.contents}
   </div>
 </div>
 <a name="share"></a>
 <div class="share">
   <div class="container">
     <h2 class="pull-left">Spread the Word</h2>
-    <p> <a href="https://twitter.com/intent/tweet?text=CocoaConf%3A%20The%20developer%20conference%20for%20those%20who%20think%20different&amp;url=http://cocoaconf.com" class="share twitter text-center"><i class="ion-social-twitter"></i></a> <a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=http://cocoaconf.com&amp;p[images][0]=&amp;p[title]=CocoaConf:%20The%20developer%20conference%20for%20those%20who%20think%20different&amp;p[summary]=%E2%80%9CCocoaConf%20is%20a%20touring%20training%20conference%20for%20iPhone,%20iPad,%20and%20Mac%20developers.%20We%20bring%20some%20of%20the%20best%20authors,%20trainers,%20and%20speakers%20to%20the%20most%20passionate,%20engaged%20developers%20in%20a%20region%E2%80%94together,%20they%20make%20magic!%E2%80%9D" class="share facebook text-center"><i class="ion-social-facebook"></i></a> <a href="https://plus.google.com/share?url=http://cocoaconf.com" class="share google text-center"><i class="ion-social-googleplus-outline"></i></a> <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=&amp;su=CocoaConf%3A%20The%20developer%20conference%20for%20those%20who%20think%20different&amp;body=%22CocoaConf%20is%20a%20touring%20training%20conference%20for%20iPhone%2C%20iPad%2C%20and%20Mac%20developers.%20We%20bring%20some%20of%20the%20best%20authors%2C%20trainers%2C%20and%20speakers%20to%20the%20most%20passionate%2C%20engaged%20developers%20in%20a%20region--together%2C%20they%20make%20magic%21%22%0A%0Ahttp%3A//cocoaconf.com" class="share email text-center" target="_blank"><i class="ion-ios7-email"></i></a> <a href="https://alpha.app.net/intent/post/?text=CocoaConf%3A%20The%20developer%20conference%20for%20those%20who%20think%20different&amp;url=http://cocoaconf.com" class="share more text-center"><i class="ion-ios7-plus-outline"></i></a>
+    <p> <a href="https://twitter.com/intent/tweet?text=Yosemite%2C%20by%20CocoaConf%3A%20The%20Apple%20Conference%20with%20a%20View&amp;url=http://cocoaconf.com/yosemite" class="share twitter text-center"><i class="ion-social-twitter"></i></a> <a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=http://cocoaconf.com/yosemite&amp;p[images][0]=&amp;p[title]=Yosemite:%20The%20Apple%20Conference%20with%20a%20View" class="share facebook text-center"><i class="ion-social-facebook"></i></a> <a href="https://plus.google.com/share?url=http://cocoaconf.com/yosemite" class="share google text-center"><i class="ion-social-googleplus-outline"></i></a> <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=&amp;su=Yosemite%2C%20by%20CocoaConf%3A%20The%20Apple%20Conference%20with%20a%20View" class="share email text-center" target="_blank"><i class="ion-ios7-email"></i></a> <a href="https://alpha.app.net/intent/post/?text=Yosemite%2C%20by%20CocoaConf%3A%20The%20Apple%20Conference%20with%20a%20Viewamp;url=http://cocoaconf.com/yosemite" class="share more text-center"><i class="ion-ios7-plus-outline"></i></a>
       <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/follow_button.1404859412.html#_=1406668400431&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=CocoaConf&amp;show_count=false&amp;show_screen_name=true&amp;size=l" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 167px; height: 28px;"></iframe>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
     </p>
@@ -367,19 +203,7 @@ $(document).ready(function(){
 <a name="register"></a>
 <div class="sessions">
   <div class="container">
-    <h2 class="text-center">What you get when you register now.</h2>
-    <div class="row-fluid">
-      <div class="span10">
-        <h3></h3>
-        <p>The Yosemite conference includes general sessions, keynote presentations, and three breakout tracks covering a variety of iOS and OS X development topics. Also included in your registration are all meals, snacks and beverages, so you can keep your mind on all the new stuff you’re learning and not have to go forage for sustenance. But wait, there’s more… you will also receive a collection of some of the best conference swag in the industry. All that, and the opportunity to spend the weekend with a bunch of awesome iPhone, iPad, and Mac developers.</p>
-        <p>Group discounts are also available. Contact us at <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=info@cocoaconf.com" target="_blank">info@cocoaconf.com</a> for details.</p>
-        <br>
-        <div style="width:100%; text-align:left;">
-          <iframe src="https://www.eventbrite.com/tickets-external?eid=11276380959&amp;ref=etckt" frameborder="0" height="400" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-        </div>
-      </div>
-    </div>
-    <hr>
+    ${yosemiteRegister?.contents}
   </div>
 </div>
 
@@ -444,8 +268,8 @@ $(document).ready(function(){
   </div>
 </div>-->
 <footer>
-  <div class="container"> <a class="brand" href="#"><img src="images/yosemite2016/img_cocoaconf_logo.png" height="40" width="40" alt="CocoaConf logo" class="pull-left"></a>
-    <p class="text-right">&copy; 2014 Simply Cocoa, LLC. &nbsp;| &nbsp; About the <a href="#" title="Learn more about the Kleins">Klein Family</a> &nbsp; | &nbsp; Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a></p>
+  <div class="container"> <a class="brand" href="/"><img src="images/yosemite2016/img_cocoaconf_logo.png" height="40" width="40" alt="CocoaConf logo" class="pull-left"></a>
+    <p class="text-right">&copy; 2015 Simply Cocoa, LLC. &nbsp;| &nbsp; <a href="/family" title="Learn more about the Kleins">About the Klein family</a> &nbsp; | &nbsp; Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a></p>
   </div>
 </footer>
 </div>
