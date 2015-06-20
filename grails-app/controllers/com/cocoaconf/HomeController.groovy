@@ -37,7 +37,7 @@ class HomeController {
     def yosemiteTwentyFifteen = { }
 
     def yosemite = {
-      [yosemiteVenueInfo: TextBit.findByName("yosemiteVenueInfo")]
+      [yosemiteMain: TextBit.findByName("yosemiteMain"), yosemiteRoom: TextBit.findByName("yosemiteRoom"), yosemiteSpeakers: TextBit.findByName("yosemiteSpeakers"), yosemiteSchedule: TextBit.findByName("yosemiteSchedule"), yosemiteRegister: TextBit.findByName("yosemiteRegister")]
     }
 
     def yosemiteSignup = { [interestList: Interest.list()] }
