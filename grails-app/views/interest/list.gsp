@@ -30,8 +30,6 @@
 					
 						<g:sortableColumn property="needHotel" title="${message(code: 'interest.needHotel.label', default: 'Need Hotel')}" />
 					
-						<th><g:message code="interest.conference.label" default="Conference" /></th>
-					
 					</tr>
 				</thead>
 				<tbody>
@@ -43,8 +41,6 @@
 						<td>${fieldValue(bean: interestInstance, field: "location")}</td>
 					
 						<td><g:formatBoolean boolean="${interestInstance.needHotel}" /></td>
-					
-						<td>${fieldValue(bean: interestInstance, field: "conference")}</td>
 					
 					</tr>
 				</g:each>
