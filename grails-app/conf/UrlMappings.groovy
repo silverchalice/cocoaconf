@@ -19,8 +19,8 @@ class UrlMappings {
 
 		"/yosemite"{
 			controller = "home"
-			// action = "yosemite"
-      action = "yosemiteSignup"
+			action = "yosemite"
+      //action = "yosemiteSignup"
 		}
 
 		"/yosemite-2015"{
