@@ -21,7 +21,7 @@ class TermController {
         }
         //println "\n\nhey yo. here are your params as we got them: $params\n\n"
         def termInstance = Term.findBySlug(params.slug)
-        return [termInstance: termInstance]
+        return [termInstance: termInstance, trainingDesc: TextBit.findByName("trainingDesc")]
     }
 
     def show(Term termInstance) {
