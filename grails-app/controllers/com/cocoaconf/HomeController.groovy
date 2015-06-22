@@ -14,7 +14,7 @@ class HomeController {
 
     def index = {
       
-      [subHeadingHome: TextBit.findByName("subHeadingHome"), useImg: randomService.nextInteger(100) + 1]
+      [subHeadingHome: TextBit.findByName("subHeadingHome"), locationsHome: TextBit.findByName("locationsHome"), speakerSectionHome: TextBit.findByName("speakerSectionHome"), commentsHome: TextBit.findByName("commentsHome"), useImg: randomService.nextInteger(100) + 1]
 	}
 
     def testFeed = {
@@ -34,8 +34,19 @@ class HomeController {
       session.sawCountdown = "yup"
     }
 
+    def yosemiteTwentyFifteen = { }
+
     def yosemite = {
-      [yosemiteVenueInfo: TextBit.findByName("yosemiteVenueInfo")]
+      [yosemiteMain: TextBit.findByName("yosemiteMain"), yosemiteRoom: TextBit.findByName("yosemiteRoom"), yosemiteSpeakers: TextBit.findByName("yosemiteSpeakers"), yosemiteSchedule: TextBit.findByName("yosemiteSchedule"), yosemiteRegister: TextBit.findByName("yosemiteRegister")]
+    }
+
+    def yosemiteSignup = { [interestList: Interest.list()] }
+
+    def saveSignup = {
+        def yosemite = Conference.get(34)
+        def signup = new Interest(name: params.name, email: params.email, conference: yosemite)
+        signup.save()
+        render template: "ySignupThanks"
     }
 
     def select_activities = {

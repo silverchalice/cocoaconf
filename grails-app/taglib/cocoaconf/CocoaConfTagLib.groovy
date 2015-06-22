@@ -53,7 +53,7 @@ class CocoaConfTagLib {
 
     def conferenceImage = { attrs ->
         def conference = Conference.get(attrs.id)
-        def images = [17 : 'img_chicago_bean_small.jpg', 18 : 'img_washington_small_02.jpg', 19 : 'img_sanjose_small_01.jpg', 20 : 'img_austin_small_01.jpg', 21 : 'img_raleigh_small_01.jpg', 22: 'img_columbus_small_01.jpg', 23: 'img_lasvegas_small_01.jpg', 24: 'img_seattle_small_02.jpg', 25: 'img_boston_small_02.jpg', 26: 'img_atlanta_small_01.jpg', 27: 'Chicago-main.jpg', 28: 'DC-main.jpg', 29: 'portland-main.jpg', 30: 'austin-main.jpg', 31: 'img_columbus_small_01.jpg']
+        def images = [17 : 'img_chicago_bean_small.jpg', 18 : 'img_washington_small_02.jpg', 33: 'img_sanjose_small_01.jpg', 20 : 'img_austin_small_01.jpg', 21 : 'img_raleigh_small_01.jpg', 22: 'img_columbus_small_01.jpg', 23: 'img_lasvegas_small_01.jpg', 24: 'img_seattle_small_02.jpg', 32: 'img_boston_small_02.jpg', 26: 'img_atlanta_small_01.jpg', 27: 'Chicago-main.jpg', 28: 'DC-main.jpg', 29: 'portland-main.jpg', 30: 'austin-main.jpg', 31: 'img_columbus_small_01.jpg']
         if(conference && conference.status == Conference.ACTIVE){
             out << '<img class="img-rounded" src="' + g.resource(dir: 'images', file: images[conference.id.toInteger()]) + '" alt="Photo (cc) by ___ on Flickr" />'
         } else {
@@ -196,7 +196,7 @@ class CocoaConfTagLib {
     }
 
     def pickACity = {attrs ->
-        def confs = Conference.findAllByStatus('active', [sort:id])
+        def confs = Conference.findAllByStatus('active', [sort:'id'])
         out << """
             <ul class="dropdown-menu">
                 <!--<li class="nav-header">Choose a City</li>
@@ -204,7 +204,7 @@ class CocoaConfTagLib {
              """
         confs.each{
             out << """
-            <li><g:link controller="conference" action="home" params="['tinyName': ${it.tinyName}]">${it.cityNickName}</g:link></li>
+            <li><a href="/${it.tinyName}/home">${it.cityNickname}</a></li>
             """
         }
         out << "</ul>"

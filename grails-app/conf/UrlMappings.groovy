@@ -20,6 +20,12 @@ class UrlMappings {
 		"/yosemite"{
 			controller = "home"
 			action = "yosemite"
+      //action = "yosemiteSignup"
+		}
+
+		"/yosemite-2015"{
+			controller = "home"
+			action = "yosemiteTwentyFifteen"
 		}
 
 		"/select_activities/$id"{
