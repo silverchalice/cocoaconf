@@ -28,6 +28,11 @@
             margin-top: 90px;
           }
       </style>
+      <g:javascript>
+        $( document ).ready(function() {
+            document.getElementById("username").focus();
+        });
+      </g:javascript>
     </head>
     <body>
     <div class="container main-text">
