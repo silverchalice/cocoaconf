@@ -15,13 +15,13 @@ class TermController {
             // Get either the next term (if one is coming up) or the last one
             // (if there are no terms coming up). Either way, a "show" page.
             def nextTerm = Term.findByStartDateGreaterThan(new Date()) ?: Term.list().last()
-            redirect action: "index", params: [slug: nextTerm.slug]
-            return
+            //redirect action: "index", params: [slug: nextTerm.slug]
+            params.slug = nextTerm.slug
+            //return
         }
-        println "\n\nhey yo. here are your params as we got them: $params\n\n"
+        //println "\n\nhey yo. here are your params as we got them: $params\n\n"
         def termInstance = Term.findBySlug(params.slug)
-        params.max = Math.min(max ?: 10, 100)
-        respond Term.list(params), model:[termInstance: termInstance, termInstanceCount: Term.count()]
+        return [termInstance: termInstance]
     }
 
     def show(Term termInstance) {
