@@ -21,7 +21,8 @@ class TermController {
         }
         //println "\n\nhey yo. here are your params as we got them: $params\n\n"
         def termInstance = Term.findBySlug(params.slug)
-        return [termInstance: termInstance, trainingDesc: TextBit.findByName("trainingDesc")]
+        params.max = Math.min(max ?: 10, 100)
+        return [termInstance: termInstance, termInstanceCount: Term.count(), trainingDesc: TextBit.findByName("trainingDesc")]
     }
 
     def show(Term termInstance) {
