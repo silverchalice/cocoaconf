@@ -719,6 +719,9 @@ li.twitter a:before {
 li.skype a:before {
     content: "\f23f";
 }
+li.paw a:before {
+    content: "\f47a";
+}
 
 a.button:hover, a.post-title:hover {
   text-decoration: none;
