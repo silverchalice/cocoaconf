@@ -38,6 +38,17 @@ class UrlMappings {
 			action = "index"
 		}
 
+		"/videos"{
+			controller = "video"
+			action = "index"
+		}
+
+		"/video/$slug"{
+			controller = "video"
+			action = "index"
+      slug = "$slug"
+		}
+
 		"/family"{
 			controller = "home"
 			action = "kleinfamily"
@@ -74,7 +85,7 @@ class UrlMappings {
             id = "$tinyName"
             constraints {
                 tinyName(validator: {
-                    return !(it in ['console'])
+                    return !(it in ['console', 'videos'])
                 })
             }
 		}
