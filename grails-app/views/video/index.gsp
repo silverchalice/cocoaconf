@@ -3,14 +3,14 @@
 <html lang="en">
 <head>
 <title>CocoaConf Videos</title>
-<meta name="layout" content="partners" />
+<meta name="layout" content="video" />
 
 </head>
 
 <body class="podcast">
 
 <div class="container main-text">
-  <h1 style="margin: 36px 0"><g:link controller="video" action="index"> Yosemite Videos </g:link></h1>
+  <h1 style="margin: 36px 0"><g:link controller="podcast" action="index">Yosemite <img src="${resource(dir: 'images/yosemite2016', file: 'yosemite_half_dome.png')}" class="hidden-phone" style="height: 120px" /></g:link> <g:link controller="podcast" action="index"> Videos </g:link></h1>
 </div>
 
 
@@ -20,7 +20,7 @@
 
     <div class="row-fluid">
         <div class="span7">
-            <h1>Videos from Yosemite by CocoaConf <br /><small>April 2015</small></h1>
+            <h1>Conference Videos<br /><small>From <strong>Yosemite, by CocoaConf</strong>: April 20&#8211;23, 2015</small></h1>
         </div>
     </div>
 
