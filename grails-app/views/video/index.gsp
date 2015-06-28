@@ -62,9 +62,11 @@
               <br />
               ${video.playerBlurb}
               <p>&nbsp;</p>
-              <div class="well">
-                ${video.sponsorBlurb}
-              </div>
+              <g:if test="${videoInstanceCount == 1}">
+                <div class="well">
+                  ${video.sponsorBlurb}
+                </div>
+              </g:if>
           </div>
       </g:each>
         <div class="paginateButtons" style="max-width: 50%; text-align: center;">

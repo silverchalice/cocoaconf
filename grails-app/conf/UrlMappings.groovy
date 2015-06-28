@@ -38,15 +38,9 @@ class UrlMappings {
 			action = "index"
 		}
 
-		"/videos"{
+		"/videos/$id?"{
 			controller = "video"
 			action = "index"
-		}
-
-		"/video/$slug"{
-			controller = "video"
-			action = "index"
-      slug = "$slug"
 		}
 
 		"/family"{
