@@ -131,6 +131,7 @@ grails.plugin.springsecurity.interceptUrlMap = [
     '/speaker/list':                                         ['ROLE_ADMIN'],
     '/textBit/**':                                           ['ROLE_ADMIN'],
     '/episode/**':                                           ['ROLE_ADMIN'],
+    '/video/**':                                             ['ROLE_ADMIN'],
     '/yosemiteActivity/**':                                  ['ROLE_ADMIN'],
     '/term/**':                                              ['ROLE_ADMIN'],
     '/course/displayImage/**':                               ['IS_AUTHENTICATED_ANONYMOUSLY'],
