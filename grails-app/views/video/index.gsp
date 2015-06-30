@@ -7,10 +7,10 @@
 
 </head>
 
-<body class="podcast">
+<body class="video">
 
 <div class="container main-text">
-  <h1 style="margin: 36px 0"><g:link controller="podcast" action="index">Yosemite <img src="${resource(dir: 'images/yosemite2016', file: 'yosemite_half_dome.png')}" class="hidden-phone" style="height: 120px" /></g:link> <g:link controller="podcast" action="index"> Videos </g:link></h1>
+  <h1 style="margin: 36px 0"><g:link controller="video" action="index">Yosemite <img src="${resource(dir: 'images/yosemite2016', file: 'yosemite_half_dome.png')}" class="hidden-phone" style="height: 120px" /></g:link> <g:link controller="video" action="index"> Videos </g:link></h1>
 </div>
 
 
