@@ -11,16 +11,6 @@
  * Webfont: URW Clarendon Bold by URW++
  * URL: http://www.myfonts.com/fonts/urw/clarendon/urw-clarendon-t-bold/
  *
- * Webfont: URW Clarendon Light by URW++
- * URL: http://www.myfonts.com/fonts/urw/clarendon/urw-clarendon-t-light/
- *
- * Webfont: URW Clarendon Medium by URW++
- * URL: http://www.myfonts.com/fonts/urw/clarendon/urw-clarendon-t-medium/
- *
- * Webfont: URW Clarendon Regular by URW++
- * URL: http://www.myfonts.com/fonts/urw/clarendon/urw-clarendon-t-regular/
- *
- *
  * License: http://www.myfonts.com/viewlicense?type=web&buildid=2879444
  * Licensed pageviews: 100,000
  * Webfonts copyright: Copyright 2010 URW++ Design &amp; Development Hamburg
@@ -33,13 +23,4 @@
 @import url("//hello.myfonts.net/count/2befd4");
 
 
-@font-face {font-family: 'ClarendonURW-Bol';src: url('webfonts/2BEFD4_0_0.eot');src: url('webfonts/2BEFD4_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2BEFD4_0_0.woff') format('woff'),url('webfonts/2BEFD4_0_0.ttf') format('truetype');}
-
-
-@font-face {font-family: 'ClarendonURW-Lig';src: url('webfonts/2BEFD4_1_0.eot');src: url('webfonts/2BEFD4_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2BEFD4_1_0.woff') format('woff'),url('webfonts/2BEFD4_1_0.ttf') format('truetype');}
-
-
-@font-face {font-family: 'ClarendonURW-Med';src: url('webfonts/2BEFD4_2_0.eot');src: url('webfonts/2BEFD4_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2BEFD4_2_0.woff') format('woff'),url('webfonts/2BEFD4_2_0.ttf') format('truetype');}
-
-
-@font-face {font-family: 'ClarendonURW-Reg';src: url('webfonts/2BEFD4_3_0.eot');src: url('webfonts/2BEFD4_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2BEFD4_3_0.woff') format('woff'),url('webfonts/2BEFD4_3_0.ttf') format('truetype');}
+@font-face {font-family: 'URW Clarendon Bold';src: url('../webfonts/2BEFD4_0_0.eot');src: url('../webfonts/2BEFD4_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/2BEFD4_0_0.woff') format('woff'),url('../webfonts/2BEFD4_0_0.ttf') format('truetype');}

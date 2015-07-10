@@ -20,10 +20,26 @@ class UrlMappings {
 		"/yosemite"{
 			controller = "home"
 			action = "yosemite"
+      //action = "yosemiteSignup"
+		}
+
+		"/yosemite-2015"{
+			controller = "home"
+			action = "yosemiteTwentyFifteen"
+		}
+
+		"/select_activities/$id"{
+			controller = "home"
+			action = "select_activities"
 		}
 
 		"/podcast/$id?"{
 			controller = "podcast"
+			action = "index"
+		}
+
+		"/videos/$id?"{
+			controller = "video"
 			action = "index"
 		}
 
@@ -35,6 +51,16 @@ class UrlMappings {
 		"/credits"{
 			controller = "home"
 			action = "credits"
+		}
+
+		"/training/$slug?"{
+			controller = "term"
+			action = "index"
+		}
+
+		"/university/$slug?"{
+			controller = "home"
+			action = "university"
 		}
 		
 		"/register"{
@@ -51,6 +77,11 @@ class UrlMappings {
             controller = "conference"
             action = "sendToHome"
             id = "$tinyName"
+            constraints {
+                tinyName(validator: {
+                    return !(it in ['console', 'videos'])
+                })
+            }
 		}
 		"/$tinyName/home."{
             controller = "conference"

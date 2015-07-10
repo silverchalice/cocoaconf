@@ -43,14 +43,7 @@
       <p class="lead">${conference.intro}</p>
     </div>
     <div class="span3">
-      <g:if test="${conference.id != 19 && conference.id != 21 && conference.id != 22 && conference.id != 23 && conference.id != 24}">
-        <h2 style="text-align: center;"><small>Early Bird discounts available!</small></h2>
-      </g:if>
-      <h2 style="text-align: center;"><small><cc:weeksUntilSalesEnd id="${conference.id}" /></small></h2>
-      <g:if test="${conference.status == Conference.ACTIVE}">
-        <g:link controller="conference" action="register" params='["tinyName": "${conference?.tinyName}"]' class="button"><button class="btn btn-block btn-large btn-flat"><cc:registerButton id="${conference?.id}" /> <i class="ion-ios7-arrow-forward"></i></button></g:link>
-        
-      </g:if>
+      ${conference?.buttonText}
     </div>
   </div>
   <hr>
@@ -107,11 +100,9 @@
               <ul class="dropdown-menu">
               <!--<li class="nav-header">Choose a City</li>
               <li class="divider"></li>-->
-              <li class="${conference?.id == 22 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'columbus-2014']">Columbus, OH &#8212; <strong>Sold Out!</strong></g:link></li>
-              <li class="${conference?.id == 23 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'lasvegas-2014']">Las Vegas, NV</g:link></li>
-              <li class="${conference?.id == 24 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'seattle-2014']">Seattle, WA &#8212; <strong>Sold Out!</strong></g:link></li>
-              <li class="${conference?.id == 25 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'boston-2014']">Boston, MA</g:link></li>
-              <li class="${conference?.id == 26 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'atlanta-2014']">Atlanta, GA</g:link></li>
+              <li class="${conference?.id == 29 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'portland-2015']">Portland, OR</g:link></li>
+              <li class="${conference?.id == 30 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'austin-2015']">Austin, TX</g:link></li>
+              <li class="${conference?.id == 31 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'columbus-2015']">Columbus, OH</g:link></li>
               </ul>
             </li>
           </ul>

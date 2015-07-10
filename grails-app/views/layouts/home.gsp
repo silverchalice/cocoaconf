@@ -53,16 +53,8 @@
       <a class="brand" href="${createLink(uri: '/')}"><img src="${resource(dir: 'images', file: 'img_cocoaconf_logo.png')}" height="40" width="40" alt="CocoaConf logo"> CocoaConf</a>
       <div class="nav-collapse collapse">
         <ul class="nav">
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><cc:cityName id="${conference?.id}" /> &nbsp; <i class="ion-ios7-arrow-down"></i></a>
-            <ul class="dropdown-menu">
-              <!--<li class="nav-header">Choose a City</li>
-              <li class="divider"></li>-->
-              <li class="${conference?.id == 22 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'columbus-2014']">Columbus, OH &#8212; <strong>Sold Out!</strong></g:link></li>
-              <li class="${conference?.id == 23 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'lasvegas-2014']">Las Vegas, NV</g:link></li>
-              <li class="${conference?.id == 24 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'seattle-2014']">Seattle, WA &#8212; <strong>Sold Out!</strong></g:link></li>
-              <li class="${conference?.id == 25 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'boston-2014']">Boston, MA</g:link></li>
-              <li class="${conference?.id == 26 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'atlanta-2014']">Atlanta, GA</g:link></li>
-            </ul>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">${conference?.cityNickname} &nbsp; <i class="ion-ios7-arrow-down"></i></a>
+            <cc:pickACity />
           </li>
         </ul>
         <ul class="nav pull-right">
@@ -70,6 +62,9 @@
           <!-- <li><a href="#sessions">Sessions</a></li> -->
           <!-- <li><a href="#contact">Venues</a></li> -->
           <li><g:link controller="home" action="partners">Partners</g:link></li>
+          <li><g:link controller="term">Training</g:link></li>
+          <li><g:link controller="home" action="yosemite">Yosemite</g:link></li>
+          <li><g:link controller="video">Videos</g:link></li>
           <li><g:link controller="podcast">Podcast</g:link></li>
           <li><g:link controller="post" action="list">Blog</g:link></li>
           <!-- <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li> -->

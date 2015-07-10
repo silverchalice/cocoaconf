@@ -68,6 +68,7 @@ grails.project.dependency.resolution = {
         compile ':mail:1.0.7', {
             excludes 'spring-test'
         }
+        compile ":console:1.5.1"
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate4:4.3.5.5" // or ":hibernate:3.6.10.17"

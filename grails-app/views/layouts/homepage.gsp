@@ -53,15 +53,7 @@
       <div class="nav-collapse collapse">
         <ul class="nav">
           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pick a City &nbsp; <i class="ion-ios7-arrow-down"></i></a>
-            <ul class="dropdown-menu">
-              <!--<li class="nav-header">Choose a City</li>
-              <li class="divider"></li>-->  
-              <li><g:link controller="conference" action="home" params="['tinyName': 'columbus-2014']">Columbus, OH &#8212; <strong>Sold Out!</strong></g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'lasvegas-2014']">Las Vegas, NV</g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'seattle-2014']">Seattle, WA &#8212; <strong>Sold Out!</strong></g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'boston-2014']">Boston, MA</g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'atlanta-2014']">Atlanta, GA</g:link></li>
-            </ul>
+              <cc:pickACity />
           </li>
         </ul>
         <ul class="nav pull-right">
@@ -69,6 +61,9 @@
           <!-- <li><a href="#sessions">Sessions</a></li> -->
           <!-- <li><a href="#contact">Venues</a></li> -->
           <li><g:link controller="home" action="partners">Partners</g:link></li>
+          <li><g:link controller="term">Training</g:link></li>
+          <li><g:link controller="home" action="yosemite">Yosemite</g:link></li>
+          <li><g:link controller="video">Videos</g:link></li>
           <li><g:link controller="podcast">Podcast</g:link></li>
           <li><g:link controller="post" action="list">Blog</g:link></li>
           <!-- <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li> -->
@@ -81,7 +76,7 @@
 <div class="header">
   <div class="container">
     <h1>The developer conference <br /> for those who think different.</h1>
-    <h3><span class="hidden-phone hidden-tablet">20 events / 126 speakers / 1,600+ attendees / Since 2011 &nbsp; </span>
+    ${subHeadingHome?.contents}
       <!-- <button class="btn btn-large btn-flat-gray">Register &nbsp;<i class="ion-ios7-arrow-right"></i></button> -->
     </h3>
   </div>
@@ -95,15 +90,7 @@
       <div class="nav-collapse collapse">
         <ul class="nav">
           <li class="dropup"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pick a City &nbsp; <i class="ion-ios7-arrow-up"></i></a>
-            <ul class="dropdown-menu">
-              <!--<li class="nav-header">Choose a City</li>
-              <li class="divider"></li>-->
-              <li><g:link controller="conference" action="home" params="['tinyName': 'columbus-2014']">Columbus, OH</g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'lasvegas-2014']">Las Vegas, NV</g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'seattle-2014']">Seattle, WA &#8212; <strong>Sold Out!</strong></g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'boston-2014']">Boston, MA</g:link></li>
-              <li><g:link controller="conference" action="home" params="['tinyName': 'atlanta-2014']">Atlanta, GA</g:link></li>
-            </ul>
+              <cc:pickACity />
           </li>
         </ul>
         <ul class="nav pull-right">
@@ -111,6 +98,9 @@
           <!-- <li><a href="#sessions">Sessions</a></li> -->
           <!-- <li><a href="#contact">Venues</a></li> -->
           <li><g:link controller="home" action="partners">Partners</g:link></li>
+          <li><g:link controller="term">Training</g:link></li>
+          <li><g:link controller="video">Videos</g:link></li>
+          <li><g:link controller="podcast">Podcast</g:link></li>
           <li><g:link controller="post" action="list">Blog</g:link></li>
           <!-- <li><a href="#contact">Register &nbsp; <i class="ion-ios7-arrow-forward"></i></a></li> -->
         </ul>
@@ -121,7 +111,7 @@
 </div>
 <footer>
   <div class="container">
-    <p class="text-right">&copy; 2014 Simply Cocoa, LLC. &nbsp;| &nbsp; About the <a href="${createLink(controller: 'home', action: 'kleinfamily')}" title="Learn more about the Kleins">Klein Family</a> &nbsp; | &nbsp; <a href="${createLink(controller: 'home', action: 'credits')}">Credits</a> &nbsp; | &nbsp; Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a> | Hosted by <a href="http://macminicolo.net/">macminicolo.net</a></p>
+    <p class="text-right">&copy; 2011&#8211;<g:formatDate format="yyyy" date="${new Date()}" /> Simply Cocoa, LLC. &nbsp;| &nbsp; <a href="${createLink(controller: 'home', action: 'kleinfamily')}" title="Learn more about the Kleins">About the Klein Family</a> &nbsp; | &nbsp; <a href="${createLink(controller: 'home', action: 'credits')}">Credits</a> &nbsp; | &nbsp; Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a></p>
   </div>
 </footer>
 </div>

@@ -446,8 +446,6 @@ ul.nav-list li:last-child {
     padding: 4px;
 }
 .img-circle {
-    height: 200px;
-    width: 200px;
     border-radius: 500px;
 }
 .media, .media-body {
@@ -482,6 +480,12 @@ img.center {
 	display:block;
 	margin-right:auto;
 	margin-left:auto;	
+}
+p.bio {
+  font-size: smaller;
+}
+div.bio img {
+	width:115px;	
 }
 
 /*	=4d: Links  
@@ -580,6 +584,10 @@ h3 a.muted, h4 a.muted h5 a.muted {
 	color:#000;	
 }
 
+a.muted:hover {
+  color:#000;
+}
+
 /*	=4e: Forms  
 ----------------------------------------------- */
 
@@ -602,6 +610,22 @@ table.table td:first-child {
 }
 .schedule table.table td:first-child {	
 	width:10%;
+}
+.locations.venue table {
+}
+.locations.venue table td {
+	border-bottom:1px dotted rgba(255,255,255,0.3);
+	padding:10px 0;
+	color:#fff;	
+}
+.locations.venue table tr:first-child td {
+	padding-top:0;
+}
+.locations.venue table tr td:last-child {
+	padding-left:65px;
+}
+.locations.venue table tr:last-child td {
+	border-bottom:none;
 }
 
 
@@ -640,6 +664,44 @@ footer a:hover {
 .center {
 	margin:0 auto;
 	display:block;	
+}
+/* modals */
+.modal {
+  display: none;
+  width: 400px;
+  background: #fff;
+  padding: 25px 40px;
+  border-radius:16px;
+  box-shadow:0 0 20px rgba(0,0,0,0.5);
+  border:none;
+}
+
+.modal a.close-modal {
+  position: absolute;
+  top: -12.5px;
+  right: -12.5px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  background: url(../../images/yosemite/close.png) no-repeat 0 0;
+}
+
+.modal-spinner {
+  display: none;
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -32px;
+  margin-top: -32px;
+  background: url(../../images/yosemite/spinner.gif) #111 no-repeat center center;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
 }
 
 /* icons */

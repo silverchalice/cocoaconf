@@ -17,73 +17,12 @@
 </div>
 <div class="locations">
   <div class="container">
-    <h2 class="text-center">Fall Tour 2014</h2>
-    <div class="row-fluid">
-      <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'columbus-2014']">
-        <h3>Columbus, OH<br>
-          <small>August 8–9 | Sold Out!</small></h3>
-        </g:link>
-        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'columbus-2014']">Speakers</g:link></p>
-        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'columbus-2014']">Sessions</g:link></p>
-      </div>
-      <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'lasvegas-2014']">
-        <h3>Las Vegas, NV<br>
-          <small>September 19–20</small></h3>
-        </g:link>
-        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'lasvegas-2014']">Speakers</g:link></p>
-        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'lasvegas-2014']">Sessions</g:link></p>
-        <g:link controller="conference" action="register" params="['tinyName': 'lasvegas-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
-      <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'seattle-2014']">
-        <h3>Seattle, WA<br>
-          <small>Oct. 17–18 | Sold Out!</small></h3>
-        </g:link>
-        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'seattle-2014']">Speakers</g:link></p>
-        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'seattle-2014']">Sessions</g:link></p>
-        <g:link controller="conference" action="register" params="['tinyName': 'seattle-2014']" class="btn btn-flat-gray btn-large" title="Get on the waitlist for this city">Waitlist <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
-      <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'boston-2014']">
-        <h3>Boston, MA<br>
-          <small>November 14–15</small></h3>
-        </g:link>
-        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'boston-2014']">Speakers</g:link></p>
-        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'boston-2014']">Sessions</g:link></p>
-        <g:link controller="conference" action="register" params="['tinyName': 'boston-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
-      <div class="span2"> <g:link controller="conference" action="home" params="['tinyName': 'atlanta-2014']">
-        <h3>Atlanta, GA<br>
-          <small>December 5–6</small></h3>
-        </g:link>
-        <p><i class="ion-ios7-contact-outline"></i>&nbsp;<g:link controller="conference" action="speakers" params="['tinyName': 'atlanta-2014']">Speakers</g:link></p>
-        <p><i class="ion-ios7-chatboxes-outline"></i>&nbsp;<g:link controller="conference" action="sessions" params="['tinyName': 'atlanta-2014']">Sessions</g:link></p>
-        <g:link controller="conference" action="register" params="['tinyName': 'atlanta-2014']" class="btn btn-flat-gray btn-large" title="Register for this city">Register <i class="ion-ios7-arrow-forward hidden-tablet"></i></g:link> </div>
-    </div>
+    ${locationsHome?.contents}
   </div>
 </div>
 <div class="speakers">
   <div class="container">
-    <h2 class="text-center">Speakers</h2>
-    <p class="lead text-center">CocoaConf speakers are thought leaders, authors, and professional iOS and OS X developers. <a href="${createLink(controller: 'speaker', action: 'speakers')}" title="All speakers">Meet them all <i class="ion-ios7-arrow-forward"></i></a></p>
-    <p>&nbsp;</p>
-    <div class="row-fluid">
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="111" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'photo_williams_justin.jpg')}" width="170" alt="Speaker image"></g:link>
-        <h3 class="text-center">Justin Williams</h3>
-        <h4 class="text-center"><span> Second Gear</span></h4>
-      </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="156" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'jean-macdonald.png')}" width="170" alt="Speaker image"></g:link>
-        <h3 class="text-center">Jean MacDonald</h3>
-        <h4 class="text-center"><span>App Camp For Girls</span></h4>
-      </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="149" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'andy-matuschak.jpeg')}" width="170" alt="Speaker image"></g:link>
-        <h3 class="text-center">Andy Matuschak</h3>
-        <h4 class="text-center"><span> Khan Academy</span></h4>
-      </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="146" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images', file: 'gus-mueller.jpg')}" width="170" alt="Speaker image"></g:link>
-        <h3 class="text-center">Gus Mueller</h3>
-        <h4 class="text-center"><span>Flying Meat</span></h4>
-      </div>
-      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="137" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/sam-soffes', file: 'Sam-Soffes.jpg')}" width="170" alt="Speaker image"></g:link>
-        <h3 class="text-center">Sam Soffes</h3>
-        <h4 class="text-center"><span>Full Package</span></h4>
-      </div>
-    </div>
+    ${speakerSectionHome?.contents}
   </div>
 </div>
 <!--
@@ -117,16 +56,60 @@
 -->
 <div class="comments">
   <div class="container">
-    <h2 class="text-center">Comments</h2>
-    <blockquote>
-      <p class="quotation">“If you haven’t attended a @cocoaconf before, seriously consider it. <em>That was 2 days of awesome.</em>”</p>
-      <p class="source"><img src="${resource(dir: 'images', file: 'parrots.jpg')}" alt="Curtis photo" class="pull-left img-circle"> <cite>Curtis Herbert</cite><br> <a href="https://twitter.com/parrots">@parrots</a> </p>
-    </blockquote>
-    <blockquote>
-      <p class="quotation">“<em>If you ever have a chance to attend a CocoaConf near you, you should without hesitation do so,</em> doubly so if you are like me 3 years ago and looking for inspiration on what you want your career to become.”</p>
-      <p class="source"><img src="${resource(dir: 'images', file: 'robert-haworth.jpg')}" alt="Robert photo" class="pull-left img-circle"><cite>Robert Haworth</cite><br>
-        <a href="http://robertchaworth.com">Another iOS Blaaahg</a> </p>
-    </blockquote>
+    ${commentsHome?.contents}
+ </div>
+</div>
+<!--
+<div class="speakers">
+  <div class="container">
+    <h2 class="text-center">Training by CocoaConf</h2>
+    <p class="lead text-center">Apple developer training by the best in the business.</p>
+    <p>&nbsp;</p>
+    <div class="row-fluid">
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="1" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/daniel-steinberg', file: 'Daniel-Steinberg.jpg')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">Daniel Steinberg</h3>
+        <h4 class="text-center"><span>Dim Sum Thinking</span></h4>
+      </div>
+      <div class="span6">
+      <h3>Spring 2015 Term <small>May 11&#8211;14, Orlando, FL</h3>
+      <p class="lead" style="margin:0 15px 0 0;">We&#8217;ll be running two classes side by side: James Dempsey will be teaching “Beginning iOS Programming” and Daniel Steinberg will be teaching an “iOS 8 Programming in Swift” course for experienced iOS developers. <a href="${createLink(controller: 'term', action: 'index', params: ['slug': 'spring-2015'])}">Read more <i class="ion-ios7-arrow-forward"></i></a></p>
+    </div>
+      <div class="span2"> <g:link controller="speaker" action="viewDetails" id="60" title="Learn more about this speaker"><img class="img-circle center" src="${resource(dir: 'images/speaker/james-dempsey', file: 'James Dempsey.JPG')}" width="170" alt="Speaker image"></g:link>
+        <h3 class="text-center">James Dempsey</h3>
+        <h4 class="text-center"><span>Tapas Software</span></h4>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<div class="yosemite">
+  <div class="container">
+    <h2 class="text-center">Yosemite</h2>
+    <p class="lead text-center">A conference for Apple developers, designers, and enthusiasts, held in the heart of Yosemite National Park. <a href="${createLink(controller: 'home', action: 'yosemite')}" title="Read more about the Yosemite conference">Read more <i class="ion-ios7-arrow-forward"></i></a></p>
+    <p>&nbsp;</p>
+    <div class="row-fluid">
+      <div class="span2"> <img class="img-circle center" src="${resource(dir: 'images/yosemite/speakers', file: 'Andy Ihnatko.jpg')}" width="170" alt="Speaker image">
+        <h3 class="text-center">Andy Ihnatko</h3>
+        <h4 class="text-center"><span> Chicago Sun-Times</span></h4>
+      </div>
+      <div class="span2"> <img class="img-circle center" src="${resource(dir: 'images/yosemite/speakers', file: 'brent simmons.jpg')}" width="170" alt="Speaker image">
+        <h3 class="text-center">Brent Simmons</h3>
+        <h4 class="text-center"><span>Q Branch</span></h4>
+        <h4 class="text-center"><span>Vesper</span></h4>
+      </div>
+      <div class="span2"> <img class="img-circle center" src="${resource(dir: 'images/yosemite/speakers', file: 'Serenity Caldwell.jpg')}" width="170" alt="Speaker image">
+        <h3 class="text-center">Serenity Caldwell</h3>
+        <h4 class="text-center"><span> iMore</span></h4>
+      </div>
+      <div class="span2"> <img class="img-circle center" src="${resource(dir: 'images/yosemite/speakers', file: 'Neven Mrgan.jpg')}" width="170" alt="Speaker image">
+        <h3 class="text-center">Neven Mrgan</h3>
+        <h4 class="text-center"><span>Panic Inc.</span></h4>
+      </div>
+      <div class="span2"> <img class="img-circle center" src="${resource(dir: 'images/yosemite/speakers', file: 'Jim_Dalrymple.jpg')}" width="170" alt="Speaker image">
+        <h3 class="text-center">Jim Dalrymple</h3>
+        <h4 class="text-center"><span>The Loop</span></h4>
+      </div>
+    </div>
   </div>
 </div>
 <div class="share">
@@ -142,8 +125,9 @@
     <h2 class="text-center">Sponsors</h2>
     <div class="row-fluid">
       <div class="span3"><a href="https://github.com"><img class="center" width="200" src="${resource(dir: 'images', file: 'github-white.png')}" alt="GitHub logo"></a></div>
-      <div class="span3"><a href="http://martiancraft.com/"><img class="center" width="200" src="${resource(dir: 'images', file: 'MartianCraft-White.png')}" alt="MartianCraft logo"></a></div>
-      <div class="span4"><a href="http://www.crittercism.com/"><img class="center" width="500" src="${resource(dir: 'images', file: 'white-Crittercism.png')}" alt="Crittercism logo"></a></div>
+      <div class="span1"></div>
+      <div class="span2"><a href="http://martiancraft.com/"><img class="center" width="200" src="${resource(dir: 'images', file: 'MartianCraft-White.png')}" alt="MartianCraft logo"></a></div>
+      <div class="span4"><a href="http://revealapp.com/"><img class="center" width="230" src="${resource(dir: 'images', file: 'reveal-white.png')}" alt="Reveal logo"></a></div>
     </div>
   </div>
 </div>

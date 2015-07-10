@@ -50,11 +50,14 @@ strong {
 .home .header {
 	padding:30px 0;	
 }
-.home .about, .home .locations, .home .speakers, .home .sessions, .home .comments, .home .sponsors {
+.home .about, .home .locations, .home .speakers, .home .sessions, .home .comments, .home .sponsors, .home .training, .home .yosemite {
 	padding:50px 0 60px;	
 }
 .home .about {
 	padding-bottom:0;	
+}
+.home .training {
+	margin-bottom:0;	
 }
 .home .locations .row-fluid div {
 	opacity:0.8;	
@@ -71,16 +74,19 @@ body.secondary {
     background-size: 100%, auto;	
 }
 body.chicago {
-    background-image: url(../images/bg_chicago.jpg), url(../images/bg_main.jpg);
+    background-image: url(../images/Chicago-background.png), url(../images/bg_main.jpg);
 }
 body.washington {
     background-image: url(../images/bg_washington_01.jpg), url(../images/bg_main.jpg);
 }
 body.dc {
-    background-image: url(../images/bg_washington_01.jpg), url(../images/bg_main.jpg);
+    background-image: url(../images/DC-background.jpg), url(../images/bg_main.jpg);
+}
+body.portland {
+    background-image: url(../images/portland-background.jpg), url(../images/bg_main.jpg);
 }
 body.austin {
-    background-image: url(../images/bg_austin_02.jpg), url(../images/bg_main.jpg);
+    background-image: url(../images/austin-background.jpg), url(../images/bg_main.jpg);
 }
 body.sanjose {
     background-image: url(../images/bg_sanjose_02.jpg), url(../images/bg_main.jpg);
@@ -104,8 +110,14 @@ body.boston {
 body.atlanta {
     background-image: url(../images/bg_atlanta_02.jpg), url(../images/bg_main.jpg);
 }
+body.video {
+    background-image: url(../images/yosemite2016/bg_yosemite_header_4.png), url(../images/bg_main.jpg);
+}
 body.podcast {
-    background-image: url(../images/bg_podcast_03.jpg), url(../images/bg_main.jpg);
+    background-image: url(../images/bg_podcast_04.jpg), url(../images/bg_main.jpg);
+}
+body.training {
+    background-image: url(../images/bg_university_05.jpg), url(../images/bg_main.jpg);
 }
 a {
 	text-decoration:none;
@@ -144,7 +156,7 @@ body.home .about {
 	border-bottom:1px solid #444;
 }
 body.home .locations {
-	background:url(../images/bg_seattle_01.jpg) no-repeat center bottom;
+	background:url(../images/bg_chicago.jpg) no-repeat center bottom;
     background-size: auto 100%;	
 	background-color:#333333;
 }
@@ -162,6 +174,21 @@ body.home .comments .container {
     background-repeat: no-repeat, no-repeat;
     background-position: left top, right bottom;
     background-size: auto, auto;
+}
+body.home .training {
+	padding:50px 0 60px;
+	background:url(../images/bg_main.jpg) repeat center top;
+  background-size: 100% 100%;	
+	background-color:#333333;
+}
+body.home .yosemite {
+	padding:50px 0 60px;
+	background:url(../images/yosemite/bg_yosemite_header.jpg) no-repeat center bottom;
+    background-size: 100% 100%;	
+	background-color:#333333;
+}
+body.home .yosemite p {
+  color: #fff
 }
 body.home .sponsors {
 	background:url(../images/bg_sponsors.jpg) no-repeat center center;	
@@ -203,10 +230,16 @@ body.secondary .content {
 
 /*	=4a: Typography  
 ----------------------------------------------- */
-body.home .header h1, body.home .header h3 span, body.home .locations h2,  body.home .locations h3,  body.home .locations h3 span,  body.home .locations p, body.home .comments h2, body.home .sponsors h2 {
+body.home .header h1, body.home .header h3 span, body.home .locations h2,  body.home .locations h3,  body.home .locations h3 span,  body.home .locations p, body.home .yosemite h2, body.home .yosemite h3, body.home .yosemite p, body.home .training h2, body.home .training p, body.home .comments h2, body.home .sponsors h2 {
 	color:#fff;
 	opacity:.9;
 	text-shadow:0 0 15px rgba(0,0,0,0.4);
+}
+body.home .yosemite a, body.home .training a {
+  color: #fff;
+  opacity:.9;
+	text-shadow:0 0 15px rgba(0,0,0,0.4);
+  text-decoration: underline;
 }
 body.home h2 {
 	margin-bottom:35px;	
@@ -231,17 +264,22 @@ body.home .share h2 {
 	color:#555;
 	margin-right:35px;	
 }
+body.home .yosemite {
+	background:url(../images/yosemite/bg_yosemite_valley-2.jpg) no-repeat center bottom;
+    background-size: auto 100%;	
+	background-color:#333333;
+}
 body.home .comments h2 {
 	text-shadow:none;
 }
-body.home .locations h3 {
+body.home .locations h3, body.home .training h3 {
 	opacity:1;
 	line-height:1.2em;
 	padding:15px 0;
 	border-top:1px solid rgba(255,255,255,0.4);
 	border-bottom:1px solid rgba(255,255,255,0.4);
 }
-body.home .locations h3 small {
+body.home .locations h3 small, body.home .training h3 small {
 	opacity:.6;
 	font-family:'Avenir 35 Light';
 	font-size:80%;
@@ -489,7 +527,7 @@ ul.nav.pull-right li:last-child a:hover {
 .btn-flat-gray:hover {
 	background:#999;
 	border:1px solid #999;
-	color:#fff !important;	
+	color:#fff !impobg_washington_01.jpgrtant;	
 }
 .home .btn-flat-gray {
 	border-color:#ccc;
@@ -670,7 +708,7 @@ li.register.active a:before {
 }
 
 li.feedback a:before {
-    content: "\f186";
+    content: "\f422";
 }
 li.itunes a:before {
     content: "\f1fb";
@@ -683,6 +721,9 @@ li.twitter a:before {
 }
 li.skype a:before {
     content: "\f23f";
+}
+li.paw a:before {
+    content: "\f47a";
 }
 
 a.button:hover, a.post-title:hover {
@@ -741,4 +782,42 @@ span.address {
 
 .well h4 {
 	margin: 30px 0 15px;	
+}
+
+/* Training */
+
+.training {
+  margin-bottom: 70px;
+}
+
+.training h3 {
+	font-family:'Avenir 35 Light';
+  color: #888;
+}
+
+div#trainingDesc {
+  margin: 25px 0 0;
+  border: 1px solid #c7c7c7;
+  padding: 17px 17px 10px;
+}
+
+div#trainingDesc p {
+  line-height: 180%;
+}
+
+img.trainingImage {
+  padding: 8px 20px 15px 0;
+}
+
+p.announce {
+	background: #f3f3ff;
+	border: 1px solid #b2d1ff;
+	color: #006dba;
+	   -moz-box-shadow: 0 0 0.25em #b2d1ff;
+	-webkit-box-shadow: 0 0 0.25em #b2d1ff;
+	        box-shadow: 0 0 0.25em #b2d1ff;
+  text-align: center;
+	line-height: 2;
+	padding: 0.25em;
+  margin: 0 0 35px;
 }

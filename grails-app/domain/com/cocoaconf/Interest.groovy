@@ -2,6 +2,7 @@ package com.cocoaconf
 
 class Interest {
 
+    String name
     String email
     String location
 	Conference conference

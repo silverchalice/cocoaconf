@@ -13,7 +13,8 @@ class HomeController {
     def config = Holders.config
 
     def index = {
-      [useImg: randomService.nextInteger(100) + 1]
+      
+      [subHeadingHome: TextBit.findByName("subHeadingHome"), locationsHome: TextBit.findByName("locationsHome"), speakerSectionHome: TextBit.findByName("speakerSectionHome"), commentsHome: TextBit.findByName("commentsHome"), useImg: randomService.nextInteger(100) + 1]
 	}
 
     def testFeed = {
@@ -33,7 +34,63 @@ class HomeController {
       session.sawCountdown = "yup"
     }
 
-    def yosemite = {}
+    def yosemiteTwentyFifteen = { }
+
+    def yosemite = {
+      [yosemiteMain: TextBit.findByName("yosemiteMain"), yosemiteRoom: TextBit.findByName("yosemiteRoom"), yosemiteSpeakers: TextBit.findByName("yosemiteSpeakers"), yosemiteSchedule: TextBit.findByName("yosemiteSchedule"), yosemiteRegister: TextBit.findByName("yosemiteRegister")]
+    }
+
+    def yosemiteSignup = { [interestList: Interest.list()] }
+
+    def saveSignup = {
+        def yosemite = Conference.get(34)
+        def signup = new Interest(name: params.name, email: params.email, conference: yosemite)
+        signup.save()
+        render template: "ySignupThanks"
+    }
+
+    def select_activities = {
+      def id = params.id?.toLong() / 1273
+      def user = User.get(id)
+      println "the id is $id"
+      println "here are the activities: " + user.activities
+
+      [user: user, activities: YosemiteActivity.list(), activityIds: user.activities.collect { it.id }]
+    }
+
+    def toggle_activity_selection = {
+      println "in toggle_activity_selection. params are:"
+      println params
+      def user = User.get(params.userId)
+      println "params.id is ${params.id}"
+      params.id = params.id?.contains(',day') ? params.id[0..-8] : params.id
+      
+      println "..and now the params.id is ${params.id}"
+      def activity = YosemiteActivity.get(params.int('id')) 
+
+      if(activity){
+        if(params.attending == "true"){
+          user.activities.add(activity)
+          //activity.groupSize--
+          user.activities.findAll { it.id != activity.id && it.dayOne == activity.dayOne }.each {
+            println "\n\nit is $it\n\n"
+            user.activities.remove(it)
+          }
+        } else if(activity.attendees.find { it.id == user.id }){
+          user.activities.remove(activity)
+          //activity.groupSize++
+        }
+        user.save(failOnError:true)
+        activity.save(failOnError:true)
+
+        render "(${activity.available()} left)"
+      }
+      return false
+    }
+
+    def university = {
+      redirect controller: "term", action: "index", params: params
+    }
 
     def announcement = {}
 
@@ -80,7 +137,9 @@ class HomeController {
         [choice: choice, slides:slides]
     }
 
-    def partners = {}
+    def partners = {
+      [partnersPageInfo: TextBit.findByName("partnersPageInfo")]
+    }
 
 	def chicago_slides = {}
   
@@ -116,7 +175,7 @@ class HomeController {
     }
 
     def prospectus = {
-      redirect(uri: resource(dir: 'files', file: 'CocoaConf_Fall 2014_Sponsorship_Brochure.pdf'))
+      redirect(uri: resource(dir: 'files', file: 'Sponsorship-Spring-2015.pdf'))
       return
     }
 

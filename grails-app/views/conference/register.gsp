@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Sessions / ${conference?.city} / CocoaConf: The developer conference for those who think different.</title>
+<title>Register / ${conference?.city} / CocoaConf: The developer conference for those who think different.</title>
 <meta name="layout" content="home" />
 </head>
 
@@ -91,7 +91,6 @@
               <li class="${conference?.id == 23 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'lasvegas-2014']">Las Vegas, NV</g:link></li>
               <li class="${conference?.id == 24 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'seattle-2014']">Seattle, WA &#8212; <strong>Sold Out!</strong></g:link></li>
               <li class="${conference?.id == 25 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'boston-2014']">Boston, MA</g:link></li>
-              <li class="${conference?.id == 26 ? 'disabled' : ''}"><g:link controller="conference" action="home" params="['tinyName': 'atlanta-2014']">Atlanta, GA</g:link></li>
               </ul>
             </li>
           </ul>

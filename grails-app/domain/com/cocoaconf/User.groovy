@@ -19,7 +19,7 @@ class User {
     boolean temporaryPassword
 	SessionChoice choice
 
-    static hasMany = [conferences : Conference]
+    static hasMany = [conferences : Conference, activities: YosemiteActivity]
 	
 	static constraints = {
 		username blank: false, unique: true
@@ -33,6 +33,7 @@ class User {
 		firstName nullable:true
 		lastName nullable:true
 		email nullable:true
+		activities nullable:true
 		
 	}
 

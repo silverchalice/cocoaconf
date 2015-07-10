@@ -65,6 +65,14 @@
 	<g:textArea name="partnerBlurb" cols="40" rows="5" maxlength="10000" value="${conference?.partnerBlurb}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'buttonText', 'error')} ">
+	<label for="buttonText">
+		<g:message code="conference.buttonText.label" default="Button Text" />
+		
+	</label>
+	<g:textArea name="buttonText" cols="40" rows="5" maxlength="10000" value="${conference?.buttonText}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'pastText', 'error')} ">
 	<label for="pastText">
 		<g:message code="conference.pastText.label" default="Past Text" />
@@ -119,14 +127,6 @@
 </li>
 </ul>
 
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: conference, field: 'speakers', 'error')} ">
-	<label for="speakers">
-		<g:message code="conference.speakers.label" default="Speakers" />
-		
-	</label>
-	<g:select name="speakers" from="${com.cocoaconf.Speaker.list([sort:'lastName'])}" multiple="multiple" optionKey="id" size="5" value="${conference?.speakers*.id}" class="many-to-many"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'state', 'error')} ">
