@@ -122,6 +122,10 @@ class UrlMappings {
 			action = "schedule"
 			id="4"
 		}
+		"/conference/$tinyName"{
+			controller = "conference"
+			action = "json"
+		}
 		"/partners"{
 			controller = "home"
 			action = "partners"

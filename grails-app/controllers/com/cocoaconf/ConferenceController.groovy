@@ -1,5 +1,6 @@
 package com.cocoaconf
 
+import grails.converters.JSON
 import org.springframework.dao.DataIntegrityViolationException
 import com.cocoaconf.Conference
 
@@ -350,5 +351,23 @@ class ConferenceController {
 	        flash.message = "Thank you for your help!"
 	        redirect(controller:'conference', action:'schedule', id: params.tinyName, params:[tinyName:params.tinyName])
 	    }
+
+
+    def json = {
+
+        def conf = Conference.findByTinyName(params.tinyName)
+        def sessions = conf.sessionList()
+
+        def data = []
+        sessions.each { sess ->
+            data.add([title: sess.presentation.title,
+                      speaker: "${sess.presentation.speaker.firstName} ${sess.presentation.speaker.lastName}",
+                      time: sess.start,
+                      type: sess.type,
+                      description: sess.presentation.pAbstract  ])
+
+        }
+        return data as JSON
+    }
 
 }
