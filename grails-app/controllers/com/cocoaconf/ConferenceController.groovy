@@ -360,11 +360,11 @@ class ConferenceController {
 
         def data = []
         sessions.each { sess ->
-            data.add([title: sess.presentation.title,
-                      speaker: "${sess.presentation.speaker.firstName} ${sess.presentation.speaker.lastName}",
-                      time: sess.start,
-                      type: sess.type,
-                      description: sess.presentation.pAbstract  ])
+            data.add([title: sess?.presentation?.title,
+                      speaker: "${sess?.presentation?.speaker?.firstName} ${sess?.presentation?.speaker?.lastName}",
+                      time: sess?.start,
+                      type: sess?.type,
+                      description: sess?.presentation?.pAbstract  ])
 
         }
         return data as JSON
