@@ -11,21 +11,13 @@ class TermController {
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
-/*        if(!params.slug) {
-            // Get either the next term (if one is coming up) or the last one
-            // (if there are no terms coming up). Either way, a "show" page.
-            def nextTerm = Term.findByStartDateGreaterThan(new Date()) ?: Term.list().last()
-            //redirect action: "index", params: [slug: nextTerm.slug]
-            params.slug = nextTerm.slug
-            //return
+        params.max = Math.min(max ?: 10, 100)
+        if(params.slug) {
+            return [termInstanceList: [Term.findBySlug(params.slug)], termInstanceCount: 1, trainingDesc: TextBit.findByName("trainingDesc")]
+
+        } else {
+            return [termInstanceList: Term.list(), termInstanceCount: Term.count(), trainingDesc: TextBit.findByName("trainingDesc")]
         }
-        //println "\n\nhey yo. here are your params as we got them: $params\n\n"
-        def termInstance = Term.findBySlug(params.slug)
-        params.max = Math.min(max ?: 10, 100) */
-        
-        return [termInstanceList: Term.list(), 
-                termInstanceCount: Term.count(), 
-                trainingDesc: TextBit.findByName("trainingDesc")]
     }
 
     def show(Term termInstance) {
