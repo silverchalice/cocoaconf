@@ -10,6 +10,7 @@ class Term {
     Date startDate
     Date endDate
     String title
+    String subtitle
     String slug
     String description
     String registrationBlurb
@@ -22,6 +23,7 @@ class Term {
     static constraints = {
 
         courses nullable: true
+        subtitle nullable: true, blank: true
         venue nullable: true
         description maxSize: 5000000
         registrationBlurb maxSize: 5000000
