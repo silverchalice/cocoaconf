@@ -67,7 +67,7 @@
                   <h2><g:link controller="term" action="index" params="${[slug: termInstance.slug]}">
                         ${termInstance.title}</g:link></h2>
 
-                  <h3><g:formatDate format="MMMM dd" date="${termInstance?.startDate}" /> &#8211; <g:formatDate format="MMMM dd, yyyy" date="${termInstance?.endDate}" /></h3>
+                  <h3>${termInstance.subtitle}</h3>
 
                   ${termInstance?.description}
 
@@ -79,9 +79,8 @@
 
                   <div class="well">
 
-                    <h3>Course Outlines</h3>
                     <g:each in="${termInstance?.courses?.sort{it.id}}" var="course">
-                      <h4>&#8220;${course?.trainingType?.title},&#8221; with ${course?.speaker}</h4>
+
                       <img class="trainingImage" align="left" src="${createLink(controller: 'course', action: 'displayImage', id: course.id)}" />
                       ${course?.trainingType?.description}
                       <h4>About Your Instructor</h4>
