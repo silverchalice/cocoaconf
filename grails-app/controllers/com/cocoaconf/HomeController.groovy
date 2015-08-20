@@ -175,7 +175,7 @@ class HomeController {
     }
 
     def prospectus = {
-      redirect(uri: resource(dir: 'files', file: 'Sponsorship-Spring-2015.pdf'))
+      redirect(uri: resource(dir: 'files', file: 'Sponsorship-Fall-2015.pdf'))
       return
     }
 
