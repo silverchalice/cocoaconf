@@ -89,6 +89,14 @@
 	<g:textArea name="sponsorListBlurb" cols="40" rows="5" maxlength="10000" value="${conference?.sponsorListBlurb}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: conference, field: 'pendingBlurb', 'error')} ">
+	<label for="pendingBlurb">
+		<g:message code="conference.pendingBlurb.label" default="Pending Blurb" />
+
+	</label>
+	<g:textArea name="pendingBlurb" cols="40" rows="5" maxlength="10000" value="${conference?.pendingBlurb}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: conference, field: 'intro', 'error')} ">
 	<label for="intro">
 		<g:message code="conference.intro.label" default="Intro Blurb" />

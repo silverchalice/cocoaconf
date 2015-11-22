@@ -21,6 +21,7 @@ class Conference {
     String tinyName
     String displayName
     String sponsorListBlurb
+    String pendingBlurb // text on a 'pending' conference home page
     String thumbnail
     String cityNickname
     String tagline
@@ -52,6 +53,7 @@ class Conference {
 		pastText nullable:true, blank:true, maxSize:100000
 		featuredSpeakers nullable:true, maxSize:100000
 		sponsorListBlurb nullable:true, maxSize:100000
+		pendingBlurb nullable:true, maxSize:1000000
 		slides nullable:true
 		status nullable:true, inList:[PENDING, ACTIVE, COMPLETED]
 		leads nullable:true
