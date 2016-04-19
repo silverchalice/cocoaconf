@@ -163,6 +163,10 @@ class HomeController {
 	def credits = {
 		
 	}
+
+	def conduct = {
+		
+	}
 	
     def testFeeds = {
         def speaker = Speaker.findByLastName("Dudney")

@@ -53,6 +53,11 @@ class UrlMappings {
 			action = "credits"
 		}
 
+		"/code-of-conduct"{
+			controller = "home"
+			action = "conduct"
+		}
+
 		"/training/$slug?"{
 			controller = "term"
 			action = "index"
