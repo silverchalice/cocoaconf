@@ -17,7 +17,7 @@
             <div class="span1"> </div>
                 <div class="span8">
                       <p>CocoaConf has always been a family-friendly conference, which comes naturally since it is organized, promoted, and staffed by a family. We, the <a href="/family">Klein family</a>, work hard to promote an atmosphere that is friendly, welcoming, and conducive to learning, but we can&#8217;t do this without the help of our speakers and attendees.</p>
-                      <p>In order to help everyone at CocoaConf to have the best experience that they can, we ask that all speakers, attendees, and staff follow some simple, common-sense rules for the duration of the event, regardless of location:</p>
+                      <p>In order to help everyone at CocoaConf to have the best experience that they can, we ask that all speakers, attendees, and staff follow some simple, common-sense rules for the duration of the event:</p>
                       <div style="margin: 20px 0;">
                         <ul>
                           <li><strong>Treat everyone at the event with kindness and respect.</strong> This will make the event more enjoyable for yourself as well as for everyone else.</li>
