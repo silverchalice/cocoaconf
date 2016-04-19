@@ -77,7 +77,7 @@
 <g:layoutBody />
 <div class="container">
   <footer>
-    <p>&copy; 2014 Simply Cocoa, LLC. |  About the <a href="${createLink(controller: 'home', action: 'kleinfamily')}" title="Learn more about the Kleins">Klein Family</a> |  <a href="${createLink(controller: 'home', action: 'credits')}">Credits</a> | Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a></p>
+    <p>&copy; 2016 Simply Cocoa, LLC. |  About the <a href="${createLink(controller: 'home', action: 'kleinfamily')}" title="Learn more about the Kleins">Klein Family</a> |  <a href="${createLink(controller: 'home', action: 'credits')}">Credits</a> | Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a></p>
   </footer>
 </div>
 <!-- /container --> 
