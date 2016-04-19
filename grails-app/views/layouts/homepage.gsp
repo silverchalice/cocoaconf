@@ -61,7 +61,7 @@
           <!-- <li><a href="#sessions">Sessions</a></li> -->
           <!-- <li><a href="#contact">Venues</a></li> -->
           <li><g:link controller="home" action="partners">Partners</g:link></li>
-          <li><g:link controller="term">Training</g:link></li>
+          <li><g:link controller="home" action="conduct">Code of Conduct</g:link></li>
           <li><g:link controller="home" action="yosemite">Yosemite</g:link></li>
           <li><g:link controller="video">Videos</g:link></li>
           <li><g:link controller="podcast">Podcast</g:link></li>
@@ -98,7 +98,7 @@
           <!-- <li><a href="#sessions">Sessions</a></li> -->
           <!-- <li><a href="#contact">Venues</a></li> -->
           <li><g:link controller="home" action="partners">Partners</g:link></li>
-          <li><g:link controller="term">Training</g:link></li>
+          <li><g:link controller="home" action="conduct">Code of Conduct</g:link></li>
           <li><g:link controller="video">Videos</g:link></li>
           <li><g:link controller="podcast">Podcast</g:link></li>
           <li><g:link controller="post" action="list">Blog</g:link></li>
