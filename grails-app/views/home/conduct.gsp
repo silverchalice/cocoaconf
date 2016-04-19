@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="layout" content="about" />
+        <meta name="layout" content="coc" />
         <meta name="division" content="video" />
         <title>CocoaConf | Code of Conduct</title>
     </head>
