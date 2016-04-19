@@ -21,7 +21,7 @@
                       <div style="margin: 20px 0;">
                         <ul>
                           <li><strong>Treat everyone at the event with kindness and respect.</strong> This will make the event more enjoyable for yourself as well as for everyone else.</li>
-                          <li><strong>Don&#8217;t harass <em>anyone</em> for <em>any</em> reason.</strong> Any aggressive, threatening, or demeaning behavior or comments are considered harassment and will not be tolerated.</li>
+                          <li><strong>Don&#8217;t harass <em>anyone</em> for <em>any</em> reason.</strong> Any aggressive, threatening, or demeaning behavior or comments are considered harassment and <strong>will not</strong> be tolerated.</li>
                           <li>Anyone who is harassing another person will be <strong>asked to leave the conference.</strong></li>
                           <li>If others tell you that you&#8217;re being offensive, then you probably are, so <strong>stop and apologize.</strong> It&#8217;s simple and can prevent a world of hurt.</li>
                           <li>Anyone who is offending someone else and is not willing to try the &#8220;stop and apologize&#8221; technique will be <strong>asked to leave the conference.</strong></li>
