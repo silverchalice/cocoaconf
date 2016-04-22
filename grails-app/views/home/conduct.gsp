@@ -7,7 +7,7 @@
     </head>
     <body>
     <div class="container main-text">
-        <h1><span></span> Code Of Conduct</h1>
+        <h1><span></span> Code of Conduct</h1>
     </div>
     <div class="content container">
         <div class="gradient"></div>
