@@ -20,7 +20,7 @@
 
     <div class="row-fluid">
         <div class="span7">
-            <h1>Conference Videos<br /><small>From <strong>Yosemite, by CocoaConf</strong>: April 20&#8211;23, 2015</small></h1>
+            <h1>Conference Videos<br /><small>From <strong>Yosemite, by CocoaConf</strong></small></h1>
         </div>
     </div>
 
@@ -48,9 +48,9 @@
 
     </div>
     <div class="span8">
-    
+      <h1><small>Yosemite 2016</small></h1>
       <g:each in="${videos}" var="video">
-
+          <g:if test="${video.slug == 'iOS-8-High-Sierra-Camps'}"><h1><small>Yosemite 2015</small></h1></g:if>
           <div class="episode">
 
               <h2><g:link controller="video" action="index" id="${video.slug}">
