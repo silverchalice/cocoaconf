@@ -28,6 +28,11 @@ class UrlMappings {
 			action = "yosemiteTwentyFifteen"
 		}
 
+		"/yosemite-2016"{
+			controller = "home"
+			action = "yosemiteTwentySixteen"
+		}
+
 		"/select_activities/$id"{
 			controller = "home"
 			action = "select_activities"

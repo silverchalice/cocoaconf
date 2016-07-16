@@ -36,6 +36,8 @@ class HomeController {
 
     def yosemiteTwentyFifteen = { }
 
+    def yosemiteTwentySixteen = { }
+
     def yosemite = {
       [yosemiteMain: TextBit.findByName("yosemiteMain"), yosemiteRoom: TextBit.findByName("yosemiteRoom"), yosemiteSpeakers: TextBit.findByName("yosemiteSpeakers"), yosemiteSchedule: TextBit.findByName("yosemiteSchedule"), yosemiteRegister: TextBit.findByName("yosemiteRegister")]
     }
