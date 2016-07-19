@@ -169,7 +169,7 @@
 </div>-->
 <footer>
   <div class="container"> <a class="brand" href="/"><img src="http://www.cocoaconf.com/images/yosemite2016/img_cocoaconf_logo.png" height="40" width="40" alt="CocoaConf logo" class="pull-left"></a>
-    <p class="text-right">&copy; 2015 Simply Cocoa, LLC. &nbsp;| &nbsp; <a href="/family" title="Learn more about the Kleins">About the Klein family</a> &nbsp; | &nbsp; Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a></p>
+    <p class="text-right">&copy; 2016 Simply Cocoa, LLC. &nbsp;| &nbsp; <a href="/family" title="Learn more about the Kleins">About the Klein family</a> &nbsp; | &nbsp; Site by <a href="http://www.gurrydesign.com" title="Hand-crafted web and graphic design from Peter Gurry" target="_blank">Gurry Design</a></p>
   </div>
 </footer>
 </div>
