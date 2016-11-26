@@ -57,7 +57,7 @@
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
             <a class="brand" href="${createLink(uri: '/')}"><img src="${resource(dir:'images', file:'img_cocoaconf_logo.png')}" height="40" width="40" alt="CocoaConf logo"> CocoaConf</a>
             <div class="nav-collapse collapse">
-                <ul class="nav">
+                <ul style="display:none;" class="nav">
                     <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pick a City &nbsp; <i class="ion-ios7-arrow-down"></i></a>
                       <cc:pickACity />
                     </li>
